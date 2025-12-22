@@ -1,19 +1,33 @@
 # Repository Guidelines
 
-## Project Structure & Module Organization
-This repository is currently empty and does not yet define a source layout. As you add code, keep a simple, conventional structure (for example, `src/` for application code, `tests/` for automated tests, and `assets/` for static files). Document any new top-level directories here as they appear.
+## Resumen actual del proyecto
+Este repositorio ya tiene un arranque con Vite + React + TypeScript. La pagina principal muestra el catalogo de suspension MTB por marca y modelos, con secciones de contenido, filtros visuales y tarjetas con imagenes. Existe una pagina de detalle por modelo con especificaciones completas, y un logo propio de Atlas MTB en SVG.
 
-## Build, Test, and Development Commands
-No build, test, or run commands are defined yet. When you introduce tooling (for example, `npm`, `make`, or `pytest`), add the exact commands here with brief descriptions so contributors can get started quickly.
+## Estructura del proyecto
+- `src/pages/`: paginas principales.
+  - `Home.tsx`: landing + catalogo, ventanas funcionales, galeria de modelos.
+  - `ModelDetail.tsx`: ficha completa por modelo.
+- `src/data/`: datos del catalogo y mapeo de imagenes.
+  - `suspension.ts`: marcas, modelos, y especificaciones.
+  - `images.ts`: asociacion `Marca|Modelo` -> imagen.
+- `src/assets/images/`: imagenes reales de modelos.
+- `src/assets/atlas-mtb.svg`: logo principal.
+- `src/utils/routing.ts`: helpers de slug y hash routing.
 
-## Coding Style & Naming Conventions
-No style rules are established. When adding languages or frameworks, define formatting and naming conventions in this section (for example, 2- or 4-space indentation, `snake_case` vs `camelCase`, and preferred linters/formatters).
+## Navegacion y rutas
+Se usa hash routing simple: `#/modelo/<slug>` para ver la ficha de un modelo. El estado se actualiza en tiempo real con el evento `hashchange` (no requiere F5). Cada modelo genera su slug desde `Marca + Modelo`.
 
-## Testing Guidelines
-Testing frameworks and coverage expectations are not specified. If tests are added, document the framework, naming pattern (for example, `*_test.py` or `*.spec.ts`), and how to run the suite.
+## Contenido y idioma
+Todo el texto descriptivo esta en espanol. Nombres de marcas y modelos permanecen en ingles. Las imagenes se conectan por la clave `Marca|Modelo`.
 
-## Commit & Pull Request Guidelines
-No commit or pull request conventions are in place. If you adopt rules (for example, Conventional Commits or required PR descriptions), record them here. Include any expectations for linked issues, screenshots, or changelogs.
+## Estilos y branding
+El estilo visual se concentra en `src/index.css`. Hay un logo SVG con paleta roja industrial y efecto hover en el header.
 
-## Security & Configuration Tips
-There are no configuration files or secrets conventions yet. If you add environment variables or config files, document expected locations (for example, `.env`, `config/`) and ensure secrets are excluded from version control.
+## Comandos
+- `npm install`: instala dependencias.
+- `npm run dev`: levanta el entorno local.
+- `npm run build`: genera build de produccion.
+- `npm run preview`: previsualiza el build.
+
+## Flujo recomendado
+Para agregar modelos nuevos, actualiza `src/data/suspension.ts` y asigna su imagen en `src/data/images.ts` con un archivo en `src/assets/images/`. Para crear nuevas paginas, agrega un archivo en `src/pages/` y luego integra la navegacion correspondiente.

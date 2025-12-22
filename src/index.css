@@ -58,6 +58,28 @@ button {
   flex-wrap: wrap;
 }
 
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-mark {
+  width: 52px;
+  height: 52px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo-block:hover .logo-mark {
+  transform: rotate(-4deg) scale(1.05);
+  filter: drop-shadow(0 10px 20px rgba(12, 15, 18, 0.35));
+}
+
+.logo-sub {
+  font-size: 0.85rem;
+  color: #5a666e;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.22em;

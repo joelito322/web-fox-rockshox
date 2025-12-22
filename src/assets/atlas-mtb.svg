@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Atlas MTB">
+  <defs>
+    <linearGradient id="atlasRed" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#d7261e" />
+      <stop offset="100%" stop-color="#8f0f14" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="26" fill="#111518" />
+  <polygon points="80,18 146,142 118,142 80,58 42,142 14,142" fill="url(#atlasRed)" />
+  <polygon points="80,74 98,108 62,108" fill="#111518" />
+  <path d="M36 126 L124 126" stroke="#e2e6ea" stroke-width="6" stroke-linecap="round" />
+</svg>
