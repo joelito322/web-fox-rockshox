@@ -30,6 +30,36 @@ button {
   gap: 36px;
 }
 
+.main-nav {
+  display: flex;
+  gap: 12px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(18, 28, 38, 0.1);
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #1a1c1f;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  transition: background 0.2s ease;
+}
+
+.main-nav a:hover {
+  background: #f0f0f0;
+}
+
 .hero {
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.78));
   border-radius: 28px;
@@ -586,4 +616,32 @@ button {
   .page {
     padding-top: 40px;
   }
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.compare-specs {
+  display: grid;
+  gap: 8px;
+}
+
+.spec-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.spec-item .best {
+  font-weight: 700;
+  color: #1f5c57;
+}
+
+.spec-item .different {
+  font-weight: 600;
 }
