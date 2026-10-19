@@ -120,6 +120,8 @@ El conjunto de permisos de un rol personalizado debe ser coherente también con 
 
 Una combinación incompleta se rechaza indicando sus dependencias; no se conceden permisos adicionales silenciosamente. La interfaz presenta el requisito y permite seleccionarlo explícitamente antes de guardar. Los requisitos son transitivos y forman parte del mismo validador compartido entre formulario individual y matriz. `configurator.use` puede existir sin permiso de guardado: permite trabajar con un borrador local, sin prometer persistencia remota. `roles.manage` no exige por sí mismo lectura de usuarios.
 
+Lectura/escritura propia sin `configurator.use` permite renombrar montajes existentes, conservando las piezas. Crear, copiar o cambiar piezas/acabados/colores requiere también `configurator.use`, comprobado por la RPC según el [contrato de guardado](03-datos-y-operaciones.md#rpc-save_build). No convertir el permiso de interfaz en una vía que pueda eludirse por API.
+
 Invitar una cuenta concede primero el rol base `user`, aunque el destino final sea un personalizado más limitado. Por ello quien invita debe poder otorgar todos los permisos de ese rol base y también los del destino final, antes de crear la identidad. Una invitación a un rol distinto requiere además `users.assign_role`.
 
 `catalog.manage` y `presets.manage` permiten trabajar con borradores. Toda escritura que cambie contenido públicamente visible exige también el permiso `publish` del área, incluidas correcciones de texto, fuentes y precio. No se necesita una variante nueva para corregir datos editoriales, pero esa corrección no elude el permiso de publicación. Despublicar o retirar de nuevas selecciones también exige ese permiso y conserva las restricciones sobre referencias ya utilizadas.

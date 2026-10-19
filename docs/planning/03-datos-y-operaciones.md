@@ -121,9 +121,9 @@ No se crea una RPC para cada lectura simple. `save_build` existe porque un fallo
 
 Entradas: `p_build_id` UUID conocido antes de enviar, `p_expected_revision` y `p_configuration` con el contrato anterior. Para crear, el cliente genera el UUID una sola vez y usa revisión esperada 0; para actualizar, usa el ID y revisión leídos. Salida: `id`, `revision` y `updated_at`. El UUID del cliente no otorga acceso; no se acepta `user_id` suministrado por el cliente.
 
-1. Exigir sesión y permiso vigente `builds.write_own`; derivar propietario de `auth.uid()`, sin bypass por rol admin.
+1. Exigir sesión y permiso vigente `builds.write_own`; derivar propietario de `auth.uid()`, sin bypass por rol admin. Crear un montaje, incluida una copia, exige además `configurator.use`.
 2. Validar formato, tamaño, slots únicos, nombre, versión y referencias permitidas.
-3. Para crear, exigir que el ID no exista, establecer propietario y revisión 1. Para actualizar, bloquear la cabecera, comprobar propiedad y revisión esperada antes de escribir.
+3. Para crear, exigir que el ID no exista, establecer propietario y revisión 1. Para actualizar, bloquear la cabecera, comprobar propiedad y revisión esperada antes de escribir. Comparar los items enviados con los persistidos en formato canónico: cualquier cambio de slot, variante, acabado o color exige además `configurator.use`. Con escritura propia sin ese permiso solo se permite renombrar conservando las mismas piezas; no confiar en una bandera «solo renombrar» del cliente.
 4. Validar categoría por slot, acabado y color por variante; sustituir las filas del montaje de forma atómica. Los conflictos mecánicos se notifican en el producto, pero no rechazan este guardado visual.
 5. Para una actualización, incrementar la revisión exactamente una vez en esta función, devolver confirmación y revertir todo si hay un error. Ningún trigger adicional incrementa esa misma revisión.
 
@@ -131,7 +131,7 @@ Dos pestañas con la misma revisión no deben pisarse silenciosamente: la segund
 
 Crear y actualizar montajes y piezas tiene una sola entrada de aplicación: `save_build`. Se revocan INSERT/UPDATE/DELETE directos sobre `build_items` e INSERT/UPDATE sobre `builds` a `anon` y `authenticated`. El propietario conserva SELECT y DELETE de su cabecera bajo RLS; el borrado elimina piezas por la clave foránea en cascada.
 
-Para ejecutar esa escritura restringida, `save_build` será `security definer`, con `search_path=''`, referencias de esquema explícitas, sin SQL dinámico, ejecución solo para `authenticated` y revocada de `public` y `anon`. Al poder ejecutar con privilegios elevados, debe verificar expresamente `auth.uid()`, propiedad, publicación y cada referencia; no se presupone que RLS filtre sus consultas internas. También mantiene claves foráneas, checks y unicidad de las tablas. Las pruebas incluyen llamar a RPC con el ID de otro usuario y ejecutar escrituras directas para demostrar que no existe una ruta que eluda la validación.
+Para ejecutar esa escritura restringida, `save_build` será `security definer`, con `search_path=''`, referencias de esquema explícitas, sin SQL dinámico, ejecución solo para `authenticated` y revocada de `public` y `anon`. Al poder ejecutar con privilegios elevados, debe verificar expresamente `auth.uid()`, propiedad, publicación y cada referencia; no se presupone que RLS filtre sus consultas internas. También mantiene claves foráneas, checks y unicidad de las tablas. Las pruebas incluyen llamar a RPC con el ID de otro usuario, crear/cambiar piezas sin `configurator.use`, renombrar con escritura propia y piezas idénticas, y ejecutar escrituras directas para demostrar que no existe una ruta que eluda la validación.
 
 ## Archivo y cambios de catálogo
 

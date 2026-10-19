@@ -24,7 +24,7 @@ En las fuentes de PG-720/V10 existen cassettes DH de 7 velocidades con cadena de
 - Número de eslabones de venta si consta, cierre y sentido de montaje cuando esté documentado; no convertir ese número en cálculo automático de longitud necesaria.
 - Peso/contexto, acabado y fuentes de servicio. No inferir intercambiabilidad de Eagle, T-Type/Flattop o sistemas Shimano por marca.
 
-Aceptar exige escala de piñones y ruta simplificada de cadena por plato/cassette/cambio, preservando la postura estática. No hay cambio de marchas simulado, selector de piñón activo ni tensado físico. Las piezas seleccionadas y avisos se guardan; ausencia de cadena o cassette deja montaje incompleto, sin certificar funcionamiento.
+Aceptar exige escala de piñones y ruta simplificada de cadena por plato/cassette/cambio, preservando la postura estática. No hay cambio de marchas simulado, selector de piñón activo ni tensado físico. Se guardan las elecciones de piezas; los avisos se recalculan al reabrir con los datos y reglas disponibles; ausencia de cadena o cassette deja montaje incompleto, sin certificar funcionamiento.
 
 ## Diccionario de captura
 
