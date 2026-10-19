@@ -2,7 +2,7 @@
 
 Fecha: 18 de octubre de 2026. Estado: revisión documental, sin implementación. Relacionado: [índice](README.md), [fases y aceptación](08-fases-y-validacion.md) y [propuesta de inventario](11-propuesta-de-inventario.md).
 
-Nota posterior: el usuario amplió el inventario y confirmó pedalier seleccionable. [11](11-propuesta-de-inventario.md) y 11a–11m sustituyen el límite de cuatro cuadros/una talla. Esta auditoría refleja su fecha y alcance original; los diccionarios ampliados y su futura implementación requieren sus comprobaciones de aceptación, sin atribuirles una nueva auditoría multiagente.
+Nota posterior: el usuario amplió el inventario y confirmó pedalier seleccionable. [11](11-propuesta-de-inventario.md) y 11a–11m sustituyen el límite de cuatro cuadros/una talla. La revisión del 18 refleja su alcance original; la reevaluación multiagente del 19 de octubre, al final de este documento, sí revisa los diccionarios ampliados. Las pruebas de implementación siguen pendientes.
 
 ## Método y resultado
 
@@ -51,3 +51,57 @@ No se solicita al usuario escoger tipos SQL, índices o coordenadas técnicas. E
 ## Evidencia y límites
 
 Comprobación final: 21 Markdown entre docs, AGENTS.md y supabase/README.md; 186 enlaces locales y 17 anclas sin destinos rotos; 58 bloques cerrados y un ejemplo JSON válido. `git diff --check` sin errores. Se revisaron documentos y referencias cruzadas, incluyendo una segunda lectura adversarial de datos/IAM tras las correcciones. Mermaid requiere renderizado posterior para validar su presentación. No se ejecutaron build, pruebas de aplicación, migraciones, funciones ni escrituras remotas. Todos los planes permanecen en `planning/`.
+
+## Reevaluación de procedencia · 19 de octubre de 2026
+
+Petición del usuario: validar con agentes si el plan actual es procedente. Se revisó el conjunto tras la ampliación 11a–11m y la elección de solo gama actual documentada. Tres agentes independientes cubrieron producto/UX/inventario, datos/IAM y arquitectura/3D/operación. Solo lectura de archivos para la revisión; después se corrigieron los contratos documentales indicados abajo. No se consultó `.env`, no se ejecutaron servicios ni se modificó la aplicación.
+
+**Dictamen común: procedente con condiciones para comenzar las bases cuando el usuario autorice implementación. La planificación todavía no está cerrada para ejecutar y aceptar todo el alcance sin concretar sus pendientes.** No se encontró una razón para cambiar la arquitectura modular, las doce tablas o añadir workers/servicios. No equivale a una garantía de funcionamiento o rendimiento.
+
+```text
+Plan actual
+  ├── Arquitectura y distribución de responsabilidades: procedentes
+  ├── Fase 0 y base técnica: pueden iniciarse al autorizar implementación
+  ├── Ingesta/publicación: cerrar variantes, vigencia y contratos primero
+  ├── UI administrativa de negocio: presentar/revisar sus bocetos primero
+  └── Aceptación integral: inventario completo, recursos y pruebas reales
+```
+
+### Hallazgos contrastados y correcciones
+
+| Prioridad | Contraejemplo | Corrección documental |
+| --- | --- | --- |
+| Alta | Fase 2 necesita Auth/RLS funcionales pero roles base/provisión/helpers se dejaban para 2b | [08](08-fases-y-validacion.md): núcleo IAM en fase 2; operaciones y UI administrativas en 2b |
+| Media | Un rol con escritura propia sin configurador crea/cambia piezas mediante RPC | [03](03-datos-y-operaciones.md#rpc-save_build) y [04a](04a-iam-roles-y-permisos.md#dependencias-de-permisos): crear/copiar/cambiar items exige configurador; renombrar con items persistidos idénticos conserva permiso de escritura propia |
+| Media | Un candidato de horquilla calculado para cuadro A termina cargando después de confirmar cuadro B | [02](02-arquitectura-y-frontend.md): comprobar dependencias vigentes, descartar o recalcular antes de confirmar; no basta solicitud/slot |
+| Media | El criterio de calidad permite «ajustar alcance» y reducir el inventario aprobado | [08](08-fases-y-validacion.md): ajustar estrategia gráfica y recursos; reducción de funciones/inventario requiere decisión del usuario |
+| Baja | Se afirma guardar avisos aunque solo se persisten elecciones | [11g](11g-cassettes-y-cadenas.md): avisos recalculados al reabrir; no añadir columnas |
+| Baja | Todas las composiciones de 06a aparecen aprobadas aunque la portada conserva estado de propuesta | [08](08-fases-y-validacion.md): distinguir acceso/registro aprobado de portada propuesta según el contrato específico de 06a; conservar lo aprobado sin atribuir una aprobación nueva |
+| Baja | Los archivos pnpm siguen descritos como no rastreados o pendientes de versionar | [07](07-entornos-y-despliegue.md) y [08](08-fases-y-validacion.md): ya versionados; preparación/verificación de herramientas sigue pendiente |
+
+Los agentes de datos/IAM y arquitectura realizaron una segunda lectura focal de sus correcciones y no detectaron contradicciones nuevas en ellas. La validación funcional de esos contratos corresponde a su implementación.
+
+### Pendientes que condicionan su fase
+
+| Pendiente real | Momento de cierre | Responsable/tipo de decisión |
+| --- | --- | --- |
+| Variantes concretas, vigencia, medidas, tallas originales y composiciones prearmadas | Antes de publicar/aceptar cada entrada y completar catálogo | Completar investigación y datos en 11a–11m; no volver a pedir marcas o M/L ya definidos |
+| Códigos admitidos, obligatoriedad, límites y validación JSONB de cada categoría | Antes de aplicar su contrato de migración/seed | Desarrollo; no necesita que el usuario elija tipos SQL |
+| Manifiestos, anclajes, modelos/estimaciones y versiones por variante/talla | Antes de aceptar su representación 3D | Desarrollo y revisión visual; toda variante incluida debe funcionar |
+| Bocetos de administración de catálogo/prearmadas | Antes de construir esas pantallas de 2b | Propuesta ASCII que reutilice tablas/paneles; revisión con el usuario |
+| Portada propuesta, identidad/recursos finales y dispositivo de referencia | Antes de cerrar aceptación visual/rendimiento | Revisar propuestas concretas sin reabrir acceso, workspace o IAM ya aprobados |
+| Auth/correos, migraciones, RLS/RPC, funciones, consultas y rendimiento | Durante las fases de implementación correspondientes | Pruebas reales en Supabase Cloud y frontend local/publicado según 07/08 |
+
+Las condiciones no autorizan una entrega MVP ni dejar funciones del alcance sin terminar. Permiten ordenar el trabajo sin bloquear la fundación por datos de una fase posterior. No iniciar implementación por este dictamen: la instrucción vigente sigue siendo planificación. No se detectó una nueva decisión de negocio necesaria para corregir los hallazgos técnicos.
+
+### Alcance de las comprobaciones
+
+Comprobación final: 34 Markdown, 233 enlaces locales y 34 anclas sin errores; 72 bloques cerrados y un ejemplo JSON válido. `git diff --check` sin errores. Mermaid no se renderiza en esta revisión. No se reconfirma vigencia externa de cada producto: esa verificación por variante permanece pendiente y las familias localizadas no se presentan como ingesta completa. No se ejecutan build, pruebas de aplicación, SQL, Auth ni despliegues; no se traslada ningún documento a `validation/` o `finished/`.
+
+## Aclaración del usuario: trabajo ejecutable dentro del plan
+
+El usuario precisa que completar inventario/medidas/vigencia, cerrar diccionarios/manifiestos, proponer y revisar UI administrativa y preparar/validar recursos/rendimiento deben ser parte del plan de implementación. Se incorporan expresamente a la distribución y checklists de 08, con resultado esperado y aceptación. No se interpretan como requisitos externos por resolver antes de comenzar las fases.
+
+El dictamen anterior se conserva como evidencia de revisión: sus «condiciones» son dependencias y trabajos internos de ejecución, no la obligación de que el usuario aporte esos resultados terminados. Las decisiones técnicas las resuelve el desarrollo; las revisiones de diseño se realizan sobre propuestas concretas durante el trabajo. Una dependencia pendiente impide aceptar su resultado afectado, sin detener tareas independientes ni reducir el alcance.
+
+Se mantiene la separación entre tener un plan ejecutable y haber implementado/validado el producto. La instrucción vigente sigue siendo planificación hasta que el usuario indique comenzar implementación.
