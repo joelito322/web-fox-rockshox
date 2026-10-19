@@ -18,6 +18,8 @@ En nuevas sesiones seguir AGENTS.md: recomendar ASCII/Mermaid para explicar rela
 
 La implementación es full scope respecto al alcance acordado: cada campo, regla y operación planificados deben funcionar de principio a fin. Las fases organizan el trabajo; no autorizan entregar un MVP ni dejar operaciones como demostraciones. No añadir campos, servicios o procesos para aparentar una solución más completa.
 
+La investigación y concreción de datos, diccionarios y manifiestos; el diseño de propuestas pendientes; la preparación de recursos; y las pruebas y correcciones forman parte del plan de implementación. Asignarlas a sus fases con resultado y criterio de aceptación. No presentarlas como trabajo externo que deba completar el usuario antes de iniciar. Las dependencias técnicas se resuelven dentro de la ejecución y solo las decisiones reales de negocio/diseño pendientes se consultan, sobre propuestas concretas.
+
 Para dar por terminado un comportamiento se comprueban sus entradas, reglas, persistencia, recuperación, permisos y errores aplicables. Que un botón responda o que exista una tabla no demuestra que la funcionalidad esté completa. Los recursos visuales aproximados aceptados por el usuario son parte del producto; una integración simulada no sustituye una integración real acordada.
 
 ## Carpetas y estados

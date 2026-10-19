@@ -106,4 +106,4 @@ Esta actualización completa la **separación por categoría, los grupos de camp
 
 Se retira la pregunta anterior de «dos o cuatro cuadros»: la dirección vigente es cobertura por marcas/modelos actuales documentados y M/L. Los dos ejemplos ATLAS enduro/DH siguen siendo recorridos de prueba y propuesta de contenido, sin limitar el catálogo ni sustituir su aceptación integral.
 
-Delimitación temporal cerrada por el usuario: solo gama actual documentada. Completar la evidencia de vigencia y los campos de cada referencia antes de declarar cerrada su ingesta documental. La implementación y la ingesta real siguen pendientes de la instrucción expresa de iniciarlas.
+Delimitación temporal cerrada por el usuario: solo gama actual documentada. Completar la evidencia de vigencia y los campos de cada referencia es una tarea de las fases 1–3 del plan de implementación, con comprobación de cobertura en 4–6 según 08. La ingesta documental no se declara cerrada hasta completar esa tarea; no es un requisito externo previo al inicio del plan. La implementación y la ingesta real siguen pendientes de la instrucción expresa de iniciarlas.

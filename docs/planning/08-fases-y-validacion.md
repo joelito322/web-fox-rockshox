@@ -8,9 +8,9 @@ Instrucción vigente: trabajar solo en planes hasta que el usuario indique comen
 
 La entrega es full scope del alcance acordado, no un MVP. Una prueba de concepto dentro de una fase ayuda a comprobar una decisión; no reemplaza la implementación completa de esa función ni reduce el inventario que se acuerde. Se mantienen fuera las funciones no solicitadas.
 
-## Cierre lógico antes de ejecutar el alcance definitivo
+## Alcance y trabajo incluido en la implementación
 
-La referencia de estilo UI/UX aprobada es COMMENCAL; las composiciones de 06a/06b/06c están aprobadas; identidad gráfica, recursos definitivos y composición administrativa de catálogo/prearmadas siguen pendientes de revisión. En este cierre se incorporan los principios de lenguaje y claridad de interfaz solicitados por el usuario, junto a decisiones de producto y contratos técnicos, sin añadir una fase de aprobación para cada tarea.
+La referencia de estilo UI/UX aprobada es COMMENCAL; la composición de acceso/registro de 06a y las de 06b/06c están aprobadas. La portada de 06a se conserva como propuesta; identidad gráfica, recursos definitivos y composición administrativa de catálogo/prearmadas siguen pendientes de revisión. En este cierre se incorporan los principios de lenguaje y claridad de interfaz solicitados por el usuario, junto a decisiones de producto y contratos técnicos, sin añadir una fase de aprobación para cada tarea.
 
 ### Decisiones confirmadas por el usuario
 
@@ -40,15 +40,30 @@ La referencia de estilo UI/UX aprobada es COMMENCAL; las composiciones de 06a/06
 | Estilo y movimiento | Referencia UI/UX COMMENCAL; limpieza, bicicleta protagonista, contraste y carácter deportivo. Movimiento puntual, contenido propio y alternativa estática |
 | Fotos y archivos 3D | Fotos de componentes locales en `src/assets/images/`; GLB importados en Supabase Storage. La geometría generada por código no necesita archivos almacenados |
 
-### Decisiones de producto pendientes
+### Trabajo de concreción incluido en el plan
 
 | Pendiente | Qué hay que cerrar | Qué afecta |
 | --- | --- | --- |
 | Referencias prearmadas concretas | Bicicletas, versiones y tallas a incluir; composición documentada de fábrica o ejemplo ATLAS para cada una | La función está aprobada; falta su inventario y contenido verificable |
-| Componentes integrados | Si algún cockpit/rueda completa del inventario ocupa varias posiciones; definir ocupación/exclusión solo si se incluye | Evita duplicación de piezas sin crear un motor universal de kits |
+| Componentes integrados | Mantener aros/bujes y manillar/potencia separados según 11; otros integrados no están incluidos automáticamente | Su incorporación sería cambio de alcance, no una tarea pendiente obligatoria |
 | Inventario concreto | Selección acotada de modelos comerciales reales, tallas y versiones útiles para enduro/descenso; sin cubrir toda la oferta ni combinaciones teóricas; cobertura ampliada por el usuario en [11 y 11a–11m](11-propuesta-de-inventario.md), con M/L y pedalier seleccionable; variantes físicas por completar | Cantidad de recursos, contenido y combinaciones que se deben entregar completas |
 
 No interpretar «inventario concreto» como soporte de todas las marcas o todas las tallas del mercado. Una vez fijado, ninguna entrada acordada para 3D puede quedar como una tarjeta sin representación funcional. Los selectores entre piezas existentes no se limitan por incompatibilidades mecánicas: la restricción pendiente es de cobertura, no de permiso para combinarlas.
+
+### Ejecución y validación dentro de las fases
+
+Por aclaración del usuario, completar datos, diseñar propuestas pendientes, preparar recursos, implementar y validar son trabajos del plan de implementación. No se exige que esos trabajos estén resueltos fuera del plan antes de comenzar. Sus dependencias indican el orden interno: por ejemplo, definir un contrato antes de aplicar su migración o revisar un boceto antes de construir esa pantalla.
+
+| Trabajo incluido | Fases de ejecución | Resultado y aceptación |
+| --- | --- | --- |
+| Completar inventario, medidas, vigencia y prearmadas | Investigación en 1–2; ingesta y comprobación en 2–3; cobertura en 4–6 | Registros concretos en 11a–11m con fuentes/fecha, gama actual, tallas originales y composición por slot; cada variante incluida funciona y se recupera. Una familia localizada no completa la tarea |
+| Cerrar diccionarios y manifiestos 3D | Primeros contratos/recursos en 1; diccionarios definitivos y validadores en 2; manifiestos y versiones completos en 4 | Tipos, códigos, obligatoriedad, unidades, límites y casos inválidos comprobados; anclajes y versiones por variante/talla coherentes con 03a/05. No copiar estimaciones visuales a especificaciones comerciales |
+| Diseñar e implementar administración de catálogo/prearmadas | Preparar bocetos en 1–2b; revisión visual, implementación y pruebas en 2b | ASCII de tablas/paneles, campos por categoría y acciones de borrador/publicación; formularios completos, permisos efectivos y errores/recuperación probados. Conservar UI IAM aprobada |
+| Preparar y validar recursos visuales/rendimiento | Recursos y dispositivo de referencia en 1; cobertura/optimización en 4; validación integral en 6 | Modelos/manifiestos, revisión de vistas y proporciones, tamaño transferido y métricas con dispositivo/navegador/red identificados; corregir hasta cumplir criterios de 05 sin reducir el alcance aprobado |
+
+La revisión estética se realiza sobre propuestas concretas dentro de la ejecución; no obliga al usuario a resolver SQL, índices, coordenadas o todas las medidas del catálogo. Preguntar cuando falte una decisión real de negocio o una preferencia visual necesaria, continuar las tareas independientes y registrar solo el bloqueo específico. No crear una aprobación general nueva por cada fase.
+
+Las pruebas y correcciones son parte del trabajo necesario para terminar cada función. Una tarea solo se marca completa con su evidencia; una prueba fallida sigue dentro de la fase hasta resolverse. La fase actual continúa siendo planificación: esta distribución no autoriza por sí sola ejecutar código, recursos o servicios.
 
 ### Contratos técnicos que debe cerrar el desarrollo
 
@@ -103,7 +118,7 @@ La prueba 3D temprana sirve para detectar límites de fidelidad y rendimiento an
 - [ ] Confirmar instalación reproducible con el lockfile elegido, build y ejecución de pruebas pertinentes.
 - [ ] Clasificar contenido reutilizable, revisar fuentes y retirar botones, cifras y promesas ficticias del nuevo recorrido.
 
-Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta comprobar si una parte del nuevo catálogo los utiliza. No borrar pnpm-lock.yaml ni pnpm-workspace.yaml por ser archivos no rastreados.
+Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta comprobar si una parte del nuevo catálogo los utiliza. Conservar pnpm-lock.yaml y pnpm-workspace.yaml, ya versionados; revisar su coherencia durante la fase 0.
 
 **Aceptación:** build correcto, pruebas arrancan y pasan para lo conservado, un único gestor documentado y contenido de prueba identificado. No se declara arreglado un fallo solo por ocultarlo en configuración.
 
@@ -119,13 +134,15 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 - [ ] Crear controles compartidos cuando exista comportamiento común, con etiquetas y errores propios por uso; sin clonar componentes por cada campo ni crear un formulario universal innecesario.
 - [ ] Aplicar el vocabulario visible y los mapeos de resultados internos; revisar la jerarquía de títulos de los recorridos implementados.
 - [ ] Implementar una primera pantalla de catálogo y la estructura del configurador con datos de prueba explícitos.
+- [ ] Preparar los bocetos pendientes de portada y administración de catálogo/prearmadas; revisar propuestas concretas dentro de las fases 1–2b, conservando las composiciones ya aprobadas.
+- [ ] Iniciar la investigación del inventario y las referencias físicas de 11a–11m; registrar vigencia, medidas y vacíos sin inventar variantes.
 - [ ] Elegir una bicicleta base de referencia y registrar las vistas/medidas disponibles y sus incertidumbres.
 - [ ] Mostrar cuadro, horquilla, ruedas, neumáticos, cockpit y transmisión representativos.
 - [ ] Probar cambio de una pieza, un acabado y controles de cámara.
 - [ ] Registrar tamaños de archivo, primera vista y fluidez en escritorio y un móvil de referencia.
 - [ ] Revisar el conjunto desde lateral, frente, superior y tres cuartos con el nivel de aproximación aceptado.
 
-**Aceptación:** bicicleta reconocible y proporcionada, interfaz utilizable en móvil, prueba de cambio visible y ausencia de dependencia de CAD oficial para todas las piezas. Si no se alcanza la calidad visual, ajustar modelos y alcance aquí antes de multiplicar variantes.
+**Aceptación:** bicicleta reconocible y proporcionada, interfaz utilizable en móvil, prueba de cambio visible y ausencia de dependencia de CAD oficial para todas las piezas. Si no se alcanza la calidad visual, ajustar estrategia gráfica, recursos y complejidad de geometría antes de multiplicar variantes. No reducir funciones ni inventario aprobado para cerrar la fase; cualquier reducción de alcance requiere decisión del usuario.
 
 ## Fase 2 · Supabase, datos y autenticación
 
@@ -135,10 +152,12 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 - [ ] Comprobar teclado móvil, autocompletado, errores asociados, conservación del correo y retorno al origen; no añadir campos de perfil, textos de relleno o panel fotográfico en móvil.
 
 - [ ] Preparar en supabase/migrations y aplicar al proyecto Cloud, conservando historial según [supabase/README.md](../../supabase/README.md), las migraciones de doce tablas propias —ocho de negocio y cuatro IAM—, restricciones, índices y RLS de [03](03-datos-y-operaciones.md), [03a](03a-esquema-y-campos.md) y [04](04-autenticacion-y-acceso.md); publicación/transacciones y composiciones prearmadas verificadas.
+- [ ] Crear en esta fase el núcleo IAM requerido por Auth/RLS: roles/permisos base protegidos, provisionamiento de registro siempre user ignorando metadata, consulta de acceso propio y helpers de autorización vigentes. Ordenar las migraciones para que las políticas/registro no dependan de funciones o datos que recién se crearían en 2b.
 - [ ] Cerrar diccionarios por categoría y casos de frontera del documento 09 antes de publicar variantes; no declarar datos aproximados como especificaciones reales.
 - [ ] Medir consultas representativas con EXPLAIN (ANALYZE, BUFFERS) y roles/RLS reales en entorno de prueba; índices según operadores, paginación estable y todos los filtros técnicos sobre la misma variante.
 - [ ] Integrar TanStack Query sin duplicar el borrador; probar caché por usuario, cancelación y respuestas tardías tras cambio de cuenta, sin reintento automático inseguro de guardados.
-- [ ] Preparar seed pequeño y verificable; no copiar automáticamente todas las afirmaciones del prototipo.
+- [ ] Completar fichas de variantes, medidas, vigencia y composiciones prearmadas de 11a–11m como trabajo de esta fase; revisar tallajes originales y excepciones.
+- [ ] Preparar un seed inicial pequeño y verificable para integración y completar después la ingesta de todo el inventario acordado antes de aceptar el catálogo; no copiar automáticamente todas las afirmaciones del prototipo.
 - [ ] Resolver fotos locales por `image_key` y comprobarlas en el build publicado; configurar Storage y rutas versionadas si se usan modelos GLB importados.
 - [ ] Integrar el cliente Supabase con los equivalentes públicos VITE de las variables actuales; no renombrar/eliminar las credenciales existentes de herramientas ni exponer secretos.
 - [ ] Implementar registro, entrada, confirmación, callback, recuperación y cierre según el documento 04.
@@ -153,8 +172,7 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 
 **Objetivo:** ejecutar permisos y administración completos según [04a](04a-iam-roles-y-permisos.md) y [04b](04b-administracion-y-operaciones.md), conservando el acceso común.
 
-- [ ] Crear catálogo de permisos implementados, roles base protegidos y provisionamiento de registro siempre user, ignorando payload/metadata de rol.
-- [ ] Implementar consulta de acceso propio, función de autorización vigente y protección RLS/RPC; iam no expuesto como tablas ni accesible por escritura directa.
+- [ ] Reutilizar y verificar el núcleo IAM, roles base, provisionamiento user, consulta de acceso y helpers ya implantados en fase 2; iam sigue sin exposición de tablas ni escritura directa. Esta fase desarrolla las operaciones y UI administrativas, no retrasa prerrequisitos de autenticación/RLS.
 - [ ] Ejecutar bootstrap del primer admin por el responsable del proyecto, sin credenciales predeterminadas ni ascenso automático del primer registro.
 - [ ] Reproducir [06c](06c-administracion-usuarios-roles-y-permisos.md): tres pestañas integradas, tablas, búsqueda/paginación reales, crear usuario desde cabecera y detalle en panel derecho; adaptación móvil accesible.
 - [ ] Implementar matriz de permisos: agrupación por área, roles horizontales, sistema en lectura, personalizado editable, borrador local, descarte y guardado transaccional por lote con revisiones; sin concesiones por usuario.
@@ -164,6 +182,7 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 - [ ] Versionar cada Edge Function bajo supabase/functions/<nombre>/index.ts con su configuración/dependencias necesarias antes del despliegue Cloud.
 - [ ] Implementar listado paginado de cuentas, invitación desde Edge Function y asignación segura por identidad; no exponer Auth Admin o correos de otras cuentas a usuarios sin permiso.
 - [ ] Completar callback invite y establecimiento de contraseña; comprobar cuenta existente, enlace vencido/repetido, timeout y resultado parcial entre invitación y rol sin promoción indebida.
+- [ ] Completar y revisar los bocetos ASCII de administración de catálogo/prearmadas: tablas, panel lateral, campos condicionales por categoría y acciones de borrador/publicación. Esta tarea pertenece a la fase; no se exige resuelta antes de iniciar el plan.
 - [ ] Implementar edición/publicación de catálogo y prearmadas con permisos separados, diccionarios de categoría y protección de variantes/recursos usados; sin editar SQL o subir GLB desde UI.
 - [ ] Revalidar permisos y limpiar caché/formularios administrativos ante revocación, cambio de cuenta o denegación; sin confiar en JWT/metadata o interfaz como única autoridad.
 
@@ -188,9 +207,9 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 
 **Aceptación:** búsqueda y filtros cambian resultados; una ficha identifica su variante; comparación muestra diferencias correctas; los datos ausentes no se convierten en cero, precios inventados o textos `undefined`.
 
-## Fase 4 · Configurador de la bicicleta de referencia
+## Fase 4 · Configurador completo del inventario
 
-**Objetivo:** completar un montaje útil con las categorías principales.
+**Objetivo:** completar el configurador para todas las categorías y variantes acordadas de enduro y descenso, usando la bicicleta de referencia como caso de comprobación, sin limitar a ella la entrega.
 
 - [ ] Definir y validar unidades, ejes, origen y manifiestos de recursos.
 - [ ] Iniciar desde cuadro o desde cada referencia prearmada/talla acordada; validar referencias retiradas, conservación de intención durante acceso y guardado explícito sin cambios silenciosos.
@@ -270,7 +289,7 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 | Color libre en pieza no habilitada | Se rechaza el dato inválido; se mantiene el acabado válido | RPC con entrada manipulada |
 | Timeout tras crear montaje | Se localiza por el mismo ID y no se duplica | Interrumpir respuesta tras confirmar transacción |
 | Cambia recurso publicado | El montaje anterior conserva su versión | Integración con variantes versionadas |
-| Cambios rápidos de piezas | Prevalece la última selección | Prueba de interfaz con cargas demoradas |
+| Cambios rápidos de piezas | Prevalece la última selección preparada sobre sus dependencias vigentes | Demorar la carga de una horquilla, cambiar cuadro y comprobar que no se aplican anclajes calculados para la base anterior |
 | Falla GLB o WebGL | Lista y borrador siguen disponibles | Simular fallo de recursos/contexto |
 | Foto local del componente | Se resuelve después del build; clave ausente usa placeholder | Comprobar catálogo en preview de producción |
 | Pieza procedimental | Se dibuja con parámetros disponibles sin solicitar un GLB ni subir geometría a Storage | Inspeccionar peticiones durante su construcción e interacción |
@@ -330,3 +349,7 @@ La propuesta de cuatro cuadros/una talla se sustituye por la cobertura de marcas
 Antes de cerrar fase 2: verificar diccionarios, códigos y fuentes por categoría, incluida estructura de mantenimiento y nuevas interfaces de pedalier; antes de cerrar fases 3–5: filtros aplicables, cada variante y talla acordadas, recursos inmutables, avisos, guardado y recuperación. Las familias localizadas no se contabilizan como variantes ingeridas ni como cobertura final validada.
 
 Delimitación de ingesta confirmada después: solo gama actual documentada. Exigir evidencia de vigencia por referencia y no incluir históricos por tener manual; conservarlos únicamente como contraejemplos. Comprobación documental de esta ampliación: 34 Markdown, 222 enlaces locales, 30 anclas y 71 bloques cerrados sin errores; JSON de ejemplo válido y `git diff --check` limpio. No se ejecutaron pruebas de aplicación o servicios.
+
+### Dictamen documental del 19 de octubre de 2026
+
+La [reevaluación multiagente de 10](10-auditoria-integral-de-planes.md#reevaluación-de-procedencia--19-de-octubre-de-2026) considera procedente iniciar las bases cuando el usuario autorice implementación. Los contratos corregidos mantienen el alcance completo. Completar variantes/vigencia, diccionarios finales, recursos y UI administrativa de negocio son tareas dentro de las fases, con dependencias internas y criterios de aceptación; no requisitos externos que el usuario deba resolver antes de iniciar el plan. El dictamen no inicia la implementación ni certifica el producto.

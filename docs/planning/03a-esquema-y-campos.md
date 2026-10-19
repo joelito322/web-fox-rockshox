@@ -258,7 +258,7 @@ specs
 └── adjustments
 ```
 
-El cambio trasero incluye `associated_shifter` dentro de `specs`: marca/modelo, accionamiento e interfaz documentados, sin crear otra entidad seleccionable. Sus nodos y anclajes viven en el manifiesto del recurso compuesto, no en medidas técnicas inventadas. El precio corresponde al producto observado por la fuente; no se presenta como precio del conjunto con mando si la fuente no lo incluye. Los componentes integrados adicionales dependen del inventario, según [fases](08-fases-y-validacion.md#decisiones-de-producto-pendientes).
+El cambio trasero incluye `associated_shifter` dentro de `specs`: marca/modelo, accionamiento e interfaz documentados, sin crear otra entidad seleccionable. Sus nodos y anclajes viven en el manifiesto del recurso compuesto, no en medidas técnicas inventadas. El precio corresponde al producto observado por la fuente; no se presenta como precio del conjunto con mando si la fuente no lo incluye. Los componentes integrados adicionales dependen del inventario, según [fases](08-fases-y-validacion.md#trabajo-de-concreción-incluido-en-el-plan).
 
 ### Alcance de variantes y precios
 

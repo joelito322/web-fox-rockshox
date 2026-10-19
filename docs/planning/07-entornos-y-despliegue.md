@@ -84,9 +84,9 @@ Primero preparar la fuente local y después aplicarla al proyecto Cloud autoriza
 
 ## Compilación objetivo en Netlify
 
-La fase 0 fijará un gestor y su versión. La propuesta es pnpm, coherente con el lockfile ya presente, tras revisar `pnpm-workspace.yaml` y el comportamiento de scripts de instalación de esbuild. Estos archivos eran trabajo no versionado al iniciar la planificación y no se modifican aquí.
+La fase 0 fijará un gestor y su versión. La propuesta es pnpm, coherente con el lockfile ya presente, tras revisar `pnpm-workspace.yaml` y el comportamiento de scripts de instalación de esbuild. Estos archivos eran trabajo no versionado al iniciar la planificación; ya quedaron versionados en los commits documentales posteriores, sin reparar aún sus incompatibilidades.
 
-Se añadirá `packageManager` con versión exacta en `package.json` y se versionará el lockfile verificado. Elegir una versión de Node LTS admitida por las dependencias y Netlify, y fijarla para local y build. La versión se decide al reparar la herramienta de pruebas, no se adivina en estos planes.
+Se añadirá `packageManager` con versión exacta en `package.json` y se verificará/actualizará el lockfile ya versionado según esa elección. Elegir una versión de Node LTS admitida por las dependencias y Netlify, y fijarla para local y build. La versión se decide al reparar la herramienta de pruebas, no se adivina en estos planes.
 
 Configuración prevista, a crear durante implementación:
 
