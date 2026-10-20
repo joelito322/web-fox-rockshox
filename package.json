@@ -1,5 +1,5 @@
 {
-  "name": "contacta-1",
+  "name": "atlas-mtb",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,21 +7,41 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "pnpm run build && pnpm run test"
   },
   "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "@react-three/drei": "9.122.0",
+    "@react-three/fiber": "8.18.0",
+    "@supabase/supabase-js": "^2.118.0",
+    "@tanstack/react-query": "^5.104.4",
+    "lucide-react": "^1.59.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.4",
+    "three": "^0.186.1",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "@vitejs/plugin-react": "^4.3.1",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "5.2.0",
     "jsdom": "^27.3.0",
+    "supabase": "2.121.0",
     "typescript": "^5.5.4",
-    "vite": "^5.4.2",
-    "vitest": "^4.0.16"
+    "vite": "7.3.7",
+    "vitest": "4.1.12"
+  },
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": "^24.22.0",
+    "pnpm": "12.6.0"
   }
 }
