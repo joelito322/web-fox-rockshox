@@ -99,7 +99,7 @@ Interpretación aprobada de la referencia: limpieza, protagonismo de la biciclet
 - Botones de forma sencilla, bordes nítidos y pocas sombras. El carácter viene del encuadre, contraste y tipografía, no de sumar adornos.
 - Intensidad visual concentrada en la portada y momentos de selección; navegación, acceso y guardado conservan calma y previsibilidad.
 
-La referencia se aplica al estilo UI/UX. Contenido, orden de vistas, acciones y marca pertenecen a ATLAS MTB. No trasladar tienda, carrito, promociones, categorías comerciales o extensión de la portada de COMMENCAL al alcance. Los recursos de presentación se preparan para nuestro producto; no se reutilizan su logotipo, imágenes o textos como contenido propio.
+La referencia se aplica al estilo UI/UX. Contenido, orden de vistas, acciones y marca pertenecen a ATLAS MTB. No trasladar tienda, carrito, promociones, categorías comerciales o extensión de la portada de COMMENCAL al alcance. Los recursos de presentación se preparan para nuestro producto; no se reutilizan su logotipo ni textos como contenido propio. Las fotografías externas de la nueva portada se seleccionan con fuente y licencia registradas, sin atribuirlas a ATLAS ni a un montaje generado por la aplicación.
 
 La marca aprobada es **ATLAS MTB** y el eslogan es **Cada pieza define tu camino**. El diseño anterior de pantallas puede sustituirse por completo. Los wireframes describen jerarquía y posiciones; no son el diseño final ni obligan a reproducir cada caja como una tarjeta.
 
@@ -139,13 +139,13 @@ El movimiento forma parte de la dirección solicitada. La implementación debe i
 
 | Contexto | Comportamiento previsto | Límite |
 | --- | --- | --- |
-| Portada | Propuesta preferente: secuencia corta prerenderizada de un montaje, con giro lento o acercamiento de cámara | Una sola zona animada, sin sonido; imagen estática inmediata y alternativa si el vídeo falla |
+| Portada | Dirección actual solicitada: fotografías reales de MTB que alternan mediante fundido y acercamiento sutil | Una sola zona animada, sin sonido; mantener una foto disponible si falla otra y conservar las acciones si fallan todas |
 | Botones y navegación | Cambios de contraste y respuesta de pulsación/foco | 120–180 ms como referencia; no desplazar el objetivo bajo el cursor |
 | Selectores y paneles | Apertura/cierre breve que conserve orientación y espacio de trabajo | 180–240 ms como referencia; sin bloquear teclado o nuevas acciones |
 | Configurador | Transición de cámara al elegir una vista y cambio de acabado visible | 250–450 ms como referencia; interrumpible; no animar un cambio de tamaño como si fuera una simulación física |
 | Cambio de componente | Mantener contexto, mostrar carga local si hace falta y presentar la pieza elegida | No hacer desaparecer toda la bicicleta ni añadir explosiones de piezas decorativas |
 
-La secuencia de portada es una propuesta de recurso pendiente de producir y revisar, no un vídeo ya disponible ni una animación observada y medida en COMMENCAL. Muestra un montaje ilustrativo; el editor sigue requiriendo sesión. Preferir este recurso a cargar Three.js para decorar la portada. No añadir un carrusel automático de campañas ni alternar textos y acciones mientras la persona intenta leer o entrar.
+La petición del usuario del 19/10/2026 sustituye la preferencia anterior de una secuencia prerenderizada y la exclusión de carrusel: la portada usa una campaña breve de fotografías reales que cambian automáticamente, con titulares y acciones fijos. No incorpora promociones comerciales ni un editor público. Intervalo inicial de seis segundos; controles manuales y pausa. Las imágenes se descargan y optimizan como assets locales, con autor/fuente registrados; no se cargan desde webs de terceros en cada visita. La primera imagen se prioriza y las siguientes se preparan progresivamente.
 
 Si el movimiento de portada se reproduce en bucle, ofrecer un control discreto y accesible «Pausar animación»/«Reproducir animación». Respetar `prefers-reduced-motion`: imagen fija y cambios de interfaz sin desplazamientos animados. No bloquear el acceso por una reproducción automática denegada. Pausar el recurso cuando la pestaña esté oculta o salga de pantalla. Evitar destellos, paralaje intenso, scroll secuestrado, rotación automática del montaje durante edición y animaciones constantes de controles.
 
@@ -174,3 +174,8 @@ Los bocetos aprobados se conservan en esos documentos. La separación no cambia 
 - Toda acción visible funciona en la fase entregada; las pendientes se omiten o se identifican sin fingir interacción.
 
 El acabado final se revisa junto con los recorridos, las proporciones y la referencia visual elegida. La elegancia proviene de jerarquía, alineación, espacio y consistencia, no de aumentar efectos visuales.
+
+
+### Revisión de identidad y portada · 19/10/2026
+
+Cambio de dirección solicitado: una firma ATLAS MTB propia, más llamativa y profesional; escaparate fresco, informal y agresivo ligado a downhill/enduro. Monograma geométrico inclinado, firma de letras vectoriales y corte de velocidad; versión clara/oscura y símbolo de favicon. Conservar nombre/eslogan. Titular de portada Barlow Condensed 800 italic con escala grande y acento lima; textos y formularios conservan legibilidad. La intensidad no se traslada a las tablas o al configurador. La composición y los estados están en 06a; el usuario aprobó el resultado visual final, incluidas las fotografías revisadas. Evidencia técnica en 12.

@@ -154,3 +154,18 @@ Las pruebas cloud crean cuentas temporales y/o realizan operaciones transacciona
 El conflicto de revisión usa `PT409` en vez de `40001`: este último provocó reintentos de PostgREST durante una comprobación real. La corrección se aplicó en la migración 004 y se comprobó de nuevo. [Incidencia documentada por Supabase](https://supabase.com/docs/guides/troubleshooting/high-cpu-and-infinite-transaction-retries-when-using-custom-error-codes-in-rpc-functions-77326b).
 
 Ejecutar las suites de Playwright de forma secuencial entre procesos: comparten puerto 4180 y carpeta de resultados. La concurrencia interna de una misma suite sí está configurada. El runner autenticado oculta contraseñas y tokens de su salida, y limpia las cuentas, composiciones y recursos auxiliares.
+
+
+## Identidad y portada fotográfica aprobadas · 19/10/2026
+
+El usuario aprobó el resultado visual final de la portada y solicitó versionar estos cambios por partes. Se reemplazó la ilustración de entrada por tres fotografías reales: salto alpino en Leysin, salto lateral en Sun Peaks y sendero visto desde el aire en Haldon Forest. Los seis WebP locales incluyen versiones móvil/escritorio; autores, fuentes y licencia en [README de fotografías](../../src/assets/images/landing/README.md). La primera imagen tiene prioridad y las siguientes se preparan progresivamente, sin hotlink durante la visita.
+
+Identidad compartida: firma vectorial original `BrandLogo`, monograma y favicon; titular pesado e inclinado, fondo carbón y acento lima en portada. Nombre, eslogan, rutas y acceso autenticado al configurador conservan sus contratos. Dirección y bocetos en [06](06-ui-y-ux.md) y [06a](06a-portada-y-acceso.md).
+
+Comprobaciones ejecutadas sobre la selección final:
+
+- `pnpm run check`: build TypeScript/Vite y 35 pruebas de 11 archivos correctos. Vite conserva avisos de tamaño de bundles y anotaciones de una dependencia; el build finalizó correctamente.
+- `pnpm exec playwright test tests/browser/landing.spec.ts tests/browser/public.spec.ts`: 14 pruebas correctas, escritorio y Pixel 7 emulado en Chromium. Incluyen rotación, pausa, controles manuales, movimiento reducido, imagen retrasada conservando la anterior, fallo de imágenes sin bloquear acceso y recorridos públicos.
+- `node scripts/check-client-secrets.mjs`: sin credenciales privilegiadas configuradas en el build del cliente.
+
+La aprobación visual corresponde a esta portada e identidad. Las pruebas móviles son emuladas; no sustituyen Android físico ni cierran los pendientes generales de Auth, inventario, 3D o despliegue. Este trabajo no modifica Supabase Cloud.

@@ -2,7 +2,7 @@
 
 Relacionado: [principios UI/UX](06-ui-y-ux.md), [espacio de trabajo](06b-espacio-de-trabajo.md), [Auth](04-autenticacion-y-acceso.md) y [fases](08-fases-y-validacion.md).
 
-Estado: planificación. Se conservan los esquemas y decisiones aprobados; todavía no se implementan pantallas ni recursos. Este documento es la referencia de composición de portada y acceso.
+Estado: referencia de composición durante implementación parcial. La revisión de portada solicitada el 19/10/2026 se describe abajo; la aceptación y sus límites se registran en 12. Se conservan las composiciones aprobadas de acceso.
 
 ## Estructura de navegación y portada pública
 
@@ -156,3 +156,54 @@ Registro móvil conserva esta estructura y añade confirmación de contraseña, 
 - Recuperación pide solo correo. «Nueva contraseña» se habilita tras verificar la recuperación. Reutilizar estructura, controles y estilos sin convertir todas las pantallas en un formulario genérico con campos innecesarios.
 
 Los títulos normales permanecen «Iniciar sesión» y «Crear cuenta», incluso al llegar desde «Probar». La intención se conserva internamente sin añadir otra explicación de la pantalla. Tras completar el acceso se consulta el permiso vigente y se aplica la regla única de destino de 04; user/admin mantienen el recorrido aprobado y los roles personalizados continúan solo acciones autorizadas. Un rol sin permiso no abre el editor ni recibe un guardado aparente, y una sesión válida no entra en bucle de login por autorización denegada. Si se cancela, se vuelve al origen público. La sesión caducada admite el título contextual «Vuelve a entrar para continuar» y recuperación local solo de esa cuenta cuando conserve los permisos necesarios.
+
+
+## Revisión de portada solicitada · 19/10/2026
+
+Sustituir la ilustración principal por tres fotografías reales de MTB, conservando el eslogan y los destinos de acceso. Se implementa como campaña visual con texto y acción fijos, no como catálogo, tienda o tutorial.
+
+```text
+ESCRITORIO
++------------------------------------------------------------------+
+| [ATLAS MTB · firma angular]                  Catálogo    [Entrar] |
++------------------------------------------------------------------+
+|                                                                  |
+| ENDURO / DESCENSO                                                |
+| CADA PIEZA                   FOTOGRAFÍA REAL                      |
+| DEFINE TU                    de sendero / bicicleta / acción       |
+| CAMINO.                      con recorte cuidado                   |
+| Tu bici. Tus reglas.                                             |
+| [Crear mi bicicleta ↗]                                           |
+| Explorar componentes                01 / 03   [←] [Ⅱ] [→]         |
+|                           Crédito fotográfico                     |
++------------------------------------------------------------------+
+
+MÓVIL
++--------------------------------+
+| [ATLAS MTB]  Catálogo  [Entrar] |
++--------------------------------+
+|       FOTOGRAFÍA DE FONDO       |
+| ENDURO / DESCENSO              |
+| CADA PIEZA                     |
+| DEFINE TU                      |
+| CAMINO.                        |
+| Tu bici. Tus reglas.           |
+| [Crear mi bicicleta ↗]         |
+| Explorar componentes           |
+| 01 / 03    [←] [Ⅱ] [→]         |
+| Crédito fotográfico            |
++--------------------------------+
+```
+
+- Fondo carbón y fotografías a sangre; gradiente para sostener contraste. Tipo pesado e inclinado, lima puntual y cortes diagonales; sin destellos ni animación de títulos/acciones.
+- Rotación cada seis segundos; carga prioritaria de la primera foto y preparación progresiva de la siguiente. Si una foto falla, conservar una disponible y mantener entrada/catálogo operativos.
+- Pausa explícita y navegación manual con botones accesibles, estado de foto y foco visible. Pausar al ocultarse la pestaña, salir el bloque de pantalla o interactuar con ratón/teclado.
+- Con movimiento reducido: imagen fija, sin avance automático ni zoom; botones para cambiar manualmente sin fundido.
+- Nombre ATLAS MTB accesible una sola vez; símbolo decorativo junto a firma. El nuevo logotipo se comparte con la cabecera general, con contraste para claro/oscuro; sin rediseñar los formularios de acceso.
+- Fuentes/autores de las imágenes en `src/assets/images/landing/README.md`; no se presentan como un modelo del catálogo o una composición generada por ATLAS.
+
+Aceptación de este cambio: foto real visible en escritorio/móvil, titular y acciones estables, cambio manual/automático, pausa/movimiento reducido y error de imagen; logo legible en claro/oscuro. Registrar capturas y comprobaciones en 12. No crear commits de este cambio sin nueva solicitud explícita.
+
+Revisión posterior del usuario: conserva logo, tipografía y composición, y solicita fotografías más potentes, expansivas y explorables. Sustituir la selección inicial por salto alpino de Leysin, salto lateral de Sun Peaks y vista aérea del trazado de Haldon Forest; encuadres con profundidad y terreno, sin modificar los destinos o el eslogan. Fuentes/autores actualizados en el README de imágenes.
+
+Aceptación visual: el usuario aprobó el resultado final de esta portada, incluida la selección revisada de fotografías, antes de solicitar los commits por partes. Esta aceptación corresponde a portada e identidad; no cierra los pendientes del resto del proyecto.
