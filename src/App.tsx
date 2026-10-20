@@ -1,55 +1,114 @@
-import { useEffect, useState } from 'react'
-import './index.css'
-import { getSlugFromHash } from './utils/routing'
-import Home from './pages/Home'
-import ModelDetail from './pages/ModelDetail'
-import Compare from './pages/Compare'
-import { CompareProvider } from './context/CompareContext'
-
-export default function App() {
-  const [slug, setSlug] = useState<string | null>(getSlugFromHash())
-  const [page, setPage] = useState<string>('home')
-
-  useEffect(() => {
-    const handleHashChange = () => {
-      const hash = window.location.hash
-      if (hash.startsWith('#/modelo/')) {
-        setPage('model')
-        setSlug(getSlugFromHash())
-      } else if (hash === '#/compare') {
-        setPage('compare')
-        setSlug(null)
-      } else {
-        setPage('home')
-        setSlug(null)
-      }
-    }
-
-    window.addEventListener('hashchange', handleHashChange)
-    handleHashChange() // Initial check
-    return () => window.removeEventListener('hashchange', handleHashChange)
-  }, [])
-
-  const renderPage = () => {
-    switch (page) {
-      case 'model':
-        return slug ? <ModelDetail slug={slug} /> : <Home />
-      case 'compare':
-        return <Compare />
-      default:
-        return <Home />
-    }
-  }
-
-  return (
-    <CompareProvider>
-      <div>
-        <nav className="main-nav">
-          <a href="#/">Home</a>
-          <a href="#/compare">Compare</a>
-        </nav>
-        {renderPage()}
+import { lazy, Suspense } from "react";
+import {
+  createBrowserRouter,
+  Link,
+  Navigate,
+  RouterProvider,
+} from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { AuthProvider } from "./features/auth/provider";
+import { RequirePermission } from "./features/auth/RequirePermission";
+const AuthPage = lazy(() => import("./features/auth/Pages"));
+const AuthCallback = lazy(() =>
+  import("./features/auth/Pages").then((module) => ({
+    default: module.AuthCallback,
+  })),
+);
+import { Layout } from "./app/Layout";
+import Home from "./app/Home";
+import { Loading } from "./components/ui/Feedback";
+const CatalogPage = lazy(() => import("./features/catalog/Pages"));
+const BicyclesPage = lazy(() => import("./features/catalog/Bicycles"));
+const ComparePage = lazy(() => import("./features/compare"));
+const GaragePage = lazy(() => import("./features/garage/Page"));
+import "./index.css";
+const Configurator = lazy(() => import("./features/configurator/Page"));
+const Admin = lazy(() => import("./features/admin/Page"));
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: { retry: 1, refetchOnWindowFocus: false },
+    mutations: { retry: false },
+  },
+});
+function LegacyRedirect() {
+  const hash = location.hash;
+  if (hash.startsWith("#/modelo/"))
+    return (
+      <Navigate
+        replace
+        to={`/componentes/${encodeURIComponent(hash.slice(9))}`}
+      />
+    );
+  return <Home />;
+}
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    errorElement: (
+      <div className="content">
+        <h1>Esta vista no está disponible</h1>
+        <p>Vuelve al catálogo para continuar.</p>
+        <Link to="/componentes">Abrir catálogo</Link>
       </div>
-    </CompareProvider>
-  )
+    ),
+    children: [
+      { path: "/", element: <LegacyRedirect /> },
+      { path: "/componentes/:slug?", element: <CatalogPage /> },
+      { path: "/catalogo", element: <Navigate replace to="/componentes" /> },
+      { path: "/bicicletas", element: <BicyclesPage /> },
+      { path: "/comparar", element: <ComparePage /> },
+      { path: "/entrar", element: <AuthPage mode="login" /> },
+      { path: "/registro", element: <AuthPage mode="register" /> },
+      { path: "/recuperar", element: <AuthPage mode="recover" /> },
+      { path: "/auth/callback", element: <AuthCallback /> },
+      { path: "/nueva-contrasena", element: <AuthPage mode="password" /> },
+      {
+        path: "/mis-bicicletas",
+        element: (
+          <RequirePermission permission="builds.read_own">
+            <GaragePage />
+          </RequirePermission>
+        ),
+      },
+      {
+        path: "/configurador/:buildId?",
+        element: (
+          <RequirePermission permission="configurator.use">
+            <Suspense fallback={<Loading label="Preparando configurador" />}>
+              <Configurator />
+            </Suspense>
+          </RequirePermission>
+        ),
+      },
+      {
+        path: "/administracion/:tab?",
+        element: (
+          <Suspense fallback={<Loading />}>
+            <Admin />
+          </Suspense>
+        ),
+      },
+      {
+        path: "*",
+        element: (
+          <div className="content narrow">
+            <p className="eyebrow">404 / Fuera de ruta</p>
+            <h1>Este camino no existe.</h1>
+            <Link className="button dark" to="/componentes">
+              Volver al catálogo
+            </Link>
+          </div>
+        ),
+      },
+    ],
+  },
+]);
+export default function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <AuthProvider>
+        <RouterProvider router={router} />
+      </AuthProvider>
+    </QueryClientProvider>
+  );
 }
