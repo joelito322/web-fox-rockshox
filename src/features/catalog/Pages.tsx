@@ -25,7 +25,7 @@ import {
   type Category,
 } from "./model";
 import { useCatalog, useComponent, useFacets, filterKeys } from "./api";
-import { modelImages } from "../../data/images";
+import { componentImage } from "../../data/images";
 import { Drawer } from "../../components/ui/Drawer";
 import { Empty, Loading, Notice } from "../../components/ui/Feedback";
 import { VariantInformation } from "./VariantInformation";
@@ -38,7 +38,7 @@ function ProductCard({
   component: ComponentModel;
   onOpen: () => void;
 }) {
-  const photo = modelImages[component.image_key ?? ""];
+  const photo = componentImage(component);
   return (
     <button className="product-card" onClick={onOpen}>
       <div className="product-media">
@@ -406,7 +406,7 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
   const choices = requested && !requested.selectable
     ? [requested, ...available]
     : available.length ? available : variant ? [variant] : [];
-  const photo = modelImages[variant?.image_key ?? component.image_key ?? ""];
+  const photo = componentImage(component, variant);
   if (!variant) return <Empty title="Sin variantes disponibles" />;
   return (
     <>
@@ -417,6 +417,7 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
           <Layers3 size={82} strokeWidth={0.7} />
         )}
       </div>
+      {photo && <p className="representation-label">Foto de referencia</p>}
       <p className="eyebrow">{component.brands.name}</p>
       <h2 className="detail-title">{component.name}</h2>
       <p className="muted">{component.description}</p>
