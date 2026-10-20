@@ -1,6 +1,6 @@
 # 12 · Estado de implementación
 
-Actualizado: 19 de octubre de 2026. Ejecución parcial del alcance de [08](08-fases-y-validacion.md), sin declarar la entrega completa. Los commits documentales previos se conservan; este lote de implementación parcial se versiona por responsabilidad ante la nueva solicitud explícita del usuario. Los cambios futuros requieren otra solicitud de commits. No hay despliegue de frontend en Netlify.
+Actualizado: 20 de octubre de 2026. Ejecución parcial del alcance de [08](08-fases-y-validacion.md), sin declarar la entrega completa. Los commits documentales previos se conservan; este lote de implementación parcial se versiona por responsabilidad ante la nueva solicitud explícita del usuario. Los cambios futuros requieren otra solicitud de commits. No hay despliegue de frontend en Netlify.
 
 ## Implementado y comprobado
 
@@ -221,3 +221,26 @@ La emulación y las capturas no sustituyen revisión física Android ni aceptaci
 ## Versionado solicitado por partes · 19/10/2026
 
 El usuario solicitó explícitamente comitear los cambios acumulados de estas revisiones. Se separan por propósito: transiciones compartidas y pruebas; fotografías/resolver/procedencia y comprobación de cobertura; galerías deportivas/ancho adaptable y recorridos; documentación y contexto de AGENTS. Al reorganizar los fragmentos se conservó una copia temporal del índice anterior y todos los archivos de trabajo. Comprobación previa del resultado completo: build, 38 pruebas unitarias, exclusión de entornos, revisión del diff y ausencia de secretos privilegiados en el cliente. Los resultados de navegador de cada entrega permanecen documentados arriba. Sin push; esta petición no autoriza commits de cambios futuros.
+
+
+## Mejora del inventario 3D completo · 20/10/2026
+
+Aplicados perfiles exteriores para los 53 modelos y 128 capturas actuales, con generadores v3/v4 y migraciones 014/015. V4 conserva volumen transversal en puentes/manillares y sitúa el amortiguador SCOTT dentro de su envolvente estimada. Se preservan recursos y variantes v1/v2/v3 para montajes guardados; las nuevas elecciones y cuatro composiciones usan v4. No se publicaron borradores ni cambiaron especificaciones comerciales.
+
+Build y 46 pruebas unitarias correctos; cobertura de renderizado de 128 capturas y cuatro cámaras por modelo; 53 representantes en móvil emulado; 16 pruebas de catálogo, seis de selección/sombras y cinco recorridos autenticados correctos. Transición Cloud con montajes previos, contratos SQL/IAM y limpieza de cuentas auxiliares comprobados. La cámara móvil mantiene su encuadre; las sombras se reutilizan durante órbita y se actualizan al cambiar piezas. Evidencia, resultados de rendimiento y límites en [12b](12b-evidencia-geometria.md).
+
+La cobertura funcional no certifica parecido del 90 % ni 30 fps en Android físico. La medición por software permanece por debajo del objetivo de 30 fps; no ocultar ese resultado ni cerrar la aceptación de fidelidad/rendimiento. Frontend local en 127.0.0.1:5174; sin despliegue nuevo a Netlify y sin commits de esta ampliación.
+
+## Revisión de siluetas · 20/10/2026
+
+El usuario rechazó la fidelidad de v3/v4 y aprobó construir primero un conjunto contrastable. Se preparó SUPREME DH V5 + FOX 40 MY27 + Bomber CR 250 × 75 como candidato local: [fuentes, reconstrucción y límites](../../models/reference-set/README.md), trazado por puntos, fuente Blender y tres GLB con volumen. Revisión interactiva en `/tests/fixtures/reference-review.html` del servidor Vite, separada del configurador publicado. La talla del dibujo no está identificada explícitamente y su calibración presenta unos 5 mm de diferencia de altura frente a la ficha M; los anchos, pivotes ocultos y la instalación de horquilla siguen estimados. No se declara precisión CAD ni un porcentaje de parecido.
+
+No se aplicaron nuevas migraciones, subidas a Storage o publicaciones Cloud para este candidato. La aceptación del conjunto, integración del montaje intercambiable y extensión al resto de modelos siguen dentro de las fases de 08/05a. Evidencia técnica y capturas en [12b](12b-evidencia-geometria.md).
+
+## Integración del método aprobado en el catálogo · v5
+
+V5 está aplicado en Cloud y en el configurador principal: ocho cuadros con trazado propio, cinco horquillas y cuatro amortiguadores exportados por talla/medida; detalles paramétricos de frenos, discos, transmisión, pedales, radios y neumáticos. Se conservan las operaciones dimensionales ya adecuadas y los auxiliares genéricos ATLAS. Cobertura de 53 modelos/128 capturas nuevas, 114 elecciones públicas y cuatro prearmadas, sin publicar los doce borradores. Fuente editable y límites en [models/catalog-v5](../../models/catalog-v5/README.md).
+
+Migración 016 aplicada; 76 capturas GLB referencian 74 archivos únicos de Storage. La transición probó dos montajes v4 guardados antes de publicar, su lectura/guardado posterior y cuatro montajes nuevos con color. Estado total: 512 capturas históricas y 510 recursos. Los modelos nuevos se usan al iniciar desde catálogo/prearmada; los montajes anteriores conservan su generación.
+
+Build y 56 pruebas correctos; 128 variantes renderizadas y 53 modelos revisados en cuatro cámaras, además de emulación móvil. Cinco recorridos autenticados pasaron, incluidos Nomad L/color, frenos y Sender incompleto; cuatro pruebas de selección de GLB en Chromium y dos en Brave Linux con perfil móvil correctas. API/SQL/IAM y permisos de Storage comprobados. Evidencia detallada y coste de rendimiento en [12b](12b-evidencia-geometria.md). No se certifica parecido global al 90 % ni 30 fps en Android: SwiftShader móvil observó 10,0/10,4 fps, y la aceptación física sigue pendiente. Sin despliegue Netlify y sin commits nuevos.

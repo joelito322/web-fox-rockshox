@@ -2,7 +2,7 @@
 
 Relacionado: [planes](../docs/planning/README.md), [entornos y accesos](../docs/planning/07-entornos-y-despliegue.md), [datos](../docs/planning/03-datos-y-operaciones.md) e [IAM](../docs/planning/04a-iam-roles-y-permisos.md).
 
-Estado: implementación autorizada en curso. Migraciones 001–013 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
+Estado: implementación autorizada en curso. Migraciones 001–016 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
 
 Herramientas: `node scripts/supabase.mjs push|status|deploy [función]`, con Node de `.node-version` y variables ya configuradas en `.env`. El despliegue usa `--use-api`; no levantar Docker ni Supabase local. Toda corrección posterior a una migración aplicada se escribe en una nueva migración.
 
@@ -82,3 +82,10 @@ La evidencia identifica qué se hizo y qué sigue pendiente. Validar permisos de
 - [Migraciones Supabase](https://supabase.com/docs/guides/deployment/database-migrations).
 - [Despliegue de Edge Functions](https://supabase.com/docs/guides/functions/deploy).
 - [Configuración de funciones](https://supabase.com/docs/guides/functions/function-configuration).
+
+
+La mejora de recursos exteriores v3/v4 conserva generaciones previas y publica sucesoras sin cambiar especificaciones comerciales. Fuentes y orden de reposición en [catalog/README.md](catalog/README.md); evidencia de cobertura, transición y límites en [12b](../docs/planning/12b-evidencia-geometria.md).
+
+## Recursos de referencia v5 · 20/10/2026
+
+La migración 016 aplica el contrato de montaje de mallas y el bucket público `models`, con límite de 8 MB por archivo y sin políticas de escritura de visitantes. Hay 76 capturas GLB (74 binarios únicos), 52 recursos paramétricos v5 y 114 variantes públicas seleccionables. `models/catalog-v5/` conserva fuentes Blender, trazados y huellas; `scripts/upload-visual-v5.mjs` verifica binarios antes de publicar. `validate-visual-v5-storage.mjs` comprobó descargas públicas y rechazo anónimo HTTP 403; `--cleanup` solo elimina borradores sin referencia en base ni fuente actual dentro de `catalog/v5/`. No elimina recursos históricos referenciados. La transición v4→v5 pasó con montajes guardados antes de publicar y reapertura posterior. Sin despliegue Netlify nuevo.

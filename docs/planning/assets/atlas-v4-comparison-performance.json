@@ -1,0 +1,41 @@
+{
+  "context": "Production review fixture; Chromium SwiftShader on this host, Android Pixel 7 viewport emulation (Chromium, not a real phone or a Brave binary), empty cache, 10 Mbps / 80 ms CDP network. No Auth/catalog latency and no physical phone thermal or sustained-GPU acceptance.",
+  "results": [
+    {
+      "device": "mobile",
+      "discipline": "enduro",
+      "viewport": [
+        412,
+        839
+      ],
+      "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Mobile Safari/537.36",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "firstCompleteFrameMs": 1166,
+      "transferredResourceBytes": 533608,
+      "drawnTrianglesIncludingShadows": 219434,
+      "drawCallsIncludingShadows": 125,
+      "interactionMs": 25463,
+      "renderedFramesDuringInteraction": 332,
+      "observedInteractionFps": 13,
+      "networkTransferredBytes": 535283
+    },
+    {
+      "device": "mobile",
+      "discipline": "downhill",
+      "viewport": [
+        412,
+        839
+      ],
+      "userAgent": "Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.8078.4 Mobile Safari/537.36",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "firstCompleteFrameMs": 991,
+      "transferredResourceBytes": 533608,
+      "drawnTrianglesIncludingShadows": 204010,
+      "drawCallsIncludingShadows": 123,
+      "interactionMs": 22593,
+      "renderedFramesDuringInteraction": 333,
+      "observedInteractionFps": 14.7,
+      "networkTransferredBytes": 535283
+    }
+  ]
+}

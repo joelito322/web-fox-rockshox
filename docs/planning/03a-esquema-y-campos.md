@@ -155,7 +155,11 @@ manifest
 ├── selectable_nodes
 ├── paintable_nodes
 └── parameters            Parámetros del recurso/generador
+    ├── size_scale        Escala habilitada por el contrato
+    └── profile_key       Perfil exterior explícito; obligatorio en atlas-bike-v3
 ```
+
+La migración 014 valida los perfiles v3 del manifiesto y su correspondencia con la categoría tanto en ingesta como en ediciones de variantes, modelos y recursos. El repertorio versionado está en `src/features/catalog/model/visual-profiles.ts`; el alcance y conservación de generaciones en [05a](05a-fidelidad-modelos.md). No se añade una tabla de perfiles.
 
 `finish_id` no es FK a una tabla de colores: se valida contra las opciones de la variante en la operación correspondiente. `material` y `parameters` no admiten código, scripts ni CSS arbitrario. El contrato espacial y los ejemplos conceptuales del manifiesto viven en [3D](05-configurador-3d.md#contrato-espacial); el adaptador de representación traduce los nombres del contrato a los de la librería sin exponerlos al usuario.
 
@@ -271,3 +275,7 @@ No crear variantes por cada posición de un ajuste, ni cruzar automáticamente t
 El precio se muestra como «Precio de referencia», acompañado de moneda y fecha, con fuente y mercado consultables. Una comparación con distintas monedas o mercados conserva esos contextos y no calcula diferencias porcentuales o rankings de precio engañosos. No hay conversiones automáticas, desglose tributario, ofertas, stock ni total presupuestado del montaje en este alcance. Si una fuente deja de estar disponible, se puede mantener la observación fechada, sin presentarla como precio vigente garantizado. Las referencias se revisan manualmente al preparar o actualizar catálogo; no se añade un trabajo programado.
 
 Los montajes guardan elecciones de piezas, no una cotización congelada. Al reabrir se puede ver la referencia de catálogo actual con su fecha; cambiarla no altera las piezas ni los colores guardados.
+
+### Extensión de manifiestos para recursos de referencia v5
+
+La migración 016 conserva el contrato anterior y añade dos parámetros opcionales: `mount_space` (`frame`, `fork`, `shock`) para GLB y `assembly_version: atlas-assembly-v5` para cuadros en ese espacio. `profile_key` sigue vinculando recurso y categoría. Los anclajes requeridos se comprueban también en SQL: cuadro (ejes/dirección/asiento/ojos), horquilla (eje y pletina) y amortiguador (ojos). La rotación local Y del anclaje `shock_upper` orienta el depósito en montajes v5. Los otros recursos no adquieren estos parámetros retroactivamente. Detalle geométrico y reconstrucción en [05a](05a-fidelidad-modelos.md) y [models/catalog-v5](../../models/catalog-v5/README.md), sin añadir tablas.

@@ -159,3 +159,12 @@ El plan gratuito sirve como punto de partida, no como capacidad ilimitada. Revis
 - [Supabase: migraciones remotas](https://supabase.com/docs/guides/deployment/database-migrations).
 - [Supabase: despliegue de funciones](https://supabase.com/docs/guides/functions/deploy).
 - [Supabase: uso y cuotas del plan](https://supabase.com/docs/guides/platform/billing-on-supabase).
+
+
+## Recursos exteriores versionados · 20/10/2026
+
+Migraciones 014 y 015 aplicadas en el mismo Supabase Cloud: contrato de perfil por modelo, validación de categoría y generadores v3/v4. La ingesta visual conserva las generaciones anteriores y mantiene 114 variantes publicadas seleccionables. El orden de reposición y las fuentes se especifican en `supabase/catalog/README.md`; no sustituye ni reinicia las migraciones anteriores. Frontend local en 127.0.0.1:5174, sin despliegue Netlify nuevo. Evidencia y límites de fidelidad/rendimiento en [12b](12b-evidencia-geometria.md).
+
+## Mallas de referencia integradas · 20/10/2026
+
+Migración 016 y publicación visual v5 aplicadas en el mismo proyecto Cloud. El bucket público `models` contiene 74 binarios vigentes para 76 capturas GLB, con fuentes locales, hashes y rutas inmutables; la escritura anónima devuelve HTTP 403. Hay 53 modelos, 512 capturas de variante históricas, 510 recursos y 114 variantes públicas seleccionables. Las cuatro prearmadas usan v5 y los montajes anteriores conservan sus identidades. Procedimiento de reposición en `supabase/catalog/README.md`, evidencia en [12b](12b-evidencia-geometria.md). Frontend local en 5174, sin nuevo despliegue Netlify ni cambios de configuración de Auth.

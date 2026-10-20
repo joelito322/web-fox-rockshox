@@ -191,3 +191,20 @@ Se conserva la geometría de v1/v2. Para visores de menos de 640 px se usa DPR 1
 El primer render de un GLB espera su preparación, manteniendo accesible el panel. Se comparte la descarga concurrente de un mismo recurso y se limita a 20 segundos la entrega/preparación; los errores conservan el montaje y activan la lista sin 3D. La caché libera geometrías, materiales y texturas al expulsar recursos inactivos. El resaltado usa materiales temporales exclusivos de la instancia seleccionada, que siguen su color y se liberan al deseleccionar. No altera pintura persistida ni materiales compartidos; las identidades separadas evitan arrastrar uniformes del resaltado a otras piezas.
 
 Plataforma móvil confirmada por el usuario: **Android, Brave y Chrome**. La automatización usa un perfil Pixel 7 en Chromium para cubrir distribución, entrada táctil y recuperación en Android; es un perfil de prueba, no un dispositivo físico elegido por el usuario ni una validación del ejecutable Brave. La aceptación de 30 fps requiere modelo real, navegador/versión y condiciones térmicas registrados.
+
+## Mejora exterior del inventario completo
+
+La solicitud posterior del usuario autoriza mejorar los 53 modelos existentes con perfiles exteriores específicos. El contrato nuevo, la conservación de versiones y los criterios de revisión están en [05a · Fidelidad por modelo](05a-fidelidad-modelos.md). Esta ampliación sucede a las simplificaciones v1/v2, que siguen disponibles para reproducir montajes guardados.
+
+
+V3 conserva sus perfiles publicados. V4 corrige la orientación tridimensional de los barridos mediante un constructor especializado, reutilizando las operaciones y perfiles exteriores; conserva los generadores anteriores para montajes existentes. El manifiesto del cuadro sigue fijando el ensamblaje. La selección incorpora la identidad del cuadro para renovar el resaltado al cambiar su geometría, y las piezas v1 en un cuadro nuevo reciben el ensamblaje resuelto sin modificar su generador original. La corrección y sus criterios están en 05a.
+
+El límite de alejamiento de OrbitControls usa el mismo ajuste por proporción del visor que las cámaras predefinidas. Así, una pantalla estrecha conserva el encuadre completo en vez de ser recortada por un límite fijo de distancia. Se comprueba selección directa y cambio de cámara en escritorio/móvil; no cambia recursos ni medidas guardadas.
+
+Las bicicletas no animan su geometría ni sus luces durante la órbita. Después de medir menos de 30 fps con SwiftShader, se reutiliza el mapa de sombras durante el giro de cámara; se invalida al cambiar configuración/recursos o calidad del visor. Esta optimización de renderizado no reduce detalle, cambia medidas ni modifica un generador publicado. Debe medirse de nuevo y comprobar que cambiar piezas produce sombras actualizadas. La GPU por software sigue sin acreditar rendimiento de Android físico.
+
+Se declara explícitamente el modo PCF (`shadows="percentage"`): el valor booleano de React Three Fiber 8 solicita PCFSoft, eliminado en Three 0.186, y su conversión automática podía invalidar el mapa al reconfigurar la cámara. Se comprueba el ahorro durante órbita y la actualización al retirar/restaurar una pieza.
+
+### Integración de contornos y mallas de referencia v5
+
+El usuario aprobó el conjunto de comparación y autorizó extenderlo. La nueva generación combina GLB de cuadros/suspensión con piezas paramétricas por medida. `assemblyV5` resuelve espacios de montaje y apoyo de ruedas; `Imported` aplica orientación global/local y pinturas a los nodos declarados. Se conserva el ensamblaje de v1–v4 y sus recursos. Fuentes, límites y tareas en [05a](05a-fidelidad-modelos.md), reconstrucción en [models/catalog-v5](../../models/catalog-v5/README.md). El build público no incluye las vistas de revisión de `tests/fixtures/`, los archivos Blender o fotografías de trabajo; consume los recursos del catálogo publicado desde Storage.

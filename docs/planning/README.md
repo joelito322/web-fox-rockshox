@@ -18,6 +18,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [04a · IAM](04a-iam-roles-y-permisos.md) | Cuatro tablas de autorización, roles configurables, permisos y restricciones |
 | [04b · Administración](04b-administracion-y-operaciones.md) | Primer administrador, usuarios, roles y edición/publicación del negocio |
 | [05 · Configurador 3D](05-configurador-3d.md) | Modelos, geometría por código, ensamblaje y rendimiento |
+| [05a · Fidelidad por modelo](05a-fidelidad-modelos.md) | Mejora exterior de los 53 modelos, referencias y conservación de versiones |
 | [06 · UI y UX](06-ui-y-ux.md) | Principios de contenido, dirección visual, marca, movimiento y accesibilidad |
 | [06a · Portada y acceso](06a-portada-y-acceso.md) | Composición de portada, entrada, registro y confirmación de correo |
 | [06b · Espacio de trabajo](06b-espacio-de-trabajo.md) | Pestañas, galerías, tarjetas, paneles, configurador y Mis bicicletas |
@@ -28,6 +29,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |
 | [10 · Auditoría integral](10-auditoria-integral-de-planes.md) | Revisión adversarial de todo el plan, incluyendo IAM; correcciones y pendientes |
 | [12 · Estado de implementación](12-estado-implementacion.md) | Evidencia real, integración Cloud y pendientes de ejecución |
+| [12b · Evidencia de geometría](12b-evidencia-geometria.md) | Cobertura de modelos, conservación de versiones y límites de parecido |
 | [11 · Inventario e ingesta documental](11-propuesta-de-inventario.md) | Índice de 11a–11m: gama actual por categoría, modelos, campos y validaciones; datos concretos por completar |
 
 ```mermaid

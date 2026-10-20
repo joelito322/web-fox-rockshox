@@ -66,3 +66,11 @@ ATLAS_BROWSER_EXECUTABLE=/usr/bin/brave pnpm exec playwright test tests/browser/
 ```
 
 La revisión de BSA 73 en Specialized conserva las referencias iniciales no seleccionables y crea dos capturas con el recurso visual anterior. La prueba pública comprueba acceso al enlace anterior, ausencia de acción de montaje para esa captura y dos tallas actuales sin duplicación. La prueba pura verifica que los IDs nuevos no sobrescriben los anteriores y reutilizan la misma geometría/recurso.
+
+
+Las métricas de esta página corresponden a las generaciones y lotes indicados en cada sección. La mejora posterior del inventario completo v3/v4 y su coste actual se registran en [12b](12b-evidencia-geometria.md); no aplicar las cifras históricas de esta página al nuevo generador.
+
+
+## Ampliación posterior con Storage real
+
+La limitación histórica de esta página respecto a un GLB sintético queda complementada por la integración v5: bucket real `models`, 76 capturas GLB y 74 archivos distintos, descarga pública y rechazo de escritura anónima comprobados. Ver [12b](12b-evidencia-geometria.md). Los archivos Blender y las entradas internas de revisión permanecen fuera del build de producto. La medición de v5 incorpora bytes de CDP `Network.loadingFinished`, porque Resource Timing oculta parte de la transferencia de Storage entre orígenes.
