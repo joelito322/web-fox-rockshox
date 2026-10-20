@@ -2,7 +2,11 @@
 
 Relacionado: [planes](../docs/planning/README.md), [entornos y accesos](../docs/planning/07-entornos-y-despliegue.md), [datos](../docs/planning/03-datos-y-operaciones.md) e [IAM](../docs/planning/04a-iam-roles-y-permisos.md).
 
-Estado: planificación y accesos validados. Este README establece la ubicación del backend versionado. Todavía no existen migraciones ni Edge Functions de ATLAS en esta carpeta; los archivos del árbol siguiente se crearán al comenzar su implementación. No son funciones desplegadas ni evidencia de SQL ejecutado.
+Estado: implementación autorizada en curso. Migraciones 001–013 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
+
+Herramientas: `node scripts/supabase.mjs push|status|deploy [función]`, con Node de `.node-version` y variables ya configuradas en `.env`. El despliegue usa `--use-api`; no levantar Docker ni Supabase local. Toda corrección posterior a una migración aplicada se escribe en una nueva migración.
+
+`operations/bootstrap-admin.sql` es una operación controlada sobre una identidad confirmada, sin función pública de ascenso. `auth-config.json` y `templates/` contienen configuración de Auth preparada, todavía pendiente por HTTP 403 del token en escritura. `tests/` contiene contratos SQL y preparación/limpieza de pruebas de navegador; no usar sus identidades temporales como administradores reales.
 
 ## Entorno acordado
 
@@ -10,7 +14,7 @@ El frontend se ejecuta localmente. PostgreSQL, Auth, Storage y Edge Functions se
 
 No se configura un stack local de Supabase, base local, Docker, réplica local o segundo proyecto por obligación. Usar CLI o herramientas de despliegue desde este equipo no significa levantar una base local. El frontend local utiliza el backend cloud.
 
-El usuario confirmó que el proyecto es de desarrollo, sin usuarios reales ni producción desplegada. Cuando se autorice implementar, las reconstrucciones de tablas propias, datos de prueba y funciones del alcance en este proyecto de desarrollo están permitidas. No solicitar confirmación repetida por cambios rutinarios necesarios ya autorizados. La instrucción actual de actualizar documentación no ejecuta esos cambios. No confundir esa autorización con eliminar el proyecto, credenciales, esquemas gestionados por Supabase o recursos ajenos al trabajo.
+El usuario confirmó que el proyecto es de desarrollo, sin usuarios reales ni producción desplegada. Cuando se autorice implementar, las reconstrucciones de tablas propias, datos de prueba y funciones del alcance en este proyecto de desarrollo están permitidas. No solicitar confirmación repetida por cambios rutinarios necesarios ya autorizados. La solicitud posterior del usuario autorizó iniciar la implementación del alcance. No confundir esa autorización con eliminar el proyecto, credenciales, esquemas gestionados por Supabase o recursos ajenos al trabajo.
 
 ## Estructura objetivo
 
