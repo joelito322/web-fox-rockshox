@@ -1,0 +1,648 @@
+{
+  "presets": [
+    {
+      "id": "aaf0e8d7-e725-5bc3-b612-3ff765af798b",
+      "brand_id": "943c44b0-40df-58be-b64b-308d8058367f",
+      "name": "META SX V5 · Montaje ATLAS",
+      "slug": "atlas-meta-sx-v5-m-v1",
+      "family_key": "atlas-meta-sx-v5-v1",
+      "label": "M",
+      "model_year": null,
+      "image_key": null,
+      "kind": "example",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/us/en/bikes/bikes/enduro/meta%20sx%20v5/BT5MSXV5EEU1S.html?lang=en_US",
+          "consulted_at": "2026-10-19",
+          "note": "Cuadro y referencia de partida. Este ejemplo usa otras suspensiones, ruedas y auxiliares; no reproduce el montaje de fábrica.",
+          "fields": []
+        }
+      ],
+      "published": true,
+      "selectable": true,
+      "items": [
+        {
+          "slot": "frame",
+          "variantId": "e25b5f8c-be31-54e7-bf71-18b94cd0202d",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "fork",
+          "variantId": "414988df-fc9a-529a-876a-dcb89e5fa453",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "shock",
+          "variantId": "9eed9f1b-e05c-5828-bc0c-4febf612128a",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rim",
+          "variantId": "dd987198-4592-56eb-b33b-414b0d22bcbd",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rim",
+          "variantId": "ebfb192f-c8f7-5e73-84b0-bbf50fa913e8",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_tire",
+          "variantId": "2e0175ac-b6f8-5d08-aa31-808856a064da",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_tire",
+          "variantId": "cd98b7e5-b44b-517f-95d5-20a5ccc86fdb",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_hub",
+          "variantId": "2e0b1631-8bc1-5d9c-af7e-861c97ded91f",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_hub",
+          "variantId": "1e9e8960-37fc-5a47-bd58-a26727eeaed1",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_derailleur",
+          "variantId": "77b92424-8219-57f6-b19a-bcbd17914453",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "cassette",
+          "variantId": "27d73ac0-d021-50de-a849-657ab8b4da3c",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "chain",
+          "variantId": "d6cf4a9b-6ebb-59eb-8789-8cf11e675634",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "bottom_bracket",
+          "variantId": "ba760959-02df-5164-92b7-56f0c3cf4d64",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "crankset",
+          "variantId": "84efa754-c0b9-5123-88e5-39015965d699",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "pedals",
+          "variantId": "4fe887cb-1bdd-5ad0-9951-e4fde02d6d69",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "handlebar",
+          "variantId": "3a47120c-c79d-560c-a7c4-f4a73b8add76",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "stem",
+          "variantId": "fa33d06f-4ee9-58af-ae8e-61a1ebf8022d",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "saddle",
+          "variantId": "bc79f113-7370-5c87-813e-679466b9a335",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "seatpost",
+          "variantId": "437e4640-29c0-5440-852c-aacc87a7f82b",
+          "finishId": "black",
+          "customColor": null
+        }
+      ]
+    },
+    {
+      "id": "fee7bf58-3e31-5f2b-816b-58b3728c0422",
+      "brand_id": "943c44b0-40df-58be-b64b-308d8058367f",
+      "name": "META SX V5 · Montaje ATLAS",
+      "slug": "atlas-meta-sx-v5-l-v1",
+      "family_key": "atlas-meta-sx-v5-v1",
+      "label": "L",
+      "model_year": null,
+      "image_key": null,
+      "kind": "example",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/us/en/bikes/bikes/enduro/meta%20sx%20v5/BT5MSXV5EEU1S.html?lang=en_US",
+          "consulted_at": "2026-10-19",
+          "note": "Cuadro y referencia de partida. Este ejemplo usa otras suspensiones, ruedas y auxiliares; no reproduce el montaje de fábrica.",
+          "fields": []
+        }
+      ],
+      "published": true,
+      "selectable": true,
+      "items": [
+        {
+          "slot": "frame",
+          "variantId": "d13af1ff-1824-559b-8e49-7b6f31fb77b2",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "fork",
+          "variantId": "414988df-fc9a-529a-876a-dcb89e5fa453",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "shock",
+          "variantId": "9eed9f1b-e05c-5828-bc0c-4febf612128a",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rim",
+          "variantId": "dd987198-4592-56eb-b33b-414b0d22bcbd",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rim",
+          "variantId": "ebfb192f-c8f7-5e73-84b0-bbf50fa913e8",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_tire",
+          "variantId": "2e0175ac-b6f8-5d08-aa31-808856a064da",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_tire",
+          "variantId": "cd98b7e5-b44b-517f-95d5-20a5ccc86fdb",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_hub",
+          "variantId": "2e0b1631-8bc1-5d9c-af7e-861c97ded91f",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_hub",
+          "variantId": "1e9e8960-37fc-5a47-bd58-a26727eeaed1",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_derailleur",
+          "variantId": "77b92424-8219-57f6-b19a-bcbd17914453",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "cassette",
+          "variantId": "27d73ac0-d021-50de-a849-657ab8b4da3c",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "chain",
+          "variantId": "d6cf4a9b-6ebb-59eb-8789-8cf11e675634",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "bottom_bracket",
+          "variantId": "ba760959-02df-5164-92b7-56f0c3cf4d64",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "crankset",
+          "variantId": "84efa754-c0b9-5123-88e5-39015965d699",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "pedals",
+          "variantId": "4fe887cb-1bdd-5ad0-9951-e4fde02d6d69",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "handlebar",
+          "variantId": "3a47120c-c79d-560c-a7c4-f4a73b8add76",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "stem",
+          "variantId": "fa33d06f-4ee9-58af-ae8e-61a1ebf8022d",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "saddle",
+          "variantId": "bc79f113-7370-5c87-813e-679466b9a335",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "seatpost",
+          "variantId": "437e4640-29c0-5440-852c-aacc87a7f82b",
+          "finishId": "black",
+          "customColor": null
+        }
+      ]
+    },
+    {
+      "id": "e8cc51de-036b-5e6a-a675-cd28b5b12db8",
+      "brand_id": "943c44b0-40df-58be-b64b-308d8058367f",
+      "name": "SUPREME DH V5 · Montaje ATLAS",
+      "slug": "atlas-supreme-dh-v5-m-v2",
+      "family_key": "atlas-supreme-dh-v5-v2",
+      "label": "M",
+      "model_year": null,
+      "image_key": null,
+      "kind": "example",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Cuadro de partida. Composición propia ATLAS; no reproduce un montaje de fábrica.",
+          "fields": []
+        }
+      ],
+      "published": true,
+      "selectable": true,
+      "items": [
+        {
+          "slot": "frame",
+          "variantId": "80766c74-5e28-5bd1-a47d-99939ea00c81",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "fork",
+          "variantId": "1a4ab1f9-b469-5305-bd72-78c2c73ffd2b",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "shock",
+          "variantId": "50f4a843-ef9f-57fa-8746-fc70f29e3e6d",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rim",
+          "variantId": "dd987198-4592-56eb-b33b-414b0d22bcbd",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rim",
+          "variantId": "ebfb192f-c8f7-5e73-84b0-bbf50fa913e8",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_tire",
+          "variantId": "2e0175ac-b6f8-5d08-aa31-808856a064da",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_tire",
+          "variantId": "cd98b7e5-b44b-517f-95d5-20a5ccc86fdb",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_hub",
+          "variantId": "04e47fd2-4d3d-5cf1-96b4-bed38487c9f9",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_hub",
+          "variantId": "f29392c3-bc37-5b32-8582-87fb2d8ac852",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_derailleur",
+          "variantId": "e3422a48-7710-5169-91e5-34a5dbbb0ede",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "cassette",
+          "variantId": "ce792b1b-e3b8-5d46-93b2-8ab4e8c005c1",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "chain",
+          "variantId": "75a6b9dc-fa4c-52b5-9306-4c0223e43db9",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "bottom_bracket",
+          "variantId": "c92c7f3e-91fb-5a0f-b6d9-5e3cf304affd",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "crankset",
+          "variantId": "630cdb9f-7d41-58c8-a5e1-908649566b17",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "pedals",
+          "variantId": "4fe887cb-1bdd-5ad0-9951-e4fde02d6d69",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "handlebar",
+          "variantId": "3a47120c-c79d-560c-a7c4-f4a73b8add76",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "stem",
+          "variantId": "5f21bf85-145b-53fe-ae16-4c995a09d5f8",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "saddle",
+          "variantId": "bc79f113-7370-5c87-813e-679466b9a335",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "seatpost",
+          "variantId": "70c778e7-8a46-5275-8fbe-12fc5a244262",
+          "finishId": "black",
+          "customColor": null
+        }
+      ]
+    },
+    {
+      "id": "6bde207f-cf20-5fa5-801a-153e26753ffa",
+      "brand_id": "943c44b0-40df-58be-b64b-308d8058367f",
+      "name": "SUPREME DH V5 · Montaje ATLAS",
+      "slug": "atlas-supreme-dh-v5-l-v2",
+      "family_key": "atlas-supreme-dh-v5-v2",
+      "label": "L",
+      "model_year": null,
+      "image_key": null,
+      "kind": "example",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Cuadro de partida. Composición propia ATLAS; no reproduce un montaje de fábrica.",
+          "fields": []
+        }
+      ],
+      "published": true,
+      "selectable": true,
+      "items": [
+        {
+          "slot": "frame",
+          "variantId": "4dbffef2-73b0-5226-8e10-5400b502e850",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "fork",
+          "variantId": "1a4ab1f9-b469-5305-bd72-78c2c73ffd2b",
+          "finishId": "factory",
+          "customColor": null
+        },
+        {
+          "slot": "shock",
+          "variantId": "50f4a843-ef9f-57fa-8746-fc70f29e3e6d",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rim",
+          "variantId": "dd987198-4592-56eb-b33b-414b0d22bcbd",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rim",
+          "variantId": "ebfb192f-c8f7-5e73-84b0-bbf50fa913e8",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_tire",
+          "variantId": "2e0175ac-b6f8-5d08-aa31-808856a064da",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_tire",
+          "variantId": "cd98b7e5-b44b-517f-95d5-20a5ccc86fdb",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_hub",
+          "variantId": "04e47fd2-4d3d-5cf1-96b4-bed38487c9f9",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_hub",
+          "variantId": "f29392c3-bc37-5b32-8582-87fb2d8ac852",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_brake",
+          "variantId": "f07cb964-8ad8-561f-8ce6-f116d736d504",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "front_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_rotor",
+          "variantId": "81ed13cd-5472-5585-8c55-22525d67de44",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "rear_derailleur",
+          "variantId": "e3422a48-7710-5169-91e5-34a5dbbb0ede",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "cassette",
+          "variantId": "ce792b1b-e3b8-5d46-93b2-8ab4e8c005c1",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "chain",
+          "variantId": "75a6b9dc-fa4c-52b5-9306-4c0223e43db9",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "bottom_bracket",
+          "variantId": "c92c7f3e-91fb-5a0f-b6d9-5e3cf304affd",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "crankset",
+          "variantId": "630cdb9f-7d41-58c8-a5e1-908649566b17",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "pedals",
+          "variantId": "4fe887cb-1bdd-5ad0-9951-e4fde02d6d69",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "handlebar",
+          "variantId": "3a47120c-c79d-560c-a7c4-f4a73b8add76",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "stem",
+          "variantId": "5f21bf85-145b-53fe-ae16-4c995a09d5f8",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "saddle",
+          "variantId": "bc79f113-7370-5c87-813e-679466b9a335",
+          "finishId": "black",
+          "customColor": null
+        },
+        {
+          "slot": "seatpost",
+          "variantId": "70c778e7-8a46-5275-8fbe-12fc5a244262",
+          "finishId": "black",
+          "customColor": null
+        }
+      ]
+    }
+  ]
+}
