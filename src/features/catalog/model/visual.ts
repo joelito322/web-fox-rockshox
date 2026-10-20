@@ -1,7 +1,11 @@
 import { z } from "zod";
+import { modelProfileKeys } from "./visual-profiles.ts";
 export const proceduralGeneratorKeys = [
   "atlas-bike-v1",
   "atlas-bike-v2",
+  "atlas-bike-v3",
+  "atlas-bike-v4",
+  "atlas-bike-v5",
 ] as const;
 export type ProceduralGeneratorKey = (typeof proceduralGeneratorKeys)[number];
 export function knownProceduralGenerator(
@@ -23,7 +27,12 @@ export const manifestSchema = z.strictObject({
     .max(80)
     .regex(/^[a-z][a-z0-9_]*$/),
   parameters: z
-    .strictObject({ size_scale: z.number().min(0.7).max(1.4).optional() })
+    .strictObject({
+      size_scale: z.number().min(0.7).max(1.4).optional(),
+      profile_key: z.enum(modelProfileKeys).optional(),
+      assembly_version: z.literal("atlas-assembly-v5").optional(),
+      mount_space: z.enum(["frame", "fork", "shock"]).optional(),
+    })
     .default({}),
   anchors: z
     .record(

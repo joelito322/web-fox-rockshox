@@ -1,3 +1,4 @@
+import { assemblyV5 } from "./assemblyV5";
 import { assembly, type Assembly, type Point } from "./assembly";
 import type { Configuration, Slot, VariantMap } from "./index";
 
@@ -78,7 +79,23 @@ export function resolveAssembly(
     variants[
       configuration.items.find((i) => i.slot === "frame")?.variantId ?? ""
     ];
-  return frame?.visual_assets?.generator_key === "atlas-bike-v2"
+  const fork =
+    variants[
+      configuration.items.find((i) => i.slot === "fork")?.variantId ?? ""
+    ];
+  if (
+    frame?.visual_assets?.manifest.parameters.assembly_version ===
+      "atlas-assembly-v5" ||
+    fork?.visual_assets?.manifest.parameters.mount_space === "fork"
+  )
+    return assemblyV5(
+      assemblyV2(configuration, variants),
+      configuration,
+      variants,
+    );
+  return ["atlas-bike-v2", "atlas-bike-v3", "atlas-bike-v4"].includes(
+    frame?.visual_assets?.generator_key ?? "",
+  )
     ? assemblyV2(configuration, variants)
     : assembly(configuration, variants);
 }

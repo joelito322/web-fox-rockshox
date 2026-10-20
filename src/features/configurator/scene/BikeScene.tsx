@@ -6,6 +6,10 @@ import { loadGlb, disposeVisual } from "./loadGlb";
 import { resolveAssembly } from "../model/assemblyV2";
 import BikeV1 from "./generators/BikeV1";
 import BikeV2 from "./generators/BikeV2";
+import BikeV3 from "./generators/BikeV3";
+import BikeV4 from "./generators/BikeV4";
+import BikeV5 from "./generators/BikeV5";
+import { importedMount } from "../model/assemblyV5";
 import Selection from "./Selection";
 import type { Configuration, Slot, VariantMap } from "../model";
 import type { VisualAsset } from "../../catalog/model";
@@ -22,11 +26,21 @@ const preparing = new Map<string, Promise<void>>();
 const generators: Record<ProceduralGeneratorKey, typeof BikeV1> = {
   "atlas-bike-v1": BikeV1,
   "atlas-bike-v2": BikeV2,
+  "atlas-bike-v3": BikeV3,
+  "atlas-bike-v4": BikeV4,
+  "atlas-bike-v5": BikeV5,
 };
 export async function prepareVisual(asset: VisualAsset) {
   if (asset.kind === "procedural") {
     if (!knownProceduralGenerator(asset.generator_key))
       throw new Error("unknown_generator");
+    if (
+      ["atlas-bike-v3", "atlas-bike-v4", "atlas-bike-v5"].includes(
+        asset.generator_key ?? "",
+      ) &&
+      !asset.manifest.parameters.profile_key
+    )
+      throw new Error("missing_visual_profile");
     return;
   }
   if (loaded.has(asset.id)) return;
@@ -35,19 +49,21 @@ export async function prepareVisual(asset: VisualAsset) {
   const { data } = supabase.storage
     .from("models")
     .getPublicUrl(asset.storage_path);
-  const preparation = loadGlb(data.publicUrl).then((scene) => {
-  if (loaded.size >= 32) {
-    const candidate = [...loaded.entries()].find(
-      ([key]) => !activeAssets.has(key),
-    );
-    if (candidate) {
-      const [key, value] = candidate;
-      disposeVisual(value);
-      loaded.delete(key);
-    }
-  }
-  loaded.set(asset.id, scene);
-  }).finally(() => preparing.delete(asset.id));
+  const preparation = loadGlb(data.publicUrl)
+    .then((scene) => {
+      if (loaded.size >= 32) {
+        const candidate = [...loaded.entries()].find(
+          ([key]) => !activeAssets.has(key),
+        );
+        if (candidate) {
+          const [key, value] = candidate;
+          disposeVisual(value);
+          loaded.delete(key);
+        }
+      }
+      loaded.set(asset.id, scene);
+    })
+    .finally(() => preparing.delete(asset.id));
   preparing.set(asset.id, preparation);
   return preparation;
 }
@@ -56,12 +72,16 @@ function Imported({
   color,
   slot,
   origin,
+  rotation,
+  localRotation,
   onSelect,
 }: {
   asset: VisualAsset;
   color: string;
   slot: Slot;
   origin: Point;
+  rotation: Point;
+  localRotation: Point;
   onSelect: (slot: Slot) => void;
 }) {
   const object = useMemo(() => {
@@ -69,6 +89,7 @@ function Imported({
     if (!source) throw new Error("visual_not_prepared");
     const clone = source.clone(true);
     clone.traverse((node) => {
+      if (node instanceof THREE.Mesh) node.castShadow = true;
       if (
         node instanceof THREE.Mesh &&
         asset.manifest.paintable_nodes.includes(node.name)
@@ -105,13 +126,31 @@ function Imported({
   return (
     <group
       position={origin}
+      rotation={rotation}
       onClick={(e) => {
         e.stopPropagation();
         onSelect(slot);
       }}
     >
-      <primitive object={object} dispose={null} />
+      <group rotation={localRotation}>
+        <primitive object={object} dispose={null} />
+      </group>
     </group>
+  );
+}
+const cameraFit = (width: number, height: number) =>
+  Math.max(1, 1.45 / (width / Math.max(1, height)));
+function SceneControls() {
+  const size = useThree((state) => state.size);
+  return (
+    <OrbitControls
+      makeDefault
+      target={[0.17, 0.15, 0]}
+      minDistance={1.2}
+      maxDistance={4.5 * cameraFit(size.width, size.height)}
+      maxPolarAngle={Math.PI * 0.85}
+      enableDamping
+    />
   );
 }
 function View({ view }: { view: string }) {
@@ -122,14 +161,14 @@ function View({ view }: { view: string }) {
   useEffect(() => {
     const positions: Record<string, Point> = {
       lateral: [0.2, 0.25, 2.6],
-      frontal: [2.4, 0.4, 0],
+      frontal: [3.2, 0.45, 0],
       // The longitudinal footprint needs more vertical room when viewed from above.
       superior: [0.17, 3.6, 0.01],
       perspectiva: [1.4, 0.8, 2.1],
     };
     const target = new THREE.Vector3(0.17, 0.15, 0);
     // Preserve the desktop view while fitting the bicycle in narrower viewports.
-    const fit = Math.max(1, 1.45 / (size.width / Math.max(1, size.height)));
+    const fit = cameraFit(size.width, size.height);
     camera.position.copy(
       new THREE.Vector3(...(positions[view] ?? positions.perspectiva))
         .sub(target)
@@ -141,13 +180,41 @@ function View({ view }: { view: string }) {
   }, [view, camera, invalidate, size.width, size.height]);
   return null;
 }
+// Geometry and lights are static during camera orbit; refresh shadows on scene changes.
+function StableShadows({
+  configuration,
+  variants,
+}: {
+  configuration: Configuration;
+  variants: VariantMap;
+}) {
+  const { gl, invalidate, size } = useThree();
+  const compact = size.width < 640;
+  useEffect(() => {
+    const previous = gl.shadowMap.autoUpdate;
+    gl.shadowMap.autoUpdate = false;
+    gl.shadowMap.needsUpdate = true;
+    invalidate();
+    return () => {
+      gl.shadowMap.autoUpdate = previous;
+    };
+  }, [gl, invalidate, configuration, variants, compact]);
+  return null;
+}
 function StudioLighting() {
   const compact = useThree((state) => state.size.width < 640);
-  return <>
-    <ambientLight intensity={1.6} />
-    <directionalLight position={[2, 4, 3]} intensity={3} castShadow shadow-mapSize={compact ? [512, 512] : [1024, 1024]} />
-    <directionalLight position={[-3, 1, -2]} intensity={2} />
-  </>;
+  return (
+    <>
+      <ambientLight intensity={1.6} />
+      <directionalLight
+        position={[2, 4, 3]}
+        intensity={3}
+        castShadow
+        shadow-mapSize={compact ? [512, 512] : [1024, 1024]}
+      />
+      <directionalLight position={[-3, 1, -2]} intensity={2} />
+    </>
+  );
 }
 export default function BikeScene({
   configuration,
@@ -192,7 +259,7 @@ export default function BikeScene({
   }, [configuration, variants]);
   return (
     <Canvas
-      shadows
+      shadows="percentage"
       frameloop="demand"
       dpr={[1, 1.5]}
       camera={{ position: [1.4, 0.8, 2.1], fov: 37 }}
@@ -205,47 +272,72 @@ export default function BikeScene({
     >
       <color attach="background" args={["#e8e9e1"]} />
       <StudioLighting />
-      <Suspense fallback={null}>
-        {configuration.items.map((item) => {
-          const variant = variants[item.variantId];
-          if (!variant) return null;
-          const finish = variant.allowed_finishes.options.find(
-            (f) => f.id === item.finishId,
-          );
-          const color = item.customColor ?? finish?.material.color ?? "#57634e";
-          const asset = variant.visual_assets;
-          const Generator = frameV2
-            ? BikeV2
-            : generators[
-                knownProceduralGenerator(asset?.generator_key)
-                  ? asset.generator_key
-                  : "atlas-bike-v1"
-              ];
-          return (
-            <Selection key={item.slot} active={selectedSlot === item.slot} identity={`${item.variantId}:${color}:${frameV2}`}>
-            {asset?.kind === "glb" ? (
-            <Imported
-              key={item.slot}
-              asset={asset}
-              color={color}
-              slot={item.slot}
-              origin={resolved.origin(item.slot)}
-              onSelect={onSelect}
-            />
-          ) : (
-            <Generator
-              key={item.slot}
-              slot={item.slot}
-              color={color}
-              configuration={configuration}
-              variants={variants}
-              onSelect={onSelect}
-            />
-          )}
-            </Selection>
-          );
-        })}
-      </Suspense>
+      <StableShadows configuration={configuration} variants={variants} />
+      <group
+        rotation={[
+          0,
+          0,
+          "settleAngle" in resolved ? Number(resolved.settleAngle) : 0,
+        ]}
+      >
+        <Suspense fallback={null}>
+          {configuration.items.map((item) => {
+            const variant = variants[item.variantId];
+            if (!variant) return null;
+            const finish = variant.allowed_finishes.options.find(
+              (f) => f.id === item.finishId,
+            );
+            const color =
+              item.customColor ?? finish?.material.color ?? "#57634e";
+            const asset = variant.visual_assets;
+            const Generator =
+              frameV2 &&
+              !["atlas-bike-v3", "atlas-bike-v4", "atlas-bike-v5"].includes(
+                asset?.generator_key ?? "",
+              )
+                ? BikeV2
+                : generators[
+                    knownProceduralGenerator(asset?.generator_key)
+                      ? asset.generator_key
+                      : "atlas-bike-v1"
+                  ];
+            return (
+              <Selection
+                key={item.slot}
+                active={selectedSlot === item.slot}
+                identity={`${item.variantId}:${color}:${frame?.id ?? ""}`}
+              >
+                {asset?.kind === "glb" ? (
+                  <Imported
+                    key={item.slot}
+                    asset={asset}
+                    color={color}
+                    slot={item.slot}
+                    origin={importedMount(item.slot, asset, resolved).position}
+                    rotation={
+                      importedMount(item.slot, asset, resolved).rotation
+                    }
+                    localRotation={
+                      importedMount(item.slot, asset, resolved).localRotation
+                    }
+                    onSelect={onSelect}
+                  />
+                ) : (
+                  <Generator
+                    key={item.slot}
+                    slot={item.slot}
+                    color={color}
+                    configuration={configuration}
+                    resolved={resolved}
+                    variants={variants}
+                    onSelect={onSelect}
+                  />
+                )}
+              </Selection>
+            );
+          })}
+        </Suspense>
+      </group>
       <mesh
         position={[0, resolved.ground, 0]}
         rotation={[-Math.PI / 2, 0, 0]}
@@ -254,14 +346,7 @@ export default function BikeScene({
         <planeGeometry args={[200, 200]} />
         <shadowMaterial transparent opacity={0.15} />
       </mesh>
-      <OrbitControls
-        makeDefault
-        target={[0.17, 0.15, 0]}
-        minDistance={1.2}
-        maxDistance={4.5}
-        maxPolarAngle={Math.PI * 0.85}
-        enableDamping
-      />
+      <SceneControls />
       <View view={view} />
     </Canvas>
   );
