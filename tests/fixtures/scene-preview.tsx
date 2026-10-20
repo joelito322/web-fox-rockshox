@@ -5,7 +5,11 @@ import Scene, {
 } from "../../src/features/configurator/scene/BikeScene";
 import { parseCatalogImport } from "../../src/features/catalog/model/ingestion";
 import { presetImportSchema } from "../../src/features/catalog/model/presets";
-import { slotCategories } from "../../src/features/configurator/model";
+import {
+  slotCategories,
+  slotLabels,
+  type Slot,
+} from "../../src/features/configurator/model";
 import type {
   VariantMap,
   Configuration,
@@ -17,21 +21,67 @@ import braking from "../../supabase/catalog/braking-reviewed.json";
 import suspension from "../../supabase/catalog/suspension-reviewed.json";
 import frames from "../../supabase/catalog/frames-reviewed.json";
 import tyres from "../../supabase/catalog/tyres-reviewed.json";
-const catalogue = parseCatalogImport({
-  brands: [
-    ...new Map(
-      [...source.brands, ...braking.brands, ...suspension.brands, ...frames.brands, ...tyres.brands].map((b) => [b.id, b]),
-    ).values(),
-  ],
-  components: [...source.components, ...braking.components, ...suspension.components, ...frames.components, ...tyres.components],
-  assets: [...source.assets, ...braking.assets, ...suspension.assets, ...frames.assets, ...tyres.assets],
-  variants: [...source.variants, ...braking.variants, ...suspension.variants, ...frames.variants, ...tyres.variants],
-});
+import catalogV5 from "../../supabase/catalog/visual-v5-reviewed.json";
+import examplesV5 from "../../supabase/catalog/visual-v5-examples.json";
+import catalogV4 from "../../supabase/catalog/visual-v4-reviewed.json";
+import examplesV4 from "../../supabase/catalog/visual-v4-examples.json";
+const v5=new URLSearchParams(location.search).get('generation')==='v5';
+const visualCatalog=v5?catalogV5:catalogV4;
+const visualExamples=v5?examplesV5:examplesV4;
+const legacy = new URLSearchParams(location.search).has("legacy");
+const catalogue = parseCatalogImport(
+  legacy
+    ? {
+        brands: [
+          ...new Map(
+            [
+              ...source.brands,
+              ...braking.brands,
+              ...suspension.brands,
+              ...frames.brands,
+              ...tyres.brands,
+            ].map((b) => [b.id, b]),
+          ).values(),
+        ],
+        components: [
+          ...source.components,
+          ...braking.components,
+          ...suspension.components,
+          ...frames.components,
+          ...tyres.components,
+        ],
+        assets: [
+          ...source.assets,
+          ...braking.assets,
+          ...suspension.assets,
+          ...frames.assets,
+          ...tyres.assets,
+        ],
+        variants: [
+          ...source.variants,
+          ...braking.variants,
+          ...suspension.variants,
+          ...frames.variants,
+          ...tyres.variants,
+        ],
+      }
+    : visualCatalog,
+);
 const params = new URLSearchParams(location.search);
 const discipline =
   params.get("discipline") === "downhill" ? "downhill" : "enduro";
 const presets = presetImportSchema.parse(
-  discipline === "downhill" ? downhill : examples,
+  legacy
+    ? discipline === "downhill"
+      ? downhill
+      : examples
+    : {
+        presets: visualExamples.presets.filter((p) =>
+          discipline === "downhill"
+            ? p.slug.includes("supreme")
+            : p.slug.includes("meta"),
+        ),
+      },
 ).presets;
 const index = new URLSearchParams(location.search).get("size") === "L" ? 1 : 0;
 const preset = presets[index];
@@ -40,10 +90,16 @@ const configuration: Configuration = {
   name: preset.name,
   items: preset.items.map((item) => ({ ...item })),
 };
-const reviewedVariant = catalogue.variants.find((v) => v.id === params.get("variant"));
+const reviewedVariant = catalogue.variants.find(
+  (v) => v.id === params.get("variant"),
+);
 if (reviewedVariant) {
-  const model = catalogue.components.find((c) => c.id === reviewedVariant.component_id)!;
-  const item = configuration.items.find((i) => slotCategories[i.slot] === model.category);
+  const model = catalogue.components.find(
+    (c) => c.id === reviewedVariant.component_id,
+  )!;
+  const item = configuration.items.find(
+    (i) => slotCategories[i.slot] === model.category,
+  );
   if (item) {
     item.variantId = reviewedVariant.id;
     item.finishId = reviewedVariant.allowed_finishes.default_finish_id;
@@ -86,6 +142,8 @@ await Promise.all(
 );
 function Proof() {
   const [view, setView] = useState("lateral");
+  const [selectedSlot, setSelectedSlot] = useState<Slot>();
+  const [renderConfiguration, setRenderConfiguration] = useState(configuration);
   return (
     <>
       <div className="proof-label">
@@ -96,24 +154,53 @@ function Proof() {
           identificados; representación aproximada. Composición propia de ATLAS,
           sin atribución a un montaje de fábrica.
         </p>
-        <select aria-label="Cámara de revisión" value={view} onChange={event => setView(event.target.value)}>
-          {["lateral", "perspectiva", "frontal", "superior"].map(camera => <option key={camera}>{camera}</option>)}
+        <select
+          aria-label="Cámara de revisión"
+          value={view}
+          onChange={(event) => setView(event.target.value)}
+        >
+          {["lateral", "perspectiva", "frontal", "superior"].map((camera) => (
+            <option key={camera}>{camera}</option>
+          ))}
         </select>
-        <a href={`?discipline=${discipline}&size=${index ? "M" : "L"}`}>
+        {params.has("controls") && (
+          <>
+            <button
+              onClick={() =>
+                setRenderConfiguration({
+                  ...configuration,
+                  items: configuration.items.filter(
+                    (i) => i.slot !== "front_tire",
+                  ),
+                })
+              }
+            >
+              Retirar neumático
+            </button>
+            <button onClick={() => setRenderConfiguration(configuration)}>
+              Restaurar montaje
+            </button>
+          </>
+        )}
+        <output aria-label="Pieza seleccionada">
+          {selectedSlot ? slotLabels[selectedSlot] : "Sin selección"}
+        </output>
+        <a href={`?discipline=${discipline}&size=${index ? "M" : "L"}&generation=${v5?"v5":"v4"}${legacy?"&legacy=1":""}`}>
           Cambiar talla
         </a>
         <a
-          href={`?discipline=${discipline === "downhill" ? "enduro" : "downhill"}`}
+          href={`?discipline=${discipline === "downhill" ? "enduro" : "downhill"}&generation=${v5?"v5":"v4"}${legacy?"&legacy=1":""}`}
         >
           Cambiar disciplina
         </a>
       </div>
       <Suspense fallback={null}>
         <Scene
-          configuration={configuration}
+          configuration={renderConfiguration}
           variants={variants}
           view={view}
-          onSelect={() => {}}
+          onSelect={setSelectedSlot}
+          selectedSlot={selectedSlot}
           onUnavailable={() => {
             throw new Error("Scene unavailable");
           }}

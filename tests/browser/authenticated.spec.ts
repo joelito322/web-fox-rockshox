@@ -362,7 +362,7 @@ test("reviewed enduro reference can be saved and reopened as a personal bicycle"
   await expect(details).toContainText("Bomber CR");
 });
 
-test("reviewed DH reference preserves size, v2 assembly and all pieces after save and reopen", async ({
+test("reviewed DH reference preserves size, versioned assembly and all pieces after save and reopen", async ({
   page,
 }, testInfo) => {
   test.skip(

@@ -3,8 +3,10 @@ import { build, preview } from 'vite';
 import { chromium, devices } from '@playwright/test';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { installSceneMetrics } from './lib/scene-metrics.mjs';
+const version=process.argv.find(a=>a.startsWith('--version='))?.split('=')[1]??'v4';
+if(!['v4','v5'].includes(version))throw Error('Unsupported measurement version');
 const outDir = 'node_modules/.cache/atlas-scene-review';
-const directory = '/tmp/atlas-scene-performance';
+const directory = `/tmp/atlas-scene-performance-${version}`;
 mkdirSync(directory, { recursive: true });
 await build({
   logLevel: 'error',
@@ -25,12 +27,14 @@ try {
       page.on('pageerror', error => errors.push(error.message));
       await page.addInitScript(installSceneMetrics);
       const cdp = await context.newCDPSession(page);
+      let networkBytes=0;
+      cdp.on('Network.loadingFinished',event=>{networkBytes+=event.encodedDataLength??0});
       await cdp.send('Network.enable');
       await cdp.send('Network.setCacheDisabled', {cacheDisabled: true});
       await cdp.send('Network.emulateNetworkConditions', {
         offline: false, latency: 80, downloadThroughput: 1250000, uploadThroughput: 1250000,
       });
-      await page.goto(`http://127.0.0.1:4181/tests/fixtures/scene-preview.html?discipline=${discipline}`, {waitUntil: 'networkidle'});
+      await page.goto(`http://127.0.0.1:4181/tests/fixtures/scene-preview.html?discipline=${discipline}&generation=${version}`, {waitUntil: 'networkidle'});
       await page.waitForFunction(() => window.atlasSceneProof?.firstCompleteFrameMs !== null);
       const bounds = await page.locator('canvas').boundingBox();
       if (!bounds) throw new Error('Scene missing');
@@ -62,6 +66,8 @@ try {
           observedInteractionFps: Math.round(frames.length*10000/(ended-started))/10,
         };
       }, {started, device, discipline});
+      result.networkTransferredBytes=networkBytes;
+      // Resource Timing can hide cross-origin Storage sizes without Timing-Allow-Origin. CDP counts those too.
       if (errors.length) throw new Error(errors.join('; '));
       results.push(result);
       await page.screenshot({path: `${directory}/${device}-${discipline}.png`});
