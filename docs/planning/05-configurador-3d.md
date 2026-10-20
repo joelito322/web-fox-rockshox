@@ -81,6 +81,8 @@ paintableNodes:
   frame_paint
 ```
 
+El contrato implementado se conserva en `src/features/catalog/model/visual.ts` y en la migración generada de Supabase: versión 1, metros, origen identificado y anclajes con `position` (tres coordenadas), `rotation` (tres ángulos en radianes) y `estimated` explícito. Las posiciones tienen límites de seguridad de ±5 m y las rotaciones de ±2π; no sustituyen la comprobación de medidas reales. Los parámetros aceptados del generador actual se declaran explícitamente; por ahora `size_scale` opcional entre 0,7 y 1,4 para la base aproximada. No escala ruedas ni sustituye la geometría específica de talla. Un nuevo parámetro exige ampliar el contrato compartido y crear otra migración, sin reescribir las aplicadas.
+
 El manifiesto es JSON validado, no un script. El catálogo decide qué generador soportado usar y sus parámetros permitidos. Los identificadores de nodos y anclajes se comprueban antes de publicar el recurso.
 
 ## Ensamblaje
@@ -167,3 +169,25 @@ Si falla WebGL, se pierde el contexto o un archivo no carga, mostrar la lista de
 - [Three.js: materiales físicos y coste visual](https://threejs.org/docs/pages/MeshPhysicalMaterial.html).
 - [React Three Fiber: escalado de rendimiento](https://r3f.docs.pmnd.rs/advanced/scaling-performance).
 - [Drei: controles de cámara](https://drei.docs.pmnd.rs/controls/introduction).
+
+## Ensamblaje de descenso, segunda versión
+
+El lote de descenso usa `atlas-bike-v2` para el cuadro SUPREME DH V5 y las piezas nuevas que requieren doble pletina o montaje directo. La versión del recurso del cuadro fija el ensamblaje del conjunto; no se calcula a partir de la disciplina ni de un nombre comercial mutable. Los montajes con cuadro v1 conservan el ensamblaje v1. Las piezas comunes reutilizan los sólidos v1 en las coordenadas explícitas del nuevo cuadro; la cadena sigue la polea cuando existe el anclaje `chain_idler`. No duplicar variantes comerciales ya publicadas solo para integrarlas en el nuevo cuadro.
+
+```text
+Recurso del cuadro guardado
+   ├─ atlas-bike-v1 → ensamblaje v1 conservado
+   └─ atlas-bike-v2 → anclajes v2 → piezas comunes + doble pletina / polea
+```
+
+Los anclajes adicionales caben en el manifiesto tipado existente: `chain_idler`, `suspension_pivot` y `fork_upper_crown`. Sus posiciones, la silueta de bieletas y el recorrido exterior de cadena son aproximaciones identificadas, no medidas CAD ni una simulación cinemática. La versión v2 conserva entreojos visual del amortiguador cuando se conoce y distingue aire/muelle. Se revisan M/L, contacto de ruedas con el suelo y sustituciones entre piezas de enduro/descenso. Las advertencias mecánicas siguen permitiendo guardar.
+
+Publicación de recursos procedimentales: una clave de generador nueva requiere primero su implementación en el cliente. La ingesta y una restricción de base rechazan publicar claves que el visor no reconoce; los recursos aún en borrador pueden prepararse sin ofrecerlos al ciclista. No basta que `generator_key` sea un texto no vacío.
+
+## Calidad adaptada y recuperación de recursos
+
+Se conserva la geometría de v1/v2. Para visores de menos de 640 px se usa DPR 1 y mapa de sombra de 512 px; en los demás, DPR hasta 1,5 y sombra de 1024 px. Es una reducción de coste de rasterizado, sin retirar piezas, cambiar medidas ni añadir workers. Validar de nuevo primera imagen, interacción, selección y móvil después del ajuste; una medición SwiftShader no acredita el objetivo de teléfono físico.
+
+El primer render de un GLB espera su preparación, manteniendo accesible el panel. Se comparte la descarga concurrente de un mismo recurso y se limita a 20 segundos la entrega/preparación; los errores conservan el montaje y activan la lista sin 3D. La caché libera geometrías, materiales y texturas al expulsar recursos inactivos. El resaltado usa materiales temporales exclusivos de la instancia seleccionada, que siguen su color y se liberan al deseleccionar. No altera pintura persistida ni materiales compartidos; las identidades separadas evitan arrastrar uniformes del resaltado a otras piezas.
+
+Plataforma móvil confirmada por el usuario: **Android, Brave y Chrome**. La automatización usa un perfil Pixel 7 en Chromium para cubrir distribución, entrada táctil y recuperación en Android; es un perfil de prueba, no un dispositivo físico elegido por el usuario ni una validación del ejecutable Brave. La aceptación de 30 fps requiere modelo real, navegador/versión y condiciones térmicas registrados.

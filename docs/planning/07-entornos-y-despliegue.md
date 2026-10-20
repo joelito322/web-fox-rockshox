@@ -8,7 +8,7 @@ El proyecto Supabase Cloud ya está creado y en ejecución. El frontend se traba
 
 Las credenciales están en `.env` en la raíz, ignorado por Git. No volver a solicitar valores ya disponibles; leerlos solo en procesos que los necesiten y no imprimirlos, copiarlos a planes o incluirlos en comandos/logs. Al abrir una sesión nueva revisar este estado y las variables por nombre, sin asumir que un archivo de entorno significa que una función de producto está implementada.
 
-Última validación de accesos: 18 de octubre de 2026, únicamente lecturas.
+Validación histórica previa al inicio: 18 de octubre de 2026, únicamente lecturas. Estado actual en la actualización siguiente.
 
 | Comprobación | Resultado observado | Límite de la evidencia |
 | --- | --- | --- |
@@ -20,6 +20,14 @@ Las credenciales están en `.env` en la raíz, ignorado por Git. No volver a sol
 | Token de gestión | Listado de Edge Functions HTTP 200, 0 funciones | Lectura validada; no se probó despliegue/escritura |
 
 El 401 inicial de `/rest/v1/` con clave publicable correspondía a una descripción de API que exigía clave secreta; no se interpretó como fallo de conexión. No se usó una escritura para probar permisos. La CLI no estaba instalada en la revisión; preparar herramientas al comenzar implementación no requiere un stack local.
+
+## Actualización de implementación · 19 de octubre de 2026
+
+El snapshot anterior conserva la comprobación histórica previa al inicio. Actualmente hay doce tablas propias, trece migraciones aplicadas con historial remoto y la función `admin-users` desplegada desde la fuente del repositorio. Las pruebas API y SQL de aislamiento, roles y guardado pasaron; evidencia y pendientes completos en [12](12-estado-implementacion.md).
+
+Los nombres públicos VITE ya están integrados mediante `.env.local` ignorado. Node 24.22.0 y pnpm 12.6.0 fijados; build correcto y pruebas ejecutables. Existen `netlify.toml` y `public/_redirects`; no hay despliegue Netlify todavía. Las secciones prospectivas inferiores describen el contrato de despliegue y no sustituyen este estado.
+
+Auth permite lectura de configuración (HTTP 200), pero la escritura con el token actual devuelve HTTP 403. Site URL observado: localhost:3000, sin callbacks; no hay SMTP propio configurado. Las plantillas y callbacks preparados en `supabase/` siguen pendientes de aplicación. La primera cuenta administradora `admin@atlas.mtb` ya está confirmada y vinculada a admin con doce permisos mediante la operación controlada del repositorio.
 
 ## Distribución
 
@@ -52,20 +60,20 @@ Variables presentes y comprobadas por nombre en `.env`, sin registrar sus valore
 | `SUPABASE_DB_URL` | Conexión PostgreSQL para herramientas y migraciones remotas |
 | `SUPABASE_ACCESS_TOKEN` | API de gestión/Edge Functions según alcance del token |
 
-El token fue creado para Edge Functions con lectura/escritura según lo indicado por el usuario; la comprobación realizada fue solo GET. Su alcance no limita la conexión SQL independiente. No afirmar que se ejecutó un deploy o migración solo porque el token o permiso exista.
+El token se usa para Edge Functions: lectura y despliegue de `admin-users` ya comprobados. También permite leer configuración de Auth, pero su escritura devolvió HTTP 403. La conexión SQL independiente permitió aplicar las trece migraciones; el alcance del token no limita ese acceso PostgreSQL.
 
-El frontend Vite planificado usará estos nombres públicos, todavía no presentes en la última comprobación de `.env`:
+El frontend Vite usa estos nombres públicos mediante `.env.local` ignorado, conservando los nombres originales de herramientas en `.env`:
 
 ```dotenv
 VITE_SUPABASE_URL=
 VITE_SUPABASE_PUBLISHABLE_KEY=
 ```
 
-Se completarán con los equivalentes públicos al integrar el frontend, sin copiar secretos al prefijo VITE. No renombrar o eliminar las variables existentes de herramientas por ese cambio. Cualquier `.env.example` futuro contendrá únicamente nombres y valores vacíos; las credenciales reales se mantienen en `.env`. No crear plantillas con cuentas o contraseñas predeterminadas.
+Se completaron con los equivalentes públicos, sin copiar secretos al prefijo VITE. No renombrar o eliminar las variables existentes de herramientas por ese cambio. El `.env.example` contiene únicamente nombres y valores vacíos; las credenciales reales se mantienen en `.env`. No crear plantillas con cuentas o contraseñas predeterminadas.
 
 Todo valor VITE usado por el frontend se publica en el build. URL y clave publicable pueden ir al cliente; clave secreta, conexión SQL, token de gestión y SMTP no. Las funciones remotas reciben su configuración segura en Supabase, no por incluir el `.env` de la raíz en el paquete del frontend o de la función.
 
-La protección `.env`, `.env.*` y excepción de plantilla vacía ya se aplicó en [`.gitignore`](../../.gitignore). Se verificó exclusión de `.env`, `.env.local` y entornos de subcarpetas, sin archivos reales de entorno rastreados. Las exclusiones de carpetas de trabajo de Netlify/CLI se añadirán cuando esas herramientas generen contenido; no confundirlas con código versionable de migraciones o funciones.
+La protección `.env`, `.env.*` y excepción de plantilla vacía ya se aplicó en [`.gitignore`](../../.gitignore). Se verificó exclusión de `.env`, `.env.local` y entornos de subcarpetas, sin archivos reales de entorno rastreados. La carpeta temporal de la CLI y los resultados de navegador están ignorados; no confundirlos con fuentes de migraciones o funciones.
 
 Antes de un push comprobar exclusión y archivos rastreados, sin imprimir valores:
 
@@ -78,25 +86,17 @@ La segunda orden solo puede mostrar plantillas vacías permitidas; ignorar un ar
 
 ## Backend versionado en el repositorio
 
-La estructura y procedimiento principal viven en [supabase/README.md](../../supabase/README.md): SQL ordenado en `supabase/migrations/`, cada Edge Function en `supabase/functions/<nombre>/index.ts`, configuración necesaria y pruebas pertinentes. Los archivos ejecutables se crearán al implementar; actualmente existe únicamente su README documental.
+La estructura y procedimiento principal viven en [supabase/README.md](../../supabase/README.md): SQL ordenado en `supabase/migrations/`, cada Edge Function en `supabase/functions/<nombre>/index.ts`, configuración necesaria y pruebas pertinentes. Las fuentes ya existen: trece migraciones aplicadas, Edge Function desplegada, operaciones controladas, plantillas, datos de catálogo en borrador y pruebas. El detalle de estado y sus límites está en 12.
 
 Primero preparar la fuente local y después aplicarla al proyecto Cloud autorizado, conservando historial de migraciones y fuente del despliegue. No dejar cambios remotos como única copia. Roles/permisos base necesarios para funcionar pertenecen a migraciones; el seed se reserva a contenido/datos de prueba deliberados. La validación funcional y sus resultados quedan en el documento 08, enlazados con la fuente aplicada.
 
 ## Compilación objetivo en Netlify
 
-La fase 0 fijará un gestor y su versión. La propuesta es pnpm, coherente con el lockfile ya presente, tras revisar `pnpm-workspace.yaml` y el comportamiento de scripts de instalación de esbuild. Estos archivos eran trabajo no versionado al iniciar la planificación; ya quedaron versionados en los commits documentales posteriores, sin reparar aún sus incompatibilidades.
+La fase 0 fijó pnpm 12.6.0 y Node 24.22.0, con `.node-version`, packageManager, un único lockfile y permiso de build de esbuild. La instalación con `--frozen-lockfile`, el build y las pruebas pasan. Se eliminó el lockfile npm redundante.
 
-Se añadirá `packageManager` con versión exacta en `package.json` y se verificará/actualizará el lockfile ya versionado según esa elección. Elegir una versión de Node LTS admitida por las dependencias y Netlify, y fijarla para local y build. La versión se decide al reparar la herramienta de pruebas, no se adivina en estos planes.
+Configuración fuente actual: [`netlify.toml`](../../netlify.toml), con build `pnpm run build` y publicación de `dist`; todavía no se publicó el frontend. Mantener las variables públicas en el contexto de Netlify al desplegar, sin secretos privilegiados.
 
-Configuración prevista, a crear durante implementación:
-
-```toml
-[build]
-  command = "pnpm run build"
-  publish = "dist"
-```
-
-Para la SPA con rutas limpias, `public/_redirects` tendrá:
+La SPA ya incluye `public/_redirects`:
 
 ```text
 /*    /index.html    200
@@ -104,7 +104,7 @@ Para la SPA con rutas limpias, `public/_redirects` tendrá:
 
 Probar acceso directo y recarga de fichas, montajes y `/auth/callback`. La reescritura no sustituye la pantalla 404 de React. Los archivos estáticos existentes se sirven normalmente. No hace falta añadir funciones de Netlify ni el plugin de emulación de sus servicios para publicar este frontend estático.
 
-La compilación falla actualmente por problemas previos del comparador y del entorno de pruebas; no se declara listo el despliegue hasta resolverlos.
+Los fallos previos del comparador y de compatibilidad Vite/Vitest se resolvieron. Quedan la aceptación funcional integral, las mediciones y el dominio/correo para declarar listo el despliegue.
 
 ## Configuración de Supabase
 
@@ -119,7 +119,7 @@ La compilación falla actualmente por problemas previos del comparador y del ent
 9. Desplegar Edge Functions administrativas por separado del frontend, con secretos solo en Supabase y autenticación del solicitante; probar visitante, user y revocación de permisos.
 10. Configurar plantilla/callback de invitación y establecimiento de contraseña; comprobar resultados parciales entre Auth Admin y asignación IAM.
 
-En desarrollo se usará el puerto real de Vite, por defecto `http://localhost:5173`, y se registrará su callback. Las previews de Netlify solo tendrán acceso de prueba si su origen está permitido de forma deliberada. Preferir una preview estable; no abrir redirecciones a cualquier dominio.
+El servidor de este trabajo se ejecuta en `http://localhost:5174`: el puerto 5173 estaba ocupado por otro proceso y se conservó. La configuración de Auth preparada contempla callbacks concretos de 5173, 5174 y del navegador de pruebas en 127.0.0.1:4180; el usuario los aplicará desde Dashboard. Las previews de Netlify solo tendrán acceso de prueba si su origen está permitido de forma deliberada. Preferir una preview estable; no abrir redirecciones a cualquier dominio.
 
 ## Desarrollo actual y despliegues futuros
 
@@ -129,7 +129,7 @@ En desarrollo se usará el puerto real de Vite, por defecto `http://localhost:51
 | Preview futura | Netlify si se prepara | El destino Cloud configurado explícitamente; callback permitido |
 | Producción futura | Netlify al publicar | Destino acordado antes de admitir usuarios reales; no existe producción actualmente |
 
-No se exige una base local ni un segundo proyecto para ejecutar este plan. El usuario autoriza reconstrucciones necesarias de tablas propias, datos de prueba y Edge Functions del alcance en el proyecto de desarrollo cuando se inicie implementación; no repetir aprobaciones para tareas rutinarias ya autorizadas. La solicitud vigente de actualizar planes no inicia cambios remotos. Preservar las fuentes versionadas, comprobar el destino y mantener coherente el historial; no extender esa autorización a borrar el proyecto o esquemas internos gestionados por Supabase.
+No se exige una base local ni un segundo proyecto para ejecutar este plan. El usuario autoriza reconstrucciones necesarias de tablas propias, datos de prueba y Edge Functions del alcance en el proyecto de desarrollo cuando se inicie implementación; no repetir aprobaciones para tareas rutinarias ya autorizadas. La solicitud posterior del usuario autorizó implementar y aplicar los cambios del alcance. Preservar las fuentes versionadas, comprobar el destino y mantener coherente el historial; no extender esa autorización a borrar el proyecto o esquemas internos gestionados por Supabase.
 
 SQL, Edge Functions y frontend tienen despliegues separados. Aplicar sus cambios con contratos compatibles; revertir Netlify no revierte automáticamente base o funciones. La aparición de usuarios reales o producción cambiará el contexto declarado y deberá reflejarse en estos planes antes de aplicar allí procedimientos de reconstrucción de desarrollo.
 

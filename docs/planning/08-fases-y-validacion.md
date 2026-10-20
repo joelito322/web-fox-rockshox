@@ -2,15 +2,15 @@
 
 Relacionado: [índice del plan](README.md) y [ciclo documental](../README.md).
 
-Estado global: planificación. Ninguna fase funcional de la nueva aplicación se declara implementada en esta entrega documental. Las tareas de este archivo se marcan únicamente con evidencia; completar un Markdown no completa una fase del producto.
-
-Instrucción vigente: trabajar solo en planes hasta que el usuario indique comenzar implementación. Esto incluye el nuevo logo y las configuraciones de entorno. No ejecutar las fases de este archivo como consecuencia de aprobar una decisión de arquitectura o marca.
+Estado global: implementación autorizada por el usuario el 19 de octubre de 2026. Se inicia fase 0 y se continúa según dependencias y aceptación de este archivo; ninguna funcionalidad se declara terminada por su documentación. No crear commits de implementación sin una nueva petición explícita.
 
 La entrega es full scope del alcance acordado, no un MVP. Una prueba de concepto dentro de una fase ayuda a comprobar una decisión; no reemplaza la implementación completa de esa función ni reduce el inventario que se acuerde. Se mantienen fuera las funciones no solicitadas.
 
+Avance y límites de las comprobaciones reales en [12](12-estado-implementacion.md); este archivo conserva la aceptación completa de cada fase.
+
 ## Alcance y trabajo incluido en la implementación
 
-La referencia de estilo UI/UX aprobada es COMMENCAL; la composición de acceso/registro de 06a y las de 06b/06c están aprobadas. La portada de 06a se conserva como propuesta; identidad gráfica, recursos definitivos y composición administrativa de catálogo/prearmadas siguen pendientes de revisión. En este cierre se incorporan los principios de lenguaje y claridad de interfaz solicitados por el usuario, junto a decisiones de producto y contratos técnicos, sin añadir una fase de aprobación para cada tarea.
+La referencia de estilo UI/UX aprobada es COMMENCAL; la composición de acceso/registro de 06a y las de 06b/06c están aprobadas. La portada de 06a se conserva como propuesta; identidad gráfica y recursos definitivos siguen pendientes de revisión. La composición administrativa de catálogo/prearmadas quedó aprobada en 06d. En este cierre se incorporan los principios de lenguaje y claridad de interfaz solicitados por el usuario, junto a decisiones de producto y contratos técnicos, sin añadir una fase de aprobación para cada tarea.
 
 ### Decisiones confirmadas por el usuario
 
@@ -63,7 +63,7 @@ Por aclaración del usuario, completar datos, diseñar propuestas pendientes, pr
 
 La revisión estética se realiza sobre propuestas concretas dentro de la ejecución; no obliga al usuario a resolver SQL, índices, coordenadas o todas las medidas del catálogo. Preguntar cuando falte una decisión real de negocio o una preferencia visual necesaria, continuar las tareas independientes y registrar solo el bloqueo específico. No crear una aprobación general nueva por cada fase.
 
-Las pruebas y correcciones son parte del trabajo necesario para terminar cada función. Una tarea solo se marca completa con su evidencia; una prueba fallida sigue dentro de la fase hasta resolverse. La fase actual continúa siendo planificación: esta distribución no autoriza por sí sola ejecutar código, recursos o servicios.
+Las pruebas y correcciones son parte del trabajo necesario para terminar cada función. Una tarea solo se marca completa con su evidencia; una prueba fallida sigue dentro de la fase hasta resolverse. La implementación está autorizada por la solicitud posterior del usuario. Registrar comprobaciones y pendientes en [12](12-estado-implementacion.md).
 
 ### Contratos técnicos que debe cerrar el desarrollo
 
@@ -111,11 +111,11 @@ La prueba 3D temprana sirve para detectar límites de fidelidad y rendimiento an
 
 **Objetivo:** disponer de un punto de partida que compile y permita comprobar cambios.
 
-- [ ] Revisar archivos modificados/no versionados y conservar trabajo ajeno a la reconstrucción.
-- [ ] Fijar pnpm y Node compatibles; revisar el permiso de build de esbuild en el workspace actual.
-- [ ] Resolver la incompatibilidad instalada entre Vitest y Vite, con una elección coherente de versiones.
-- [ ] Corregir o sustituir el comparador que consume campos inexistentes; retirar la importación sin uso del test de rutas.
-- [ ] Confirmar instalación reproducible con el lockfile elegido, build y ejecución de pruebas pertinentes.
+- [x] Revisar archivos modificados/no versionados y conservar trabajo ajeno a la reconstrucción.
+- [x] Fijar pnpm y Node compatibles; revisar el permiso de build de esbuild en el workspace actual.
+- [x] Resolver la incompatibilidad instalada entre Vitest y Vite, con una elección coherente de versiones.
+- [x] Corregir o sustituir el comparador que consume campos inexistentes; retirar la importación sin uso del test de rutas.
+- [x] Confirmar instalación reproducible con el lockfile elegido, build y ejecución de pruebas pertinentes.
 - [ ] Clasificar contenido reutilizable, revisar fuentes y retirar botones, cifras y promesas ficticias del nuevo recorrido.
 
 Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta comprobar si una parte del nuevo catálogo los utiliza. Conservar pnpm-lock.yaml y pnpm-workspace.yaml, ya versionados; revisar su coherencia durante la fase 0.
@@ -151,18 +151,18 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 - [ ] Reproducir las composiciones de acceso y registro aprobadas de [06a](06a-portada-y-acceso.md) en escritorio y móvil; incluir confirmación de contraseña, visibilidad por campo, requisitos reales y estado de confirmación de correo/reenvío.
 - [ ] Comprobar teclado móvil, autocompletado, errores asociados, conservación del correo y retorno al origen; no añadir campos de perfil, textos de relleno o panel fotográfico en móvil.
 
-- [ ] Preparar en supabase/migrations y aplicar al proyecto Cloud, conservando historial según [supabase/README.md](../../supabase/README.md), las migraciones de doce tablas propias —ocho de negocio y cuatro IAM—, restricciones, índices y RLS de [03](03-datos-y-operaciones.md), [03a](03a-esquema-y-campos.md) y [04](04-autenticacion-y-acceso.md); publicación/transacciones y composiciones prearmadas verificadas.
-- [ ] Crear en esta fase el núcleo IAM requerido por Auth/RLS: roles/permisos base protegidos, provisionamiento de registro siempre user ignorando metadata, consulta de acceso propio y helpers de autorización vigentes. Ordenar las migraciones para que las políticas/registro no dependan de funciones o datos que recién se crearían en 2b.
+- [x] Preparar en supabase/migrations y aplicar al proyecto Cloud, conservando historial según [supabase/README.md](../../supabase/README.md), las migraciones de doce tablas propias —ocho de negocio y cuatro IAM—, restricciones, índices y RLS de [03](03-datos-y-operaciones.md), [03a](03a-esquema-y-campos.md) y [04](04-autenticacion-y-acceso.md); publicación/transacciones y composiciones prearmadas verificadas.
+- [x] Crear en esta fase el núcleo IAM requerido por Auth/RLS: roles/permisos base protegidos, provisionamiento de registro siempre user ignorando metadata, consulta de acceso propio y helpers de autorización vigentes. Ordenar las migraciones para que las políticas/registro no dependan de funciones o datos que recién se crearían en 2b.
 - [ ] Cerrar diccionarios por categoría y casos de frontera del documento 09 antes de publicar variantes; no declarar datos aproximados como especificaciones reales.
 - [ ] Medir consultas representativas con EXPLAIN (ANALYZE, BUFFERS) y roles/RLS reales en entorno de prueba; índices según operadores, paginación estable y todos los filtros técnicos sobre la misma variante.
 - [ ] Integrar TanStack Query sin duplicar el borrador; probar caché por usuario, cancelación y respuestas tardías tras cambio de cuenta, sin reintento automático inseguro de guardados.
 - [ ] Completar fichas de variantes, medidas, vigencia y composiciones prearmadas de 11a–11m como trabajo de esta fase; revisar tallajes originales y excepciones.
 - [ ] Preparar un seed inicial pequeño y verificable para integración y completar después la ingesta de todo el inventario acordado antes de aceptar el catálogo; no copiar automáticamente todas las afirmaciones del prototipo.
 - [ ] Resolver fotos locales por `image_key` y comprobarlas en el build publicado; configurar Storage y rutas versionadas si se usan modelos GLB importados.
-- [ ] Integrar el cliente Supabase con los equivalentes públicos VITE de las variables actuales; no renombrar/eliminar las credenciales existentes de herramientas ni exponer secretos.
+- [x] Integrar el cliente Supabase con los equivalentes públicos VITE de las variables actuales; no renombrar/eliminar las credenciales existentes de herramientas ni exponer secretos.
 - [ ] Implementar registro, entrada, confirmación, callback, recuperación y cierre según el documento 04.
 - [ ] Configurar URLs y plantillas de Auth en el proyecto Cloud de desarrollo; verificar envío de correos con el frontend local.
-- [ ] Comprobar por API que dos usuarios no pueden acceder a los datos del otro y que las escrituras directas no eluden la RPC.
+- [x] Comprobar por API que dos usuarios no pueden acceder a los datos del otro y que las escrituras directas no eluden la RPC.
 - [ ] Confirmar que visitantes y user no pueden modificar catálogo; solo operaciones con permiso modifican datos. La subida web de archivos sigue fuera de alcance.
 - [ ] Probar portada, catálogo, ficha y comparación sin cuenta; exigir sesión para el configurador y continuar «Probar» tras el acceso, incluidos cancelación, variante retirada y confirmación en otro dispositivo.
 
@@ -173,18 +173,18 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 **Objetivo:** ejecutar permisos y administración completos según [04a](04a-iam-roles-y-permisos.md) y [04b](04b-administracion-y-operaciones.md), conservando el acceso común.
 
 - [ ] Reutilizar y verificar el núcleo IAM, roles base, provisionamiento user, consulta de acceso y helpers ya implantados en fase 2; iam sigue sin exposición de tablas ni escritura directa. Esta fase desarrolla las operaciones y UI administrativas, no retrasa prerrequisitos de autenticación/RLS.
-- [ ] Ejecutar bootstrap del primer admin por el responsable del proyecto, sin credenciales predeterminadas ni ascenso automático del primer registro.
+- [x] Ejecutar bootstrap del primer admin por el responsable del proyecto, sin credenciales predeterminadas ni ascenso automático del primer registro.
 - [ ] Reproducir [06c](06c-administracion-usuarios-roles-y-permisos.md): tres pestañas integradas, tablas, búsqueda/paginación reales, crear usuario desde cabecera y detalle en panel derecho; adaptación móvil accesible.
 - [ ] Implementar matriz de permisos: agrupación por área, roles horizontales, sistema en lectura, personalizado editable, borrador local, descarte y guardado transaccional por lote con revisiones; sin concesiones por usuario.
 - [ ] Probar matriz con más de un rol modificado: todo se confirma o revierte, se conservan cambios ante conflicto y no se borran permisos de columnas no cargadas.
 - [ ] Implementar lista y formularios de roles personalizados: crear, editar nombre/descripción/permisos, asignar, desactivar y eliminar no asignados; validaciones, revisión y límites del actor en servidor.
 - [ ] Proteger user/admin, impedir cambios propios que bloqueen acceso y serializar asignaciones/ediciones para conservar al último administrador incluso con solicitudes simultáneas.
-- [ ] Versionar cada Edge Function bajo supabase/functions/<nombre>/index.ts con su configuración/dependencias necesarias antes del despliegue Cloud.
+- [x] Versionar cada Edge Function bajo supabase/functions/<nombre>/index.ts con su configuración/dependencias necesarias antes del despliegue Cloud.
 - [ ] Implementar listado paginado de cuentas, invitación desde Edge Function y asignación segura por identidad; no exponer Auth Admin o correos de otras cuentas a usuarios sin permiso.
 - [ ] Completar callback invite y establecimiento de contraseña; comprobar cuenta existente, enlace vencido/repetido, timeout y resultado parcial entre invitación y rol sin promoción indebida.
 - [ ] Completar y revisar los bocetos ASCII de administración de catálogo/prearmadas: tablas, panel lateral, campos condicionales por categoría y acciones de borrador/publicación. Esta tarea pertenece a la fase; no se exige resuelta antes de iniciar el plan.
 - [ ] Implementar edición/publicación de catálogo y prearmadas con permisos separados, diccionarios de categoría y protección de variantes/recursos usados; sin editar SQL o subir GLB desde UI.
-- [ ] Revalidar permisos y limpiar caché/formularios administrativos ante revocación, cambio de cuenta o denegación; sin confiar en JWT/metadata o interfaz como única autoridad.
+- [x] Revalidar permisos y limpiar caché/formularios administrativos ante revocación, cambio de cuenta o denegación; sin confiar en JWT/metadata o interfaz como única autoridad.
 
 **Aceptación:** user no alcanza funciones administrativas mediante UI, API, RPC o payload manipulado; admin puede crear un rol distinto, elegir permisos válidos, asignarlo y comprobar sus restricciones reales. La creación del rol no inventa una capacidad del software. Invitaciones no anuncian éxito total ante asignación fallida. Usuarios con roles administrativos siguen sin acceder a montajes ajenos. Se comprueban privilegios retirados y ediciones concurrentes, sin sustituir pruebas de servidor por ocultar botones.
 
@@ -211,10 +211,10 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 
 **Objetivo:** completar el configurador para todas las categorías y variantes acordadas de enduro y descenso, usando la bicicleta de referencia como caso de comprobación, sin limitar a ella la entrega.
 
-- [ ] Definir y validar unidades, ejes, origen y manifiestos de recursos.
+- [x] Definir y validar unidades, ejes, origen y manifiestos de recursos.
 - [ ] Iniciar desde cuadro o desde cada referencia prearmada/talla acordada; validar referencias retiradas, conservación de intención durante acceso y guardado explícito sin cambios silenciosos.
 - [ ] Implementar todos los slots acordados del documento 03 y los inventarios de enduro y descenso; distinguir posiciones delanteras y traseras.
-- [ ] Resolver modelos GLB y generadores; sincronizar selección de pieza y panel.
+- [x] Resolver modelos GLB y generadores; sincronizar selección de pieza y panel.
 - [ ] Implementar acabados, color libre en piezas habilitadas, borrador local versionado y deshacer última sustitución.
 - [ ] Implementar avisos de conflictos conocidos y datos insuficientes sin impedir aplicar o guardar combinaciones visuales; revisar dependencias al cambiar cuadro.
 - [ ] Manejar selecciones rápidas, recurso fallido, falta de WebGL y pérdida de contexto sin perder el montaje.
@@ -227,7 +227,7 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 
 **Objetivo:** persistir y recuperar el montaje completo con su propietario.
 
-- [ ] Implementar `save_build`, transacción, validación estructural y control de revisión.
+- [x] Implementar `save_build`, transacción, validación estructural y control de revisión.
 - [ ] Crear, abrir, renombrar y eliminar montajes con sus estados visibles.
 - [ ] Conservar borrador al solicitar acceso y pedir guardado explícito al regresar.
 - [ ] Probar sesión caducada, error de red, respuesta incierta, conflicto entre pestañas y cambios realizados durante un guardado.
@@ -330,11 +330,13 @@ El 18 de octubre de 2026 se revisó el conjunto ampliado: 14 documentos en `docs
 
 El 18 de octubre de 2026 se comprobaron 16 documentos en docs y AGENTS.md: 118 enlaces locales y 4 anclas, sin destinos rotos, bloques abiertos o JSON inválido. Los 19 bloques Mermaid se revisaron estructuralmente sin renderizador. `git diff --check` sin errores. Se actualizaron exclusiones anteriores de panel/roles y el total de tablas. La revisión multiagente histórica de 09 no se atribuye retroactivamente al nuevo IAM. No se ejecutaron SQL, Auth, Edge Functions o pruebas de aplicación; los criterios de 2b siguen pendientes.
 
-## Pendientes reales y siguiente etapa
+## Estado vigente de ejecución
 
-Accesos ya disponibles: proyecto Cloud y variables de conexión/gestión en `.env`; estado de lectura registrado en 07. Las fuentes backend se preparan bajo supabase cuando se autorice implementación; nunca como cambios remotos sin archivo local.
+La implementación está autorizada y en curso desde el 19 de octubre de 2026. El estado comprobado y los pendientes se mantienen en [12](12-estado-implementacion.md), con el contexto de acceso en [07](07-entornos-y-despliegue.md). Las comprobaciones históricas anteriores no describen el estado actual del código.
 
-Pendiente: integración del frontend con nombres VITE públicos, preparación de herramientas, aplicación/validación funcional de las migraciones y Edge Functions, Auth/correo y callbacks reales, inventario/referencias del primer cuadro y dominio Netlify cuando se publique. No se requiere crear un proyecto o base local para avanzar. El contexto de desarrollo sin producción permite reconstrucciones necesarias del alcance cuando se implemente, sin convertir este cambio documental en una ejecución remota.
+El frontend ya integra las variables públicas, las herramientas están fijadas y hay trece migraciones y una Edge Function aplicadas en Cloud, con fuentes locales. Pasan build, treinta y cinco pruebas unitarias y los contratos API/SQL; hay pruebas reales de navegador con cuentas y recursos temporales. Ninguna de esas comprobaciones declara completo el alcance de esta matriz. Quedan dentro de las fases la cobertura comercial del inventario, sus recursos y medidas, la aceptación administrativa y de recuperación ante fallos, las mediciones y la integración final de correo/dominio. El usuario confirmó que callbacks y plantillas de Dashboard siguen pendientes; el callback de recuperación se probó por separado mediante un enlace temporal sin envío de correo.
+
+No mover el conjunto a `finished/` ni declarar terminado el catálogo por tener publicados los primeros conjuntos enduro/DH o por una composición sintética de aceptación. No hace falta una nueva autorización rutinaria para seguir con los trabajos de implementación ya acordados; no crear commits ni publicar el frontend sin la solicitud correspondiente.
 
 ## Revisión integral adversarial posterior
 
@@ -353,3 +355,5 @@ Delimitación de ingesta confirmada después: solo gama actual documentada. Exig
 ### Dictamen documental del 19 de octubre de 2026
 
 La [reevaluación multiagente de 10](10-auditoria-integral-de-planes.md#reevaluación-de-procedencia--19-de-octubre-de-2026) considera procedente iniciar las bases cuando el usuario autorice implementación. Los contratos corregidos mantienen el alcance completo. Completar variantes/vigencia, diccionarios finales, recursos y UI administrativa de negocio son tareas dentro de las fases, con dependencias internas y criterios de aceptación; no requisitos externos que el usuario deba resolver antes de iniciar el plan. El dictamen no inicia la implementación ni certifica el producto.
+
+Ampliación posterior de fases 3/4: cinco fuentes comerciales, 53 modelos y 116 variantes publicados de 128, con 114 variantes seleccionables y dos capturas anteriores conservadas, incluyendo seis cuadros con dos geometrías y cuatro modelos de neumático. Se comprobó recuperación local tras reautenticación y limpieza al salir expresamente. La revisión interna de doce borradores no autoriza publicarlos ni sustituye fidelidad final; pendientes y evidencia en 12/12a.

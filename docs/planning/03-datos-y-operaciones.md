@@ -188,3 +188,9 @@ Las migraciones futuras serán SQL ejecutable dentro de `supabase/migrations/`, 
 
 - [Funciones PostgreSQL y seguridad de ejecución](https://supabase.com/docs/guides/database/functions).
 - [RLS en Supabase](https://supabase.com/docs/guides/database/postgres/row-level-security).
+
+## Actualización de consultas tras edición administrativa
+
+Al guardar datos de catálogo, invalidar las listas y fichas afectadas, sus filtros y las referencias que muestran sus piezas. Publicar una marca debe renovar también los selectores públicos de marcas. Al guardar una composición, renovar su lista y detalle. Conservar la caché entre lecturas normales; no exigir recargar la página para ver un cambio confirmado desde la administración. Las invalidaciones independientes pueden ejecutarse juntas con TanStack Query, sin añadir un sistema de eventos o sincronización en tiempo real.
+
+Mediciones de consultas reales con RLS, sus scripts y límites por cardinalidad en [12a](12a-evidencia-del-visor.md#consultas-con-rls). Los tiempos actuales no sustituyen una prueba de carga ni justifican índices por anticipación.

@@ -2,15 +2,15 @@
 
 Este archivo define cómo crear, relacionar y mantener la documentación. El objetivo es conservar planes comprensibles y evidencia del trabajo realizado con tres estados sencillos.
 
-## Fase actual: solo planificación
+## Fase actual: implementación autorizada
 
-Por indicación del usuario, todas las decisiones se incorporan primero a los planes. No se está implementando la aplicación: no crear ni modificar código, logotipos, recursos finales, dependencias, configuraciones, migraciones ejecutables o servicios externos hasta que el usuario indique iniciar la implementación. Los diagramas y bocetos dentro de los Markdown describen la propuesta; no cuentan como funciones implementadas.
+El usuario autorizó comenzar la implementación después de comitear por partes los cambios documentales pendientes. Esos commits se crearon; ahora se ejecutan las fases de [08](planning/08-fases-y-validacion.md), con alcance completo, pruebas y evidencia. La preparación de datos, recursos y propuestas pendientes forma parte del trabajo. No crear nuevos commits sin petición explícita del usuario.
 
-Una decisión aprobada define qué construir después, no una orden automática de ejecutarla. El permiso previo para reconstruir el prototipo se mantiene para esa futura etapa, sin alterar este límite actual. Mientras tanto, los planes permanecen en `planning/`.
+Los planes permanecen en `planning/` mientras exista implementación parcial. No marcar una entrega terminada por redactar su contrato ni trasladar el conjunto antes de cumplir su aceptación.
 
 ## Contexto de entorno y comunicación persistente
 
-El frontend se desarrolla localmente y Supabase ya existe en Cloud, con credenciales en `.env` ignorado. No se instala una base/stack local de Supabase. [07](planning/07-entornos-y-despliegue.md) registra accesos comprobados y límites; [supabase/README.md](../supabase/README.md) define las fuentes backend versionadas y su aplicación remota futura. El proyecto es de desarrollo sin usuarios reales/producción según el usuario; los cambios necesarios ya autorizados no requieren confirmaciones repetidas una vez iniciada implementación. Ahora se actualizan planes, sin ejecutar migraciones o despliegues.
+El frontend se desarrolla localmente y Supabase ya existe en Cloud, con credenciales en `.env` ignorado. No se instala una base/stack local de Supabase. [07](planning/07-entornos-y-despliegue.md) registra accesos comprobados y límites; [supabase/README.md](../supabase/README.md) define las fuentes backend versionadas y su aplicación remota futura. El proyecto es de desarrollo sin usuarios reales/producción según el usuario; los cambios necesarios ya autorizados no requieren confirmaciones repetidas una vez iniciada implementación. La implementación remota del alcance está autorizada; versionar primero las fuentes y comprobar el proyecto de destino.
 
 En nuevas sesiones seguir AGENTS.md: recomendar ASCII/Mermaid para explicar relaciones y flujos cuando sea útil; presentar propuestas de UI con prompts/bocetos ASCII por defecto, antes de implementar y manteniendo después las versiones aprobadas. No sustituir un boceto aprobado por una explicación genérica ni añadir diagramas de relleno a respuestas triviales.
 
@@ -52,7 +52,7 @@ Un bloqueo de credenciales, migración sin aplicar o prueba no ejecutada se decl
 
 ## Índice actual
 
-- [Plan Atlas MTB](planning/README.md): catálogo, comparación, acceso Supabase y configurador 3D; todo sigue en planificación.
+- [Plan Atlas MTB](planning/README.md): catálogo, comparación, acceso Supabase y configurador 3D; implementación parcial, con evidencia y pendientes en el documento 12.
 - `validation/`: sin entregas pendientes de validación por ahora.
 - `finished/`: sin entregas funcionales finalizadas por ahora.
 

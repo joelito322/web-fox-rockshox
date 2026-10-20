@@ -1,7 +1,7 @@
 # Repository Guidelines
 
 ## Planificación y documentación
-- Fase actual: exclusivamente planificación. Actualizar los planes antes de implementar; no modificar código, recursos gráficos, configuración, dependencias ni servicios hasta que el usuario indique iniciar implementación. La autorización de reconstrucción futura no autoriza ejecutarla durante esta fase.
+- Fase actual: implementación autorizada explícitamente por el usuario después de los commits documentales. Ejecutar las fases de 08 con validación y evidencia, manteniendo alcance y contratos aprobados; actualizar planes antes de cambiar decisiones. No crear commits de implementación salvo solicitud explícita nueva.
 - La dirección objetivo del producto está en `docs/planning/README.md`; el código descrito abajo es el prototipo de referencia y puede reconstruirse según esos planes.
 - Antes de crear o mover documentación, seguir `docs/README.md`: `planning/` para propuesta o trabajo parcial, `validation/` para implementación por comprobar y `finished/` para implementación validada. Actualizar enlaces al mover un conjunto de documentos.
 - Los archivos `.env` y sus variantes locales no se versionan. `.env.example` solo contiene una plantilla vacía; nunca poner secretos en variables `VITE_*`.
@@ -19,9 +19,9 @@
 ## Contexto operativo para nuevas sesiones de Codex
 - Al iniciar una sesión/terminal en este repositorio, leer este AGENTS.md, `docs/planning/README.md` y el estado de accesos en `docs/planning/07-entornos-y-despliegue.md`. Conservar las decisiones aprobadas; no reiniciar el proyecto o pedir credenciales que ya están configuradas.
 - Supabase Cloud ya está creado. Frontend local; base, Auth, Storage y Edge Functions remotos. No levantar Supabase/PostgreSQL locales, Docker ni un segundo entorno de base por obligación. La CLI local, cuando se prepare, es una herramienta de acceso/despliegue remoto.
-- Las credenciales están en `.env` de la raíz: SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, SUPABASE_SECRET_KEY, SUPABASE_DB_URL y SUPABASE_ACCESS_TOKEN. Nunca imprimir sus valores, copiarlos a documentación o exponerlos como VITE. Los nombres VITE públicos del frontend siguen pendientes de integración, según la última comprobación.
-- Accesos verificados el 18 de octubre de 2026: Auth/API y Auth Admin responden; PostgreSQL conecta y declara permisos CREATE; token de gestión lista Edge Functions (HTTP 200). Snapshot: 0 tablas public, iam inexistente y 0 Edge Functions. Solo se hicieron lecturas: no afirmar migraciones o despliegues de escritura probados. Consultar 07 para límites y estado actualizado.
-- El usuario declara un proyecto de desarrollo sin usuarios reales ni producción. Cuando autorice implementar, se permiten cambios/reconstrucciones necesarios de tablas propias, datos de prueba y funciones del alcance en ese proyecto, sin confirmaciones repetidas por rutina. La fase actual sigue siendo planificación; actualizar contexto no autoriza ejecutar cambios remotos ahora. No eliminar el proyecto, secretos o esquemas gestionados por Supabase como parte de una reconstrucción de aplicación.
+- Las credenciales están en `.env` de la raíz: SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, SUPABASE_SECRET_KEY, SUPABASE_DB_URL y SUPABASE_ACCESS_TOKEN. Nunca imprimir sus valores, copiarlos a documentación o exponerlos como VITE. Los equivalentes públicos VITE_SUPABASE_URL y VITE_SUPABASE_PUBLISHABLE_KEY están integrados en `.env.local` ignorado; nunca copiar secretos a VITE.
+- Snapshot histórico previo a implementar, verificado el 18 de octubre de 2026: Auth/API y Auth Admin responden; PostgreSQL conecta y declara permisos CREATE; token de gestión lista Edge Functions (HTTP 200). Snapshot: 0 tablas public, iam inexistente y 0 Edge Functions. Solo se hicieron lecturas: no afirmar migraciones o despliegues de escritura probados. Consultar 07 y `docs/planning/12-estado-implementacion.md` para estado actualizado.
+- El usuario declara un proyecto de desarrollo sin usuarios reales ni producción. Cuando autorice implementar, se permiten cambios/reconstrucciones necesarios de tablas propias, datos de prueba y funciones del alcance en ese proyecto, sin confirmaciones repetidas por rutina. La implementación del alcance fue autorizada explícitamente; conservar fuentes e historial antes de aplicar cambios remotos. No eliminar el proyecto, secretos o esquemas gestionados por Supabase como parte de una reconstrucción de aplicación.
 - Toda migración/RPC/índice/política y toda Edge Function debe tener su fuente versionada aquí antes de aplicarla a Cloud: `supabase/migrations/<timestamp>_<descripcion>.sql`, `supabase/functions/<nombre>/index.ts`, dependencias/configuración necesarias y comprobaciones pertinentes. Seguir `supabase/README.md`; conservar historial de migraciones y evidencia, sin cambios remotos como única copia.
 
 ## Comunicación visual predeterminada con Codex
@@ -29,39 +29,23 @@
 - Para una propuesta nueva o cambio de UI, presentar por defecto un boceto/prompt ASCII de distribución, campos y acciones antes de implementarlo. Incluir estados/interacción y móvil cuando correspondan; conservar después los bocetos aprobados en el plan de su área.
 - Mantener el lenguaje claro, dirigido al usuario y propio de MTB; diagramas útiles sin procesos adicionales ni repetir explicaciones vacías. Una consulta breve de estado no necesita un diagrama de relleno.
 
-## Resumen actual del proyecto
-Este repositorio ya tiene un arranque con Vite + React + TypeScript. La pagina principal muestra el catalogo de suspension MTB por marca y modelos, con secciones de contenido, filtros visuales y tarjetas con imagenes. Existe una pagina de detalle por modelo con especificaciones completas, y un logo propio de Atlas MTB en SVG.
+## Estado y estructura actuales
+- Implementación parcial en curso; evidencia y pendientes en `docs/planning/12-estado-implementacion.md`. No confundir el alcance planificado con funciones completamente aceptadas.
+- `src/app/`: portada, estructura compartida y navegación React Router con rutas limpias. `src/features/`: auth, catálogo, administración, configurador y montajes propios. Reglas puras de montaje en `features/configurator/model/`; escena en `scene/`. Controles compartidos en `src/components/ui/`.
+- `src/pages/`, `src/data/` y las imágenes originales conservan referencias del prototipo. El catálogo nuevo usa Supabase; no ingerir afirmaciones del prototipo sin comprobar fuentes/vigencia. El hash antiguo de modelo se redirige a la ficha nueva.
+- Marca ATLAS MTB; eslogan «Cada pieza define tu camino». La portada nueva usa identidad vectorial y una ilustración propia, con revisión visual final todavía pendiente.
+- Node 24.22.0 en `.node-version`; pnpm 12.6.0 en packageManager. Usar `pnpm install --frozen-lockfile`, `pnpm run dev`, `pnpm run build`, `pnpm run test`. No reintroducir package-lock.json.
+- Doce tablas propias y trece migraciones aplicadas en Cloud; Edge Function `admin-users` desplegada. `scripts/supabase.mjs` aplica/lista migraciones y despliega con `--use-api`, sin Docker. Las pruebas cloud pertinentes están en `scripts/validate-supabase.mjs` y `supabase/tests/`.
+- El primer administrador `admin@atlas.mtb` fue creado por el usuario desde Dashboard y vinculado mediante `supabase/operations/bootstrap-admin.sql`. Comprobación posterior: correo confirmado, rol admin y doce permisos. El bootstrap es de una sola cuenta y ya está completado; nuevos administradores mediante operación autorizada de administración de cuentas. Jamás ascender el primer registro ni usar una contraseña predeterminada.
+- Configuración de Auth leída, pero PATCH rechazado con HTTP 403. Callbacks y plantillas están preparados en `supabase/auth-config.json` y `supabase/templates/`, todavía sin aplicar. No declarar confirmación/recuperación/invitación por correo validadas. Seguir 12 para continuar sin volver a pedir secretos existentes.
 
-## Estructura del proyecto
-- `src/pages/`: paginas principales.
-  - `Home.tsx`: landing + catalogo, ventanas funcionales, galeria de modelos.
-  - `ModelDetail.tsx`: ficha completa por modelo.
-- `src/data/`: datos del catalogo y mapeo de imagenes.
-  - `suspension.ts`: marcas, modelos, y especificaciones.
-  - `images.ts`: asociacion `Marca|Modelo` -> imagen.
-- `src/assets/images/`: imagenes reales de modelos.
-- `src/assets/atlas-mtb.svg`: logo principal.
-- `src/utils/routing.ts`: helpers de slug y hash routing.
+- Plataforma móvil objetivo confirmada: Android con Brave y Chrome. Playwright usa emulación Pixel 7 sobre Chromium; no confundirla con un teléfono físico ni con una ejecución del binario Brave.
 
-## Navegacion y rutas
-Se usa hash routing simple: `#/modelo/<slug>` para ver la ficha de un modelo. El estado se actualiza en tiempo real con el evento `hashchange` (no requiere F5). Cada modelo genera su slug desde `Marca + Modelo`.
+- Geometría procedimental publicada: conservar `atlas-bike-v1` y `atlas-bike-v2` con sus ensamblajes para reproducir los montajes guardados. El recurso del cuadro fija el ensamblaje; v2 introduce descenso con doble pletina, potencia directa y polea. Cambios físicos requieren otro generador y recurso/variante; no alterar versiones publicadas silenciosamente. La migración 013 rechaza publicar generadores no soportados por el cliente. Fuentes y estado del inventario en `supabase/catalog/README.md`.
 
-## Contenido y idioma
-Todo el texto descriptivo esta en espanol. Nombres de marcas y modelos permanecen en ingles. Las imagenes se conectan por la clave `Marca|Modelo`.
+- Ingesta de catálogo en cinco fuentes: `supabase/catalog/initial-reviewed.json`, `braking-reviewed.json`, `suspension-reviewed.json`, `frames-reviewed.json` y `tyres-reviewed.json` (todas bajo `supabase/catalog/`). Aplicar las cinco al reponer el inventario, antes de las composiciones. Mantener todas las fuentes: ninguna aislada es el catálogo completo; no sustituir variantes/recursos publicados al ampliar datos.
 
-Marca aprobada: **ATLAS MTB**. Eslogan: **Cada pieza define tu camino**. La firma debe ser profesional, elegante y legible; el eslogan no se repite en cada sección.
-
-## Estilos y branding
-El estilo visual actual se concentra en `src/index.css`. El prototipo conserva el logo SVG rojo industrial y su efecto hover. La nueva marca y los requisitos de su futuro logotipo están planificados en `docs/planning/06-ui-y-ux.md`; todavía no se implementan recursos nuevos.
-
-## Comandos
-- `npm install`: instala dependencias.
-- `npm run dev`: levanta el entorno local.
-- `npm run build`: genera build de produccion.
-- `npm run preview`: previsualiza el build.
-
-## Flujo recomendado
-Para agregar modelos nuevos, actualiza `src/data/suspension.ts` y asigna su imagen en `src/data/images.ts` con un archivo en `src/assets/images/`. Para crear nuevas paginas, agrega un archivo en `src/pages/` y luego integra la navegacion correspondiente.
+- Compatibilidad de navegador: `ATLAS_BROWSER_EXECUTABLE=/usr/bin/brave` permite usar el Brave instalado en Playwright. Brave Linux con perfil Pixel 7 sigue siendo emulación; no declararlo prueba física de Brave/Chrome Android. Borradores: conservar recuperación de la misma cuenta al reautenticar y limpiarla tras cierre explícito correcto; ver `src/features/auth/drafts.ts` y evidencia en 12.
 
 ## Cierre documental de cobertura
 - Todas las piezas del catálogo publicado deben poder montarse en 3D; se permiten recursos genéricos identificados y versionados, sin fallback implícito que altere montajes anteriores.

@@ -1,10 +1,8 @@
 # Atlas MTB: plan de construcción
 
-Estado: planificación de la nueva aplicación. Fecha de referencia: 18 de octubre de 2026.
+Estado: implementación autorizada por el usuario el 19 de octubre de 2026, después de los commits documentales solicitados. Comenzar por fase 0 de 08 y avanzar con comprobaciones. Los nuevos cambios de implementación permanecen sin commit hasta petición explícita.
 
-Por indicación expresa del usuario, esta etapa es únicamente de planificación. Las decisiones aprobadas se documentan aquí; código, recursos, configuración y servicios se trabajarán cuando se indique iniciar implementación. La creación del nuevo logotipo también pertenece a esa etapa futura.
-
-Contexto operativo vigente: proyecto Supabase Cloud creado, credenciales disponibles en `.env` de la raíz y conexiones de lectura validadas. Frontend local y backend/base directamente en Cloud; no stack local de Supabase. El usuario declara que no hay producción ni usuarios reales. Estado y límites de las comprobaciones en [07](07-entornos-y-despliegue.md); fuentes futuras del backend y procedimiento en [supabase/README.md](../../supabase/README.md). Esto no inicia la implementación.
+Contexto operativo vigente: proyecto Supabase Cloud creado, credenciales disponibles en `.env` de la raíz y conexiones de lectura validadas. Frontend local y backend/base directamente en Cloud; no stack local de Supabase. El usuario declara que no hay producción ni usuarios reales. Estado y límites de las comprobaciones en [07](07-entornos-y-despliegue.md); fuentes futuras del backend y procedimiento en [supabase/README.md](../../supabase/README.md). La autorización posterior del usuario inicia ahora la implementación.
 
 Esta carpeta define en conjunto el producto, su arquitectura y el orden de implementación. La aplicación actual es una referencia de contenido y comportamiento; sus pantallas, estilos y estructura pueden sustituirse. Crear estos planes no significa que Supabase, el inicio de sesión o el visor 3D ya estén implementados. El ciclo de documentación se rige por [docs/README.md](../README.md).
 
@@ -24,10 +22,12 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [06a · Portada y acceso](06a-portada-y-acceso.md) | Composición de portada, entrada, registro y confirmación de correo |
 | [06b · Espacio de trabajo](06b-espacio-de-trabajo.md) | Pestañas, galerías, tarjetas, paneles, configurador y Mis bicicletas |
 | [06c · UI administrativa](06c-administracion-usuarios-roles-y-permisos.md) | Tablas de usuarios/roles, paneles derechos y matriz de permisos por rol |
+| [06d · Administración de negocio](06d-administracion-catalogo-y-prearmadas.md) | Tablas y paneles de catálogo/prearmadas aprobados durante implementación |
 | [07 · Entornos y despliegue](07-entornos-y-despliegue.md) | Variables, Git, Supabase y publicación del frontend |
 | [08 · Fases y validación](08-fases-y-validacion.md) | Qué construir primero y cómo comprobar cada entrega |
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |
 | [10 · Auditoría integral](10-auditoria-integral-de-planes.md) | Revisión adversarial de todo el plan, incluyendo IAM; correcciones y pendientes |
+| [12 · Estado de implementación](12-estado-implementacion.md) | Evidencia real, integración Cloud y pendientes de ejecución |
 | [11 · Inventario e ingesta documental](11-propuesta-de-inventario.md) | Índice de 11a–11m: gama actual por categoría, modelos, campos y validaciones; datos concretos por completar |
 
 ```mermaid
@@ -87,6 +87,8 @@ flowchart TD
 ## Comunicación y lectura en nuevas sesiones
 
 Seguir AGENTS.md como contexto persistente al abrir Codex. Recomendar diagramas ASCII/Mermaid para lógica y relaciones cuando aporten claridad; para propuestas de UI usar por defecto bocetos ASCII con campos, acciones y adaptación pertinente antes de implementar. Las composiciones aprobadas se conservan en su documento de UI, no como recursos o pantallas ya entregados.
+
+La evidencia reproducible de recursos, renderizado y planes de consultas está en [12a](12a-evidencia-del-visor.md), con distinción entre automatización, emulación y aceptación física pendiente.
 
 ## Cómo mantener estos planes
 
