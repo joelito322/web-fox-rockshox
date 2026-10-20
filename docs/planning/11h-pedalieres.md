@@ -50,3 +50,14 @@ maintenance: objeto común | null
 ## Referencia concreta localizada
 
 [Race Face BSA CINCH 30 mm](https://www.raceface.com/products/bsa-cinch-30mm) confirma una familia de pedalier BSA para sistema de eje de 30 mm. Antes de una variante publicable se completa ancho de caja, código comercial, separadores y restricciones de la configuración. No asignar ese pedalier a unas bielas SRAM DUB o Shimano por aproximar diámetros; [la guía de Race Face](https://www.raceface.com/pages/crank-selection-guide) distingue esos sistemas. Consulta: 18 de octubre de 2026.
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+SM-BB71-41A Press-Fit HOLLOWTECH II, con cajas admitidas 89,5/92 mm indicadas en texto. No se duplican SKU por esas dos cajas ni se inventan separadores o una medida de eje no verificada.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.
+
+## Ampliación de descenso revisada
+
+[SRAM DUB PressFit BB-DUB-PF-A1](https://www.sram.com/en/sram/models/bb-dub-pf-a1), caja **PF107**. La [tabla de separadores](https://www.sram.com/globalassets/document-hierarchy/compatibility-map/mtb/dub-mtb-bottom-bracket-compatibility-chart.pdf) documenta 2 mm exteriores a la derecha para la fila DH/PF107. No trasladar esa receta a DUB MTB o a PF30; no asignar el peso de BB92 al PF107.

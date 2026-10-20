@@ -36,3 +36,10 @@ weight_g: número positivo | null
 weight_basis: pair | unit | null
 maintenance: objeto común | null
 ```
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+ROCKBROS Nylon 2017-12, negro 2017-12CBK, par de 365 g, plataforma de referencia 120×105×20 mm y rosca 9/16. Precio orientativo oficial: 33,99 USD, mercado estadounidense, consultado el 19 de octubre de 2026; no sincronizado.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.

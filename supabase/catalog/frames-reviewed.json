@@ -1,0 +1,3526 @@
+{
+  "brands": [
+    {
+      "id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "name": "Santa Cruz",
+      "slug": "santa-cruz",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "0eadf734-3c19-5f9a-9163-06af0c571bff",
+      "name": "Canyon",
+      "slug": "canyon",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "33b3bc34-40f8-5504-ace2-a7a2819f7376",
+      "name": "Specialized",
+      "slug": "specialized",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "2e00e3fb-a71a-553e-a92d-643a2b7ce015",
+      "name": "DA BOMB",
+      "slug": "da-bomb",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "13d13f28-dd0c-5960-842e-921991ef1670",
+      "name": "SCOTT",
+      "slug": "scott",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "be2b1cbc-71a4-580c-8d20-993e711a0e7c",
+      "name": "Trek",
+      "slug": "trek",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "76b966f2-2480-53ac-8861-7c064034b070",
+      "brand_id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "name": "Nomad 7 CC",
+      "slug": "santa-cruz-nomad-7-my27",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometría documentadas.",
+      "technical_notes": "Silueta genérica identificada; no reproduce carenados, logotipos ni cinemática de fábrica. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://web.santacruzbicycles.com/products/nomad-frame-2027",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta actual; acabado y SKU por talla desde selector comercial",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "14424ba5-d74e-5c5f-a527-bd9448bde47d",
+      "brand_id": "0eadf734-3c19-5f9a-9163-06af0c571bff",
+      "name": "Sender CFR",
+      "slug": "canyon-sender-cfr-high-pivot",
+      "category": "frame",
+      "disciplines": [
+        "downhill"
+      ],
+      "description": "Cuadro de descenso con talla y geometría documentadas.",
+      "technical_notes": "Silueta genérica identificada; no reproduce carenados, logotipos ni cinemática de fábrica. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/",
+          "consulted_at": "2026-10-19",
+          "note": "Gama actual con Sender CFR Underdog y CLLCTV",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "brand_id": "33b3bc34-40f8-5504-ace2-a7a2819f7376",
+      "name": "S-Works Enduro",
+      "slug": "specialized-s-works-enduro-udh",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometría documentadas.",
+      "technical_notes": "Silueta genérica identificada; no reproduce carenados, logotipos ni cinemática de fábrica. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "0d06d89b-1fd7-5351-9e6f-adff106f2f26",
+      "brand_id": "2e00e3fb-a71a-553e-a92d-643a2b7ce015",
+      "name": "CHERRY BOMB 29",
+      "slug": "da-bomb-cherry-bomb-29",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometría documentadas.",
+      "technical_notes": "Silueta genérica identificada; no reproduce carenados, logotipos ni cinemática de fábrica. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.dabombmtb.com/product_detail/CherryBomb29/",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://www.dabombmtb.com/supports/FRAME-GEOMETRY/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla oficial 2026: 17 y 19 pulgadas, sin equivalencia automática M/L",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "a5248c0a-7525-5ea0-8b82-660c6d35276d",
+      "brand_id": "13d13f28-dd0c-5960-842e-921991ef1670",
+      "name": "Ransom RC HMX",
+      "slug": "scott-ransom-rc-427727",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometría documentadas.",
+      "technical_notes": "Silueta genérica identificada; no reproduce carenados, logotipos ni cinemática de fábrica. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.scott-sports.com/global/en/product/scott-ransom-rc-frame-shock",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://static.scott-sports.com/image/upload/v1778094871/2118622.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Manual de plataforma enlazado por la oferta actual; restricciones y geometría por talla",
+          "fields": []
+        },
+        {
+          "url": "https://www.scott-sports.com/global/en/products/bike-parts-framesets",
+          "consulted_at": "2026-10-19",
+          "note": "Catálogo actual: artículo 427727, sin sustituirlo por 423268",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "8f0d8a5d-df57-5b56-9de0-39155799627f",
+      "brand_id": "be2b1cbc-71a4-580c-8d20-993e711a0e7c",
+      "name": "Slash AL Gen 6",
+      "slug": "trek-slash-al-gen-6",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometría documentadas.",
+      "technical_notes": "Silueta genérica identificada; no reproduce carenados, logotipos ni cinemática de fábrica. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/slash/f/F341/slash-al-gen-6-frameset/42271/",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "8a7efa0b-059f-555f-a0a4-eafe2aeb0f30",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.440944,
+              0.007,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.805056,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.633,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.50391,
+              0.534472,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.081798,
+              0.391547,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.116798,
+              0.561547,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.495,
+              0.683,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.13,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Nomad 7 CC · M · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "6efdbfb5-cc20-5918-9fff-6dd5bc6d765a",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.443945,
+              0.007,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.832055,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.475,
+              0.643,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.528356,
+              0.535515,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.083016,
+              0.411714,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.118016,
+              0.581714,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.515,
+              0.693,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.13,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Nomad 7 CC · L · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "86e41afc-d2ce-5920-a1c8-458fb639bacc",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.437927,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.835073,
+              0.029,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.468,
+              0.63,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.515669,
+              0.536444,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.079747,
+              0.39197,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.114747,
+              0.56197,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.508,
+              0.68,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.02,
+              0.28,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.051837,
+              0.040543,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.22,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.055,
+              0.24,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "fork_upper_crown": {
+            "position": [
+              0.448,
+              0.665,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Sender CFR · M · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "7c35663f-0032-5a57-828b-1dfda0ced144",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.437927,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.865073,
+              0.029,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.495,
+              0.635,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.544939,
+              0.536989,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.087323,
+              0.410822,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.122323,
+              0.580822,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.535,
+              0.685,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.02,
+              0.28,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.051837,
+              0.040543,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.22,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.055,
+              0.24,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "fork_upper_crown": {
+            "position": [
+              0.475,
+              0.67,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Sender CFR · L · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "d83c6593-8e50-5b6b-ad2c-00cf82bbae7a",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.441175,
+              0.027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.804825,
+              0.027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.464,
+              0.62,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.507994,
+              0.530197,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.101607,
+              0.407524,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.136607,
+              0.577524,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.504,
+              0.67,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.105,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "S-Works Enduro · S3 · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "5df8f0d1-8bb2-512b-b5b3-cb72a70a963a",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.441175,
+              0.027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.832825,
+              0.027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.487,
+              0.629,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.535393,
+              0.530217,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.106446,
+              0.42693,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.141446,
+              0.59693,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.527,
+              0.679,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.105,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "S-Works Enduro · S4 · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "f0e96e97-8157-5b19-8a84-3cbcb91f3f8c",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433337,
+              0.038,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.751563,
+              0.038,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.4422,
+              0.627,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.487816,
+              0.526904,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.094479,
+              0.409235,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.129479,
+              0.579235,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.4822,
+              0.677,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.11,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "CHERRY BOMB 29 · 17″ · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "4f6353c7-cfa5-5ff8-853f-ddf06bbfade2",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433337,
+              0.038,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.772763,
+              0.038,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.4592,
+              0.6361,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.504816,
+              0.536004,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.094479,
+              0.409235,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.129479,
+              0.579235,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.4992,
+              0.6861,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.11,
+              0.13,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "CHERRY BOMB 29 · 19″ · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "14205695-4a94-5a8d-8623-f6a6db5e7748",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.439345,
+              0.024,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.799455,
+              0.024,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.458,
+              0.6193,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.502151,
+              0.529574,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.090835,
+              0.399811,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.125835,
+              0.569811,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.498,
+              0.6693,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.19756,
+              0.287943,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Ransom RC HMX · M · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "b9be4287-2ec3-50b8-abe8-be28500feb25",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.439345,
+              0.024,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.831055,
+              0.024,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.483,
+              0.6328,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.533773,
+              0.529615,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.095983,
+              0.429403,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.130983,
+              0.599403,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.523,
+              0.6828,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.19756,
+              0.287943,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.12,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Ransom RC HMX · L · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "5e467a0d-0c10-520e-852f-a67f3a9e0925",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.429196,
+              0.0019,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.794604,
+              0.0229,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.448,
+              0.6231,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.492932,
+              0.533763,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.08453,
+              0.390966,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.11953,
+              0.560966,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.488,
+              0.6731,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.02,
+              0.28,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.04609,
+              0.0597,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.22,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.055,
+              0.24,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Slash AL Gen 6 · M · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    },
+    {
+      "id": "55fdb559-d23e-5512-a9b1-8ac8dcdd9493",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v2",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.434196,
+              0.0019,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.843504,
+              0.0229,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.4881,
+              0.6411,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.542018,
+              0.533895,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.097114,
+              0.424021,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.132114,
+              0.594021,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "handlebar": {
+            "position": [
+              0.5281,
+              0.6911,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.02,
+              0.28,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.04609,
+              0.0597,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.08,
+              0.22,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.055,
+              0.24,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "frame"
+        ],
+        "selectable_nodes": [
+          "frame"
+        ]
+      },
+      "reference_notes": "Slash AL Gen 6 · L · Geometría genérica v2, anclajes estimados; no CAD ni cinemática de marca.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "cc3cc31c-fb82-54eb-ba9c-ecb9e32ee5ca",
+      "component_id": "76b966f2-2480-53ac-8861-7c064034b070",
+      "label": "M · Matte Metallic Earth",
+      "model_year": 2027,
+      "generation": "7",
+      "manufacturer_code": "68-27322-3-941-2399",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://web.santacruzbicycles.com/products/nomad-frame-2027",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta actual; acabado y SKU por talla desde selector comercial",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "upper_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "lower_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "Confirmar orientación y herrajes; la coincidencia de medida no certifica el montaje."
+        },
+        "headset_standard": "IS41/IS52",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Horquilla de 170–180 mm; referencia eje-corona de 588 mm y offset 44 mm.",
+        "tire_clearance_notes": "Diseño MX 29/27.5. No trasladar las restricciones de Nomad 6 a esta generación.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 455,
+          "stack_mm": 633,
+          "head_tube_mm": 110,
+          "chainstay_mm": 441,
+          "wheelbase_mm": 1246,
+          "effective_top_tube_mm": 587,
+          "seat_tube_mm": 400,
+          "seat_angle_deg": 78.2,
+          "head_angle_deg": 63.6,
+          "bb_height_mm": 346,
+          "reference_position": "Hi; tabla MY27. Sin sag. Ángulo efectivo de sillín de la tabla, no ángulo físico del tubo."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Metallic Earth",
+            "image_key": null,
+            "material": {
+              "color": "#5c5145",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "8a7efa0b-059f-555f-a0a4-eafe2aeb0f30",
+      "price_reference": null
+    },
+    {
+      "id": "f505fcef-936a-5e4e-b674-53cb8592a9b9",
+      "component_id": "76b966f2-2480-53ac-8861-7c064034b070",
+      "label": "L · Matte Metallic Earth",
+      "model_year": 2027,
+      "generation": "7",
+      "manufacturer_code": "68-27322-4-941-2399",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://web.santacruzbicycles.com/products/nomad-frame-2027",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta actual; acabado y SKU por talla desde selector comercial",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "upper_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "lower_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "Confirmar orientación y herrajes; la coincidencia de medida no certifica el montaje."
+        },
+        "headset_standard": "IS41/IS52",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Horquilla de 170–180 mm; referencia eje-corona de 588 mm y offset 44 mm.",
+        "tire_clearance_notes": "Diseño MX 29/27.5. No trasladar las restricciones de Nomad 6 a esta generación.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 475,
+          "stack_mm": 643,
+          "head_tube_mm": 120,
+          "chainstay_mm": 444,
+          "wheelbase_mm": 1276,
+          "effective_top_tube_mm": 604,
+          "seat_tube_mm": 420,
+          "seat_angle_deg": 78.6,
+          "head_angle_deg": 63.6,
+          "bb_height_mm": 346,
+          "reference_position": "Hi; tabla MY27. Sin sag. Ángulo efectivo de sillín de la tabla, no ángulo físico del tubo."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Metallic Earth",
+            "image_key": null,
+            "material": {
+              "color": "#5c5145",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "6efdbfb5-cc20-5918-9fff-6dd5bc6d765a",
+      "price_reference": null
+    },
+    {
+      "id": "705db03d-d942-5242-a140-35a33f9b9d9b",
+      "component_id": "14424ba5-d74e-5c5f-a527-bd9448bde47d",
+      "label": "M · Void Black",
+      "model_year": null,
+      "generation": "High pivot",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "tire_clearance_notes",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/",
+          "consulted_at": "2026-10-19",
+          "note": "Gama actual con Sender CFR Underdog y CLLCTV",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CFR",
+        "suspension_type": "High pivot con polea",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Tune específico del cuadro; confirmar tipo de ojal, herrajes y posición de progresividad."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 34.9,
+        "tire_clearance_notes": "Paso nominal 63 mm según ficha del cuadro.",
+        "fork_restrictions": "Configuración documentada con doble pletina de 200 mm; confirmar restricciones de altura y dirección.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 468,
+          "stack_mm": 630,
+          "head_tube_mm": 105,
+          "wheelbase_mm": 1273,
+          "effective_top_tube_mm": 596,
+          "seat_tube_mm": 400,
+          "seat_angle_deg": 78.5,
+          "chainstay_mm": 438,
+          "head_angle_deg": 63,
+          "reference_position": "Tabla del Sender CFR actual, configuración MX predeterminada. Reach ajustable; no se combinan posiciones de dirección."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Void Black",
+            "image_key": null,
+            "material": {
+              "color": "#202322",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "86e41afc-d2ce-5920-a1c8-458fb639bacc",
+      "price_reference": null
+    },
+    {
+      "id": "f3bbfbb6-2d4b-5185-b233-a43ca3a7aeb4",
+      "component_id": "14424ba5-d74e-5c5f-a527-bd9448bde47d",
+      "label": "L · Void Black",
+      "model_year": null,
+      "generation": "High pivot",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "tire_clearance_notes",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/",
+          "consulted_at": "2026-10-19",
+          "note": "Gama actual con Sender CFR Underdog y CLLCTV",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CFR",
+        "suspension_type": "High pivot con polea",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Tune específico del cuadro; confirmar tipo de ojal, herrajes y posición de progresividad."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 34.9,
+        "tire_clearance_notes": "Paso nominal 63 mm según ficha del cuadro.",
+        "fork_restrictions": "Configuración documentada con doble pletina de 200 mm; confirmar restricciones de altura y dirección.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 495,
+          "stack_mm": 635,
+          "head_tube_mm": 110,
+          "wheelbase_mm": 1303,
+          "effective_top_tube_mm": 630,
+          "seat_tube_mm": 420,
+          "seat_angle_deg": 78,
+          "chainstay_mm": 438,
+          "head_angle_deg": 63,
+          "reference_position": "Tabla del Sender CFR actual, configuración MX predeterminada. Reach ajustable; no se combinan posiciones de dirección."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Void Black",
+            "image_key": null,
+            "material": {
+              "color": "#202322",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "7c35663f-0032-5a57-828b-1dfda0ced144",
+      "price_reference": null
+    },
+    {
+      "id": "39561b5e-5468-5f9c-8773-fe86b08209a9",
+      "component_id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "label": "S3 · Gloss Rebel Pink Tint Carbon / Fog Tint",
+      "model_year": null,
+      "generation": "UDH",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seat_clamp_diameter_mm",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Nombre del acabado comercial; color del visor aproximado, sin código de pintura certificado",
+          "fields": [
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono FACT 11m",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 60,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "restrictions": "Confirmar herrajes y tune específico Ride Dynamics del montaje de origen."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA"
+        },
+        "seat_clamp_diameter_mm": 38.6,
+        "fork_restrictions": "Geometría comercial con longitud total de horquilla 581 mm. No deducir otro máximo a partir de esa referencia.",
+        "size_label": "S3",
+        "geometry": {
+          "reach_mm": 464,
+          "stack_mm": 620,
+          "head_tube_mm": 100,
+          "wheelbase_mm": 1246,
+          "effective_top_tube_mm": 619,
+          "seat_tube_mm": 420,
+          "chainstay_mm": 442,
+          "head_angle_deg": 63.9,
+          "seat_angle_deg": 76,
+          "bb_height_mm": 347,
+          "bb_drop_mm": 28,
+          "reference_position": "Low BB; tallas originales S3/S4, sin convertirlas a M/L. La distancia entre ejes sigue la tabla comercial publicada."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Rebel Pink Tint Carbon / Fog Tint",
+            "image_key": null,
+            "material": {
+              "color": "#8d506a",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": false,
+      "visual_asset_id": "d83c6593-8e50-5b6b-ad2c-00cf82bbae7a",
+      "price_reference": null
+    },
+    {
+      "id": "4b679497-e061-59f3-b8bc-44315b3ff0f5",
+      "component_id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "label": "S4 · Gloss Rebel Pink Tint Carbon / Fog Tint",
+      "model_year": null,
+      "generation": "UDH",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seat_clamp_diameter_mm",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Nombre del acabado comercial; color del visor aproximado, sin código de pintura certificado",
+          "fields": [
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono FACT 11m",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 60,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "restrictions": "Confirmar herrajes y tune específico Ride Dynamics del montaje de origen."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA"
+        },
+        "seat_clamp_diameter_mm": 38.6,
+        "fork_restrictions": "Geometría comercial con longitud total de horquilla 581 mm. No deducir otro máximo a partir de esa referencia.",
+        "size_label": "S4",
+        "geometry": {
+          "reach_mm": 487,
+          "stack_mm": 629,
+          "head_tube_mm": 110,
+          "wheelbase_mm": 1274,
+          "effective_top_tube_mm": 644,
+          "seat_tube_mm": 440,
+          "chainstay_mm": 442,
+          "head_angle_deg": 63.9,
+          "seat_angle_deg": 76,
+          "bb_height_mm": 347,
+          "bb_drop_mm": 28,
+          "reference_position": "Low BB; tallas originales S3/S4, sin convertirlas a M/L. La distancia entre ejes sigue la tabla comercial publicada."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Rebel Pink Tint Carbon / Fog Tint",
+            "image_key": null,
+            "material": {
+              "color": "#8d506a",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": false,
+      "visual_asset_id": "5df8f0d1-8bb2-512b-b5b3-cb72a70a963a",
+      "price_reference": null
+    },
+    {
+      "id": "64f9c62b-fe40-5e8c-91b1-e054d44f1811",
+      "component_id": "0d06d89b-1fd7-5351-9e6f-adff106f2f26",
+      "label": "17″ · Matte Black",
+      "model_year": null,
+      "generation": "Geometría 2026",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.dabombmtb.com/product_detail/CherryBomb29/",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.dabombmtb.com/supports/FRAME-GEOMETRY/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla oficial 2026: 17 y 19 pulgadas, sin equivalencia automática M/L",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio",
+        "suspension_type": "Horst linkage",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 147,
+        "shock_fit": {
+          "eye_to_eye_mm": 210,
+          "stroke_mm": 55,
+          "restrictions": "Tornillo M8; confirmar anchura de herrajes. Comprobar interferencia de depósito y tubo inferior al cambiar amortiguador."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 30.9,
+        "fork_restrictions": "Recorrido recomendado 150–160 mm según tabla 2026.",
+        "tire_clearance_notes": "Ficha actual: máximo 29×2.4; un catálogo anterior indica 2.5. No ampliar el límite por esa discrepancia.",
+        "size_label": "17″",
+        "geometry": {
+          "reach_mm": 442.2,
+          "stack_mm": 627,
+          "wheelbase_mm": 1184.9,
+          "effective_top_tube_mm": 598.3,
+          "chainstay_mm": 435,
+          "head_angle_deg": 65.5,
+          "bb_height_mm": 336,
+          "reference_position": "Tabla oficial 2026; talla original en pulgadas. Longitud de dirección y ángulo de sillín sin dato verificable."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Black",
+            "image_key": null,
+            "material": {
+              "color": "#242825",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f0e96e97-8157-5b19-8a84-3cbcb91f3f8c",
+      "price_reference": null
+    },
+    {
+      "id": "05168c48-6a99-579d-a6a7-3fd37944b916",
+      "component_id": "0d06d89b-1fd7-5351-9e6f-adff106f2f26",
+      "label": "19″ · Matte Black",
+      "model_year": null,
+      "generation": "Geometría 2026",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.dabombmtb.com/product_detail/CherryBomb29/",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.dabombmtb.com/supports/FRAME-GEOMETRY/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla oficial 2026: 17 y 19 pulgadas, sin equivalencia automática M/L",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio",
+        "suspension_type": "Horst linkage",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 147,
+        "shock_fit": {
+          "eye_to_eye_mm": 210,
+          "stroke_mm": 55,
+          "restrictions": "Tornillo M8; confirmar anchura de herrajes. Comprobar interferencia de depósito y tubo inferior al cambiar amortiguador."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 30.9,
+        "fork_restrictions": "Recorrido recomendado 150–160 mm según tabla 2026.",
+        "tire_clearance_notes": "Ficha actual: máximo 29×2.4; un catálogo anterior indica 2.5. No ampliar el límite por esa discrepancia.",
+        "size_label": "19″",
+        "geometry": {
+          "reach_mm": 459.2,
+          "stack_mm": 636.1,
+          "wheelbase_mm": 1206.1,
+          "effective_top_tube_mm": 619.3,
+          "chainstay_mm": 435,
+          "head_angle_deg": 65.5,
+          "bb_height_mm": 336,
+          "reference_position": "Tabla oficial 2026; talla original en pulgadas. Longitud de dirección y ángulo de sillín sin dato verificable."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Black",
+            "image_key": null,
+            "material": {
+              "color": "#242825",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "4f6353c7-cfa5-5ff8-853f-ddf06bbfade2",
+      "price_reference": null
+    },
+    {
+      "id": "5444dbb7-4983-56fd-9252-f4e5ef1d939e",
+      "component_id": "a5248c0a-7525-5ea0-8b82-660c6d35276d",
+      "label": "M · Foggy Grey",
+      "model_year": null,
+      "generation": "Ransom integrado · 427727",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.scott-sports.com/global/en/product/scott-ransom-rc-frame-shock",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://static.scott-sports.com/image/upload/v1778094871/2118622.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Manual de plataforma enlazado por la oferta actual; restricciones y geometría por talla",
+          "fields": []
+        },
+        {
+          "url": "https://www.scott-sports.com/global/en/products/bike-parts-framesets",
+          "consulted_at": "2026-10-19",
+          "note": "Catálogo actual: artículo 427727, sin sustituirlo por 423268",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono HMX",
+        "suspension_type": "6 Link · suspensión integrada",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 65,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "lower_mount": {
+            "width_mm": 20,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "Suspensión integrada; comprobar acceso, holguras y tune SCOTT. El recurso genérico no reproduce la carcasa ni los mecanismos internos."
+        },
+        "headset_standard": "ZS56/ZS56",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Referencia de 170 mm; dirección ajustable ±0.6°.",
+        "tire_clearance_notes": "El manual de plataforma indica 2.5″ máximo y conversión MX mediante flip chip; confirmar configuración completa.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 458,
+          "stack_mm": 619.3,
+          "head_tube_mm": 100,
+          "wheelbase_mm": 1238.8,
+          "effective_top_tube_mm": 598.7,
+          "seat_tube_mm": 410,
+          "seat_angle_deg": 77.2,
+          "chainstay_mm": 440,
+          "head_angle_deg": 63.8,
+          "bb_height_mm": 350,
+          "reference_position": "Geometría del manual de plataforma enlazado actualmente desde el artículo 427727; tabla Ransom 2024, sin sag. No atribuir a la variante un año comercial 2024."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Foggy Grey",
+            "image_key": null,
+            "material": {
+              "color": "#a4a9a5",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "14205695-4a94-5a8d-8623-f6a6db5e7748",
+      "price_reference": null
+    },
+    {
+      "id": "1523f98f-a61f-5e6e-910e-c1cc36163be9",
+      "component_id": "a5248c0a-7525-5ea0-8b82-660c6d35276d",
+      "label": "L · Foggy Grey",
+      "model_year": null,
+      "generation": "Ransom integrado · 427727",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.scott-sports.com/global/en/product/scott-ransom-rc-frame-shock",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://static.scott-sports.com/image/upload/v1778094871/2118622.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Manual de plataforma enlazado por la oferta actual; restricciones y geometría por talla",
+          "fields": []
+        },
+        {
+          "url": "https://www.scott-sports.com/global/en/products/bike-parts-framesets",
+          "consulted_at": "2026-10-19",
+          "note": "Catálogo actual: artículo 427727, sin sustituirlo por 423268",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono HMX",
+        "suspension_type": "6 Link · suspensión integrada",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 65,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "lower_mount": {
+            "width_mm": 20,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "Suspensión integrada; comprobar acceso, holguras y tune SCOTT. El recurso genérico no reproduce la carcasa ni los mecanismos internos."
+        },
+        "headset_standard": "ZS56/ZS56",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Referencia de 170 mm; dirección ajustable ±0.6°.",
+        "tire_clearance_notes": "El manual de plataforma indica 2.5″ máximo y conversión MX mediante flip chip; confirmar configuración completa.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 483,
+          "stack_mm": 632.8,
+          "head_tube_mm": 115,
+          "wheelbase_mm": 1270.4,
+          "effective_top_tube_mm": 624.4,
+          "seat_tube_mm": 440,
+          "seat_angle_deg": 77.4,
+          "chainstay_mm": 440,
+          "head_angle_deg": 63.8,
+          "bb_height_mm": 350,
+          "reference_position": "Geometría del manual de plataforma enlazado actualmente desde el artículo 427727; tabla Ransom 2024, sin sag. No atribuir a la variante un año comercial 2024."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Foggy Grey",
+            "image_key": null,
+            "material": {
+              "color": "#a4a9a5",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b9be4287-2ec3-50b8-abe8-be28500feb25",
+      "price_reference": null
+    },
+    {
+      "id": "56c2c7bd-cc0e-57de-ba9f-6f7257ff8aaa",
+      "component_id": "8f0d8a5d-df57-5b56-9de0-39155799627f",
+      "label": "M · Mercury",
+      "model_year": null,
+      "generation": "Gen 6",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/slash/f/F341/slash-al-gen-6-frameset/42271/",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio Alpha Platinum",
+        "suspension_type": "High pivot · ABP · polea",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Confirmar herrajes, tune y posición del ajuste de progresividad."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "fork_restrictions": "Configuración documentada con horquilla de 170 mm; altura eje-corona de referencia 585 mm.",
+        "tire_clearance_notes": "La conversión a 29″ trasera requiere el montaje documentado por Trek; no se deduce compatibilidad por el flip chip.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 448,
+          "stack_mm": 623.1,
+          "head_tube_mm": 100,
+          "wheelbase_mm": 1223.8,
+          "effective_top_tube_mm": 577.8,
+          "seat_tube_mm": 400,
+          "seat_angle_deg": 77.8,
+          "chainstay_mm": 429.2,
+          "head_angle_deg": 63.3,
+          "bb_height_mm": 351.1,
+          "bb_drop_mm": 27,
+          "reference_position": "Configuración MX predeterminada de la tabla dinámica oficial; se conserva el ángulo de sillín efectivo, sin tratarlo como ángulo físico del tubo."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Mercury",
+            "image_key": null,
+            "material": {
+              "color": "#9ea3a2",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "5e467a0d-0c10-520e-852f-a67f3a9e0925",
+      "price_reference": null
+    },
+    {
+      "id": "604d69b1-e7ba-5b47-a456-82457086f985",
+      "component_id": "8f0d8a5d-df57-5b56-9de0-39155799627f",
+      "label": "L · Mercury",
+      "model_year": null,
+      "generation": "Gen 6",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/slash/f/F341/slash-al-gen-6-frameset/42271/",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio Alpha Platinum",
+        "suspension_type": "High pivot · ABP · polea",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Confirmar herrajes, tune y posición del ajuste de progresividad."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "fork_restrictions": "Configuración documentada con horquilla de 170 mm; altura eje-corona de referencia 585 mm.",
+        "tire_clearance_notes": "La conversión a 29″ trasera requiere el montaje documentado por Trek; no se deduce compatibilidad por el flip chip.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 488.1,
+          "stack_mm": 641.1,
+          "head_tube_mm": 120,
+          "wheelbase_mm": 1277.7,
+          "effective_top_tube_mm": 627.9,
+          "seat_tube_mm": 435,
+          "seat_angle_deg": 77.1,
+          "chainstay_mm": 434.2,
+          "head_angle_deg": 63.3,
+          "bb_height_mm": 351.1,
+          "bb_drop_mm": 27,
+          "reference_position": "Configuración MX predeterminada de la tabla dinámica oficial; se conserva el ángulo de sillín efectivo, sin tratarlo como ángulo físico del tubo."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Mercury",
+            "image_key": null,
+            "material": {
+              "color": "#9ea3a2",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "55fdb559-d23e-5512-a9b1-8ac8dcdd9493",
+      "price_reference": null
+    },
+    {
+      "id": "ca13250c-8493-528b-bb2b-b4d78d56d50d",
+      "component_id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "label": "S3 · Gloss Rebel Pink Tint Carbon / Fog Tint",
+      "model_year": null,
+      "generation": "UDH",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seat_clamp_diameter_mm",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Nombre del acabado comercial; color del visor aproximado, sin código de pintura certificado",
+          "fields": [
+            "allowed_finishes"
+          ]
+        },
+        {
+          "url": "https://media.specialized.com/support/collateral/2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Manual actualmente enlazado, secciones 3.1/4.4: caja BSA roscada de 73 mm. Nueva captura; no sustituye referencias guardadas.",
+          "fields": [
+            "bb_shell"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono FACT 11m",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 60,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "restrictions": "Confirmar herrajes y tune específico Ride Dynamics del montaje de origen."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seat_clamp_diameter_mm": 38.6,
+        "fork_restrictions": "Geometría comercial con longitud total de horquilla 581 mm. No deducir otro máximo a partir de esa referencia.",
+        "size_label": "S3",
+        "geometry": {
+          "reach_mm": 464,
+          "stack_mm": 620,
+          "head_tube_mm": 100,
+          "wheelbase_mm": 1246,
+          "effective_top_tube_mm": 619,
+          "seat_tube_mm": 420,
+          "chainstay_mm": 442,
+          "head_angle_deg": 63.9,
+          "seat_angle_deg": 76,
+          "bb_height_mm": 347,
+          "bb_drop_mm": 28,
+          "reference_position": "Low BB; tallas originales S3/S4, sin convertirlas a M/L. La distancia entre ejes sigue la tabla comercial publicada."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Rebel Pink Tint Carbon / Fog Tint",
+            "image_key": null,
+            "material": {
+              "color": "#8d506a",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "d83c6593-8e50-5b6b-ad2c-00cf82bbae7a",
+      "price_reference": null
+    },
+    {
+      "id": "df47f2cf-f18e-514a-a6fe-5caffa743751",
+      "component_id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "label": "S4 · Gloss Rebel Pink Tint Carbon / Fog Tint",
+      "model_year": null,
+      "generation": "UDH",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seat_clamp_diameter_mm",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Nombre del acabado comercial; color del visor aproximado, sin código de pintura certificado",
+          "fields": [
+            "allowed_finishes"
+          ]
+        },
+        {
+          "url": "https://media.specialized.com/support/collateral/2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Manual actualmente enlazado, secciones 3.1/4.4: caja BSA roscada de 73 mm. Nueva captura; no sustituye referencias guardadas.",
+          "fields": [
+            "bb_shell"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono FACT 11m",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 60,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "restrictions": "Confirmar herrajes y tune específico Ride Dynamics del montaje de origen."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seat_clamp_diameter_mm": 38.6,
+        "fork_restrictions": "Geometría comercial con longitud total de horquilla 581 mm. No deducir otro máximo a partir de esa referencia.",
+        "size_label": "S4",
+        "geometry": {
+          "reach_mm": 487,
+          "stack_mm": 629,
+          "head_tube_mm": 110,
+          "wheelbase_mm": 1274,
+          "effective_top_tube_mm": 644,
+          "seat_tube_mm": 440,
+          "chainstay_mm": 442,
+          "head_angle_deg": 63.9,
+          "seat_angle_deg": 76,
+          "bb_height_mm": 347,
+          "bb_drop_mm": 28,
+          "reference_position": "Low BB; tallas originales S3/S4, sin convertirlas a M/L. La distancia entre ejes sigue la tabla comercial publicada."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Rebel Pink Tint Carbon / Fog Tint",
+            "image_key": null,
+            "material": {
+              "color": "#8d506a",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "5df8f0d1-8bb2-512b-b5b3-cb72a70a963a",
+      "price_reference": null
+    }
+  ]
+}

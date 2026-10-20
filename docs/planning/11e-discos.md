@@ -40,3 +40,16 @@ restrictions: lista de notas con fuente
 weight_g: número positivo | null
 maintenance: objeto común | null
 ```
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+SM-RT86 de 203 mm y seis tornillos, identificado en la composición OEM actual. Espesor y desgaste mínimo siguen sin dato verificado; no se heredan de otra familia.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.
+
+## Ampliación de frenado por fases 2–5
+
+Incorporar MAGURA MDR-P de seis tornillos en 180/203/220 mm, conservando 2 mm nominales y límite de desgaste de 1,8 mm documentados. SRAM HS2 220 mm/seis tornillos se respalda con ficha de producto y montaje OEM actual; no generar las demás parejas de diámetro/anclaje por combinar listas independientes. Las fuentes se conservan en `supabase/catalog/braking-reviewed.json`. La geometría genérica reproduce el diámetro sin afirmar el detalle de una pista de fricción comercial.
+
+Fuentes concretas revisadas: [MDR-P de seis tornillos](https://magura.com/product/mdr-p/) y [HS2](https://www.sram.com/en/sram/models/rt-hs-2-a1), con pareja 220/seis tornillos contrastada en [SUPREME DH V5 SIGNATURE 2026](https://www.commencal.com/en/commencal-supreme-dh-v5-signature-pure-white-downhill-bike-english/BT5SUPV5SGEU1M.html?lang=en_FR). No se emparejan los pesos MDR-P por orden de una lista agregada sin una tabla específica por diámetro.

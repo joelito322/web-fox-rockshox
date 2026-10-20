@@ -68,3 +68,48 @@ fork_restrictions / tire_clearance_notes: texto de fuente | null
 weight_g: número positivo | null
 maintenance: objeto común | null
 ```
+
+## Primer lote concreto investigado durante implementación · 19/10/2026
+
+[Fuente de ingesta](../../supabase/catalog/initial-reviewed.json): COMMENCAL META SX V5 Team Cloud, tallas originales M y L, **en borrador**. Se contrastó la [ficha actual de cuadro](https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/enduro/meta%20sx%20v5/FT3MSXV5TMEXL.html?lang=en_FR), cuya tabla incluye las geometrías M/L. El identificador del enlace corresponde a una opción de talla; no se inventaron códigos de fabricante para M/L a partir de ese identificador.
+
+Datos incorporados: geometría M/L documentada, ruedas 29/27,5, recorrido 165, amortiguador 230 × 65, caja PF92, eje trasero 12 × 148 y tija 34,9. No se asignó el peso general del cuadro a ambas tallas. El valor «+4» rotulado como altura de pedalier resulta ambiguo: se dejó sin interpretar en vez de convertirlo en una altura o caída falsa.
+
+El manifiesto visual conserva posiciones estimadas identificadas y separadas de `specs`; no certifica los anclajes reales del amortiguador ni el movimiento de la suspensión. Revisión de silueta, proporciones y versiones pendiente de 05. Este lote no completa otras familias COMMENCAL, el descenso ni las demás marcas del alcance.
+
+### Continuación de ingesta: SUPREME DH V5
+
+Fuente comercial actual comprobada el 19 de octubre de 2026: [cuadro Clear Silver M/L](https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR). Registrar geometría Low por talla, sin convertir la fila ambigua de altura de pedalier en una altura absoluta. Entreojos 250×75, rueda 29/27,5, caja Press Fit 107 y eje 12×157. La incompatibilidad expresa con Float X2 2026 debe conservarse en restricciones. El recurso v2 identifica la polea y las bieletas como aproximadas.
+
+La composición ATLAS reutiliza piezas publicadas compatibles en las medidas conocidas, completadas con doble pletina FOX 40, transmisión SRAM DH, pedalier DUB PF107, bujes apropiados y auxiliares propios. Es un ejemplo de montaje; no se presenta como bicicleta de fábrica ni certificación de competición. Se valida como parte de las fases 08, primero con fuente local y vista de revisión, después en Cloud y navegador.
+
+## Ampliación concreta por marca · 19/10/2026
+
+Fuente preparada: [`frames-reviewed.json`](../../supabase/catalog/frames-reviewed.json), seis modelos, doce variantes seleccionables y dos capturas anteriores. La publicación se condiciona a comprobar la ingesta, recursos por talla y recorrido real de selección/guardado; este documento no equivale por sí solo a datos aplicados.
+
+| Modelo actual | Tallas originales | Referencia geométrica | Suspensión y ruedas |
+| --- | --- | --- | --- |
+| Santa Cruz Nomad 7 CC MY27 | M / L | Hi, reach 455/475 y wheelbase 1246/1276 mm | 170 mm, 230×65, MX |
+| Canyon Sender CFR high-pivot | M / L | MX predeterminada, reach 468/495 y wheelbase 1273/1303 mm | 200 mm, 250×75, MX; eje trasero 12×148 |
+| Specialized S-Works Enduro UDH | S3 / S4 | Low BB, reach 464/487 y wheelbase 1246/1274 mm | 170 mm, 205×60 Trunnion, 29/29 |
+| DA BOMB Cherry Bomb 29 | 17″ / 19″ | Tabla oficial 2026, reach 442,2/459,2 y wheelbase 1184,9/1206,1 mm | 147 mm, 210×55, 29/29 |
+| SCOTT Ransom RC, artículo 427727 | M / L | Manual de plataforma enlazado por el producto actual, reach 458/483 y wheelbase 1238,8/1270,4 mm | 170 mm, 205×65 Trunnion, 29/29 de referencia |
+| Trek Slash AL Gen 6 | M / L | MX predeterminada, reach 448/488,1 y wheelbase 1223,8/1277,7 mm | 170 mm, 230×65, MX y polea |
+
+Fuentes oficiales actuales: [Nomad soporte MY27](https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27) y [selector de cuadro/acabado/SKU](https://web.santacruzbicycles.com/products/nomad-frame-2027); [Sender CFR](https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html); [S-Works Enduro](https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009); [Cherry Bomb 29](https://www.dabombmtb.com/product_detail/CherryBomb29/) y [geometrías vigentes](https://www.dabombmtb.com/supports/FRAME-GEOMETRY/); [Ransom RC 427727](https://www.scott-sports.com/global/en/product/scott-ransom-rc-frame-shock) y [manual enlazado](https://static.scott-sports.com/image/upload/v1778094871/2118622.pdf); [Slash AL frameset](https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/slash/f/F341/slash-al-gen-6-frameset/42271/) y [Slash AL con tabla de geometría](https://www.trekbikes.com/ie/en_IE/bikes/mountain-bikes/trail-mountain-bikes/slash/f/F341/slash-9-gx-axs-t-type-gen-6/41669/).
+
+Los selectores dinámicos de Trek pueden responder solo con el contenedor de la familia: se conserva la identificación AL Gen 6 y la tabla MX contrastada, sin trasladar pesos/interfaces de un Slash de carbono. El manual Ransom rotulado 2024 sigue enlazado por el artículo actual; no se transforma esa fecha en año comercial de 427727. La tabla DA BOMB 2026 prevalece sobre el antiguo PDF que rotulaba otras medidas/tallas. No se hereda de Nomad 6 la holgura de neumático de Nomad 7.
+
+Se conservan S3/S4 y 17″/19″ sin renombrarlos M/L. Los pesos de conjuntos con amortiguador o sin talla verificable no pasan a peso de cuadro desnudo. Medidas desconocidas, alturas ambiguas y SKU ausentes permanecen sin completar. Los acabados comerciales tienen nombres originales; el color del visor es aproximado, sin prometer una muestra de pintura.
+
+Cada talla obtiene un recurso genérico v2 propio y anclajes explícitamente estimados. El visor conserva distancia entre ejes/reach/stack por talla y recorrido de cadena con polea en Sender/Slash; no reproduce el carenado integrado Ransom ni las bieletas/cinemáticas exactas de las marcas. No se modifican recursos publicados de COMMENCAL ni se atribuyen composiciones de fábrica a estos nuevos cuadros. Queda investigar otras familias enduro/DH del registro y completar aceptación visual integral.
+
+El [manual Enduro 2025 enlazado por la ficha actual](https://media.specialized.com/support/collateral/2025_ENDURO_USER_MANUAL_ENGLISH.pdf), secciones 3.1/4.4, confirma BSA y anchura 73 mm. Para completar esta medida sin sobrescribir lo publicado, conservar las dos capturas anteriores como no seleccionables y crear una nueva referencia por talla con caja de 73 mm y el mismo recurso visual. El producto/modelo no se descataloga. La fecha del manual no asigna año comercial al cuadro.
+
+```text
+Catálogo normal → S3 actual / S4 actual, caja BSA 73
+Enlace anterior → captura anterior conservada; fuera de nuevas selecciones
+Montaje guardado → misma referencia y mismo recurso que se guardaron
+```
+
+La ficha normal prioriza variantes seleccionables; un enlace explícito a una referencia anterior conserva su detalle y avisa que no se aplica a un montaje nuevo. No duplicar las tallas en el selector normal ni reemplazar referencias de montajes guardados.

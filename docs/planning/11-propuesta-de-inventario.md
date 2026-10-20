@@ -1,6 +1,6 @@
 # 11 · Inventario e ingesta documental por categoría
 
-Estado: planificación documental. Actualización del 18 de octubre de 2026 según ampliación del usuario. Sustituye la propuesta anterior de cuatro cuadros y una talla por cuadro. No se ejecutan ingestas, migraciones ni cambios en Supabase.
+Estado: inventario en ejecución desde el 19 de octubre de 2026. Conserva la cobertura ampliada por el usuario y sustituye la propuesta anterior de cuatro cuadros/una talla. Existen cinco fuentes de catálogo en Cloud: `initial-reviewed.json`, `braking-reviewed.json`, `suspension-reviewed.json`, `frames-reviewed.json` y `tyres-reviewed.json`, bajo `supabase/catalog/`. Suman 53 modelos y 128 variantes; los 53 modelos y 116 variantes están publicados (114 seleccionables y dos capturas anteriores), y doce variantes permanecen en borrador. Hay dos familias de ejemplos ATLAS de enduro/descenso, con cuatro composiciones M/L de 23 posiciones. La cobertura comercial completa sigue pendiente; ver [12](12-estado-implementacion.md).
 
 El usuario solicita un registro amplio por categorías, con modelos, campos y validaciones en Markdown específicos. Esta carpeta contiene el contrato y el registro inicial de familias localizadas con fuentes oficiales. **No constituye todavía una ingesta exhaustiva de todos los SKU, generaciones y medidas del mercado**: las referencias físicas incompletas se identifican como pendientes y no se publican ni se inventan.
 

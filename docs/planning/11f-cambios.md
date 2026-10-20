@@ -48,3 +48,14 @@ associated_shifter:
 weight_g: número positivo | null
 maintenance: objeto común | null
 ```
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+SLX RD-M7100-SGS de 12 velocidades con mando SL-M7100-R asociado; cassette 10–51 como referencia documentada. La asociación es visual y no afirma que sea un kit comercial. La ampliación SRAM DH se documenta a continuación.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.
+
+## Ampliación SRAM DH revisada
+
+[GX DH RD-GX-1DH-A3](https://www.sram.com/en/sram/models/rd-gx-1dh-a3): siete velocidades, caja media, piñón máximo 25 y cadena Powerchain 11. Mando asociado [SL-GX-DH-A2](https://www.sram.com/en/sram/models/sl-gx-dh-a2), siete velocidades por cable. La abrazadera depende de versión y no se afirma incluida. No confundir el dato «RD Minimum (Cassette) 24» con el piñón pequeño de 24 dientes: se deja sin traducir a ese campo. Publicado en el lote DH; no representa todo el inventario SRAM.

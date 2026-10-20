@@ -12,7 +12,7 @@ La última indicación reduce el detalle comercial de estos elementos. [Contrato
 | Sillín | Genérico, sin variedad de gamas | Volumen exterior y anclaje/raíles de referencia |
 | Tija | Conservar solución sencilla del inventario anterior, sin ampliar catálogo por esta indicación | Diámetro, inserción y longitud/postura; telescópica solo si se incluye esa referencia |
 
-Las medidas de un elemento genérico describen el diseño visual ATLAS, no un producto de marca. En las tablas existentes puede identificarse bajo ATLAS como «Manillar genérico», «Potencia directa genérica», «Potencia convencional genérica» o «Sillín genérico», con procedencia de diseño propio en `sources`, `representation=generic`, recurso versionado y precio null. No atribuirle un SKU, disponibilidad o especificaciones de un fabricante real. Esto constituye la excepción explícita de auxiliares genéricos frente al catálogo comercial de las otras categorías.
+Las medidas de un elemento genérico describen el diseño visual ATLAS, no un producto de marca. En las tablas existentes puede identificarse bajo ATLAS como «Manillar genérico», «Potencia directa genérica», «Potencia convencional genérica» o «Sillín genérico», con procedencia de diseño propio en `sources` cuando exista una fuente web real, o en `visual_assets.reference_notes` con la ruta del documento local de diseño, `representation=generic`, recurso versionado y precio null. No atribuirle un SKU, disponibilidad o especificaciones de un fabricante real. Esto constituye la excepción explícita de auxiliares genéricos frente al catálogo comercial de las otras categorías.
 
 No se añade un editor paramétrico libre ni una lista de medidas ficticias. Concretar las dimensiones de referencia necesarias al preparar el manifiesto; cualquier alternativa de tamaño debe aportar una diferencia útil. Las selecciones existentes de manillar/potencia/sillín pueden mantenerse simples, sin obligar a recorrer fichas comerciales extensas.
 
@@ -48,3 +48,10 @@ seatpost:
   insertion_mm / travel_mm: número no negativo | null
   actuation: código | null
 ```
+
+
+Diseño concreto inicial: [Auxiliares ATLAS v1](../../supabase/catalog/atlas-auxiliaries.md). Cuatro piezas de enduro identificadas en la fuente de ingesta; no cubren todavía la potencia directa DH. No crear URLs ficticias para cumplir el campo de fuente web.
+
+## Auxiliares DH incorporados
+
+Potencia directa ATLAS de 40 mm/31,8 y tija fija de 31,6×250 mm, con inserción visual de 110 mm. Son dos variantes genéricas propias v2, sin SKU o precio comercial; fuente de diseño en [atlas-auxiliaries.md](../../supabase/catalog/atlas-auxiliaries.md). No se usa la tija de 34,9 ni la potencia convencional como sustituto silencioso del conjunto DH. La tornillería de potencia requiere comprobación física.

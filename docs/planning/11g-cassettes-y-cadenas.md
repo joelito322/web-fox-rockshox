@@ -47,3 +47,14 @@ chain:
   weight_g: número positivo | null
   maintenance: objeto común | null
 ```
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+CS-M7100-12 en 10–45 y 10–51 con secuencia de dientes documentada; la composición usa 10–51. CN-M7100 de 12 velocidades y cierre SM-CN910-12, sin inventar longitud comercial. La versión 10–45 permanece en borrador.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.
+
+## Ampliación SRAM DH revisada
+
+[XG-795 MINI BLOCK CS-XG-795-A1](https://www.sram.com/en/sram/models/cs-xg-795-a1): siete velocidades, secuencia 10/12/14/16/18/21/24, núcleo XD y peso declarado 136 g. [PC-1110 CN-1110-A1](https://www.sram.com/en/sram/models/cn-1110-a1): variante de 114 eslabones, cierre PowerLock y 259 g para esa longitud. Su nominal de once velocidades no se rechaza por usarla con DH de siete: SRAM documenta esa cadena para el cassette. PG-720 queda como alternativa investigada, todavía sin ingerir.

@@ -1,0 +1,1207 @@
+{
+  "brands": [
+    {
+      "id": "45e3f1d5-b6ee-55d6-bcee-b1c32365dd8b",
+      "name": "CST",
+      "slug": "cst",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "9323e9cc-c685-5c95-9db9-d58f5baf484e",
+      "name": "Kenda",
+      "slug": "kenda",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "bd139ffd-a659-55dc-a344-844a9e5df21a",
+      "name": "Michelin",
+      "slug": "michelin",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "7178c511-2492-5e48-9d9f-2dc8ca16582b",
+      "name": "Schwalbe",
+      "slug": "schwalbe",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "6bbb1bd0-5b71-53d3-bcc3-384b57721fab",
+      "brand_id": "45e3f1d5-b6ee-55d6-bcee-b1c32365dd8b",
+      "name": "BFT C1752",
+      "slug": "cst-bft-c1752",
+      "category": "tire",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Neumático all-mountain con referencias EPS/TLR documentadas.",
+      "technical_notes": "Representación genérica identificada: respeta medida nominal y anchura, sin reproducir el dibujo exacto de tacos o rotulación de marca. Diámetro exterior aproximado en el visor.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://csttires.eu/bft/",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha vigente y características documentadas",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "eefa61fd-d124-5e87-9f51-fffd1ea4e8dc",
+      "brand_id": "9323e9cc-c685-5c95-9db9-d58f5baf484e",
+      "name": "Pinner Pro K1241A",
+      "slug": "kenda-pinner-pro-k1241a",
+      "category": "tire",
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "description": "Neumático para terreno seco, compacto, rocas y raíces; carcasas según referencia.",
+      "technical_notes": "Representación genérica identificada: respeta medida nominal y anchura, sin reproducir el dibujo exacto de tacos o rotulación de marca. Diámetro exterior aproximado en el visor.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://bicycle.kendatire.com/en-us/find-a-tire/bicycle/all-mountain-trail/pinner-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha vigente y características documentadas",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "92ff9375-706a-52cd-96cc-9e714331fa1a",
+      "brand_id": "bd139ffd-a659-55dc-a344-844a9e5df21a",
+      "name": "Wild Enduro MS Racing Line",
+      "slug": "michelin-wild-enduro-ms-racing-line",
+      "category": "tire",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Neumático de enduro para terreno mixto y blando con compuesto Magi-X.",
+      "technical_notes": "Representación genérica identificada: respeta medida nominal y anchura, sin reproducir el dibujo exacto de tacos o rotulación de marca. Diámetro exterior aproximado en el visor.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.michelin.co.uk/bicycle/tyres/michelin-wild-enduro-ms-racing-line",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha vigente y características documentadas",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "25e6a123-3656-583f-b097-3bd1b405dc59",
+      "brand_id": "7178c511-2492-5e48-9d9f-2dc8ca16582b",
+      "name": "GRAVITY Magic Mary",
+      "slug": "schwalbe-gravity-magic-mary",
+      "category": "tire",
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "description": "Neumático de enduro y descenso para terreno variable con carcasa GRAVITY y compuesto SOFT.",
+      "technical_notes": "Representación genérica identificada: respeta medida nominal y anchura, sin reproducir el dibujo exacto de tacos o rotulación de marca. Diámetro exterior aproximado en el visor.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.schwalbe.com/en/GRAVITY-Magic-Mary-11654688",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha vigente y características documentadas",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "0e2bc47c-2646-5e3d-805d-66cb54ead860",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "27.5 × 2.40 · EPS/TLR · Dual · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "ba205d49-f3ac-5ccd-932d-4b180894d7c5",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "29 × 2.25 · EPS/TLR · Dual · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "f9b66fcd-ac14-50fc-8839-25c00ff37a88",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "27.5 × 2.25 · EPS/TLR · Dual · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "f3202e19-afcf-561c-adc5-a78483b5c6d0",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "29 × 2.40 · EPS/TLR · Dual · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "051e137e-45ad-5196-a6d5-e5cc2e207da8",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "29 × 2.40 · AGC · Dual Layer · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "48e409e4-5cb9-5f35-ab6a-9e5e65aea99d",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "29 × 2.40 · ATC · Dual Tread · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "991d8f07-7f53-546c-bb1b-2a69f6f41228",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "29 × 2.40 · SCT · Dual Tread · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "6310a935-1538-59b2-addf-bac3d3d1541e",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "27.5 × 2.40 · AGC · Dual Layer · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "a7e1a033-8a58-53a7-a4bd-b462b3499412",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "27.5 × 2.40 · ATC · Dual Tread · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "de228cbf-7751-51dd-b9bc-531fec1bb9ad",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "29 × 2.40 · Bead to Bead Shield · 2 × 55 TPI · Magi-X · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "0db3212b-e685-51b9-8c55-cc555b8785b9",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "27.5 × 2.40 · GRAVITY · Diagonal · SOFT · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    },
+    {
+      "id": "b72f5c87-0253-57a3-a96f-e41a282b6826",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "tire"
+        ]
+      },
+      "reference_notes": "29 × 2.40 · GRAVITY · Diagonal · SOFT · Genérico ATLAS v1; dibujo de tacos aproximado, no CAD de marca.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "cd557858-bd7c-5471-8dc2-77ee1873f4c5",
+      "component_id": "6bbb1bd0-5b71-53d3-bcc3-384b57721fab",
+      "label": "27.5 × 2.40 · EPS/TLR · Dual",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "TB85964000",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://csttires.eu/bft/",
+          "consulted_at": "2026-10-19",
+          "note": "Fila exacta de SKU de la tabla europea vigente; no heredar el peso de EPS sin TLR",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "weight_g",
+            "pressure_limits"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-584",
+        "commercial_size": "27.5 × 2.40",
+        "wheel_bsd_mm": 584,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "EPS/TLR",
+        "compound": "Dual",
+        "tpi": 60,
+        "tubeless": true,
+        "weight_g": 885,
+        "pressure_limits": {
+          "max_value": 65,
+          "unit": "psi",
+          "conditions": "Límite del neumático; respetar también el límite del aro. No es una presión recomendada de uso."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "0e2bc47c-2646-5e3d-805d-66cb54ead860",
+      "price_reference": null
+    },
+    {
+      "id": "fa380f7b-ac58-5b03-b12e-e90f9e5d8c48",
+      "component_id": "6bbb1bd0-5b71-53d3-bcc3-384b57721fab",
+      "label": "29 × 2.25 · EPS/TLR · Dual",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "TB96843000",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://csttires.eu/bft/",
+          "consulted_at": "2026-10-19",
+          "note": "Fila exacta de SKU de la tabla europea vigente; no heredar el peso de EPS sin TLR",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "weight_g",
+            "pressure_limits"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "57-622",
+        "commercial_size": "29 × 2.25",
+        "wheel_bsd_mm": 622,
+        "tire_width_mm": 57,
+        "bead_type": "Plegable",
+        "casing": "EPS/TLR",
+        "compound": "Dual",
+        "tpi": 60,
+        "tubeless": true,
+        "weight_g": 905,
+        "pressure_limits": {
+          "max_value": 65,
+          "unit": "psi",
+          "conditions": "Límite del neumático; respetar también el límite del aro. No es una presión recomendada de uso."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "ba205d49-f3ac-5ccd-932d-4b180894d7c5",
+      "price_reference": null
+    },
+    {
+      "id": "4e41bd88-7b9a-5b45-9e48-5e7ab7d44ec3",
+      "component_id": "6bbb1bd0-5b71-53d3-bcc3-384b57721fab",
+      "label": "27.5 × 2.25 · EPS/TLR · Dual",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "TB91031000",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://csttires.eu/bft/",
+          "consulted_at": "2026-10-19",
+          "note": "Fila exacta de SKU de la tabla europea vigente; no heredar el peso de EPS sin TLR",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "weight_g",
+            "pressure_limits"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "57-584",
+        "commercial_size": "27.5 × 2.25",
+        "wheel_bsd_mm": 584,
+        "tire_width_mm": 57,
+        "bead_type": "Plegable",
+        "casing": "EPS/TLR",
+        "compound": "Dual",
+        "tpi": 60,
+        "tubeless": true,
+        "weight_g": 865,
+        "pressure_limits": {
+          "max_value": 65,
+          "unit": "psi",
+          "conditions": "Límite del neumático; respetar también el límite del aro. No es una presión recomendada de uso."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f9b66fcd-ac14-50fc-8839-25c00ff37a88",
+      "price_reference": null
+    },
+    {
+      "id": "00c71aed-1a1f-58f8-876b-16d536f49fe3",
+      "component_id": "6bbb1bd0-5b71-53d3-bcc3-384b57721fab",
+      "label": "29 × 2.40 · EPS/TLR · Dual",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "TB00451500",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://csttires.eu/bft/",
+          "consulted_at": "2026-10-19",
+          "note": "Fila exacta de SKU de la tabla europea vigente; no heredar el peso de EPS sin TLR",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "weight_g",
+            "pressure_limits"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-622",
+        "commercial_size": "29 × 2.40",
+        "wheel_bsd_mm": 622,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "EPS/TLR",
+        "compound": "Dual",
+        "tpi": 60,
+        "tubeless": true,
+        "weight_g": 960,
+        "pressure_limits": {
+          "max_value": 65,
+          "unit": "psi",
+          "conditions": "Límite del neumático; respetar también el límite del aro. No es una presión recomendada de uso."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f3202e19-afcf-561c-adc5-a78483b5c6d0",
+      "price_reference": null
+    },
+    {
+      "id": "a4139105-0303-5784-9e7b-024b1f48a76b",
+      "component_id": "eefa61fd-d124-5e87-9f51-fffd1ea4e8dc",
+      "label": "29 × 2.40 · AGC · Dual Layer",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "214453",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://bicycle.kendatire.com/en-us/find-a-tire/bicycle/all-mountain-trail/pinner-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla actual por referencia; peso publicado 1288 ± 64 g, con tolerancia. No se convierte en un peso exacto ni se hereda la carcasa AGC a ATC/SCT.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "terrain_tags",
+            "condition_tags"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-622",
+        "commercial_size": "29 × 2.40",
+        "wheel_bsd_mm": 622,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "AGC",
+        "compound": "Dual Layer",
+        "tpi": 60,
+        "tubeless": true,
+        "terrain_tags": [
+          "Compacto",
+          "Roca",
+          "Raíces",
+          "Suelto sobre compacto"
+        ],
+        "condition_tags": [
+          "Seco"
+        ]
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "051e137e-45ad-5196-a6d5-e5cc2e207da8",
+      "price_reference": null
+    },
+    {
+      "id": "2c9136e9-9944-5974-9a80-b77e661ac0ac",
+      "component_id": "eefa61fd-d124-5e87-9f51-fffd1ea4e8dc",
+      "label": "29 × 2.40 · ATC · Dual Tread",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "214455",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://bicycle.kendatire.com/en-us/find-a-tire/bicycle/all-mountain-trail/pinner-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla actual por referencia; peso publicado 997 ± 50 g, con tolerancia. No se convierte en un peso exacto ni se hereda la carcasa AGC a ATC/SCT.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "terrain_tags",
+            "condition_tags"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-622",
+        "commercial_size": "29 × 2.40",
+        "wheel_bsd_mm": 622,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "ATC",
+        "compound": "Dual Tread",
+        "tpi": 120,
+        "tubeless": true,
+        "terrain_tags": [
+          "Compacto",
+          "Roca",
+          "Raíces",
+          "Suelto sobre compacto"
+        ],
+        "condition_tags": [
+          "Seco"
+        ]
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "48e409e4-5cb9-5f35-ab6a-9e5e65aea99d",
+      "price_reference": null
+    },
+    {
+      "id": "2a624fea-7538-5e33-a0d7-38d9f1644702",
+      "component_id": "eefa61fd-d124-5e87-9f51-fffd1ea4e8dc",
+      "label": "29 × 2.40 · SCT · Dual Tread",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "214454",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://bicycle.kendatire.com/en-us/find-a-tire/bicycle/all-mountain-trail/pinner-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla actual por referencia; peso publicado 949 ± 47 g, con tolerancia. No se convierte en un peso exacto ni se hereda la carcasa AGC a ATC/SCT.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "terrain_tags",
+            "condition_tags"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-622",
+        "commercial_size": "29 × 2.40",
+        "wheel_bsd_mm": 622,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "SCT",
+        "compound": "Dual Tread",
+        "tpi": 120,
+        "tubeless": true,
+        "terrain_tags": [
+          "Compacto",
+          "Roca",
+          "Raíces",
+          "Suelto sobre compacto"
+        ],
+        "condition_tags": [
+          "Seco"
+        ]
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "991d8f07-7f53-546c-bb1b-2a69f6f41228",
+      "price_reference": null
+    },
+    {
+      "id": "fd36d255-19cc-5aea-b68a-6596ca2f671f",
+      "component_id": "eefa61fd-d124-5e87-9f51-fffd1ea4e8dc",
+      "label": "27.5 × 2.40 · AGC · Dual Layer",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "214459",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://bicycle.kendatire.com/en-us/find-a-tire/bicycle/all-mountain-trail/pinner-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla actual por referencia; peso publicado 1186 ± 59 g, con tolerancia. No se convierte en un peso exacto ni se hereda la carcasa AGC a ATC/SCT.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "terrain_tags",
+            "condition_tags"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-584",
+        "commercial_size": "27.5 × 2.40",
+        "wheel_bsd_mm": 584,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "AGC",
+        "compound": "Dual Layer",
+        "tpi": 60,
+        "tubeless": true,
+        "terrain_tags": [
+          "Compacto",
+          "Roca",
+          "Raíces",
+          "Suelto sobre compacto"
+        ],
+        "condition_tags": [
+          "Seco"
+        ]
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "6310a935-1538-59b2-addf-bac3d3d1541e",
+      "price_reference": null
+    },
+    {
+      "id": "eacccd80-2517-55a9-b6c9-7e0a55eea500",
+      "component_id": "eefa61fd-d124-5e87-9f51-fffd1ea4e8dc",
+      "label": "27.5 × 2.40 · ATC · Dual Tread",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "214461",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://bicycle.kendatire.com/en-us/find-a-tire/bicycle/all-mountain-trail/pinner-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla actual por referencia; peso publicado 943 ± 46 g, con tolerancia. No se convierte en un peso exacto ni se hereda la carcasa AGC a ATC/SCT.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tpi",
+            "tubeless",
+            "terrain_tags",
+            "condition_tags"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-584",
+        "commercial_size": "27.5 × 2.40",
+        "wheel_bsd_mm": 584,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "ATC",
+        "compound": "Dual Tread",
+        "tpi": 120,
+        "tubeless": true,
+        "terrain_tags": [
+          "Compacto",
+          "Roca",
+          "Raíces",
+          "Suelto sobre compacto"
+        ],
+        "condition_tags": [
+          "Seco"
+        ]
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "a7e1a033-8a58-53a7-a4bd-b462b3499412",
+      "price_reference": null
+    },
+    {
+      "id": "56e65aa9-2bd2-5466-b936-60a3e98569cc",
+      "component_id": "92ff9375-706a-52cd-96cc-9e714331fa1a",
+      "label": "29 × 2.40 · Bead to Bead Shield · 2 × 55 TPI · Magi-X",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "02146",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.michelin.co.uk/bicycle/tyres/michelin-wild-enduro-ms-racing-line",
+          "consulted_at": "2026-10-19",
+          "note": "La ficha actual confirma Racing Line MS, medida 29×2.40 y uso delante/detrás; no mezclar con Performance Line ni antiguo Wild Enduro Front.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tubeless",
+            "weight_g",
+            "recommended_position",
+            "terrain_tags"
+          ]
+        },
+        {
+          "url": "https://michelinmedia.com/site/user/files/1/Michelin_MTB_Media_Guide_V3.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Página 12: MSPN 02146, ETRTO 61-622, 1290 g, talón plegable y 2×55 TPI. La vigencia del modelo procede de la ficha actual, no solo del kit de 2024.",
+          "fields": [
+            "manufacturer_code",
+            "etrto",
+            "weight_g",
+            "bead_type",
+            "tubeless",
+            "casing"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "61-622",
+        "commercial_size": "29 × 2.40",
+        "wheel_bsd_mm": 622,
+        "tire_width_mm": 61,
+        "bead_type": "Plegable",
+        "casing": "Bead to Bead Shield · 2 × 55 TPI",
+        "compound": "Magi-X",
+        "tubeless": true,
+        "weight_g": 1290,
+        "recommended_position": "both",
+        "terrain_tags": [
+          "Mixto",
+          "Blando"
+        ]
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro · rotulación azul/amarilla",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "de228cbf-7751-51dd-b9bc-531fec1bb9ad",
+      "price_reference": null
+    },
+    {
+      "id": "962d4077-3f80-5abc-bd1c-9e4b2e606572",
+      "component_id": "25e6a123-3656-583f-b097-3bd1b405dc59",
+      "label": "27.5 × 2.40 · GRAVITY · Diagonal · SOFT",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "11654688",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.schwalbe.com/en/GRAVITY-Magic-Mary-11654688",
+          "consulted_at": "2026-10-19",
+          "note": "Referencia GRAVITY actual, no GRAVITY PRO/ADDIX. EPI 2×50 cuando consta: se conserva en la fuente, sin convertirlo en 100 TPI.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tubeless",
+            "weight_g",
+            "terrain_tags",
+            "pressure_limits"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "62-584",
+        "commercial_size": "27.5 × 2.40",
+        "wheel_bsd_mm": 584,
+        "tire_width_mm": 62,
+        "bead_type": "Plegable",
+        "casing": "GRAVITY · Diagonal",
+        "compound": "SOFT",
+        "tubeless": true,
+        "weight_g": 1365,
+        "terrain_tags": [
+          "Mixto",
+          "Blando",
+          "Compacto"
+        ],
+        "pressure_limits": {
+          "max_value": 3.5,
+          "unit": "bar",
+          "conditions": "Límite de la referencia publicada; respetar también el límite del aro."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "0db3212b-e685-51b9-8c55-cc555b8785b9",
+      "price_reference": null
+    },
+    {
+      "id": "23f3eac0-ca3b-5e7f-b492-f9a7f25010be",
+      "component_id": "25e6a123-3656-583f-b097-3bd1b405dc59",
+      "label": "29 × 2.40 · GRAVITY · Diagonal · SOFT",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "11654689",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.schwalbetires.com/GRAVITY-Magic-Mary-11654689",
+          "consulted_at": "2026-10-19",
+          "note": "Referencia GRAVITY actual, no GRAVITY PRO/ADDIX. EPI 2×50 cuando consta: se conserva en la fuente, sin convertirlo en 100 TPI.",
+          "fields": [
+            "etrto",
+            "commercial_size",
+            "wheel_bsd_mm",
+            "tire_width_mm",
+            "bead_type",
+            "casing",
+            "compound",
+            "tubeless",
+            "weight_g",
+            "terrain_tags",
+            "pressure_limits"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "etrto": "62-622",
+        "commercial_size": "29 × 2.40",
+        "wheel_bsd_mm": 622,
+        "tire_width_mm": 62,
+        "bead_type": "Plegable",
+        "casing": "GRAVITY · Diagonal",
+        "compound": "SOFT",
+        "tubeless": true,
+        "weight_g": 1455,
+        "terrain_tags": [
+          "Mixto",
+          "Blando",
+          "Compacto"
+        ],
+        "pressure_limits": {
+          "max_value": 3.5,
+          "unit": "bar",
+          "conditions": "Límite de la referencia publicada; respetar también el límite del aro."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242824",
+              "metalness": 0,
+              "roughness": 0.85
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b72f5c87-0253-57a3-a96f-e41a282b6826",
+      "price_reference": null
+    }
+  ]
+}

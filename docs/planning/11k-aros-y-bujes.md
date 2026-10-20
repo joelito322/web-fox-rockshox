@@ -58,3 +58,14 @@ hub:
   weight_g: número positivo | null
   maintenance: objeto común | null
 ```
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+DT Swiss E 593 comercial actual de 30 mm interiores y 32 radios en 27,5/29, con códigos específicos. No se copia el valor OEM de 28 mm. Bujes 350 de 15×110 delante y 12×148 MICRO SPLINE detrás, seis tornillos y códigos documentados; no se confunden Ratchet 36 y DEG 72.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.
+
+## Ampliación de descenso revisada
+
+En la [gama actual DT Swiss 350](https://www.dtswiss.com/en/components/hubs-and-rws/hubs-mtb/350) se incorporan **H350BDEXR32SA1271S**, delantero 20×110 BOOST/32/seis tornillos/239 g, y **H350ODDRR32SA2407S**, trasero 12×157/XD/32/seis tornillos/277 g/Ratchet 36 SL. Se distingue explícitamente BOOST de 20×110 no BOOST. El segundo no es el SKU DEG 72. Los aros E 593 del ejemplo se reutilizan como referencia visual; el montaje no certifica aptitud competitiva DH del conjunto.

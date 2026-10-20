@@ -44,3 +44,14 @@ material: código/texto documentado | null
 weight_g: número positivo | null
 maintenance: objeto común | null
 ```
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+SLX OEM de 165 mm con plato SLX de 32 dientes, respaldado por META SX V5 ESSENTIAL 2026. El código específico de biela y línea de cadena no constan en esa fuente y permanecen desconocidos; no se deducen de la caja del cuadro.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.
+
+## Ampliación de descenso revisada
+
+[TRUVATIV DESCENDANT DH FC-DESC-DH-B1](https://www.sram.com/en/truvativ/models/fc-desc-dh-b1): DUB, línea de cadena 56,5 mm y plato X-SYNC Direct Mount de tres tornillos. La combinación **165 mm/34 dientes** se respalda adicionalmente en la [SUPREME DH V5 RIDE 2026](https://www.commencal.com/en/commencal-supreme-dh-v5-ride-pyrite-grey-2026-en/BT5SUPV5RIEU1M.html?lang=en_FR). No se asigna un SKU de venta inexistente en esas fuentes; plato y bielas conservan una sola selección.

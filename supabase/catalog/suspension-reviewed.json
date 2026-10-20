@@ -1,0 +1,1699 @@
+{
+  "brands": [
+    {
+      "id": "fcdf15cd-7bca-5ffe-aee9-8a0406b69398",
+      "name": "RockShox",
+      "slug": "rockshox",
+      "region": "Estados Unidos",
+      "published": true
+    },
+    {
+      "id": "117fcab5-e709-56e3-9262-b33dc0292d7b",
+      "name": "Marzocchi",
+      "slug": "marzocchi",
+      "region": "Estados Unidos",
+      "published": true
+    },
+    {
+      "id": "51d95c83-3d6c-5886-915e-ef75e63b3044",
+      "name": "FOX",
+      "slug": "fox",
+      "region": "Estados Unidos",
+      "published": true
+    },
+    {
+      "id": "ac7080e0-f65f-5469-8ac6-7685a3621b78",
+      "name": "Öhlins",
+      "slug": "ohlins",
+      "region": "Suecia",
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "8586b6ff-edb3-55ee-9ae5-ec3a85cc01ee",
+      "brand_id": "fcdf15cd-7bca-5ffe-aee9-8a0406b69398",
+      "name": "ZEB Ultimate",
+      "slug": "rockshox-zeb-ultimate-b1",
+      "category": "fork",
+      "description": "Horquilla de enduro con resorte LinearXL e hidráulico Charger 3.2.",
+      "technical_notes": "Representación genérica identificada. La medida no acredita herrajes, orientación ni holguras de un montaje real.",
+      "image_key": null,
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-zeb-ult-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial vigente",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "d8457854-861f-5979-9c54-35e387de5159",
+      "brand_id": "117fcab5-e709-56e3-9262-b33dc0292d7b",
+      "name": "Bomber Z1 RAIL",
+      "slug": "marzocchi-bomber-z1-rail",
+      "category": "fork",
+      "description": "Horquilla de aire con barras de 36 mm e hidráulico RAIL.",
+      "technical_notes": "Representación genérica identificada. La medida no acredita herrajes, orientación ni holguras de un montaje real.",
+      "image_key": "catalog:marzocchi-z1-rail-black",
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://bike.marzocchi.com/products/bomber-z1",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial vigente",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "f815447f-549d-5330-9013-c9027608d472",
+      "brand_id": "51d95c83-3d6c-5886-915e-ef75e63b3044",
+      "name": "FLOAT X2 Factory",
+      "slug": "fox-float-x2-factory-my26",
+      "category": "shock",
+      "description": "Amortiguador de aire con arquitectura monotubo y ajuste independiente de compresión y rebote.",
+      "technical_notes": "Representación genérica identificada. La medida no acredita herrajes, orientación ni holguras de un montaje real.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial vigente",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "aacad33b-3d8c-5760-ac4e-21017e9c6935",
+      "brand_id": "ac7080e0-f65f-5469-8ac6-7685a3621b78",
+      "name": "TTX22m.2",
+      "slug": "ohlins-ttx22m2-coil",
+      "category": "shock",
+      "description": "Amortiguador de muelle con depósito lateral y válvula azul para uso trail/enduro.",
+      "technical_notes": "Representación genérica identificada. La medida no acredita herrajes, orientación ni holguras de un montaje real.",
+      "image_key": null,
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.ohlins.com/en-us/mountain-bike/rear-shocks/ttx22m-2-coil-230x65-am",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial vigente",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "2a9e07ea-e445-529e-be08-2361ef7e52dc",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "fork"
+        ]
+      },
+      "reference_notes": "Aire · 29″ · 170 mm · Negro · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "0b39678f-a9a0-5051-9389-fb531ecdb080",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "fork"
+        ]
+      },
+      "reference_notes": "Aire · 29″ · 150 mm · Negro · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "fd2e2400-11ca-5be3-aaf6-6d6eb3afe676",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "fork"
+        ]
+      },
+      "reference_notes": "Aire · 29″ · 160 mm · Negro · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "a912ff79-b1aa-504d-a234-2f7d3b3abda3",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "fork"
+        ]
+      },
+      "reference_notes": "Aire · 29″ · 160 mm · Rojo · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "c61fc4fe-0ee0-5660-bd67-848e48c6da7e",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "210 × 50 mm · Ojal estándar · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "08ec16ba-21ea-53fc-ad9b-c8dd55ad516b",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "210 × 52.5 mm · Ojal estándar · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "903cd334-ac96-5c02-b45f-e16d1c7fccdf",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "210 × 55 mm · Ojal estándar · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "fbfd60a6-ea0b-5007-a64b-8ca3f4bc1a1b",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "230 × 60 mm · Ojal estándar · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "7daa818f-e2a5-543d-842c-6666a517291c",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "230 × 62.5 mm · Ojal estándar · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "970fe602-47ab-5409-a18b-25ef41c33c85",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "230 × 65 mm · Ojal estándar · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "3aebd9e6-7e7a-55f2-ac2c-10b0d05d37b8",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "185 × 55 mm · Trunnion · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "ce40f7be-351e-51f9-9e74-557712818563",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "205 × 60 mm · Trunnion · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "04c57b3a-7694-516d-8ff6-11c636bed461",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "205 × 65 mm · Trunnion · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "f1e340b2-7508-540e-9f59-f3db354fa81e",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "250 × 75 mm · Ojal estándar · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "d4f0061e-b811-5e33-8b8d-a80254ddd39f",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "225 × 75 mm · Trunnion · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    },
+    {
+      "id": "2d1e9624-aadc-554e-aeb9-00dab0ed29c4",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "shock_upper",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "shock"
+        ]
+      },
+      "reference_notes": "230 × 65 mm · Muelle · Recurso genérico v1; silueta y anclajes estimados, sin reproducción CAD de la marca.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "759d0b81-740d-551f-831b-577a63839c05",
+      "component_id": "8586b6ff-edb3-55ee-9ae5-ec3a85cc01ee",
+      "label": "Aire · 29″ · 170 mm · Negro",
+      "model_year": null,
+      "generation": "B1",
+      "manufacturer_code": "FS-ZEB-ULT-B1",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-zeb-ult-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "stanchion_diameter_mm",
+            "crown_type",
+            "fork_layout",
+            "steerer_standard",
+            "axle_standard",
+            "rotor_min_mm",
+            "rotor_max_mm",
+            "spring_type",
+            "damping_system",
+            "weight_g",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 170,
+        "offset_mm": 44,
+        "stanchion_diameter_mm": 38,
+        "crown_type": "single",
+        "fork_layout": "conventional",
+        "steerer_standard": "1.5 Tapered",
+        "axle_standard": "15x110",
+        "rotor_min_mm": 200,
+        "rotor_max_mm": 220,
+        "spring_type": "air",
+        "damping_system": "Charger 3.2 RC2 · ButterCups · LinearXL",
+        "weight_g": 2550,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio ZEB Ultimate B1",
+              "url": "https://www.sram.com/en/service/models/fs-zeb-ult-b1",
+              "revision": "B1"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "2a9e07ea-e445-529e-be08-2361ef7e52dc",
+      "price_reference": null
+    },
+    {
+      "id": "2abe3cc8-9dbb-57d5-a894-6d539640944b",
+      "component_id": "d8457854-861f-5979-9c54-35e387de5159",
+      "label": "Aire · 29″ · 150 mm · Negro",
+      "model_year": null,
+      "generation": "RAIL",
+      "manufacturer_code": "912-01-259",
+      "image_key": "catalog:marzocchi-z1-rail-black",
+      "sources": [
+        {
+          "url": "https://bike.marzocchi.com/products/bomber-z1?variant=41010804654182",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "stanchion_diameter_mm",
+            "crown_type",
+            "fork_layout",
+            "steerer_standard",
+            "axle_standard",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 150,
+        "offset_mm": 44,
+        "stanchion_diameter_mm": 36,
+        "crown_type": "single",
+        "fork_layout": "conventional",
+        "steerer_standard": "1.5 Tapered",
+        "axle_standard": "15x110",
+        "rotor_min_mm": 180,
+        "spring_type": "air",
+        "damping_system": "RAIL",
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de horquillas Marzocchi",
+              "url": "https://cdn.shopify.com/s/files/1/1640/5435/files/Marzocchi-Fork-Owners-Guide.pdf?1344=",
+              "revision": "Enlace vigente desde Bomber Z1 RAIL"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#222522",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "0b39678f-a9a0-5051-9389-fb531ecdb080",
+      "price_reference": null
+    },
+    {
+      "id": "7587badc-1251-532b-bd68-3b2b6b991d08",
+      "component_id": "d8457854-861f-5979-9c54-35e387de5159",
+      "label": "Aire · 29″ · 160 mm · Negro",
+      "model_year": null,
+      "generation": "RAIL",
+      "manufacturer_code": "912-01-258",
+      "image_key": "catalog:marzocchi-z1-rail-black",
+      "sources": [
+        {
+          "url": "https://bike.marzocchi.com/products/bomber-z1?variant=41010804686950",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "stanchion_diameter_mm",
+            "crown_type",
+            "fork_layout",
+            "steerer_standard",
+            "axle_standard",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 160,
+        "offset_mm": 44,
+        "stanchion_diameter_mm": 36,
+        "crown_type": "single",
+        "fork_layout": "conventional",
+        "steerer_standard": "1.5 Tapered",
+        "axle_standard": "15x110",
+        "rotor_min_mm": 180,
+        "spring_type": "air",
+        "damping_system": "RAIL",
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de horquillas Marzocchi",
+              "url": "https://cdn.shopify.com/s/files/1/1640/5435/files/Marzocchi-Fork-Owners-Guide.pdf?1344=",
+              "revision": "Enlace vigente desde Bomber Z1 RAIL"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#222522",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "fd2e2400-11ca-5be3-aaf6-6d6eb3afe676",
+      "price_reference": null
+    },
+    {
+      "id": "40862010-7a89-503c-8e0b-8734c56bd146",
+      "component_id": "d8457854-861f-5979-9c54-35e387de5159",
+      "label": "Aire · 29″ · 160 mm · Rojo",
+      "model_year": null,
+      "generation": "RAIL",
+      "manufacturer_code": "912-01-257",
+      "image_key": "catalog:marzocchi-z1-rail-red",
+      "sources": [
+        {
+          "url": "https://bike.marzocchi.com/products/bomber-z1?variant=41010804719718",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "stanchion_diameter_mm",
+            "crown_type",
+            "fork_layout",
+            "steerer_standard",
+            "axle_standard",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 160,
+        "offset_mm": 44,
+        "stanchion_diameter_mm": 36,
+        "crown_type": "single",
+        "fork_layout": "conventional",
+        "steerer_standard": "1.5 Tapered",
+        "axle_standard": "15x110",
+        "rotor_min_mm": 180,
+        "spring_type": "air",
+        "damping_system": "RAIL",
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de horquillas Marzocchi",
+              "url": "https://cdn.shopify.com/s/files/1/1640/5435/files/Marzocchi-Fork-Owners-Guide.pdf?1344=",
+              "revision": "Enlace vigente desde Bomber Z1 RAIL"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Rojo",
+            "image_key": null,
+            "material": {
+              "color": "#bc242c",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "a912ff79-b1aa-504d-a234-2f7d3b3abda3",
+      "price_reference": null
+    },
+    {
+      "id": "8f9b4b47-39f6-5ae5-a551-34fa626f7bd7",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "210 × 50 mm · Ojal estándar",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-204",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158909796576",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 210.0,
+        "stroke_mm": 50.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Ojal estándar"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "c61fc4fe-0ee0-5660-bd67-848e48c6da7e",
+      "price_reference": null
+    },
+    {
+      "id": "5ec5213f-8173-5423-ab26-d8638f3c9dc8",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "210 × 52.5 mm · Ojal estándar",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-205",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158909829344",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 210.0,
+        "stroke_mm": 52.5,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Ojal estándar"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "08ec16ba-21ea-53fc-ad9b-c8dd55ad516b",
+      "price_reference": null
+    },
+    {
+      "id": "be2aaea1-6838-5aa8-bb51-5da162192be5",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "210 × 55 mm · Ojal estándar",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-206",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158909862112",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance",
+            "weight_g"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 210.0,
+        "stroke_mm": 55.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Ojal estándar"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        },
+        "weight_g": 708
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "903cd334-ac96-5c02-b45f-e16d1c7fccdf",
+      "price_reference": null
+    },
+    {
+      "id": "6668cf21-9a44-54c3-9433-e02676058898",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "230 × 60 mm · Ojal estándar",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-207",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158909894880",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 230.0,
+        "stroke_mm": 60.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Ojal estándar"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "fbfd60a6-ea0b-5007-a64b-8ca3f4bc1a1b",
+      "price_reference": null
+    },
+    {
+      "id": "8c80d4b0-721e-5902-82ef-0ac875b27ff5",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "230 × 62.5 mm · Ojal estándar",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-208",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158909927648",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 230.0,
+        "stroke_mm": 62.5,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Ojal estándar"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "7daa818f-e2a5-543d-842c-6666a517291c",
+      "price_reference": null
+    },
+    {
+      "id": "84a9d46f-11ca-5a3d-bf40-663d0e6177af",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "230 × 65 mm · Ojal estándar",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-209",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158909960416",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 230.0,
+        "stroke_mm": 65.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Ojal estándar"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "970fe602-47ab-5409-a18b-25ef41c33c85",
+      "price_reference": null
+    },
+    {
+      "id": "e7e0450b-0193-55f0-848f-b5be693296d9",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "185 × 55 mm · Trunnion",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-210",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158909993184",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 185.0,
+        "stroke_mm": 55.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Trunnion"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "3aebd9e6-7e7a-55f2-ac2c-10b0d05d37b8",
+      "price_reference": null
+    },
+    {
+      "id": "84715e5a-58d6-5dc8-8d6f-54bb503b6c23",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "205 × 60 mm · Trunnion",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-211",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158910025952",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 205.0,
+        "stroke_mm": 60.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Trunnion"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "ce40f7be-351e-51f9-9e74-557712818563",
+      "price_reference": null
+    },
+    {
+      "id": "8ba41480-0c30-5ef8-8622-dc0f9af52986",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "205 × 65 mm · Trunnion",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-212",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158910058720",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 205.0,
+        "stroke_mm": 65.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Trunnion"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad",
+          "Palanca de dos posiciones"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "04c57b3a-7694-516d-8ff6-11c636bed461",
+      "price_reference": null
+    },
+    {
+      "id": "b697376e-8000-5b67-8802-8c1df1f344b8",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "250 × 75 mm · Ojal estándar",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-213",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158910091488",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 250.0,
+        "stroke_mm": 75.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Ojal estándar"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f1e340b2-7508-540e-9f59-f3db354fa81e",
+      "price_reference": null
+    },
+    {
+      "id": "ccb90e5d-8b1f-5528-b77d-5e9f4b70e722",
+      "component_id": "f815447f-549d-5330-9013-c9027608d472",
+      "label": "225 × 75 mm · Trunnion",
+      "model_year": 2026,
+      "generation": "MY26",
+      "manufacturer_code": "979-01-214",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://ridefox.com/products/float-x2-factory?variant=47158910124256",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "mount_standard",
+            "damping_system",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 225.0,
+        "stroke_mm": 75.0,
+        "spring_type": "air",
+        "mount_standard": {
+          "upper": {
+            "type": "Trunnion"
+          }
+        },
+        "damping_system": "Monotubo · HSC/LSC/HSR/LSR",
+        "adjustments": [
+          "Compresión a alta y baja velocidad",
+          "Rebote a alta y baja velocidad"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Información de servicio FLOAT X2 MY26–27",
+              "url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information",
+              "revision": "MY26–27"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Servicio completo",
+              "interval_hours": 125,
+              "interval_text": "Full Service 125 Hours",
+              "conditions": "Según la ficha técnica de servicio de esta generación.",
+              "source_url": "https://tech.ridefox.com/bike/parts-drawings/3052/float-x2-part-information"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#242624",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "d4f0061e-b811-5e33-8b8d-a80254ddd39f",
+      "price_reference": null
+    },
+    {
+      "id": "37ab843c-761b-5e7b-abfa-290fbd9292ae",
+      "component_id": "aacad33b-3d8c-5760-ac4e-21017e9c6935",
+      "label": "230 × 65 mm · Muelle",
+      "model_year": null,
+      "generation": "m.2",
+      "manufacturer_code": "MTBM 2208",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.ohlins.com/en-us/mountain-bike/rear-shocks/ttx22m-2-coil-230x65-am",
+          "consulted_at": "2026-10-19",
+          "note": "Medida comercial documentada; sin combinar listas independientes.",
+          "fields": [
+            "eye_to_eye_mm",
+            "stroke_mm",
+            "spring_type",
+            "damping_system",
+            "reservoir",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "eye_to_eye_mm": 230,
+        "stroke_mm": 65,
+        "spring_type": "coil",
+        "damping_system": "TTX",
+        "reservoir": {
+          "orientation_notes": "Depósito lateral; cilindro estándar de la referencia AM."
+        },
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manuales TTX22m.2 · referencia MTBM 2208",
+              "url": "https://www.ohlins.com/en-us/mountain-bike/rear-shocks/ttx22m-2-coil-230x65-am",
+              "revision": "MTBM 2208"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Referencia Öhlins",
+            "image_key": null,
+            "material": {
+              "color": "#d3af24",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "2d1e9624-aadc-554e-aeb9-00dab0ed29c4",
+      "price_reference": null
+    }
+  ]
+}

@@ -78,3 +78,33 @@ maintenance: objeto común | null
 Consulta: 18 de octubre de 2026. Estos datos se capturan a su nivel real de evidencia; no declaran una variante lista para seed ni un año no indicado por la fuente. Un registro de conversión/manual histórico como Z1 Coil queda fuera de la ingesta hasta demostrar vigencia actual.
 
 [Öhlins documenta RXF38 M.3 Air TTX18 29/44/170](https://www.ohlins.com/en-us/mountain-bike/front-forks/am-rxf38-m-3-air-ttx18-29-44-170): registro concreto de rueda 29, offset 44 mm y recorrido 170 mm. Completar eje, eje-corona y código comercial antes de publicarlo; no inferir las demás medidas. [FOX Podium](https://ridefox.com/products/podium) añade un caso de horquilla invertida que debe conservarse en datos y silueta.
+
+## Primer lote concreto investigado durante implementación · 19/10/2026
+
+Fuente editable de ingesta: [initial-reviewed.json](../../supabase/catalog/initial-reviewed.json). Registros **en borrador**, no inventario completo ni aceptación visual. No deducir combinaciones cartesianas de opciones de una ficha.
+
+| Modelo / generación | Referencia exacta incorporada | Evidencia y límites |
+| --- | --- | --- |
+| FOX 38 Factory GRIP X2 · MY27 | Aire, 29″, 180 mm, Shiny Black, 910-21-412 | [Producto actual](https://ridefox.com/products/my27-fox-38-factory); la página mantiene una ficha por referencia. Año MY27 documentado; no trasladar hidráulico/aire de MY26 |
+| Mismo modelo | Aire, 29″, 170 mm, Shiny Black, 910-21-415 | Misma ficha. La opción naranja tiene otra referencia; no fingir que el código negro identifica ambos acabados |
+| Mismo modelo | Aire, 29″, 160 mm, Shiny Black, 910-21-416 | Misma ficha; diámetro de disco indicado 200–230 mm |
+| Mismo modelo | Aire, 27,5″, 160 mm, Shiny Black, 910-21-426 | Misma ficha; no inventar una opción 180/27,5 a partir de selectores globales |
+| Öhlins RXF38 m.3 Air TTX18 | 29″ / 44 / 170; FGMTB 3817 2510 | [Referencia oficial exacta](https://www.ohlins.com/en-it/mountain-bike/front-forks/am-rxf38-m-3-air-ttx18-29-44-170); longitud eje-corona 583 mm, eje 15 × 110 y peso 2320 g con eje/tornillos. No asignar ese peso a la variante de muelle |
+
+Para FOX se dejaron sin confirmar eje-corona, offset y peso por variante cuando la ficha revisada no los identifica de forma inequívoca. Los 2360 g que aparecen en la página tienen una configuración de referencia específica; no se copian a todos los recorridos. No hay precios ni intervalos de mantenimiento inventados. Faltan el resto de variantes/modelos acordados y sus manuales aplicables.
+
+## Ampliación de descenso revisada · 19/10/2026
+
+[FOX 40 Factory MY27 GRIP X2](https://ridefox.com/products/my27-fox-40-factory): tres referencias comerciales verificadas, 29/203 naranja **910-21-409**, 29/203 negra **910-21-410** y 27,5/203 negra **910-21-417**. Eje 20×110 BOOST, dirección recta 1 1/8, aire FLOAT EVOL GlideCore y disco 200–230 mm. No se copia el peso de partida de 27,5 a 29; offset y eje-corona siguen sin confirmar para estos SKU. Las tres referencias disponen del recurso v2 de doble pletina. El ejemplo DH usa la negra de 29.
+
+Estado del lote anterior: FOX 38 29/170 está publicada; las otras tres FOX 38 y la Öhlins siguen en borrador. BoXXer D2 sigue pendiente de emparejar opciones concretas; no heredar resorte o hidráulico D1.
+
+## Segundo lote ejecutable · 19 de octubre de 2026
+
+Fuente local `supabase/catalog/suspension-reviewed.json`. Selección concreta, sin producto cartesiano de opciones:
+
+- **ZEB Ultimate B1**: 29/170, dirección cónica 1,5, offset 44, eje 15×110, barras 38, discos 200–220; LinearXL/Charger 3.2. Peso 2550 g solo para la referencia 29/170/1,5 descrita por el fabricante. No copiar datos de A3. [Ficha B1](https://www.sram.com/en/rockshox/models/fs-zeb-ult-b1).
+- **Bomber Z1 RAIL**: 29/150 negro `912-01-259`, 29/160 negro `912-01-258` y rojo `912-01-257`; aire, barras 36, dirección cónica, offset 44 y eje 15×110. Se conserva el acabado del selector; no atribuir el peso general a cada SKU. Excluir 100 mm DJ del alcance enduro/DH. El agotamiento temporal no equivale a descatalogación. [Ficha y selector](https://bike.marzocchi.com/products/bomber-z1).
+- **RXF38 m.3 29/170 aire**: se completa publicación de la referencia documentada `FGMTB 3817 2510`, conservando el ID del borrador. [Ficha actual y manuales](https://www.ohlins.com/en-it/mountain-bike/front-forks/am-rxf38-m-3-air-ttx18-29-44-170).
+
+Los recursos son genéricos v1 identificados, revisados en composiciones de 23 posiciones; no certifican herrajes, logotipos ni detalles de fábrica. El lote no cierra aún todas las familias de suspensión enumeradas en este documento. El estado de aplicación y pruebas se registra en 12.

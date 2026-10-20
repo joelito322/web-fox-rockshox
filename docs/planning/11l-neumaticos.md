@@ -56,3 +56,27 @@ rim_width_limits_mm: null | {min, max, conditions}
 weight_g: número positivo | null
 maintenance: objeto común | null
 ```
+
+
+## Primer conjunto enduro revisado · 19 de octubre de 2026
+
+Maxxis Assegai TB00684700 (63-622, 29×2,50) y Minion DHR II TB00680100 (61-584, 27,5×2,40), ambos MaxxTerra EXO+ tubeless. No se calcula un diámetro exterior comercial a partir de la anchura; el diámetro del visor conserva su condición de aproximación.
+
+Datos concretos, fuentes y recursos en [inventario versionado](../../supabase/catalog/README.md); estado real de aplicación/publicación en [12](12-estado-implementacion.md). Este lote no completa por sí solo todas las familias previstas en este documento.
+
+## Ampliación concreta por marca · 19/10/2026
+
+[`tyres-reviewed.json`](../../supabase/catalog/tyres-reviewed.json) prepara cuatro modelos y doce variantes físicas para las marcas pendientes. No equivale por sí solo a publicación remota ni al cierre de todas las familias del registro.
+
+| Modelo actual | Referencias y medidas incorporadas | Construcción y límites |
+| --- | --- | --- |
+| CST BFT C1752 | TB85964000 61-584; TB96843000 57-622; TB91031000 57-584; TB00451500 61-622 | Dual, 60 TPI, plegable EPS/TLR; pesos 885/905/865/960 g por referencia |
+| Kenda Pinner Pro K1241A | 214453/214455/214454 61-622; 214459/214461 61-584 | AGC Dual Layer 60 TPI o ATC/SCT Dual Tread 120 TPI según SKU; tubeless. Seco, compacto, roca, raíces y suelto sobre compacto |
+| Michelin Wild Enduro MS Racing Line | MSPN 02146, 61-622, 29×2,40, azul/amarillo | Magi-X; Bead to Bead Shield; 2×55 TPI conservado como texto, sin sumar capas. Terreno mixto/blando, delante/detrás |
+| Schwalbe GRAVITY Magic Mary | 11654688 62-584 y 11654689 62-622 | GRAVITY Diagonal SOFT, plegable TLR; 1365/1455 g; no confundir con GRAVITY PRO ni antiguo ADDIX |
+
+Fuentes de vigencia y datos: [CST Europa BFT](https://csttires.eu/bft/) y [tienda oficial BFT](https://shop.csttires.com/collections/bicycle/products/bft-1); [Kenda Pinner Pro, tabla actual](https://bicycle.kendatire.com/en-us/find-a-tire/bicycle/all-mountain-trail/pinner-pro/); [Michelin MS Racing Line actual](https://www.michelin.co.uk/bicycle/tyres/michelin-wild-enduro-ms-racing-line), contrastada con [kit técnico oficial, página 12](https://michelinmedia.com/site/user/files/1/Michelin_MTB_Media_Guide_V3.pdf); [Schwalbe 27,5](https://www.schwalbe.com/en/GRAVITY-Magic-Mary-11654688) y [Schwalbe 29](https://www.schwalbetires.com/GRAVITY-Magic-Mary-11654689). No usar la fecha del manual Michelin como año comercial ni como única prueba de vigencia. No asumir que una liquidación local convierte todas las variantes en descatalogadas; conservar la evidencia actual del fabricante.
+
+El peso CST de 980 g pertenece a otra referencia EPS sin TLR: no se copia a TB85964000. Kenda publica tolerancias por variante, conservadas en la fuente; se omite `weight_g` para no convertirlas en pesos exactos. Schwalbe 2×50 EPI y Michelin 2×55 TPI no se convierten en 100/110 TPI. Presión máxima del neumático no equivale a recomendación de uso y no sustituye el límite del aro. Dimensiones exteriores, anchos de aro compatibles y dirección de giro desconocidos permanecen sin completar.
+
+Los nuevos recursos son genéricos v1 con identidad propia: respetan anchura nominal/BSD y permiten montar/guardar cada referencia; no reproducen el dibujo de tacos ni rotulación exactos. Esta condición se muestra en la ficha y evita atribuir un patrón de marca a una malla común. La aceptación visual final del parecido sigue pendiente junto con las demás categorías; no se modifican recursos de Maxxis ya publicados.

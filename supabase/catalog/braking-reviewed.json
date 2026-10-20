@@ -1,0 +1,1425 @@
+{
+  "brands": [
+    {
+      "id": "a6364f8c-7487-5852-98a2-628dfd3697d6",
+      "name": "Shimano",
+      "slug": "shimano",
+      "region": "Japón",
+      "published": true
+    },
+    {
+      "id": "69e1a971-1532-5340-ae60-c0c0afdb6899",
+      "name": "MAGURA",
+      "slug": "magura",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "9c48bef7-3cf6-551b-a00f-5b06620f5196",
+      "name": "SRAM",
+      "slug": "sram",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "f952c011-08be-5e45-9d9a-5d1cc09685cd",
+      "name": "SLX M7100",
+      "slug": "shimano-slx-m7100-brake",
+      "category": "brake",
+      "brand_id": "a6364f8c-7487-5852-98a2-628dfd3697d6",
+      "description": "Freno SLX de dos pistones con maneta BL-M7100.",
+      "technical_notes": "Referencia de pinza y maneta; longitud y posición comercial de latiguillo sin confirmar. No se certifica el montaje para descenso.",
+      "image_key": null,
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://bike.shimano.com/en-NZ/products/components/pdp.P-BR-M7100.html",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "5968f1ae-abad-5235-86bf-d66b052f4446",
+      "name": "MT4",
+      "slug": "magura-mt4",
+      "category": "brake",
+      "brand_id": "69e1a971-1532-5340-ae60-c0c0afdb6899",
+      "description": "Freno hidráulico de 2 pistones con maneta y pinza MT4.",
+      "technical_notes": "Foto y representación de referencia. Confirma orientación, adaptador y montaje antes de una instalación física.",
+      "image_key": null,
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt4/",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "88bdaf4f-6e11-5a66-b31c-f97726da818d",
+      "name": "MT5",
+      "slug": "magura-mt5",
+      "category": "brake",
+      "brand_id": "69e1a971-1532-5340-ae60-c0c0afdb6899",
+      "description": "Freno hidráulico de 4 pistones con maneta y pinza MT5.",
+      "technical_notes": "Foto y representación de referencia. Confirma orientación, adaptador y montaje antes de una instalación física.",
+      "image_key": "catalog:magura-mt5",
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt5/",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "b767b19c-0e4f-537e-91f4-a48ac689656a",
+      "name": "MT5 PRO",
+      "slug": "magura-mt5-pro",
+      "category": "brake",
+      "brand_id": "69e1a971-1532-5340-ae60-c0c0afdb6899",
+      "description": "Freno hidráulico de 4 pistones con maneta y pinza MT5 PRO.",
+      "technical_notes": "Foto y representación de referencia. Confirma orientación, adaptador y montaje antes de una instalación física.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt5-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "4732dab5-9a37-5de1-a1a3-24a421879c2b",
+      "name": "MT7 PRO",
+      "slug": "magura-mt7-pro",
+      "category": "brake",
+      "brand_id": "69e1a971-1532-5340-ae60-c0c0afdb6899",
+      "description": "Freno hidráulico de 4 pistones con maneta y pinza MT7 PRO.",
+      "technical_notes": "Foto y representación de referencia. Confirma orientación, adaptador y montaje antes de una instalación física.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt7-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "21fb80e6-2186-5653-bdbf-e09a3e8f3281",
+      "name": "Maven Bronze · B1",
+      "slug": "sram-maven-brz-b1",
+      "category": "brake",
+      "brand_id": "9c48bef7-3cf6-551b-a00f-5b06620f5196",
+      "description": "Freno Maven Bronze B1 de cuatro pistones con ajuste de alcance sin herramientas.",
+      "technical_notes": "Referencia de conjunto B1; lado, longitud y SKU de venta pendientes de versión. Usar únicamente Maxima Mineral Brake Oil; no trasladar datos de A1.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/db-mvn-brz-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "88493070-9b9e-5166-98e0-a4b0f85454e7",
+      "name": "Maven Silver · B1",
+      "slug": "sram-maven-slv-b1",
+      "category": "brake",
+      "brand_id": "9c48bef7-3cf6-551b-a00f-5b06620f5196",
+      "description": "Freno Maven Silver B1 de cuatro pistones con ajuste de alcance sin herramientas.",
+      "technical_notes": "Referencia de conjunto B1; lado, longitud y SKU de venta pendientes de versión. Usar únicamente Maxima Mineral Brake Oil; no trasladar datos de A1.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/db-mvn-slv-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "d900152d-d5b5-5764-b8ac-e7ed7326e74f",
+      "name": "Maven Ultimate · B1",
+      "slug": "sram-maven-ult-b1",
+      "category": "brake",
+      "brand_id": "9c48bef7-3cf6-551b-a00f-5b06620f5196",
+      "description": "Freno Maven Ultimate B1 de cuatro pistones con ajuste de alcance sin herramientas.",
+      "technical_notes": "Referencia de conjunto B1; lado, longitud y SKU de venta pendientes de versión. Usar únicamente Maxima Mineral Brake Oil; no trasladar datos de A1.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/db-mvn-ult-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "e0f3ef3a-7757-5823-b68f-5c683c14e62b",
+      "name": "MDR-P",
+      "slug": "magura-mdr-p",
+      "category": "rotor",
+      "brand_id": "69e1a971-1532-5340-ae60-c0c0afdb6899",
+      "description": "Disco de dos piezas con anclaje de seis tornillos y pista de 2 mm.",
+      "technical_notes": "El diámetro necesita un adaptador apropiado al cuadro o la horquilla. No confundir con MDR-P Centerlock o con MDR-S de 2,5 mm.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mdr-p/",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    },
+    {
+      "id": "09cf5f7d-040d-5b39-b00a-bb14489ded7d",
+      "name": "HS2",
+      "slug": "sram-hs2",
+      "category": "rotor",
+      "brand_id": "9c48bef7-3cf6-551b-a00f-5b06620f5196",
+      "description": "Disco SRAM de 2 mm de espesor para uso MTB.",
+      "technical_notes": "Referencia de 220 mm y seis tornillos documentada en bicicleta OEM actual; otras parejas de diámetro/anclaje pendientes de ingesta.",
+      "image_key": null,
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/rt-hs-2-a1",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial consultada; sin SKU inferido.",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "1efb8dee-4f4d-5d0c-aac3-fccab493df76",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para SLX M7100. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "049d56fc-abfd-50e8-b02a-2ce5374e0df8",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para MT4. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "2ae5e8bf-a1ae-50e0-aaf9-72925fe04a56",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para MT5. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "2767856a-9d7a-5811-be8f-50897fa661ad",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para MT5 PRO. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "9681879d-ffd2-5a14-8311-4f956f8d6044",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para MT7 PRO. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "2f833ab0-9eb2-5392-bcbf-f32e029b1c2d",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para Maven Bronze · B1. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "72b6da7f-7ffb-5230-9aa4-8a3f69f19f05",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para Maven Silver · B1. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "7e53118a-7d66-56cc-97c0-6356c2393015",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "brake"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para Maven Ultimate · B1. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "d2f82a62-1042-5c16-a581-357af0aca506",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "rotor"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para MDR-P. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "74f58aea-531b-5ee2-8cf5-e8f300124bdd",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "rotor"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para MDR-P. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "53680624-1457-53c3-b58e-e7c4d177317d",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "rotor"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para MDR-P. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    },
+    {
+      "id": "ebd4cf5b-b426-5633-980d-b5c449dccfbd",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v1",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {},
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "rotor"
+        ]
+      },
+      "reference_notes": "Recurso genérico v1 para HS2. Diámetro del disco y número de pistones se toman de la variante; la silueta no es CAD del fabricante.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "587b105a-1ad3-5486-a521-6d7f65b715c3",
+      "component_id": "f952c011-08be-5e45-9d9a-5d1cc09685cd",
+      "label": "BL-M7100 / BR-M7100 · 2 pistones",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://bike.shimano.com/en-NZ/products/components/pdp.P-BR-M7100.html",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "hose",
+            "adjustments",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://productinfo.shimano.com/index.html/spec/mtb-brake-lever-hydraulic-disc-brake",
+          "consulted_at": "2026-10-19",
+          "note": "BL-M7100 recomienda BR-M7100; aceite, latiguillo y ajuste de alcance.",
+          "fields": [
+            "lever_model",
+            "fluid",
+            "hose",
+            "adjustments"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "BR-M7100",
+        "lever_model": "BL-M7100",
+        "piston_count": 2,
+        "actuation": "hydraulic",
+        "fluid": "Aceite mineral Shimano",
+        "brake_mount": "Post Mount",
+        "hose": {
+          "reference": "SM-BH90-SBM",
+          "connection": "Banjo en pinza; recta en maneta"
+        },
+        "adjustments": [
+          "Alcance sin herramientas"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de frenos hidráulicos Shimano",
+              "url": "https://si.shimano.com/en/um/8VR0A"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#292c2a",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "1efb8dee-4f4d-5d0c-aac3-fccab493df76",
+      "price_reference": null
+    },
+    {
+      "id": "184176ec-4db2-5317-a906-7c3c791e828e",
+      "component_id": "5968f1ae-abad-5235-86bf-d66b052f4446",
+      "label": "MT4 · 2 pistones · 2200 mm",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt4/",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "rotor_thickness_mm",
+            "hose",
+            "adjustments",
+            "pad_references",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Fluido y servicio condicionado; no se asigna una generación comercial a partir de la fecha de subida del manual.",
+          "fields": [
+            "fluid",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "MT4",
+        "lever_model": "MT4 · aluminio de dos dedos",
+        "piston_count": 2,
+        "actuation": "hydraulic",
+        "fluid": "MAGURA Royal Blood · aceite mineral",
+        "brake_mount": "Post Mount",
+        "rotor_thickness_mm": 2,
+        "hose": {
+          "reference": "MAGURA Disctube 2.2",
+          "connection": "Oliva e inserto MAGURA en maneta",
+          "length_mm": 2200
+        },
+        "adjustments": [
+          "Alcance con Torx T25"
+        ],
+        "pad_references": [
+          "MDP 7 BLACK"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de usuario MAGURA MT",
+              "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Revisar estanqueidad, punto de presión y desgaste",
+              "interval_text": "Antes de cada salida",
+              "conditions": "Comprobar que no hay fugas y que pastillas y discos están limpios y sin daños.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            },
+            {
+              "name": "Purgar o rellenar cuando sea necesario",
+              "interval_text": "Según respuesta de la maneta y punto de presión",
+              "conditions": "No se fija un plazo anual; seguir el diagnóstico del manual y usar exclusivamente Royal Blood.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#292c2a",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "049d56fc-abfd-50e8-b02a-2ce5374e0df8",
+      "price_reference": {
+        "amount": 92.9,
+        "currency": "EUR",
+        "market": "Alemania · PVP recomendado con IVA del 19 %",
+        "source_url": "https://magura.com/product/mt4/",
+        "as_of": "2026-10-19"
+      }
+    },
+    {
+      "id": "7674934d-934d-58b2-b16e-59fda09c3d22",
+      "component_id": "88bdaf4f-6e11-5a66-b31c-f97726da818d",
+      "label": "MT5 · 4 pistones · 2200 mm",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt5/",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "rotor_thickness_mm",
+            "hose",
+            "adjustments",
+            "pad_references",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Fluido y servicio condicionado; no se asigna una generación comercial a partir de la fecha de subida del manual.",
+          "fields": [
+            "fluid",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "MT5",
+        "lever_model": "MT5 · aluminio de dos dedos",
+        "piston_count": 4,
+        "actuation": "hydraulic",
+        "fluid": "MAGURA Royal Blood · aceite mineral",
+        "brake_mount": "Post Mount",
+        "rotor_thickness_mm": 2,
+        "hose": {
+          "reference": "MAGURA Disctube 2.2",
+          "connection": "Oliva e inserto MAGURA en maneta",
+          "length_mm": 2200
+        },
+        "adjustments": [
+          "Alcance con Torx T25"
+        ],
+        "pad_references": [
+          "MDP 9 BLACK"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de usuario MAGURA MT",
+              "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Revisar estanqueidad, punto de presión y desgaste",
+              "interval_text": "Antes de cada salida",
+              "conditions": "Comprobar que no hay fugas y que pastillas y discos están limpios y sin daños.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            },
+            {
+              "name": "Purgar o rellenar cuando sea necesario",
+              "interval_text": "Según respuesta de la maneta y punto de presión",
+              "conditions": "No se fija un plazo anual; seguir el diagnóstico del manual y usar exclusivamente Royal Blood.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / gris",
+            "image_key": null,
+            "material": {
+              "color": "#292c2a",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "2ae5e8bf-a1ae-50e0-aaf9-72925fe04a56",
+      "price_reference": {
+        "amount": 112.9,
+        "currency": "EUR",
+        "market": "Alemania · PVP recomendado con IVA del 19 %",
+        "source_url": "https://magura.com/product/mt5/",
+        "as_of": "2026-10-19"
+      }
+    },
+    {
+      "id": "6637b11b-172f-539f-93cc-c92689940503",
+      "component_id": "b767b19c-0e4f-537e-91f4-a48ac689656a",
+      "label": "MT5 PRO · 4 pistones · 2200 mm",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt5-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "rotor_thickness_mm",
+            "hose",
+            "adjustments",
+            "pad_references",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Fluido y servicio condicionado; no se asigna una generación comercial a partir de la fecha de subida del manual.",
+          "fields": [
+            "fluid",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "MT5 PRO",
+        "lever_model": "MT5 PRO · HC de un dedo",
+        "piston_count": 4,
+        "actuation": "hydraulic",
+        "fluid": "MAGURA Royal Blood · aceite mineral",
+        "brake_mount": "Post Mount",
+        "rotor_thickness_mm": 2,
+        "hose": {
+          "reference": "MAGURA Disctube 2.2",
+          "connection": "Oliva e inserto MAGURA en maneta",
+          "length_mm": 2200
+        },
+        "adjustments": [
+          "Alcance con llave de 3 mm"
+        ],
+        "pad_references": [
+          "MDP 9 BLACK"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de usuario MAGURA MT",
+              "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Revisar estanqueidad, punto de presión y desgaste",
+              "interval_text": "Antes de cada salida",
+              "conditions": "Comprobar que no hay fugas y que pastillas y discos están limpios y sin daños.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            },
+            {
+              "name": "Purgar o rellenar cuando sea necesario",
+              "interval_text": "Según respuesta de la maneta y punto de presión",
+              "conditions": "No se fija un plazo anual; seguir el diagnóstico del manual y usar exclusivamente Royal Blood.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / amarillo",
+            "image_key": null,
+            "material": {
+              "color": "#292c2a",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "2767856a-9d7a-5811-be8f-50897fa661ad",
+      "price_reference": {
+        "amount": 133.9,
+        "currency": "EUR",
+        "market": "Alemania · PVP recomendado con IVA del 19 %",
+        "source_url": "https://magura.com/product/mt5-pro/",
+        "as_of": "2026-10-19"
+      }
+    },
+    {
+      "id": "5a600f0c-b23d-5a34-a069-285450f30acf",
+      "component_id": "4732dab5-9a37-5de1-a1a3-24a421879c2b",
+      "label": "MT7 PRO · 4 pistones · 2200 mm",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mt7-pro/",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "rotor_thickness_mm",
+            "hose",
+            "adjustments",
+            "pad_references",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Fluido y servicio condicionado; no se asigna una generación comercial a partir de la fecha de subida del manual.",
+          "fields": [
+            "fluid",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "MT7 PRO",
+        "lever_model": "MT7 PRO · HC de un dedo",
+        "piston_count": 4,
+        "actuation": "hydraulic",
+        "fluid": "MAGURA Royal Blood · aceite mineral",
+        "brake_mount": "Post Mount",
+        "rotor_thickness_mm": 2,
+        "hose": {
+          "reference": "MAGURA Disctube 2.2",
+          "connection": "Oliva e inserto MAGURA en maneta",
+          "length_mm": 2200
+        },
+        "adjustments": [
+          "Alcance sin herramientas"
+        ],
+        "pad_references": [
+          "MDP 8 BLACK"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manual de usuario MAGURA MT",
+              "url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Revisar estanqueidad, punto de presión y desgaste",
+              "interval_text": "Antes de cada salida",
+              "conditions": "Comprobar que no hay fugas y que pastillas y discos están limpios y sin daños.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            },
+            {
+              "name": "Purgar o rellenar cuando sea necesario",
+              "interval_text": "Según respuesta de la maneta y punto de presión",
+              "conditions": "No se fija un plazo anual; seguir el diagnóstico del manual y usar exclusivamente Royal Blood.",
+              "source_url": "https://magura.com/wp-content/uploads/2026/02/MAGURA-MT_Owners-manual_EN.pdf"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / gris / amarillo",
+            "image_key": null,
+            "material": {
+              "color": "#292c2a",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "9681879d-ffd2-5a14-8311-4f956f8d6044",
+      "price_reference": {
+        "amount": 226.9,
+        "currency": "EUR",
+        "market": "Alemania · PVP recomendado con IVA del 19 %",
+        "source_url": "https://magura.com/product/mt7-pro/",
+        "as_of": "2026-10-19"
+      }
+    },
+    {
+      "id": "344ca3fc-58e8-5088-85b7-329543a68a64",
+      "component_id": "21fb80e6-2186-5653-bdbf-e09a3e8f3281",
+      "label": "Conjunto B1 · 4 pistones",
+      "model_year": null,
+      "generation": "B1",
+      "manufacturer_code": "DB-MVN-BRZ-B1",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/db-mvn-brz-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "Maven Bronze B1",
+        "lever_model": "Maven Bronze B1",
+        "piston_count": 4,
+        "actuation": "hydraulic",
+        "fluid": "Maxima Mineral Brake Oil",
+        "brake_mount": "Post Mount",
+        "adjustments": [
+          "Alcance sin herramientas"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manuales de instalación, purga y servicio Maven Bronze B1",
+              "url": "https://www.sram.com/en/service/models/db-mvn-brz-b1"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro anodizado",
+            "image_key": null,
+            "material": {
+              "color": "#333735",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "2f833ab0-9eb2-5392-bcbf-f32e029b1c2d",
+      "price_reference": null
+    },
+    {
+      "id": "d51f996e-23aa-5738-86f8-fbcde42d4453",
+      "component_id": "88493070-9b9e-5166-98e0-a4b0f85454e7",
+      "label": "Conjunto B1 · 4 pistones",
+      "model_year": null,
+      "generation": "B1",
+      "manufacturer_code": "DB-MVN-SLV-B1",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/db-mvn-slv-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "Maven Silver B1",
+        "lever_model": "Maven Silver B1",
+        "piston_count": 4,
+        "actuation": "hydraulic",
+        "fluid": "Maxima Mineral Brake Oil",
+        "brake_mount": "Post Mount",
+        "adjustments": [
+          "Alcance sin herramientas",
+          "Punto de contacto"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manuales de instalación, purga y servicio Maven Silver B1",
+              "url": "https://www.sram.com/en/service/models/db-mvn-slv-b1"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro brillante anodizado",
+            "image_key": null,
+            "material": {
+              "color": "#232625",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "72b6da7f-7ffb-5230-9aa4-8a3f69f19f05",
+      "price_reference": null
+    },
+    {
+      "id": "1e87d310-be64-5058-bfaa-388b52d4fdf8",
+      "component_id": "d900152d-d5b5-5764-b8ac-e7ed7326e74f",
+      "label": "Conjunto B1 · 4 pistones",
+      "model_year": null,
+      "generation": "B1",
+      "manufacturer_code": "DB-MVN-ULT-B1",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/db-mvn-ult-b1",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "caliper_model",
+            "lever_model",
+            "piston_count",
+            "actuation",
+            "fluid",
+            "brake_mount",
+            "adjustments",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "caliper_model": "Maven Ultimate B1",
+        "lever_model": "Maven Ultimate B1",
+        "piston_count": 4,
+        "actuation": "hydraulic",
+        "fluid": "Maxima Mineral Brake Oil",
+        "brake_mount": "Post Mount",
+        "adjustments": [
+          "Alcance sin herramientas",
+          "Punto de contacto"
+        ],
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Manuales de instalación, purga y servicio Maven Ultimate B1",
+              "url": "https://www.sram.com/en/service/models/db-mvn-ult-b1"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Clear Anodized",
+            "image_key": null,
+            "material": {
+              "color": "#bcc0bb",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "7e53118a-7d66-56cc-97c0-6356c2393015",
+      "price_reference": null
+    },
+    {
+      "id": "56a6ac2b-d844-5377-b54a-726abe5eac23",
+      "component_id": "e0f3ef3a-7757-5823-b68f-5c683c14e62b",
+      "label": "180 mm · 6 tornillos",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mdr-p/",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "rotor_diameter_mm",
+            "rotor_thickness_mm",
+            "minimum_thickness_mm",
+            "rotor_mount",
+            "construction",
+            "material"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "rotor_diameter_mm": 180,
+        "rotor_thickness_mm": 2,
+        "minimum_thickness_mm": 1.8,
+        "rotor_mount": "6-bolt",
+        "construction": "Dos piezas",
+        "material": "Aro exterior de acero; soporte de aleación de aluminio"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Metal / negro",
+            "image_key": null,
+            "material": {
+              "color": "#a4a9a3",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "d2f82a62-1042-5c16-a581-357af0aca506",
+      "price_reference": null
+    },
+    {
+      "id": "af0783e8-5410-5471-b59b-83abb54a44c6",
+      "component_id": "e0f3ef3a-7757-5823-b68f-5c683c14e62b",
+      "label": "203 mm · 6 tornillos",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mdr-p/",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "rotor_diameter_mm",
+            "rotor_thickness_mm",
+            "minimum_thickness_mm",
+            "rotor_mount",
+            "construction",
+            "material"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "rotor_diameter_mm": 203,
+        "rotor_thickness_mm": 2,
+        "minimum_thickness_mm": 1.8,
+        "rotor_mount": "6-bolt",
+        "construction": "Dos piezas",
+        "material": "Aro exterior de acero; soporte de aleación de aluminio"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Metal / negro",
+            "image_key": null,
+            "material": {
+              "color": "#a4a9a3",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "74f58aea-531b-5ee2-8cf5-e8f300124bdd",
+      "price_reference": null
+    },
+    {
+      "id": "6a023d0c-0031-5302-ac7d-3470d7e3907a",
+      "component_id": "e0f3ef3a-7757-5823-b68f-5c683c14e62b",
+      "label": "220 mm · 6 tornillos",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://magura.com/product/mdr-p/",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "rotor_diameter_mm",
+            "rotor_thickness_mm",
+            "minimum_thickness_mm",
+            "rotor_mount",
+            "construction",
+            "material"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "rotor_diameter_mm": 220,
+        "rotor_thickness_mm": 2,
+        "minimum_thickness_mm": 1.8,
+        "rotor_mount": "6-bolt",
+        "construction": "Dos piezas",
+        "material": "Aro exterior de acero; soporte de aleación de aluminio"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Metal / negro",
+            "image_key": null,
+            "material": {
+              "color": "#a4a9a3",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "53680624-1457-53c3-b58e-e7c4d177317d",
+      "price_reference": null
+    },
+    {
+      "id": "7252328c-a0d0-568a-a2e3-c1a1180221fb",
+      "component_id": "09cf5f7d-040d-5b39-b00a-bb14489ded7d",
+      "label": "220 mm · 6 tornillos",
+      "model_year": null,
+      "generation": "A1",
+      "manufacturer_code": "RT-HS-2-A1",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/sram/models/rt-hs-2-a1",
+          "consulted_at": "2026-10-19",
+          "note": "Datos del conjunto de referencia; longitud y SKU de venta solo si constan.",
+          "fields": [
+            "rotor_diameter_mm",
+            "rotor_thickness_mm",
+            "rotor_mount"
+          ]
+        },
+        {
+          "url": "https://www.commencal.com/en/commencal-supreme-dh-v5-signature-pure-white-downhill-bike-english/BT5SUPV5SGEU1M.html?lang=en_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Montaje OEM: HS2 220 mm, seis tornillos, 2 mm.",
+          "fields": [
+            "rotor_diameter_mm",
+            "rotor_mount",
+            "rotor_thickness_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "rotor_diameter_mm": 220,
+        "rotor_thickness_mm": 2,
+        "rotor_mount": "6-bolt"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Metal / negro",
+            "image_key": null,
+            "material": {
+              "color": "#b3b8b0",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "generic",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "ebd4cf5b-b426-5633-980d-b5c449dccfbd",
+      "price_reference": null
+    }
+  ]
+}
