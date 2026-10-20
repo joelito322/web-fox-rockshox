@@ -1,0 +1,484 @@
+{
+  "model": "santa-cruz-nomad-7-my27",
+  "reference_image": "references/santa-cruz-nomad-7-my27.jpg",
+  "source": "https://www.tribestore.it/shop/nomad-7-cc-frameset-my27-3615",
+  "image_landmarks": {
+    "bottom_bracket": [
+      412,
+      433
+    ],
+    "head_top": [
+      647,
+      117
+    ],
+    "rear_axle": [
+      192,
+      426
+    ],
+    "seat_top": [
+      388,
+      228
+    ],
+    "shock_upper": [
+      523,
+      349
+    ],
+    "shock_lower": [
+      410,
+      368
+    ],
+    "seat_pivot": [
+      432,
+      269
+    ]
+  },
+  "sections": [
+    {
+      "name": "top",
+      "points": [
+        [
+          635,
+          120
+        ],
+        [
+          652,
+          140
+        ],
+        [
+          429,
+          278
+        ],
+        [
+          414,
+          281
+        ],
+        [
+          399,
+          272
+        ],
+        [
+          409,
+          261
+        ],
+        [
+          432,
+          253
+        ]
+      ],
+      "depth_mm": 42,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "down",
+      "points": [
+        [
+          649,
+          149
+        ],
+        [
+          672,
+          158
+        ],
+        [
+          550,
+          369
+        ],
+        [
+          534,
+          387
+        ],
+        [
+          505,
+          405
+        ],
+        [
+          430,
+          445
+        ],
+        [
+          411,
+          441
+        ],
+        [
+          406,
+          423
+        ],
+        [
+          427,
+          405
+        ],
+        [
+          499,
+          376
+        ],
+        [
+          524,
+          357
+        ],
+        [
+          620,
+          175
+        ]
+      ],
+      "depth_mm": 63,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "seat",
+      "points": [
+        [
+          378,
+          231
+        ],
+        [
+          397,
+          226
+        ],
+        [
+          404,
+          258
+        ],
+        [
+          429,
+          289
+        ],
+        [
+          435,
+          335
+        ],
+        [
+          428,
+          368
+        ],
+        [
+          431,
+          405
+        ],
+        [
+          412,
+          419
+        ],
+        [
+          405,
+          399
+        ],
+        [
+          402,
+          365
+        ],
+        [
+          414,
+          327
+        ],
+        [
+          406,
+          295
+        ]
+      ],
+      "depth_mm": 40,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay-55",
+      "points": [
+        [
+          190,
+          419
+        ],
+        [
+          205,
+          402
+        ],
+        [
+          429,
+          318
+        ],
+        [
+          446,
+          319
+        ],
+        [
+          454,
+          328
+        ],
+        [
+          439,
+          340
+        ],
+        [
+          216,
+          418
+        ],
+        [
+          203,
+          428
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay55",
+      "points": [
+        [
+          190,
+          419
+        ],
+        [
+          205,
+          402
+        ],
+        [
+          429,
+          318
+        ],
+        [
+          446,
+          319
+        ],
+        [
+          454,
+          328
+        ],
+        [
+          439,
+          340
+        ],
+        [
+          216,
+          418
+        ],
+        [
+          203,
+          428
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain-55",
+      "points": [
+        [
+          191,
+          422
+        ],
+        [
+          214,
+          428
+        ],
+        [
+          353,
+          432
+        ],
+        [
+          369,
+          426
+        ],
+        [
+          393,
+          369
+        ],
+        [
+          408,
+          369
+        ],
+        [
+          389,
+          437
+        ],
+        [
+          374,
+          452
+        ],
+        [
+          353,
+          457
+        ],
+        [
+          210,
+          441
+        ],
+        [
+          190,
+          433
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain55",
+      "points": [
+        [
+          191,
+          422
+        ],
+        [
+          214,
+          428
+        ],
+        [
+          353,
+          432
+        ],
+        [
+          369,
+          426
+        ],
+        [
+          393,
+          369
+        ],
+        [
+          408,
+          369
+        ],
+        [
+          389,
+          437
+        ],
+        [
+          374,
+          452
+        ],
+        [
+          353,
+          457
+        ],
+        [
+          210,
+          441
+        ],
+        [
+          190,
+          433
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "link",
+      "points": [
+        [
+          430,
+          263
+        ],
+        [
+          439,
+          270
+        ],
+        [
+          454,
+          324
+        ],
+        [
+          444,
+          335
+        ],
+        [
+          435,
+          311
+        ]
+      ],
+      "depth_mm": 16,
+      "z_mm": 38,
+      "material": "link",
+      "bevel_mm": 2
+    },
+    {
+      "name": "lower_yoke",
+      "points": [
+        [
+          397,
+          359
+        ],
+        [
+          417,
+          356
+        ],
+        [
+          435,
+          381
+        ],
+        [
+          447,
+          399
+        ],
+        [
+          437,
+          411
+        ],
+        [
+          422,
+          399
+        ],
+        [
+          409,
+          379
+        ]
+      ],
+      "depth_mm": 20,
+      "z_mm": 28,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "guard",
+      "points": [
+        [
+          210,
+          423
+        ],
+        [
+          352,
+          429
+        ],
+        [
+          369,
+          420
+        ],
+        [
+          377,
+          426
+        ],
+        [
+          367,
+          443
+        ],
+        [
+          350,
+          450
+        ],
+        [
+          210,
+          437
+        ]
+      ],
+      "depth_mm": 25,
+      "z_mm": 70,
+      "material": "rubber",
+      "bevel_mm": 2
+    }
+  ],
+  "uncertainties": [
+    "Perspective reference; two-axis registration to documented geometry, not a calibrated orthographic photograph.",
+    "Depth, hidden pivots and welds estimated. Size changes use documented reach/stack/chainstay; no claim of exact manufacturer tube tooling."
+  ],
+  "shock_roll_deg": 180
+}

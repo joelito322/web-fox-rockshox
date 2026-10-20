@@ -1,0 +1,610 @@
+[
+  {
+    "asset_id": "9393f5d5-c99c-5f0a-b21e-caebde0569ce",
+    "file": "models/catalog-v5/exports/commencal-meta-sx-v5--m.glb",
+    "path": "catalog/v5/commencal-meta-sx-v5/6346870deb82172061f7dca3.glb",
+    "bytes": 588868,
+    "sha256": "6346870deb82172061f7dca37bf9fc0da524b1b70855e5eb6c6a4dbc195ea957",
+    "published": true
+  },
+  {
+    "asset_id": "7a22d1a8-3c7c-5550-bea0-30b5f1c02b19",
+    "file": "models/catalog-v5/exports/commencal-meta-sx-v5--l.glb",
+    "path": "catalog/v5/commencal-meta-sx-v5/51b5778e536f3e0a6c2a6a8d.glb",
+    "bytes": 583984,
+    "sha256": "51b5778e536f3e0a6c2a6a8d58dc06c2174636fd63f549b2eb43dd872b389c45",
+    "published": true
+  },
+  {
+    "asset_id": "4fe05523-9616-57ae-8bfd-77d7cb5ff86b",
+    "file": "models/catalog-v5/exports/ohlins-rxf38-m3--91bb572b.glb",
+    "path": "catalog/v5/ohlins-rxf38-m3/8ff3b898ced45a1bfd91c0a3.glb",
+    "bytes": 601872,
+    "sha256": "8ff3b898ced45a1bfd91c0a3aff0936f2d4b485be6595910fee7617f10eb1c69",
+    "published": true
+  },
+  {
+    "asset_id": "98acecd6-fccf-5619-8502-6964e862bb07",
+    "file": "models/catalog-v5/exports/fox-38-factory-my27--3690d463.glb",
+    "path": "catalog/v5/fox-38-factory-my27/e3e4122f545e9c3875e1da7e.glb",
+    "bytes": 593468,
+    "sha256": "e3e4122f545e9c3875e1da7e0ecc031c74614febd59530b9749ba1e049a95fcb",
+    "published": false
+  },
+  {
+    "asset_id": "90bdd728-14f7-5ff7-8fc0-6584cd66fef7",
+    "file": "models/catalog-v5/exports/fox-38-factory-my27--414988df.glb",
+    "path": "catalog/v5/fox-38-factory-my27/f349fa23b1b20cb9510a3228.glb",
+    "bytes": 593464,
+    "sha256": "f349fa23b1b20cb9510a3228a766c61ad49b7cd22c8faa4413b45de3b4a7be83",
+    "published": true
+  },
+  {
+    "asset_id": "0dfb731f-2064-5ca4-b90a-16249ea58228",
+    "file": "models/catalog-v5/exports/fox-38-factory-my27--ed97245c.glb",
+    "path": "catalog/v5/fox-38-factory-my27/f5a53eebdc8c30a6029f167c.glb",
+    "bytes": 593464,
+    "sha256": "f5a53eebdc8c30a6029f167c53ddd31486ea84de2d181dd46ddba9e5629723ef",
+    "published": false
+  },
+  {
+    "asset_id": "da17d78a-6ff4-56e5-b6ac-50c5bc3103fe",
+    "file": "models/catalog-v5/exports/fox-38-factory-my27--47e9709b.glb",
+    "path": "catalog/v5/fox-38-factory-my27/d28a31c088c09cdba2503e43.glb",
+    "bytes": 593464,
+    "sha256": "d28a31c088c09cdba2503e439d160e5371ba0c1e8f286886aa5ff2f03c59bf6d",
+    "published": false
+  },
+  {
+    "asset_id": "2b27b18f-181f-595b-b57f-da322a5b4d18",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--54beba18.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/fe94c25bfd3f16c69fda44da.glb",
+    "bytes": 660000,
+    "sha256": "fe94c25bfd3f16c69fda44da8b9210211c9068a318cf39e72203d7212a400f27",
+    "published": true
+  },
+  {
+    "asset_id": "1e6fb5f3-dfab-545b-98b5-4f22933ad058",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--b3498e50.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/b50cc4ecf598acf8818046ec.glb",
+    "bytes": 660004,
+    "sha256": "b50cc4ecf598acf8818046ec37fcb2bbb01d02b975a597f7cd1c8843ceb1a52c",
+    "published": true
+  },
+  {
+    "asset_id": "ecf38610-ab06-5538-960e-cce80e0584a9",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--f000dfdd.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/2425d7c018e8f5d4f98583b7.glb",
+    "bytes": 660004,
+    "sha256": "2425d7c018e8f5d4f98583b75ee2c8cb2641cc976f99e9f6c3716c6faeb78591",
+    "published": true
+  },
+  {
+    "asset_id": "aac2d0db-9dc3-57cb-b476-33baa6b8d285",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--3d6adc45.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/ae04696fb43e08cb939ca4f3.glb",
+    "bytes": 660004,
+    "sha256": "ae04696fb43e08cb939ca4f3832f361cb2a71835fd567da3bcd86943a1fc9aa6",
+    "published": true
+  },
+  {
+    "asset_id": "6254cd4c-9781-5227-9817-8517699ec73a",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--7ec0c230.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/573b3aa0998593dc007fad97.glb",
+    "bytes": 660004,
+    "sha256": "573b3aa0998593dc007fad97c342b8ee4712adb25938ee617d3c62703790881f",
+    "published": true
+  },
+  {
+    "asset_id": "5a26a664-336b-590a-99a3-095ef5b96ff6",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--9a59439e.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/e6dff70631907411dfe10e6f.glb",
+    "bytes": 660004,
+    "sha256": "e6dff70631907411dfe10e6f16247fdc3d1a6a3ba041225518466bb86632f326",
+    "published": true
+  },
+  {
+    "asset_id": "711fc20a-e547-5b8c-931b-73ffe1c5c719",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--c936c855.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/1ba07a57db768940ebaaabc4.glb",
+    "bytes": 660004,
+    "sha256": "1ba07a57db768940ebaaabc41addcb401d6be7cd0f17b49a820682bd041af086",
+    "published": true
+  },
+  {
+    "asset_id": "23186f4e-a8a7-53f2-8ee7-8f7300c1b103",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--5602da97.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/7dd3ab02d850ace5dc995057.glb",
+    "bytes": 660004,
+    "sha256": "7dd3ab02d850ace5dc9950578f9ce2bb38e959b501ece3a16d682565052b418c",
+    "published": true
+  },
+  {
+    "asset_id": "29ea1a80-24b4-553f-ae03-5ca40ea93e66",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--a319e221.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/17b2e38613e98d911a30429c.glb",
+    "bytes": 799272,
+    "sha256": "17b2e38613e98d911a30429c4db54447666ff99dbd2890b0b3f6a10f2fa5c090",
+    "published": true
+  },
+  {
+    "asset_id": "1ff2f5b3-cb0e-5bd9-a2b4-28dba17cfeca",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--df8fc5a4.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/f301bce40e3299a8ccc3c8e7.glb",
+    "bytes": 799272,
+    "sha256": "f301bce40e3299a8ccc3c8e7dae720752f6c2cbadb8c4751333babc074928ba0",
+    "published": true
+  },
+  {
+    "asset_id": "60451c5b-f262-5888-94b2-8aaf94571550",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--700100f6.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/1be0ec2f2744b11432bccd79.glb",
+    "bytes": 799272,
+    "sha256": "1be0ec2f2744b11432bccd795c370b375db9ffcdc8f5a6bcfbb690dae8c1be5d",
+    "published": true
+  },
+  {
+    "asset_id": "38deb842-e6fa-5b5b-8b95-881e52486fde",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--c404e204.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/835f96f839955e6b0330ab25.glb",
+    "bytes": 799276,
+    "sha256": "835f96f839955e6b0330ab25b9bcf1c4c882b85e640fa999b5d505aa2bdfe0fe",
+    "published": true
+  },
+  {
+    "asset_id": "7b6b7e32-365b-5de8-ab00-8345893b0ed2",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--f8d9a613.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/5cc85bcfaad03cebf8e740f6.glb",
+    "bytes": 660004,
+    "sha256": "5cc85bcfaad03cebf8e740f683332bd66a13c750e7490fec779eecd08b3e3b65",
+    "published": true
+  },
+  {
+    "asset_id": "80f2f7d0-5565-5dd7-862b-3f1b2a6f029e",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--057be71f.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/2e527a4df48982c21fedcdf5.glb",
+    "bytes": 660004,
+    "sha256": "2e527a4df48982c21fedcdf53cdb8559abdc017db127edb474f7f551fb3e8f85",
+    "published": true
+  },
+  {
+    "asset_id": "a8ae4eab-926f-5535-baf9-16d979b5bcf1",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--e4529192.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/e7bea6db64ee841617de83d0.glb",
+    "bytes": 660004,
+    "sha256": "e7bea6db64ee841617de83d000823bfb064aac80dd4c2575456742794e342382",
+    "published": true
+  },
+  {
+    "asset_id": "784a5d5f-39ad-5794-9f48-b8dc8105d453",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--7a2a6bf5.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/f42cf191b06bf9aaa1b73990.glb",
+    "bytes": 660008,
+    "sha256": "f42cf191b06bf9aaa1b73990c9b0216735ae1a77c3a280953050adefadcc19e5",
+    "published": true
+  },
+  {
+    "asset_id": "ad765f73-c523-5f02-b4ad-6ef479d74d63",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--2291aeeb.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/4f834577095b6bd843e55440.glb",
+    "bytes": 799272,
+    "sha256": "4f834577095b6bd843e55440496536178e6029263c43dae8b38951a45c81ddaf",
+    "published": true
+  },
+  {
+    "asset_id": "534c1803-0cc2-5303-8b1a-eec79ee778c7",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--a6170ca2.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/95c33f29eba2a349f2210f5b.glb",
+    "bytes": 799272,
+    "sha256": "95c33f29eba2a349f2210f5b96e2c630e2ab46f46ba7abb4c6bef476d1e9ed5e",
+    "published": true
+  },
+  {
+    "asset_id": "200da7a4-3e38-5974-bc31-80744d6edb45",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--5d402a01.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/392c3f9da84780264e89259b.glb",
+    "bytes": 799272,
+    "sha256": "392c3f9da84780264e89259bda41c786de5abdd2f00512803fff683d635acecb",
+    "published": true
+  },
+  {
+    "asset_id": "8a402eac-73e1-5bab-8c23-3167d1271986",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--f0c4d052.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/25f47bd9c12e57e686364190.glb",
+    "bytes": 799276,
+    "sha256": "25f47bd9c12e57e686364190659382aba151dc5505ac44aed003d4fb969567b7",
+    "published": true
+  },
+  {
+    "asset_id": "a8286bac-90e5-53da-98f4-28bb2fa2ad9c",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--f2fee2bb.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/d3126cf113b11678882cb7ff.glb",
+    "bytes": 799260,
+    "sha256": "d3126cf113b11678882cb7ff32a61a568e23aa06c57c0e8ed42ba27adfbc7cee",
+    "published": true
+  },
+  {
+    "asset_id": "470fe263-7f9b-59d2-a61d-6669b0e4e903",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--0ef661e6.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/a97ac3ec7007212681c3e780.glb",
+    "bytes": 799256,
+    "sha256": "a97ac3ec7007212681c3e780b1c30edf30febcfbfd644ef1cdef03c0f720e112",
+    "published": true
+  },
+  {
+    "asset_id": "fb53dd3c-16d2-5be3-bfe0-ac9e1a774d74",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--09177342.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/88b3332539f57254a77d9b53.glb",
+    "bytes": 799256,
+    "sha256": "88b3332539f57254a77d9b533d009c083df6e1a0364703e38ea26b9bc5d8383b",
+    "published": true
+  },
+  {
+    "asset_id": "2821bc61-0483-5063-ba4d-d8660c503376",
+    "file": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1--b34947e4.glb",
+    "path": "catalog/v5/rockshox-vivid-coil-ultimate-d1/26a6b3ab13de44f882187606.glb",
+    "bytes": 799260,
+    "sha256": "26a6b3ab13de44f882187606d233555a3edb7a22c33ce91ac53ceeefd508dc07",
+    "published": true
+  },
+  {
+    "asset_id": "1f6d43fe-4bac-5cae-9c3c-ef55682f31e4",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--50f4a843.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/09ce776fc7143295a1d66333.glb",
+    "bytes": 800360,
+    "sha256": "09ce776fc7143295a1d66333a6c002dab0aae8ea1620876e1eed47186bad2a24",
+    "published": true
+  },
+  {
+    "asset_id": "f85d1f03-41c5-5be8-9d6e-e0b7e04984f3",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--56617470.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/679d122b8c7d81e40d3f9790.glb",
+    "bytes": 800376,
+    "sha256": "679d122b8c7d81e40d3f979030e39a45786e195a0b2a36448dbf7549035aa585",
+    "published": false
+  },
+  {
+    "asset_id": "cebe333c-978c-5939-8f70-f90dd8d88db3",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--9eed9f1b.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/77df0d9a84810e43a7d8e6c4.glb",
+    "bytes": 800376,
+    "sha256": "77df0d9a84810e43a7d8e6c4c2b35ff2cc9c50c3d5fd568c1337308e441510e9",
+    "published": true
+  },
+  {
+    "asset_id": "d6da4dab-51a6-5791-9e13-45ea7c5a7d7c",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--17efb6ea.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/f2aeb9c937245f7bc7a520ca.glb",
+    "bytes": 800376,
+    "sha256": "f2aeb9c937245f7bc7a520cabbf2e34552abbcb1f923be28eb73375adaec05ff",
+    "published": false
+  },
+  {
+    "asset_id": "8421fc0b-671f-5c4c-bdef-270adb433ba3",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--50e04369.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/32a175107b30f0358ebf3f25.glb",
+    "bytes": 800376,
+    "sha256": "32a175107b30f0358ebf3f25220db8904f6d969826339c66a5ed16b44f2e4670",
+    "published": false
+  },
+  {
+    "asset_id": "545f687d-0eee-58c6-9405-9b4ebfcd1215",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--f4d33624.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/ad8b0061d3b4cf47581157cb.glb",
+    "bytes": 661108,
+    "sha256": "ad8b0061d3b4cf47581157cb8061ebde6efeba57c61fdc9ea44b28fdd5ce0155",
+    "published": false
+  },
+  {
+    "asset_id": "2465a575-5b5b-502f-b52b-618ab4955857",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--126ffadc.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/7bde00943ba1c610dc373309.glb",
+    "bytes": 661108,
+    "sha256": "7bde00943ba1c610dc373309fdbce13e8536177cf2ad95d4ed004473c6c431d6",
+    "published": false
+  },
+  {
+    "asset_id": "1fb1f391-b261-55ab-a804-7e903c396a40",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--24237501.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/c2647ac5f0b7e0c53780884d.glb",
+    "bytes": 661108,
+    "sha256": "c2647ac5f0b7e0c53780884d62fa47f6c4f9169a8879740f562a525a658bd12d",
+    "published": false
+  },
+  {
+    "asset_id": "6d951ee8-8298-54e6-a410-8752fcb9e230",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--620ba16a.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/067c5f653a29348d10d6f214.glb",
+    "bytes": 661108,
+    "sha256": "067c5f653a29348d10d6f214192791cb50384d7714043ed4838e7155774b9a89",
+    "published": false
+  },
+  {
+    "asset_id": "d8cb90b7-3542-544a-9c48-76784910e813",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-cr--200ccd92.glb",
+    "path": "catalog/v5/marzocchi-bomber-cr/dccb05232c3abe3e30d8a3da.glb",
+    "bytes": 661108,
+    "sha256": "dccb05232c3abe3e30d8a3dabb4cfac228102b0909d3669d9c14a4d146f88679",
+    "published": false
+  },
+  {
+    "asset_id": "875488e5-73fc-5bea-9054-b0c11ead5548",
+    "file": "models/catalog-v5/exports/commencal-supreme-dh-v5--m.glb",
+    "path": "catalog/v5/commencal-supreme-dh-v5/e523bbd76bd40559d9d80abe.glb",
+    "bytes": 1041440,
+    "sha256": "e523bbd76bd40559d9d80abe7a65b207208d5d515f18f390b591ca68fd30e659",
+    "published": true
+  },
+  {
+    "asset_id": "2d20f1a8-b564-5075-aa70-665250c03f3f",
+    "file": "models/catalog-v5/exports/commencal-supreme-dh-v5--l.glb",
+    "path": "catalog/v5/commencal-supreme-dh-v5/81ca2ce3db1c50db0265dc2e.glb",
+    "bytes": 1036668,
+    "sha256": "81ca2ce3db1c50db0265dc2eae6ce05175d09399b03c00edffa1e655458f31e0",
+    "published": true
+  },
+  {
+    "asset_id": "52d62ab8-3819-588e-8ebc-deba50953b12",
+    "file": "models/catalog-v5/exports/fox-40-factory-my27--0467ab38.glb",
+    "path": "catalog/v5/fox-40-factory-my27/a4c2b2e7b5092212ec879ad8.glb",
+    "bytes": 680896,
+    "sha256": "a4c2b2e7b5092212ec879ad83b9e719cb5f4a0131cca41341bc4851f9a9960f7",
+    "published": true
+  },
+  {
+    "asset_id": "1e116ef7-141f-5e46-be35-959def3256f9",
+    "file": "models/catalog-v5/exports/fox-40-factory-my27--1a4ab1f9.glb",
+    "path": "catalog/v5/fox-40-factory-my27/fb9b3264dd48dc23caca8ca3.glb",
+    "bytes": 680896,
+    "sha256": "fb9b3264dd48dc23caca8ca3e69f21432495ca03392ca4c148df1d50b692cf7e",
+    "published": true
+  },
+  {
+    "asset_id": "9e256857-02e8-5f5d-bdd7-db8658bb5c35",
+    "file": "models/catalog-v5/exports/fox-40-factory-my27--5837f861.glb",
+    "path": "catalog/v5/fox-40-factory-my27/ae0425cfb891ea218d0e0465.glb",
+    "bytes": 680900,
+    "sha256": "ae0425cfb891ea218d0e046599f34acf67d7daff03e00b14ac2002e1139e3bf5",
+    "published": true
+  },
+  {
+    "asset_id": "af189286-4f21-5d02-8b8f-3e19cadf942b",
+    "file": "models/catalog-v5/exports/rockshox-zeb-ultimate-b1--75603db1.glb",
+    "path": "catalog/v5/rockshox-zeb-ultimate-b1/f402cc13132fd1dd4661a542.glb",
+    "bytes": 609012,
+    "sha256": "f402cc13132fd1dd4661a5420baf9e04f2430cf0dce116118cf6ad8f81df98bb",
+    "published": true
+  },
+  {
+    "asset_id": "bfeda432-99aa-510e-9e16-9517abe3e675",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-z1-rail--500375f9.glb",
+    "path": "catalog/v5/marzocchi-bomber-z1-rail/29395a9de2692c50509c2588.glb",
+    "bytes": 601048,
+    "sha256": "29395a9de2692c50509c2588ae39caaa29074b83c0a40bcc82e72dba9b10ce5d",
+    "published": true
+  },
+  {
+    "asset_id": "72f9380b-14b6-5010-b2ec-8fd7cb9397a6",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-z1-rail--5306077d.glb",
+    "path": "catalog/v5/marzocchi-bomber-z1-rail/fc07f1a886015c5030883fcc.glb",
+    "bytes": 601044,
+    "sha256": "fc07f1a886015c5030883fccdc4dcc85bf83d755b7edff2b9b0b576c100a9229",
+    "published": true
+  },
+  {
+    "asset_id": "cb169d68-3d94-5187-96bf-1d35b9b33cf2",
+    "file": "models/catalog-v5/exports/marzocchi-bomber-z1-rail--574b27b3.glb",
+    "path": "catalog/v5/marzocchi-bomber-z1-rail/4e505ead84d8a8bed07b5ac9.glb",
+    "bytes": 601044,
+    "sha256": "4e505ead84d8a8bed07b5ac90a59a52bc0ed2d6dbc776a5eccd2d3fa40702695",
+    "published": true
+  },
+  {
+    "asset_id": "acc3212d-a3fc-5f1e-988f-3b9129cf5b35",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--cb1ddd21.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/39e01198b382c9b334ebfbc5.glb",
+    "bytes": 661224,
+    "sha256": "39e01198b382c9b334ebfbc50f5f136d62cdd8bb63a574637975e0f3c6294587",
+    "published": true
+  },
+  {
+    "asset_id": "a0ae5026-c401-5d35-8015-86d4ebf3c926",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--3b061d37.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/845d9ff919c444fd0b9963a0.glb",
+    "bytes": 661224,
+    "sha256": "845d9ff919c444fd0b9963a096491d71031498f7f094d050f86e01215dd6fe70",
+    "published": true
+  },
+  {
+    "asset_id": "9d110d3b-a3af-5d48-9c4b-a030fa89ad42",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--aea56ffc.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/6f5cbe406ebb6073b3a5aa1b.glb",
+    "bytes": 661228,
+    "sha256": "6f5cbe406ebb6073b3a5aa1bc05f5e68b1e083d99af6e1a5ed1b04b98564a18c",
+    "published": true
+  },
+  {
+    "asset_id": "c662987e-f099-5dea-838f-308f6ad8c676",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--ba4d9689.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/dbb236e88d5bb7a473cc5cd3.glb",
+    "bytes": 661224,
+    "sha256": "dbb236e88d5bb7a473cc5cd3b9a5a3a63d39b204c577b39749a0786c68430c6a",
+    "published": true
+  },
+  {
+    "asset_id": "c9a835af-5b68-51de-b176-d3e93cb2797b",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--2a54a2dc.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/8e413f0dcf739a91e66e4734.glb",
+    "bytes": 661224,
+    "sha256": "8e413f0dcf739a91e66e47346019e066a7f23eabd579702dc017cbf315b8b4f3",
+    "published": true
+  },
+  {
+    "asset_id": "f3597afb-664d-5e87-bd74-1e42f76a7d5d",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--cdacf087.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/5114166c243c8766396a1db0.glb",
+    "bytes": 661228,
+    "sha256": "5114166c243c8766396a1db0b7da9a6850d982c36e0572ba158894616b6beb76",
+    "published": true
+  },
+  {
+    "asset_id": "7014f809-3669-5670-8ab0-9e32ffabf731",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--80a8ea8b.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/205e3dcdc0c45d4907472538.glb",
+    "bytes": 499800,
+    "sha256": "205e3dcdc0c45d49074725385d1056e5ca2f6f8208e078917c980c031c0e1085",
+    "published": true
+  },
+  {
+    "asset_id": "5713d4ef-3906-5f74-96c9-6bfbe96a5e80",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--dba811af.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/e60fbd9d1431abf47eb599ed.glb",
+    "bytes": 499800,
+    "sha256": "e60fbd9d1431abf47eb599eddb4d35115eb93de468a6eb58a4368941263184e6",
+    "published": true
+  },
+  {
+    "asset_id": "cd1c3af6-6e6c-5b37-ba5f-afbb9d138dc8",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--42227fe6.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/e9137ed65242704c86526ac2.glb",
+    "bytes": 499800,
+    "sha256": "e9137ed65242704c86526ac2ede3f2dc816b2864169f1a61604bd62254d67195",
+    "published": true
+  },
+  {
+    "asset_id": "41be6c67-f6b0-5a8d-b56c-a4530c1553eb",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--39836ba0.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/9b3b5a1eb6447ca840bd7665.glb",
+    "bytes": 661212,
+    "sha256": "9b3b5a1eb6447ca840bd76656a3700b86d7330d5794d97d39f8684b53131887f",
+    "published": true
+  },
+  {
+    "asset_id": "14b2e1bb-b7a0-517f-957a-849d35c802ed",
+    "file": "models/catalog-v5/exports/fox-float-x2-factory-my26--fccfdc47.glb",
+    "path": "catalog/v5/fox-float-x2-factory-my26/367204ecb933cfa246b74dfa.glb",
+    "bytes": 499796,
+    "sha256": "367204ecb933cfa246b74dfa84b6c81a2dbe12b5f066c06844fd7c5b5fbc8d6b",
+    "published": true
+  },
+  {
+    "asset_id": "3aefc808-126f-5d27-b3de-31f31b32ff56",
+    "file": "models/catalog-v5/exports/ohlins-ttx22m2-coil--a7c29355.glb",
+    "path": "catalog/v5/ohlins-ttx22m2-coil/2a64dce3a11cb0587cce7ac3.glb",
+    "bytes": 848544,
+    "sha256": "2a64dce3a11cb0587cce7ac36228b9c53f8730fe28f7ec2edde2be2841d41e83",
+    "published": true
+  },
+  {
+    "asset_id": "25465198-f41c-5f4a-9c7e-03560aedeec4",
+    "file": "models/catalog-v5/exports/santa-cruz-nomad-7-my27--m.glb",
+    "path": "catalog/v5/santa-cruz-nomad-7-my27/58002f2cfd3ebc1d0021d6df.glb",
+    "bytes": 582704,
+    "sha256": "58002f2cfd3ebc1d0021d6dfd9ff3dee285a78fecba0c220bc685cfba690e810",
+    "published": true
+  },
+  {
+    "asset_id": "91387d7f-f3ab-5b60-92fd-6e65414d3824",
+    "file": "models/catalog-v5/exports/santa-cruz-nomad-7-my27--l.glb",
+    "path": "catalog/v5/santa-cruz-nomad-7-my27/ebde2ac6f99f006d7cc57a87.glb",
+    "bytes": 583140,
+    "sha256": "ebde2ac6f99f006d7cc57a87528d282ed1512eab4c1fd979cc28db58748105b3",
+    "published": true
+  },
+  {
+    "asset_id": "91413e66-4d11-5107-9c18-9aa6a54e4d9d",
+    "file": "models/catalog-v5/exports/canyon-sender-cfr-high-pivot--m.glb",
+    "path": "catalog/v5/canyon-sender-cfr-high-pivot/5220d018172f9f07fa69568b.glb",
+    "bytes": 888128,
+    "sha256": "5220d018172f9f07fa69568bae84fa1cf10e374c25cb2249e5a236cc045fda22",
+    "published": true
+  },
+  {
+    "asset_id": "b38df94e-722e-5b05-b553-026739aa3626",
+    "file": "models/catalog-v5/exports/canyon-sender-cfr-high-pivot--l.glb",
+    "path": "catalog/v5/canyon-sender-cfr-high-pivot/863e7879a771d6c16a4bac4c.glb",
+    "bytes": 888332,
+    "sha256": "863e7879a771d6c16a4bac4c472a25399738612e2a88ed38a9bd2a53bf15ebe0",
+    "published": true
+  },
+  {
+    "asset_id": "5f2285d3-f889-5ab0-97d0-d4870a5d538c",
+    "file": "models/catalog-v5/exports/specialized-s-works-enduro-udh--s3.glb",
+    "path": "catalog/v5/specialized-s-works-enduro-udh/c3ad67671172ddfcfa577907.glb",
+    "bytes": 643168,
+    "sha256": "c3ad67671172ddfcfa5779079f6df6f3c0d4496a784be2292cc6bf431000c186",
+    "published": true
+  },
+  {
+    "asset_id": "01fef37a-c755-527d-965b-9ac2ceac7398",
+    "file": "models/catalog-v5/exports/specialized-s-works-enduro-udh--s4.glb",
+    "path": "catalog/v5/specialized-s-works-enduro-udh/a746ce626aedc7a2140ddd7d.glb",
+    "bytes": 640644,
+    "sha256": "a746ce626aedc7a2140ddd7deb5dcca93fc5b709de31ff65550dc665adcf0998",
+    "published": true
+  },
+  {
+    "asset_id": "524daab5-a2d6-5c2c-a456-464caf5a4202",
+    "file": "models/catalog-v5/exports/da-bomb-cherry-bomb-29--17in.glb",
+    "path": "catalog/v5/da-bomb-cherry-bomb-29/042a23b1b9f4cf444f79bb43.glb",
+    "bytes": 609420,
+    "sha256": "042a23b1b9f4cf444f79bb43d85c6e3444164ca9793f6c60087dbef1bd5cb136",
+    "published": true
+  },
+  {
+    "asset_id": "ae714542-13d4-5734-8a65-2a0995dbdcb7",
+    "file": "models/catalog-v5/exports/da-bomb-cherry-bomb-29--19in.glb",
+    "path": "catalog/v5/da-bomb-cherry-bomb-29/8978870d2657bbb155cf429b.glb",
+    "bytes": 610568,
+    "sha256": "8978870d2657bbb155cf429ba8233cd44a165768adaf8f89d6f6c83bb651cc34",
+    "published": true
+  },
+  {
+    "asset_id": "7fd67a8b-37af-51de-9dc7-4c258f2d9388",
+    "file": "models/catalog-v5/exports/scott-ransom-rc-427727--m.glb",
+    "path": "catalog/v5/scott-ransom-rc-427727/ea7eb92f23b7eff1ceaa1c1c.glb",
+    "bytes": 595904,
+    "sha256": "ea7eb92f23b7eff1ceaa1c1c0837bfad862088faddc381d0056a740a0520cb82",
+    "published": true
+  },
+  {
+    "asset_id": "698feca7-4b09-5ccb-873d-b5de63d21fc3",
+    "file": "models/catalog-v5/exports/scott-ransom-rc-427727--l.glb",
+    "path": "catalog/v5/scott-ransom-rc-427727/a560e1780f0b58df068dc594.glb",
+    "bytes": 600948,
+    "sha256": "a560e1780f0b58df068dc5943a5114dcf64e9ae29aefe505f7fad43155135b2e",
+    "published": true
+  },
+  {
+    "asset_id": "6270d16b-404c-5156-90ab-e591e4d6cec2",
+    "file": "models/catalog-v5/exports/trek-slash-al-gen-6--m.glb",
+    "path": "catalog/v5/trek-slash-al-gen-6/5e3e8aecc187cb1a777663ec.glb",
+    "bytes": 858456,
+    "sha256": "5e3e8aecc187cb1a777663ec686a867f23567b9d018624c3bcb258467d68d5b2",
+    "published": true
+  },
+  {
+    "asset_id": "15fb6095-7692-575b-bd4d-5bece3230870",
+    "file": "models/catalog-v5/exports/trek-slash-al-gen-6--l.glb",
+    "path": "catalog/v5/trek-slash-al-gen-6/2526a0848acab9af8a333cbb.glb",
+    "bytes": 856068,
+    "sha256": "2526a0848acab9af8a333cbb972b412aaca56956c65b1d74f09cbc6a99a69492",
+    "published": true
+  },
+  {
+    "asset_id": "6b1a70e8-9065-500b-856c-75bb4c8171a6",
+    "file": "models/catalog-v5/exports/specialized-s-works-enduro-udh--s3.glb",
+    "path": "catalog/v5/specialized-s-works-enduro-udh/c3ad67671172ddfcfa577907.glb",
+    "bytes": 643168,
+    "sha256": "c3ad67671172ddfcfa5779079f6df6f3c0d4496a784be2292cc6bf431000c186",
+    "published": true
+  },
+  {
+    "asset_id": "118b8988-24f3-52d5-bc9e-0464c2b5268b",
+    "file": "models/catalog-v5/exports/specialized-s-works-enduro-udh--s4.glb",
+    "path": "catalog/v5/specialized-s-works-enduro-udh/a746ce626aedc7a2140ddd7d.glb",
+    "bytes": 640644,
+    "sha256": "a746ce626aedc7a2140ddd7deb5dcca93fc5b709de31ff65550dc665adcf0998",
+    "published": true
+  }
+]

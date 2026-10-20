@@ -1,0 +1,434 @@
+{
+  "model": "scott-ransom-rc-427727",
+  "reference_image": "references/scott-ransom-rc-427727.png",
+  "source": "https://static.scott-sports.com/image/upload/v1778094871/2118622.pdf",
+  "image_landmarks": {
+    "bottom_bracket": [
+      487,
+      525
+    ],
+    "head_top": [
+      686,
+      262
+    ],
+    "rear_axle": [
+      301,
+      515
+    ],
+    "seat_top": [
+      467,
+      361
+    ],
+    "shock_upper": [
+      515,
+      487
+    ],
+    "shock_lower": [
+      430,
+      506
+    ],
+    "seat_pivot": [
+      487,
+      451
+    ]
+  },
+  "sections": [
+    {
+      "name": "top",
+      "points": [
+        [
+          671,
+          269
+        ],
+        [
+          691,
+          283
+        ],
+        [
+          521,
+          388
+        ],
+        [
+          503,
+          408
+        ],
+        [
+          484,
+          405
+        ],
+        [
+          475,
+          390
+        ],
+        [
+          488,
+          381
+        ],
+        [
+          506,
+          382
+        ]
+      ],
+      "depth_mm": 44,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "down",
+      "points": [
+        [
+          687,
+          290
+        ],
+        [
+          705,
+          298
+        ],
+        [
+          668,
+          317
+        ],
+        [
+          594,
+          464
+        ],
+        [
+          574,
+          491
+        ],
+        [
+          543,
+          504
+        ],
+        [
+          511,
+          518
+        ],
+        [
+          499,
+          541
+        ],
+        [
+          484,
+          542
+        ],
+        [
+          468,
+          522
+        ],
+        [
+          467,
+          501
+        ],
+        [
+          479,
+          486
+        ],
+        [
+          518,
+          477
+        ],
+        [
+          551,
+          465
+        ],
+        [
+          570,
+          449
+        ],
+        [
+          642,
+          314
+        ]
+      ],
+      "depth_mm": 76,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "seat",
+      "points": [
+        [
+          460,
+          363
+        ],
+        [
+          474,
+          358
+        ],
+        [
+          483,
+          380
+        ],
+        [
+          497,
+          386
+        ],
+        [
+          502,
+          436
+        ],
+        [
+          505,
+          463
+        ],
+        [
+          518,
+          475
+        ],
+        [
+          506,
+          498
+        ],
+        [
+          480,
+          500
+        ],
+        [
+          482,
+          458
+        ],
+        [
+          482,
+          420
+        ]
+      ],
+      "depth_mm": 46,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay-55",
+      "points": [
+        [
+          298,
+          508
+        ],
+        [
+          314,
+          499
+        ],
+        [
+          454,
+          441
+        ],
+        [
+          470,
+          443
+        ],
+        [
+          479,
+          452
+        ],
+        [
+          471,
+          464
+        ],
+        [
+          453,
+          459
+        ],
+        [
+          322,
+          511
+        ],
+        [
+          313,
+          520
+        ],
+        [
+          300,
+          522
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay55",
+      "points": [
+        [
+          298,
+          508
+        ],
+        [
+          314,
+          499
+        ],
+        [
+          454,
+          441
+        ],
+        [
+          470,
+          443
+        ],
+        [
+          479,
+          452
+        ],
+        [
+          471,
+          464
+        ],
+        [
+          453,
+          459
+        ],
+        [
+          322,
+          511
+        ],
+        [
+          313,
+          520
+        ],
+        [
+          300,
+          522
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain-55",
+      "points": [
+        [
+          302,
+          512
+        ],
+        [
+          331,
+          518
+        ],
+        [
+          453,
+          530
+        ],
+        [
+          476,
+          532
+        ],
+        [
+          484,
+          544
+        ],
+        [
+          474,
+          554
+        ],
+        [
+          451,
+          552
+        ],
+        [
+          328,
+          532
+        ],
+        [
+          302,
+          521
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain55",
+      "points": [
+        [
+          302,
+          512
+        ],
+        [
+          331,
+          518
+        ],
+        [
+          453,
+          530
+        ],
+        [
+          476,
+          532
+        ],
+        [
+          484,
+          544
+        ],
+        [
+          474,
+          554
+        ],
+        [
+          451,
+          552
+        ],
+        [
+          328,
+          532
+        ],
+        [
+          302,
+          521
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "access_cover",
+      "points": [
+        [
+          485,
+          487
+        ],
+        [
+          518,
+          479
+        ],
+        [
+          540,
+          485
+        ],
+        [
+          531,
+          504
+        ],
+        [
+          504,
+          521
+        ],
+        [
+          492,
+          535
+        ],
+        [
+          480,
+          529
+        ]
+      ],
+      "depth_mm": 46,
+      "z_mm": 0,
+      "material": "rubber",
+      "bevel_mm": 2
+    }
+  ],
+  "uncertainties": [
+    "Perspective reference; two-axis registration to documented geometry, not a calibrated orthographic photograph.",
+    "Depth, hidden pivots and welds estimated. Size changes use documented reach/stack/chainstay; no claim of exact manufacturer tube tooling."
+  ],
+  "hidden_shock": true
+}

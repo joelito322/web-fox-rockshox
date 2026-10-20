@@ -9,3 +9,8 @@ dist
 test-results/
 playwright-report/
 supabase/.temp/
+
+# Local Python caches from Blender tooling
+__pycache__/
+*.py[cod]
+*.blend[0-9]

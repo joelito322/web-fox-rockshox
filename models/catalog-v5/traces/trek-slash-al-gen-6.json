@@ -1,0 +1,434 @@
+{
+  "model": "trek-slash-al-gen-6",
+  "reference_image": "references/trek-slash-al-gen-6.jpg",
+  "source": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/slash/f/F341/slash-al-gen-6-frameset/42271/",
+  "image_landmarks": {
+    "bottom_bracket": [
+      317,
+      554
+    ],
+    "head_top": [
+      506,
+      305
+    ],
+    "rear_axle": [
+      141,
+      551
+    ],
+    "seat_top": [
+      293,
+      398
+    ],
+    "shock_upper": [
+      356,
+      425
+    ],
+    "shock_lower": [
+      365,
+      507
+    ],
+    "seat_pivot": [
+      325,
+      451
+    ]
+  },
+  "sections": [
+    {
+      "name": "top",
+      "points": [
+        [
+          490,
+          311
+        ],
+        [
+          507,
+          320
+        ],
+        [
+          320,
+          432
+        ],
+        [
+          306,
+          437
+        ],
+        [
+          295,
+          431
+        ],
+        [
+          299,
+          417
+        ],
+        [
+          320,
+          416
+        ]
+      ],
+      "depth_mm": 43,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "down",
+      "points": [
+        [
+          507,
+          330
+        ],
+        [
+          521,
+          336
+        ],
+        [
+          485,
+          358
+        ],
+        [
+          409,
+          518
+        ],
+        [
+          397,
+          535
+        ],
+        [
+          376,
+          545
+        ],
+        [
+          328,
+          562
+        ],
+        [
+          315,
+          555
+        ],
+        [
+          321,
+          540
+        ],
+        [
+          354,
+          534
+        ],
+        [
+          375,
+          523
+        ],
+        [
+          390,
+          504
+        ],
+        [
+          463,
+          349
+        ],
+        [
+          470,
+          335
+        ]
+      ],
+      "depth_mm": 66,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "seat",
+      "points": [
+        [
+          285,
+          401
+        ],
+        [
+          299,
+          397
+        ],
+        [
+          301,
+          411
+        ],
+        [
+          314,
+          418
+        ],
+        [
+          334,
+          435
+        ],
+        [
+          340,
+          469
+        ],
+        [
+          336,
+          518
+        ],
+        [
+          328,
+          543
+        ],
+        [
+          313,
+          545
+        ],
+        [
+          316,
+          524
+        ],
+        [
+          319,
+          472
+        ],
+        [
+          308,
+          445
+        ]
+      ],
+      "depth_mm": 44,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay-55",
+      "points": [
+        [
+          139,
+          543
+        ],
+        [
+          151,
+          528
+        ],
+        [
+          331,
+          417
+        ],
+        [
+          345,
+          417
+        ],
+        [
+          349,
+          430
+        ],
+        [
+          329,
+          438
+        ],
+        [
+          159,
+          546
+        ],
+        [
+          146,
+          558
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay55",
+      "points": [
+        [
+          139,
+          543
+        ],
+        [
+          151,
+          528
+        ],
+        [
+          331,
+          417
+        ],
+        [
+          345,
+          417
+        ],
+        [
+          349,
+          430
+        ],
+        [
+          329,
+          438
+        ],
+        [
+          159,
+          546
+        ],
+        [
+          146,
+          558
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain-55",
+      "points": [
+        [
+          141,
+          548
+        ],
+        [
+          174,
+          536
+        ],
+        [
+          306,
+          501
+        ],
+        [
+          325,
+          505
+        ],
+        [
+          328,
+          520
+        ],
+        [
+          313,
+          530
+        ],
+        [
+          174,
+          558
+        ],
+        [
+          141,
+          562
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain55",
+      "points": [
+        [
+          141,
+          548
+        ],
+        [
+          174,
+          536
+        ],
+        [
+          306,
+          501
+        ],
+        [
+          325,
+          505
+        ],
+        [
+          328,
+          520
+        ],
+        [
+          313,
+          530
+        ],
+        [
+          174,
+          558
+        ],
+        [
+          141,
+          562
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "upper_link",
+      "points": [
+        [
+          308,
+          430
+        ],
+        [
+          317,
+          425
+        ],
+        [
+          343,
+          418
+        ],
+        [
+          348,
+          424
+        ],
+        [
+          336,
+          450
+        ],
+        [
+          325,
+          464
+        ],
+        [
+          315,
+          458
+        ]
+      ],
+      "depth_mm": 18,
+      "z_mm": 33,
+      "material": "link",
+      "bevel_mm": 2
+    },
+    {
+      "name": "guard",
+      "points": [
+        [
+          167,
+          539
+        ],
+        [
+          290,
+          508
+        ],
+        [
+          302,
+          514
+        ],
+        [
+          299,
+          529
+        ],
+        [
+          175,
+          556
+        ]
+      ],
+      "depth_mm": 25,
+      "z_mm": 70,
+      "material": "rubber",
+      "bevel_mm": 2
+    }
+  ],
+  "uncertainties": [
+    "Perspective reference; two-axis registration to documented geometry, not a calibrated orthographic photograph.",
+    "Depth, hidden pivots and welds estimated. Size changes use documented reach/stack/chainstay; no claim of exact manufacturer tube tooling."
+  ],
+  "idler_pixel": [
+    324,
+    493
+  ]
+}

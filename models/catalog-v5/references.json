@@ -1,0 +1,473 @@
+{
+  "commencal-meta-sx-v5": {
+    "url": "/models/catalog-v5/references/commencal-meta-sx-v5.jpg",
+    "width": 1200,
+    "height": 800,
+    "landmarks": {
+      "bottom_bracket": [
+        554,
+        671
+      ],
+      "head_top": [
+        1069,
+        78
+      ],
+      "rear_axle": [
+        104,
+        645
+      ],
+      "seat_top": [
+        507,
+        240
+      ],
+      "shock_upper": [
+        796,
+        285
+      ],
+      "shock_lower": [
+        600,
+        397
+      ],
+      "seat_pivot": [
+        582,
+        425
+      ]
+    }
+  },
+  "santa-cruz-nomad-7-my27": {
+    "url": "/models/catalog-v5/references/santa-cruz-nomad-7-my27.jpg",
+    "width": 1024,
+    "height": 664,
+    "landmarks": {
+      "bottom_bracket": [
+        412,
+        433
+      ],
+      "head_top": [
+        647,
+        117
+      ],
+      "rear_axle": [
+        192,
+        426
+      ],
+      "seat_top": [
+        388,
+        228
+      ],
+      "shock_upper": [
+        523,
+        349
+      ],
+      "shock_lower": [
+        410,
+        368
+      ],
+      "seat_pivot": [
+        432,
+        269
+      ]
+    }
+  },
+  "specialized-s-works-enduro-udh": {
+    "url": "/models/catalog-v5/references/specialized-s-works-enduro-udh.jpg",
+    "width": 1200,
+    "height": 1200,
+    "landmarks": {
+      "bottom_bracket": [
+        529,
+        904
+      ],
+      "head_top": [
+        1087,
+        278
+      ],
+      "rear_axle": [
+        58,
+        855
+      ],
+      "seat_top": [
+        500,
+        444
+      ],
+      "shock_upper": [
+        726,
+        725
+      ],
+      "shock_lower": [
+        529,
+        794
+      ],
+      "seat_pivot": [
+        608,
+        677
+      ]
+    }
+  },
+  "da-bomb-cherry-bomb-29": {
+    "url": "/models/catalog-v5/references/da-bomb-cherry-bomb-29.jpg",
+    "width": 1080,
+    "height": 1080,
+    "landmarks": {
+      "bottom_bracket": [
+        525,
+        894
+      ],
+      "head_top": [
+        997,
+        192
+      ],
+      "rear_axle": [
+        27,
+        874
+      ],
+      "seat_top": [
+        450,
+        426
+      ],
+      "shock_upper": [
+        614,
+        536
+      ],
+      "shock_lower": [
+        617,
+        759
+      ],
+      "seat_pivot": [
+        554,
+        583
+      ]
+    }
+  },
+  "trek-slash-al-gen-6": {
+    "url": "/models/catalog-v5/references/trek-slash-al-gen-6.jpg",
+    "width": 800,
+    "height": 800,
+    "landmarks": {
+      "bottom_bracket": [
+        317,
+        554
+      ],
+      "head_top": [
+        506,
+        305
+      ],
+      "rear_axle": [
+        141,
+        551
+      ],
+      "seat_top": [
+        293,
+        398
+      ],
+      "shock_upper": [
+        356,
+        425
+      ],
+      "shock_lower": [
+        365,
+        507
+      ],
+      "seat_pivot": [
+        325,
+        451
+      ]
+    }
+  },
+  "canyon-sender-cfr-high-pivot": {
+    "url": "/models/catalog-v5/references/canyon-sender-cfr-high-pivot.jpg",
+    "width": 1000,
+    "height": 700,
+    "landmarks": {
+      "bottom_bracket": [
+        480,
+        559
+      ],
+      "head_top": [
+        838,
+        101
+      ],
+      "rear_axle": [
+        83,
+        452
+      ],
+      "seat_top": [
+        491,
+        207
+      ],
+      "shock_upper": [
+        623,
+        392
+      ],
+      "shock_lower": [
+        466,
+        475
+      ],
+      "seat_pivot": [
+        554,
+        391
+      ]
+    }
+  },
+  "scott-ransom-rc-427727": {
+    "url": "/models/catalog-v5/references/scott-ransom-rc-427727.png",
+    "width": 1132,
+    "height": 1600,
+    "landmarks": {
+      "bottom_bracket": [
+        487,
+        525
+      ],
+      "head_top": [
+        686,
+        262
+      ],
+      "rear_axle": [
+        301,
+        515
+      ],
+      "seat_top": [
+        467,
+        361
+      ],
+      "shock_upper": [
+        515,
+        487
+      ],
+      "shock_lower": [
+        430,
+        506
+      ],
+      "seat_pivot": [
+        487,
+        451
+      ]
+    }
+  },
+  "commencal-supreme-dh-v5": {
+    "url": "/models/catalog-v5/../reference-set/references/supreme-lateral.jpg",
+    "width": 1452,
+    "height": 928,
+    "landmarks": {
+      "bottom_bracket": [
+        555,
+        742
+      ],
+      "rear_axle": [
+        98,
+        743
+      ],
+      "head_top": [
+        1014,
+        94
+      ],
+      "head_bottom": [
+        1064,
+        194
+      ],
+      "seat_top": [
+        512,
+        361
+      ],
+      "seat_pivot": [
+        538,
+        526
+      ],
+      "rocker_pivot": [
+        581,
+        538
+      ],
+      "lower_pivot": [
+        538,
+        686
+      ],
+      "shock_upper": [
+        604,
+        504
+      ],
+      "shock_lower": [
+        519,
+        741
+      ],
+      "idler": [
+        539,
+        665
+      ]
+    }
+  },
+  "cst-bft-c1752": {
+    "url": "/src/assets/images/catalog/cst-bft-c1752.webp",
+    "width": 579,
+    "height": 741
+  },
+  "dt-swiss-350": {
+    "url": "/src/assets/images/catalog/dt-swiss-350.webp",
+    "width": 303,
+    "height": 216
+  },
+  "dt-swiss-e-593": {
+    "url": "/src/assets/images/catalog/dt-swiss-e-593.webp",
+    "width": 242,
+    "height": 305
+  },
+  "fox-38-factory-my27": {
+    "url": "/src/assets/images/catalog/fox-38-factory-my27.webp",
+    "width": 213,
+    "height": 800
+  },
+  "fox-40-factory-my27": {
+    "url": "/src/assets/images/catalog/fox-40-factory-my27.webp",
+    "width": 189,
+    "height": 800
+  },
+  "fox-float-x2-factory-my26": {
+    "url": "/src/assets/images/catalog/fox-float-x2-factory-my26.webp",
+    "width": 299,
+    "height": 800
+  },
+  "kenda-pinner-pro-k1241a": {
+    "url": "/src/assets/images/catalog/kenda-pinner-pro-k1241a.webp",
+    "width": 800,
+    "height": 456
+  },
+  "magura-mdr-p": {
+    "url": "/src/assets/images/catalog/magura-mdr-p.webp",
+    "width": 420,
+    "height": 571
+  },
+  "magura-mt4": {
+    "url": "/src/assets/images/catalog/magura-mt4.webp",
+    "width": 656,
+    "height": 517
+  },
+  "magura-mt5-pro": {
+    "url": "/src/assets/images/catalog/magura-mt5-pro.webp",
+    "width": 693,
+    "height": 508
+  },
+  "magura-mt7-pro": {
+    "url": "/src/assets/images/catalog/magura-mt7-pro.webp",
+    "width": 640,
+    "height": 531
+  },
+  "marzocchi-bomber-cr": {
+    "url": "/src/assets/images/catalog/marzocchi-bomber-cr.webp",
+    "width": 311,
+    "height": 800
+  },
+  "michelin-wild-enduro-ms-racing-line": {
+    "url": "/src/assets/images/catalog/michelin-wild-enduro-ms-racing-line.webp",
+    "width": 424,
+    "height": 779
+  },
+  "ohlins-rxf38-m3": {
+    "url": "/src/assets/images/catalog/ohlins-rxf38-m3.webp",
+    "width": 193,
+    "height": 800
+  },
+  "ohlins-ttx22m2-coil": {
+    "url": "/src/assets/images/catalog/ohlins-ttx22m2-coil.webp",
+    "width": 272,
+    "height": 800
+  },
+  "rockshox-vivid-coil-ultimate-d1": {
+    "url": "/src/assets/images/catalog/rockshox-vivid-coil-ultimate-d1.webp",
+    "width": 383,
+    "height": 800
+  },
+  "rockshox-zeb-ultimate-b1": {
+    "url": "/src/assets/images/catalog/rockshox-zeb-ultimate-b1.webp",
+    "width": 221,
+    "height": 800
+  },
+  "schwalbe-gravity-magic-mary": {
+    "url": "/src/assets/images/catalog/schwalbe-gravity-magic-mary.webp",
+    "width": 411,
+    "height": 800
+  },
+  "shimano-slx-cn-m7100": {
+    "url": "/src/assets/images/catalog/shimano-slx-cn-m7100.webp",
+    "width": 310,
+    "height": 137
+  },
+  "shimano-slx-cs-m7100-12": {
+    "url": "/src/assets/images/catalog/shimano-slx-cs-m7100-12.webp",
+    "width": 800,
+    "height": 799
+  },
+  "shimano-slx-m7100-brake": {
+    "url": "/src/assets/images/catalog/shimano-slx-m7100-brake.webp",
+    "width": 254,
+    "height": 260
+  },
+  "shimano-slx-m7120": {
+    "url": "/src/assets/images/catalog/shimano-slx-m7120.webp",
+    "width": 260,
+    "height": 238
+  },
+  "shimano-slx-rd-m7100-sgs": {
+    "url": "/src/assets/images/catalog/shimano-slx-rd-m7100-sgs.webp",
+    "width": 260,
+    "height": 258
+  },
+  "shimano-sm-bb71-41a": {
+    "url": "/src/assets/images/catalog/shimano-sm-bb71-41a.webp",
+    "width": 279,
+    "height": 123
+  },
+  "shimano-sm-rt86": {
+    "url": "/src/assets/images/catalog/shimano-sm-rt86.webp",
+    "width": 622,
+    "height": 614
+  },
+  "sram-dub-pressfit": {
+    "url": "/src/assets/images/catalog/sram-dub-pressfit.webp",
+    "width": 800,
+    "height": 437
+  },
+  "sram-gx-dh-a3": {
+    "url": "/src/assets/images/catalog/sram-gx-dh-a3.webp",
+    "width": 651,
+    "height": 800
+  },
+  "sram-hs2": {
+    "url": "/src/assets/images/catalog/sram-hs2.webp",
+    "width": 800,
+    "height": 800
+  },
+  "sram-maven-brz-b1": {
+    "url": "/src/assets/images/catalog/sram-maven-brz-b1.webp",
+    "width": 800,
+    "height": 600
+  },
+  "sram-maven-slv-b1": {
+    "url": "/src/assets/images/catalog/sram-maven-slv-b1.webp",
+    "width": 800,
+    "height": 598
+  },
+  "sram-maven-ult-b1": {
+    "url": "/src/assets/images/catalog/sram-maven-ult-b1.webp",
+    "width": 800,
+    "height": 602
+  },
+  "sram-pc1110": {
+    "url": "/src/assets/images/catalog/sram-pc1110.webp",
+    "width": 800,
+    "height": 45
+  },
+  "sram-xg-795": {
+    "url": "/src/assets/images/catalog/sram-xg-795.webp",
+    "width": 800,
+    "height": 799
+  },
+  "truvativ-descendant-dh": {
+    "url": "/src/assets/images/catalog/truvativ-descendant-dh.webp",
+    "width": 800,
+    "height": 328
+  },
+  "marzocchi-bomber-z1-rail": {
+    "url": "/src/assets/images/catalog/marzocchi-z1-rail-black.jpg",
+    "width": 800,
+    "height": 800
+  }
+}

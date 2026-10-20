@@ -1,0 +1,501 @@
+{
+  "model": "commencal-meta-sx-v5",
+  "reference_image": "references/commencal-meta-sx-v5.jpg",
+  "source": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/enduro/meta%20sx%20v5/FT3MSXV5TMEXL.html?lang=en_FR",
+  "image_landmarks": {
+    "bottom_bracket": [
+      554,
+      671
+    ],
+    "head_top": [
+      1069,
+      78
+    ],
+    "rear_axle": [
+      104,
+      645
+    ],
+    "seat_top": [
+      507,
+      240
+    ],
+    "shock_upper": [
+      796,
+      285
+    ],
+    "shock_lower": [
+      600,
+      397
+    ],
+    "seat_pivot": [
+      582,
+      425
+    ]
+  },
+  "sections": [
+    {
+      "name": "top",
+      "points": [
+        [
+          1038,
+          88
+        ],
+        [
+          1071,
+          113
+        ],
+        [
+          581,
+          379
+        ],
+        [
+          553,
+          398
+        ],
+        [
+          538,
+          393
+        ],
+        [
+          537,
+          365
+        ],
+        [
+          566,
+          352
+        ]
+      ],
+      "depth_mm": 42,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "down",
+      "points": [
+        [
+          1070,
+          145
+        ],
+        [
+          1120,
+          168
+        ],
+        [
+          739,
+          620
+        ],
+        [
+          707,
+          643
+        ],
+        [
+          673,
+          658
+        ],
+        [
+          582,
+          685
+        ],
+        [
+          560,
+          676
+        ],
+        [
+          567,
+          649
+        ],
+        [
+          652,
+          625
+        ],
+        [
+          685,
+          609
+        ],
+        [
+          705,
+          582
+        ]
+      ],
+      "depth_mm": 65,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "seat",
+      "points": [
+        [
+          490,
+          243
+        ],
+        [
+          524,
+          237
+        ],
+        [
+          531,
+          278
+        ],
+        [
+          567,
+          347
+        ],
+        [
+          558,
+          397
+        ],
+        [
+          572,
+          450
+        ],
+        [
+          575,
+          520
+        ],
+        [
+          560,
+          596
+        ],
+        [
+          537,
+          602
+        ],
+        [
+          541,
+          543
+        ],
+        [
+          539,
+          482
+        ],
+        [
+          523,
+          419
+        ]
+      ],
+      "depth_mm": 38,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "rocker",
+      "points": [
+        [
+          562,
+          414
+        ],
+        [
+          592,
+          413
+        ],
+        [
+          614,
+          445
+        ],
+        [
+          608,
+          599
+        ],
+        [
+          584,
+          620
+        ],
+        [
+          555,
+          607
+        ],
+        [
+          570,
+          572
+        ],
+        [
+          575,
+          451
+        ]
+      ],
+      "depth_mm": 36,
+      "z_mm": 32,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "upper_eye",
+      "points": [
+        [
+          766,
+          260
+        ],
+        [
+          813,
+          242
+        ],
+        [
+          808,
+          285
+        ],
+        [
+          795,
+          300
+        ],
+        [
+          784,
+          299
+        ]
+      ],
+      "depth_mm": 25,
+      "z_mm": 0,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay-55",
+      "points": [
+        [
+          99,
+          636
+        ],
+        [
+          120,
+          599
+        ],
+        [
+          151,
+          579
+        ],
+        [
+          555,
+          418
+        ],
+        [
+          580,
+          411
+        ],
+        [
+          594,
+          427
+        ],
+        [
+          577,
+          444
+        ],
+        [
+          158,
+          605
+        ],
+        [
+          141,
+          622
+        ],
+        [
+          122,
+          647
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "stay55",
+      "points": [
+        [
+          99,
+          636
+        ],
+        [
+          120,
+          599
+        ],
+        [
+          151,
+          579
+        ],
+        [
+          555,
+          418
+        ],
+        [
+          580,
+          411
+        ],
+        [
+          594,
+          427
+        ],
+        [
+          577,
+          444
+        ],
+        [
+          158,
+          605
+        ],
+        [
+          141,
+          622
+        ],
+        [
+          122,
+          647
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain-55",
+      "points": [
+        [
+          98,
+          638
+        ],
+        [
+          155,
+          638
+        ],
+        [
+          453,
+          639
+        ],
+        [
+          481,
+          630
+        ],
+        [
+          570,
+          589
+        ],
+        [
+          589,
+          608
+        ],
+        [
+          570,
+          627
+        ],
+        [
+          484,
+          669
+        ],
+        [
+          465,
+          678
+        ],
+        [
+          151,
+          661
+        ],
+        [
+          101,
+          655
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": -55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "chain55",
+      "points": [
+        [
+          98,
+          638
+        ],
+        [
+          155,
+          638
+        ],
+        [
+          453,
+          639
+        ],
+        [
+          481,
+          630
+        ],
+        [
+          570,
+          589
+        ],
+        [
+          589,
+          608
+        ],
+        [
+          570,
+          627
+        ],
+        [
+          484,
+          669
+        ],
+        [
+          465,
+          678
+        ],
+        [
+          151,
+          661
+        ],
+        [
+          101,
+          655
+        ]
+      ],
+      "depth_mm": 22,
+      "z_mm": 55,
+      "material": "paint",
+      "bevel_mm": 4
+    },
+    {
+      "name": "guard",
+      "points": [
+        [
+          172,
+          632
+        ],
+        [
+          466,
+          637
+        ],
+        [
+          471,
+          657
+        ],
+        [
+          455,
+          675
+        ],
+        [
+          185,
+          662
+        ]
+      ],
+      "depth_mm": 28,
+      "z_mm": 70,
+      "material": "rubber",
+      "bevel_mm": 2
+    }
+  ],
+  "uncertainties": [
+    "Perspective reference; two-axis registration to documented geometry, not a calibrated orthographic photograph.",
+    "Depth, hidden pivots and welds estimated. Size changes use documented reach/stack/chainstay; no claim of exact manufacturer tube tooling."
+  ],
+  "shock_mount_bridge": [
+    [
+      582,
+      425
+    ],
+    [
+      600,
+      397
+    ]
+  ]
+}
