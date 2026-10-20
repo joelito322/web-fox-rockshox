@@ -1,0 +1,10 @@
+.brand .brand-logo{display:block;width:210px;height:38px;overflow:visible}
+.brand-logo .brand-cut{fill:#7c8d3d}
+.is-landing .brand-logo .brand-cut{fill:#d6ff3f}
+.brand-logo text{font-family:'DM Sans',Arial,sans-serif}
+@media(max-width:760px){
+ .brand .brand-logo{width:178px;height:32px}
+ .site-header:has(.account-label){height:auto;min-height:72px;flex-wrap:wrap;gap:12px;padding-top:12px;padding-bottom:12px}
+ .site-header:has(.account-label) .header-nav{margin-left:auto}
+}
+@media(max-width:390px){.brand .brand-logo{width:155px;height:29px}}

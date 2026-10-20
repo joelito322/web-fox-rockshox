@@ -12,16 +12,11 @@ import { Loading } from "../components/ui/Feedback";
 import { useAuth } from "../features/auth/provider";
 import { forgetAccountDrafts } from "../features/auth/drafts";
 import { requireSupabase, userError } from "../lib/supabase";
+import { BrandLogo } from "../components/BrandLogo";
 export function Brand() {
   return (
     <Link className="brand" to="/" aria-label="ATLAS MTB, inicio">
-      <svg viewBox="0 0 32 30" aria-hidden="true">
-        <path d="M1 27 14 2l5 9 3-5 9 21h-9l-8-14-7 14Z" fill="currentColor" />
-        <path d="m11 24 4-7 4 7Z" fill="var(--surface)" />
-      </svg>
-      <span>
-        ATLAS<span className="brand-mtb">MTB</span>
-      </span>
+      <BrandLogo />
     </Link>
   );
 }
@@ -58,7 +53,7 @@ export function Layout() {
       <a className="skip-link" href="#main">
         Ir al contenido
       </a>
-      <header className="site-header">
+      <header className={`site-header${location.pathname === "/" ? " is-landing" : ""}`}>
         <Brand />
         <nav className="header-nav" aria-label="Navegación principal">
           <Link to="/componentes">Catálogo</Link>
@@ -124,7 +119,7 @@ export function Layout() {
           <Outlet />
         </Suspense>
       </main>
-      <footer className="site-footer">
+      <footer className={`site-footer${location.pathname === "/" ? " is-landing" : ""}`}>
         <span>ATLAS MTB</span>
         <span>Enduro & Descenso</span>
         <span>Diseña tu próximo montaje.</span>
