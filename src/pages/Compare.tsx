@@ -27,45 +27,10 @@ export default function Compare() {
     setSearchTerm('')
   }
 
-  const getHighlightClass = (
-    property: keyof SuspensionFamily,
-    currentValue: any,
-    models: (SuspensionFamily & { brand: string })[]
-  ) => {
-    if (models.length < 2) return ''
-
-    const allValues = models.map((model) => model[property])
-    const numericValues = allValues.filter((value) => typeof value === 'number') as number[]
-
-    if (numericValues.length !== allValues.length) {
-      return new Set(allValues).size > 1 ? 'different' : ''
-    }
-
-    let bestValue
-    if (property === 'weight') {
-      bestValue = Math.min(...numericValues)
-    } else {
-      bestValue = Math.max(...numericValues)
-    }
-
-    if (currentValue === bestValue) return 'best'
-    return ''
-  }
-
-  const renderSpecValue = (model: SuspensionFamily & { brand: string }, property: keyof SuspensionFamily) => {
+  const renderSpecValue = (model: SuspensionFamily & { brand: string }, property: 'type' | 'discipline' | 'travel' | 'damping') => {
     const value = model[property]
-    const className = getHighlightClass(property, value, compareList)
-    
-    let displayValue = value
-    if (property === 'price') {
-      displayValue = `$${value}`
-    } else if (property === 'weight') {
-      displayValue = `${value}g`
-    } else if (property === 'stanchionDiameter') {
-      displayValue = value ? `${value}mm` : 'N/A'
-    }
-
-    return <span className={className}>{displayValue}</span>
+    const different = compareList.some((item) => item[property] !== value)
+    return <span className={different ? 'different' : undefined}>{value}</span>
   }
 
   return (
@@ -123,18 +88,6 @@ export default function Compare() {
                   </div>
                   <div className="compare-specs">
                     <div className="spec-item">
-                      <strong>Año:</strong> {renderSpecValue(model, 'year')}
-                    </div>
-                    <div className="spec-item">
-                      <strong>Precio:</strong> {renderSpecValue(model, 'price')}
-                    </div>
-                    <div className="spec-item">
-                      <strong>Peso:</strong> {renderSpecValue(model, 'weight')}
-                    </div>
-                    <div className="spec-item">
-                      <strong>Barras:</strong> {renderSpecValue(model, 'stanchionDiameter')}
-                    </div>
-                    <div className="spec-item">
                       <strong>Tipo:</strong> {renderSpecValue(model, 'type')}
                     </div>
                     <div className="spec-item">
@@ -144,7 +97,7 @@ export default function Compare() {
                       <strong>Recorrido:</strong> {renderSpecValue(model, 'travel')}
                     </div>
                     <div className="spec-item">
-                      <strong>Damping:</strong> {renderSpecValue(model, 'damping')}
+                      <strong>Hidráulico:</strong> {renderSpecValue(model, 'damping')}
                     </div>
                   </div>
                   <div className="spec-actions">
