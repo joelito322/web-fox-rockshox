@@ -30,6 +30,7 @@ import { Drawer } from "../../components/ui/Drawer";
 import { Empty, Loading, Notice } from "../../components/ui/Feedback";
 import { VariantInformation } from "./VariantInformation";
 import { useComparison } from "../compare";
+import { CatalogHeading } from "./CatalogHeading";
 
 function ProductCard({
   component,
@@ -54,9 +55,7 @@ function ProductCard({
         <span className="category-badge">
           {categoryLabels[component.category]}
         </span>
-        <span className="card-arrow">
-          <ArrowUpRight size={18} />
-        </span>
+        <span className="product-discipline">{component.disciplines.map(displaySpec).join(" / ")}</span>
       </div>
       <div className="product-copy">
         <p>{component.brands.name}</p>
@@ -92,16 +91,17 @@ function ProductCard({
                   specLabels[key] ??
                   (key === "commercial_size" ? "Medida" : "Referencia")
                 ).replace(" (mm)", "")}
-                : {values.map(displaySpec).join(" / ")}
+                : {values.slice(0, 3).map(displaySpec).join(" / ")}
                 {key.endsWith("_mm") ? " mm" : ""}
+                {values.length > 3 ? ` · ${values.length - 3} más` : ""}
               </span>
             ) : null;
           })}
         </div>
-        <span>
+        <div className="product-footer"><span>
           {component.component_variants.length}{" "}
           {component.component_variants.length === 1 ? "variante" : "variantes"}
-        </span>
+        </span><span className="card-arrow"><ArrowUpRight size={18} /></span></div>
       </div>
     </button>
   );
@@ -195,21 +195,14 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       });
   }
   return (
-    <div className={`content catalog-page${frames ? " frames-catalog" : ""}`}>
+    <div className={`content catalog-page${frames ? " frames-catalog" : " discovery-page"}`}>
       {!frames && (
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">Encuentra tu siguiente pieza</p>
-            <h1>
-              {frames ? "Cuadros" : "Componentes"}
-              <span className="title-dot">.</span>
-            </h1>
-          </div>
+        <CatalogHeading kind="components">
           <Link className="compare-link" to="/comparar">
             <GitCompareArrows size={18} /> Comparar{" "}
             <span>{compare.items.length}/3</span>
           </Link>
-        </div>
+        </CatalogHeading>
       )}
       <div className="catalog-toolbar">
         <label className="search-input">
@@ -223,6 +216,8 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
         </label>
         <button
           className="button outline mobile-filter"
+          aria-expanded={filtersOpen}
+          aria-controls="catalog-categories"
           onClick={() => setFiltersOpen((v) => !v)}
         >
           <SlidersHorizontal size={16} /> Categorías
@@ -305,6 +300,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       <div className="catalog-layout">
         {!frames && (
           <aside
+            id="catalog-categories"
             className={`category-list ${filtersOpen ? "open" : ""}`}
             aria-label="Categorías"
           >

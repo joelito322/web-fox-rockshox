@@ -13,6 +13,7 @@ import { BikeIllustration } from "../../components/BikeIllustration";
 import { Drawer } from "../../components/ui/Drawer";
 import { Loading, Notice, Empty } from "../../components/ui/Feedback";
 import { modelImages } from "../../data/images";
+import { CatalogHeading } from "./CatalogHeading";
 const versionSchema = z.object({
   id: z.uuid(),
   label: z.string(),
@@ -107,25 +108,20 @@ export default function BicyclesPage() {
     });
   }
   return (
-    <>
+    <div className="discovery-page bicycles-page">
       <div className="content bicycles-heading">
-        <div className="section-heading">
-          <div>
-            <p className="eyebrow">El punto de partida</p>
-            <h1>
-              Bicicletas<span className="title-dot">.</span>
-            </h1>
-          </div>
-        </div>
+        <CatalogHeading kind="bicycles" />
         <div className="segmented">
           <button
             className={!frames ? "selected" : ""}
+            aria-pressed={!frames}
             onClick={() => setParams({})}
           >
             Bicicletas de referencia
           </button>
           <button
             className={frames ? "selected" : ""}
+            aria-pressed={frames}
             onClick={() => setParams({ view: "frames" })}
           >
             Cuadros
@@ -236,7 +232,7 @@ export default function BicyclesPage() {
           onVersion={open}
         />
       )}
-    </>
+    </div>
   );
 }
 function FamilyCard({
@@ -251,8 +247,12 @@ function FamilyCard({
     if (!family.versions.some((v) => v.id === id)) setId(family.versions[0].id);
   }, [family.versions, id]);
   const photo = modelImages[family.image_key ?? ""];
+  const displayName = family.kind === "example"
+    ? family.name.replace(/\s*·\s*Montaje ATLAS$/, "")
+    : family.name;
   return (
-    <article className="preset-card">
+    <article className="preset-card bicycle-card">
+      <button className="bicycle-media" onClick={() => onOpen(id)} aria-label={`Ver montaje de ${family.name}`}>
       {photo ? (
         <img
           className="preset-photo"
@@ -263,14 +263,15 @@ function FamilyCard({
       ) : (
         <BikeIllustration />
       )}
+      <span className="bicycle-kind">{family.kind === "factory" ? "Montaje de fábrica" : "Ejemplo ATLAS"}</span>
+      {!photo && <span className="bicycle-preview-label">Vista ilustrativa</span>}
+      <span className="bicycle-media-arrow"><ArrowUpRight size={22} /></span>
+      </button>
       <div>
-        <p className="eyebrow">
-          {family.brand_name} ·{" "}
-          {family.kind === "factory" ? "Montaje de fábrica" : "Ejemplo ATLAS"}
-        </p>
+        {family.brand_name !== "ATLAS" && <p className="eyebrow">{family.brand_name}</p>}
         <h2>
           <button className="row-button" onClick={() => onOpen(id)}>
-            {family.name}
+            {displayName}
           </button>
         </h2>
         <label className="field">

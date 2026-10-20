@@ -1,0 +1,15 @@
+:root { --workspace-gutter:clamp(20px,3vw,56px); }
+.content { width:100%; max-width:none; margin-inline:0; padding-inline:var(--workspace-gutter); }
+.content.narrow { max-width:700px; margin-inline:auto; }
+.site-header:not(.is-landing),.workspace-tabs,.site-footer:not(.is-landing) { padding-inline:var(--workspace-gutter); }
+.route-content,.table-scroll { min-width:0; }
+.auth-layout { width:100%; max-width:none; }
+.auth-form { width:100%; max-width:620px; justify-self:center; }
+/* Saved builds and reference bikes grow naturally with the available space. */
+.preset-grid { grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr)); }
+@media(min-width:1450px) {
+  .bicycles-page .bicycle-media { aspect-ratio:auto; height:360px; }
+}
+@media(max-width:720px) {
+  .preset-grid { grid-template-columns:minmax(0,1fr); }
+}
