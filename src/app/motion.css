@@ -1,0 +1,92 @@
+/* Shared interaction rhythm. Layout and business state remain unchanged. */
+:root {
+  --motion-fast: 140ms;
+  --motion-content: 180ms;
+  --motion-panel: 220ms;
+  --motion-ease: cubic-bezier(.2,.7,.2,1);
+}
+.route-content { min-width: 0; }
+:is(.button,.icon-button,.text-button,.row-button,.card-menu button,
+.header-nav a,.back-link,.source-link,.compare-link,.forgot,.auth-switch a,
+.category-list button,.segmented button,.admin-tabs a,.workspace-tabs a,
+.slot-nav button,.view-controls button,.piece-options button,.password-field button) {
+  transition: color var(--motion-fast) ease, background-color var(--motion-fast) ease,
+    border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease,
+    transform var(--motion-fast) var(--motion-ease);
+}
+:is(.button,.icon-button,.product-card,.piece-options button,.view-controls button):not(:disabled):active {
+  transform: translateY(1px);
+}
+.button:disabled { transform: none; }
+:is(.field input,.field select,.field textarea,.catalog-filters select,.build-name) {
+  transition: border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease,
+    background-color var(--motion-fast) ease;
+}
+:is(.field input,.field select,.field textarea,.catalog-filters select):focus-visible {
+  border-color: #788c4d;
+  box-shadow: 0 0 0 3px #788c4d19;
+}
+.search-input,.password-field {
+  transition: border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease;
+}
+:is(.search-input,.password-field):focus-within {
+  border-color: #788c4d;
+  box-shadow: 0 0 0 3px #788c4d22;
+}
+.workspace-tabs a::after {
+  content: ''; position: absolute; height: 3px; left: 0; right: 0; bottom: 0;
+  background: var(--ink); transform: scaleX(0); transform-origin: left;
+  transition: transform var(--motion-content) var(--motion-ease);
+}
+.workspace-tabs a.active::after { transform: scaleX(1); }
+:is(.product-card,.preset-card,.card-arrow,.preset-photo,.product-media img) {
+  transition: background-color var(--motion-fast) ease, border-color var(--motion-fast) ease,
+    box-shadow var(--motion-content) ease, transform var(--motion-content) var(--motion-ease);
+}
+.product-card:focus-visible .product-media { background: #e2e7d8; }
+.product-card:focus-visible .card-arrow { transform: translate(2px,-2px); }
+.preset-card:focus-within { border-color: #a5b58b; }
+.admin-table tbody tr { transition: background-color var(--motion-fast) ease; }
+.admin-table tbody tr:focus-within { background-color: #f0f3e8; }
+.permission-table input[type=checkbox] { accent-color: #657d38; }
+
+/* Entry only: closing still executes immediately, including unsaved-change guards. */
+.drawer[open] { animation: panel-enter var(--motion-panel) var(--motion-ease); }
+.drawer[open]::backdrop,.native-confirm[open]::backdrop {
+  animation: surface-fade var(--motion-content) ease-out;
+}
+.native-confirm[open] { animation: confirm-enter var(--motion-content) var(--motion-ease); }
+:is(.notice,.success-notice,.empty,.sent-state,.catalog-filters,.category-list.open,.record) {
+  animation: surface-enter var(--motion-content) var(--motion-ease);
+}
+:is(.product-grid,.preset-grid,.comparison-table,.admin-table,.permission-table,.piece-options) {
+  animation: surface-fade var(--motion-content) ease-out;
+}
+/* Disclosure content is animated without replacing native keyboard semantics. */
+details[open] > :not(summary) { animation: surface-fade var(--motion-content) ease-out; }
+@keyframes surface-fade { from { opacity: .4; } to { opacity: 1; } }
+@keyframes surface-enter { from { opacity: .4; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+@keyframes panel-enter { from { opacity: .6; transform: translateX(32px); } to { opacity: 1; transform: none; } }
+@keyframes confirm-enter { from { opacity: .5; transform: translateY(8px) scale(.985); } to { opacity: 1; transform: none; } }
+@media (hover: hover) and (pointer: fine) {
+  .product-card:hover .card-arrow { transform: translate(2px,-2px); }
+  .preset-card:hover { border-color: #bcc9aa; box-shadow: 0 6px 18px #2330210a; }
+  .preset-card:hover .preset-photo { transform: scale(1.015); }
+  :is(.category-list button,.slot-nav button,.piece-options button,.view-controls button):not(:disabled):hover {
+    background-color: #edf1e4; border-color: #b6c59f; color: var(--ink);
+  }
+  .admin-table tbody tr:hover { background-color: #f6f8f1; }
+}
+@media (max-width: 720px) {
+  .drawer[open] { animation-name: panel-enter-mobile; }
+  @keyframes panel-enter-mobile { from { opacity: .6; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  /* Also remove existing hover displacement and the loading spinner's rotation. */
+  *,*::before,*::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  :is(.button,.icon-button,.product-card,.preset-card,.card-arrow,.preset-photo,.product-media img,.piece-options button,.view-controls button):is(:hover,:active,:focus-visible) {
+    transform: none !important;
+  }
+  .product-card:is(:hover,:active,:focus-visible) :is(.product-media img,.card-arrow),
+  .preset-card:is(:hover,:active,:focus-within) .preset-photo { transform: none !important; }
+}

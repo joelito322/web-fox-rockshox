@@ -47,6 +47,7 @@ import { readBuild, saveBuild } from "../garage/api";
 import { Empty, Loading, Notice } from "../../components/ui/Feedback";
 import { requireSupabase, userError } from "../../lib/supabase";
 import { ConfirmDialog } from "../../components/ui/ConfirmDialog";
+import { MotionRegion } from "../../components/ui/MotionRegion";
 import { VariantInformation } from "../catalog/VariantInformation";
 const Scene = lazy(() => import("./scene/BikeScene"));
 class SceneBoundary extends Component<
@@ -570,7 +571,7 @@ function Configurator({ buildId }: { buildId?: string }) {
           {error && <Notice>{error}</Notice>}
           {pending && <Loading label="Preparando pieza" />}
           {selected && (
-            <div className="selected-piece">
+            <MotionRegion className="selected-piece" motionKey={`${slot}:${selected.id}`}>
               <p>{selected.component.brands.name}</p>
               <h2>{selected.component.name}</h2>
               <span>{selected.label}</span>
@@ -633,7 +634,7 @@ function Configurator({ buildId }: { buildId?: string }) {
                   <Trash2 size={14} /> Quitar pieza
                 </button>
               )}
-            </div>
+            </MotionRegion>
           )}
           <h2 className="panel-subtitle">
             {selected ? "Cambiar por" : "Elegir"}{" "}

@@ -13,6 +13,7 @@ import { useAuth } from "../features/auth/provider";
 import { forgetAccountDrafts } from "../features/auth/drafts";
 import { requireSupabase, userError } from "../lib/supabase";
 import { BrandLogo } from "../components/BrandLogo";
+import { MotionRegion } from "../components/ui/MotionRegion";
 export function Brand() {
   return (
     <Link className="brand" to="/" aria-label="ATLAS MTB, inicio">
@@ -116,7 +117,13 @@ export function Layout() {
       )}
       <main id="main">
         <Suspense fallback={<Loading />}>
-          <Outlet />
+          <MotionRegion
+            className="route-content"
+            motionKey={location.pathname.startsWith("/componentes") ? "/componentes" : location.pathname}
+            disabled={location.pathname === "/"}
+          >
+            <Outlet />
+          </MotionRegion>
         </Suspense>
       </main>
       <footer className={`site-footer${location.pathname === "/" ? " is-landing" : ""}`}>
