@@ -1,0 +1,40 @@
+import { z } from "zod";
+export const proceduralGeneratorKeys = [
+  "atlas-bike-v1",
+  "atlas-bike-v2",
+] as const;
+export type ProceduralGeneratorKey = (typeof proceduralGeneratorKeys)[number];
+export function knownProceduralGenerator(
+  key: string | null | undefined,
+): key is ProceduralGeneratorKey {
+  return proceduralGeneratorKeys.some((value) => value === key);
+}
+const coordinate = z.number().min(-5).max(5);
+const angle = z
+  .number()
+  .min(-2 * Math.PI)
+  .max(2 * Math.PI);
+export const manifestSchema = z.strictObject({
+  manifest_version: z.literal(1),
+  units: z.literal("meters"),
+  origin: z
+    .string()
+    .min(1)
+    .max(80)
+    .regex(/^[a-z][a-z0-9_]*$/),
+  parameters: z
+    .strictObject({ size_scale: z.number().min(0.7).max(1.4).optional() })
+    .default({}),
+  anchors: z
+    .record(
+      z.string().regex(/^[a-z][a-z0-9_]*$/),
+      z.strictObject({
+        position: z.tuple([coordinate, coordinate, coordinate]),
+        rotation: z.tuple([angle, angle, angle]),
+        estimated: z.boolean(),
+      }),
+    )
+    .default({}),
+  paintable_nodes: z.array(z.string().min(1).max(150)).max(128).default([]),
+  selectable_nodes: z.array(z.string().min(1).max(150)).max(128).default([]),
+});
