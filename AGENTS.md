@@ -39,6 +39,12 @@
 - El primer administrador `admin@atlas.mtb` fue creado por el usuario desde Dashboard y vinculado mediante `supabase/operations/bootstrap-admin.sql`. Comprobación posterior: correo confirmado, rol admin y doce permisos. El bootstrap es de una sola cuenta y ya está completado; nuevos administradores mediante operación autorizada de administración de cuentas. Jamás ascender el primer registro ni usar una contraseña predeterminada.
 - Configuración de Auth leída, pero PATCH rechazado con HTTP 403. Callbacks y plantillas están preparados en `supabase/auth-config.json` y `supabase/templates/`, todavía sin aplicar. No declarar confirmación/recuperación/invitación por correo validadas. Seguir 12 para continuar sin volver a pedir secretos existentes.
 
+- Galerías de Componentes/Bicicletas: cabecera y estilo compartidos en `features/catalog/CatalogHeading.tsx` y `discovery.css`. Ancho fluido del trabajo en `src/app/layout.css`, con márgenes adaptables y rejillas por ancho disponible; no reintroducir el tope central de 1440 px. Conservar navegación, foco y lectura de formularios. Dirección visual en 06/06b.
+
+- Fotografías del catálogo: 40 WebP nuevos y seis modelos con fotos anteriores (46/53). Resolver compartido `componentImage` en `src/data/images.ts`; foto de variante prioritaria, clave explícita o slug. Procedencia/excepciones en `src/assets/images/catalog/README.md` y `photos.json`. No tomar fotos de otras generaciones para cubrir referencias pendientes.
+
+- Movimiento compartido en `src/app/motion.css` y `components/ui/MotionRegion.tsx`: reutilizar duraciones, entrada de paneles y respuesta de controles; conservar estado de formularios/escena y movimiento reducido. Dirección y evidencia en 06/08/12. No añadir animaciones continuas al trabajo ni retrasar cierres/confirmaciones.
+
 - Plataforma móvil objetivo confirmada: Android con Brave y Chrome. Playwright usa emulación Pixel 7 sobre Chromium; no confundirla con un teléfono físico ni con una ejecución del binario Brave.
 
 - Geometría procedimental publicada: conservar `atlas-bike-v1` y `atlas-bike-v2` con sus ensamblajes para reproducir los montajes guardados. El recurso del cuadro fija el ensamblaje; v2 introduce descenso con doble pletina, potencia directa y polea. Cambios físicos requieren otro generador y recurso/variante; no alterar versiones publicadas silenciosamente. La migración 013 rechaza publicar generadores no soportados por el cliente. Fuentes y estado del inventario en `supabase/catalog/README.md`.

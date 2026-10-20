@@ -179,3 +179,32 @@ El acabado final se revisa junto con los recorridos, las proporciones y la refer
 ### Revisión de identidad y portada · 19/10/2026
 
 Cambio de dirección solicitado: una firma ATLAS MTB propia, más llamativa y profesional; escaparate fresco, informal y agresivo ligado a downhill/enduro. Monograma geométrico inclinado, firma de letras vectoriales y corte de velocidad; versión clara/oscura y símbolo de favicon. Conservar nombre/eslogan. Titular de portada Barlow Condensed 800 italic con escala grande y acento lima; textos y formularios conservan legibilidad. La intensidad no se traslada a las tablas o al configurador. La composición y los estados están en 06a; el usuario aprobó el resultado visual final, incluidas las fotografías revisadas. Evidencia técnica en 12.
+
+### Transiciones compartidas solicitadas · 19/10/2026
+
+Extender el movimiento al espacio de trabajo, acceso y administración sin cambiar los bocetos aprobados. Implementación del movimiento de fase 1 de 08, aplicada a las superficies de las fases siguientes: CSS compartido para respuesta de controles/selecciones y entrada de paneles, tarjetas, avisos y desplegables; una región reutilizable para fundir contenido al cambiar de sección o selección sin remontar formularios, reiniciar filtros o recrear la escena 3D. Sin dependencias nuevas.
+
+```text
+Pestañas   [Bicicletas] [Componentes] [Mis bicicletas]
+                         └─ marca activa breve + contenido aparece
+Tarjeta    [ imagen / nombre / acción ] → énfasis al foco y al puntero
+Detalle    escritorio: derecha → centro | móvil: abajo → arriba
+Formulario [campo enfocado] → borde visible | [guardar] → pulsación breve
+Avisos     aparecen suavemente; acciones disponibles desde el inicio
+```
+
+Duración orientativa: controles 120–160 ms, contenido 180 ms y paneles 220 ms. Desplazamiento pequeño solo en superficies nuevas; nunca en campos mientras se escribe ni en la geometría del montaje. Los diálogos conservan modalidad nativa, Escape, retorno de foco y confirmaciones de cambios sin guardar. Su entrada se anima; el cierre mantiene ejecución inmediata para no retrasar navegación, guardado o confirmaciones. No escalonar listas largas ni añadir esperas de interacción. Hover solo para dispositivos con puntero preciso; teclado y pulsación reciben respuesta equivalente.
+
+Con movimiento reducido se eliminan animaciones/desplazamientos y transiciones; la cancelación se aplica también si la preferencia cambia durante una animación. La portada mantiene su campaña ya aprobada. Aceptación: recorridos de pestañas/catálogo/acceso sin pérdida de estado, apertura/cierre y foco de paneles en escritorio/móvil, selección en configurador/administración y preferencia reducida; ejecutar build y pruebas pertinentes, registrar alcance y límites en 12.
+
+### Ancho adaptable de vistas · ajuste solicitado 19/10/2026
+
+Las vistas de trabajo deben utilizar el ancho disponible: retirar el tope central de 1440 px en `.content`, con separación lateral compartida `clamp(20px, 3vw, 56px)`. Alinear cabecera de trabajo, pestañas, contenido y pie. Aplicar a catálogo, bicicletas, montajes, comparación y administración; las tablas usan su desplazamiento interno cuando lo requieren. El configurador mantiene su escena flexible y panel de selección. La composición de portada aprobada conserva su tratamiento.
+
+```text
+Pantalla normal: | margen | categorías | 3–4 tarjetas | margen |
+Pantalla amplia: | margen | categorías | más columnas             | margen |
+Móvil:           | margen | controles y 2 tarjetas | margen |
+```
+
+Rejillas de componentes/cuadros calculadas por ancho mínimo legible y ancho real; sin ampliar siempre las mismas tres tarjetas. Bicicletas/montajes adaptan sus columnas; las imágenes conservan proporción y un alto razonable en pantallas grandes. Mantener límites de lectura en formularios cortos y estados de texto, con estructura exterior flexible; no convertir campos de acceso en una línea del ancho del monitor. Validar 360/393, 1440, 1920 y 2560 px, conservación de contexto y ausencia de desplazamiento horizontal accidental. Este ajuste se implementa y valida en fases 1/3/6 de 08, con evidencia en 12.

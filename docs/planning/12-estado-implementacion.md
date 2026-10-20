@@ -169,3 +169,55 @@ Comprobaciones ejecutadas sobre la selección final:
 - `node scripts/check-client-secrets.mjs`: sin credenciales privilegiadas configuradas en el build del cliente.
 
 La aprobación visual corresponde a esta portada e identidad. Las pruebas móviles son emuladas; no sustituyen Android físico ni cierran los pendientes generales de Auth, inventario, 3D o despliegue. Este trabajo no modifica Supabase Cloud.
+
+## Movimiento transversal · 19/10/2026
+
+Implementada la revisión solicitada de transiciones en acceso, catálogo, bicicletas, comparación, montajes y administración. `src/app/motion.css` concentra las duraciones y respuestas de botones, campos, categorías, pestañas, tarjetas, tablas, avisos, registros de formulario, desplegables y paneles. Los detalles entran desde la derecha en escritorio y desde abajo en móvil. El cierre conserva su ejecución inmediata y las confirmaciones existentes.
+
+`MotionRegion` aplica un fundido de 180 ms al cambiar de sección y de pieza seleccionada, sin remontar formularios ni escena. Abrir una ficha de componente conserva el catálogo de fondo. No se incorporaron dependencias ni animaciones continuas al trabajo; se mantiene la campaña de portada aprobada. Movimiento reducido elimina las animaciones CSS y cancela la animación de contenido activa al cambiar la preferencia.
+
+Validación:
+
+- `pnpm run check`: build y 35 pruebas unitarias correctos; build repetido después de la corrección CSS. Permanecen los avisos conocidos de anotaciones de Zod y tamaño de bundles.
+- Suite pública `motion.spec.ts`, `public.spec.ts`, `landing.spec.ts` y `catalog.spec.ts`: primera ejecución con 35 correctas y un fallo nuevo que detectó zoom heredado de la imagen en móvil con movimiento reducido. Corregido el selector de los descendientes de la tarjeta. Reejecución de `motion.spec.ts`: seis correctas, escritorio y Pixel 7 emulado; incluyen Escape/retorno de foco, filtros conservados, ausencia de desbordamiento, movimiento reducido y cancelación en vivo sin borrar campos.
+- Runner autenticado, filtro `administrator manages|reference families mount`: dos pruebas correctas en escritorio y dos en móvil emulado. Comprueban administración real de borradores/roles/paneles, confirmación al salir, montajes y selección de piezas. Cuentas y datos auxiliares limpiados por el runner.
+- Inspección de capturas del detalle de Assegai en escritorio y móvil, cargando su contenido; sin desbordamiento horizontal. Capturas de trabajo en `/tmp/atlas-motion-{desktop,mobile}-ready.png`, no versionadas.
+- Build del cliente comprobado sin credenciales privilegiadas configuradas; `git diff --check` correcto.
+
+Los recorridos autenticados utilizan exclusivamente datos auxiliares del proyecto de desarrollo autorizado, sin cambios de esquemas, migraciones o Edge Functions. Estas comprobaciones no sustituyen aceptación manual de la sensación de movimiento ni pruebas físicas en Android. Permanecen los pendientes generales del producto descritos anteriormente. Cambios sin commit hasta nueva solicitud explícita.
+
+## Ampliación de fotografías de componentes · 19/10/2026
+
+Añadidas **40 fotografías locales WebP** para suspensiones, cuadros, frenos/discos, transmisión, pedalier, aros/bujes y neumáticos. Total nuevo: **1 065 416 bytes** (aproximadamente 1,07 MB), sin ampliar imágenes pequeñas por encima de su resolución de origen. Registro por archivo, modelo, fuente y alcance en [fotografías](../../src/assets/images/catalog/README.md) y `photos.json`. Cobertura del inventario actual: **46 de 53 modelos** con foto; faltan los cinco auxiliares genéricos ATLAS, las bielas SLX OEM sin modelo exacto y SCOTT Ransom RC 427727 sin foto verificada de esa referencia. No se sustituyen por otros modelos/generaciones.
+
+Tarjetas y detalles comparten `componentImage`: prioridad a la foto de variante, después clave del modelo y referencia por slug. Las nuevas fotos también admiten `catalog:<slug>` como clave explícita. El frontend recibe únicamente URLs locales del registro de archivos; el manifiesto de procedencia no se importa al bundle. La ficha identifica «Foto de referencia». No se modificaron geometrías, publicaciones, medidas, migraciones ni datos remotos para conectar fotografías.
+
+Comprobaciones:
+
+- `pnpm run check`: build y 38 pruebas de 12 archivos correctos. Tres pruebas del resolver verifican variante roja frente a foto negra del modelo, referencias con clave ausente o explícita y ausencia de sustitución para un modelo desconocido.
+- `pnpm exec playwright test tests/browser/component-images.spec.ts tests/browser/catalog.spec.ts`: 18 correctas en escritorio y Pixel 7 emulado. Se recorren las páginas completas del catálogo y se descargan/decodifican las 40 nuevas fotografías; también pasan fichas, comparación y cambio de versión/acabado. Tras ampliar las claves explícitas del registro, `component-images.spec.ts` se repitió: dos correctas.
+- El primer intento de cargar la nueva suite no ejecutó casos por la importación JSON sin atributo en el runner Node; se corrigió usando lectura de archivo en la prueba. No afecta la importación de assets de Vite.
+- Verificados manifiesto sin slugs repetidos, existencia, bytes y cabecera WebP de los 40 archivos. Se inspeccionaron hojas de contacto y capturas de la categoría Frenos: nueve tarjetas con nueve fotos en escritorio/móvil, sin desbordamiento. Capturas temporales `/tmp/atlas-component-images-{desktop,mobile}.png`, no versionadas.
+- `git diff --check` y comprobación de secretos privilegiados del build correctos. Persisten los avisos conocidos de bundles/anotaciones de dependencia.
+
+Las fotos de familia no prueban cada medida o acabado. Las fuentes y los pendientes fotográficos quedan documentados; no se declara cobertura total ni precisión CAD. No se hicieron escrituras en Supabase durante esta ampliación. Cambios sin commit hasta petición explícita.
+
+## Galerías deportivas y ancho adaptable · 19/10/2026
+
+Implementada la revisión visual de Componentes/Bicicletas y el ajuste posterior de ancho general solicitado por el usuario. `CatalogHeading` y `discovery.css` comparten cabecera carbón, título inclinado, acento lima e imágenes locales. Las tarjetas de componente tienen cuerpo blanco, fotografía en fondo de estudio, disciplinas documentadas, atributos resumidos y pie de versiones. Las bicicletas conservan su ilustración identificada; imagen pulsable por ratón/teclado, nombre sin repetir «Montaje ATLAS», selector de versión y acciones existentes. Categorías/selección exponen su estado accesible, con foco visible y movimiento reducido. No se añaden operaciones de negocio ni nuevas dependencias.
+
+`src/app/layout.css` retira el tope central de 1440 px de los contenedores de trabajo. Margen lateral compartido `clamp(20px,3vw,56px)` para cabecera, pestañas, contenido y pie; rejillas de componentes/cuadros por ancho disponible y de montajes por tamaño mínimo legible. Tabla/comparación/administración utilizan todo el ancho exterior, con desplazamiento interno cuando hace falta. La estructura de acceso es flexible con formulario de lectura acotada. La portada conserva su diseño aprobado. Galería en [06b](06b-espacio-de-trabajo.md), criterio compartido de ancho en [06](06-ui-y-ux.md).
+
+Comprobaciones sobre el resultado:
+
+- `pnpm run check`: build y 38 pruebas de 12 archivos correctos. Se mantienen los avisos conocidos de tamaño de bundles y anotaciones de dependencia.
+- Suite `discovery.spec.ts`, `catalog.spec.ts`, `component-images.spec.ts`, `motion.spec.ts` y `public.spec.ts`: **35 correctas y una omitida deliberadamente**. La prueba de monitor ancho se ejecuta en escritorio y se omite en el perfil móvil; las pruebas móviles de navegación/paneles sí se ejecutan. Incluye imagen de bicicleta activada con Enter, versión M conservada al abrir/cerrar, retorno de foco, filtros conservados entre pestañas, categorías móviles, fotos, comparación y movimiento reducido.
+- La prueba de ancho comprueba en 1920/2560 px que el contenedor ocupa el viewport, márgenes no superan 56 px y hay más de tres columnas. Revisión adicional de Componentes, Bicicletas, Cuadros, Comparar y Acceso en **360, 393, 1440, 1920 y 2560 px**, sin desbordamiento. Capturas de trabajo `/tmp/atlas-fluid-<ancho>-{components,bikes}.png`; inspeccionadas las de 2560/1920/393. La captura exploratoria inicial se interrumpió por buscar `.content` en Acceso; se corrigió el recorrido a `.auth-layout` y se completó la matriz de 25 casos.
+- Runner autenticado de escritorio, filtro `administrator manages`: **una correcta**, cubriendo administración de borradores/roles/paneles, confirmaciones, guardado y Mis bicicletas. Cuenta y datos auxiliares limpiados por el runner.
+- Comprobación del build sin credenciales privilegiadas configuradas y `git diff --check` correctos.
+
+La emulación y las capturas no sustituyen revisión física Android ni aceptación visual del usuario sobre esta última ampliación. No hay cambios de migraciones, funciones o inventario comercial; solo el runner autenticado realizó y limpió operaciones de prueba en Cloud. Se conservaron los cambios previamente preparados en el índice de Git; no se crearon commits.
+
+## Versionado solicitado por partes · 19/10/2026
+
+El usuario solicitó explícitamente comitear los cambios acumulados de estas revisiones. Se separan por propósito: transiciones compartidas y pruebas; fotografías/resolver/procedencia y comprobación de cobertura; galerías deportivas/ancho adaptable y recorridos; documentación y contexto de AGENTS. Al reorganizar los fragmentos se conservó una copia temporal del índice anterior y todos los archivos de trabajo. Comprobación previa del resultado completo: build, 38 pruebas unitarias, exclusión de entornos, revisión del diff y ausencia de secretos privilegiados en el cliente. Los resultados de navegador de cada entrega permanecen documentados arriba. Sin push; esta petición no autoriza commits de cambios futuros.

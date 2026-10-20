@@ -315,3 +315,35 @@ Antes de reemplazar un montaje con cambios por otro, ofrecer guardar, descartar 
 El catálogo por categoría sigue [11](11-propuesta-de-inventario.md): tallas M/L donde existan, aro donde aplique, aire/muelle en suspensión, pistones en frenos y terreno/carcasa/compuesto en neumáticos. El amortiguador no recibe un filtro de aro ficticio. Mantenimiento aparece como información de la referencia y manuales, sin seguimiento ni agenda.
 
 Pedalier tiene selección propia; el plato sigue incluido con bielas. Manillar, potencia y sillín muestran opciones genéricas sencillas y medidas útiles, sin catálogos de marcas obligatorios ni fichas infladas. Identificar «Genérico» y no atribuir marcas o precios ficticios; mantener el panel y navegación aprobados.
+
+### Fotografías de modelos · ampliación 19/10/2026
+
+Completar tarjetas y paneles con el mismo resolver de imagen local. Prioridad: foto de variante, foto explícita del modelo y referencia revisada por slug. Las fotografías de familia ilustran el modelo; no certifican acabados/medidas ni sustituyen su representación 3D. Mantener las posiciones y navegación aprobadas y añadir únicamente «Foto de referencia» junto a la foto del detalle. Registro y excepciones en `src/assets/images/catalog/README.md`; ingesta visual dentro de las fases 1/3 de 08 y evidencia en 12.
+
+### Revisión visual de Componentes y Bicicletas · 19/10/2026
+
+Petición: quitar el aspecto plano de ambas galerías. Mantener sus operaciones y rutas, con una dirección más deportiva y editorial: cabecera carbón, título inclinado de gran escala, acento lima, fotografía puntual y tarjetas de producto con fondo de estudio y cuerpo blanco. La portada conserva su composición aprobada.
+
+```text
+ESCRITORIO
+┌──────────────────────────────────────────────────────────────┐
+│ ENDURO / DESCENSO                           imagen ambiental  │
+│ COMPONENTES. o BICICLETAS.                  / piezas reales   │
+│ frase breve de producto               [Comparar, si procede] │
+└──────────────────────────────────────────────────────────────┘
+[Bicicletas de referencia | Cuadros] ← solo en Bicicletas
+[Búsqueda_________________________________] [conteo real]
+[Marca ▾] [Disciplina ▾] [medidas según categoría ▾]
+Categorías       ┌──────────────────┐ ┌──────────────────┐
+                 │ imagen de pieza  │ │ imagen de pieza  │
+                 │ marca / modelo   │ │ marca / modelo   │
+                 │ datos esenciales │ │ datos esenciales │
+                 │ versiones     ↗  │ │ versiones     ↗  │
+                 └──────────────────┘ └──────────────────┘
+MÓVIL: cabecera compacta; búsqueda y categorías accesibles;
+       filtros en rejilla, dos tarjetas de pieza / una bicicleta.
+```
+
+Cabecera y tratamiento de galerías reutilizables; no añadir carruseles, cifras decorativas, promociones, nuevos campos o filtros sin datos. Las bicicletas de ejemplo conservan su ilustración identificada: no atribuir a una foto de fábrica un montaje ATLAS. Tarjeta de bicicleta con medio pulsable, marca, nombre, versión y acciones existentes; sin controles anidados. Mantener filtros/selección al cambiar de pestaña y panel derecho/inferior para detalle. Selección, teclado y hover reciben énfasis coherente con movimiento reducido; sombras discretas, bordes nítidos y legibilidad antes que efectos. Implementar y validar dentro de fases 1/3 de 08, registrando capturas y pruebas en 12.
+
+Ajustes de implementación: evitar repetir «Montaje ATLAS» en el título si el distintivo ya identifica el ejemplo; el nombre completo sigue en los datos. En tarjetas de componente, resumir cada atributo a tres valores y un conteo real de valores adicionales; la ficha conserva todos. Imagen ambiental de Bicicletas reutilizada de la campaña con versión móvil; collage de Componentes con fotos locales de horquilla/disco, decorativo y ajeno a la selección activa. Cabecera compacta para acercar resultados al primer vistazo y controles de categorías/selección con estado accesible.
