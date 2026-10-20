@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ATLAS · Prueba interna de escena</title>
+    <style>
+      body {
+        margin: 0;
+        background: #e8e9e1;
+        font: 14px system-ui;
+        color: #28332a;
+      }
+      #root {
+        height: 100vh;
+      }
+      .proof-label {
+        position: fixed;
+        top: 20px;
+        left: 24px;
+        z-index: 2;
+        max-width: 420px;
+        line-height: 1.6;
+        pointer-events: none;
+      }
+      .proof-label button, .proof-label a, .proof-label select {
+        pointer-events: auto;
+      }
+      .proof-label strong {
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./scene-preview.tsx"></script>
+  </body>
+</html>
