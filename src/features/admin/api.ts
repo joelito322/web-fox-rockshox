@@ -33,8 +33,11 @@ export const accountSchema = z.object({
   last_sign_in_at: z.string().nullable(),
 });
 export type Account = z.infer<typeof accountSchema>;
-export async function matrix() {
-  const { data, error } = await requireSupabase().rpc("get_roles_matrix");
+export const adminStaleTime = 30_000;
+
+export async function matrix({ signal }: { signal: AbortSignal }) {
+  const { data, error } = await requireSupabase()
+    .rpc("get_roles_matrix").abortSignal(signal);
   if (error) throw error;
   return matrixSchema.parse(data);
 }
@@ -52,8 +55,9 @@ export async function deleteRole(role: Role) {
   });
   if (error) throw error;
 }
-export async function grantableRoles() {
-  const { data, error } = await requireSupabase().rpc("list_grantable_roles");
+export async function grantableRoles({ signal }: { signal: AbortSignal }) {
+  const { data, error } = await requireSupabase()
+    .rpc("list_grantable_roles").abortSignal(signal);
   if (error) throw error;
   return z.array(z.object({ id: z.uuid(), name: z.string() })).parse(data);
 }
@@ -74,6 +78,14 @@ export async function accountOperation(body: Record<string, unknown>) {
     throw error;
   }
   return data as unknown;
+}
+
+export async function listAccounts(search: string, page: number, signal: AbortSignal) {
+  const { data, error } = await requireSupabase().rpc("admin_list_users", {
+    p_search: search, p_page: page,
+  }).abortSignal(signal);
+  if (error) throw error;
+  return accountPageSchema.parse(data);
 }
 
 export const accountPageSchema = z.object({

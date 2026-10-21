@@ -33,6 +33,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const serial = useRef(0);
   const identity = useRef<string | null>(null);
   const granted = useRef<string[]>([]);
+  const refreshFlight = useRef<Promise<void> | null>(null);
   const queryClient = useQueryClient();
   async function update(user: User | null) {
     const request = ++serial.current;
@@ -77,14 +78,25 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
   async function refresh() {
     if (!supabase) return;
+    // Focus and simultaneous denied requests can arrive together. Share only
+    // the in-flight verification; every later focus still checks revocation.
+    if (refreshFlight.current) return refreshFlight.current;
     const generation = serial.current;
-    const { data, error } = await supabase.auth.getUser();
-    if (generation !== serial.current) return;
-    if (error) {
-      await update(null);
-      return;
+    const verification = (async () => {
+      const { data, error } = await supabase.auth.getUser();
+      if (generation !== serial.current) return;
+      if (error) {
+        await update(null);
+        return;
+      }
+      await update(data.user);
+    })();
+    refreshFlight.current = verification;
+    try {
+      await verification;
+    } finally {
+      if (refreshFlight.current === verification) refreshFlight.current = null;
     }
-    await update(data.user);
   }
   useEffect(() => {
     if (!supabase) {

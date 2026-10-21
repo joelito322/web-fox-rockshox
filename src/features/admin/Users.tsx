@@ -4,7 +4,8 @@ import { Plus, Search } from "lucide-react";
 import { useAuth } from "../auth/provider";
 import {
   accountOperation,
-  accountPageSchema,
+  listAccounts,
+  adminStaleTime,
   grantableRoles,
   type Account,
 } from "./api";
@@ -12,6 +13,7 @@ import { useUnsavedChanges } from "../../components/ui/UnsavedChanges";
 import { Drawer } from "../../components/ui/Drawer";
 import { Loading, Notice, Empty } from "../../components/ui/Feedback";
 import { userError } from "../../lib/supabase";
+import { useSearchFilters } from "./useSearchFilters";
 export default function Users() {
   const auth = useAuth();
   const cache = useQueryClient();
@@ -23,16 +25,16 @@ export default function Users() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
+  const filters = useSearchFilters(search, page);
   const query = useQuery({
-    queryKey: ["admin-users", auth.user!.id, search, page],
-    queryFn: async () =>
-      accountPageSchema.parse(
-        await accountOperation({ action: "list", search, page }),
-      ),
+    queryKey: ["admin-users", auth.user!.id, filters.search, filters.page],
+    queryFn: ({ signal }) => listAccounts(filters.search, filters.page, signal),
+    staleTime: adminStaleTime,
   });
   const roles = useQuery({
     queryKey: ["grantable-roles", auth.user!.id],
     queryFn: grantableRoles,
+    staleTime: adminStaleTime,
     enabled:
       auth.permissions.includes("users.assign_role") ||
       auth.permissions.includes("users.invite"),

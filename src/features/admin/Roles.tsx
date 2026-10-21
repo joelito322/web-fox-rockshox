@@ -4,6 +4,7 @@ import { Plus, Save, LockKeyhole } from "lucide-react";
 import { useAuth } from "../auth/provider";
 import {
   matrix,
+  adminStaleTime,
   saveRoles,
   deleteRole,
   permissionRequirement,
@@ -23,6 +24,7 @@ export default function Roles({
   const query = useQuery({
     queryKey: ["roles-matrix", auth.user!.id],
     queryFn: matrix,
+    staleTime: adminStaleTime,
   });
   const [panel, setPanel] = useState<Role | null | undefined>();
   const [name, setName] = useState("");
@@ -79,7 +81,7 @@ export default function Roles({
     setBusy(true);
     setError("");
     try {
-      await saveRoles([
+      const saved = await saveRoles([
         {
           ...(panel ? { id: panel.id, revision: panel.revision } : {}),
           name,
@@ -88,9 +90,9 @@ export default function Roles({
           active,
         },
       ]);
-      await cache.invalidateQueries({
-        queryKey: ["roles-matrix", auth.user!.id],
-      });
+      cache.setQueryData(["roles-matrix", auth.user!.id], saved);
+      void cache.invalidateQueries({ queryKey: ["grantable-roles", auth.user!.id] });
+      void cache.invalidateQueries({ queryKey: ["admin-users", auth.user!.id] });
       setMessage("Rol guardado.");
       close();
       return true;
@@ -119,7 +121,7 @@ export default function Roles({
     setBusy(true);
     setError("");
     try {
-      await saveRoles(
+      const saved = await saveRoles(
         changes.map((r) => ({
           id: r.id,
           revision: r.revision,
@@ -129,9 +131,9 @@ export default function Roles({
           permissions: draft[r.id],
         })),
       );
-      await cache.invalidateQueries({
-        queryKey: ["roles-matrix", auth.user!.id],
-      });
+      cache.setQueryData(["roles-matrix", auth.user!.id], saved);
+      void cache.invalidateQueries({ queryKey: ["grantable-roles", auth.user!.id] });
+      void cache.invalidateQueries({ queryKey: ["admin-users", auth.user!.id] });
       setDraft({});
       setMessage("Permisos guardados.");
       return true;
@@ -152,6 +154,8 @@ export default function Roles({
     setBusy(true);
     try {
       await deleteRole(role);
+      void cache.invalidateQueries({ queryKey: ["grantable-roles", auth.user!.id] });
+      void cache.invalidateQueries({ queryKey: ["admin-users", auth.user!.id] });
       await cache.invalidateQueries({
         queryKey: ["roles-matrix", auth.user!.id],
       });

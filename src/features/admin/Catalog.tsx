@@ -20,6 +20,8 @@ import { Drawer } from "../../components/ui/Drawer";
 import { useUnsavedChanges } from "../../components/ui/UnsavedChanges";
 import { Loading, Notice, Empty } from "../../components/ui/Feedback";
 import { Fields, sourceFields } from "./Fields";
+import { adminStaleTime } from "./api";
+import { useSearchFilters } from "./useSearchFilters";
 const editableVariantSchema = variantSchema.omit({ visual_assets: true });
 const brandSchema = z.object({
   id: z.uuid(),
@@ -89,14 +91,16 @@ export default function Catalog() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
   const [message, setMessage] = useState("");
+  const filters = useSearchFilters(search, page, category);
   const query = useQuery({
-    queryKey: ["admin-catalog", auth.user!.id, category, search, page],
-    queryFn: async () => {
+    queryKey: ["admin-catalog", auth.user!.id, category, filters.search, filters.page],
+    staleTime: adminStaleTime,
+    queryFn: async ({ signal }) => {
       const { data, error } = await requireSupabase().rpc("admin_catalog", {
         p_category: category || null,
-        p_search: search,
-        p_page: page,
-      });
+        p_search: filters.search,
+        p_page: filters.page,
+      }).abortSignal(signal);
       if (error) throw error;
       return resultSchema.parse(data);
     },
@@ -193,11 +197,9 @@ export default function Catalog() {
       );
       if (failure) throw failure;
       setBaseline(JSON.stringify({ ...value, published: payload.published }));
-      await cache.invalidateQueries({
-        queryKey: ["admin-catalog", auth.user!.id],
-      });
-      await Promise.all(
-        [
+      await Promise.all([
+        cache.invalidateQueries({ queryKey: ["admin-catalog", auth.user!.id] }),
+        ...[
           "catalog",
           "component",
           "catalog-facets",
@@ -206,7 +208,7 @@ export default function Catalog() {
           "preset-detail",
           "preset-options",
         ].map((key) => cache.invalidateQueries({ queryKey: [key] })),
-      );
+      ]);
       if (panel === "component" && model) {
         setModel({ ...model, published: !!payload.published });
         if (data !== model.id) throw new Error("unexpected_record");

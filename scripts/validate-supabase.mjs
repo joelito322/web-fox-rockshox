@@ -53,6 +53,13 @@ try {
     clients.push(client);
   }
   const [a, b] = clients;
+  const directDenied = await a.rpc("admin_list_users", { p_search: "", p_page: 0 });
+  check(directDenied.error?.code === "42501", "rpc_user_cannot_list_accounts");
+  const anon = createClient(env.SUPABASE_URL, env.SUPABASE_PUBLISHABLE_KEY, {
+    auth: { persistSession: false, autoRefreshToken: false }, global: { fetch: timeoutFetch },
+  });
+  const anonymousList = await anon.rpc("admin_list_users", { p_search: "", p_page: 0 });
+  check(anonymousList.error?.code === "42501", "rpc_anonymous_cannot_list_accounts");
   const edgeDenied = await a.functions.invoke("admin-users", {
     body: { action: "list" },
   });
@@ -175,8 +182,27 @@ try {
   }
   // Keep the original signed-in client: no new JWT or sign-in after changing IAM.
   sessionRole("admin");
+  const directStart = performance.now();
+  const directGranted = await a.rpc("admin_list_users", { p_search: "", p_page: 0 });
+  const directMs = Math.round(performance.now() - directStart);
+  check(!directGranted.error && Array.isArray(directGranted.data.users), "rpc_live_admin_list_access");
+  const edgeStart = performance.now();
   const granted = await a.functions.invoke("admin-users", { body: { action: "list" } });
   check(!granted.error && Array.isArray(granted.data.users), "edge_live_admin_access");
+  const edgeMs = Math.round(performance.now() - edgeStart);
+  check(JSON.stringify(directGranted.data) === JSON.stringify(granted.data), "rpc_and_edge_account_list_equivalent");
+  const directSamples = [directMs], edgeSamples = [edgeMs];
+  for (let iteration = 1; iteration < 3; iteration++) {
+    const start = performance.now();
+    const rpcSample = await a.rpc("admin_list_users", { p_search: "", p_page: 0 });
+    directSamples.push(Math.round(performance.now() - start));
+    const edgeSampleStart = performance.now();
+    const edgeSample = await a.functions.invoke("admin-users", { body: { action: "list" } });
+    edgeSamples.push(Math.round(performance.now() - edgeSampleStart));
+    check(!rpcSample.error && !edgeSample.error && JSON.stringify(rpcSample.data) === JSON.stringify(edgeSample.data), "account_list_sample_equivalent_" + iteration);
+  }
+  const median = (values) => [...values].sort((x, y) => x - y)[1];
+  process.stdout.write(`Account list n=3: RPC ${JSON.stringify(directSamples)} ms median ${median(directSamples)}; Edge ${JSON.stringify(edgeSamples)} ms median ${median(edgeSamples)}\n`);
   const accessB = await b.rpc("get_my_access");
   const assignment = granted.data.users.find((u) => u.id === created[1]);
   const assigned = await a.functions.invoke("admin-users", { body: { action: "assign", userId: created[1], roleId: accessB.data.role.id, revision: assignment.revision } });
@@ -186,6 +212,8 @@ try {
   sessionRole("user");
   const revoked = await a.functions.invoke("admin-users", { body: { action: "list" } });
   check(revoked.error?.context?.status === 403, "edge_permission_revoked_with_existing_session");
+  const revokedList = await a.rpc("admin_list_users", { p_search: "", p_page: 0 });
+  check(revokedList.error?.code === "42501", "rpc_list_revoked_with_existing_session");
   const revokedRpc = await a.rpc("get_roles_matrix");
   check(revokedRpc.error?.code === "42501", "rpc_permission_revoked_with_existing_session");
   const banned = await admin.auth.admin.updateUserById(created[1], { ban_duration: "1h" });

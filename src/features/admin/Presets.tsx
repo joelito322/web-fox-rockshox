@@ -1,9 +1,10 @@
+import { getPresetPreview, readPresetPreviewSource } from "../bike-preview/api";
 import { useState, type FormEvent } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { z } from "zod";
 import { Plus, Search, Trash2 } from "lucide-react";
 import { presetSchema } from "../catalog/model/presets";
-import { usePresetOptions } from "./preset-api";
+import { usePresetBrands, usePresetOptions } from "./preset-api";
 import { useAuth } from "../auth/provider";
 import {
   slots,
@@ -17,6 +18,7 @@ import { Drawer } from "../../components/ui/Drawer";
 import { useUnsavedChanges } from "../../components/ui/UnsavedChanges";
 import { Loading, Notice, Empty } from "../../components/ui/Feedback";
 import { Fields, sourceFields } from "./Fields";
+import { adminStaleTime } from "./api";
 type Preset = z.infer<typeof presetSchema>;
 function slugify(value: string) {
   return value
@@ -33,13 +35,14 @@ export default function Presets() {
   const [error, setError] = useState("");
   const query = useQuery({
     queryKey: ["admin-presets", auth.user!.id],
-    queryFn: async () => {
-      const { data, error } = await requireSupabase().rpc("admin_presets");
+    staleTime: adminStaleTime,
+    queryFn: async ({ signal }) => {
+      const { data, error } = await requireSupabase().rpc("admin_presets").abortSignal(signal);
       if (error) throw error;
       return z.array(presetSchema).parse(data);
     },
   });
-  const options = usePresetOptions();
+  const options = usePresetBrands();
   const brands = { data: options.data?.brands };
   function create() {
     if (!brands.data?.length) {
@@ -203,20 +206,25 @@ function PresetEditor({
       }
       presetSchema.parse(value);
       const { items, ...header } = value;
-      const { error } = await requireSupabase().rpc("save_preset", {
+      const { data: savedId, error } = await requireSupabase().rpc("save_preset", {
         p_data: { ...header, published: value.published || publish },
         p_items: items,
       });
       if (error) throw error;
+      if(value.published||publish) void readPresetPreviewSource(savedId)
+        .then(configuration=>getPresetPreview(savedId,configuration,true))
+        .then(()=>cache.invalidateQueries({queryKey:["preset-preview",savedId]}))
+        .catch(()=>{});
       const saved = { ...value, published: value.published || publish };
       setValue(saved);
       setBaseline(JSON.stringify(saved));
       setMessage(publish ? "Publicación confirmada." : "Cambios guardados.");
-      await cache.invalidateQueries({
-        queryKey: ["admin-presets", auth.user!.id],
-      });
-      await cache.invalidateQueries({ queryKey: ["presets"] });
-      await cache.invalidateQueries({ queryKey: ["preset-detail"] });
+      await Promise.all([
+        cache.invalidateQueries({ queryKey: ["admin-presets", auth.user!.id] }),
+        ...["presets", "preset-detail", "preset-preview-sources", "preset-preview-source",
+          "preset-preview-source-batch", "preset-preview"].map((key) =>
+          cache.invalidateQueries({ queryKey: [key] })),
+      ]);
       return true;
     } catch (e) {
       setError(
