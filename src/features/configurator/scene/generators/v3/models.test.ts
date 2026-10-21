@@ -8,7 +8,7 @@ import tyres from "../../../../../../supabase/catalog/tyres-reviewed.json";
 import successors from "../../../../../../supabase/catalog/visual-v3-successors.json";
 import original from "../../../../../../supabase/catalog/initial-reviewed.json";
 import { parseCatalogImport } from "../../../../catalog/model/ingestion";
-import { modelProfiles } from "../../../../catalog/model/visual-profiles";
+import { legacyModelProfiles as modelProfiles } from "../../../../catalog/model/visual-profiles";
 import type { Configuration, Slot, VariantMap } from "../../../model";
 import type { SelectedVariant } from "../../../../catalog/model";
 import { slotCategories } from "../../../model";

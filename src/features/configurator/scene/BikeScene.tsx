@@ -11,6 +11,7 @@ import BikeV4 from "./generators/BikeV4";
 import BikeV5 from "./generators/BikeV5";
 import BikeV6 from "./generators/BikeV6";
 import BikeV7 from "./generators/BikeV7";
+import BikeV8 from "./generators/BikeV8";
 import { importedMount } from "../model/assemblyV5";
 import Selection from "./Selection";
 import type { Configuration, Slot, VariantMap } from "../model";
@@ -33,6 +34,7 @@ const generators: Record<ProceduralGeneratorKey, typeof BikeV1> = {
   "atlas-bike-v5": BikeV5,
   "atlas-bike-v6": BikeV6,
   "atlas-bike-v7": BikeV7,
+  "atlas-bike-v8": BikeV8,
 };
 export async function prepareVisual(asset: VisualAsset) {
   if (asset.kind === "procedural") {
@@ -45,6 +47,7 @@ export async function prepareVisual(asset: VisualAsset) {
         "atlas-bike-v5",
         "atlas-bike-v6",
         "atlas-bike-v7",
+        "atlas-bike-v8",
       ].includes(asset.generator_key ?? "") &&
       !asset.manifest.parameters.profile_key
     )
@@ -306,6 +309,7 @@ export default function BikeScene({
                 "atlas-bike-v5",
                 "atlas-bike-v6",
                 "atlas-bike-v7",
+        "atlas-bike-v8",
               ].includes(asset?.generator_key ?? "")
                 ? BikeV2
                 : generators[

@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { compareAxles } from "./axles";
 import type { Category, SelectedVariant } from "../../catalog/model";
 
 export const slotCategories = {
@@ -244,13 +245,18 @@ export function warnings(
       position === "front"
         ? fork?.specs.axle_standard
         : frame?.specs.rear_axle_standard;
-    if (hub)
-      compare(
+    if (hub) {
+      const match = compareAxles(axle, hub.specs.axle_standard);
+      if (match === "different") add(
         `${position}_axle`,
-        standard(axle),
-        standard(hub.specs.axle_standard),
         `El eje del buje ${label} difiere de la interfaz indicada en ${position === "front" ? "la horquilla" : "el cuadro"}.`,
       );
+      else if (match === "unknown" && typeof axle === "string" && typeof hub.specs.axle_standard === "string") add(
+        `${position}_axle_unknown`,
+        `Confirma si el eje ${label} utiliza Boost o DH no Boost. La medida por sí sola no confirma el montaje.`,
+        "unknown",
+      );
+    }
     const limits: [SelectedVariant | undefined, string][] = [
       [brake, "el freno"],
     ];

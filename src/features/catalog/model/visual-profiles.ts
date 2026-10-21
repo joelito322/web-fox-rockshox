@@ -1,5 +1,5 @@
 // Immutable v3 profile identities. Changing a profile requires a new generator version.
-export const modelProfiles = {
+export const legacyModelProfiles = {
   "commencal-meta-sx-v5": "frame",
   "ohlins-rxf38-m3": "fork",
   "fox-38-factory-my27": "fork",
@@ -54,6 +54,28 @@ export const modelProfiles = {
   "michelin-wild-enduro-ms-racing-line": "tire",
   "schwalbe-gravity-magic-mary": "tire",
 } as const;
+export const commercialModelProfiles = {
+  "renthal-fatbar-35": "handlebar",
+  "deity-racepoint-35": "handlebar",
+  "renthal-apex-35": "stem",
+  "renthal-integra-35": "stem",
+  "oneup-v3-dropper": "seatpost",
+  "wtb-volt": "saddle",
+} as const;
+export const gravityModelProfiles = {
+  "santa-cruz-v10-8-my27": "frame",
+  "yt-tues-mk4-carbon": "frame",
+  "yt-capra-mk3-carbon-mx": "frame",
+  "gt-fury-carbon-high-pivot": "frame",
+  "gt-force-carbon-high-pivot": "frame",
+  "commencal-frs-v3": "frame",
+  "commencal-furious-v3-2021": "frame",
+  "rockshox-boxxer-ultimate-d2": "fork",
+  "rockshox-boxxer-select-d2": "fork",
+  "marzocchi-bomber-58": "fork",
+  "ohlins-dh38-m2": "fork"
+} as const;
+export const modelProfiles = { ...legacyModelProfiles, ...commercialModelProfiles, ...gravityModelProfiles } as const;
 export type ModelProfile = keyof typeof modelProfiles;
 export const modelProfileKeys = Object.keys(modelProfiles) as [
   ModelProfile,

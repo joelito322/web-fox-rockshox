@@ -1,0 +1,5309 @@
+{
+  "brands": [
+    {
+      "id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "name": "Santa Cruz",
+      "slug": "santa-cruz",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "5f31a398-ec2c-5566-8807-c8f9b5a2e384",
+      "name": "YT Industries",
+      "slug": "yt-industries",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "0558b2fa-df7b-5566-8f16-4b4a4ec69b4f",
+      "name": "GT",
+      "slug": "gt",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "name": "COMMENCAL",
+      "slug": "commencal",
+      "region": "Andorra",
+      "published": true
+    },
+    {
+      "id": "fcdf15cd-7bca-5ffe-aee9-8a0406b69398",
+      "name": "RockShox",
+      "slug": "rockshox",
+      "region": "Estados Unidos",
+      "published": true
+    },
+    {
+      "id": "117fcab5-e709-56e3-9262-b33dc0292d7b",
+      "name": "Marzocchi",
+      "slug": "marzocchi",
+      "region": "Estados Unidos",
+      "published": true
+    },
+    {
+      "id": "ac7080e0-f65f-5469-8ac6-7685a3621b78",
+      "name": "Öhlins",
+      "slug": "ohlins",
+      "region": "Suecia",
+      "published": true
+    }
+  ],
+  "assets": [
+    {
+      "id": "e63e11cd-c910-5a3f-a8ec-ae3db6a79ac4",
+      "kind": "glb",
+      "storage_path": "catalog/v9/santa-cruz-v10-8-my27/5f82f812a3b321de75734478.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "santa-cruz-v10-8-my27",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.45,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.825,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.633,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5049389549713501,
+              0.5349892823392796,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.018836766649835746,
+              0.42784052807452505,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.042836766649835746,
+              0.5678405280745251,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.12250977232884953,
+              0.25550843909385407,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.04122214837567541,
+              0.06658554968548422,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.010383120677623772,
+              0.09858629434424694,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "santa-cruz-v10-8-my27__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "68080100-6217-58a9-8e40-3696fb9dac88",
+      "kind": "glb",
+      "storage_path": "catalog/v9/santa-cruz-v10-8-my27/1b297a2a5176e3a0b1837ae6.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "santa-cruz-v10-8-my27",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.455,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.847,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.475,
+              0.637,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5272089074700479,
+              0.5345342497183377,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.008945212551698278,
+              0.4305441017116468,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.03294521255169828,
+              0.5705441017116468,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.12990326954607606,
+              0.25712302638670625,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.03674481016865433,
+              0.07076740525497632,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.01282600432308538,
+              0.09920927250755972,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "santa-cruz-v10-8-my27__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "5a179cc0-c8c5-5bde-916e-e4ebfbe19b1d",
+      "kind": "glb",
+      "storage_path": "catalog/v9/yt-tues-mk4-carbon/c8efcaf0661b22c4292d7e35.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-tues-mk4-carbon",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.448,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8069999999999999,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.64,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.504081759442079,
+              0.5415572202237773,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.01760418202755426,
+              0.4017079374021391,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.04160418202755426,
+              0.5417079374021392,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1657921702966688,
+              0.3017554905680698,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.025099544374297067,
+              0.09510219393076089,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.12515799000886446,
+              0.15574639416106772,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-tues-mk4-carbon__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "df995bc9-bd1d-5a48-a6b4-6333c016bcab",
+      "kind": "glb",
+      "storage_path": "catalog/v9/yt-tues-mk4-carbon/d0d976f4770f6813462d58ea.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-tues-mk4-carbon",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.44730191146472875,
+              0.025,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8326980885352713,
+              0.025000000000000022,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.648,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5290817594420789,
+              0.5495572202237773,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.0014400196298902102,
+              0.4236485622209151,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.02544001962989021,
+              0.5636485622209151,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.17765543795803818,
+              0.308247139768199,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.032944232990696404,
+              0.10438770987372492,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.13121934504817945,
+              0.15688786482971162,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-tues-mk4-carbon__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "6aeaae17-16ce-5c61-ae4f-8b08566703a2",
+      "kind": "glb",
+      "storage_path": "catalog/v9/yt-capra-mk3-carbon-mx/9ebcef9d40a18ebf53133213.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-capra-mk3-carbon-mx",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.79,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.444,
+              0.636,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.4922208261467985,
+              0.5371326549070916,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.03453190786978999,
+              0.4124590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.05853190786978999,
+              0.5524590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.21430439282480007,
+              0.347321523369364,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.009955352033938852,
+              0.24176836364472604,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.04511267794130114,
+              0.17595751268061793,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-capra-mk3-carbon-mx__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "f391b342-7127-571c-9258-adaf35dbd4dd",
+      "kind": "glb",
+      "storage_path": "catalog/v9/yt-capra-mk3-carbon-mx/42200a59ff1409819d21409b.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-capra-mk3-carbon-mx",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.81,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.464,
+              0.636,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5122208261467985,
+              0.5371326549070916,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.02156149820887665,
+              0.4124590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.04556149820887665,
+              0.5524590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.22522645330811342,
+              0.347321523369364,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.02019156007450909,
+              0.24310687681387988,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.03957942282555843,
+              0.17595751268061793,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-capra-mk3-carbon-mx__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "adf2a867-a8fe-507e-8098-4f5e5ce9e5c6",
+      "kind": "glb",
+      "storage_path": "catalog/v9/gt-fury-carbon-high-pivot/899ddb03318aaa8f11d4adea.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-fury-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.825,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.45,
+              0.638,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.499081759442079,
+              0.5395572202237773,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.0497195935331915,
+              0.3885342260981628,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07371959353319149,
+              0.5285342260981628,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.10535677908272816,
+              0.2865772501055589,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.02619619758658727,
+              0.07596243026328656,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.036209654987483006,
+              0.10100071840086769,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.036209654987483006,
+              0.10100071840086769,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-fury-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "f5a9844e-ad1c-5ee2-9daa-64a011fc06fd",
+      "kind": "glb",
+      "storage_path": "catalog/v9/gt-fury-carbon-high-pivot/bdaf625d7262148d1e560ca7.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-fury-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8599999999999999,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.647,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5335437375731771,
+              0.539607876607757,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.031449959077165024,
+              0.3940151164349707,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.055449959077165024,
+              0.5340151164349707,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.11883219836668861,
+              0.290619875890747,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.032235760244359035,
+              0.08295173460632771,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.03146040490593752,
+              0.10242549342533135,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.03146040490593752,
+              0.10242549342533135,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-fury-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "b9cd2031-9f1e-531b-8992-d699ca1f5b85",
+      "kind": "glb",
+      "storage_path": "catalog/v9/gt-force-carbon-high-pivot/e9041372741d5351d16f83f9.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-force-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433964284244683,
+              0.03,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8060357157553171,
+              0.030000000000000027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.636,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5085437375731771,
+              0.528607876607757,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.07908366764814273,
+              0.4229063347175827,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.10308366764814272,
+              0.5629063347175827,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.09365934433109126,
+              0.2859693244930906,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.05639873329802628,
+              0.059007550474991566,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.030518016764800898,
+              0.10057325386591397,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.030518016764800898,
+              0.10057325386591397,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-force-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "c93473d7-b5f1-5b3c-ae48-097a5f17544e",
+      "kind": "glb",
+      "storage_path": "catalog/v9/gt-force-carbon-high-pivot/67f73e4387f38efdb28edf30.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-force-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433964284244683,
+              0.03,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8360357157553171,
+              0.030000000000000027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.645,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5380057157042751,
+              0.5286585329917367,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.06344816520624569,
+              0.42853511559666563,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.08744816520624568,
+              0.5685351155966656,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.10461305489775351,
+              0.289912660297089,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.05965083961043454,
+              0.06435025386273482,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.026829990690823105,
+              0.10190094325254598,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.026829990690823105,
+              0.10190094325254598,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-force-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "8dc5dd4a-6c13-5aaf-ac07-407573888865",
+      "kind": "glb",
+      "storage_path": "catalog/v9/commencal-frs-v3/c4fad8a27e583439c428d0d7.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-frs-v3",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.813,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.465,
+              0.613,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5176045376146893,
+              0.5051447144440999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.04855211672465759,
+              0.41462500448726214,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07255211672465758,
+              0.5546250044872622,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.24002175823562183,
+              0.3034611988103105,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.0199542268473204,
+              0.18484298086441917,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.13413411795051117,
+              0.1588571322206696,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-frs-v3__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "6b086f2d-a37c-52ef-b28d-5e6122558925",
+      "kind": "glb",
+      "storage_path": "catalog/v9/commencal-frs-v3/284d7533cdba01ddbe72a773.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-frs-v3",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8379999999999999,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.49,
+              0.613,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5447963933486347,
+              0.5006507442126041,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.031642450962534374,
+              0.41462500448726214,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.055642450962534375,
+              0.5546250044872622,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.25239782670260025,
+              0.3034611988103105,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.031268480928079156,
+              0.18683439041133093,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.14061279381595446,
+              0.1588571322206696,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-frs-v3__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "e42d6915-e902-5970-afcf-dfd18b33a526",
+      "kind": "glb",
+      "storage_path": "catalog/v9/commencal-furious-v3-2021/83a53ce0362320f47fb12f0b.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-furious-v3-2021",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8199999999999998,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.613,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5076045376146893,
+              0.5051447144440999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.04546724756535103,
+              0.4201202255253716,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.06946724756535103,
+              0.5601202255253717,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.24659997949769347,
+              0.31281789031266016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.0272114533260768,
+              0.19294848393953312,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.13928854946181446,
+              0.16317173962070733,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-furious-v3-2021__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "b5ca6c6e-be3d-5129-b65d-c0724e06ed8b",
+      "kind": "glb",
+      "storage_path": "catalog/v9/commencal-furious-v3-2021/f830d493473697a53b4c2e6c.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-furious-v3-2021",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.845,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.621,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5326045376146893,
+              0.5131447144440999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.028333470015376727,
+              0.4256030343413634,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.05233347001537673,
+              0.5656030343413634,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.2593576422347514,
+              0.31690034238851866,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.039514254044421465,
+              0.19786721813734265,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.14594318810866222,
+              0.16530122398769861,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-furious-v3-2021__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "44040607-036c-55f3-bf86-a2dbc559b992",
+      "kind": "glb",
+      "storage_path": "catalog/v9/rockshox-boxxer-ultimate-d2/326f08be413ad07eaa1ac9bd.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "rockshox-boxxer-ultimate-d2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.048,
+              -0.586,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "rockshox-boxxer-ultimate-d2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "e7887d82-2192-5791-a370-a607400cd983",
+      "kind": "glb",
+      "storage_path": "catalog/v9/rockshox-boxxer-ultimate-d2/3d1c0c3b7d5d7aa1ccd59294.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "rockshox-boxxer-ultimate-d2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.048,
+              -0.586,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "rockshox-boxxer-ultimate-d2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "dcbc729c-1624-51f7-8d7f-9e54e0c647bb",
+      "kind": "glb",
+      "storage_path": "catalog/v9/rockshox-boxxer-ultimate-d2/2328da52784d282c57d1625d.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "rockshox-boxxer-ultimate-d2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.048,
+              -0.605,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "rockshox-boxxer-ultimate-d2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "6cdc0709-33c8-504e-9ed3-6197278fdfaf",
+      "kind": "glb",
+      "storage_path": "catalog/v9/rockshox-boxxer-ultimate-d2/4d83ec23c1bbf59d96dccbe2.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "rockshox-boxxer-ultimate-d2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.048,
+              -0.605,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "rockshox-boxxer-ultimate-d2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "2393f8ea-eb16-5a3e-9a8e-f29ee0496e16",
+      "kind": "glb",
+      "storage_path": "catalog/v9/rockshox-boxxer-select-d2/85bd287c46738032cb4e07da.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "rockshox-boxxer-select-d2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.048,
+              -0.586,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "rockshox-boxxer-select-d2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "82ba27ef-f213-52a7-ada7-b3eceacccb5f",
+      "kind": "glb",
+      "storage_path": "catalog/v9/rockshox-boxxer-select-d2/741fed8a35c82ec12de5838f.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "rockshox-boxxer-select-d2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.048,
+              -0.605,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "rockshox-boxxer-select-d2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "a72751e7-a313-5363-8dd4-313d198a2d77",
+      "kind": "glb",
+      "storage_path": "catalog/v9/marzocchi-bomber-58/519e2f6a64761597da2ab707.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "marzocchi-bomber-58",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.051,
+              -0.581,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "marzocchi-bomber-58__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "4e6dffba-f6ce-5f33-a32a-fd23f12653a1",
+      "kind": "glb",
+      "storage_path": "catalog/v9/marzocchi-bomber-58/0a3a26529bfe055b6cc35ccb.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "marzocchi-bomber-58",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.051,
+              -0.581,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "marzocchi-bomber-58__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "e40323fe-1efb-5398-b8c6-cf6f02dd97ee",
+      "kind": "glb",
+      "storage_path": "catalog/v9/ohlins-dh38-m2/32397429220fa22704ae19d9.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "ohlins-dh38-m2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.05,
+              -0.59,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "ohlins-dh38-m2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "72414ab2-a9ea-537a-814b-c461a4ea75b8",
+      "kind": "glb",
+      "storage_path": "catalog/v9/ohlins-dh38-m2/32397429220fa22704ae19d9.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "ohlins-dh38-m2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.05,
+              -0.59,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "ohlins-dh38-m2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "077d74ce-6eff-5cf8-b689-98f880cae9d7",
+      "kind": "glb",
+      "storage_path": "catalog/v9/ohlins-dh38-m2/2843bdc4e3ad53e426b72765.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "ohlins-dh38-m2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.05,
+              -0.608,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "ohlins-dh38-m2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    },
+    {
+      "id": "a67634d6-07e7-50fa-856e-bb4a55972485",
+      "kind": "glb",
+      "storage_path": "catalog/v9/ohlins-dh38-m2/2843bdc4e3ad53e426b72765.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "lower_crown",
+        "parameters": {
+          "profile_key": "ohlins-dh38-m2",
+          "mount_space": "fork"
+        },
+        "anchors": {
+          "lower_crown": {
+            "position": [
+              0,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "upper_crown": {
+            "position": [
+              0,
+              0.145,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "axle": {
+            "position": [
+              0.05,
+              -0.608,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [
+          "ohlins-dh38-m2__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Aproximación exterior específica v9; observaciones e inferencias en models/catalog-v9/references.md. Sin certificación CAD ni porcentaje de fidelidad."
+    }
+  ],
+  "components": [
+    {
+      "id": "c5a7f352-d715-5ec2-9769-e19cf73b7dcc",
+      "name": "V10 8 CC · MY27",
+      "slug": "santa-cruz-v10-8-my27",
+      "category": "frame",
+      "description": "Cuadro de descenso con 208 mm de recorrido VPP y montaje de ruedas MX.",
+      "technical_notes": "Referencia MY27. Geometría en posición alta, dirección y vainas en ajuste central. No confundir con el V10 de generaciones anteriores.",
+      "image_key": "catalog:santa-cruz-v10-8-my27",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "sources": [
+        {
+          "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bdbbeacf-6e41-5561-bed8-301ef62ddf81",
+      "name": "TUES MK4 Carbon",
+      "slug": "yt-tues-mk4-carbon",
+      "category": "frame",
+      "description": "Cuadro de descenso de carbono, 200 mm de recorrido y suspensión V4L.",
+      "technical_notes": "Talla M en MX y L en 29 conforme a la distribución de la ficha actual. Cotas no confirmadas se omiten.",
+      "image_key": "catalog:yt-tues-mk4-carbon",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "5f31a398-ec2c-5566-8807-c8f9b5a2e384",
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        },
+        {
+          "url": "https://www.yt-industries.com/media/3d/79/02/1726468232/RTFM-TUES-MK4-MY2024.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Manual MK4: arquitectura, montaje y piezas específicas; no usar geometría MK3.",
+          "fields": [
+            "generation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6f0029e-434f-51a2-9d1e-601c735608da",
+      "name": "CAPRA MK3 Carbon MX",
+      "slug": "yt-capra-mk3-carbon-mx",
+      "category": "frame",
+      "description": "Cuadro de enduro de carbono con 170 mm de recorrido trasero y ruedas MX.",
+      "technical_notes": "Geometría MX en posición baja del documento del fabricante; no intercambiar cotas con CAPRA 29.",
+      "image_key": "catalog:yt-capra-mk3-carbon-mx",
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "brand_id": "5f31a398-ec2c-5566-8807-c8f9b5a2e384",
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f0c8276b-6c96-5959-a2eb-4f44d014c299",
+      "name": "Fury Carbon · High Pivot",
+      "slug": "gt-fury-carbon-high-pivot",
+      "category": "frame",
+      "description": "Cuadro de descenso de carbono con pivote alto, polea y 200 mm de recorrido.",
+      "technical_notes": "Generación del Tech Book 2024 todavía documentada en la ficha oficial. Posición MX y vainas cortas; no se declara un modelo de temporada 2026.",
+      "image_key": "catalog:gt-fury-carbon-high-pivot",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "0558b2fa-df7b-5566-8f16-4b4a4ec69b4f",
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/fury-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "92e85ddb-2dea-58d9-afcb-9772c0443530",
+      "name": "Force Carbon · High Pivot",
+      "slug": "gt-force-carbon-high-pivot",
+      "category": "frame",
+      "description": "Cuadro de enduro con 160 mm de recorrido, ruedas de 29 pulgadas y polea de reenvío.",
+      "technical_notes": "Generación histórica documentada por GT; no se presenta como lanzamiento actual. Geometría en ajuste corto de vainas.",
+      "image_key": "catalog:gt-force-carbon-high-pivot",
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "brand_id": "0558b2fa-df7b-5566-8f16-4b4a4ec69b4f",
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/force-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "182c048b-4793-53f9-ac90-3bf1122b63e4",
+      "name": "FRS V3 · Pure White",
+      "slug": "commencal-frs-v3",
+      "category": "frame",
+      "description": "Cuadro de freeride y descenso con ruedas de 27,5 pulgadas y 200 mm de recorrido.",
+      "technical_notes": "Referencia del cuadro Pure White 2025; conservar identidad distinta de Furious 2021. Geometría de la ficha del cuadro, no de otra bicicleta completa.",
+      "image_key": "catalog:commencal-frs-v3",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee9dac27-431e-5e2e-a217-ffc45b9eeeae",
+      "name": "Furious V3 · 2021",
+      "slug": "commencal-furious-v3-2021",
+      "category": "frame",
+      "description": "Cuadro de descenso y freeride de la generación Furious 2021, con ruedas de 27,5 pulgadas.",
+      "technical_notes": "Modelo histórico. Se omiten cotas de geometría porque la página comercial antigua reutiliza bloques FRS actuales. El manual 2021 confirma medidas de montaje; las proporciones visuales se estiman desde su propia fotografía.",
+      "image_key": "catalog:commencal-furious-v3-2021",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dd603e8b-b088-59b3-8b9c-cf5c16f6e415",
+      "name": "BoXXer Ultimate · D2",
+      "slug": "rockshox-boxxer-ultimate-d2",
+      "category": "fork",
+      "description": "Horquilla de descenso de doble pletina con barras de 38 mm.",
+      "technical_notes": "Doble pletina. La representación exterior no reproduce hidráulicos internos ni tolerancias.",
+      "image_key": "catalog:rockshox-boxxer-ultimate-d2",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "fcdf15cd-7bca-5ffe-aee9-8a0406b69398",
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-ult-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "65cecb88-3537-5225-aadb-1e11a3c50a84",
+      "name": "BoXXer Select · D2",
+      "slug": "rockshox-boxxer-select-d2",
+      "category": "fork",
+      "description": "Horquilla de descenso de doble pletina con barras de 38 mm.",
+      "technical_notes": "Doble pletina. La representación exterior no reproduce hidráulicos internos ni tolerancias.",
+      "image_key": "catalog:rockshox-boxxer-select-d2",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "fcdf15cd-7bca-5ffe-aee9-8a0406b69398",
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-sel-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ee284b92-9b35-54a6-a7ae-0ba7895130fc",
+      "name": "Bomber 58",
+      "slug": "marzocchi-bomber-58",
+      "category": "fork",
+      "description": "Horquilla de descenso de doble pletina con barras de 40 mm.",
+      "technical_notes": "Doble pletina. La representación exterior no reproduce hidráulicos internos ni tolerancias. Discrepancia en ficha oficial: selector 203 mm y tabla 200 mm; se conserva la referencia comercial 203 mm. Eje DH no Boost, aunque tenga 20 × 110 mm.",
+      "image_key": "catalog:marzocchi-bomber-58",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "117fcab5-e709-56e3-9262-b33dc0292d7b",
+      "sources": [
+        {
+          "url": "https://bike.marzocchi.com/products/bomber-58",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c6dba9e6-ed6c-52de-b3f6-bffa01727d13",
+      "name": "DH38 m.2",
+      "slug": "ohlins-dh38-m2",
+      "category": "fork",
+      "description": "Horquilla de descenso de doble pletina con barras de 38 mm.",
+      "technical_notes": "Doble pletina. La representación exterior no reproduce hidráulicos internos ni tolerancias. Coronas vendidas por separado; se representan como conjunto de montaje aproximado, sin afirmar que se incluyan en el precio.",
+      "image_key": "catalog:ohlins-dh38-m2",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "ac7080e0-f65f-5469-8ac6-7685a3621b78",
+      "sources": [
+        {
+          "url": "https://www.ohlins.com/en-us/mountain-bike/front-forks/am-dh38-m-2-air-ttx18-29-27-5-200",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "b2842e8e-f525-50b4-bf8b-5b630201cea5",
+      "component_id": "c5a7f352-d715-5ec2-9769-e19cf73b7dcc",
+      "label": "M · Gloss Liquid Blue",
+      "model_year": 2027,
+      "generation": "V10.8 · MY27",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 208,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 30 × 8 mm en ambos extremos."
+        },
+        "rear_axle_standard": "12x157",
+        "headset_standard": "IS41/IS41 con ajuste de alcance",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200/220",
+        "fork_restrictions": "Horquilla de doble pletina; recorrido de referencia 200 mm.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 455,
+          "stack_mm": 633,
+          "seat_tube_mm": 445,
+          "head_tube_mm": 110,
+          "head_angle_deg": 63,
+          "chainstay_mm": 450,
+          "wheelbase_mm": 1275,
+          "bb_height_mm": 356,
+          "reference_position": "Alta · ajustes centrales"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Liquid Blue",
+            "image_key": null,
+            "material": {
+              "color": "#173569",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "e63e11cd-c910-5a3f-a8ec-ae3db6a79ac4",
+      "price_reference": null
+    },
+    {
+      "id": "56ec17ae-7679-5267-888e-42159dcd8240",
+      "component_id": "c5a7f352-d715-5ec2-9769-e19cf73b7dcc",
+      "label": "L · Gloss Liquid Blue",
+      "model_year": 2027,
+      "generation": "V10.8 · MY27",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 208,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 30 × 8 mm en ambos extremos."
+        },
+        "rear_axle_standard": "12x157",
+        "headset_standard": "IS41/IS41 con ajuste de alcance",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200/220",
+        "fork_restrictions": "Horquilla de doble pletina; recorrido de referencia 200 mm.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 475,
+          "stack_mm": 637,
+          "seat_tube_mm": 455,
+          "head_tube_mm": 115,
+          "head_angle_deg": 63,
+          "chainstay_mm": 455,
+          "wheelbase_mm": 1302,
+          "bb_height_mm": 356,
+          "reference_position": "Alta · ajustes centrales"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Liquid Blue",
+            "image_key": null,
+            "material": {
+              "color": "#173569",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "68080100-6217-58a9-8e40-3696fb9dac88",
+      "price_reference": null
+    },
+    {
+      "id": "649bfde4-a2b8-55a8-a7cc-b6571b546b12",
+      "component_id": "bdbbeacf-6e41-5561-bed8-301ef62ddf81",
+      "label": "M · Shell White",
+      "model_year": null,
+      "generation": "MK4 · 2024–actual",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "size_label"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "size_label": "M"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Shell White",
+            "image_key": null,
+            "material": {
+              "color": "#e2e0d4",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "5a179cc0-c8c5-5bde-916e-e4ebfbe19b1d",
+      "price_reference": null
+    },
+    {
+      "id": "8c4f593e-73d8-591f-b598-99428ac1e692",
+      "component_id": "bdbbeacf-6e41-5561-bed8-301ef62ddf81",
+      "label": "L · Shell White",
+      "model_year": null,
+      "generation": "MK4 · 2024–actual",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "size_label"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 200,
+        "size_label": "L"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Shell White",
+            "image_key": null,
+            "material": {
+              "color": "#e2e0d4",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "df995bc9-bd1d-5a48-a6b4-6333c016bcab",
+      "price_reference": null
+    },
+    {
+      "id": "41007640-e182-5bd1-b842-78efbbdc7227",
+      "component_id": "c6f0029e-434f-51a2-9d1e-601c735608da",
+      "label": "M · Deep Green",
+      "model_year": 2025,
+      "generation": "MK3 · MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.mtb-news.de/news/wp-content/uploads/2024/11/capra-core-4.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Documento original de YT alojado por MTB-News: tabla MX Low, no tabla 29.",
+          "fields": [
+            "specs.geometry",
+            "specs.rear_travel_mm"
+          ]
+        },
+        {
+          "url": "https://www.yt-industries.com/media/1c/a7/6f/1729759076/CAPRA-MK3-CF-29-MX-TECHNICAL_INFORMATION_CUSTOMER_210518.pdf?ts=1729759076",
+          "consulted_at": "2026-10-21",
+          "note": "Despiece oficial MK3 CF: herrajes, pedalier, dirección y tija.",
+          "fields": [
+            "specs.shock_fit",
+            "specs.bb_shell",
+            "specs.headset_standard",
+            "specs.seatpost_diameter_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Herrajes delantero 8 × 20 mm y trasero 8 × 15 mm."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "headset_standard": "ZS44/ZS56",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 35.6,
+        "brake_mount": "Post Mount 180",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 444,
+          "stack_mm": 636,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 110,
+          "head_angle_deg": 64,
+          "chainstay_mm": 433,
+          "wheelbase_mm": 1223,
+          "bb_height_mm": 346,
+          "reference_position": "MX · Low"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Deep Green",
+            "image_key": null,
+            "material": {
+              "color": "#14554e",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "6aeaae17-16ce-5c61-ae4f-8b08566703a2",
+      "price_reference": null
+    },
+    {
+      "id": "6aa7b954-4e76-5e00-a84e-4b3c45c62861",
+      "component_id": "c6f0029e-434f-51a2-9d1e-601c735608da",
+      "label": "L · Deep Green",
+      "model_year": 2025,
+      "generation": "MK3 · MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.mtb-news.de/news/wp-content/uploads/2024/11/capra-core-4.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Documento original de YT alojado por MTB-News: tabla MX Low, no tabla 29.",
+          "fields": [
+            "specs.geometry",
+            "specs.rear_travel_mm"
+          ]
+        },
+        {
+          "url": "https://www.yt-industries.com/media/1c/a7/6f/1729759076/CAPRA-MK3-CF-29-MX-TECHNICAL_INFORMATION_CUSTOMER_210518.pdf?ts=1729759076",
+          "consulted_at": "2026-10-21",
+          "note": "Despiece oficial MK3 CF: herrajes, pedalier, dirección y tija.",
+          "fields": [
+            "specs.shock_fit",
+            "specs.bb_shell",
+            "specs.headset_standard",
+            "specs.seatpost_diameter_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Herrajes delantero 8 × 20 mm y trasero 8 × 15 mm."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "headset_standard": "ZS44/ZS56",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 35.6,
+        "brake_mount": "Post Mount 180",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 464,
+          "stack_mm": 636,
+          "seat_tube_mm": 445,
+          "head_tube_mm": 110,
+          "head_angle_deg": 64,
+          "chainstay_mm": 433,
+          "wheelbase_mm": 1243,
+          "bb_height_mm": 346,
+          "reference_position": "MX · Low"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Deep Green",
+            "image_key": null,
+            "material": {
+              "color": "#14554e",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f391b342-7127-571c-9258-adaf35dbd4dd",
+      "price_reference": null
+    },
+    {
+      "id": "4077ed7f-2a59-58fa-86ac-0edaaf9fe0d6",
+      "component_id": "f0c8276b-6c96-5959-a2eb-4f44d014c299",
+      "label": "M · Galaxy",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/fury-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "headset_standard",
+            "brake_mount",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 225,
+          "stroke_mm": 75,
+          "restrictions": "Trunnion superior; inferior 30 mm × M10."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "headset_standard": "ZS49/28.6 · ZS49/30",
+        "brake_mount": "Post Mount 200",
+        "tire_clearance_notes": "Ancho máximo 2,5 pulgadas.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 450,
+          "stack_mm": 638,
+          "seat_tube_mm": 410,
+          "head_tube_mm": 110,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1260
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Galaxy",
+            "image_key": null,
+            "material": {
+              "color": "#252629",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "adf2a867-a8fe-507e-8098-4f5e5ce9e5c6",
+      "price_reference": null
+    },
+    {
+      "id": "fde3c038-c7de-5dcd-b997-76b3651df89e",
+      "component_id": "f0c8276b-6c96-5959-a2eb-4f44d014c299",
+      "label": "L · Galaxy",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/fury-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "headset_standard",
+            "brake_mount",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 225,
+          "stroke_mm": 75,
+          "restrictions": "Trunnion superior; inferior 30 mm × M10."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "headset_standard": "ZS49/28.6 · ZS49/30",
+        "brake_mount": "Post Mount 200",
+        "tire_clearance_notes": "Ancho máximo 2,5 pulgadas.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 480,
+          "stack_mm": 647,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 120,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1295
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Galaxy",
+            "image_key": null,
+            "material": {
+              "color": "#252629",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f5a9844e-ad1c-5ee2-9daa-64a011fc06fd",
+      "price_reference": null
+    },
+    {
+      "id": "97896671-efd0-5b27-b76e-f954abcbd24c",
+      "component_id": "92e85ddb-2dea-58d9-afcb-9772c0443530",
+      "label": "M · Negro / dorado",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY22–24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/force-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 160,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65
+        },
+        "rear_axle_standard": "12x148",
+        "headset_standard": "FSA No.57",
+        "fork_restrictions": "Recorrido delantero de referencia: 170 mm.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 455,
+          "stack_mm": 636,
+          "seat_tube_mm": 410,
+          "head_tube_mm": 120,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1240,
+          "bb_drop_mm": 30,
+          "bb_height_mm": 347
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / dorado",
+            "image_key": null,
+            "material": {
+              "color": "#222827",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b9cd2031-9f1e-531b-8992-d699ca1f5b85",
+      "price_reference": null
+    },
+    {
+      "id": "689adc5d-5130-5fe6-ae4a-e363e4ddc5c0",
+      "component_id": "92e85ddb-2dea-58d9-afcb-9772c0443530",
+      "label": "L · Negro / dorado",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY22–24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/force-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 160,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65
+        },
+        "rear_axle_standard": "12x148",
+        "headset_standard": "FSA No.57",
+        "fork_restrictions": "Recorrido delantero de referencia: 170 mm.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 480,
+          "stack_mm": 645,
+          "seat_tube_mm": 445,
+          "head_tube_mm": 130,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1270,
+          "bb_drop_mm": 30,
+          "bb_height_mm": 347
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / dorado",
+            "image_key": null,
+            "material": {
+              "color": "#222827",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "c93473d7-b5f1-5b3c-ae48-097a5f17544e",
+      "price_reference": null
+    },
+    {
+      "id": "a14d86d3-c9c9-5cc4-8aa4-711fd2315888",
+      "component_id": "182c048b-4793-53f9-ac90-3bf1122b63e4",
+      "label": "M · Pure White",
+      "model_year": 2025,
+      "generation": "FRS V3 · MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T4/T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 × 8 mm / 30 × 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; máxima 595 mm.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 465,
+          "stack_mm": 613,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 120,
+          "head_angle_deg": 64,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1248
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Pure White",
+            "image_key": null,
+            "material": {
+              "color": "#e6e6df",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "8dc5dd4a-6c13-5aaf-ac07-407573888865",
+      "price_reference": null
+    },
+    {
+      "id": "bbfd80ee-7bb1-58dd-a87e-c692540cc39f",
+      "component_id": "182c048b-4793-53f9-ac90-3bf1122b63e4",
+      "label": "L · Pure White",
+      "model_year": 2025,
+      "generation": "FRS V3 · MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T4/T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 × 8 mm / 30 × 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; máxima 595 mm.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 490,
+          "stack_mm": 613,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 125,
+          "head_angle_deg": 64,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1273
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Pure White",
+            "image_key": null,
+            "material": {
+              "color": "#e6e6df",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "6b086f2d-a37c-52ef-b28d-5e6122558925",
+      "price_reference": null
+    },
+    {
+      "id": "900e4ba0-5dd3-5e45-92b7-6d66d4c94cf2",
+      "component_id": "ee9dac27-431e-5e2e-a217-ffc45b9eeeae",
+      "label": "M · Gun Metal",
+      "model_year": 2021,
+      "generation": "Furious V3 · 2021 · Archivo",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://static.commencal.com/tech/2021-COMMENCAL-FURIOUS-RIDE.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha técnica 2021: cuadro y montaje. No se traslada geometría FRS moderna.",
+          "fields": [
+            "specs",
+            "generation"
+          ]
+        },
+        {
+          "url": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+          "consulted_at": "2026-10-21",
+          "note": "Identidad comercial Essential Gun Metal y tallas M/L.",
+          "fields": [
+            "label",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 × 8 mm / 30 × 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; máxima 595 mm.",
+        "size_label": "M"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gun Metal",
+            "image_key": null,
+            "material": {
+              "color": "#777e80",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "e42d6915-e902-5970-afcf-dfd18b33a526",
+      "price_reference": null
+    },
+    {
+      "id": "6ab184f4-8494-50db-8f2f-40d5735ee56d",
+      "component_id": "ee9dac27-431e-5e2e-a217-ffc45b9eeeae",
+      "label": "L · Gun Metal",
+      "model_year": 2021,
+      "generation": "Furious V3 · 2021 · Archivo",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://static.commencal.com/tech/2021-COMMENCAL-FURIOUS-RIDE.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha técnica 2021: cuadro y montaje. No se traslada geometría FRS moderna.",
+          "fields": [
+            "specs",
+            "generation"
+          ]
+        },
+        {
+          "url": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+          "consulted_at": "2026-10-21",
+          "note": "Identidad comercial Essential Gun Metal y tallas M/L.",
+          "fields": [
+            "label",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 × 8 mm / 30 × 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; máxima 595 mm.",
+        "size_label": "L"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gun Metal",
+            "image_key": null,
+            "material": {
+              "color": "#777e80",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b5ca6c6e-be3d-5129-b65d-c0724e06ed8b",
+      "price_reference": null
+    },
+    {
+      "id": "eb213b83-4a8f-5d6f-8789-b38520b7caa6",
+      "component_id": "dd603e8b-b088-59b3-8b9c-cf5c16f6e415",
+      "label": "27.5″ · Aire · Electric Red",
+      "model_year": null,
+      "generation": "D2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-ult-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "rotor_max_mm",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://www.sram.com/globalassets/document-hierarchy/service-manuals/rockshox/front-suspension/2027-front-suspension-specifications.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Tabla dimensional D2: 200 mm; 27.5 DebonAir+, 29 Linear XL.",
+          "fields": [
+            "specs.axle_to_crown_mm",
+            "specs.travel_mm",
+            "specs.offset_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "27.5",
+        "wheel_bsd_mm": 584,
+        "travel_mm": 200,
+        "offset_mm": 48,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "Charger 3.2 RC2 · ButterCups",
+        "axle_to_crown_mm": 586,
+        "rotor_max_mm": 220,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio BoXXer Ultimate · D2",
+              "url": "https://www.sram.com/en/service/models/fs-bxr-ult-d2",
+              "revision": "D2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Electric Red",
+            "image_key": null,
+            "material": {
+              "color": "#b72825",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "44040607-036c-55f3-bf86-a2dbc559b992",
+      "price_reference": null
+    },
+    {
+      "id": "a0c8c8cd-832b-5faa-9f83-7a1b0a039bb6",
+      "component_id": "dd603e8b-b088-59b3-8b9c-cf5c16f6e415",
+      "label": "27.5″ · Aire · Gloss Black",
+      "model_year": null,
+      "generation": "D2",
+      "manufacturer_code": null,
+      "image_key": "catalog:rockshox-boxxer-ultimate-d2-black",
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-ult-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "rotor_max_mm",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://www.sram.com/globalassets/document-hierarchy/service-manuals/rockshox/front-suspension/2027-front-suspension-specifications.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Tabla dimensional D2: 200 mm; 27.5 DebonAir+, 29 Linear XL.",
+          "fields": [
+            "specs.axle_to_crown_mm",
+            "specs.travel_mm",
+            "specs.offset_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "27.5",
+        "wheel_bsd_mm": 584,
+        "travel_mm": 200,
+        "offset_mm": 48,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "Charger 3.2 RC2 · ButterCups",
+        "axle_to_crown_mm": 586,
+        "rotor_max_mm": 220,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio BoXXer Ultimate · D2",
+              "url": "https://www.sram.com/en/service/models/fs-bxr-ult-d2",
+              "revision": "D2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Black",
+            "image_key": "catalog:rockshox-boxxer-ultimate-d2-black",
+            "material": {
+              "color": "#202326",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "e7887d82-2192-5791-a370-a607400cd983",
+      "price_reference": null
+    },
+    {
+      "id": "2da8501c-a663-58cf-b578-4276d7c38eea",
+      "component_id": "dd603e8b-b088-59b3-8b9c-cf5c16f6e415",
+      "label": "29″ · Aire · Electric Red",
+      "model_year": null,
+      "generation": "D2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-ult-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "rotor_max_mm",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://www.sram.com/globalassets/document-hierarchy/service-manuals/rockshox/front-suspension/2027-front-suspension-specifications.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Tabla dimensional D2: 200 mm; 27.5 DebonAir+, 29 Linear XL.",
+          "fields": [
+            "specs.axle_to_crown_mm",
+            "specs.travel_mm",
+            "specs.offset_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 200,
+        "offset_mm": 48,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "Charger 3.2 RC2 · ButterCups",
+        "axle_to_crown_mm": 605,
+        "rotor_max_mm": 220,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio BoXXer Ultimate · D2",
+              "url": "https://www.sram.com/en/service/models/fs-bxr-ult-d2",
+              "revision": "D2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Electric Red",
+            "image_key": null,
+            "material": {
+              "color": "#b72825",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "dcbc729c-1624-51f7-8d7f-9e54e0c647bb",
+      "price_reference": null
+    },
+    {
+      "id": "4554e7f9-e3e9-5048-acf9-51fde6e83318",
+      "component_id": "dd603e8b-b088-59b3-8b9c-cf5c16f6e415",
+      "label": "29″ · Aire · Gloss Black",
+      "model_year": null,
+      "generation": "D2",
+      "manufacturer_code": null,
+      "image_key": "catalog:rockshox-boxxer-ultimate-d2-black",
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-ult-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "rotor_max_mm",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://www.sram.com/globalassets/document-hierarchy/service-manuals/rockshox/front-suspension/2027-front-suspension-specifications.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Tabla dimensional D2: 200 mm; 27.5 DebonAir+, 29 Linear XL.",
+          "fields": [
+            "specs.axle_to_crown_mm",
+            "specs.travel_mm",
+            "specs.offset_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 200,
+        "offset_mm": 48,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "Charger 3.2 RC2 · ButterCups",
+        "axle_to_crown_mm": 605,
+        "rotor_max_mm": 220,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio BoXXer Ultimate · D2",
+              "url": "https://www.sram.com/en/service/models/fs-bxr-ult-d2",
+              "revision": "D2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Black",
+            "image_key": "catalog:rockshox-boxxer-ultimate-d2-black",
+            "material": {
+              "color": "#202326",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "6cdc0709-33c8-504e-9ed3-6197278fdfaf",
+      "price_reference": null
+    },
+    {
+      "id": "6c0fcfec-1a3a-5e64-a38a-b5941c0d3426",
+      "component_id": "65cecb88-3537-5225-aadb-1e11a3c50a84",
+      "label": "27.5″ · Aire · Negro",
+      "model_year": null,
+      "generation": "D2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-sel-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "rotor_max_mm",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://www.sram.com/globalassets/document-hierarchy/service-manuals/rockshox/front-suspension/2027-front-suspension-specifications.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Tabla dimensional D2: 200 mm; 27.5 DebonAir+, 29 Linear XL.",
+          "fields": [
+            "specs.axle_to_crown_mm",
+            "specs.travel_mm",
+            "specs.offset_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "27.5",
+        "wheel_bsd_mm": 584,
+        "travel_mm": 200,
+        "offset_mm": 48,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "Charger 3.2 RC",
+        "axle_to_crown_mm": 586,
+        "rotor_max_mm": 220,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio BoXXer Select · D2",
+              "url": "https://www.sram.com/en/service/models/fs-bxr-sel-d2",
+              "revision": "D2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#222526",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "2393f8ea-eb16-5a3e-9a8e-f29ee0496e16",
+      "price_reference": null
+    },
+    {
+      "id": "379ff249-a505-5dea-a1e6-268f97933af9",
+      "component_id": "65cecb88-3537-5225-aadb-1e11a3c50a84",
+      "label": "29″ · Aire · Negro",
+      "model_year": null,
+      "generation": "D2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.sram.com/en/rockshox/models/fs-bxr-sel-d2",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "rotor_max_mm",
+            "maintenance"
+          ]
+        },
+        {
+          "url": "https://www.sram.com/globalassets/document-hierarchy/service-manuals/rockshox/front-suspension/2027-front-suspension-specifications.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Tabla dimensional D2: 200 mm; 27.5 DebonAir+, 29 Linear XL.",
+          "fields": [
+            "specs.axle_to_crown_mm",
+            "specs.travel_mm",
+            "specs.offset_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 200,
+        "offset_mm": 48,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "Charger 3.2 RC",
+        "axle_to_crown_mm": 605,
+        "rotor_max_mm": 220,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio BoXXer Select · D2",
+              "url": "https://www.sram.com/en/service/models/fs-bxr-sel-d2",
+              "revision": "D2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro",
+            "image_key": null,
+            "material": {
+              "color": "#222526",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "82ba27ef-f213-52a7-ada7-b3eceacccb5f",
+      "price_reference": null
+    },
+    {
+      "id": "1eca5f30-5ee8-5400-acd2-979c3ec6872e",
+      "component_id": "ee284b92-9b35-54a6-a7ae-0ba7895130fc",
+      "label": "27.5″ · Aire · Matte Black",
+      "model_year": null,
+      "generation": "GRIP · 27.5",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://bike.marzocchi.com/products/bomber-58",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "27.5",
+        "wheel_bsd_mm": 584,
+        "travel_mm": 203,
+        "offset_mm": 51,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 40,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 DH non-Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 203,
+        "spring_type": "air",
+        "damping_system": "GRIP",
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio Bomber 58",
+              "url": "https://bike.marzocchi.com/pages/product-service-manuals",
+              "revision": "GRIP · 27.5"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Black",
+            "image_key": null,
+            "material": {
+              "color": "#232426",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "a72751e7-a313-5363-8dd4-313d198a2d77",
+      "price_reference": null
+    },
+    {
+      "id": "178fbd1c-204a-5540-b28f-2e6dc1be5d20",
+      "component_id": "ee284b92-9b35-54a6-a7ae-0ba7895130fc",
+      "label": "27.5″ · Aire · Gloss Red",
+      "model_year": null,
+      "generation": "GRIP · 27.5",
+      "manufacturer_code": null,
+      "image_key": "catalog:marzocchi-bomber-58-red",
+      "sources": [
+        {
+          "url": "https://bike.marzocchi.com/products/bomber-58",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "27.5",
+        "wheel_bsd_mm": 584,
+        "travel_mm": 203,
+        "offset_mm": 51,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 40,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 DH non-Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 203,
+        "spring_type": "air",
+        "damping_system": "GRIP",
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio Bomber 58",
+              "url": "https://bike.marzocchi.com/pages/product-service-manuals",
+              "revision": "GRIP · 27.5"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Red",
+            "image_key": "catalog:marzocchi-bomber-58-red",
+            "material": {
+              "color": "#b32a24",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "4e6dffba-f6ce-5f33-a32a-fd23f12653a1",
+      "price_reference": null
+    },
+    {
+      "id": "8701f42a-deef-5ec6-b0b1-8cbec8f73246",
+      "component_id": "c6dba9e6-ed6c-52de-b3f6-bffa01727d13",
+      "label": "27.5″ · Aire · Negro / amarillo",
+      "model_year": null,
+      "generation": "m.2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.ohlins.com/en-us/mountain-bike/front-forks/am-dh38-m-2-air-ttx18-29-27-5-200",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "27.5",
+        "wheel_bsd_mm": 584,
+        "travel_mm": 200,
+        "offset_mm": 50,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "TTX18",
+        "axle_to_crown_mm": 590,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio DH38 m.2",
+              "url": "https://www.ohlins.com/storage/BFA8855A4BF356B090BAF61265E2C8F75B9A2DB78C7863EAE1D92E8F75052AAA/dffc3b2189fb43669fde42694b6696f8/pdf/media/4a7d20ab7d89408c816e2d2886c89809/OM_07258-20_1_DH38%20m.2.pdf",
+              "revision": "m.2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / amarillo",
+            "image_key": null,
+            "material": {
+              "color": "#202426",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "e40323fe-1efb-5398-b8c6-cf6f02dd97ee",
+      "price_reference": null
+    },
+    {
+      "id": "e72412c4-6a27-5f20-b2ab-e7de9e05438c",
+      "component_id": "c6dba9e6-ed6c-52de-b3f6-bffa01727d13",
+      "label": "27.5″ · Muelle · Negro / amarillo",
+      "model_year": null,
+      "generation": "m.2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.ohlins.com/en-us/mountain-bike/front-forks/am-dh38-m-2-air-ttx18-29-27-5-200",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "27.5",
+        "wheel_bsd_mm": 584,
+        "travel_mm": 200,
+        "offset_mm": 50,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "coil",
+        "damping_system": "TTX18",
+        "axle_to_crown_mm": 590,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio DH38 m.2",
+              "url": "https://www.ohlins.com/storage/BFA8855A4BF356B090BAF61265E2C8F75B9A2DB78C7863EAE1D92E8F75052AAA/dffc3b2189fb43669fde42694b6696f8/pdf/media/4a7d20ab7d89408c816e2d2886c89809/OM_07258-20_1_DH38%20m.2.pdf",
+              "revision": "m.2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / amarillo",
+            "image_key": null,
+            "material": {
+              "color": "#202426",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "72414ab2-a9ea-537a-814b-c461a4ea75b8",
+      "price_reference": null
+    },
+    {
+      "id": "ea3dfb64-ff98-551b-90a3-2c9f7ea4d3eb",
+      "component_id": "c6dba9e6-ed6c-52de-b3f6-bffa01727d13",
+      "label": "29″ · Aire · Negro / amarillo",
+      "model_year": null,
+      "generation": "m.2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.ohlins.com/en-us/mountain-bike/front-forks/am-dh38-m-2-air-ttx18-29-27-5-200",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 200,
+        "offset_mm": 50,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "air",
+        "damping_system": "TTX18",
+        "axle_to_crown_mm": 608,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio DH38 m.2",
+              "url": "https://www.ohlins.com/storage/BFA8855A4BF356B090BAF61265E2C8F75B9A2DB78C7863EAE1D92E8F75052AAA/dffc3b2189fb43669fde42694b6696f8/pdf/media/4a7d20ab7d89408c816e2d2886c89809/OM_07258-20_1_DH38%20m.2.pdf",
+              "revision": "m.2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / amarillo",
+            "image_key": null,
+            "material": {
+              "color": "#202426",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "077d74ce-6eff-5cf8-b689-98f880cae9d7",
+      "price_reference": null
+    },
+    {
+      "id": "89c5013d-9fa6-5228-86f6-890778c9940a",
+      "component_id": "c6dba9e6-ed6c-52de-b3f6-bffa01727d13",
+      "label": "29″ · Muelle · Negro / amarillo",
+      "model_year": null,
+      "generation": "m.2",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.ohlins.com/en-us/mountain-bike/front-forks/am-dh38-m-2-air-ttx18-29-27-5-200",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "wheel_format",
+            "wheel_bsd_mm",
+            "travel_mm",
+            "offset_mm",
+            "crown_type",
+            "fork_layout",
+            "stanchion_diameter_mm",
+            "steerer_standard",
+            "axle_standard",
+            "brake_mount",
+            "rotor_min_mm",
+            "spring_type",
+            "damping_system",
+            "axle_to_crown_mm",
+            "maintenance"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "wheel_format": "29",
+        "wheel_bsd_mm": 622,
+        "travel_mm": 200,
+        "offset_mm": 50,
+        "crown_type": "dual",
+        "fork_layout": "conventional",
+        "stanchion_diameter_mm": 38,
+        "steerer_standard": "1 1/8",
+        "axle_standard": "20x110 Boost",
+        "brake_mount": "Post Mount",
+        "rotor_min_mm": 200,
+        "spring_type": "coil",
+        "damping_system": "TTX18",
+        "axle_to_crown_mm": 608,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "Servicio DH38 m.2",
+              "url": "https://www.ohlins.com/storage/BFA8855A4BF356B090BAF61265E2C8F75B9A2DB78C7863EAE1D92E8F75052AAA/dffc3b2189fb43669fde42694b6696f8/pdf/media/4a7d20ab7d89408c816e2d2886c89809/OM_07258-20_1_DH38%20m.2.pdf",
+              "revision": "m.2"
+            }
+          ],
+          "tasks": []
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / amarillo",
+            "image_key": null,
+            "material": {
+              "color": "#202426",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "a67634d6-07e7-50fa-856e-bb4a55972485",
+      "price_reference": null
+    }
+  ]
+}

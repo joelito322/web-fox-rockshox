@@ -6,7 +6,7 @@ import {
   sourceSchema,
 } from "./index.ts";
 import { specificationSchemas } from "./specifications.ts";
-import { modelProfiles } from "./visual-profiles.ts";
+import { modelProfiles, commercialModelProfiles, gravityModelProfiles } from "./visual-profiles.ts";
 import { knownProceduralGenerator } from "./visual.ts";
 export const catalogImportSchema = z.strictObject({
   brands: z.array(
@@ -49,6 +49,16 @@ export function parseCatalogImport(input: unknown) {
       assembly_version: version,
       profile_key: profile,
     } = asset.manifest.parameters;
+    const commercialProfile = profile !== undefined && profile in commercialModelProfiles;
+    if (profile && profile in gravityModelProfiles && (asset.kind !== "glb" || asset.generator_key != null || space !== modelProfiles[profile]))
+      throw Error("Gravity profiles require their own GLB mounting space");
+    if (asset.generator_key === "atlas-bike-v8") {
+      if (asset.kind !== "procedural" || !commercialProfile)
+        throw Error("V8 requires a commercial cockpit profile");
+      if (profile && modelProfiles[profile] === "stem" && !asset.manifest.anchors.bar_clamp)
+        throw Error("V8 stem requires a handlebar clamp anchor");
+    } else if (asset.kind === "procedural" && commercialProfile)
+      throw Error("Commercial cockpit profile requires the v8 generator");
     if (version && space !== "frame")
       throw Error("Assembly version requires a frame mounting space");
     if (!space) continue;
@@ -87,6 +97,7 @@ export function parseCatalogImport(input: unknown) {
         "atlas-bike-v5",
         "atlas-bike-v6",
         "atlas-bike-v7",
+        "atlas-bike-v8",
       ].includes(visual?.generator_key ?? "")
     ) {
       const profile = visual!.manifest.parameters.profile_key;

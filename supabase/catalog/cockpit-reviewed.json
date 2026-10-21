@@ -1,0 +1,883 @@
+{
+  "brands": [
+    {
+      "id": "e1219bfb-f612-548f-bb9e-fe034813beca",
+      "name": "Renthal",
+      "slug": "renthal",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "839ae0b3-6ac6-5168-8089-99895300b3f3",
+      "name": "DEITY",
+      "slug": "deity",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "e45e7a99-0ec7-57d1-a92a-2ab8fa27e548",
+      "name": "OneUp Components",
+      "slug": "oneup-components",
+      "region": null,
+      "published": true
+    },
+    {
+      "id": "d1d6313c-dc6d-59bd-8760-50873b266ebb",
+      "name": "WTB",
+      "slug": "wtb",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "3267f2bc-3b32-5fe3-846f-034db873efe5",
+      "brand_id": "e1219bfb-f612-548f-bb9e-fe034813beca",
+      "slug": "renthal-fatbar-35",
+      "name": "Renthal Fatbar 35",
+      "category": "handlebar",
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "description": "Manillar de aluminio con 800 mm de ancho y elevación de 30 mm.",
+      "technical_notes": "Variante de 35 mm en AluGold. Medidas y peso declarados para la referencia de 30 mm; el trazado exterior es aproximado, sin tolerancias de fabricación.",
+      "image_key": "renthal-fatbar-35",
+      "published": true,
+      "sources": [
+        {
+          "url": "https://renthal.com/products/fatbar35-30mm",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 800 × 35 mm · elevación 30 mm · AluGold.",
+          "fields": [
+            "specs.width_mm",
+            "specs.clamp_diameter_mm",
+            "specs.rise_mm",
+            "specs.backsweep_deg",
+            "specs.upsweep_deg",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/M158-02-007_01.jpg?v=1779429503",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "f7977c58-8207-59bf-a7b3-86cca40c1859",
+      "brand_id": "839ae0b3-6ac6-5168-8089-99895300b3f3",
+      "slug": "deity-racepoint-35",
+      "name": "DEITY Racepoint 35",
+      "category": "handlebar",
+      "disciplines": [
+        "enduro",
+        "downhill"
+      ],
+      "description": "Manillar de aluminio de 810 mm con elevación de 38 mm.",
+      "technical_notes": "Referencia de 38 mm con anodizado negro y gráficos blancos. No se confunde con Blacklabel de 31,8 mm ni con otros recorridos de elevación.",
+      "image_key": "deity-racepoint-35",
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.deitycomponents.com/racepoint_handlebar_38mm.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 810 × 35 mm · elevación 38 mm · negro/blanco.",
+          "fields": [
+            "specs.width_mm",
+            "specs.clamp_diameter_mm",
+            "specs.rise_mm",
+            "specs.backsweep_deg",
+            "specs.upsweep_deg",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation"
+          ]
+        },
+        {
+          "url": "https://www.deitycomponents.com/uploads/1/6/0/8/16089364/7-deity-racepoint-handlebar-38r-white_orig.jpg",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6fbfd9fa-4c66-5229-bb9b-c8d93e962a41",
+      "brand_id": "e1219bfb-f612-548f-bb9e-fe034813beca",
+      "slug": "renthal-apex-35-v2",
+      "name": "Renthal Apex 35 V2",
+      "category": "stem",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Potencia convencional de 40 mm para manillares de 35 mm.",
+      "technical_notes": "La URL oficial conserva «33mm» en su identificador, pero título y tabla corresponden a 40 mm V2. Altura de abrazadera de dirección 40 mm y anchura de abrazadera de manillar 52,5 mm. Ángulo de 5° con inversión de montaje; se visualiza en posición positiva. Peso con tornillos.",
+      "image_key": "renthal-apex-35-v2",
+      "published": true,
+      "sources": [
+        {
+          "url": "https://renthal.com/products/apex35-33mm-v2-stem-copy",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante de 40 mm V2, negro/negro. El identificador de URL conserva 33mm.",
+          "fields": [
+            "specs.mount_type",
+            "specs.steerer_diameter_mm",
+            "specs.bar_clamp_diameter_mm",
+            "specs.length_mm",
+            "specs.angle_deg",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/STM127-01.jpg?v=1784796860",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "071285e0-dc10-51dd-a8f6-c4750721d7ad",
+      "brand_id": "e1219bfb-f612-548f-bb9e-fe034813beca",
+      "slug": "renthal-integra-35",
+      "name": "Renthal Integra 35",
+      "category": "stem",
+      "disciplines": [
+        "downhill"
+      ],
+      "description": "Potencia de montaje directo con 45 mm de longitud y elevación de 10 mm.",
+      "technical_notes": "Interfaz declarada Boxxer/Fox IS. La elevación +10 mm no equivale a un ángulo: se conserva en la etiqueta, documentación y perfil visual, sin inventar angle_deg. Abrazadera de 64 mm y seis tornillos. Peso con tornillos; no certifica compatibilidad con cualquier pletina.",
+      "image_key": "renthal-integra-35",
+      "published": true,
+      "sources": [
+        {
+          "url": "https://renthal.com/products/integra35-45mm-10-rise",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 45 × 35 mm · elevación +10 mm · negro/AluGold.",
+          "fields": [
+            "specs.mount_type",
+            "specs.bar_clamp_diameter_mm",
+            "specs.length_mm",
+            "specs.direct_mount_interface",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/STM114.jpg?v=1786358732",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9575e126-3ad0-5b9c-b233-647c1edf0081",
+      "brand_id": "e45e7a99-0ec7-57d1-a92a-2ab8fa27e548",
+      "slug": "oneup-v3-dropper",
+      "name": "OneUp V3 Dropper Post",
+      "category": "seatpost",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Tija telescópica V3 de 31,6 mm con 180 mm de recorrido.",
+      "technical_notes": "Longitud total 489 mm; insertion_mm indica la INSERCIÓN MÍNIMA de 115 mm, no una profundidad máxima ni una instalación recomendada para todos los cuadros. Altura extendida entre collar y raíles 210 mm. El mando se vende por separado y no se añade un selector. No se declara ningún año de modelo sin fuente. Se prioriza la tabla dimensional actual de galería; el enlace antiguo del apartado FAQ todavía muestra 480 mm.",
+      "image_key": "oneup-v3-dropper",
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.oneupcomponents.com/products/dropper-post-v3",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 31,6 mm · recorrido 180 mm · negro.",
+          "fields": [
+            "specs.diameter_mm",
+            "specs.length_mm",
+            "specs.insertion_mm",
+            "specs.travel_mm",
+            "specs.actuation",
+            "specs.weight_g",
+            "specs.maintenance",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0284/9430/files/OneUp-Components_V3Dropper_Dimensions_7cb2ae5d-7c9d-4126-84f5-1dca09837b58.jpg?v=1788561380",
+          "consulted_at": "2026-10-21",
+          "note": "Fila 180 mm: longitud total 489 mm, altura extendida 210 mm e inserción mínima 115 mm. Tabla actual de la galería de producto.",
+          "fields": [
+            "specs.length_mm",
+            "specs.insertion_mm"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0284/9430/products/OneUp-Components_V3Dropper_180Extended.jpg?v=1763513155",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "9f4f76fb-d7a9-516a-ab80-bd75142b56bc",
+      "brand_id": "d1d6313c-dc6d-59bd-8760-50873b266ebb",
+      "slug": "wtb-volt",
+      "name": "WTB Volt Fusion Form",
+      "category": "saddle",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Sillín Volt Fusion Form de 142 mm con raíles de titanio.",
+      "technical_notes": "Referencia Medium Fusion Form Titanium W065-0671. No hereda el SKU W065-0585 del Volt Titanium anterior ni el peso de Stainless. La sección exacta del raíl no se completa por deducción. La fuente declara Enduro; montarlo visualmente en descenso no certifica ese uso.",
+      "image_key": "wtb-volt",
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.wtb.com/products/volt",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante Medium Fusion Form Titanium W065-0671 de 142 × 265 mm, 225 g, negro.",
+          "fields": [
+            "specs.length_mm",
+            "specs.width_mm",
+            "specs.rail_interface",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0202/9884/files/Volt_Medium_Titanium_ISO_Web.png?v=1785927657",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "40ee27c3-f8c6-51f4-98c9-a99bed4a48c3",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v8",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "renthal-fatbar-35"
+        },
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "handlebar"
+        ]
+      },
+      "reference_notes": "Modelo comercial Renthal Fatbar 35 · 800 × 35 mm · elevación 30 mm · AluGold. Reconstrucción exterior aproximada ATLAS v8 a partir de ficha e imágenes oficiales; no es CAD ni acredita montaje mecánico. Fuente: https://renthal.com/products/fatbar35-30mm. Inferencias y limitaciones en docs/planning/11n-componentes-comerciales-de-contacto.md.",
+      "published": true
+    },
+    {
+      "id": "6ebb3b9b-3feb-527d-af32-74a6e683baa5",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v8",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "deity-racepoint-35"
+        },
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "handlebar"
+        ]
+      },
+      "reference_notes": "Modelo comercial DEITY Racepoint 35 · 810 × 35 mm · elevación 38 mm · negro/blanco. Reconstrucción exterior aproximada ATLAS v8 a partir de ficha e imágenes oficiales; no es CAD ni acredita montaje mecánico. Fuente: https://www.deitycomponents.com/racepoint_handlebar_38mm.html. Inferencias y limitaciones en docs/planning/11n-componentes-comerciales-de-contacto.md.",
+      "published": true
+    },
+    {
+      "id": "fcab514f-fa23-57ad-aca0-1325aed1a47e",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v8",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "stem_mount",
+        "parameters": {
+          "profile_key": "renthal-apex-35"
+        },
+        "anchors": {
+          "bar_clamp": {
+            "position": [
+              0.04,
+              0.0235,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "stem"
+        ]
+      },
+      "reference_notes": "Modelo comercial Renthal Apex 35 V2 · 40 × 35 mm · +5° · negro/negro. Reconstrucción exterior aproximada ATLAS v8 a partir de ficha e imágenes oficiales; no es CAD ni acredita montaje mecánico. Fuente: https://renthal.com/products/apex35-33mm-v2-stem-copy. Inferencias y limitaciones en docs/planning/11n-componentes-comerciales-de-contacto.md.",
+      "published": true
+    },
+    {
+      "id": "42ee14b4-f081-5db4-b8f3-1609dc584c3e",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v8",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "stem_mount",
+        "parameters": {
+          "profile_key": "renthal-integra-35"
+        },
+        "anchors": {
+          "bar_clamp": {
+            "position": [
+              0.045,
+              0.01,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": false
+          }
+        },
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "stem"
+        ]
+      },
+      "reference_notes": "Modelo comercial Renthal Integra 35 · 45 × 35 mm · elevación +10 mm · negro/AluGold. Reconstrucción exterior aproximada ATLAS v8 a partir de ficha e imágenes oficiales; no es CAD ni acredita montaje mecánico. Fuente: https://renthal.com/products/integra35-45mm-10-rise. Inferencias y limitaciones en docs/planning/11n-componentes-comerciales-de-contacto.md.",
+      "published": true
+    },
+    {
+      "id": "fe6ac338-c8ee-5099-875d-eb3fbb98fd25",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v8",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "oneup-v3-dropper"
+        },
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "seatpost"
+        ]
+      },
+      "reference_notes": "Modelo comercial OneUp V3 Dropper Post · 31,6 mm · recorrido 180 mm · negro. Reconstrucción exterior aproximada ATLAS v8 a partir de ficha e imágenes oficiales; no es CAD ni acredita montaje mecánico. Fuente: https://www.oneupcomponents.com/products/dropper-post-v3. Inferencias y limitaciones en docs/planning/11n-componentes-comerciales-de-contacto.md.",
+      "published": true
+    },
+    {
+      "id": "b5dd0092-9afe-5236-830a-d9b3c8b3d880",
+      "kind": "procedural",
+      "storage_path": null,
+      "generator_key": "atlas-bike-v8",
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "wtb-volt"
+        },
+        "anchors": {},
+        "paintable_nodes": [],
+        "selectable_nodes": [
+          "saddle"
+        ]
+      },
+      "reference_notes": "Modelo comercial WTB Volt Fusion Form · Medium · 142 × 265 mm · Titanium · negro. Reconstrucción exterior aproximada ATLAS v8 a partir de ficha e imágenes oficiales; no es CAD ni acredita montaje mecánico. Fuente: https://www.wtb.com/products/volt. Inferencias y limitaciones en docs/planning/11n-componentes-comerciales-de-contacto.md.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "13c6843c-cd87-569c-bdc6-1da69fd971b4",
+      "component_id": "3267f2bc-3b32-5fe3-846f-034db873efe5",
+      "label": "800 × 35 mm · elevación 30 mm · AluGold",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "M158-02-007-01",
+      "image_key": "renthal-fatbar-35",
+      "sources": [
+        {
+          "url": "https://renthal.com/products/fatbar35-30mm",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 800 × 35 mm · elevación 30 mm · AluGold.",
+          "fields": [
+            "specs.width_mm",
+            "specs.clamp_diameter_mm",
+            "specs.rise_mm",
+            "specs.backsweep_deg",
+            "specs.upsweep_deg",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/M158-02-007_01.jpg?v=1779429503",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "width_mm": 800,
+        "clamp_diameter_mm": 35,
+        "rise_mm": 30,
+        "backsweep_deg": 7,
+        "upsweep_deg": 5,
+        "weight_g": 305
+      },
+      "allowed_finishes": {
+        "default_finish_id": "alugold",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "alugold",
+            "label": "AluGold",
+            "image_key": "renthal-fatbar-35",
+            "material": {
+              "color": "#ad965f",
+              "metalness": 0.45,
+              "roughness": 0.42
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "40ee27c3-f8c6-51f4-98c9-a99bed4a48c3",
+      "price_reference": null
+    },
+    {
+      "id": "9597b33b-33b2-5613-b835-03a754e98a39",
+      "component_id": "f7977c58-8207-59bf-a7b3-86cca40c1859",
+      "label": "810 × 35 mm · elevación 38 mm · negro/blanco",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": null,
+      "image_key": "deity-racepoint-35",
+      "sources": [
+        {
+          "url": "https://www.deitycomponents.com/racepoint_handlebar_38mm.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 810 × 35 mm · elevación 38 mm · negro/blanco.",
+          "fields": [
+            "specs.width_mm",
+            "specs.clamp_diameter_mm",
+            "specs.rise_mm",
+            "specs.backsweep_deg",
+            "specs.upsweep_deg",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation"
+          ]
+        },
+        {
+          "url": "https://www.deitycomponents.com/uploads/1/6/0/8/16089364/7-deity-racepoint-handlebar-38r-white_orig.jpg",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "width_mm": 810,
+        "clamp_diameter_mm": 35,
+        "rise_mm": 38,
+        "backsweep_deg": 9,
+        "upsweep_deg": 5,
+        "weight_g": 330
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black-white",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black-white",
+            "label": "Negro con gráficos blancos",
+            "image_key": "deity-racepoint-35",
+            "material": {
+              "color": "#202020",
+              "metalness": 0.45,
+              "roughness": 0.42
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "6ebb3b9b-3feb-527d-af32-74a6e683baa5",
+      "price_reference": null
+    },
+    {
+      "id": "648748c6-2bf1-559b-a1fb-24c968531e26",
+      "component_id": "6fbfd9fa-4c66-5229-bb9b-c8d93e962a41",
+      "label": "40 × 35 mm · +5° · negro/negro",
+      "model_year": null,
+      "generation": "V2",
+      "manufacturer_code": "STM127-01-005-01",
+      "image_key": "renthal-apex-35-v2",
+      "sources": [
+        {
+          "url": "https://renthal.com/products/apex35-33mm-v2-stem-copy",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante de 40 mm V2, negro/negro. El identificador de URL conserva 33mm.",
+          "fields": [
+            "specs.mount_type",
+            "specs.steerer_diameter_mm",
+            "specs.bar_clamp_diameter_mm",
+            "specs.length_mm",
+            "specs.angle_deg",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/STM127-01.jpg?v=1784796860",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "mount_type": "steerer_clamp",
+        "steerer_diameter_mm": 28.6,
+        "bar_clamp_diameter_mm": 35,
+        "length_mm": 40,
+        "angle_deg": 5,
+        "weight_g": 140
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro / negro",
+            "image_key": "renthal-apex-35-v2",
+            "material": {
+              "color": "#242424",
+              "metalness": 0.45,
+              "roughness": 0.42
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "fcab514f-fa23-57ad-aca0-1325aed1a47e",
+      "price_reference": null
+    },
+    {
+      "id": "a081b946-887b-5460-ae43-2eed32e02697",
+      "component_id": "071285e0-dc10-51dd-a8f6-c4750721d7ad",
+      "label": "45 × 35 mm · elevación +10 mm · negro/AluGold",
+      "model_year": null,
+      "generation": null,
+      "manufacturer_code": "STM114-BKAG",
+      "image_key": "renthal-integra-35",
+      "sources": [
+        {
+          "url": "https://renthal.com/products/integra35-45mm-10-rise",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 45 × 35 mm · elevación +10 mm · negro/AluGold.",
+          "fields": [
+            "specs.mount_type",
+            "specs.bar_clamp_diameter_mm",
+            "specs.length_mm",
+            "specs.direct_mount_interface",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/STM114.jpg?v=1786358732",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "mount_type": "direct_mount",
+        "bar_clamp_diameter_mm": 35,
+        "length_mm": 45,
+        "direct_mount_interface": "Boxxer/Fox IS",
+        "weight_g": 159
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black-alugold",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black-alugold",
+            "label": "Negro / AluGold",
+            "image_key": "renthal-integra-35",
+            "material": {
+              "color": "#252525",
+              "metalness": 0.45,
+              "roughness": 0.42
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "42ee14b4-f081-5db4-b8f3-1609dc584c3e",
+      "price_reference": null
+    },
+    {
+      "id": "81d5d406-c63e-5259-a85c-45bf607d87ff",
+      "component_id": "9575e126-3ad0-5b9c-b233-647c1edf0081",
+      "label": "31,6 mm · recorrido 180 mm · negro",
+      "model_year": null,
+      "generation": "V3",
+      "manufacturer_code": "1C0980",
+      "image_key": "oneup-v3-dropper",
+      "sources": [
+        {
+          "url": "https://www.oneupcomponents.com/products/dropper-post-v3",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante acotada 31,6 mm · recorrido 180 mm · negro.",
+          "fields": [
+            "specs.diameter_mm",
+            "specs.length_mm",
+            "specs.insertion_mm",
+            "specs.travel_mm",
+            "specs.actuation",
+            "specs.weight_g",
+            "specs.maintenance",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0284/9430/files/OneUp-Components_V3Dropper_Dimensions_7cb2ae5d-7c9d-4126-84f5-1dca09837b58.jpg?v=1788561380",
+          "consulted_at": "2026-10-21",
+          "note": "Fila 180 mm: longitud total 489 mm, altura extendida 210 mm e inserción mínima 115 mm. Tabla actual de la galería de producto.",
+          "fields": [
+            "specs.length_mm",
+            "specs.insertion_mm"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0284/9430/products/OneUp-Components_V3Dropper_180Extended.jpg?v=1763513155",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "diameter_mm": 31.6,
+        "length_mm": 489,
+        "insertion_mm": 115,
+        "travel_mm": 180,
+        "actuation": "Cable interno; mando y abrazadera se venden por separado",
+        "weight_g": 498,
+        "maintenance": {
+          "documents": [
+            {
+              "title": "V3 Dropper Post · especificaciones y mantenimiento",
+              "url": "https://www.oneupcomponents.com/products/dropper-post-v3",
+              "revision": "V3"
+            },
+            {
+              "title": "V3 Dropper · tabla dimensional oficial",
+              "url": "https://cdn.shopify.com/s/files/1/0284/9430/files/OneUp-Components_V3Dropper_Dimensions_7cb2ae5d-7c9d-4126-84f5-1dca09837b58.jpg?v=1788561380",
+              "revision": "V3"
+            }
+          ],
+          "tasks": [
+            {
+              "name": "Limpieza y engrase",
+              "interval_hours": 120,
+              "source_url": "https://www.oneupcomponents.com/products/dropper-post-v3"
+            },
+            {
+              "name": "Servicio completo",
+              "interval_hours": 350,
+              "source_url": "https://www.oneupcomponents.com/products/dropper-post-v3"
+            }
+          ]
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": "oneup-v3-dropper",
+            "material": {
+              "color": "#1c1c1c",
+              "metalness": 0.45,
+              "roughness": 0.42
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "fe6ac338-c8ee-5099-875d-eb3fbb98fd25",
+      "price_reference": null
+    },
+    {
+      "id": "f6c80e84-1939-5a40-94ca-54815ef95ca4",
+      "component_id": "9f4f76fb-d7a9-516a-ab80-bd75142b56bc",
+      "label": "Medium · 142 × 265 mm · Titanium · negro",
+      "model_year": null,
+      "generation": "Fusion Form",
+      "manufacturer_code": "W065-0671",
+      "image_key": "wtb-volt",
+      "sources": [
+        {
+          "url": "https://www.wtb.com/products/volt",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha oficial vigente; variante Medium Fusion Form Titanium W065-0671 de 142 × 265 mm, 225 g, negro.",
+          "fields": [
+            "specs.length_mm",
+            "specs.width_mm",
+            "specs.rail_interface",
+            "specs.weight_g",
+            "label",
+            "allowed_finishes",
+            "generation",
+            "manufacturer_code"
+          ]
+        },
+        {
+          "url": "https://cdn.shopify.com/s/files/1/0202/9884/files/Volt_Medium_Titanium_ISO_Web.png?v=1785927657",
+          "consulted_at": "2026-10-21",
+          "note": "Fotografía oficial de la variante seleccionada; procedencia y hash original en el documento 11n. No acredita cotas ocultas.",
+          "fields": [
+            "image_key",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "length_mm": 265,
+        "width_mm": 142,
+        "rail_interface": "Raíles de titanio",
+        "weight_g": 225
+      },
+      "allowed_finishes": {
+        "default_finish_id": "black",
+        "custom_color_enabled": false,
+        "options": [
+          {
+            "id": "black",
+            "label": "Negro",
+            "image_key": "wtb-volt",
+            "material": {
+              "color": "#202020",
+              "metalness": 0.05,
+              "roughness": 0.75
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b5dd0092-9afe-5236-830a-d9b3c8b3d880",
+      "price_reference": null
+    }
+  ]
+}

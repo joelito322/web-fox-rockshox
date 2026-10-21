@@ -1,4 +1,5 @@
 import { assemblyV5 } from "./assemblyV5";
+import { commercialCockpitMount } from "./assemblyV8";
 import { assembly, type Assembly, type Point } from "./assembly";
 import type { Configuration, Slot, VariantMap } from "./index";
 
@@ -71,7 +72,7 @@ export function assemblyV2(
     ground: base.rear[1] - base.radius("rear") - 0.007,
   };
 }
-export function resolveAssembly(
+function publishedAssembly(
   configuration: Configuration,
   variants: VariantMap,
 ): Assembly {
@@ -98,4 +99,8 @@ export function resolveAssembly(
   )
     ? assemblyV2(configuration, variants)
     : assembly(configuration, variants);
+}
+
+export function resolveAssembly(configuration: Configuration, variants: VariantMap): Assembly {
+  return commercialCockpitMount(publishedAssembly(configuration, variants), configuration, variants);
 }
