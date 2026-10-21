@@ -2,8 +2,10 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { useAuth } from "../auth/provider";
-import { readBuild, saveBuild } from "./api";
-import { readVariants } from "../catalog/api";
+import { readCachedBuild, cacheSavedBuild, saveBuild } from "./api";
+import { readCachedVariants } from "../catalog/api";
+import { captureSavedBuild } from "../bike-preview/api";
+import { buildPreviewKey } from "../bike-preview/model";
 import { VariantInformation } from "../catalog/VariantInformation";
 import { slotLabels } from "../configurator/model";
 import { Drawer } from "../../components/ui/Drawer";
@@ -27,10 +29,13 @@ export function BuildDetails({
   const initialized = useRef(false);
   const query = useQuery({
     queryKey: ["build-detail", auth.user!.id, id],
-    queryFn: async () => {
-      const build = await readBuild(id),
-        variants = await readVariants(
+    staleTime: 30_000,
+    queryFn: async ({ signal }) => {
+      const build = await readCachedBuild(cache, auth.user!.id, id, signal),
+        variants = await readCachedVariants(
+          cache,
           build.configuration.items.map((i) => i.variantId),
+          signal,
         );
       return { ...build, variants };
     },
@@ -53,12 +58,38 @@ export function BuildDetails({
     setBusy(true);
     setError("");
     try {
-      await saveBuild(id, query.data.revision, {
+      const previousPreview = cache.getQueryData<Blob>(
+        buildPreviewKey(auth.user!.id, id, query.data.revision),
+      );
+      const configuration = {
         ...query.data.configuration,
         name: name.trim(),
+      };
+      const header = await saveBuild(id, query.data.revision, configuration);
+      cacheSavedBuild(cache, auth.user!.id, header, configuration);
+      cache.setQueryData(["build-detail", auth.user!.id, id], {
+        ...query.data,
+        ...header,
+        configuration,
       });
-      await cache.invalidateQueries({ queryKey: ["builds", auth.user!.id] });
-      await query.refetch();
+      void cache.invalidateQueries({ queryKey: ["builds", auth.user!.id] });
+      const user = auth.user!.id;
+      void captureSavedBuild(
+        user,
+        id,
+        header.revision,
+        configuration,
+        Object.fromEntries(query.data.variants.map((v) => [v.id, v])),
+        previousPreview,
+      )
+        .then((blob) => {
+          if (blob)
+            cache.setQueryData(
+              buildPreviewKey(user, id, header.revision),
+              blob,
+            );
+        })
+        .catch(() => {});
       setName(name.trim());
       setBaseline(name.trim());
       setMessage("Nombre actualizado.");

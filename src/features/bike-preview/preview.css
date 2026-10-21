@@ -1,0 +1,5 @@
+.bike-preview { display:block; position:relative; width:100%; aspect-ratio:1.6; overflow:hidden; background:#e8e9e1; }
+.bike-preview-image { display:block; width:100%; height:100%; object-fit:contain; }
+.preset-card > .bike-preview { padding:0; }
+.bicycle-media > .bike-preview { height:100%; aspect-ratio:auto; }
+.bicycle-media .bike-preview-image { width:100%; height:100%; margin:0; object-fit:contain; }

@@ -5,11 +5,27 @@
 .route-content,.table-scroll { min-width:0; }
 .auth-layout { width:100%; max-width:none; }
 .auth-form { width:100%; max-width:620px; justify-self:center; }
-/* Saved builds and reference bikes grow naturally with the available space. */
-.preset-grid { grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr)); }
+/* Keep a single bicycle in its column instead of stretching across the gallery. */
+.preset-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.preset-grid .preset-card { min-width:0; }
+.preset-grid h2,.preset-grid .row-button { overflow-wrap:anywhere; }
+.preset-grid .field,.preset-grid select,.build-card-heading h2 { min-width:0; }
 @media(min-width:1450px) {
   .bicycles-page .bicycle-media { aspect-ratio:auto; height:360px; }
 }
 @media(max-width:720px) {
-  .preset-grid { grid-template-columns:minmax(0,1fr); }
+  .preset-grid,.bicycles-page .preset-grid { gap:12px; }
+  .preset-grid .preset-card>div,.bicycles-page .preset-grid .bicycle-card>div { padding:12px; }
+  .preset-grid .preset-card h2,.bicycles-page .preset-grid .bicycle-card h2 { font-size:clamp(1.1rem,4vw,1.5rem); }
+  .preset-grid .preset-card p { font-size:.7rem; }
+  .preset-grid .button,.bicycles-page .preset-grid .bicycle-card .button { min-width:0; min-height:44px; padding:8px 5px; gap:4px; font-size:.65rem; overflow-wrap:anywhere; }
+  .bicycles-page .preset-grid .bicycle-card .inline-actions { grid-template-columns:minmax(0,1fr); }
+  .bicycles-page .preset-grid .bicycle-card .field select { width:100%; padding:8px 4px; font-size:.7rem; }
+  .bicycles-page .preset-grid .bicycle-kind { left:8px; top:8px; padding:4px 6px; font-size:.45rem; }
+  .bicycles-page .preset-grid .bicycle-media-arrow { right:8px; bottom:8px; width:26px; height:26px; }
+  .build-card-heading { flex-wrap:wrap; }
+}
+@media(max-width:360px) {
+  .site-header:not(.is-landing) { padding-inline:12px; }
+  .site-header:not(.is-landing) .header-nav { gap:8px; }
 }

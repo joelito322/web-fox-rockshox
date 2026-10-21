@@ -4,6 +4,7 @@ import {
   Suspense,
   useCallback,
   useEffect,
+  useMemo,
   useRef,
   useState,
   type ErrorInfo,
@@ -21,7 +22,7 @@ import {
   Trash2,
 } from "lucide-react";
 import { useAuth } from "../auth/provider";
-import { useCatalog, readVariants } from "../catalog/api";
+import { useCatalog, readCachedVariants } from "../catalog/api";
 import {
   categoryLabels,
   selectVariant,
@@ -43,9 +44,19 @@ import {
   type Slot,
   type VariantMap,
 } from "./model";
-import { readBuild, saveBuild } from "../garage/api";
+import {
+  readBuild,
+  readCachedBuild,
+  cacheSavedBuild,
+  saveBuild,
+} from "../garage/api";
+import {
+  captureSavedBuild,
+  readCachedPresetPreviewSources,
+} from "../bike-preview/api";
+import { buildPreviewKey } from "../bike-preview/model";
 import { Empty, Loading, Notice } from "../../components/ui/Feedback";
-import { requireSupabase, userError } from "../../lib/supabase";
+import { userError } from "../../lib/supabase";
 import { ConfirmDialog } from "../../components/ui/ConfirmDialog";
 import { MotionRegion } from "../../components/ui/MotionRegion";
 import { VariantInformation } from "../catalog/VariantInformation";
@@ -99,13 +110,19 @@ function Configurator({ buildId }: { buildId?: string }) {
   const [replacement, setReplacement] = useState<SelectedVariant>();
   const [signout, setSignout] = useState<null | (() => void)>(null);
   const request = useRef(0);
+  const preloadTimer = useRef<number>();
   const current = useRef(configuration);
   current.current = configuration;
   const source =
     buildId ??
     `new:${params.get("preset") ?? ""}:${params.get("variant") ?? ""}`;
   const draftKey = `atlas:draft:${auth.user!.id}:${source}`;
-  const dirty = ready && canonical(configuration) !== confirmed;
+  const signature = useMemo(() => canonical(configuration), [configuration]);
+  const dirty = ready && signature !== confirmed;
+  const mountWarnings = useMemo(
+    () => warnings(configuration, variants),
+    [configuration.items, variants],
+  );
   const leaving = useRef(false);
   const blocker = useBlocker(
     ({ currentLocation, nextLocation }) =>
@@ -114,15 +131,43 @@ function Configurator({ buildId }: { buildId?: string }) {
       (currentLocation.pathname !== nextLocation.pathname ||
         currentLocation.search !== nextLocation.search),
   );
-  const [pieceSearch, setPieceSearch] = useState(""),
-    [piecePage, setPiecePage] = useState(0);
+  const [pieceFilter, setPieceFilter] = useState({ slot, search: "", page: 0 });
+  // A slot change uses its clean filters immediately, before effects run.
+  const pieceSearch = pieceFilter.slot === slot ? pieceFilter.search : "";
+  const piecePage = pieceFilter.slot === slot ? pieceFilter.page : 0;
+  const [settledSearch, setSettledSearch] = useState({
+    slot,
+    search: "",
+    page: 0,
+  });
+  useEffect(() => {
+    const timer = window.setTimeout(
+      () => setSettledSearch({ slot, search: pieceSearch, page: piecePage }),
+      250,
+    );
+    return () => window.clearTimeout(timer);
+  }, [slot, pieceSearch, piecePage]);
+  function setPiecePage(update: number | ((value: number) => number)) {
+    const next = {
+      slot,
+      search: pieceSearch,
+      page: typeof update === "function" ? update(piecePage) : update,
+    };
+    setPieceFilter(next);
+    setSettledSearch(next);
+  }
   useEffect(() => {
     request.current++;
+    window.clearTimeout(preloadTimer.current);
     setPending(false);
-    setPieceSearch("");
-    setPiecePage(0);
+    setPieceFilter({ slot, search: "", page: 0 });
+    setSettledSearch({ slot, search: "", page: 0 });
   }, [slot]);
-  const catalog = useCatalog(slotCategories[slot], pieceSearch, piecePage);
+  const catalog = useCatalog(
+    slotCategories[slot],
+    settledSearch.slot === slot ? settledSearch.search : "",
+    settledSearch.slot === slot ? settledSearch.page : 0,
+  );
   const item = configuration.items.find((i) => i.slot === slot);
   const selected = item ? variants[item.variantId] : undefined;
   const onUnavailable = useCallback(() => {
@@ -133,45 +178,37 @@ function Configurator({ buildId }: { buildId?: string }) {
   }, []);
   useEffect(() => {
     let active = true;
+    const controller = new AbortController();
     async function load() {
+      // Load the renderer alongside the data instead of after the last query.
+      const sceneModule =
+        "WebGLRenderingContext" in window
+          ? import("./scene/BikeScene").catch(() => undefined)
+          : undefined;
       try {
         let initial = emptyConfiguration();
         let baseline = canonical(initial);
         let recovered = false;
         if (buildId) {
-          const b = await readBuild(buildId);
+          const b = await readCachedBuild(
+            queryClient,
+            auth.user!.id,
+            buildId,
+            controller.signal,
+          );
           initial = b.configuration;
           baseline = canonical(initial);
           if (active) setRevision(b.revision);
         }
-        if (params.get("preset")) {
-          const { data, error } = await requireSupabase()
-            .from("bike_presets")
-            .select(
-              "name,published,selectable,bike_preset_items(slot,variant_id,finish_id,custom_color)",
-            )
-            .eq("id", params.get("preset")!)
-            .single();
-          if (error) throw error;
-          if (!data.published || !data.selectable)
-            throw new Error("preset_unavailable");
-          initial = configurationSchema.parse({
-            schemaVersion: 1,
-            name: data.name,
-            items: data.bike_preset_items.map(
-              (i: {
-                slot: string;
-                variant_id: string;
-                finish_id: string;
-                custom_color: string | null;
-              }) => ({
-                slot: i.slot,
-                variantId: i.variant_id,
-                finishId: i.finish_id,
-                customColor: i.custom_color,
-              }),
-            ),
-          });
+        const presetId = params.get("preset");
+        if (presetId) {
+          const presets = await readCachedPresetPreviewSources(
+            queryClient,
+            [presetId],
+            controller.signal,
+          );
+          if (!presets[presetId]) throw new Error("preset_unavailable");
+          initial = presets[presetId];
         }
         const local = localStorage.getItem(draftKey);
         if (local) {
@@ -196,12 +233,16 @@ function Configurator({ buildId }: { buildId?: string }) {
             localStorage.removeItem(draftKey);
           }
         }
-        const all = await readVariants([
-          ...new Set([
-            ...initial.items.map((i) => i.variantId),
-            ...(params.get("variant") ? [params.get("variant")!] : []),
-          ]),
-        ]);
+        const all = await readCachedVariants(
+          queryClient,
+          [
+            ...new Set([
+              ...initial.items.map((i) => i.variantId),
+              ...(params.get("variant") ? [params.get("variant")!] : []),
+            ]),
+          ],
+          controller.signal,
+        );
         const map = Object.fromEntries(all.map((v) => [v.id, v]));
         if (
           params.get("preset") &&
@@ -244,7 +285,8 @@ function Configurator({ buildId }: { buildId?: string }) {
           if (active) setTextMode(true);
         } else {
           try {
-            const scene = await import("./scene/BikeScene");
+            const scene = await sceneModule;
+            if (!scene) throw new Error("visual_unavailable");
             await Promise.all(
               initial.items
                 .map((i) => map[i.variantId]?.visual_assets)
@@ -267,6 +309,8 @@ function Configurator({ buildId }: { buildId?: string }) {
     void load();
     return () => {
       active = false;
+      controller.abort();
+      window.clearTimeout(preloadTimer.current);
       request.current++;
     };
   }, []);
@@ -311,6 +355,25 @@ function Configurator({ buildId }: { buildId?: string }) {
       signout();
     } else if (blocker.state === "blocked") blocker.proceed();
   }
+  function preloadPiece(variant: SelectedVariant, wait = false) {
+    window.clearTimeout(preloadTimer.current);
+    if (textMode || !variant.visual_assets) return;
+    if (wait) {
+      preloadTimer.current = window.setTimeout(
+        () => preloadPiece(variant),
+        120,
+      );
+      return;
+    }
+    const connection = (
+      navigator as Navigator & { connection?: { saveData?: boolean } }
+    ).connection;
+    if (connection?.saveData) return;
+    // Warm only an option the rider points to; never download the entire catalog.
+    void import("./scene/BikeScene")
+      .then((scene) => scene.prepareVisual(variant.visual_assets!))
+      .catch(() => {});
+  }
   async function apply(v: SelectedVariant, approved = false) {
     if (
       slot === "frame" &&
@@ -328,9 +391,12 @@ function Configurator({ buildId }: { buildId?: string }) {
     try {
       if (!textMode && v.visual_assets) {
         const scene = await import("./scene/BikeScene");
-        await scene.prepareVisual(v.visual_assets);
-        if (target === "frame" && intendedPiece?.visual_assets)
-          await scene.prepareVisual(intendedPiece.visual_assets);
+        await Promise.all([
+          scene.prepareVisual(v.visual_assets),
+          ...(target === "frame" && intendedPiece?.visual_assets
+            ? [scene.prepareVisual(intendedPiece.visual_assets)]
+            : []),
+        ]);
       }
       if (serial !== request.current) return;
       if (canonical(current.current) !== dependencies) {
@@ -390,6 +456,22 @@ function Configurator({ buildId }: { buildId?: string }) {
     setStatus("Guardando…");
     try {
       const result = await saveBuild(saveId, expected, snapshot);
+      cacheSavedBuild(queryClient, auth.user!.id, result, snapshot);
+      void captureSavedBuild(
+        auth.user!.id,
+        result.id,
+        result.revision,
+        snapshot,
+        variants,
+      )
+        .then((blob) => {
+          if (blob)
+            queryClient.setQueryData(
+              buildPreviewKey(auth.user!.id, result.id, result.revision),
+              blob,
+            );
+        })
+        .catch(() => {});
       setId(result.id);
       setRevision(result.revision);
       setConfirmed(signature);
@@ -399,7 +481,7 @@ function Configurator({ buildId }: { buildId?: string }) {
           : "Instantánea guardada. Hay cambios posteriores sin guardar.",
       );
       setConflict(false);
-      await queryClient.invalidateQueries({
+      void queryClient.invalidateQueries({
         queryKey: ["builds", auth.user!.id],
       });
       return true;
@@ -407,11 +489,27 @@ function Configurator({ buildId }: { buildId?: string }) {
       try {
         const stored = await readBuild(saveId);
         if (canonical(stored.configuration) === signature) {
+          cacheSavedBuild(queryClient, auth.user!.id, stored, snapshot);
+          void captureSavedBuild(
+            auth.user!.id,
+            stored.id,
+            stored.revision,
+            snapshot,
+            variants,
+          )
+            .then((blob) => {
+              if (blob)
+                queryClient.setQueryData(
+                  buildPreviewKey(auth.user!.id, stored.id, stored.revision),
+                  blob,
+                );
+            })
+            .catch(() => {});
           setId(stored.id);
           setRevision(stored.revision);
           setConfirmed(signature);
           setStatus("Guardado confirmado.");
-          await queryClient.invalidateQueries({
+          void queryClient.invalidateQueries({
             queryKey: ["builds", auth.user!.id],
           });
           return true;
@@ -442,9 +540,19 @@ function Configurator({ buildId }: { buildId?: string }) {
       return;
     try {
       const stored = await readBuild(id);
-      const list = await readVariants(
+      const list = await readCachedVariants(
+        queryClient,
         stored.configuration.items.map((i) => i.variantId),
       );
+      if (!textMode) {
+        const scene = await import("./scene/BikeScene");
+        await Promise.all(
+          list.flatMap((v) =>
+            v.visual_assets ? [scene.prepareVisual(v.visual_assets)] : [],
+          ),
+        );
+      }
+      cacheSavedBuild(queryClient, auth.user!.id, stored, stored.configuration);
       setVariants(Object.fromEntries(list.map((v) => [v.id, v])));
       setConfiguration(stored.configuration);
       setConfirmed(canonical(stored.configuration));
@@ -488,19 +596,21 @@ function Configurator({ buildId }: { buildId?: string }) {
       <div className="editor-layout">
         <section className="viewer" aria-label="Montaje visual">
           {configuration.items.length && !textMode ? (
-            !visualReady ? <Loading label="Preparando vista 3D" /> : (
-            <SceneBoundary onFailure={onUnavailable}>
-              <Suspense fallback={<Loading label="Cargando visor" />}>
-                <Scene
-                  configuration={configuration}
-                  variants={variants}
-                  onSelect={setSlot}
-                  selectedSlot={slot}
-                  view={view}
-                  onUnavailable={onUnavailable}
-                />
-              </Suspense>
-            </SceneBoundary>
+            !visualReady ? (
+              <Loading label="Preparando vista 3D" />
+            ) : (
+              <SceneBoundary onFailure={onUnavailable}>
+                <Suspense fallback={<Loading label="Cargando visor" />}>
+                  <Scene
+                    configuration={configuration}
+                    variants={variants}
+                    onSelect={setSlot}
+                    selectedSlot={slot}
+                    view={view}
+                    onUnavailable={onUnavailable}
+                  />
+                </Suspense>
+              </SceneBoundary>
             )
           ) : (
             <Empty
@@ -571,7 +681,10 @@ function Configurator({ buildId }: { buildId?: string }) {
           {error && <Notice>{error}</Notice>}
           {pending && <Loading label="Preparando pieza" />}
           {selected && (
-            <MotionRegion className="selected-piece" motionKey={`${slot}:${selected.id}`}>
+            <MotionRegion
+              className="selected-piece"
+              motionKey={`${slot}:${selected.id}`}
+            >
               <p>{selected.component.brands.name}</p>
               <h2>{selected.component.name}</h2>
               <span>{selected.label}</span>
@@ -645,8 +758,7 @@ function Configurator({ buildId }: { buildId?: string }) {
             <input
               value={pieceSearch}
               onChange={(e) => {
-                setPieceSearch(e.target.value);
-                setPiecePage(0);
+                setPieceFilter({ slot, search: e.target.value, page: 0 });
               }}
             />
           </label>
@@ -667,6 +779,14 @@ function Configurator({ buildId }: { buildId?: string }) {
                   <button
                     disabled={pending || item?.variantId === v.id}
                     key={v.id}
+                    onPointerEnter={() =>
+                      preloadPiece(selectVariant(c, v), true)
+                    }
+                    onPointerLeave={() =>
+                      window.clearTimeout(preloadTimer.current)
+                    }
+                    onFocus={() => preloadPiece(selectVariant(c, v))}
+                    onPointerDown={() => preloadPiece(selectVariant(c, v))}
                     onClick={() => void apply(selectVariant(c, v))}
                   >
                     <span>
@@ -718,9 +838,9 @@ function Configurator({ buildId }: { buildId?: string }) {
           )}
           <details className="mount-notes">
             <summary>
-              Avisos del montaje ({warnings(configuration, variants).length})
+              Avisos del montaje ({mountWarnings.length})
             </summary>
-            {warnings(configuration, variants).map((w) => (
+            {mountWarnings.map((w) => (
               <p key={w.code}>{w.message}</p>
             ))}
           </details>
