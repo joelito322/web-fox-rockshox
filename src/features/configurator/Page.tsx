@@ -110,6 +110,12 @@ function Configurator({ buildId }: { buildId?: string }) {
   const [confirmed, setConfirmed] = useState("");
   const [variants, setVariants] = useState<VariantMap>({});
   const [slot, setSlot] = useState<Slot>("frame");
+  const [highlightedSlot, setHighlightedSlot] = useState<Slot>();
+  const selectSlot = useCallback((next: Slot) => {
+    setSlot(next);
+    setHighlightedSlot(next);
+  }, []);
+  const clearHighlight = useCallback(() => setHighlightedSlot(undefined), []);
   const [frameSize, setFrameSize] = useState("all");
   const [selectionNote, setSelectionNote] = useState("");
   const [wheelSetup, setWheelSetup] = useState<WheelSetup>("all");
@@ -480,13 +486,14 @@ function Configurator({ buildId }: { buildId?: string }) {
         return;
       }
       let next = chooseTogether(current.current, choices);
+      setHighlightedSlot(target);
       const intention = target === "frame" ? intendedPiece : undefined;
       if (intention) {
         const intendedSlot = slots.find(
           (s) => slotCategories[s] === intention.component.category,
         )!;
         next = choose(next, intendedSlot, intention);
-        setSlot(intendedSlot);
+        selectSlot(intendedSlot);
         setIntendedPiece(undefined);
       }
       setPrevious(current.current);
@@ -742,7 +749,7 @@ function Configurator({ buildId }: { buildId?: string }) {
           configuration={configuration}
           variants={variants}
           slot={slot}
-          onSelect={setSlot}
+          onSelect={selectSlot}
         />
         <section className="viewer" aria-label="Montaje visual">
           {configuration.items.length && !textMode ? (
@@ -754,8 +761,9 @@ function Configurator({ buildId }: { buildId?: string }) {
                   <Scene
                     configuration={configuration}
                     variants={variants}
-                    onSelect={setSlot}
-                    selectedSlot={slot}
+                    onSelect={selectSlot}
+                    selectedSlot={highlightedSlot}
+                    onDeselect={clearHighlight}
                     view={view}
                     onUnavailable={onUnavailable}
                     inspection={suspension.inspection}
@@ -811,7 +819,7 @@ function Configurator({ buildId }: { buildId?: string }) {
         <aside className="editor-panel">
           <AssemblyNavigation
             slot={slot}
-            onSelect={setSlot}
+            onSelect={selectSlot}
             wheelSetup={wheelSetup}
             onWheelSetup={changeWheelSetup}
             frameSize={frameSize}

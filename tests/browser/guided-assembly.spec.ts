@@ -1,5 +1,6 @@
 import { expect, test, type Page } from "@playwright/test";
 import { readFileSync } from "node:fs";
+import { installSceneMetrics } from "../../scripts/lib/scene-metrics.mjs";
 import { selectAssemblySlot } from "./helpers/assembly";
 const examples = JSON.parse(
   readFileSync("supabase/catalog/visual-v7-examples.json", "utf8"),
@@ -19,6 +20,7 @@ test.beforeEach(async ({ page }) => {
     "Run the guided scenario with the authenticated runner",
   );
   test.setTimeout(120000);
+  await page.addInitScript(installSceneMetrics);
   await page.goto("/entrar");
   await page
     .getByLabel("Correo electrónico")
@@ -235,4 +237,35 @@ test("direct palettes, paired brakes and the responsive index stay usable", asyn
     path: `/tmp/atlas-guided-${testInfo.project.name}.png`,
     fullPage: true,
   });
+});
+
+test("clicking empty space clears the pulse while keeping the assembly panel", async ({
+  page,
+}) => {
+  await pickSlot(page, "Horquilla");
+  await page.waitForTimeout(500);
+  const frameCount = () =>
+    page.evaluate(() => (window as any).atlasSceneProof.frames.length);
+  const playing = await frameCount();
+  await expect.poll(frameCount).toBeGreaterThan(playing);
+  const reads: string[] = [];
+  page.on("request", (request) => {
+    if (request.url().includes("/rest/v1/")) reads.push(request.url());
+  });
+  await page.locator(".viewer canvas").click({ position: { x: 8, y: 8 } });
+  await expect(page.locator("#assembly-selection h1")).toHaveText("Horquilla");
+  await expect(
+    page
+      .getByRole("complementary", { name: "Piezas del montaje", exact: true })
+      .getByRole("button", {
+        name: "Horquilla",
+        exact: true,
+        includeHidden: true,
+      }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await page.waitForTimeout(700);
+  const idle = await frameCount();
+  await page.waitForTimeout(350);
+  expect(await frameCount()).toBe(idle);
+  expect(reads).toEqual([]);
 });

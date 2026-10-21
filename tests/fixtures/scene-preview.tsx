@@ -221,6 +221,7 @@ function Proof() {
           variants={variants}
           view={view}
           onSelect={setSelectedSlot}
+          onDeselect={() => setSelectedSlot(undefined)}
           selectedSlot={selectedSlot}
           onUnavailable={() => {
             throw new Error("Scene unavailable");

@@ -4,6 +4,8 @@ import * as THREE from "three";
 // cannot carry their highlight into an unselected mesh sharing the source material.
 export function highlightMeshes(group: THREE.Group) {
   const release: (() => void)[] = [];
+  const highlighted: THREE.MeshStandardMaterial[] = [];
+  let released = false;
   group.traverse((node) => {
     if (!(node instanceof THREE.Mesh)) return;
     const original = node.material;
@@ -13,6 +15,7 @@ export function highlightMeshes(group: THREE.Group) {
       if (copy instanceof THREE.MeshStandardMaterial) {
         copy.emissive.set("#9bb566");
         copy.emissiveIntensity = 0.23;
+        highlighted.push(copy);
       }
       return copy;
     });
@@ -23,7 +26,10 @@ export function highlightMeshes(group: THREE.Group) {
       // React keeps updating the source material when the rider paints a piece.
       sources.forEach((source, index) => {
         const copy = copies[index];
-        if (source instanceof THREE.MeshStandardMaterial && copy instanceof THREE.MeshStandardMaterial)
+        if (
+          source instanceof THREE.MeshStandardMaterial &&
+          copy instanceof THREE.MeshStandardMaterial
+        )
           copy.color.copy(source.color);
       });
     };
@@ -33,5 +39,20 @@ export function highlightMeshes(group: THREE.Group) {
       copies.forEach((copy) => copy.dispose());
     });
   });
-  return () => release.forEach((restore) => restore());
+  const restore = () => {
+    if (released) return;
+    released = true;
+    release.forEach((callback) => callback());
+  };
+  restore.setIntensity = (intensity: number) => {
+    if (released) return;
+    highlighted.forEach((material) => {
+      material.emissiveIntensity = intensity;
+    });
+  };
+  return restore;
 }
+
+/** Slow, low-amplitude pulse: no flashing or changes to the underlying paint. */
+export const selectionIntensity = (seconds: number) =>
+  0.36 + 0.24 * Math.cos((seconds * Math.PI * 2) / 2.4);

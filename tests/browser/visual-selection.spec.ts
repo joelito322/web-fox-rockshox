@@ -59,6 +59,15 @@ for (const discipline of ["enduro", "downhill"])
       bounds.y + ((1 - spot.y) / 2) * bounds.height,
     );
     await expect(page.getByLabel("Pieza seleccionada")).toHaveText("Cuadro");
+    await page.waitForTimeout(350);
+    const pulseStart = await canvas.screenshot();
+    await page.waitForTimeout(700);
+    expect((await canvas.screenshot()).equals(pulseStart)).toBe(false);
+    await page.emulateMedia({ reducedMotion: "reduce" });
+    await page.waitForTimeout(700);
+    const fixed = await canvas.screenshot();
+    await page.waitForTimeout(350);
+    expect((await canvas.screenshot()).equals(fixed)).toBe(true);
     const before = await canvas.screenshot();
     await page
       .getByRole("combobox", { name: "Cámara de revisión" })
@@ -67,6 +76,19 @@ for (const discipline of ["enduro", "downhill"])
     await expect
       .poll(async () => !(await canvas.screenshot()).equals(before))
       .toBe(true);
+    const empty = (await canvas.boundingBox())!;
+    await page.mouse.click(empty.x + 8, empty.y + empty.height - 8);
+    await expect(page.getByLabel("Pieza seleccionada")).toHaveText(
+      "Sin selección",
+    );
+    await page.waitForTimeout(700);
+    const frames = await page.evaluate(
+      () => (window as any).atlasSceneProof.frames.length,
+    );
+    await page.waitForTimeout(300);
+    expect(
+      await page.evaluate(() => (window as any).atlasSceneProof.frames.length),
+    ).toBe(frames);
   });
 
 test("cached shadows survive camera changes and refresh when a piece changes", async ({

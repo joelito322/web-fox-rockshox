@@ -387,6 +387,7 @@ function BikeScene({
   configuration,
   variants,
   onSelect,
+  onDeselect,
   view,
   onUnavailable,
   selectedSlot,
@@ -396,6 +397,7 @@ function BikeScene({
   configuration: Configuration;
   variants: VariantMap;
   onSelect: (slot: Slot) => void;
+  onDeselect?: () => void;
   view: string;
   onUnavailable: () => void;
   selectedSlot?: Slot;
@@ -406,6 +408,7 @@ function BikeScene({
   );
   return (
     <Canvas
+      onPointerMissed={onDeselect}
       shadows="percentage"
       frameloop="demand"
       dpr={[1, 1.5]}
