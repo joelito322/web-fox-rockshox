@@ -1,9 +1,9 @@
 import { z } from "zod";
 import { useSyncExternalStore } from "react";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
-import { readVariants } from "./catalog/api";
+import { readCachedVariants } from "./catalog/api";
 import {
   categories,
   categoryLabels,
@@ -70,11 +70,14 @@ export function useComparison() {
 }
 export default function ComparePage() {
   const compare = useComparison();
+  const cache = useQueryClient();
   const query = useQuery({
     queryKey: ["compare", compare.items.map((i) => i.id)],
     enabled: !!compare.items.length,
+    staleTime: 300_000,
     queryFn: ({ signal }) =>
-      readVariants(
+      readCachedVariants(
+        cache,
         compare.items.map((i) => i.id),
         signal,
       ),

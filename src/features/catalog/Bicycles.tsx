@@ -1,18 +1,22 @@
 import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { z } from "zod";
 import { ArrowUpRight, Search } from "lucide-react";
 import CatalogPage from "./Pages";
-import { readVariants } from "./api";
+import { readCachedVariants } from "./api";
 import { sourceSchema, type SelectedVariant } from "./model";
 import { VariantInformation } from "./VariantInformation";
-import { slotLabels, itemSchema } from "../configurator/model";
+import {
+  slotLabels,
+  itemSchema,
+  type Configuration,
+} from "../configurator/model";
 import { requireSupabase } from "../../lib/supabase";
-import { BikeIllustration } from "../../components/BikeIllustration";
+import { PresetPreview } from "../bike-preview/Preview";
+import { readCachedPresetPreviewSources } from "../bike-preview/api";
 import { Drawer } from "../../components/ui/Drawer";
 import { Loading, Notice, Empty } from "../../components/ui/Feedback";
-import { modelImages } from "../../data/images";
 import { CatalogHeading } from "./CatalogHeading";
 const versionSchema = z.object({
   id: z.uuid(),
@@ -53,13 +57,34 @@ const presetSchema = z.object({
   ),
 });
 export default function BicyclesPage() {
+  const client = useQueryClient();
   const [params, setParams] = useSearchParams();
   const frames = params.get("view") === "frames";
   const search = params.get("q") ?? "",
     page = Math.max(0, Math.floor(Number(params.get("page")) || 0)),
     brand = params.get("brand"),
     discipline = params.get("discipline");
+  const [draftSearch, setDraftSearch] = useState(search);
+  useEffect(() => {
+    setDraftSearch(search);
+  }, [search]);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (draftSearch === search) return;
+      setParams(
+        (current) => {
+          if (draftSearch) current.set("q", draftSearch);
+          else current.delete("q");
+          current.delete("page");
+          return current;
+        },
+        { replace: true },
+      );
+    }, 300);
+    return () => clearTimeout(timer);
+  }, [draftSearch, search, setParams]);
   const query = useQuery({
+    staleTime: 300_000,
     queryKey: ["presets", search, page, brand, discipline],
     enabled: !frames,
     queryFn: async ({ signal }) => {
@@ -77,15 +102,28 @@ export default function BicyclesPage() {
       return listSchema.parse(data);
     },
   });
+  const previewIds = [
+    ...new Set(
+      query.data?.families.flatMap((f) => f.versions.map((v) => v.id)) ?? [],
+    ),
+  ].sort();
+  const previewSources = useQuery({
+    queryKey: ["preset-preview-sources", previewIds],
+    enabled: !frames && previewIds.length > 0,
+    staleTime: 300_000,
+    queryFn: ({ signal }) =>
+      readCachedPresetPreviewSources(client, previewIds, signal),
+  });
   const brands = useQuery({
     queryKey: ["preset-brands"],
     enabled: !frames,
     staleTime: 300000,
-    queryFn: async () => {
+    queryFn: async ({ signal }) => {
       const { data, error } = await requireSupabase()
         .from("brands")
         .select("id,name")
-        .order("name");
+        .order("name")
+        .abortSignal(signal);
       if (error) throw error;
       return z.array(z.object({ id: z.uuid(), name: z.string() })).parse(data);
     },
@@ -138,9 +176,9 @@ export default function BicyclesPage() {
               <input
                 aria-label="Buscar bicicletas"
                 placeholder="Buscar bicicleta…"
-                value={search}
+                value={draftSearch}
                 maxLength={150}
-                onChange={(e) => filter("q", e.target.value)}
+                onChange={(e) => setDraftSearch(e.target.value)}
               />
             </label>
           </div>
@@ -189,6 +227,7 @@ export default function BicyclesPage() {
                 <FamilyCard
                   key={`${f.brand_id}:${f.family_key}:${f.kind}`}
                   family={f}
+                  sources={previewSources.data}
                   onOpen={open}
                 />
               ))}
@@ -237,38 +276,45 @@ export default function BicyclesPage() {
 }
 function FamilyCard({
   family,
+  sources,
   onOpen,
 }: {
   family: Family;
+  sources?: Record<string, Configuration>;
   onOpen: (id: string) => void;
 }) {
   const [id, setId] = useState(family.versions[0].id);
   useEffect(() => {
     if (!family.versions.some((v) => v.id === id)) setId(family.versions[0].id);
   }, [family.versions, id]);
-  const photo = modelImages[family.image_key ?? ""];
-  const displayName = family.kind === "example"
-    ? family.name.replace(/\s*·\s*Montaje ATLAS$/, "")
-    : family.name;
+  const displayName =
+    family.kind === "example"
+      ? family.name.replace(/\s*·\s*Montaje ATLAS$/, "")
+      : family.name;
   return (
     <article className="preset-card bicycle-card">
-      <button className="bicycle-media" onClick={() => onOpen(id)} aria-label={`Ver montaje de ${family.name}`}>
-      {photo ? (
-        <img
-          className="preset-photo"
-          src={photo}
-          alt={family.name}
-          loading="lazy"
+      <button
+        className="bicycle-media"
+        onClick={() => onOpen(id)}
+        aria-label={`Ver montaje de ${family.name}`}
+      >
+        <PresetPreview
+          key={id}
+          id={id}
+          name={displayName}
+          source={sources?.[id] ?? null}
         />
-      ) : (
-        <BikeIllustration />
-      )}
-      <span className="bicycle-kind">{family.kind === "factory" ? "Montaje de fábrica" : "Ejemplo ATLAS"}</span>
-      {!photo && <span className="bicycle-preview-label">Vista ilustrativa</span>}
-      <span className="bicycle-media-arrow"><ArrowUpRight size={22} /></span>
+        <span className="bicycle-kind">
+          {family.kind === "factory" ? "Montaje de fábrica" : "Ejemplo ATLAS"}
+        </span>
+        <span className="bicycle-media-arrow">
+          <ArrowUpRight size={22} />
+        </span>
       </button>
       <div>
-        {family.brand_name !== "ATLAS" && <p className="eyebrow">{family.brand_name}</p>}
+        {family.brand_name !== "ATLAS" && (
+          <p className="eyebrow">{family.brand_name}</p>
+        )}
         <h2>
           <button className="row-button" onClick={() => onOpen(id)}>
             {displayName}
@@ -307,7 +353,9 @@ function PresetDetails({
   onClose: () => void;
   onVersion: (id: string) => void;
 }) {
+  const client = useQueryClient();
   const query = useQuery({
+    staleTime: 300_000,
     queryKey: ["preset-detail", id],
     queryFn: async ({ signal }) => {
       const { data, error } = await requireSupabase()
@@ -320,27 +368,41 @@ function PresetDetails({
         .abortSignal(signal)
         .single();
       if (error) throw error;
-      const preset = presetSchema.parse(data),
-        variants = await readVariants(
+      const preset = presetSchema.parse(data);
+      const knownVersions = families.find(
+        (f) =>
+          f.brand_id === preset.brand_id &&
+          f.family_key === preset.family_key &&
+          f.kind === preset.kind,
+      )?.versions;
+      const [variants, versions] = await Promise.all([
+        readCachedVariants(
+          client,
           preset.bike_preset_items.map((i) => i.variant_id),
           signal,
-        );
-      const siblings = await requireSupabase()
-        .from("bike_presets")
-        .select("id,label,model_year")
-        .eq("brand_id", preset.brand_id)
-        .eq("family_key", preset.family_key)
-        .eq("kind", preset.kind)
-        .eq("published", true)
-        .eq("selectable", true)
-        .order("label")
-        .order("id")
-        .abortSignal(signal);
-      if (siblings.error) throw siblings.error;
+        ),
+        knownVersions
+          ? Promise.resolve(knownVersions)
+          : (async () => {
+              const siblings = await requireSupabase()
+                .from("bike_presets")
+                .select("id,label,model_year")
+                .eq("brand_id", preset.brand_id)
+                .eq("family_key", preset.family_key)
+                .eq("kind", preset.kind)
+                .eq("published", true)
+                .eq("selectable", true)
+                .order("label")
+                .order("id")
+                .abortSignal(signal);
+              if (siblings.error) throw siblings.error;
+              return z.array(versionSchema).parse(siblings.data);
+            })(),
+      ]);
       return {
         ...preset,
         variants,
-        versions: z.array(versionSchema).parse(siblings.data),
+        versions,
       };
     },
   });
@@ -428,13 +490,17 @@ function PresetPiece({
   label: string;
   variant?: SelectedVariant;
 }) {
+  const [expanded, setExpanded] = useState(false);
   return (
-    <details className="piece-information">
+    <details
+      className="piece-information"
+      onToggle={(event) => setExpanded(event.currentTarget.open)}
+    >
       <summary>
         {label}
         {variant ? ` · ${variant.component.name}` : ""}
       </summary>
-      {variant ? (
+      {expanded && (variant ? (
         <>
           <p className="eyebrow">{variant.component.brands.name}</p>
           <h3>{variant.component.name}</h3>
@@ -443,7 +509,7 @@ function PresetPiece({
         </>
       ) : (
         <p className="muted">Referencia sin resolver.</p>
-      )}
+      ))}
     </details>
   );
 }

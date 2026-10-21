@@ -9,10 +9,19 @@ export function VariantInformation({
   component: Omit<ComponentModel, "component_variants">;
   variant: Variant;
 }) {
+  const year = variant.model_year;
+  const generationYear = variant.generation?.match(/\bMY\s*(\d{2})\b/i)?.[1];
+  const showYear = year != null && !variant.generation?.includes(String(year)) && generationYear !== String(year).slice(-2);
   return (
     <>
       <details open>
         <summary>Características</summary>
+        {(variant.generation || showYear) && (
+          <dl className="spec-list">
+            {variant.generation && <div><dt>Generación</dt><dd>{variant.generation}</dd></div>}
+            {showYear && <div><dt>Año</dt><dd>{year}</dd></div>}
+          </dl>
+        )}
         <SpecificationDetails
           fields={specificationFields[component.category].filter(
             (f) => f.key !== "maintenance",

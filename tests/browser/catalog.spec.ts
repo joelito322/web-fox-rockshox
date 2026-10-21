@@ -28,6 +28,10 @@ test("reviewed enduro reference exposes its real composition without requiring a
 test("local catalogue photos, tyre comparison and contextual prices use the reviewed data", async ({
   page,
 }) => {
+  const comparisonReads: string[] = [];
+  page.on("request", request => {
+    if (new URL(request.url()).pathname.endsWith("/rest/v1/components")) comparisonReads.push(request.url());
+  });
   await page.goto("/componentes?category=tire&q=Assegai");
   await page.locator(".product-card").click();
   let detail = page.getByRole("dialog", { name: "Detalle de la pieza" });
@@ -57,6 +61,7 @@ test("local catalogue photos, tyre comparison and contextual prices use the revi
     .getByRole("button", { name: "Cerrar detalle", exact: true })
     .click();
   await expect(page.getByRole("dialog")).toHaveCount(0);
+  const beforeCompare = comparisonReads.length;
   await page.locator(".compare-link").click();
   await expect(page.locator(".comparison-table")).toContainText("Assegai");
   await expect(page.locator(".comparison-table")).toContainText(
@@ -65,6 +70,8 @@ test("local catalogue photos, tyre comparison and contextual prices use the revi
   await expect(
     page.getByRole("link", { name: "Probar", exact: true }),
   ).toHaveCount(2);
+  await page.waitForLoadState("networkidle");
+  expect(comparisonReads).toHaveLength(beforeCompare);
   await page.goto("/componentes?category=pedals&q=Nylon");
   await page.locator(".product-card").click();
   detail = page.getByRole("dialog", { name: "Detalle de la pieza" });
@@ -160,8 +167,9 @@ test("current suspension references expose all four brands, paired measures and 
   for (const name of ["FOX", "RockShox", "Öhlins", "Marzocchi"])
     await expect(brand.locator("option").filter({ hasText: name })).toHaveCount(1);
   await brand.selectOption({ label: "Öhlins" });
-  await expect(page.locator(".product-card")).toHaveCount(1);
-  await page.locator(".product-card").click();
+  const rxf = page.locator(".product-card").filter({ hasText: "RXF38 m.3" });
+  await expect(rxf).toHaveCount(1);
+  await rxf.click();
   let detail = page.getByRole("dialog", { name: "Detalle de la pieza" });
   await expect(detail).toContainText("RXF38 m.3");
   await expect(detail).toContainText("TTX18");

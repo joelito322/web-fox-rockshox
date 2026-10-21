@@ -24,7 +24,10 @@ import {
   type ComponentModel,
   type Category,
 } from "./model";
-import { useCatalog, useComponent, useFacets, filterKeys } from "./api";
+import {
+  useCatalogCards, useComponent, useHistoricalVariant, useFacets, filterKeys,
+} from "./api";
+import type { CatalogCard } from "./api";
 import { componentImage } from "../../data/images";
 import { Drawer } from "../../components/ui/Drawer";
 import { Empty, Loading, Notice } from "../../components/ui/Feedback";
@@ -36,7 +39,7 @@ function ProductCard({
   component,
   onOpen,
 }: {
-  component: ComponentModel;
+  component: CatalogCard;
   onOpen: () => void;
 }) {
   const photo = componentImage(component);
@@ -55,7 +58,9 @@ function ProductCard({
         <span className="category-badge">
           {categoryLabels[component.category]}
         </span>
-        <span className="product-discipline">{component.disciplines.map(displaySpec).join(" / ")}</span>
+        <span className="product-discipline">
+          {component.disciplines.map(displaySpec).join(" / ")}
+        </span>
       </div>
       <div className="product-copy">
         <p>{component.brands.name}</p>
@@ -98,10 +103,17 @@ function ProductCard({
             ) : null;
           })}
         </div>
-        <div className="product-footer"><span>
-          {component.component_variants.length}{" "}
-          {component.component_variants.length === 1 ? "variante" : "variantes"}
-        </span><span className="card-arrow"><ArrowUpRight size={18} /></span></div>
+        <div className="product-footer">
+          <span>
+            {component.component_variants.length}{" "}
+            {component.component_variants.length === 1
+              ? "variante"
+              : "variantes"}
+          </span>
+          <span className="card-arrow">
+            <ArrowUpRight size={18} />
+          </span>
+        </div>
       </div>
     </button>
   );
@@ -127,7 +139,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       .filter((key) => params.has(key))
       .map((key) => [key, params.get(key)!]),
   );
-  const query = useCatalog(category, search, page, {
+  const query = useCatalogCards(category, search, page, {
     brand: params.get("brand") ?? undefined,
     discipline: params.get("discipline") ?? undefined,
     specs: selectedSpecs,
@@ -182,7 +194,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
     });
     setFiltersOpen(false);
   }
-  function open(component: ComponentModel) {
+  function open(component: CatalogCard) {
     if (frames)
       setParams((p) => {
         p.set("detail", component.slug);
@@ -195,7 +207,9 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       });
   }
   return (
-    <div className={`content catalog-page${frames ? " frames-catalog" : " discovery-page"}`}>
+    <div
+      className={`content catalog-page${frames ? " frames-catalog" : " discovery-page"}`}
+    >
       {!frames && (
         <CatalogHeading kind="components">
           <Link className="compare-link" to="/comparar">
@@ -396,13 +410,28 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
   const [params, setParams] = useSearchParams();
   const compare = useComparison();
   const [notice, setNotice] = useState("");
-  const requested = component.component_variants.find(v => v.id === params.get("variant"));
-  const available = component.component_variants.filter(v => v.selectable);
+  const historical = useHistoricalVariant(component, params.get("variant"));
+  const requested = component.component_variants.find(
+    (v) => v.id === params.get("variant"),
+  ) ?? historical.data;
+  const available = component.component_variants.filter((v) => v.selectable);
   const variant = requested ?? available[0] ?? component.component_variants[0];
-  const choices = requested && !requested.selectable
-    ? [requested, ...available]
-    : available.length ? available : variant ? [variant] : [];
+  const choices =
+    requested && !requested.selectable
+      ? [requested, ...available]
+      : available.length
+        ? available
+        : variant
+          ? [variant]
+          : [];
   const photo = componentImage(component, variant);
+  if (historical.isFetching && !requested) return <Loading />;
+  if (historical.error && !requested)
+    return (
+      <Notice onRetry={() => void historical.refetch()}>
+        La versión solicitada no está disponible.
+      </Notice>
+    );
   if (!variant) return <Empty title="Sin variantes disponibles" />;
   return (
     <>
@@ -413,7 +442,7 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
           <Layers3 size={82} strokeWidth={0.7} />
         )}
       </div>
-      {photo && <p className="representation-label">Foto de referencia</p>}
+      {photo && <p className="representation-label">Referencia visual</p>}
       <p className="eyebrow">{component.brands.name}</p>
       <h2 className="detail-title">{component.name}</h2>
       <p className="muted">{component.description}</p>
@@ -433,7 +462,8 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
         >
           {choices.map((v) => (
             <option key={v.id} value={v.id}>
-              {v.label}{!v.selectable ? " · Referencia anterior" : ""}
+              {v.label}
+              {!v.selectable ? " · Referencia anterior" : ""}
             </option>
           ))}
         </select>
