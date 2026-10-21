@@ -11,7 +11,7 @@ Categoría `fork`, slot `fork`. Marcas solicitadas: FOX, RockShox, Öhlins y Mar
 | Öhlins | RXF36, RXF38, DH38 | Revisión M.x y versión aire/muelle documentada, sin duplicar por simetría. [Catálogo MTB](https://www.ohlins.com/en-us/mountain-bike), [RXF38 M.3 29/44/170](https://www.ohlins.com/en-us/mountain-bike/front-forks/am-rxf38-m-3-air-ttx18-29-44-170) |
 | Marzocchi | Bomber Z1, Z1 Coil, Super Z, Bomber Z, Bomber 58 | Separar originales, revisiones y conversiones; no asignar a la Z1 actual las especificaciones de una Z1 antigua. [Manuales y familias](https://bike.marzocchi.com/pages/product-service-manuals) |
 
-FOX 34, RockShox SID y otros productos de categorías distintas no se incorporan solo por compartir marca. Se revisa uso declarado antes de ampliar el catálogo enduro/DH. Solo gama actual documentada: un modelo histórico localizado no se ingesta; distinguir listado de servicio de producto vigente. La Z1 Coil requiere demostrar una oferta comercial actual, y no solo un kit o manual histórico.
+FOX 34, RockShox SID y otros productos de categorías distintas no se incorporan solo por compartir marca. Se revisa uso declarado antes de ampliar el catálogo enduro/DH. Desde la ampliación del 21/10/2026 se permiten también generaciones históricas identificadas. Distinguir siempre listado de servicio, generación y vigencia comercial; una conversión Z1 Coil no se declara horquilla nueva de fábrica. Ver [11o](11o-ampliacion-gravity.md).
 
 ## Campos específicos de cada variante
 
@@ -108,3 +108,7 @@ Fuente local `supabase/catalog/suspension-reviewed.json`. Selección concreta, s
 - **RXF38 m.3 29/170 aire**: se completa publicación de la referencia documentada `FGMTB 3817 2510`, conservando el ID del borrador. [Ficha actual y manuales](https://www.ohlins.com/en-it/mountain-bike/front-forks/am-rxf38-m-3-air-ttx18-29-44-170).
 
 Los recursos son genéricos v1 identificados, revisados en composiciones de 23 posiciones; no certifican herrajes, logotipos ni detalles de fábrica. El lote no cierra aún todas las familias de suspensión enumeradas en este documento. El estado de aplicación y pruebas se registra en 12.
+
+## Ampliación gravity · 21/10/2026
+
+BoXXer Ultimate D2 y Select D2 (27.5/29, 200 mm); Bomber 58 (27.5, referencia comercial 203 mm, discrepancia de tabla 200 mm documentada); DH38 m.2 (27.5/29, aire/muelle, 200 mm). Fuentes, medidas acotadas y recursos propios en [11o](11o-ampliacion-gravity.md). No se ingiere el producto cartesiano completo de todos los recorridos/offsets. Eje 20×110 sin calificación no confirma Boost/no Boost: aviso de medida por confirmar; diferencias de dimensiones o formatos explícitos sí son conflictos.

@@ -279,3 +279,6 @@ Los montajes guardan elecciones de piezas, no una cotización congelada. Al reab
 ### Extensión de manifiestos para recursos de referencia v5
 
 La migración 016 conserva el contrato anterior y añade dos parámetros opcionales: `mount_space` (`frame`, `fork`, `shock`) para GLB y `assembly_version: atlas-assembly-v5` para cuadros en ese espacio. `profile_key` sigue vinculando recurso y categoría. Los anclajes requeridos se comprueban también en SQL: cuadro (ejes/dirección/asiento/ojos), horquilla (eje y pletina) y amortiguador (ojos). La rotación local Y del anclaje `shock_upper` orienta el depósito en montajes v5. Los otros recursos no adquieren estos parámetros retroactivamente. Detalle geométrico y reconstrucción en [05a](05a-fidelidad-modelos.md) y [models/catalog-v5](../../models/catalog-v5/README.md), sin añadir tablas.
+
+
+Las miniaturas derivadas no añaden tablas ni binarios en PostgreSQL: bucket privado `bike-previews`, rutas ligadas a propietario/revisión para montajes y a contenido para prearmadas. Contrato y políticas en [05b](05b-miniaturas-montajes.md); no confundir esas imágenes con las fotos de componentes ni con `visual_assets` del montaje.

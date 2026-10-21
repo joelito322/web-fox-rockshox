@@ -1,8 +1,8 @@
 # 11m · Manillar, potencia, sillín y auxiliares
 
-La última indicación reduce el detalle comercial de estos elementos. [Contrato común](11-propuesta-de-inventario.md#contrato-común-de-ingesta). No hace falta investigar catálogos extensos de marcas de manillar/potencia/sillín ni añadir selectores de accesorios.
+Actualización del 21/10/2026: el usuario autoriza añadir modelos comerciales reales de manillar, potencia, tija y sillín, con fotografía y representación 3D propias. La selección inicial acotada y sus variantes viven en [11n](11n-componentes-comerciales-de-contacto.md); los diseños ATLAS descritos abajo se conservan para montajes existentes y como opciones genéricas identificadas. [Contrato común](11-propuesta-de-inventario.md#contrato-común-de-ingesta). La ampliación mantiene las categorías y controles actuales; no añade selectores de accesorios ni un catálogo ilimitado.
 
-## Representaciones sencillas
+## Representaciones ATLAS conservadas
 
 | Elemento | Tratamiento | Datos necesarios |
 | --- | --- | --- |

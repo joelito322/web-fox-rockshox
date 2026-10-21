@@ -2,7 +2,7 @@
 
 Relacionado: [planes](../docs/planning/README.md), [entornos y accesos](../docs/planning/07-entornos-y-despliegue.md), [datos](../docs/planning/03-datos-y-operaciones.md) e [IAM](../docs/planning/04a-iam-roles-y-permisos.md).
 
-Estado: implementación autorizada en curso. Migraciones 001–018 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
+Estado: implementación autorizada en curso. Migraciones 001–021 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
 
 Herramientas: `node scripts/supabase.mjs push|status|deploy [función]`, con Node de `.node-version` y variables ya configuradas en `.env`. El despliegue usa `--use-api`; no levantar Docker ni Supabase local. Toda corrección posterior a una migración aplicada se escribe en una nueva migración.
 
@@ -94,3 +94,5 @@ La migración 016 aplica el contrato de montaje de mallas y el bucket público `
 ## Actualización de continuidad exterior
 
 Migraciones 017/018 aplicadas y fuentes v6/v7 publicadas; dieciocho migraciones en el Cloud existente. Se conserva todo el historial y el contrato de montaje GLB v5. Nuevos binarios en `models/catalog-v6/` y `catalog/v6/` del bucket; escritura anónima sigue denegada. No hay tablas nuevas ni modificación de Auth gestionado. Reposición y orden de publicaciones en `catalog/README.md`; pruebas SQL `tests/visual-v6.sql` y `tests/visual-v7.sql`, controles Blender y evidencia en el documento 12c.
+
+Actualización gravity 21/10/2026: 22 migraciones aplicadas, doce tablas propias; 70 modelos y 146 elecciones. Migración 022 añade perfiles y contrato GLB; fuentes/orden de reposición en catalog/README.md. Sin cambios de Auth, IAM ni funciones Edge.

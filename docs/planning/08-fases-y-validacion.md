@@ -388,3 +388,26 @@ Ejecución posterior del método aprobado: la generación v5 está integrada y p
 Dentro de las fases de recursos, visor y aceptación: investigación de despieces adicionales, contrapartes de bieletas, conexión de soportes/poleas, continuidad de coronas/ojos y montaje de pinzas; fuentes editables y recursos nuevos conservando historial. Migraciones 017/018 y publicación Cloud aplicadas; sin ampliación de campos de negocio. Validación de contactos con controles negativos, parseo GLB, pruebas de montaje/pintura/selección/persistencia y revisión desde ambos lados, arriba, abajo y perspectivas. Evidencia, cobertura real y límites en [12c](12c-evidencia-continuidad.md); parecido por modelo y aceptación física móvil siguen abiertos.
 
 Aceptación de rendimiento v6/v7 abierta: escena DH aislada de 5,454 s supera el objetivo de 5 s con 10 Mbps/80 ms; SwiftShader móvil observa 13,4/14,8 fps. La fase de optimización debe reducir carga/coste conservando geometría y versiones antes de cerrar rendimiento; Android físico sigue pendiente. Ver medición reproducible y límites en 12c.
+
+
+## Miniaturas del montaje guardado
+
+Cambio autorizado dentro de las fases de recursos, persistencia y UI: [05b](05b-miniaturas-montajes.md). Reutilizar escena, captura estática única, políticas Storage por revisión/propietario y prearmadas publicadas, integración de tarjetas, precálculo público y recuperación de miniaturas existentes. Aceptar con montaje vacío/incompleto, colores, guardado exitoso/conflicto, aislamiento entre cuentas y visitante, cambio de revisión, fallos de captura y ausencia de WebGL por tarjeta. Conservar pendientes/evidencia de ejecución en 05b.
+
+## Auditoría transversal de carga de datos · 21/10/2026
+
+Dentro de las fases de catálogo, persistencia y visor: revisión multiagente de consultas SQL con RLS, solicitudes del navegador y preparación 3D; corregir búsquedas por tecla, repetición/serialización y transferencia innecesaria. Reutilizar datos con límites de vigencia e invalidación, claves privadas por cuenta, fuentes agrupadas de miniaturas y precarga por intención. Aceptar con conteo de solicitudes, payload antes/después, cambios de cuenta, publicaciones, borrado paginado y selección/guardado/reapertura de montajes reales. Resultado y límites en [12d](12d-rendimiento-consultas.md); no añadir índices sin evidencia ni cerrar objetivos físicos de fluidez con estas pruebas.
+
+## Imágenes completas y complementos comerciales · 21/10/2026
+
+Solicitud adicional: eliminar fondos visibles de fotografías, completar imágenes pendientes y añadir modelos comerciales reales de manillar/potencia/tija/sillín con recurso 3D propio. Dentro de fases de inventario/recursos/montaje: verificar fuentes actuales y variantes concretas, preparar fotos transparentes, perfiles y recursos nuevos inmutables, validar contratos/avisos de interfaces, publicar fuente versionada y probar selección, pintura, guardado/reapertura y montajes antiguos. Mantener categorías/tablas y genéricos históricos; no modificar modelos publicados. Selección acotada y evidencia en 11n/12d y procedencia de assets en `src/assets/images/catalog/README.md`.
+
+## Ampliación gravity · 21/10/2026
+
+El usuario amplía inventario y permite generaciones anteriores identificadas. [11o](11o-ampliacion-gravity.md) integra investigación de fichas/medidas, fuentes fotográficas y limpieza, recursos GLB propios, importación aditiva y pruebas de catálogo/montaje/guardado/reapertura. La delimitación histórica anterior de solo gama actual queda sustituida por esta decisión, sin convertir los archivos históricos en vigentes. Conservar recursos y montajes anteriores; ninguna tabla nueva ni cambio de Auth/IAM. Estado y aceptación se completan en 11o/12.
+
+Resultado gravity: once modelos/26 variantes publicados, recursos GLB y fuentes conservados, 70 modelos/146 elecciones totales. Build/101 pruebas correctos; selección, guardado, miniaturas y reapertura de los siete cuadros con suspensión nueva comprobados en escritorio y móvil emulado, con límites/incidencia inicial en 12. El trabajo de inventario y recursos de esta ampliación está integrado; la aceptación visual del usuario, Android físico, 30 fps, red fría y Auth/correo siguen sus criterios generales, sin declararlos cumplidos por ampliar el catálogo.
+
+### Segunda optimización integral de consultas y vistas · 21/10/2026
+
+Trabajo integrado en las fases de datos, administración, catálogo y montaje: revisión cruzada de tres agentes, proyecciones actuales/históricas, lotes compartidos, comparación, búsquedas administrativas, permisos y render/miniaturas. Resultados medidos y aceptación por recorrido en [12d](12d-rendimiento-consultas.md). Incluye pruebas reales Cloud y navegador; no sustituye la aceptación pendiente de hardware Android ni la escena fría con red limitada.

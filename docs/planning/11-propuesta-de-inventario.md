@@ -1,10 +1,10 @@
 # 11 · Inventario e ingesta documental por categoría
 
-Estado: inventario en ejecución desde el 19 de octubre de 2026. Conserva la cobertura ampliada por el usuario y sustituye la propuesta anterior de cuatro cuadros/una talla. Existen cinco fuentes de catálogo en Cloud: `initial-reviewed.json`, `braking-reviewed.json`, `suspension-reviewed.json`, `frames-reviewed.json` y `tyres-reviewed.json`, bajo `supabase/catalog/`. Suman 53 modelos y 128 variantes; los 53 modelos y 116 variantes están publicados (114 seleccionables y dos capturas anteriores), y doce variantes permanecen en borrador. Hay dos familias de ejemplos ATLAS de enduro/descenso, con cuatro composiciones M/L de 23 posiciones. La cobertura comercial completa sigue pendiente; ver [12](12-estado-implementacion.md).
+Estado: inventario en ejecución desde el 19 de octubre de 2026. Actualización del 21/10: `cockpit-reviewed.json` añade seis modelos comerciales de contacto con recursos v8, para **59 modelos y 120 variantes seleccionables actuales**. Las cifras siguientes de cinco fuentes conservan la base histórica; no sustituyen esta ampliación. Conserva la cobertura ampliada por el usuario y sustituye la propuesta anterior de cuatro cuadros/una talla. Existen cinco fuentes de catálogo en Cloud: `initial-reviewed.json`, `braking-reviewed.json`, `suspension-reviewed.json`, `frames-reviewed.json` y `tyres-reviewed.json`, bajo `supabase/catalog/`. Suman 53 modelos y 128 variantes; los 53 modelos y 116 variantes están publicados (114 seleccionables y dos capturas anteriores), y doce variantes permanecen en borrador. Hay dos familias de ejemplos ATLAS de enduro/descenso, con cuatro composiciones M/L de 23 posiciones. La cobertura comercial completa sigue pendiente; ver [12](12-estado-implementacion.md).
 
 El usuario solicita un registro amplio por categorías, con modelos, campos y validaciones en Markdown específicos. Esta carpeta contiene el contrato y el registro inicial de familias localizadas con fuentes oficiales. **No constituye todavía una ingesta exhaustiva de todos los SKU, generaciones y medidas del mercado**: las referencias físicas incompletas se identifican como pendientes y no se publican ni se inventan.
 
-**Delimitación confirmada después:** solo gama actual documentada. Las familias de los documentos hijos necesitan evidencia de vigencia; una referencia histórica no entra en la ingesta por conservar manual o página de servicio.
+**Delimitación ampliada el 21/10/2026:** el usuario autoriza también generaciones anteriores identificadas. Toda referencia exige evidencia de identidad, generación y medidas; solo se declara vigente si existe evidencia comercial actual. [11o](11o-ampliacion-gravity.md) concreta la ampliación gravity.
 
 ## Cobertura indicada por el usuario
 
@@ -15,7 +15,7 @@ El usuario solicita un registro amplio por categorías, con modelos, campos y va
 - Pedalieres seleccionables por marca/tipo; bielas con plato/catalina incluido, sin selector independiente de plato.
 - Pedales ROCKBROS y otras marcas verificables; aros, bujes y neumáticos de distintas marcas y medidas.
 - Neumáticos Maxxis, CST, Kenda, Michelin y Schwalbe, con carcasa/compuesto y orientación de terreno respaldada por fuente.
-- Manillar y sillín sencillos, sin diversificación comercial necesaria. Potencia genérica convencional para enduro o directa sobre pletina para DH, resuelta según interfaces reales. Mantener las medidas necesarias para proporciones/anclajes, sin añadir un editor libre no solicitado.
+- Actualización del 21/10/2026: modelos comerciales reales de manillar, potencia, tija y sillín con imágenes y recursos propios, en una selección inicial acotada de seis familias según [11n](11n-componentes-comerciales-de-contacto.md). Conservar genéricos ATLAS y montajes anteriores; sin editor paramétrico libre ni categorías nuevas.
 
 Las marcas se normalizan a su denominación real: Öhlins, Marzocchi, DA BOMB, ROCKBROS. No se crean marcas nuevas a partir de errores de transcripción. «Y las demás» abre investigación de referencias, no una promesa sin límite de haber catalogado el mercado mundial.
 
@@ -35,7 +35,8 @@ Las marcas se normalizan a su denominación real: Öhlins, Marzocchi, DA BOMB, R
 | [11j · Pedales](11j-pedales.md) | Plataformas/otros tipos, medidas, material e interfaz |
 | [11k · Aros y bujes](11k-aros-y-bujes.md) | Marcas, ETRTO, agujeros, eje, disco y núcleo |
 | [11l · Neumáticos](11l-neumaticos.md) | Marcas/modelos, medida, carcasa, compuesto y suelo |
-| [11m · Contacto y auxiliares](11m-contacto-y-auxiliares.md) | Manillar, potencia y sillín genéricos; tija y piezas incluidas |
+| [11m · Contacto y auxiliares](11m-contacto-y-auxiliares.md) | Genéricos ATLAS conservados y contratos de interfaz |
+| [11n · Complementos comerciales](11n-componentes-comerciales-de-contacto.md) | Renthal, DEITY, OneUp y WTB: seis modelos documentados, fotos y recursos v8 |
 
 Estos documentos detallan los contratos de [03a](03a-esquema-y-campos.md); no crean trece tablas ni un proceso nuevo. Las ocho tablas de negocio y cuatro IAM permanecen. Campos de una misma responsabilidad se mantienen juntos: no un MD por columna o por acabado.
 
@@ -86,7 +87,7 @@ Una tarea puede tener intervalos null si la fuente solo indica una condición; n
 
 Generación, aro, recorrido, tipo de resorte, carcasa/compuesto, interfaces o medidas técnicas pueden cambiar la identidad física. Un acabado cosmético no exige otra variante. No cruzar todas las opciones publicadas para fabricar combinaciones inexistentes.
 
-Solo se ingesta la gama actual documentada, según elección expresa del usuario. Una página de servicio o despiece no demuestra vigencia: comprobar catálogo/producto actual y referencia física, registrando URL y fecha. Un manual antiguo puede aplicar a una referencia actual si el fabricante lo vincula; no equivale a incluir un modelo histórico. Descatalogados/históricos quedan fuera del inventario inicial, aunque se conserven como contraejemplos de investigación. Sin evidencia suficiente, «vigencia por confirmar», sin publicar. La falta de stock temporal no determina por sí sola la retirada del fabricante. La retirada posterior de una variante ya ingerida conserva las reglas de 03 para montajes existentes.
+Se pueden ingerir gama actual y generaciones históricas documentadas, según la ampliación expresa del usuario del 21/10/2026. Una página de servicio o despiece no demuestra vigencia: comprobar catálogo/producto actual y referencia física, registrando URL y fecha. Un manual antiguo puede aplicar a una referencia actual si el fabricante lo vincula; no equivale a una generación nueva. Los históricos pueden incorporarse identificando año/generación y su condición de archivo, sin atribuirles vigencia actual. Sin evidencia suficiente, «vigencia por confirmar», sin publicar. La falta de stock temporal no determina por sí sola la retirada del fabricante. La retirada posterior de una variante ya ingerida conserva las reglas de 03 para montajes existentes.
 
 Precio orientativo solo con importe, moneda, mercado, fuente y fecha de la variante observada. Sin evidencia suficiente, null. Los genéricos ATLAS no llevan precio comercial inventado.
 
@@ -106,4 +107,6 @@ Esta actualización completa la **separación por categoría, los grupos de camp
 
 Se retira la pregunta anterior de «dos o cuatro cuadros»: la dirección vigente es cobertura por marcas/modelos actuales documentados y M/L. Los dos ejemplos ATLAS enduro/DH siguen siendo recorridos de prueba y propuesta de contenido, sin limitar el catálogo ni sustituir su aceptación integral.
 
-Delimitación temporal cerrada por el usuario: solo gama actual documentada. Completar la evidencia de vigencia y los campos de cada referencia es una tarea de las fases 1–3 del plan de implementación, con comprobación de cobertura en 4–6 según 08. La ingesta documental no se declara cerrada hasta completar esa tarea; no es un requisito externo previo al inicio del plan. La implementación y la ingesta real siguen pendientes de la instrucción expresa de iniciarlas.
+Delimitación temporal actualizada por el usuario: gama actual y generaciones anteriores identificadas (11o). Completar la evidencia de vigencia y los campos de cada referencia es una tarea de las fases 1–3 del plan de implementación, con comprobación de cobertura en 4–6 según 08. La ingesta documental no se declara cerrada hasta completar esa tarea; no es un requisito externo previo al inicio del plan. Esta redacción inicial no acreditaba una ingesta real. La implementación fue autorizada posteriormente y su estado vigente está en 12.
+
+- [11o · Ampliación gravity](11o-ampliacion-gravity.md): once modelos adicionales de cuadros/horquillas, actuales e históricos identificados.

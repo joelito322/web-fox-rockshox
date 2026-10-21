@@ -1,12 +1,12 @@
 # Inventario revisado y recursos versionados
 
-## Estado vigente: GLB v6 y frenos v7
+## Estado vigente: GLB v6, frenos v7 y complementos comerciales v8
 
-La publicación actual es `visual-v7-reviewed.json` con cuatro prearmadas en `visual-v7-examples.json`; 53 modelos y 114 elecciones seleccionables. Conserva GLB v6 para los cuadros/suspensiones, renderer v7 para nueve frenos y v5 para las piezas sin cambio. La publicación v6 creó 85 sucesoras y reutilizó 43 capturas; la v7 creó nueve sucesoras de freno y reutilizó 119. El publicador no archiva los mapeos de identidad sin cambio.
+La base visual sigue siendo `visual-v7-reviewed.json` con cuatro prearmadas en `visual-v7-examples.json`; se amplía con `cockpit-reviewed.json`: seis modelos comerciales v8 de Renthal, DEITY, OneUp y WTB. Total actual: **59 modelos y 120 elecciones seleccionables**, sin cambiar las prearmadas ni retirar los auxiliares ATLAS. Conserva GLB v6 para los cuadros/suspensiones, renderer v7 para nueve frenos y v5 para las piezas sin cambio. La publicación v6 creó 85 sucesoras y reutilizó 43 capturas; la v7 creó nueve sucesoras de freno y reutilizó 119. El publicador no archiva los mapeos de identidad sin cambio.
 
-Reposición completa: cinco fuentes históricas → v3 → v4 → v5 → v6 → v7; ejecutar `node scripts/publish-visuals.mjs --version=v6 --apply` y finalizar con `--version=v7 --apply`. Requiere migraciones 017/018 y GLB cargados con `node scripts/upload-visual-v5.mjs --version=v6 --apply`. La opción de versión es explícita: el valor predeterminado del publicador sigue siendo v4. Conservar todas las fuentes y rutas anteriores.
+Reposición completa: cinco fuentes históricas → v3 → v4 → v5 → v6 → v7 → `node scripts/ingest-catalog.mjs supabase/catalog/cockpit-reviewed.json --apply`; ejecutar `node scripts/publish-visuals.mjs --version=v6 --apply` y finalizar con `--version=v7 --apply`. Requiere migraciones 017/018 y GLB cargados con `node scripts/upload-visual-v5.mjs --version=v6 --apply`. La opción de versión es explícita: el valor predeterminado del publicador sigue siendo v4. Conservar todas las fuentes y rutas anteriores.
 
-Fuentes editables e inferencias en `models/catalog-v6/README.md`. Snapshot: 606 variantes y 604 recursos históricos, cuatro prearmadas, 53 modelos. Evidencia en `docs/planning/12c-evidencia-continuidad.md`; no equivale a CAD ni a Android físico aceptado.
+Fuentes editables e inferencias en `models/catalog-v6/README.md`. Snapshot ampliado: **612 variantes y 610 recursos históricos, cuatro prearmadas, 59 modelos**. Los 606 IDs de variante y 604 recursos previos conservan sus enlaces/manifiestos originales. V8 requiere migración 021; esta es una ampliación parcial, no una publicación mediante `publish-visuals.mjs --version=v8` (esa opción no existe). Fuentes, cotas, imágenes y límites en `docs/planning/11n-componentes-comerciales-de-contacto.md`. Evidencia histórica en `docs/planning/12c-evidencia-continuidad.md`; no equivale a CAD ni a Android físico aceptado.
 
 
 ## Fuentes históricas de catálogo
@@ -83,3 +83,11 @@ Ampliación fotográfica posterior: 40 WebP nuevos, registro de procedencia y al
 Los conjuntos `visual-v3-*`, `visual-v4-*`, `visual-v5-*`, `visual-v6-*` y `visual-v7-*` conservan sus fuentes completas, sucesoras y composiciones. V3 aporta perfiles por modelo; v4 corrige secciones transversales; v5 integra las primeras mallas trazadas; v6 cierra conexiones multivista; v7 completa las carcasas de pinza conservando el montaje corregido.
 
 Las migraciones 014–018 y los scripts de publicación viven fuera de esta carpeta, en el repositorio. La gestión remota y los accesos están en [Supabase](../README.md); la evidencia de la revisión actual está en [12c](../../docs/planning/12c-evidencia-continuidad.md). Nunca reemplazar binarios publicados ni alterar medidas comerciales al mejorar recursos exteriores. No publicar borradores ni borrar el historial para limpiar la selección.
+
+## Ampliación gravity v9 · 21/10/2026
+
+`gravity-reviewed.json` añade once modelos y 26 variantes, con perfiles GLB de la migración 022. Estado actual: 70 modelos, 146 elecciones publicadas, 638 variantes/636 recursos con historial; cuatro prearmadas. Mantener también la ingesta de cockpit: no son fuentes intercambiables ni catálogos completos aislados.
+
+Después de las cinco fuentes históricas y publicaciones explícitas v3…v7, aplicar `cockpit-reviewed.json` y terminar con `gravity-reviewed.json`. Primero aplicar 022 y preparar/cargar los GLB de `models/catalog-v9/` con `node scripts/prepare-gravity-models.mjs --apply`; después `node scripts/ingest-catalog.mjs supabase/catalog/gravity-reviewed.json --apply`. **No existe opción v9 del publicador visual general**, porque la ingesta es aditiva y no reemplaza elecciones anteriores. `node scripts/validate-gravity-publication.mjs` comprueba en lectura identidades/recursos previos, medidas/manifiestos nuevos y visibilidad pública.
+
+Generaciones históricas identificadas autorizadas por el usuario. Furious 2021 no hereda geometría de bloques FRS actuales; TUES sin tabla confirmada no publica cotas estimadas. Referencias, incertidumbre y aceptación en [11o](../../docs/planning/11o-ampliacion-gravity.md).

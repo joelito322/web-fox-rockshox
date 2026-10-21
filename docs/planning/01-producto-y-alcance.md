@@ -163,4 +163,4 @@ Todas las piezas publicadas del catálogo deben poder montarse en 3D. Se admite 
 
 La ampliación posterior del usuario sustituye el límite inicial propuesto de cuatro cuadros y una talla: cobertura enduro/DH por marcas documentadas, tallas principales M/L, cuatro marcas de suspensión, varias gamas de frenos y transmisión, neumáticos por medidas/terreno y pedalier independiente. Los campos y el registro documental se separan por categorías en 11a–11m. No implica ingesta remota ni un alcance mundial de SKU implícitamente completado.
 
-Delimitación temporal confirmada: solo gama actual documentada. Los históricos pueden servir como evidencia comparativa de investigación, pero no forman parte de la ingesta inicial; una página de soporte antigua no prueba vigencia comercial.
+Delimitación temporal ampliada el 21/10/2026: se admiten gama actual y generaciones anteriores documentadas e identificadas, por confirmación expresa del usuario. Un histórico conserva año/generación y no se presenta como vigente; una página de soporte antigua sigue sin probar vigencia comercial. Alcance concreto y aceptación en [11o](11o-ampliacion-gravity.md).

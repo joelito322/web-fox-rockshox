@@ -19,6 +19,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [04b · Administración](04b-administracion-y-operaciones.md) | Primer administrador, usuarios, roles y edición/publicación del negocio |
 | [05 · Configurador 3D](05-configurador-3d.md) | Modelos, geometría por código, ensamblaje y rendimiento |
 | [05a · Fidelidad por modelo](05a-fidelidad-modelos.md) | Mejora exterior de los 53 modelos, referencias y conservación de versiones |
+| [05b · Miniaturas](05b-miniaturas-montajes.md) | Portadas del estado guardado, captura y persistencia protegida |
 | [06 · UI y UX](06-ui-y-ux.md) | Principios de contenido, dirección visual, marca, movimiento y accesibilidad |
 | [06a · Portada y acceso](06a-portada-y-acceso.md) | Composición de portada, entrada, registro y confirmación de correo |
 | [06b · Espacio de trabajo](06b-espacio-de-trabajo.md) | Pestañas, galerías, tarjetas, paneles, configurador y Mis bicicletas |
@@ -29,9 +30,10 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |
 | [10 · Auditoría integral](10-auditoria-integral-de-planes.md) | Revisión adversarial de todo el plan, incluyendo IAM; correcciones y pendientes |
 | [12 · Estado de implementación](12-estado-implementacion.md) | Evidencia real, integración Cloud y pendientes de ejecución |
+| [12d · Rendimiento de consultas](12d-rendimiento-consultas.md) | Auditoría SQL/red, caché, transferencia y selección 3D |
 | [12c · Continuidad multivista](12c-evidencia-continuidad.md) | Conexiones exteriores v6, frenos v7, referencias e inferencias |
 | [12b · Evidencia de geometría](12b-evidencia-geometria.md) | Cobertura de modelos, conservación de versiones y límites de parecido |
-| [11 · Inventario e ingesta documental](11-propuesta-de-inventario.md) | Índice de 11a–11m: gama actual por categoría, modelos, campos y validaciones; datos concretos por completar |
+| [11 · Inventario e ingesta documental](11-propuesta-de-inventario.md) | Índice de 11a–11n: gama actual por categoría, modelos, campos y validaciones; datos concretos por completar |
 
 ```mermaid
 flowchart TD
@@ -77,7 +79,7 @@ flowchart TD
 - Frontend local durante desarrollo; Netlify lo publicará cuando corresponda. Supabase Cloud ya creado gestiona PostgreSQL, Auth, Storage, RPC y Edge Functions. No se levanta una base/stack local ni un segundo proyecto por obligación. Credenciales en `.env`, sin valores en documentos o Git.
 - SQL/migraciones y Edge Functions deben quedar versionados en `supabase/` antes de aplicarse al proyecto Cloud; la estructura y el historial siguen su README. Cuando se autorice implementar se permiten reconstrucciones necesarias de aplicación en ese entorno de desarrollo, sin repetir aprobaciones rutinarias.
 - Fotos de componentes en `src/assets/images/`, publicadas con el frontend. Storage se reserva para GLB importados y sus recursos asociados; la geometría generada por código no necesita archivos 3D almacenados.
-- Cobertura confirmada: todas las piezas del catálogo podrán montarse en 3D, con recurso genérico identificado y versionado cuando proceda. Cambio trasero seleccionable con mando asociado, sin selector independiente; cobertura ampliada e ingesta documental por categoría en 11 y 11a–11m. Pedalier seleccionable; plato incluido con bielas.
+- Cobertura confirmada: todas las piezas del catálogo podrán montarse en 3D, con recurso genérico identificado y versionado cuando proceda. Cambio trasero seleccionable con mando asociado, sin selector independiente; cobertura ampliada e ingesta documental por categoría en 11 y 11a–11n. Pedalier seleccionable; plato incluido con bielas.
 - Sin workers propios, servidor dedicado, microservicios ni motor de física dentro del alcance acordado.
 - Representación exterior reconocible y proporcionada. Se aceptan modelos aproximados; no se promete precisión de fabricación ni compatibilidad mecánica completa.
 - Enduro y descenso con cuadros reales aproximados, cobertura de marcas y tallas principales M/L según 11. Horquillas/amortiguadores FOX, RockShox, Öhlins y Marzocchi; frenos Shimano/Magura/SRAM; transmisión Shimano/SRAM y neumáticos de las marcas indicadas. Manillar, potencia y sillín sencillos genéricos identificados. Variantes concretas pendientes de completar con fuente.
@@ -104,3 +106,5 @@ El documento 02 registra la arquitectura modular aprobada con independencia de r
 Una ampliación debe indicar qué necesidad resuelve y qué fase afecta. No añadir infraestructura por anticipación. Los nombres propuestos de tablas, rutas y módulos son contratos de implementación; los identificadores ficticios de los ejemplos no son datos de producción.
 
 El trabajo de concreción e implementación se distribuye en el documento 08: completar inventario, contratos por categoría, referencias de ensamblaje, bocetos administrativos y validación visual/rendimiento forma parte de las fases, con resultados y criterios de aceptación. No se exige resolverlo fuera del plan antes de comenzar. La cobertura ya está cerrada: todas las piezas del catálogo se montan en 3D. La conexión Supabase, el dominio de Netlify y el correo son requisitos de integración. Los datos de prueba pueden ayudar a desarrollar; no cumplen la aceptación final de una función que exige datos o integración reales.
+
+- [11o · Ampliación gravity](11o-ampliacion-gravity.md): cuadros y horquillas adicionales; generaciones históricas identificadas autorizadas.

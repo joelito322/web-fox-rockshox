@@ -173,3 +173,11 @@ Migración 016 y publicación visual v5 aplicadas en el mismo proyecto Cloud. El
 ## Continuidad exterior v6 y frenos v7
 
 Migraciones 017/018 y ambas transiciones aplicadas al Cloud existente. No cambian tablas, Auth, IAM ni funciones Edge. Snapshot limpio: 606 variantes, 604 recursos, 53 modelos y cuatro prearmadas; 114 elecciones vigentes. Se añadieron 74 binarios GLB v6 con rutas inmutables y se conserva Storage v5. Escritura anónima denegada (403). El frontend sigue local en 5174, sin nuevo despliegue. Reposición explícita hasta v7 en el README del catálogo; evidencia en [12c](12c-evidencia-continuidad.md).
+
+## Miniaturas y complementos comerciales · 21/10/2026
+
+Migraciones 019/020 (bucket privado y políticas de miniaturas) y 021 (seis perfiles nuevos de complementos v8) aplicadas al mismo Cloud. Se ingirió `supabase/catalog/cockpit-reviewed.json`: 59 modelos, 120 elecciones actuales, 612 variantes y 610 recursos con historial. Doce tablas propias y cuatro prearmadas; no se altera Auth/IAM ni se despliegan funciones nuevas. La auditoría de consultas no requirió índices/migraciones de rendimiento. Evidencia en 12d/11n y fuentes de imágenes locales; frontend permanece local en 5174.
+
+## Ampliación gravity · 21/10/2026
+
+Migración 022 aplicada y fuente aditiva `gravity-reviewed.json` publicada. Nuevos GLB inmutables en `catalog/v9/`, verificados por SHA256 y descarga pública; fuentes/binarios conservados en models/catalog-v9. Estado: 70 modelos, 146 elecciones y 22 migraciones; doce tablas propias, mismas cuatro prearmadas. No cambia Auth/IAM/Edge Functions ni despliegue Netlify; frontend local en 5174. Ver 11o/12.

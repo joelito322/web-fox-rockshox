@@ -16,7 +16,7 @@ Categoría/slot `frame`. Cobertura indicada por el usuario: marcas con modelos e
 | YT, ampliación investigada | CAPRA | TUES | [Catálogo oficial](https://www.yt-industries.com/en-uk/Bikes/) |
 | Giant, ampliación investigada | Reign | Glory, vigencia/generación por confirmar | [Reign](https://www.giant-bicycles.com/discover/en-us/mountain-biking/enduro/reign), [registro histórico Glory DH](https://www.giant-bicycles.com/_upload_in/bikes/models/brochure/2007/GloryDH.pdf) |
 
-Las siete primeras marcas forman la cobertura solicitada de investigación. YT/Giant responden a buscar otras con registros; no declaran cerrada una lista mundial. Ampliar con otra marca exige identificar modelo, generación, tallas y referencia suficiente, sin un modelo ficticio por cada disciplina. Solo se ingesta gama actual documentada: el registro histórico de Glory demuestra antecedentes, pero queda fuera hasta localizar su oferta actual. Igual criterio para cualquier catálogo/registro de servicio antiguo. No incorporar e-MTB con motor/batería por compartir nombre con un cuadro convencional.
+Las siete primeras marcas forman la cobertura solicitada de investigación. YT/Giant responden a buscar otras con registros; no declaran cerrada una lista mundial. Ampliar con otra marca exige identificar modelo, generación, tallas y referencia suficiente, sin un modelo ficticio por cada disciplina. El usuario amplió la delimitación el 21/10/2026: se permiten generaciones anteriores identificadas y documentadas (11o). Un registro histórico no acredita vigencia actual; no confundir las medidas ni fotografías entre generaciones. No incorporar e-MTB con motor/batería por compartir nombre con un cuadro convencional.
 
 ## Campos de cada talla/variante
 
@@ -113,3 +113,7 @@ Montaje guardado → misma referencia y mismo recurso que se guardaron
 ```
 
 La ficha normal prioriza variantes seleccionables; un enlace explícito a una referencia anterior conserva su detalle y avisa que no se aplica a un montaje nuevo. No duplicar las tallas en el selector normal ni reemplazar referencias de montajes guardados.
+
+## Ampliación gravity · 21/10/2026
+
+Se concretan V10.8 MY27, TUES MK4, CAPRA MK3 Carbon MX, GT Fury/Force Carbon High Pivot, COMMENCAL FRS V3 Pure White y Furious V3 2021. M/L donde están documentadas; TUES M MX y L 29 conforme a la ficha actual. Cotas inciertas se omiten del contrato comercial y los anclajes visuales se declaran estimados. Ver [11o](11o-ampliacion-gravity.md).

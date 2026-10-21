@@ -280,7 +280,7 @@ Tercera pestaña del espacio de trabajo, con la misma cabecera persistente. Acci
 +----------------------------------------------------------------------------------+
 ```
 
-No exigir miniaturas generadas por renderizado para entregar esta pantalla. Puede usarse una imagen de referencia del cuadro o una lista elegante. Estado vacío con una acción para crear el primer montaje; error de consulta separado del estado vacío.
+Las tarjetas usan miniaturas estáticas del estado 3D guardado según [05b](05b-miniaturas-montajes.md). Un montaje sin piezas conserva el área de imagen vacía. Estado vacío de la lista con una acción para crear el primer montaje; error de consulta separado del estado vacío.
 
 ## Recorrido completo y conservación del trabajo
 
@@ -341,9 +341,34 @@ Categorías       ┌──────────────────┐ �
                  │ versiones     ↗  │ │ versiones     ↗  │
                  └──────────────────┘ └──────────────────┘
 MÓVIL: cabecera compacta; búsqueda y categorías accesibles;
-       filtros en rejilla, dos tarjetas de pieza / una bicicleta.
+       filtros en rejilla, dos tarjetas por fila, también en bicicletas.
 ```
 
-Cabecera y tratamiento de galerías reutilizables; no añadir carruseles, cifras decorativas, promociones, nuevos campos o filtros sin datos. Las bicicletas de ejemplo conservan su ilustración identificada: no atribuir a una foto de fábrica un montaje ATLAS. Tarjeta de bicicleta con medio pulsable, marca, nombre, versión y acciones existentes; sin controles anidados. Mantener filtros/selección al cambiar de pestaña y panel derecho/inferior para detalle. Selección, teclado y hover reciben énfasis coherente con movimiento reducido; sombras discretas, bordes nítidos y legibilidad antes que efectos. Implementar y validar dentro de fases 1/3 de 08, registrando capturas y pruebas en 12.
+Cabecera y tratamiento de galerías reutilizables; no añadir carruseles, cifras decorativas, promociones, nuevos campos o filtros sin datos. Las bicicletas de ejemplo muestran su miniatura 3D del montaje guardado: no atribuir a una foto de fábrica un montaje ATLAS. Tarjeta de bicicleta con medio pulsable, marca, nombre, versión y acciones existentes; sin controles anidados. Mantener filtros/selección al cambiar de pestaña y panel derecho/inferior para detalle. Selección, teclado y hover reciben énfasis coherente con movimiento reducido; sombras discretas, bordes nítidos y legibilidad antes que efectos. Implementar y validar dentro de fases 1/3 de 08, registrando capturas y pruebas en 12.
 
 Ajustes de implementación: evitar repetir «Montaje ATLAS» en el título si el distintivo ya identifica el ejemplo; el nombre completo sigue en los datos. En tarjetas de componente, resumir cada atributo a tres valores y un conteo real de valores adicionales; la ficha conserva todos. Imagen ambiental de Bicicletas reutilizada de la campaña con versión móvil; collage de Componentes con fotos locales de horquilla/disco, decorativo y ajeno a la selección activa. Cabecera compacta para acercar resultados al primer vistazo y controles de categorías/selección con estado accesible.
+
+## Portadas fieles al montaje guardado
+
+Cambio autorizado: reemplazar el dibujo genérico de las tarjetas de Bicicletas y Mis bicicletas por una miniatura estática del montaje 3D real. Solo aparecen las piezas guardadas, con sus acabados y colores; si no hay piezas, el área queda vacía. No añadir piezas para completar la imagen ni usar una foto de otra bicicleta. La tarjeta conserva sus textos y acciones; la edición permanece en el configurador.
+
+```text
++-----------------------------+
+|                             |
+| Miniatura del estado        |
+| guardado, sin controles     |
+|                             |
++-----------------------------+
+| Nombre                      |
+| Piezas · última actualización|
+| Continuar                   |
++-----------------------------+
+```
+
+En móvil se conserva la misma jerarquía, sin controles 3D ni animación continua. Mientras falta una imagen o hay fallo, el espacio queda neutro; nunca se muestra otro montaje. Contrato, generación, persistencia y aceptación en [05b](05b-miniaturas-montajes.md).
+
+## Dos columnas en las tarjetas de bicicletas
+
+Las galerías Bicicletas y Mis bicicletas mantienen dos columnas iguales en cualquier ancho, incluso con un único resultado: la tarjeta ocupa una columna y la otra queda libre. En móvil se compactan márgenes y tipografía, y se apilan las acciones dentro de cada tarjeta; no se cambia a una columna ni se permite desbordamiento horizontal. Las tarjetas de componentes conservan su rejilla adaptable.
+
+Validación del ajuste · 21/10/2026: Chromium, resultado único SUPREME, anchos de 320, 412, 1280 y 1920 px. Dos columnas en todos los casos, tarjeta limitada a una columna, contenido sin desbordamiento y documento sin desplazamiento horizontal. Build correcto; esta comprobación de distribución no sustituye la validación funcional de miniaturas de 05b.
