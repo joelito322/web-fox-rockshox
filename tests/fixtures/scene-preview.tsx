@@ -21,13 +21,32 @@ import braking from "../../supabase/catalog/braking-reviewed.json";
 import suspension from "../../supabase/catalog/suspension-reviewed.json";
 import frames from "../../supabase/catalog/frames-reviewed.json";
 import tyres from "../../supabase/catalog/tyres-reviewed.json";
+import catalogV7 from "../../supabase/catalog/visual-v7-reviewed.json";
+import examplesV7 from "../../supabase/catalog/visual-v7-examples.json";
+import catalogV6 from "../../supabase/catalog/visual-v6-reviewed.json";
+import examplesV6 from "../../supabase/catalog/visual-v6-examples.json";
 import catalogV5 from "../../supabase/catalog/visual-v5-reviewed.json";
 import examplesV5 from "../../supabase/catalog/visual-v5-examples.json";
 import catalogV4 from "../../supabase/catalog/visual-v4-reviewed.json";
 import examplesV4 from "../../supabase/catalog/visual-v4-examples.json";
-const v5=new URLSearchParams(location.search).get('generation')==='v5';
-const visualCatalog=v5?catalogV5:catalogV4;
-const visualExamples=v5?examplesV5:examplesV4;
+const generation = new URLSearchParams(location.search).get("generation");
+const v5 = generation === "v5";
+const v6 = generation === "v6";
+const v7 = generation === "v7";
+const visualCatalog = v7
+  ? catalogV7
+  : v6
+    ? catalogV6
+    : v5
+      ? catalogV5
+      : catalogV4;
+const visualExamples = v7
+  ? examplesV7
+  : v6
+    ? examplesV6
+    : v5
+      ? examplesV5
+      : examplesV4;
 const legacy = new URLSearchParams(location.search).has("legacy");
 const catalogue = parseCatalogImport(
   legacy
@@ -185,11 +204,13 @@ function Proof() {
         <output aria-label="Pieza seleccionada">
           {selectedSlot ? slotLabels[selectedSlot] : "Sin selección"}
         </output>
-        <a href={`?discipline=${discipline}&size=${index ? "M" : "L"}&generation=${v5?"v5":"v4"}${legacy?"&legacy=1":""}`}>
+        <a
+          href={`?discipline=${discipline}&size=${index ? "M" : "L"}&generation=${v7 ? "v7" : v6 ? "v6" : v5 ? "v5" : "v4"}${legacy ? "&legacy=1" : ""}`}
+        >
           Cambiar talla
         </a>
         <a
-          href={`?discipline=${discipline === "downhill" ? "enduro" : "downhill"}&generation=${v5?"v5":"v4"}${legacy?"&legacy=1":""}`}
+          href={`?discipline=${discipline === "downhill" ? "enduro" : "downhill"}&generation=${v7 ? "v7" : v6 ? "v6" : v5 ? "v5" : "v4"}${legacy ? "&legacy=1" : ""}`}
         >
           Cambiar disciplina
         </a>

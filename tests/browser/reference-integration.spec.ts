@@ -13,14 +13,20 @@ import type {
   Configuration,
   VariantMap,
 } from "../../src/features/configurator/model";
+const generation = process.env.ATLAS_VISUAL_VERSION ?? "v5";
+if (!["v5", "v6", "v7"].includes(generation))
+  throw Error("Unsupported test generation");
 const source: typeof Source = JSON.parse(
-  readFileSync("supabase/catalog/visual-v5-reviewed.json", "utf8"),
+  readFileSync(`supabase/catalog/visual-${generation}-reviewed.json`, "utf8"),
 );
 const examples: typeof Examples = JSON.parse(
-  readFileSync("supabase/catalog/visual-v5-examples.json", "utf8"),
+  readFileSync(`supabase/catalog/visual-${generation}-examples.json`, "utf8"),
 );
 const report: typeof Report = JSON.parse(
-  readFileSync("models/catalog-v5/exports/report.json", "utf8"),
+  readFileSync(
+    `models/catalog-${generation === "v7" ? "v6" : generation}/exports/report.json`,
+    "utf8",
+  ),
 );
 const catalog = parseCatalogImport(source);
 for (const discipline of ["enduro", "downhill"])
@@ -31,7 +37,7 @@ for (const discipline of ["enduro", "downhill"])
     page.on("pageerror", (e) => errors.push(e.message));
     await page.addInitScript(installSceneMetrics);
     await page.goto(
-      `/tests/fixtures/scene-preview.html?generation=v5&discipline=${discipline}`,
+      `/tests/fixtures/scene-preview.html?generation=${generation}&discipline=${discipline}`,
     );
     await page.waitForFunction(
       () => (window as any).atlasSceneProof?.firstDrawMs != null,
@@ -67,7 +73,10 @@ for (const discipline of ["enduro", "downhill"])
         frame.visual_assets!.manifest.paintable_nodes.includes(name),
       ),
     )!;
-    const bytes = readFileSync("models/catalog-v5/exports/" + old.file),
+    const bytes = readFileSync(
+        `models/catalog-${generation === "v7" ? "v6" : generation}/exports/` +
+          old.file,
+      ),
       gltf = await new GLTFLoader().parseAsync(
         bytes.buffer.slice(
           bytes.byteOffset,

@@ -3,7 +3,21 @@ import { createRoot } from "react-dom/client";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Bounds, OrbitControls, useGLTF } from "@react-three/drei";
 import * as T from "three";
-import report from "../../models/catalog-v5/exports/report.json";
+import reportV5 from "../../models/catalog-v5/exports/report.json";
+import reportV6 from "../../models/catalog-v6/exports/report.json";
+const generation =
+  new URLSearchParams(location.search).get("generation") === "v6" ? "v6" : "v5";
+const report: Record<
+  string,
+  {
+    file: string;
+    model: string;
+    category: string;
+    triangles: number;
+    meshes: number;
+    anchors: Record<string, number[]>;
+  }
+> = generation === "v6" ? reportV6 : reportV5;
 import referenceData from "../../models/catalog-v5/references.json";
 type Reference = {
   url: string;
@@ -18,7 +32,9 @@ const rows = Object.entries(report),
   );
 type Row = (typeof rows)[number][1];
 function Model({ file }: { file: string }) {
-  const { scene } = useGLTF("/models/catalog-v5/exports/" + file);
+  const { scene } = useGLTF(
+    "/models/catalog-" + generation + "/exports/" + file,
+  );
   return <primitive object={scene} />;
 }
 // Register measured frame coordinates to the three source-image landmarks. This
@@ -29,7 +45,8 @@ function registration(row: Row, reference: Reference) {
     h = p.head_top,
     r = p.rear_axle;
   const anchors = row.anchors as Record<string, number[]>;
-  const H = anchors.head_tube, R = anchors.rear_axle;
+  const H = anchors.head_tube,
+    R = anchors.rear_axle;
   const determinant = H[0] * R[1] - R[0] * H[1];
   const ux = h[0] - b[0],
     uy = b[1] - h[1],
@@ -81,10 +98,19 @@ function Camera({
       c.lookAt(reference.width / 2, reference.height / 2, 0);
       c.updateProjectionMatrix();
     } else {
+      const view = new URLSearchParams(location.search).get("camera");
+      const views: Record<string, [number, number, number]> = {
+        right: [0, 0.2, 3],
+        left: [0, 0.2, -3],
+        front: [3, 0.2, 0],
+        top: [0, 3, 0.001],
+        bottom: [0, -3, 0.001],
+        diagonal: [2, 1, 2],
+        opposite: [-2, 0.8, -2],
+      };
       c.position.set(
-        row.category === "fork" ? 3 : 0,
-        0.2,
-        row.category === "fork" ? 0 : 3,
+        ...(views[view ?? ""] ??
+          (row.category === "fork" ? [3, 0.2, 0] : [0, 0.2, 3])),
       );
       c.lookAt(0, 0.2, 0);
     }
