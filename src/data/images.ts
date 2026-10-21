@@ -1,11 +1,11 @@
 import maxxisAssegai from "../assets/images/catalog/assegai.jpg";
 import maxxisDhrII from "../assets/images/catalog/minion-dhr-ii.jpg";
-import rockbrosNylon from "../assets/images/catalog/rockbros-nylon.jpg";
+import rockbrosNylon from "../assets/images/catalog/rockbros-nylon-2017-12.webp";
 import supremeDH from "../assets/images/catalog/supreme-dh-v5.jpg";
 import fox40 from "../assets/images/catalog/fox-40-my27-black.png";
 import maguraMT5 from "../assets/images/catalog/magura-mt5.png";
-import marzocchiZ1Black from "../assets/images/catalog/marzocchi-z1-rail-black.jpg";
-import marzocchiZ1Red from "../assets/images/catalog/marzocchi-z1-rail-red.jpg";
+import marzocchiZ1Black from "../assets/images/catalog/marzocchi-z1-rail-black.webp";
+import marzocchiZ1Red from "../assets/images/catalog/marzocchi-z1-rail-red.webp";
 import fox36Factory from "../assets/images/fox-36-factory.webp";
 import foxX2 from "../assets/images/fox-x2.png";
 import fox34StepCast from "../assets/images/fox-34-stepcast.png";
@@ -21,7 +21,11 @@ const photoFiles = import.meta.glob<string>("../assets/images/catalog/*.webp", {
 });
 const photosBySlug: Record<string, string> = Object.fromEntries(
   Object.entries(photoFiles).map(([path, url]) => [
-    path.split("/").pop()!.replace(/\.webp$/, ""), url,
+    path
+      .split("/")
+      .pop()!
+      .replace(/\.webp$/, ""),
+    url,
   ]),
 );
 
@@ -30,13 +34,17 @@ export function componentImage(
   component: { slug: string; image_key: string | null },
   variant?: { image_key?: string | null },
 ) {
-  return modelImages[variant?.image_key ?? ""]
-    ?? modelImages[component.image_key ?? ""]
-    ?? photosBySlug[component.slug];
+  return (
+    modelImages[variant?.image_key ?? ""] ??
+    modelImages[component.image_key ?? ""] ??
+    photosBySlug[component.slug]
+  );
 }
 
 export const modelImages: Record<string, string> = {
-  ...Object.fromEntries(Object.entries(photosBySlug).map(([slug, url]) => [`catalog:${slug}`, url])),
+  ...Object.fromEntries(
+    Object.entries(photosBySlug).map(([slug, url]) => [`catalog:${slug}`, url]),
+  ),
   "catalog:marzocchi-z1-rail-black": marzocchiZ1Black,
   "catalog:marzocchi-z1-rail-red": marzocchiZ1Red,
   "catalog:magura-mt5": maguraMT5,

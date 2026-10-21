@@ -6,7 +6,14 @@
     "url": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Library-Sites-canyon-shared/default/dw6b811ad8/images/plp/Mountain/Sender/CEC-2-1-platform-gallery-Sender-CFR-fullframe-green.jpg?q=80&sfrm=jpg&sh=700&sm=cut&sw=1000",
     "consulted_at": "2026-10-19",
     "scope": "model-reference",
-    "bytes": 22762
+    "bytes": 48578,
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "background-removal",
+      "tool": "imagegen built-in",
+      "prompt": "Eliminar el fondo de estudio conservando cuadro, pintura, logotipos, herrajes y perspectiva; transparencia real también dentro de huecos. Sin añadir piezas.",
+      "output": "WebP con canal alfa, lado máximo 800 px"
+    }
   },
   {
     "slug": "commencal-meta-sx-v5",
@@ -132,7 +139,13 @@
     "url": "https://bike.marzocchi.com/cdn/shop/products/bomber_CR_Neutral_rotation_side_pdp-1800x1800-3875f0cf-23d1-48b8-99be-a6a7156af9c5_1200x1200.png?v=1682022762",
     "consulted_at": "2026-10-19",
     "scope": "model-reference",
-    "bytes": 21064
+    "bytes": 55564,
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "background-removal",
+      "tool": "imagegen built-in",
+      "prompt": "Eliminar fondo gris, incluido interior de ojos; preservar muelle, depósito y herrajes."
+    }
   },
   {
     "slug": "michelin-wild-enduro-ms-racing-line",
@@ -358,5 +371,301 @@
     "consulted_at": "2026-10-19",
     "scope": "model-reference",
     "bytes": 18722
+  },
+  {
+    "slug": "renthal-fatbar-35",
+    "file": "renthal-fatbar-35.webp",
+    "page": "https://renthal.com/products/fatbar35-30mm",
+    "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/M158-02-007_01.jpg?v=1779429503",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "bytes": 16036,
+    "original_sha256": "1e72ec97e98fe6f3f8cc6aadf7eb1973c8738ead9a5e1d00dd7c26c296640a3f",
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "background-and-reflection-removal",
+      "tool": "imagegen built-in",
+      "prompt": "Aislar únicamente el producto real; eliminar fondo, suelo, sombras y reflejos; conservar geometría, color, texto y herrajes; transparencia dentro de huecos."
+    }
+  },
+  {
+    "slug": "deity-racepoint-35",
+    "file": "deity-racepoint-35.webp",
+    "page": "https://www.deitycomponents.com/racepoint_handlebar_38mm.html",
+    "url": "https://www.deitycomponents.com/uploads/1/6/0/8/16089364/7-deity-racepoint-handlebar-38r-white_orig.jpg",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "bytes": 11814,
+    "original_sha256": "9b7a3b3676505fec318d04993f5faa8cfa94a99ab074db9675bf90b28a2243a5",
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "background-and-reflection-removal",
+      "tool": "imagegen built-in",
+      "prompt": "Aislar únicamente el producto real; eliminar fondo, suelo, sombras y reflejos; conservar geometría, color, texto y herrajes; transparencia dentro de huecos."
+    }
+  },
+  {
+    "slug": "renthal-apex-35-v2",
+    "file": "renthal-apex-35-v2.webp",
+    "page": "https://renthal.com/products/apex35-33mm-v2-stem-copy",
+    "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/STM127-01.jpg?v=1784796860",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "bytes": 89902,
+    "original_sha256": "48bf3008efdee47418f557594795032f513c796136aef6345835f6147750d571",
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "background-and-reflection-removal",
+      "tool": "imagegen built-in",
+      "prompt": "Aislar únicamente el producto real; eliminar fondo, suelo, sombras y reflejos; conservar geometría, color, texto y herrajes; transparencia dentro de huecos."
+    }
+  },
+  {
+    "slug": "renthal-integra-35",
+    "file": "renthal-integra-35.webp",
+    "page": "https://renthal.com/products/integra35-45mm-10-rise",
+    "url": "https://cdn.shopify.com/s/files/1/0999/9496/0221/files/STM114.jpg?v=1786358732",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "bytes": 67140,
+    "original_sha256": "5f338e5b5ca91392519508904823f1105abd0c9a7c00738ad047d148901f0c2f",
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "background-and-reflection-removal",
+      "tool": "imagegen built-in",
+      "prompt": "Aislar únicamente el producto real; eliminar fondo, suelo, sombras y reflejos; conservar geometría, color, texto y herrajes; transparencia dentro de huecos."
+    }
+  },
+  {
+    "slug": "oneup-v3-dropper",
+    "file": "oneup-v3-dropper.webp",
+    "page": "https://www.oneupcomponents.com/products/dropper-post-v3",
+    "url": "https://cdn.shopify.com/s/files/1/0284/9430/products/OneUp-Components_V3Dropper_180Extended.jpg?v=1763513155",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "bytes": 33190,
+    "original_sha256": "f4e6e0f4cbbf6a6ade3d65c6d94e5289a5c8f7c21c3f9a5326050fae5e4f4716",
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "background-and-reflection-removal",
+      "tool": "imagegen built-in",
+      "prompt": "Aislar únicamente el producto real; eliminar fondo, suelo, sombras y reflejos; conservar geometría, color, texto y herrajes; transparencia dentro de huecos."
+    }
+  },
+  {
+    "slug": "wtb-volt",
+    "file": "wtb-volt.webp",
+    "page": "https://www.wtb.com/products/volt",
+    "url": "https://cdn.shopify.com/s/files/1/0202/9884/files/Volt_Medium_Titanium_ISO_Web.png?v=1785927657",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "bytes": 26744,
+    "original_sha256": "85322d1d6bb9f21ea98fae606aecd29436f3405787a64531b021860601cd6730"
+  },
+  {
+    "slug": "scott-ransom-rc-427727",
+    "file": "scott-ransom-rc-427727.webp",
+    "page": "https://www.99bikes.co.uk/products/2027-scott-ransom-rc-mountain-bike-frame-shock-in-foggy-grey",
+    "url": "https://cdn.shopify.com/s/files/1/0669/2539/6148/files/4277278535A.png?v=1791820633",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "identity_source": "https://www.scott-sports.com/global/en/product/scott-ransom-rc-frame-shock",
+    "bytes": 41102
+  },
+  {
+    "slug": "shimano-slx-oem-165-32",
+    "file": "shimano-slx-oem-165-32.webp",
+    "page": "https://www.commencal.com/us/en/bikes/bikes/enduro/meta%20sx%20v5/BT5MSXV5EEU1S.html?lang=en_US",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/dwba4eec67/images/BT5MSXV5EEU1_06.jpg?q=70",
+    "consulted_at": "2026-10-21",
+    "scope": "oem-installation-reference",
+    "bytes": 43204,
+    "editing": {
+      "date": "2026-10-21",
+      "operation": "oem-crankset-isolation",
+      "tool": "imagegen built-in",
+      "prompt": "Aislar biela SLX derecha y plato del montaje OEM oficial; eliminar cuadro, rueda y transmisión restante; conservar el tramo de cadena que tapa dientes sin inventarlos. Mantener forma, acabado y texto SLX; transparencia exterior.",
+      "limits": "Referencia aislada del montaje OEM, no foto de SKU comercial confirmado ni afirmación de que la cadena esté incluida; no se asigna FC-M7100 por deducción."
+    }
+  },
+  {
+    "slug": "marzocchi-bomber-58",
+    "file": "marzocchi-bomber-58.webp",
+    "page": "https://bike.marzocchi.com/products/bomber-58",
+    "url": "https://bike.marzocchi.com/cdn/shop/products/bomber_58_black_rotation_front_pdp-1800x1800-6fd54199-3f6c-4487-bc03-d00045816116_1200x1200.png?v=1683582618",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "33d247bca887c5a2b2b7f8f7f803bdb308319b172dba665c480de7e4384f76ae",
+    "bytes": 28004,
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "background-removal",
+      "prompt": "Remove only the studio background and floor shadow. Preserve the complete product, shape, proportions, paint and existing markings; transparent holes, no invented pieces, no halo or new shadows.",
+      "output": "WebP alpha, maximum side 800 px. Photographic retouch; not dimensional evidence."
+    }
+  },
+  {
+    "slug": "marzocchi-bomber-58-red",
+    "file": "marzocchi-bomber-58-red.webp",
+    "page": "https://bike.marzocchi.com/products/bomber-58",
+    "url": "https://bike.marzocchi.com/cdn/shop/products/bomber_58_red_rotation_front_pdp-1800x1800-c3f6a2cc-7254-4515-85f3-4d4ad860044d_600x.png?v=1683582618",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "bd4a215f8aa908a1c4f444c274e3c8b81748b395c99a4e2f341f176c1d059929",
+    "bytes": 33734,
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "background-removal",
+      "prompt": "Remove only the studio background and floor shadow. Preserve the complete product, shape, proportions, paint and existing markings; transparent holes, no invented pieces, no halo or new shadows.",
+      "output": "WebP alpha, maximum side 800 px. Photographic retouch; not dimensional evidence."
+    }
+  },
+  {
+    "slug": "ohlins-dh38-m2",
+    "file": "ohlins-dh38-m2.webp",
+    "page": "https://www.ohlins.com/en-us/mountain-bike/front-forks/am-dh38-m-2-air-ttx18-29-27-5-200",
+    "url": "https://www.ohlins.com/storage/503A74EAD5A8BD2CACCC1C82EE0347D79BCB1D1467AAD9075777614CDDAF15DA/39e7dbe21b6541c39599b18813f51e62/jpg/media/22d08f69ffe64a18b860da63730c8b7c/DH38%20m2%20coil-4.jpg",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "fef85da9860443bc233ed2d54d7e459eee2a661986f1c9113a9c9eb6c1cfa943",
+    "bytes": 29176,
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "background-removal",
+      "prompt": "Remove only the studio background and floor shadow. Preserve the complete product, shape, proportions, paint and existing markings; transparent holes, no invented pieces, no halo or new shadows.",
+      "output": "WebP alpha, maximum side 800 px. Photographic retouch; not dimensional evidence."
+    },
+    "note": "Fotografía del chasis m.2 Coil sin coronas; exterior de referencia común, no fotografía de cada sistema interno de aire/muelle. No se añaden piezas a la foto."
+  },
+  {
+    "slug": "gt-fury-carbon-high-pivot",
+    "file": "gt-fury-carbon-high-pivot.webp",
+    "page": "https://gtbicycles.com/products/fury-carbon-frameset",
+    "url": "https://gtbicycles.com/cdn/shop/files/FuryCRB_Frame_PD_BLK.jpg?v=1694717653",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "db2037edc3b0e30fefc953c3a626ac20d134684de354d344ae58e20625333694",
+    "bytes": 58420,
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "background-removal",
+      "prompt": "Remove only the studio background and floor shadow. Preserve the complete product, shape, proportions, paint and existing markings; transparent holes, no invented pieces, no halo or new shadows.",
+      "output": "WebP alpha, maximum side 800 px. Photographic retouch; not dimensional evidence."
+    }
+  },
+  {
+    "slug": "gt-force-carbon-high-pivot",
+    "file": "gt-force-carbon-high-pivot.webp",
+    "page": "https://gtbicycles.com/products/force-carbon-frameset",
+    "url": "https://gtbicycles.com/cdn/shop/files/ForceCRB_Frame_PD_BLK.jpg?v=1693598157",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "1c7c2bc20edb69529c0ecab77788ad7c596c4fe163f3c847253aed387f2d358f",
+    "bytes": 47140,
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "background-removal",
+      "prompt": "Remove only the studio background and floor shadow. Preserve the complete product, shape, proportions, paint and existing markings; transparent holes, no invented pieces, no halo or new shadows.",
+      "output": "WebP alpha, maximum side 800 px. Photographic retouch; not dimensional evidence."
+    }
+  },
+  {
+    "slug": "commencal-furious-v3-2021",
+    "file": "commencal-furious-v3-2021.webp",
+    "page": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+    "url": "https://www.commencal.com/on/demandware.static/-/Sites-commencal-master/default/dwccc2b583/images/21FUREGM_2000.jpg",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "5f2f7573cd69b4ee69a29bab313ffc6a506cc97da567deb1375947de15dae726",
+    "bytes": 45948,
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "isolate-bare-frame",
+      "prompt": "Precise object removal from this ORIGINAL manufacturer photograph. This is a COMMENCAL FURIOUS 2021, NOT a Transition bicycle. Preserve exact frame shape, all paint and existing lettering: COMMENCAL on upper tube, FURIOUS on rear triangle. DO NOT replace or retype branding. Keep photo pixels of frame as faithfully as possible. Remove wheels, fork, saddle and seatpost, cockpit, cables, drivetrain, cranks, chain, brakes and rear shock. Retain all integral frame tubes, pivots and linkage including original rear triangle and head tube. Reconstruct minimal surfaces occluded by removed parts. Isolated bare frame only, centered and enlarged on true transparent background including holes. Same camera perspective. No invented model, no new logos, no typography replacements.",
+      "output": "WebP transparente, lado máximo 800 px"
+    },
+    "note": "Cuadro aislado de fotografía del fabricante. Superficies antes ocultas reconstruidas visualmente; no certificación dimensional. Original completo conservado en models/catalog-v9/references/."
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "file": "santa-cruz-v10-8-my27.webp",
+    "page": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/MY27_V10_CC_FactoryDHX2_FrameOnly_GlossLiquidBlue.png?v=1767915021&width=1600",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "af24b4cbecfb9f7e5c97edce72a29c576a910c82ffc9f10ca5c53992350bfee6",
+    "bytes": 19984
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "file": "yt-tues-mk4-carbon.webp",
+    "page": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+    "url": "https://www.yt-industries.com/media/fd/6c/50/1724137322/TUES-MK4-MX-CF-Core4-ShellWhite-SidehwP8Jim4A5BqU.png.png",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "87f42530f6d3b9d1fc7b6b7bab71d5052fb6711ce5c6332bc97bbea01aa27533",
+    "bytes": 34984,
+    "note": "Cuadro aislado de fotografía del fabricante. Superficies antes ocultas reconstruidas visualmente; no certificación dimensional. Original completo conservado en models/catalog-v9/references/.",
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "isolate-bare-frame",
+      "prompt": "Use case: precise-object-edit. Edit target: attached bicycle product photograph. Produce ONLY its bare bicycle FRAMESET, preserving the exact model-specific frame silhouette, tube shapes, paint, branding, suspension rocker/linkages and rear triangle. Remove BOTH wheels, tyres, fork, headset stem, handlebar, cables, saddle, seatpost, brakes, drivetrain, chain, cassette, cranks, pedals and rear shock. Keep integral frame pivots/linkages and structural supports intact. Reconstruct only frame surfaces hidden behind removed components, consistently with this exact frame. Preserve original side perspective and photographic finish. Center and enlarge isolated frame with modest padding, entire frame visible. Actual transparent background, also through all frame openings. No ground shadow, no white background, no extra text. This is a frameset catalog thumbnail, never a complete bicycle.",
+      "output": "WebP transparente, lado máximo 800 px"
+    }
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "file": "yt-capra-mk3-carbon-mx.webp",
+    "page": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+    "url": "https://www.yt-industries.com/media/20/51/dc/1732717115/CAPRA-MX-CF-MY25-Core4-DeepGreen-side_w.png.png",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "d6a5f82930aacb18b9e3f1b5d0defd6e6a89fdb88f1ee47731afd52a42f28265",
+    "bytes": 40066,
+    "note": "Cuadro aislado de fotografía del fabricante. Superficies antes ocultas reconstruidas visualmente; no certificación dimensional. Original completo conservado en models/catalog-v9/references/.",
+    "editing": {
+      "date": "2026-10-21",
+      "tool": "imagegen built-in",
+      "operation": "isolate-bare-frame",
+      "prompt": "Use case: precise-object-edit. Edit target: attached bicycle product photograph. Produce ONLY its bare bicycle FRAMESET, preserving the exact model-specific frame silhouette, tube shapes, paint, branding, suspension rocker/linkages and rear triangle. Remove BOTH wheels, tyres, fork, headset stem, handlebar, cables, saddle, seatpost, brakes, drivetrain, chain, cassette, cranks, pedals and rear shock. Keep integral frame pivots/linkages and structural supports intact. Reconstruct only frame surfaces hidden behind removed components, consistently with this exact frame. Preserve original side perspective and photographic finish. Center and enlarge isolated frame with modest padding, entire frame visible. Actual transparent background, also through all frame openings. No ground shadow, no white background, no extra text. This is a frameset catalog thumbnail, never a complete bicycle.",
+      "output": "WebP transparente, lado máximo 800 px"
+    }
+  },
+  {
+    "slug": "rockshox-boxxer-ultimate-d2",
+    "file": "rockshox-boxxer-ultimate-d2.webp",
+    "page": "https://www.sram.com/en/rockshox/models/fs-bxr-ult-d2",
+    "url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/suspension---forks/suspension---forks/fs-boxxer-ultimate-d2/productassets_fs-bxr-ult-d2_fg/fs-bxr-ult-29sb-200-red-c5r55-shrt-48-d2-c-3q.png",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "7d1d5dda1734b263e9ba2c70f53b681a6428b81cca50529d1e1bad01c859c6c8",
+    "bytes": 26060
+  },
+  {
+    "slug": "rockshox-boxxer-ultimate-d2-black",
+    "file": "rockshox-boxxer-ultimate-d2-black.webp",
+    "page": "https://www.sram.com/en/rockshox/models/fs-bxr-ult-d2",
+    "url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/suspension---forks/suspension---forks/fs-boxxer-ultimate-d2/productassets_fs-bxr-ult-d2_fg/fs-bxr-ult-29sb-200-glb-c5r55-shrt-48-d2-c-3q.png",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "423989784e4be0c0066146478774bd59227e3719ea2841eaa19e2decb954a867",
+    "bytes": 23174
+  },
+  {
+    "slug": "rockshox-boxxer-select-d2",
+    "file": "rockshox-boxxer-select-d2.webp",
+    "page": "https://www.sram.com/en/rockshox/models/fs-bxr-sel-d2",
+    "url": "https://www.sram.com/globalassets/image-hierarchy/sram-product-root-images/suspension---forks/suspension---forks/fs-boxxer-select-d2/productassets_fs-bxr-sel-d2_fg/fs-bxr-sel-29-sb-200-blk-short-48-d2-c-3q.png",
+    "consulted_at": "2026-10-21",
+    "scope": "model-reference",
+    "original_sha256": "1f0a3fc76351fe35eee22bc35edfcdee0fd16e4748c01353146fa23936fa7d37",
+    "bytes": 21912
   }
 ]
