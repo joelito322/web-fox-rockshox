@@ -6,6 +6,8 @@ export const proceduralGeneratorKeys = [
   "atlas-bike-v3",
   "atlas-bike-v4",
   "atlas-bike-v5",
+  "atlas-bike-v6",
+  "atlas-bike-v7",
 ] as const;
 export type ProceduralGeneratorKey = (typeof proceduralGeneratorKeys)[number];
 export function knownProceduralGenerator(

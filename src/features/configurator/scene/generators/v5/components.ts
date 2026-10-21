@@ -82,6 +82,7 @@ const calipers = {
 } as const;
 // Keep lever/cable routing from the frozen renderer, replace the caliper envelope and clamp details.
 class BrakeBodyBuilder extends SpatialMeshBuilder {
+  suppressLegacyBody = true;
   constructor(
     private readonly body: { minX: number; maxX: number; maxY: number },
   ) {
@@ -92,6 +93,7 @@ class BrakeBodyBuilder extends SpatialMeshBuilder {
     const box = g.boundingBox!;
     // Exclude old caliper-local geometry while retaining the shared lever/hose surfaces.
     if (
+      this.suppressLegacyBody &&
       box.max.x >= this.body.minX &&
       box.min.x <= this.body.maxX &&
       box.max.y < this.body.maxY &&
@@ -111,6 +113,7 @@ export function brake(
   front: boolean,
   color: string,
   width: number,
+  completeBody = false,
 ) {
   if (!(key in calipers)) throw Error("missing_brake_reference");
   const p = calipers[key as keyof typeof calipers],
@@ -126,6 +129,8 @@ export function brake(
     maxY: y + 0.065,
   });
   oldBrake(b, key, v, a, front, color, width);
+  // V5 keeps its frozen output; new identities can finish the replacement body.
+  if (completeBody) b.suppressLegacyBody = false;
   // Open pad channel, separate forged halves and a top bridge; avoid a solid brick across the rotor.
   const outline: [number, number][] = [
     [-L, -H],

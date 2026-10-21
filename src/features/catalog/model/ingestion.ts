@@ -81,9 +81,13 @@ export function parseCatalogImport(input: unknown) {
     specificationSchemas[component.category].parse(variant.specs);
     const visual = assets.get(variant.visual_asset_id ?? "");
     if (
-      ["atlas-bike-v3", "atlas-bike-v4", "atlas-bike-v5"].includes(
-        visual?.generator_key ?? "",
-      )
+      [
+        "atlas-bike-v3",
+        "atlas-bike-v4",
+        "atlas-bike-v5",
+        "atlas-bike-v6",
+        "atlas-bike-v7",
+      ].includes(visual?.generator_key ?? "")
     ) {
       const profile = visual!.manifest.parameters.profile_key;
       if (!profile || modelProfiles[profile] !== component.category)

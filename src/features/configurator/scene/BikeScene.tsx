@@ -9,6 +9,8 @@ import BikeV2 from "./generators/BikeV2";
 import BikeV3 from "./generators/BikeV3";
 import BikeV4 from "./generators/BikeV4";
 import BikeV5 from "./generators/BikeV5";
+import BikeV6 from "./generators/BikeV6";
+import BikeV7 from "./generators/BikeV7";
 import { importedMount } from "../model/assemblyV5";
 import Selection from "./Selection";
 import type { Configuration, Slot, VariantMap } from "../model";
@@ -29,15 +31,21 @@ const generators: Record<ProceduralGeneratorKey, typeof BikeV1> = {
   "atlas-bike-v3": BikeV3,
   "atlas-bike-v4": BikeV4,
   "atlas-bike-v5": BikeV5,
+  "atlas-bike-v6": BikeV6,
+  "atlas-bike-v7": BikeV7,
 };
 export async function prepareVisual(asset: VisualAsset) {
   if (asset.kind === "procedural") {
     if (!knownProceduralGenerator(asset.generator_key))
       throw new Error("unknown_generator");
     if (
-      ["atlas-bike-v3", "atlas-bike-v4", "atlas-bike-v5"].includes(
-        asset.generator_key ?? "",
-      ) &&
+      [
+        "atlas-bike-v3",
+        "atlas-bike-v4",
+        "atlas-bike-v5",
+        "atlas-bike-v6",
+        "atlas-bike-v7",
+      ].includes(asset.generator_key ?? "") &&
       !asset.manifest.parameters.profile_key
     )
       throw new Error("missing_visual_profile");
@@ -292,9 +300,13 @@ export default function BikeScene({
             const asset = variant.visual_assets;
             const Generator =
               frameV2 &&
-              !["atlas-bike-v3", "atlas-bike-v4", "atlas-bike-v5"].includes(
-                asset?.generator_key ?? "",
-              )
+              ![
+                "atlas-bike-v3",
+                "atlas-bike-v4",
+                "atlas-bike-v5",
+                "atlas-bike-v6",
+                "atlas-bike-v7",
+              ].includes(asset?.generator_key ?? "")
                 ? BikeV2
                 : generators[
                     knownProceduralGenerator(asset?.generator_key)
