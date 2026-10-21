@@ -115,3 +115,6 @@ La fidelidad adicional aumenta descarga y coste de renderizado. Esta entrada cum
 Resultados conservados: [v5](assets/atlas-v5-performance.json) y [comparación v4](assets/atlas-v4-comparison-performance.json). Reproducción: `node scripts/measure-scene.mjs --version=v5 --mobile`; renderizado: `node scripts/review-visuals.mjs --version=v5`; superposiciones: `node scripts/review-reference-overlays.mjs`.
 
 Capturas: [enduro](assets/atlas-v5-enduro.png), [descenso](assets/atlas-v5-downhill.png), [Nomad](assets/atlas-v5-nomad.png), [frontal](assets/atlas-v5-front.png), [móvil emulado](assets/atlas-v5-mobile.png), [superposición META](assets/atlas-v5-meta-overlay.png) y [superposición Nomad](assets/atlas-v5-nomad-overlay.png).
+
+
+La revisión posterior de conexiones y caras ocultas, con recursos v6 y reparación de carcasas de freno v7, se registra por separado en [12c](12c-evidencia-continuidad.md). Las cifras y capturas anteriores conservan su contexto histórico.

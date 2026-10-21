@@ -2,7 +2,7 @@
 
 Relacionado: [planes](../docs/planning/README.md), [entornos y accesos](../docs/planning/07-entornos-y-despliegue.md), [datos](../docs/planning/03-datos-y-operaciones.md) e [IAM](../docs/planning/04a-iam-roles-y-permisos.md).
 
-Estado: implementación autorizada en curso. Migraciones 001–016 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
+Estado: implementación autorizada en curso. Migraciones 001–018 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
 
 Herramientas: `node scripts/supabase.mjs push|status|deploy [función]`, con Node de `.node-version` y variables ya configuradas en `.env`. El despliegue usa `--use-api`; no levantar Docker ni Supabase local. Toda corrección posterior a una migración aplicada se escribe en una nueva migración.
 
@@ -89,3 +89,8 @@ La mejora de recursos exteriores v3/v4 conserva generaciones previas y publica s
 ## Recursos de referencia v5 · 20/10/2026
 
 La migración 016 aplica el contrato de montaje de mallas y el bucket público `models`, con límite de 8 MB por archivo y sin políticas de escritura de visitantes. Hay 76 capturas GLB (74 binarios únicos), 52 recursos paramétricos v5 y 114 variantes públicas seleccionables. `models/catalog-v5/` conserva fuentes Blender, trazados y huellas; `scripts/upload-visual-v5.mjs` verifica binarios antes de publicar. `validate-visual-v5-storage.mjs` comprobó descargas públicas y rechazo anónimo HTTP 403; `--cleanup` solo elimina borradores sin referencia en base ni fuente actual dentro de `catalog/v5/`. No elimina recursos históricos referenciados. La transición v4→v5 pasó con montajes guardados antes de publicar y reapertura posterior. Sin despliegue Netlify nuevo.
+
+
+## Actualización de continuidad exterior
+
+Migraciones 017/018 aplicadas y fuentes v6/v7 publicadas; dieciocho migraciones en el Cloud existente. Se conserva todo el historial y el contrato de montaje GLB v5. Nuevos binarios en `models/catalog-v6/` y `catalog/v6/` del bucket; escritura anónima sigue denegada. No hay tablas nuevas ni modificación de Auth gestionado. Reposición y orden de publicaciones en `catalog/README.md`; pruebas SQL `tests/visual-v6.sql` y `tests/visual-v7.sql`, controles Blender y evidencia en el documento 12c.

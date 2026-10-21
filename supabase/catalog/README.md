@@ -1,97 +1,85 @@
-# Supabase Cloud: fuentes y cambios versionados
+# Inventario revisado y recursos versionados
 
-Relacionado: [planes](../docs/planning/README.md), [entornos y accesos](../docs/planning/07-entornos-y-despliegue.md), [datos](../docs/planning/03-datos-y-operaciones.md) e [IAM](../docs/planning/04a-iam-roles-y-permisos.md).
+## Estado vigente: GLB v6 y frenos v7
 
-Estado: implementación autorizada en curso. Migraciones 001–016 aplicadas en Cloud y `admin-users` desplegada. Evidencia y límites en [12](../docs/planning/12-estado-implementacion.md); no declarar completos registro/correos ni catálogo por esta infraestructura.
+La publicación actual es `visual-v7-reviewed.json` con cuatro prearmadas en `visual-v7-examples.json`; 53 modelos y 114 elecciones seleccionables. Conserva GLB v6 para los cuadros/suspensiones, renderer v7 para nueve frenos y v5 para las piezas sin cambio. La publicación v6 creó 85 sucesoras y reutilizó 43 capturas; la v7 creó nueve sucesoras de freno y reutilizó 119. El publicador no archiva los mapeos de identidad sin cambio.
 
-Herramientas: `node scripts/supabase.mjs push|status|deploy [función]`, con Node de `.node-version` y variables ya configuradas en `.env`. El despliegue usa `--use-api`; no levantar Docker ni Supabase local. Toda corrección posterior a una migración aplicada se escribe en una nueva migración.
+Reposición completa: cinco fuentes históricas → v3 → v4 → v5 → v6 → v7; ejecutar `node scripts/publish-visuals.mjs --version=v6 --apply` y finalizar con `--version=v7 --apply`. Requiere migraciones 017/018 y GLB cargados con `node scripts/upload-visual-v5.mjs --version=v6 --apply`. La opción de versión es explícita: el valor predeterminado del publicador sigue siendo v4. Conservar todas las fuentes y rutas anteriores.
 
-`operations/bootstrap-admin.sql` es una operación controlada sobre una identidad confirmada, sin función pública de ascenso. `auth-config.json` y `templates/` contienen configuración de Auth preparada, todavía pendiente por HTTP 403 del token en escritura. `tests/` contiene contratos SQL y preparación/limpieza de pruebas de navegador; no usar sus identidades temporales como administradores reales.
+Fuentes editables e inferencias en `models/catalog-v6/README.md`. Snapshot: 606 variantes y 604 recursos históricos, cuatro prearmadas, 53 modelos. Evidencia en `docs/planning/12c-evidencia-continuidad.md`; no equivale a CAD ni a Android físico aceptado.
 
-## Entorno acordado
 
-El frontend se ejecuta localmente. PostgreSQL, Auth, Storage y Edge Functions se desarrollan y validan directamente en el proyecto Supabase Cloud ya creado, identificado por las variables locales de la raíz del repositorio.
+## Fuentes históricas de catálogo
 
-No se configura un stack local de Supabase, base local, Docker, réplica local o segundo proyecto por obligación. Usar CLI o herramientas de despliegue desde este equipo no significa levantar una base local. El frontend local utiliza el backend cloud.
+`initial-reviewed.json` conserva 29 modelos y 74 variantes, de las cuales 62 están publicadas. Se completó la publicación de RXF38 m.3 y las 24 medidas Vivid Coil D1 tras comprobar sus representaciones genéricas. Permanecen doce variantes en borrador; no se cambian sus medidas para forzar publicación.
 
-El usuario confirmó que el proyecto es de desarrollo, sin usuarios reales ni producción desplegada. Cuando se autorice implementar, las reconstrucciones de tablas propias, datos de prueba y funciones del alcance en este proyecto de desarrollo están permitidas. No solicitar confirmación repetida por cambios rutinarios necesarios ya autorizados. La solicitud posterior del usuario autorizó iniciar la implementación del alcance. No confundir esa autorización con eliminar el proyecto, credenciales, esquemas gestionados por Supabase o recursos ajenos al trabajo.
+`braking-reviewed.json` aporta diez modelos y doce variantes publicados de frenos/discos. `suspension-reviewed.json` añade cuatro modelos y dieciséis variantes publicados: ZEB Ultimate B1 29/170, Bomber Z1 RAIL 29/150 y 29/160 con acabados documentados, once FLOAT X2 Factory MY26 y TTX22m.2 MTBM 2208. `frames-reviewed.json` añade seis modelos, doce variantes seleccionables por talla y dos capturas anteriores conservadas de Santa Cruz, Canyon, Specialized, DA BOMB, SCOTT y Trek. `tyres-reviewed.json` aporta cuatro modelos y doce variantes de CST, Kenda, Michelin y Schwalbe. El total es **53 modelos/128 variantes**, con **53 modelos/116 variantes publicados, de las que 114 son seleccionables** y doce variantes en borrador. Aplicar las cinco fuentes antes de las composiciones; ninguna fuente aislada sustituye al catálogo completo.
 
-## Estructura objetivo
+Los recursos nuevos reutilizan el generador v1 con identidad propia, también al montarlos en cuadros v2; no modifican geometrías publicadas. Los pesos conservan su medida de referencia y los intervalos requieren fuente de la generación concreta. Las revisiones de recurso no certifican instalación física.
 
-```text
-supabase/
-├── README.md
-├── config.toml                          Configuración versionada de funciones/herramientas
-├── migrations/
-│   ├── <timestamp>_create_iam.sql
-│   ├── <timestamp>_create_catalog.sql
-│   ├── <timestamp>_create_builds.sql
-│   └── <timestamp>_policies_and_functions.sql
-├── functions/
-│   ├── admin-users/
-│   │   ├── index.ts                     Punto de entrada de esta función
-│   │   └── deno.json                    Dependencias/configuración si las necesita
-│   └── _shared/                         Solo lógica realmente compartida
-│       └── authorization.ts             Si existe responsabilidad reutilizable
-├── seed.sql                             Catálogo/datos de prueba deliberados
-└── tests/                               Comprobaciones necesarias sin secretos
-    └── <archivo-de-prueba>
+Las MAGURA conservan Royal Blood, manual de MT y mantenimiento condicionado por síntomas, sin inventar una purga anual. El peso de conjunto, lado o SKU sin correspondencia exacta permanece ausente. Maven B1 no hereda datos de A1. Los precios MAGURA son PVP de referencia con IVA alemán del 19 %, fechados y enlazados; no se suman como presupuesto del montaje.
+
+`enduro-examples.json` contiene dos versiones M/L de un mismo ejemplo ATLAS con 23 posiciones. Parte del cuadro COMMENCAL META SX V5 y combina FOX 38 Factory MY27, Marzocchi Bomber CR, Shimano SLX, DT Swiss, Maxxis, ROCKBROS y los cuatro [auxiliares propios](atlas-auxiliaries.md). No se etiqueta como montaje de fábrica ni se atribuye un año comercial a la composición.
+
+Las medidas desconocidas permanecen ausentes o null. La fuente OEM de las bielas identifica SLX, 165 mm y plato de 32 dientes, pero no el sufijo de biela, SKU, diámetro de eje o línea de cadena: no se completan por deducción. Los herrajes del amortiguador y la selección de muelle no quedan certificados por coincidir entreojos/carrera. No se suman precios de conjuntos agrupados visualmente. Al reponer un proyecto completo, aplicar las cinco fuentes de catálogo antes de sus composiciones; una fuente no elimina las referencias de la otra.
+
+`downhill-examples.json` añade dos versiones M/L del ejemplo SUPREME DH V5, con FOX 40 Factory MY27, Bomber CR 250×75, transmisión SRAM DH de siete velocidades, núcleo XD, pedalier DUB PF107, bujes 20×110 BOOST/12×157 y auxiliares propios. Conserva 23 posiciones por versión; las ruedas/neumáticos reutilizados son referencias del catálogo, sin declarar certificación de competición del conjunto.
+
+## Aplicación y validación
+
+Con Node de `.node-version`:
+
+```sh
+node scripts/ingest-catalog.mjs supabase/catalog/initial-reviewed.json
+node scripts/ingest-catalog.mjs supabase/catalog/braking-reviewed.json
+node scripts/ingest-catalog.mjs supabase/catalog/suspension-reviewed.json
+node scripts/ingest-catalog.mjs supabase/catalog/frames-reviewed.json
+node scripts/ingest-catalog.mjs supabase/catalog/tyres-reviewed.json
+node scripts/ingest-presets.mjs supabase/catalog/enduro-examples.json
+node scripts/ingest-presets.mjs supabase/catalog/downhill-examples.json
 ```
 
-Los nombres de funciones y migraciones ilustran el orden/responsabilidad; no obligan a crear archivos vacíos o una función por operación. Cada Edge Function real tiene carpeta propia y `index.ts`. Sus módulos auxiliares permanecen dentro de su carpeta salvo reutilización real; no crear `_shared` por anticipación. El nombre de migración usa timestamp único, por ejemplo `YYYYMMDDHHMMSS_descripcion.sql`.
+Estas órdenes validan sin escribir. `--apply` aplica cada documento transaccionalmente al proyecto Cloud existente. Aplicar catálogo antes de composiciones. La ingesta de prearmadas comparte `iam.validate_preset_document` con el RPC administrativo; no usa una copia menos estricta de sus reglas. No sustituye las migraciones ni crea tablas adicionales.
 
-El historial de cambios es Git junto con el historial de migraciones del proyecto, no otra carpeta con copias del mismo SQL. Los originales editables de modelado 3D y sus binarios no son migraciones. Archivos de trabajo de herramientas como `.temp/` no se consideran fuentes versionadas.
+Para revisar recursos antes de publicarlos, abrir `/tests/fixtures/scene-preview.html` en Vite local; `?size=L` muestra la otra talla; `?discipline=downhill&size=L` selecciona descenso. Esta entrada interna materializa los recursos en memoria para revisión sin cambiar los indicadores de publicación en Cloud. No forma parte del build de producción ni se ofrece como ruta comercial.
 
-## Qué debe quedar en el repositorio
+## Recursos publicados
 
-- Tablas, tipos, índices, restricciones, RLS/grants, triggers y funciones SQL/RPC: migraciones ordenadas.
-- Roles y permisos base obligatorios de IAM: migración correspondiente, no depender de que alguien ejecute un seed opcional.
-- Código completo de cada Edge Function, dependencias necesarias y configuración de autenticación/despliegue sin secretos.
-- Seed deliberado de catálogo/datos de prueba, sin cuentas administrativas con contraseñas conocidas.
-- Comprobaciones pertinentes y evidencia resumida de aplicación/validación en [fases](../docs/planning/08-fases-y-validacion.md).
+El generador `atlas-bike-v1` está separado en `src/features/configurator/scene/generators/BikeV1.tsx`, junto con su ensamblaje v1 en `model/assembly.ts`. Tras su primera publicación, cambios de geometría o anclajes efectivos requieren una nueva clave de generador y otra variante/recurso. Conservar el generador anterior para reproducir montajes guardados. La cámara o la gestión de errores pueden mejorar manteniendo la geometría y la identidad del recurso.
 
-No modificar la estructura del proyecto remoto como única copia del trabajo. Primero escribir el archivo local, revisar su efecto y después aplicarlo al proyecto correcto cuando la implementación esté autorizada. Si se hace una corrección excepcional desde el Dashboard, reflejarla inmediatamente en el repositorio y reconciliar el historial, sin dejar divergencias.
+El recurso de cuadro `atlas-bike-v2` conserva su ensamblaje de descenso en `model/assemblyV2.ts`; la escena integra las piezas comunes del generador anterior y representa doble pletina, potencia directa, bieletas y polea con recorrido de cadena. Sus anclajes de detalle siguen marcados como estimados. La elección del ensamblaje se conserva mediante el recurso del cuadro guardado, no mediante un nombre o disciplina mutable. La migración 013 impide publicar generadores que el cliente no soporta.
 
-## Migraciones remotas
+Las representaciones procedimentales son genéricas o aproximadas, según cada variante. No equivalen a CAD del fabricante. El primer conjunto ya está publicado en Supabase Cloud de desarrollo y dispone de pruebas públicas y de guardado/reapertura con cuentas temporales. La revisión de siluetas y proporciones de este conjunto no acredita rendimiento de un dispositivo real ni toda la fidelidad exigida a la entrega final.
 
-Usar un mecanismo que registre versiones aplicadas —por ejemplo `supabase db push` con conexión remota o la API de migraciones con alcance autorizado— y comprobarlo contra los archivos locales. No ejecutar archivos sueltos por psql y declarar que quedaron registrados en el historial de la CLI. psql sigue siendo válido para consultas de validación y diagnóstico.
+## Fotos de referencia locales
 
-Aplicar en orden, una ejecución a la vez. Si falla una migración, distinguir lo aplicado y lo pendiente, reparar con una migración coherente y revalidar; no cambiar retroactivamente un archivo ya aplicado sin reconciliar su versión. Los resets/reconstrucciones de desarrollo deben dejar el historial y el estado remoto consistentes. No usar `supabase db reset` como si trabajara sobre una base local inexistente.
+Las fotos se sirven desde `src/assets/images/catalog/` y se resuelven por `src/data/images.ts`; no se usa hotlink desde el frontend. Procedencia consultada el 19 de octubre de 2026:
 
-## Edge Functions remotas
+| Archivo | Fuente oficial | Tamaño preparado |
+| --- | --- | --- |
+| `assegai.jpg` | [Maxxis Assegai](https://shop.maxxis.com/products/assegai), imagen del dibujo Assegai | 640 px, unos 40 kB |
+| `minion-dhr-ii.jpg` | [Maxxis Minion DHR II](https://shop.maxxis.com/products/minion-dhr-ii), imagen del dibujo DHR II | 640 px, unos 38 kB |
+| `rockbros-nylon.jpg` | [ROCKBROS 2017-12](https://rockbrosusa.com/products/rockbros-mtb-pedals-mountain-bike-pedals-lightweight-nylon-fiber-bicycle-platform-pedals-for-bmx-mtb-9-16), imagen del acabado negro | 640 px, unos 60 kB |
 
-Editar el código local y desplegar esa fuente en la función correspondiente del proyecto. Mantener configuración y código juntos; un cambio en Dashboard no puede ser la única versión. Credenciales administrativas y secretos viven en el entorno servidor de Supabase, nunca en `index.ts`, frontend o `config.toml` versionado.
+Una foto de familia no acredita por sí sola un SKU, dimensión, acabado o compuesto; esos datos conservan su fuente de variante.
 
-El token de gestión local permite consultar/desplegar según su alcance; el token para Edge Functions no controla los privilegios de la conexión PostgreSQL. Una lectura correcta no demuestra que ya se haya hecho un despliegue de escritura. Registrar nombre de función, fuente/versión, resultado del despliegue y comprobación funcional cuando se ejecute; no publicar tokens o cuerpos de datos privados como evidencia.
+Las fotos locales adicionales `supreme-dh-v5.jpg` y `fox-40-my27-black.png` proceden, respectivamente, de la ficha oficial del [cuadro](https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR) y de la variante negra 910-21-410 en [FOX](https://ridefox.com/products/my27-fox-40-factory), consultadas el 19 de octubre de 2026. La foto del cuadro ilustra la familia, sin certificar su acabado ni sustituir el modelo 3D.
 
-## Secuencia de trabajo
+La foto `magura-mt5.png` conserva el PNG original de [MAGURA MT5](https://magura.com/product/mt5/), consultado el 19 de octubre de 2026 (800×640, unos 304 kB, con transparencia). Ilustra la pinza y maneta de referencia; no se reutiliza para MT5 PRO u otras versiones con manetas distintas. Para revisión interna: `?brake=magura-mt5&rotor=magura-mdr-p` en la entrada de escena.
 
-```mermaid
-flowchart LR
-  A[Plan y alcance autorizados] --> B[SQL o código dentro de supabase]
-  B --> C[Revisar contrato y proyecto destino]
-  C --> D[Aplicar migración o desplegar a Supabase Cloud]
-  D --> E[Validar en Cloud con frontend local]
-  E --> F[Registrar evidencia en docs]
-```
+Las fotos `marzocchi-z1-rail-black.jpg` y `marzocchi-z1-rail-red.jpg` se obtuvieron del CDN enlazado por las variantes oficiales [Bomber Z1 RAIL](https://bike.marzocchi.com/products/bomber-z1), a 800 px (unos 23/35 kB). La variante roja conserva su foto roja; no se toma el nombre MY25 del archivo como prueba del año comercial. El generador v1 sigue representando una horquilla genérica, sin atribuir esa foto a una malla CAD.
 
-La evidencia identifica qué se hizo y qué sigue pendiente. Validar permisos de conexión no valida RLS, el registro, IAM o una Edge Function todavía inexistente.
+Comprobaciones reproducibles del visor: `node scripts/review-scene.mjs` con Vite en 5174 revisa las 41 variantes de suspensión del lote/publicación de borradores; `node scripts/measure-scene.mjs` prepara una compilación aislada bajo `node_modules/.cache/` y mide las dos disciplinas en Chromium con red limitada. Este compilado interno contiene fuentes de revisión y **no es el frontend que se despliega**. Evidencia y límites en [12a](../../docs/planning/12a-evidencia-del-visor.md).
 
-## Referencias
+Las ampliaciones de cuadros conservan S3/S4 y 17″/19″, geometrías por talla y anclajes estimados; no certifican mecanismos o carenados de marca. Las de neumáticos conservan carcasa/compuesto por SKU y no suman capas TPI ni trasladan pesos de otra referencia. Fuentes y límites en [11c](../../docs/planning/11c-cuadros.md) y [11l](../../docs/planning/11l-neumaticos.md). `node scripts/review-scene.mjs --frames` prepara doce cuadros y cuatro cámaras por talla; `--tyres` prepara las doce variantes de neumáticos sobre la posición delantera. La revisión usa recursos genéricos identificados; queda pendiente el parecido final de detalle.
 
-- [Migraciones Supabase](https://supabase.com/docs/guides/deployment/database-migrations).
-- [Despliegue de Edge Functions](https://supabase.com/docs/guides/functions/deploy).
-- [Configuración de funciones](https://supabase.com/docs/guides/functions/function-configuration).
+Specialized conserva sus dos capturas iniciales como publicadas no seleccionables; dos nuevas capturas incorporan BSA 73 mm del manual oficial sin cambiar sus recursos ni geometría. Los enlaces y montajes anteriores conservan su referencia. El selector normal muestra las dos tallas vigentes, no las capturas retiradas.
+
+Ampliación fotográfica posterior: 40 WebP nuevos, registro de procedencia y alcance en [README de imágenes](../../src/assets/images/catalog/README.md) y `photos.json`. `src/data/images.ts` admite `catalog:<slug>` y resuelve por slug cuando `image_key` es null. La foto de variante tiene prioridad; no se modificaron datos técnicos ni se reingirieron modelos para conectar estas imágenes. Cobertura local: 46 modelos con foto; cinco genéricos ATLAS y dos referencias comerciales pendientes documentadas.
 
 
-La mejora de recursos exteriores v3/v4 conserva generaciones previas y publica sucesoras sin cambiar especificaciones comerciales. Fuentes y orden de reposición en [catalog/README.md](catalog/README.md); evidencia de cobertura, transición y límites en [12b](../docs/planning/12b-evidencia-geometria.md).
+## Historial visual
 
-## Recursos de referencia v5 · 20/10/2026
+Los conjuntos `visual-v3-*`, `visual-v4-*`, `visual-v5-*`, `visual-v6-*` y `visual-v7-*` conservan sus fuentes completas, sucesoras y composiciones. V3 aporta perfiles por modelo; v4 corrige secciones transversales; v5 integra las primeras mallas trazadas; v6 cierra conexiones multivista; v7 completa las carcasas de pinza conservando el montaje corregido.
 
-La migración 016 aplica el contrato de montaje de mallas y el bucket público `models`, con límite de 8 MB por archivo y sin políticas de escritura de visitantes. Hay 76 capturas GLB (74 binarios únicos), 52 recursos paramétricos v5 y 114 variantes públicas seleccionables. `models/catalog-v5/` conserva fuentes Blender, trazados y huellas; `scripts/upload-visual-v5.mjs` verifica binarios antes de publicar. `validate-visual-v5-storage.mjs` comprobó descargas públicas y rechazo anónimo HTTP 403; `--cleanup` solo elimina borradores sin referencia en base ni fuente actual dentro de `catalog/v5/`. No elimina recursos históricos referenciados. La transición v4→v5 pasó con montajes guardados antes de publicar y reapertura posterior. Sin despliegue Netlify nuevo.
-
-## Publicación de referencia v5
-
-El usuario aprobó el conjunto comparativo y su extensión. `visual-v5-reviewed.json`, `visual-v5-examples.json` y `visual-v5-successors.json` están aplicados: 53 modelos, 128 capturas nuevas, 114 elecciones públicas; las cuatro composiciones conservan su identidad. 76 recursos son GLB (74 archivos únicos en Storage), el resto usa el generador v5. Historia anterior preservada; las fuentes y limitaciones viven en [models/catalog-v5](../../models/catalog-v5/README.md).
-
-Al reponer desde cero: cinco ingestas históricas → publicación visual v3 → v4 → **v5** (`node scripts/publish-visuals.mjs --version=v5 --apply`), después de reconstruir/cargar los GLB conforme al README de modelos y aplicar la migración 016. El publicador conserva v4 como valor predeterminado por compatibilidad: usar el argumento v5 explícito para esta generación. La actualización no publica los doce borradores ni reactiva las dos capturas retiradas. La prueba de transición `node scripts/validate-visual-upgrade.mjs --version=v5 --publish` escribe la publicación y limpia su cuenta temporal.
+Las migraciones 014–018 y los scripts de publicación viven fuera de esta carpeta, en el repositorio. La gestión remota y los accesos están en [Supabase](../README.md); la evidencia de la revisión actual está en [12c](../../docs/planning/12c-evidencia-continuidad.md). Nunca reemplazar binarios publicados ni alterar medidas comerciales al mejorar recursos exteriores. No publicar borradores ni borrar el historial para limpiar la selección.

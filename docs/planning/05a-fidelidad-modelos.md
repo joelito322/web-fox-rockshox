@@ -61,3 +61,26 @@ En móvil, controles en filas y lienzo ajustado al ancho; rotación solo en modo
 Los GLB nuevos de cuadro se expresan desde el pedalier; los de horquilla desde la pletina inferior (+Y dirección, +X offset); los de amortiguador desde el anclaje superior (−Y hacia el inferior). El manifiesto incorpora `parameters.mount_space` (`frame`, `fork`, `shock`) y, para cuadros, `assembly_version: atlas-assembly-v5`. Cada recurso conserva `profile_key` y anclajes en metros. Las piezas paramétricas mejoradas usan `atlas-bike-v5`; los generadores anteriores permanecen intactos.
 
 El montaje v5 obtiene el eje delantero del recurso de horquilla transformado sobre la dirección y orienta el amortiguador sobre sus ojos conservando entreojos propio. El asentamiento de ambas ruedas se resuelve mediante una inclinación global pequeña, sin estirar piezas ni modificar los montajes antiguos. Si la horquilla elegida es de una generación anterior, se conserva su resolución anterior dentro del montaje mixto. Cada espacio de montaje exige categoría correspondiente y puntos mínimos; los recursos nuevos se publican por identidad nueva y rutas Storage inmutables. Verificar carga, colores, selección, mezcla de generaciones, guardado y reapertura antes de retirar elecciones v4.
+
+## Continuidad multivista autorizada · v6
+
+El usuario pide completar las zonas ocultas con criterio de arquitectura de bicicleta después de investigar referencias adicionales: brazos a ambos lados cuando corresponda, bieletas y ejes conectados, soportes y piezas sin flotación. No dejar un hueco artificial solo por no aparecer en la foto lateral. No asumir simetría en protectores, patillas, anclajes de freno o poleas. «Investigado» significa fuentes consultadas concretas, nunca afirmar que se agotó Internet.
+
+Dentro de las fases de recursos, montaje y aceptación:
+
+1. Revisar despieces y vistas adicionales por modelo/generación; conservar enlaces, imágenes útiles y distinción entre observación y cierre inferido. Priorizar los ocho cuadros y las nueve suspensiones por su estructura y conexiones.
+2. Auditar la geometría local antes de agruparla por material: pares de brazos/bieletas, soportes de amortiguador, ejes de pivote, uniones de dirección/pedalier, puentes y coronas de horquilla. Construir cierres específicos por modelo manteniendo cavidades funcionales y hueco de rueda; no rellenar con bloques centrales ni añadir barras genéricas entre puntos arbitrarios.
+3. Generar GLB nuevos con fuentes editables en `models/catalog-v6/`, sin modificar trazados, binarios ni identidades v5. Reutilizar recursos que no cambien: una actualización de referencia no obliga a duplicar piezas sin modificación física. Conservar las mismas medidas, acabados y espacios de montaje ya aceptados.
+4. Comprobar conexiones sobre superficies reales antes de exportar, parseo y anclajes después; revisar ambos laterales, frontal, superior, inferior y perspectivas opuestas. Registrar excepciones y cierres estimados. La unión visual no acredita resistencia, cinemática o compatibilidad mecánica.
+5. Integrar las sucesoras comprobadas en Cloud conservando recursos y montajes anteriores; probar catálogo, selección, pintura, persistencia y presupuesto. Documentar cobertura real y pendientes sin certificar 90 % ni 30 fps en Android físico.
+
+```text
+referencias del modelo → estructura observada → cierre inferido explícito
+                                      ↓
+                  superficies y conexiones → revisión multivista → recurso nuevo
+```
+
+La revisión v6 detectó además que las pinzas traseras heredaban el desplazamiento hacia atrás de las delanteras. Las nueve variantes de freno reciben recurso procedimental `atlas-bike-v6` para adelantar únicamente la pinza trasera y su recorrido de latiguillo; los cuadros nuevos incorporan apoyos de ese lado. Las otras 43 variantes paramétricas conservan identidad y generador v5. Migración 017 amplía el contrato de generador sin tablas nuevas; el espacio de montaje GLB y las medidas comerciales conservan el contrato v5.
+
+
+La comprobación de superficie de las pinzas detectó que el filtro de la envolvente antigua también eliminaba parte de la nueva. V6 ya había sido publicado: se conserva su resultado, y nueve sucesoras v7 completan sus carcasas. Las demás 119 capturas se reutilizan con sus IDs. Migración 018 amplía el renderer admitido; la corrección compartida mantiene su resultado histórico por defecto y solo v7 termina las caras nuevas. Aceptación y límites en [12c](12c-evidencia-continuidad.md).

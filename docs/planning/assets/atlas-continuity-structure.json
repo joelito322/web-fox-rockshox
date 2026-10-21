@@ -1,0 +1,87 @@
+[
+  {
+    "model": "commencal-meta-sx-v5",
+    "connected": true,
+    "negative_control": true
+  },
+  {
+    "model": "ohlins-rxf38-m3",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "fox-38-factory-my27",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "marzocchi-bomber-cr",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "commencal-supreme-dh-v5",
+    "connected": true,
+    "negative_control": true
+  },
+  {
+    "model": "fox-40-factory-my27",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "rockshox-zeb-ultimate-b1",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "marzocchi-bomber-z1-rail",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "fox-float-x2-factory-my26",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "ohlins-ttx22m2-coil",
+    "connected": true,
+    "negative_control": false
+  },
+  {
+    "model": "santa-cruz-nomad-7-my27",
+    "connected": true,
+    "negative_control": true
+  },
+  {
+    "model": "canyon-sender-cfr-high-pivot",
+    "connected": true,
+    "negative_control": true
+  },
+  {
+    "model": "specialized-s-works-enduro-udh",
+    "connected": true,
+    "negative_control": true
+  },
+  {
+    "model": "da-bomb-cherry-bomb-29",
+    "connected": true,
+    "negative_control": true
+  },
+  {
+    "model": "scott-ransom-rc-427727",
+    "connected": true,
+    "negative_control": true
+  },
+  {
+    "model": "trek-slash-al-gen-6",
+    "connected": true,
+    "negative_control": true
+  }
+]

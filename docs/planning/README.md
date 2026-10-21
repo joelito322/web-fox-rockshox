@@ -29,6 +29,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |
 | [10 · Auditoría integral](10-auditoria-integral-de-planes.md) | Revisión adversarial de todo el plan, incluyendo IAM; correcciones y pendientes |
 | [12 · Estado de implementación](12-estado-implementacion.md) | Evidencia real, integración Cloud y pendientes de ejecución |
+| [12c · Continuidad multivista](12c-evidencia-continuidad.md) | Conexiones exteriores v6, frenos v7, referencias e inferencias |
 | [12b · Evidencia de geometría](12b-evidencia-geometria.md) | Cobertura de modelos, conservación de versiones y límites de parecido |
 | [11 · Inventario e ingesta documental](11-propuesta-de-inventario.md) | Índice de 11a–11m: gama actual por categoría, modelos, campos y validaciones; datos concretos por completar |
 

@@ -1,0 +1,433 @@
+{
+  "context": "Chromium SwiftShader desktop; rendering coverage, not a percentage-of-fidelity certification or physical Android benchmark",
+  "models": 53,
+  "variants": 53,
+  "maxDrawCalls": 137,
+  "maxTriangles": 333114,
+  "results": [
+    {
+      "model": "commencal-meta-sx-v5",
+      "variant": "72bf82f0-0d9f-5dcf-8db3-0250152f0ee7",
+      "draft": false,
+      "firstDrawMs": 1641,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "ohlins-rxf38-m3",
+      "variant": "789f1fea-e43b-5f24-9ae6-3693ab7b9921",
+      "draft": false,
+      "firstDrawMs": 2370,
+      "triangles": 317184,
+      "drawCalls": 131
+    },
+    {
+      "model": "fox-38-factory-my27",
+      "variant": "19c49004-ac3c-5d81-b3f1-62ae128f2be4",
+      "draft": true,
+      "firstDrawMs": 2371,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "rockshox-vivid-coil-ultimate-d1",
+      "variant": "b1629293-a42b-570b-8807-50633df6e67d",
+      "draft": false,
+      "firstDrawMs": 2190,
+      "triangles": 312688,
+      "drawCalls": 129
+    },
+    {
+      "model": "marzocchi-bomber-cr",
+      "variant": "aa34c72d-937d-5d75-9fac-f1d591392426",
+      "draft": false,
+      "firstDrawMs": 1367,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "shimano-slx-m7120",
+      "variant": "3d735d86-a7fc-583b-9ae7-cbb6160f0282",
+      "draft": false,
+      "firstDrawMs": 347,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "shimano-slx-oem-165-32",
+      "variant": "fbba7166-1db5-588f-9a8f-fdf0667f3296",
+      "draft": false,
+      "firstDrawMs": 296,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "shimano-sm-bb71-41a",
+      "variant": "de03e9da-9a08-5cae-835e-cfaea3972c25",
+      "draft": false,
+      "firstDrawMs": 1920,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "shimano-slx-rd-m7100-sgs",
+      "variant": "262a7d08-e235-545e-bc21-0516c8a50f57",
+      "draft": false,
+      "firstDrawMs": 338,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "shimano-slx-cs-m7100-12",
+      "variant": "97778d28-ce2a-5ec1-b857-294c4c300e19",
+      "draft": true,
+      "firstDrawMs": 349,
+      "triangles": 315952,
+      "drawCalls": 131
+    },
+    {
+      "model": "shimano-slx-cn-m7100",
+      "variant": "d8bb1f94-ee76-51e3-8513-87cb1ecc7140",
+      "draft": false,
+      "firstDrawMs": 325,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "shimano-sm-rt86",
+      "variant": "8839eec8-2872-54ed-8d78-1bb282f1e0ab",
+      "draft": false,
+      "firstDrawMs": 276,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "dt-swiss-e-593",
+      "variant": "8a2dc9fd-3260-5f6f-844d-8c3f066b2dd3",
+      "draft": false,
+      "firstDrawMs": 309,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "dt-swiss-350",
+      "variant": "c1df641a-36cb-5848-b20e-5676753b8621",
+      "draft": false,
+      "firstDrawMs": 268,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "maxxis-assegai",
+      "variant": "b40363b3-0f5a-50c4-b196-5812069bfb06",
+      "draft": false,
+      "firstDrawMs": 312,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "maxxis-minion-dhr-ii",
+      "variant": "fcf01ad4-74a6-573c-922e-5d362cb892d6",
+      "draft": false,
+      "firstDrawMs": 1437,
+      "triangles": 315776,
+      "drawCalls": 131
+    },
+    {
+      "model": "rockbros-nylon-2017-12",
+      "variant": "8d2f1eb6-e898-5f4c-8bef-052a84bd40bf",
+      "draft": false,
+      "firstDrawMs": 382,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "atlas-handlebar-v1",
+      "variant": "9e54da8d-11d7-5647-92ed-c318b4cf46ec",
+      "draft": false,
+      "firstDrawMs": 332,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "atlas-stem-v1",
+      "variant": "a9ae59d0-bd4a-5fce-a148-edc1cf381958",
+      "draft": false,
+      "firstDrawMs": 325,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "atlas-saddle-v1",
+      "variant": "2e033d68-1b1f-55e7-9443-fe475351cab7",
+      "draft": false,
+      "firstDrawMs": 273,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "atlas-seatpost-v1",
+      "variant": "5dfa1287-9144-5813-aaa4-7e1efb3e26f6",
+      "draft": false,
+      "firstDrawMs": 306,
+      "triangles": 317056,
+      "drawCalls": 131
+    },
+    {
+      "model": "commencal-supreme-dh-v5",
+      "variant": "04ed3081-711d-5274-947e-cd37ad2310e1",
+      "draft": false,
+      "firstDrawMs": 2125,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "fox-40-factory-my27",
+      "variant": "a3adb388-c318-56cc-b3d4-e5e15d18e77f",
+      "draft": false,
+      "firstDrawMs": 1908,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "sram-gx-dh-a3",
+      "variant": "26bba388-d9ef-51f0-83c5-37ea0744ea25",
+      "draft": false,
+      "firstDrawMs": 1954,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "sram-xg-795",
+      "variant": "8ee4c239-a841-5595-9808-b1d47da7827a",
+      "draft": false,
+      "firstDrawMs": 443,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "sram-pc1110",
+      "variant": "dc693fe8-cef8-58e0-90a5-98e1745ad068",
+      "draft": false,
+      "firstDrawMs": 363,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "sram-dub-pressfit",
+      "variant": "25e87146-a575-5b5c-8d65-777f4a3fdbfe",
+      "draft": false,
+      "firstDrawMs": 308,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "truvativ-descendant-dh",
+      "variant": "cbffef23-9468-574a-84cd-6336044dae56",
+      "draft": false,
+      "firstDrawMs": 324,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "atlas-potencia-directa",
+      "variant": "231dc45b-8a01-565c-84f0-905be936afc6",
+      "draft": false,
+      "firstDrawMs": 310,
+      "triangles": 323542,
+      "drawCalls": 129
+    },
+    {
+      "model": "shimano-slx-m7100-brake",
+      "variant": "a98f753f-700e-5db9-a5c7-a86f10e9e4a3",
+      "draft": false,
+      "firstDrawMs": 1580,
+      "triangles": 313480,
+      "drawCalls": 131
+    },
+    {
+      "model": "magura-mt4",
+      "variant": "b0b2c39e-b34b-5c46-816a-c882062cb20d",
+      "draft": false,
+      "firstDrawMs": 284,
+      "triangles": 313480,
+      "drawCalls": 135
+    },
+    {
+      "model": "magura-mt5",
+      "variant": "bbfaf4bd-a67a-5de6-95c8-84461b89801f",
+      "draft": false,
+      "firstDrawMs": 1462,
+      "triangles": 316936,
+      "drawCalls": 135
+    },
+    {
+      "model": "magura-mt5-pro",
+      "variant": "7fb661b5-3ec0-50eb-af1d-724a88acf42e",
+      "draft": false,
+      "firstDrawMs": 343,
+      "triangles": 316936,
+      "drawCalls": 135
+    },
+    {
+      "model": "magura-mt7-pro",
+      "variant": "cffef135-463a-5e7b-8ade-ec2f9b94a085",
+      "draft": false,
+      "firstDrawMs": 349,
+      "triangles": 317064,
+      "drawCalls": 137
+    },
+    {
+      "model": "sram-maven-brz-b1",
+      "variant": "1867d393-7b4f-5a32-9dc6-8bdce19e5124",
+      "draft": false,
+      "firstDrawMs": 345,
+      "triangles": 318664,
+      "drawCalls": 133
+    },
+    {
+      "model": "sram-maven-slv-b1",
+      "variant": "8e07bfc4-567a-5ceb-82dc-fbb207883419",
+      "draft": false,
+      "firstDrawMs": 298,
+      "triangles": 318664,
+      "drawCalls": 133
+    },
+    {
+      "model": "sram-maven-ult-b1",
+      "variant": "3a3d3765-5f21-5c0e-9499-2cd60b1aa3ee",
+      "draft": false,
+      "firstDrawMs": 352,
+      "triangles": 318664,
+      "drawCalls": 133
+    },
+    {
+      "model": "magura-mdr-p",
+      "variant": "c3f07030-f8dd-5c8b-8019-4ffbb22cd317",
+      "draft": false,
+      "firstDrawMs": 784,
+      "triangles": 322568,
+      "drawCalls": 131
+    },
+    {
+      "model": "sram-hs2",
+      "variant": "2c69195e-9805-5372-8d11-2763ad37ab24",
+      "draft": false,
+      "firstDrawMs": 413,
+      "triangles": 317144,
+      "drawCalls": 129
+    },
+    {
+      "model": "rockshox-zeb-ultimate-b1",
+      "variant": "516fe043-3165-5ba2-b5e4-4cd8cd39dbd4",
+      "draft": false,
+      "firstDrawMs": 3207,
+      "triangles": 317344,
+      "drawCalls": 129
+    },
+    {
+      "model": "marzocchi-bomber-z1-rail",
+      "variant": "fd9cfb35-5019-5d86-82ac-2015379e7c46",
+      "draft": false,
+      "firstDrawMs": 2159,
+      "triangles": 317120,
+      "drawCalls": 129
+    },
+    {
+      "model": "fox-float-x2-factory-my26",
+      "variant": "35ab586c-c43a-565a-8c48-5a6d56abeaa7",
+      "draft": false,
+      "firstDrawMs": 2338,
+      "triangles": 300408,
+      "drawCalls": 131
+    },
+    {
+      "model": "ohlins-ttx22m2-coil",
+      "variant": "3a274042-31dd-58dc-9dda-3ebc19c9e329",
+      "draft": false,
+      "firstDrawMs": 2038,
+      "triangles": 317056,
+      "drawCalls": 129
+    },
+    {
+      "model": "santa-cruz-nomad-7-my27",
+      "variant": "dcf4f0e1-cbc8-50fd-be43-36e28ffb2c9e",
+      "draft": false,
+      "firstDrawMs": 2426,
+      "triangles": 327966,
+      "drawCalls": 131
+    },
+    {
+      "model": "canyon-sender-cfr-high-pivot",
+      "variant": "cc0ed545-29f6-55ba-878b-f64dd96c1894",
+      "draft": false,
+      "firstDrawMs": 1014,
+      "triangles": 328038,
+      "drawCalls": 129
+    },
+    {
+      "model": "specialized-s-works-enduro-udh",
+      "variant": "a4f15e3e-db3d-58c0-88b0-e8c81ee7d9ef",
+      "draft": false,
+      "firstDrawMs": 2238,
+      "triangles": 330254,
+      "drawCalls": 131
+    },
+    {
+      "model": "da-bomb-cherry-bomb-29",
+      "variant": "484e4592-b4b8-532c-bfd0-6e7d84715517",
+      "draft": false,
+      "firstDrawMs": 2260,
+      "triangles": 328570,
+      "drawCalls": 131
+    },
+    {
+      "model": "scott-ransom-rc-427727",
+      "variant": "f39458e6-788b-55ba-b7c8-1dc2ec692a4a",
+      "draft": false,
+      "firstDrawMs": 2634,
+      "triangles": 304534,
+      "drawCalls": 131
+    },
+    {
+      "model": "trek-slash-al-gen-6",
+      "variant": "c50493fd-b921-5885-880c-332b311799b3",
+      "draft": false,
+      "firstDrawMs": 2230,
+      "triangles": 333114,
+      "drawCalls": 131
+    },
+    {
+      "model": "cst-bft-c1752",
+      "variant": "ced000ed-5636-52b8-aa55-6a2d14472c4c",
+      "draft": false,
+      "firstDrawMs": 1467,
+      "triangles": 316416,
+      "drawCalls": 131
+    },
+    {
+      "model": "kenda-pinner-pro-k1241a",
+      "variant": "f498827c-ae2a-579d-aabf-54bfa908ed38",
+      "draft": false,
+      "firstDrawMs": 325,
+      "triangles": 316416,
+      "drawCalls": 131
+    },
+    {
+      "model": "michelin-wild-enduro-ms-racing-line",
+      "variant": "60f9469d-c343-5548-a1e4-349728e77f66",
+      "draft": false,
+      "firstDrawMs": 322,
+      "triangles": 315136,
+      "drawCalls": 131
+    },
+    {
+      "model": "schwalbe-gravity-magic-mary",
+      "variant": "6bc8b5d6-40f3-5d2a-8891-a0d23bbae0bc",
+      "draft": false,
+      "firstDrawMs": 356,
+      "triangles": 315136,
+      "drawCalls": 131
+    }
+  ]
+}

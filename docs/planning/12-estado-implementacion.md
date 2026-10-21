@@ -1,5 +1,12 @@
 # 12 · Estado de implementación
 
+## Actualización vigente: continuidad v6 y carcasas v7
+
+Aplicadas las migraciones 017 y 018 y las dos publicaciones de sucesoras en el mismo Cloud de desarrollo. Los 53 modelos mantienen 114 elecciones públicas y cuatro prearmadas; 63 elecciones usan GLB v6, nueve frenos el renderer v7 y 42 mantienen geometría v5. El historial alcanza 606 variantes y 604 recursos. Las transiciones reales conservaron los montajes antiguos y guardaron las cuatro prearmadas nuevas; cuentas temporales eliminadas.
+
+Fuentes y revisión de superficies ocultas en `models/catalog-v6/`; evidencia y límites en [12c](12c-evidencia-continuidad.md). La escena DH aislada tarda 5,454 s con red de 10 Mbps/80 ms, por encima del objetivo de 5 s; enduro tarda 4,615 s. Continúan pendientes optimización de carga, el parecido final por modelo, Android físico, 30 fps y la configuración de correo previamente descrita. Sin despliegue Netlify. El usuario solicitó después comitear esta ampliación por propósito; esa solicitud no autoriza commits de cambios futuros.
+
+
 Actualizado: 20 de octubre de 2026. Ejecución parcial del alcance de [08](08-fases-y-validacion.md), sin declarar la entrega completa. Los commits documentales previos se conservan; este lote de implementación parcial se versiona por responsabilidad ante la nueva solicitud explícita del usuario. Los cambios futuros requieren otra solicitud de commits. No hay despliegue de frontend en Netlify.
 
 ## Implementado y comprobado

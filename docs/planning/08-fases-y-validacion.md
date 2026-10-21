@@ -381,3 +381,10 @@ Corrección de método aprobada después del rechazo visual de v3/v4: dentro de 
 
 
 Ejecución posterior del método aprobado: la generación v5 está integrada y publicada, con 76 capturas GLB de cuadros/suspensión, mejoras paramétricas por categoría y conservación de recursos anteriores. Transición Cloud, guardado/reapertura, color, selección y descargas reales comprobados; las pruebas ya no se limitan al GLB sintético histórico. El inventario mantiene 53 modelos y 114 elecciones públicas. La revisión física de Android y el objetivo de 30 fps siguen abiertos; en software no se alcanzó. Detalle de alcance, reutilización de geometría dimensional, medidas estimadas y evidencia en [12b](12b-evidencia-geometria.md) y [fuentes v5](../../models/catalog-v5/README.md).
+
+
+## Revisión de continuidad exterior v6/v7
+
+Dentro de las fases de recursos, visor y aceptación: investigación de despieces adicionales, contrapartes de bieletas, conexión de soportes/poleas, continuidad de coronas/ojos y montaje de pinzas; fuentes editables y recursos nuevos conservando historial. Migraciones 017/018 y publicación Cloud aplicadas; sin ampliación de campos de negocio. Validación de contactos con controles negativos, parseo GLB, pruebas de montaje/pintura/selección/persistencia y revisión desde ambos lados, arriba, abajo y perspectivas. Evidencia, cobertura real y límites en [12c](12c-evidencia-continuidad.md); parecido por modelo y aceptación física móvil siguen abiertos.
+
+Aceptación de rendimiento v6/v7 abierta: escena DH aislada de 5,454 s supera el objetivo de 5 s con 10 Mbps/80 ms; SwiftShader móvil observa 13,4/14,8 fps. La fase de optimización debe reducir carga/coste conservando geometría y versiones antes de cerrar rendimiento; Android físico sigue pendiente. Ver medición reproducible y límites en 12c.

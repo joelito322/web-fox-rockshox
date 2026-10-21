@@ -168,3 +168,8 @@ Migraciones 014 y 015 aplicadas en el mismo Supabase Cloud: contrato de perfil p
 ## Mallas de referencia integradas · 20/10/2026
 
 Migración 016 y publicación visual v5 aplicadas en el mismo proyecto Cloud. El bucket público `models` contiene 74 binarios vigentes para 76 capturas GLB, con fuentes locales, hashes y rutas inmutables; la escritura anónima devuelve HTTP 403. Hay 53 modelos, 512 capturas de variante históricas, 510 recursos y 114 variantes públicas seleccionables. Las cuatro prearmadas usan v5 y los montajes anteriores conservan sus identidades. Procedimiento de reposición en `supabase/catalog/README.md`, evidencia en [12b](12b-evidencia-geometria.md). Frontend local en 5174, sin nuevo despliegue Netlify ni cambios de configuración de Auth.
+
+
+## Continuidad exterior v6 y frenos v7
+
+Migraciones 017/018 y ambas transiciones aplicadas al Cloud existente. No cambian tablas, Auth, IAM ni funciones Edge. Snapshot limpio: 606 variantes, 604 recursos, 53 modelos y cuatro prearmadas; 114 elecciones vigentes. Se añadieron 74 binarios GLB v6 con rutas inmutables y se conserva Storage v5. Escritura anónima denegada (403). El frontend sigue local en 5174, sin nuevo despliegue. Reposición explícita hasta v7 en el README del catálogo; evidencia en [12c](12c-evidencia-continuidad.md).
