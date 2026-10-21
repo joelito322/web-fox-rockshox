@@ -1,0 +1,253 @@
+{
+  "commencal-meta-sx-v5": {
+    "paired": [
+      "rocker"
+    ],
+    "joints": [
+      [
+        582,
+        425
+      ],
+      [
+        574,
+        607
+      ]
+    ],
+    "clevis": [
+      582,
+      425
+    ],
+    "upper_support": "top",
+    "lower_support": "rocker",
+    "note": "Dual-link architecture and clevis observed in META SX V5 exploded assembly; hidden-side depth inferred.",
+    "fixed_connections": [
+      [
+        [
+          550,
+          445
+        ],
+        [
+          582,
+          425
+        ]
+      ],
+      [
+        [
+          552,
+          590
+        ],
+        [
+          574,
+          607
+        ]
+      ]
+    ]
+  },
+  "santa-cruz-nomad-7-my27": {
+    "paired": [
+      "link",
+      "lower_yoke"
+    ],
+    "joints": [
+      [
+        432,
+        269
+      ],
+      [
+        444,
+        328
+      ],
+      [
+        410,
+        368
+      ],
+      [
+        438,
+        400
+      ]
+    ],
+    "clevis": [
+      410,
+      368
+    ],
+    "upper_support": "down",
+    "lower_support": "lower_yoke",
+    "note": "VPP upper/lower link pairs and bearing spacers observed in Nomad 7C exploded views 2, 6, 7; installed contours/depth inferred."
+  },
+  "specialized-s-works-enduro-udh": {
+    "paired": [
+      "upper_link",
+      "lower_link"
+    ],
+    "joints": [
+      [
+        608,
+        677
+      ],
+      [
+        486,
+        655
+      ],
+      [
+        495,
+        812
+      ],
+      [
+        496,
+        690
+      ]
+    ],
+    "clevis": [
+      495,
+      812
+    ],
+    "upper_support": "down",
+    "lower_support": "lower_link",
+    "note": "Current UDH platform gallery and 2025 manual; separate upper/lower links, lower shock yoke inferred from observed side contours."
+  },
+  "da-bomb-cherry-bomb-29": {
+    "paired": [
+      "rocker"
+    ],
+    "joints": [
+      [
+        554,
+        583
+      ],
+      [
+        425,
+        574
+      ],
+      [
+        614,
+        536
+      ],
+      [
+        510,
+        845
+      ]
+    ],
+    "clevis": [
+      620,
+      769
+    ],
+    "upper_support": "rocker",
+    "lower_support": "shock_yoke",
+    "note": "Horst rear triangle and rocker inferred from model photo/catalog. No calibrated rear/top view; hidden counterpart is an explicit structural inference."
+  },
+  "trek-slash-al-gen-6": {
+    "paired": [
+      "upper_link"
+    ],
+    "joints": [
+      [
+        325,
+        451
+      ],
+      [
+        340,
+        427
+      ],
+      [
+        318,
+        514
+      ]
+    ],
+    "clevis": [
+      340,
+      427
+    ],
+    "upper_support": "upper_link",
+    "lower_support": "down",
+    "note": "Two-piece rocker and rear-triangle joints observed in Gen 6 service manual pages 7\u20139; visual installation widths inferred."
+  },
+  "canyon-sender-cfr-high-pivot": {
+    "paired": [
+      "upper_link",
+      "lower_link"
+    ],
+    "joints": [
+      [
+        554,
+        391
+      ],
+      [
+        473,
+        344
+      ],
+      [
+        450,
+        465
+      ],
+      [
+        442,
+        374
+      ]
+    ],
+    "clevis": [
+      450,
+      465
+    ],
+    "upper_support": "down",
+    "lower_support": "lower_link",
+    "note": "2025 official Sender press kit and model photos; hidden link counterparts and mounting transitions inferred without borrowing old Sender topology."
+  },
+  "scott-ransom-rc-427727": {
+    "paired": [],
+    "joints": [
+      [
+        487,
+        451
+      ],
+      [
+        467,
+        451
+      ],
+      [
+        478,
+        542
+      ]
+    ],
+    "tie": [
+      [
+        467,
+        451
+      ],
+      [
+        478,
+        542
+      ]
+    ],
+    "upper_support": "down",
+    "lower_support": "down",
+    "note": "Ransom platform manual shows paired tie links and lower outer link; integrated shock stays concealed. No claim of complete internal six-bar mechanism."
+  },
+  "commencal-supreme-dh-v5": {
+    "paired": [],
+    "split": [
+      "upper_link",
+      "lower_link"
+    ],
+    "joints": [
+      [
+        538,
+        526
+      ],
+      [
+        581,
+        538
+      ],
+      [
+        538,
+        686
+      ]
+    ],
+    "clevis": [
+      581,
+      538
+    ],
+    "upper_support": "upper_link",
+    "lower_support": "lower_link",
+    "note": "Supreme DH V5 full-size exploded assembly; keep six-bar exterior and idler asymmetric. Geometry not taken from XS measurements."
+  }
+}

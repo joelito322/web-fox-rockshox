@@ -1,0 +1,5650 @@
+{
+  "255cdcc9-e8c5-5dac-a866-8365c6e476db": {
+    "file": "commencal-meta-sx-v5--m.glb",
+    "bytes": 2155212,
+    "triangles": 32967,
+    "meshes": 4,
+    "paintable_nodes": [
+      "commencal-meta-sx-v5--m__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.44192759587968705,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.46,
+        0.6383,
+        0
+      ],
+      "head_tube_lower": [
+        0.5126045376146893,
+        0.5304447144440999,
+        0
+      ],
+      "seat_tube": [
+        -0.07762825736582035,
+        0.44610680274050807,
+        0
+      ],
+      "shock_upper": [
+        0.20826718094985508,
+        0.41154426777048236,
+        0
+      ],
+      "shock_lower": [
+        0.01807624101638794,
+        0.2822097837924957,
+        0.0
+      ],
+      "saddle": [
+        -0.10262825736582035,
+        0.5911068027405081,
+        0
+      ],
+      "suspension_pivot": [
+        0.009302164858652512,
+        0.2569411233228661,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "rocker",
+          "rocker__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper mounting lug 1",
+          "shock_upper support -1",
+          "Head tube",
+          "down",
+          "Pedalier",
+          "upper_eye",
+          "seat",
+          "Seat collar",
+          "Fixed link axle 1",
+          "Fixed link 1 1",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "Pivot bearing bridge 1",
+          "Pivot outer washer 1.001",
+          "Pivot outer washer 1",
+          "Fixed link 1 -1",
+          "chain55",
+          "stay55",
+          "Pivot outer washer 0.001",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "Fixed link 0 1",
+          "Fixed link 0 -1",
+          "Shock clevis",
+          "shock_lower through bolt",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Rear dropout -1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1",
+          "shock_lower mounting lug -1",
+          "shock_lower support -1",
+          "stay yoke web 1",
+          "Rear dropout 1",
+          "guard",
+          "chain-55",
+          "rocker__hidden",
+          "rocker",
+          "Fixed link axle 0"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Dual-link architecture and clevis observed in META SX V5 exploded assembly; hidden-side depth inferred."
+    },
+    "model": "commencal-meta-sx-v5",
+    "variant_id": "255cdcc9-e8c5-5dac-a866-8365c6e476db",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/commencal-meta-sx-v5.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "e81bc97c-11fa-53df-b0cb-cebd796a2b26": {
+    "file": "commencal-meta-sx-v5--l.glb",
+    "bytes": 2150368,
+    "triangles": 32901,
+    "meshes": 4,
+    "paintable_nodes": [
+      "commencal-meta-sx-v5--l__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.44692840589964744,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.48,
+        0.6427999999999999,
+        0
+      ],
+      "head_tube_lower": [
+        0.5347963933486347,
+        0.5304507442126041,
+        0
+      ],
+      "seat_tube": [
+        -0.06833201975572484,
+        0.44920156437339415,
+        0
+      ],
+      "shock_upper": [
+        0.22012621327520654,
+        0.4144345189837282,
+        0
+      ],
+      "shock_lower": [
+        0.028756678104400635,
+        0.2868504226207733,
+        0.0
+      ],
+      "saddle": [
+        -0.09333201975572483,
+        0.5942015643733941,
+        0
+      ],
+      "suspension_pivot": [
+        0.015290035355878584,
+        0.25873039680274046,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "rocker",
+          "rocker__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper mounting lug 1",
+          "shock_upper support -1",
+          "Head tube",
+          "down",
+          "Pedalier",
+          "upper_eye",
+          "seat",
+          "Seat collar",
+          "Fixed link axle 1",
+          "Fixed link 1 1",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "Pivot bearing bridge 1",
+          "Pivot outer washer 1.001",
+          "Pivot outer washer 1",
+          "Fixed link 1 -1",
+          "chain55",
+          "stay55",
+          "Pivot outer washer 0.001",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "Fixed link 0 1",
+          "Fixed link 0 -1",
+          "Shock clevis",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower mounting lug -1",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Rear dropout -1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "shock_lower support 1",
+          "shock_lower support -1",
+          "stay yoke web 1",
+          "Rear dropout 1",
+          "guard",
+          "chain-55",
+          "rocker__hidden",
+          "rocker",
+          "Fixed link axle 0"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Dual-link architecture and clevis observed in META SX V5 exploded assembly; hidden-side depth inferred."
+    },
+    "model": "commencal-meta-sx-v5",
+    "variant_id": "e81bc97c-11fa-53df-b0cb-cebd796a2b26",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/commencal-meta-sx-v5.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "6c8fa87d-99fb-50d4-8a37-d39d61a056b7": {
+    "file": "ohlins-rxf38-m3--6c8fa87d.glb",
+    "bytes": 705360,
+    "triangles": 12308,
+    "meshes": 7,
+    "paintable_nodes": [
+      "ohlins-rxf38-m3--6c8fa87d__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.583,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "ohlins-rxf38-m3",
+    "variant_id": "6c8fa87d-99fb-50d4-8a37-d39d61a056b7",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "ef85ce10-5688-50d2-9d1d-65b591a5f26c": {
+    "file": "fox-38-factory-my27--ef85ce10.glb",
+    "bytes": 696956,
+    "triangles": 12244,
+    "meshes": 7,
+    "paintable_nodes": [
+      "fox-38-factory-my27--ef85ce10__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.589,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-38-factory-my27",
+    "variant_id": "ef85ce10-5688-50d2-9d1d-65b591a5f26c",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "962a5e74-4387-5ce6-8309-c4f0c8fea128": {
+    "file": "fox-38-factory-my27--962a5e74.glb",
+    "bytes": 696956,
+    "triangles": 12244,
+    "meshes": 7,
+    "paintable_nodes": [
+      "fox-38-factory-my27--962a5e74__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.579,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-38-factory-my27",
+    "variant_id": "962a5e74-4387-5ce6-8309-c4f0c8fea128",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "5edd058a-a2eb-50e7-8b1e-3b0660ae55e2": {
+    "file": "fox-38-factory-my27--5edd058a.glb",
+    "bytes": 696956,
+    "triangles": 12244,
+    "meshes": 7,
+    "paintable_nodes": [
+      "fox-38-factory-my27--5edd058a__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.569,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-38-factory-my27",
+    "variant_id": "5edd058a-a2eb-50e7-8b1e-3b0660ae55e2",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "1f9c8a06-eef4-5ea2-8729-f3fbecfadd56": {
+    "file": "fox-38-factory-my27--1f9c8a06.glb",
+    "bytes": 696956,
+    "triangles": 12244,
+    "meshes": 7,
+    "paintable_nodes": [
+      "fox-38-factory-my27--1f9c8a06__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.569,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-38-factory-my27",
+    "variant_id": "1f9c8a06-eef4-5ea2-8729-f3fbecfadd56",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "64dc8f33-8297-5605-aacb-8e56f4cc7f4f": {
+    "file": "rockshox-vivid-coil-ultimate-d1--64dc8f33.glb",
+    "bytes": 679304,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.185,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "64dc8f33-8297-5605-aacb-8e56f4cc7f4f",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "70fa0b4d-cf75-5c14-af4f-012c2be65b64": {
+    "file": "rockshox-vivid-coil-ultimate-d1--70fa0b4d.glb",
+    "bytes": 679308,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.185,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "70fa0b4d-cf75-5c14-af4f-012c2be65b64",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "115b3d13-b7be-5116-976c-5e8f3d539bc9": {
+    "file": "rockshox-vivid-coil-ultimate-d1--115b3d13.glb",
+    "bytes": 679308,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.185,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "115b3d13-b7be-5116-976c-5e8f3d539bc9",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "ba98884c-71b8-5490-b87f-f7e85d80be52": {
+    "file": "rockshox-vivid-coil-ultimate-d1--ba98884c.glb",
+    "bytes": 679308,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.185,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "ba98884c-71b8-5490-b87f-f7e85d80be52",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "02d9d0e0-f883-5241-8845-cfa00be4e69e": {
+    "file": "rockshox-vivid-coil-ultimate-d1--02d9d0e0.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "02d9d0e0-f883-5241-8845-cfa00be4e69e",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "fae7c9de-4f74-59e6-ae17-57f0d474e17b": {
+    "file": "rockshox-vivid-coil-ultimate-d1--fae7c9de.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "fae7c9de-4f74-59e6-ae17-57f0d474e17b",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "3c8f3ba5-050a-55cd-8d59-8eba49a58f43": {
+    "file": "rockshox-vivid-coil-ultimate-d1--3c8f3ba5.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "3c8f3ba5-050a-55cd-8d59-8eba49a58f43",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "2001b942-12e5-5b92-b208-65aee071ada9": {
+    "file": "rockshox-vivid-coil-ultimate-d1--2001b942.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "2001b942-12e5-5b92-b208-65aee071ada9",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "0bfb0f0f-0aa4-5767-a935-0459517ceeb3": {
+    "file": "rockshox-vivid-coil-ultimate-d1--0bfb0f0f.glb",
+    "bytes": 818576,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "0bfb0f0f-0aa4-5767-a935-0459517ceeb3",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "cdd2c842-396a-505c-839c-8d0f513a4da7": {
+    "file": "rockshox-vivid-coil-ultimate-d1--cdd2c842.glb",
+    "bytes": 818576,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "cdd2c842-396a-505c-839c-8d0f513a4da7",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "21b5b396-0c8c-5a8b-af67-03153118efff": {
+    "file": "rockshox-vivid-coil-ultimate-d1--21b5b396.glb",
+    "bytes": 818576,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "21b5b396-0c8c-5a8b-af67-03153118efff",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "6c27b587-3096-5bb3-830d-bca964785572": {
+    "file": "rockshox-vivid-coil-ultimate-d1--6c27b587.glb",
+    "bytes": 818576,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "6c27b587-3096-5bb3-830d-bca964785572",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "7c671e72-10ea-5393-a6f0-131b098ccf72": {
+    "file": "rockshox-vivid-coil-ultimate-d1--7c671e72.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.225,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "7c671e72-10ea-5393-a6f0-131b098ccf72",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "34d805df-3817-5acf-815a-db6df7bc035f": {
+    "file": "rockshox-vivid-coil-ultimate-d1--34d805df.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.225,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "34d805df-3817-5acf-815a-db6df7bc035f",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "e4340fec-e2f4-5eca-a0bd-9d68777671be": {
+    "file": "rockshox-vivid-coil-ultimate-d1--e4340fec.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.225,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "e4340fec-e2f4-5eca-a0bd-9d68777671be",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "a9ca6a9d-ce26-54bf-ad60-22d035cfed38": {
+    "file": "rockshox-vivid-coil-ultimate-d1--a9ca6a9d.glb",
+    "bytes": 679312,
+    "triangles": 17248,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.225,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "a9ca6a9d-ce26-54bf-ad60-22d035cfed38",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "3275cd7f-1f03-5132-a154-eb260caf8c1a": {
+    "file": "rockshox-vivid-coil-ultimate-d1--3275cd7f.glb",
+    "bytes": 818576,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "3275cd7f-1f03-5132-a154-eb260caf8c1a",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "564fef9f-33cd-5086-ac2c-fb084995c4be": {
+    "file": "rockshox-vivid-coil-ultimate-d1--564fef9f.glb",
+    "bytes": 818576,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "564fef9f-33cd-5086-ac2c-fb084995c4be",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "d05b10fc-d3ac-5c71-9fbd-92ce10b46429": {
+    "file": "rockshox-vivid-coil-ultimate-d1--d05b10fc.glb",
+    "bytes": 818576,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "d05b10fc-d3ac-5c71-9fbd-92ce10b46429",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "e8d7b997-01c5-537c-81ce-014a58c722a7": {
+    "file": "rockshox-vivid-coil-ultimate-d1--e8d7b997.glb",
+    "bytes": 818580,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "e8d7b997-01c5-537c-81ce-014a58c722a7",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "db7b4eba-0d0f-5af2-a96a-cc60060ae098": {
+    "file": "rockshox-vivid-coil-ultimate-d1--db7b4eba.glb",
+    "bytes": 818560,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.25,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "db7b4eba-0d0f-5af2-a96a-cc60060ae098",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "cddd9dda-acad-5dc9-8cb0-83de9d3a6559": {
+    "file": "rockshox-vivid-coil-ultimate-d1--cddd9dda.glb",
+    "bytes": 818560,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.25,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "cddd9dda-acad-5dc9-8cb0-83de9d3a6559",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "463a9fa7-a46e-58f0-9473-c148c6b86b0a": {
+    "file": "rockshox-vivid-coil-ultimate-d1--463a9fa7.glb",
+    "bytes": 818564,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.25,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "463a9fa7-a46e-58f0-9473-c148c6b86b0a",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "f1f8f316-fddd-5eab-a541-9c79effb192b": {
+    "file": "rockshox-vivid-coil-ultimate-d1--f1f8f316.glb",
+    "bytes": 818560,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.25,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-vivid-coil-ultimate-d1",
+    "variant_id": "f1f8f316-fddd-5eab-a541-9c79effb192b",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "6b881244-78fd-5a5f-b7cb-056932d27b85": {
+    "file": "marzocchi-bomber-cr--6b881244.glb",
+    "bytes": 819660,
+    "triangles": 19432,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.25,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "6b881244-78fd-5a5f-b7cb-056932d27b85",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "d17a8240-c2b1-59c0-8a29-964f45151ccc": {
+    "file": "marzocchi-bomber-cr--d17a8240.glb",
+    "bytes": 819676,
+    "triangles": 19432,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "d17a8240-c2b1-59c0-8a29-964f45151ccc",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "c86ac304-f94f-5ef8-ab9b-d6eb7352b334": {
+    "file": "marzocchi-bomber-cr--c86ac304.glb",
+    "bytes": 819680,
+    "triangles": 19432,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "c86ac304-f94f-5ef8-ab9b-d6eb7352b334",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "cd61fbb2-76a0-5b05-8774-7c2a61427585": {
+    "file": "marzocchi-bomber-cr--cd61fbb2.glb",
+    "bytes": 819680,
+    "triangles": 19432,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "cd61fbb2-76a0-5b05-8774-7c2a61427585",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "f37a61e0-2609-5820-a03f-c51ce8f1a2eb": {
+    "file": "marzocchi-bomber-cr--f37a61e0.glb",
+    "bytes": 819680,
+    "triangles": 19432,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "f37a61e0-2609-5820-a03f-c51ce8f1a2eb",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "323f6acf-a6a3-5a55-bc3e-50124b7c7373": {
+    "file": "marzocchi-bomber-cr--323f6acf.glb",
+    "bytes": 680412,
+    "triangles": 17248,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.185,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "323f6acf-a6a3-5a55-bc3e-50124b7c7373",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "2c3aa0bb-fcf2-5467-af2e-e96e8349b069": {
+    "file": "marzocchi-bomber-cr--2c3aa0bb.glb",
+    "bytes": 680412,
+    "triangles": 17248,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.185,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "2c3aa0bb-fcf2-5467-af2e-e96e8349b069",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "0071620d-3ac7-56c8-884c-61bdb559c601": {
+    "file": "marzocchi-bomber-cr--0071620d.glb",
+    "bytes": 680416,
+    "triangles": 17248,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "0071620d-3ac7-56c8-884c-61bdb559c601",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "9edd3899-8603-5a89-8ba9-970d9e5d66ef": {
+    "file": "marzocchi-bomber-cr--9edd3899.glb",
+    "bytes": 680416,
+    "triangles": 17248,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "9edd3899-8603-5a89-8ba9-970d9e5d66ef",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "7a8b6311-8d4d-563f-897d-577d4bc19599": {
+    "file": "marzocchi-bomber-cr--7a8b6311.glb",
+    "bytes": 680412,
+    "triangles": 17248,
+    "meshes": 6,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.225,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Damper body",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-cr",
+    "variant_id": "7a8b6311-8d4d-563f-897d-577d4bc19599",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "284b2777-603a-55f0-8066-e547e5c9e68f": {
+    "file": "commencal-supreme-dh-v5--m.glb",
+    "bytes": 2701708,
+    "triangles": 42798,
+    "meshes": 4,
+    "paintable_nodes": [
+      "commencal-supreme-dh-v5--m__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.453929509946203,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.456,
+        0.649,
+        0
+      ],
+      "head_tube_lower": [
+        0.5063237278449805,
+        0.5489424045072823,
+        0
+      ],
+      "seat_tube": [
+        -0.04266165658817905,
+        0.3877602383682194,
+        0
+      ],
+      "shock_upper": [
+        0.04870163818717291,
+        0.24072637709392342,
+        0
+      ],
+      "shock_lower": [
+        -0.03459673374891281,
+        0.005011752247810364,
+        0.0
+      ],
+      "saddle": [
+        -0.06766165658817905,
+        0.5327602383682194,
+        0
+      ],
+      "suspension_pivot": [
+        -0.01685775632082892,
+        0.21968702672172674,
+        0
+      ],
+      "chain_idler": [
+        -0.01588250634696268,
+        0.07851044551994237,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top_tube",
+          "seat_yoke_right",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 2.001",
+          "Pivot outer washer 2",
+          "Idler bearing axle",
+          "Idler",
+          "Idler fixed carrier",
+          "lower_link__hidden",
+          "shock_lower mounting lug -1",
+          "shock_lower support -1",
+          "shock_lower through bolt",
+          "chain yoke web 1",
+          "shock_lower support 1",
+          "chain_stay_right",
+          "Rear dropout 1",
+          "seat_stay_right",
+          "Pivot outer washer 0.001",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "seat_stay_left",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "suspension_plate_-40",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "chain_stay_left",
+          "upper_link__hidden",
+          "shock_upper support -1",
+          "shock_upper mounting lug -1",
+          "Pivot outer washer 1.001",
+          "suspension_plate_40",
+          "chain_stay_guard",
+          "chain yoke web -1",
+          "Pivot bearing bridge 1",
+          "Pedalier",
+          "lower_link",
+          "upper_link",
+          "shock_lower mounting lug 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug 1",
+          "shock_upper support 1",
+          "down_tube",
+          "down_tube_guard",
+          "seat_yoke_left",
+          "seat_tube_upper",
+          "Seat collar",
+          "Head tube"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Supreme DH V5 full-size exploded assembly; keep six-bar exterior and idler asymmetric. Geometry not taken from XS measurements."
+    },
+    "model": "commencal-supreme-dh-v5",
+    "variant_id": "284b2777-603a-55f0-8066-e547e5c9e68f",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/commencal-supreme-dh-v5.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "f31960b4-4f32-59fd-b1fe-4582e606d961": {
+    "file": "commencal-supreme-dh-v5--l.glb",
+    "bytes": 2697128,
+    "triangles": 42728,
+    "meshes": 4,
+    "paintable_nodes": [
+      "commencal-supreme-dh-v5--l__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.453929509946203,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.484,
+        0.649,
+        0
+      ],
+      "head_tube_lower": [
+        0.5343237278449804,
+        0.5489424045072823,
+        0
+      ],
+      "seat_tube": [
+        -0.02616906501020716,
+        0.3877602383682194,
+        0
+      ],
+      "shock_upper": [
+        0.05899691309864724,
+        0.24072637709392342,
+        0
+      ],
+      "shock_lower": [
+        -0.03310244157910347,
+        0.008309274911880493,
+        0.0
+      ],
+      "saddle": [
+        -0.05116906501020716,
+        0.5327602383682194,
+        0
+      ],
+      "suspension_pivot": [
+        -0.007508324339308536,
+        0.21968702672172674,
+        0
+      ],
+      "chain_idler": [
+        -0.012548665703287318,
+        0.07851044551994237,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top_tube",
+          "seat_yoke_right",
+          "Pivot bearing bridge 2",
+          "Idler fixed carrier",
+          "Idler bearing axle",
+          "Idler",
+          "Pivot outer washer 2",
+          "lower_link__hidden",
+          "shock_lower mounting lug -1",
+          "shock_lower support -1",
+          "shock_lower through bolt",
+          "chain yoke web 1",
+          "chain_stay_right",
+          "Rear dropout 1",
+          "seat_stay_right",
+          "Pivot outer washer 0.001",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "seat_stay_left",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "suspension_plate_-40",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "chain_stay_left",
+          "upper_link__hidden",
+          "shock_upper support -1",
+          "shock_upper mounting lug -1",
+          "Pivot outer washer 1.001",
+          "suspension_plate_40",
+          "chain_stay_guard",
+          "chain yoke web -1",
+          "Pivot outer washer 2.001",
+          "Pivot bearing bridge 1",
+          "Pedalier",
+          "lower_link",
+          "upper_link",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug 1",
+          "shock_upper support 1",
+          "down_tube",
+          "down_tube_guard",
+          "seat_yoke_left",
+          "seat_tube_upper",
+          "Seat collar",
+          "Head tube"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Supreme DH V5 full-size exploded assembly; keep six-bar exterior and idler asymmetric. Geometry not taken from XS measurements."
+    },
+    "model": "commencal-supreme-dh-v5",
+    "variant_id": "f31960b4-4f32-59fd-b1fe-4582e606d961",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/commencal-supreme-dh-v5.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "15b9b60a-0aa5-5eea-bf68-7ec9773e5945": {
+    "file": "fox-40-factory-my27--15b9b60a.glb",
+    "bytes": 887880,
+    "triangles": 15460,
+    "meshes": 7,
+    "paintable_nodes": [
+      "fox-40-factory-my27--15b9b60a__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0.142,
+        0
+      ],
+      "axle": [
+        0.052,
+        -0.602,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web.002",
+          "Steerer",
+          "Crown rear web.001",
+          "Crown clamp.001",
+          "Stanchion.001",
+          "Crown clamp.003",
+          "Steering bumper.001",
+          "Top cap.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle clamp.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Wiper.001",
+          "Steerer crown seat",
+          "Steerer crown seat.001",
+          "Crown rear web.003",
+          "Crown rear web",
+          "Crown clamp.002",
+          "Forged crown.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Steering bumper",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-40-factory-my27",
+    "variant_id": "15b9b60a-0aa5-5eea-bf68-7ec9773e5945",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "7df3ee44-545e-55a2-a25b-8b0267ca58af": {
+    "file": "fox-40-factory-my27--7df3ee44.glb",
+    "bytes": 887880,
+    "triangles": 15460,
+    "meshes": 7,
+    "paintable_nodes": [
+      "fox-40-factory-my27--7df3ee44__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0.142,
+        0
+      ],
+      "axle": [
+        0.052,
+        -0.602,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web.002",
+          "Steerer",
+          "Crown rear web.001",
+          "Crown clamp.001",
+          "Stanchion.001",
+          "Crown clamp.003",
+          "Steering bumper.001",
+          "Top cap.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle clamp.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Wiper.001",
+          "Steerer crown seat",
+          "Steerer crown seat.001",
+          "Crown rear web.003",
+          "Crown rear web",
+          "Crown clamp.002",
+          "Forged crown.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Steering bumper",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-40-factory-my27",
+    "variant_id": "7df3ee44-545e-55a2-a25b-8b0267ca58af",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "0ed0acb8-04e8-55e9-beae-765132fbf29d": {
+    "file": "fox-40-factory-my27--0ed0acb8.glb",
+    "bytes": 887880,
+    "triangles": 15460,
+    "meshes": 7,
+    "paintable_nodes": [
+      "fox-40-factory-my27--0ed0acb8__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0.142,
+        0
+      ],
+      "axle": [
+        0.052,
+        -0.602,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web.002",
+          "Steerer",
+          "Crown rear web.001",
+          "Crown clamp.001",
+          "Stanchion.001",
+          "Crown clamp.003",
+          "Steering bumper.001",
+          "Top cap.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle clamp.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Wiper.001",
+          "Steerer crown seat",
+          "Steerer crown seat.001",
+          "Crown rear web.003",
+          "Crown rear web",
+          "Crown clamp.002",
+          "Forged crown.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Steering bumper",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-40-factory-my27",
+    "variant_id": "0ed0acb8-04e8-55e9-beae-765132fbf29d",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "cfac3ab2-8e71-530e-9070-d1d10daf6844": {
+    "file": "rockshox-zeb-ultimate-b1--cfac3ab2.glb",
+    "bytes": 712504,
+    "triangles": 12388,
+    "meshes": 6,
+    "paintable_nodes": [
+      "rockshox-zeb-ultimate-b1--cfac3ab2__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.579,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "rockshox-zeb-ultimate-b1",
+    "variant_id": "cfac3ab2-8e71-530e-9070-d1d10daf6844",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "d541afb6-c126-562e-a075-d48a62d5aa66": {
+    "file": "marzocchi-bomber-z1-rail--d541afb6.glb",
+    "bytes": 704536,
+    "triangles": 12276,
+    "meshes": 6,
+    "paintable_nodes": [
+      "marzocchi-bomber-z1-rail--d541afb6__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.559,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-z1-rail",
+    "variant_id": "d541afb6-c126-562e-a075-d48a62d5aa66",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "183fea5d-5ceb-55c5-b486-6b210eb45df2": {
+    "file": "marzocchi-bomber-z1-rail--183fea5d.glb",
+    "bytes": 704532,
+    "triangles": 12276,
+    "meshes": 6,
+    "paintable_nodes": [
+      "marzocchi-bomber-z1-rail--183fea5d__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.569,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-z1-rail",
+    "variant_id": "183fea5d-5ceb-55c5-b486-6b210eb45df2",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "0a0740f5-59bc-58c9-bd32-d391fd12279a": {
+    "file": "marzocchi-bomber-z1-rail--0a0740f5.glb",
+    "bytes": 704532,
+    "triangles": 12276,
+    "meshes": 6,
+    "paintable_nodes": [
+      "marzocchi-bomber-z1-rail--0a0740f5__frame"
+    ],
+    "anchors": {
+      "lower_crown": [
+        0,
+        0,
+        0
+      ],
+      "upper_crown": [
+        0,
+        0,
+        0
+      ],
+      "axle": [
+        0.044,
+        -0.569,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Stanchion",
+          "Crown rear web",
+          "Steerer crown seat",
+          "Steerer",
+          "Crown rear web.001",
+          "Stanchion.001",
+          "Lower leg.001",
+          "Cast dropout.001",
+          "Rebound cap.001",
+          "Axle",
+          "Axle clamp",
+          "Cast dropout",
+          "Rebound cap",
+          "Axle clamp.001",
+          "Wiper.001",
+          "Top cap.001",
+          "Crown clamp.001",
+          "Crown clamp",
+          "Forged crown",
+          "Distinct bridge",
+          "Top cap",
+          "Lower leg",
+          "Brake post.001",
+          "Brake post",
+          "Wiper"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "marzocchi-bomber-z1-rail",
+    "variant_id": "0a0740f5-59bc-58c9-bd32-d391fd12279a",
+    "category": "fork",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "5b49edad-6444-51f7-aaef-2282340d9dc6": {
+    "file": "fox-float-x2-factory-my26--5b49edad.glb",
+    "bytes": 682948,
+    "triangles": 11108,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--5b49edad__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve collar",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "5b49edad-6444-51f7-aaef-2282340d9dc6",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "bc69a047-77b9-5da3-a51c-d6e80f6e93e2": {
+    "file": "fox-float-x2-factory-my26--bc69a047.glb",
+    "bytes": 682948,
+    "triangles": 11108,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--bc69a047__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve collar",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "bc69a047-77b9-5da3-a51c-d6e80f6e93e2",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "b034c357-79dc-5bac-8af7-2a37c09621d3": {
+    "file": "fox-float-x2-factory-my26--b034c357.glb",
+    "bytes": 682948,
+    "triangles": 11108,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--b034c357__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.21,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve collar",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "b034c357-79dc-5bac-8af7-2a37c09621d3",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "3dab6d2a-bb01-57de-be28-69b6109b700c": {
+    "file": "fox-float-x2-factory-my26--3dab6d2a.glb",
+    "bytes": 682948,
+    "triangles": 11108,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--3dab6d2a__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve collar",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "3dab6d2a-bb01-57de-be28-69b6109b700c",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "b303dd5f-8bab-515a-80ba-6459acc60527": {
+    "file": "fox-float-x2-factory-my26--b303dd5f.glb",
+    "bytes": 682948,
+    "triangles": 11108,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--b303dd5f__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve collar",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "b303dd5f-8bab-515a-80ba-6459acc60527",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "8e576822-ed3d-5f9c-8308-c2c8708cedd5": {
+    "file": "fox-float-x2-factory-my26--8e576822.glb",
+    "bytes": 682952,
+    "triangles": 11108,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--8e576822__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve collar",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "8e576822-ed3d-5f9c-8308-c2c8708cedd5",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "326a4b10-0d94-57c8-a13e-b9545f785356": {
+    "file": "fox-float-x2-factory-my26--326a4b10.glb",
+    "bytes": 519104,
+    "triangles": 8924,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--326a4b10__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.185,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Air sleeve collar",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "326a4b10-0d94-57c8-a13e-b9545f785356",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "243ac434-a5f8-509e-8817-001721e842d3": {
+    "file": "fox-float-x2-factory-my26--243ac434.glb",
+    "bytes": 519104,
+    "triangles": 8924,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--243ac434__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Air sleeve collar",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "243ac434-a5f8-509e-8817-001721e842d3",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "8d040a9f-d49a-503f-97c7-93ad92acde29": {
+    "file": "fox-float-x2-factory-my26--8d040a9f.glb",
+    "bytes": 519104,
+    "triangles": 8924,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--8d040a9f__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.205,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Air sleeve collar",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "8d040a9f-d49a-503f-97c7-93ad92acde29",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "c08b1465-6a1c-535c-b33d-18f0df23fb85": {
+    "file": "fox-float-x2-factory-my26--c08b1465.glb",
+    "bytes": 682932,
+    "triangles": 11108,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--c08b1465__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.25,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve collar",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "c08b1465-6a1c-535c-b33d-18f0df23fb85",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "1858adb1-3952-563c-a178-14b779e04727": {
+    "file": "fox-float-x2-factory-my26--1858adb1.glb",
+    "bytes": 519104,
+    "triangles": 8924,
+    "meshes": 6,
+    "paintable_nodes": [
+      "fox-float-x2-factory-my26--1858adb1__frame"
+    ],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.225,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Trunnion axis",
+          "Asymmetric reservoir yoke",
+          "Exposed gold air shaft",
+          "Air sleeve",
+          "Rod eye neck",
+          "Lower bushing",
+          "Lower eye",
+          "Piston rod",
+          "Rebound dial",
+          "Air sleeve collar.001",
+          "Air sleeve collar",
+          "Compression adjuster",
+          "Damper body",
+          "Reservoir",
+          "Trunnion head"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "fox-float-x2-factory-my26",
+    "variant_id": "1858adb1-3952-563c-a178-14b779e04727",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "e0f10784-f623-5690-aeb1-e7796988a24f": {
+    "file": "ohlins-ttx22m2-coil--e0f10784.glb",
+    "bytes": 867848,
+    "triangles": 19432,
+    "meshes": 5,
+    "paintable_nodes": [],
+    "anchors": {
+      "upper_eye": [
+        0,
+        0,
+        0
+      ],
+      "lower_eye": [
+        0,
+        -0.23,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "Upper eye",
+          "Asymmetric reservoir yoke",
+          "Compression adjuster",
+          "Reservoir",
+          "Coil",
+          "Spring seat.001",
+          "Rebound dial",
+          "Piston rod",
+          "Lower eye",
+          "Lower bushing",
+          "Rod eye neck",
+          "Spring seat",
+          "Preload thread crest.009",
+          "Preload thread crest.008",
+          "Preload thread crest.007",
+          "Preload thread crest.006",
+          "Preload thread crest.005",
+          "Preload thread crest.004",
+          "Preload thread crest.003",
+          "Preload thread crest.002",
+          "Preload thread crest.001",
+          "Preload thread crest",
+          "Preload thread",
+          "Damper body",
+          "Upper bushing"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Suspension envelope retained; crown/eye continuity completion is estimated."
+    },
+    "model": "ohlins-ttx22m2-coil",
+    "variant_id": "e0f10784-f623-5690-aeb1-e7796988a24f",
+    "category": "shock",
+    "source_trace": "../catalog-v5/suspension-profiles.json",
+    "reference_estimated": true
+  },
+  "a767a1c8-c6cc-5dbc-b9f8-b9b0d04e1c55": {
+    "file": "santa-cruz-nomad-7-my27--m.glb",
+    "bytes": 2320556,
+    "triangles": 38422,
+    "meshes": 4,
+    "paintable_nodes": [
+      "santa-cruz-nomad-7-my27--m__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.4409274316710177,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.455,
+        0.633,
+        0
+      ],
+      "head_tube_lower": [
+        0.503909869710342,
+        0.5344717063736646,
+        0
+      ],
+      "seat_tube": [
+        -0.058197325406369405,
+        0.40593027471369353,
+        0
+      ],
+      "shock_upper": [
+        0.21814091325942148,
+        0.16956359165320034,
+        0
+      ],
+      "shock_lower": [
+        -0.008196815848350525,
+        0.1286829113960266,
+        0.0
+      ],
+      "saddle": [
+        -0.0831973254063694,
+        0.5509302747136935,
+        0
+      ],
+      "suspension_pivot": [
+        0.03194573387985397,
+        0.325792454155835,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "link",
+          "link__hidden"
+        ],
+        [
+          "lower_yoke",
+          "lower_yoke__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Pivot bearing bridge 0",
+          "link",
+          "stay yoke web 1",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "chain-55",
+          "Pivot outer washer 2",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 2.001",
+          "chain yoke web 1",
+          "lower_yoke__hidden",
+          "down",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pedalier",
+          "shock_upper mounting lug 1",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 3.001",
+          "Pivot outer washer 3",
+          "lower_yoke",
+          "chain55",
+          "Rear dropout 1",
+          "guard",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower mounting lug -1",
+          "chain yoke web -1",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "stay55",
+          "Pivot outer washer 1.001",
+          "Pivot bearing bridge 1",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "link__hidden",
+          "Head tube",
+          "seat",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "VPP upper/lower link pairs and bearing spacers observed in Nomad 7C exploded views 2, 6, 7; installed contours/depth inferred."
+    },
+    "model": "santa-cruz-nomad-7-my27",
+    "variant_id": "a767a1c8-c6cc-5dbc-b9f8-b9b0d04e1c55",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/santa-cruz-nomad-7-my27.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        3.141592653589793,
+        0
+      ]
+    }
+  },
+  "4ab5c1bf-0ec9-547f-8a53-2bac7e5ead85": {
+    "file": "santa-cruz-nomad-7-my27--l.glb",
+    "bytes": 2321380,
+    "triangles": 38426,
+    "meshes": 4,
+    "paintable_nodes": [
+      "santa-cruz-nomad-7-my27--l__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.44392792207744713,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.475,
+        0.643,
+        0
+      ],
+      "head_tube_lower": [
+        0.5283562215021913,
+        0.5355145887712704,
+        0
+      ],
+      "seat_tube": [
+        -0.04792070550293509,
+        0.412244052553924,
+        0
+      ],
+      "shock_upper": [
+        0.2241994465394468,
+        0.17226955666409052,
+        0
+      ],
+      "shock_lower": [
+        -0.0021020621061325073,
+        0.1311887502670288,
+        0.0
+      ],
+      "saddle": [
+        -0.07292070550293508,
+        0.557244052553924,
+        0
+      ],
+      "suspension_pivot": [
+        0.040766421002805475,
+        0.33088203470807276,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "link",
+          "link__hidden"
+        ],
+        [
+          "lower_yoke",
+          "lower_yoke__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Pivot bearing bridge 0",
+          "link",
+          "stay yoke web 1",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "chain-55",
+          "Pivot outer washer 2",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 2.001",
+          "chain yoke web 1",
+          "lower_yoke__hidden",
+          "down",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pedalier",
+          "shock_upper mounting lug 1",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 3.001",
+          "Pivot outer washer 3",
+          "lower_yoke",
+          "chain55",
+          "Rear dropout 1",
+          "guard",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower mounting lug -1",
+          "chain yoke web -1",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "stay55",
+          "Pivot outer washer 1.001",
+          "Pivot bearing bridge 1",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "link__hidden",
+          "Head tube",
+          "seat",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "VPP upper/lower link pairs and bearing spacers observed in Nomad 7C exploded views 2, 6, 7; installed contours/depth inferred."
+    },
+    "model": "santa-cruz-nomad-7-my27",
+    "variant_id": "4ab5c1bf-0ec9-547f-8a53-2bac7e5ead85",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/santa-cruz-nomad-7-my27.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        3.141592653589793,
+        0
+      ]
+    }
+  },
+  "c9fc82f5-0247-583d-874c-b229584496d6": {
+    "file": "canyon-sender-cfr-high-pivot--m.glb",
+    "bytes": 2842060,
+    "triangles": 44986,
+    "meshes": 4,
+    "paintable_nodes": [
+      "canyon-sender-cfr-high-pivot--m__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.437926934545022,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.468,
+        0.63,
+        0
+      ],
+      "head_tube_lower": [
+        0.5156690024726525,
+        0.5364443149602214,
+        0
+      ],
+      "seat_tube": [
+        0.05892602307984454,
+        0.4077010793523886,
+        0
+      ],
+      "shock_upper": [
+        0.18483676586040643,
+        0.23332516853524246,
+        0
+      ],
+      "shock_lower": [
+        -0.01588776707649231,
+        0.0842960774898529,
+        0.0
+      ],
+      "saddle": [
+        0.03392602307984454,
+        0.5527010793523885,
+        0
+      ],
+      "suspension_pivot": [
+        0.10640385820473211,
+        0.21449328584667382,
+        0
+      ],
+      "chain_idler": [
+        0.0054046865278476845,
+        0.04711688441480567,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "down",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "chain yoke web 1",
+          "chain55",
+          "Rear dropout 1",
+          "Idler",
+          "Idler bearing axle",
+          "guard",
+          "stay55",
+          "Pivot outer washer 3.001",
+          "lower_link",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 2",
+          "lower_link__hidden",
+          "Pivot outer washer 3",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "stay yoke web -1",
+          "upper_link__hidden",
+          "Pivot bearing bridge 0",
+          "upper_link",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "chain-55",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower mounting lug -1",
+          "shock_lower support -1",
+          "shock_lower support 1",
+          "Pivot outer washer 2.001",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 1.001",
+          "Pivot bearing bridge 1",
+          "stay yoke web 1",
+          "Idler fixed carrier",
+          "chain yoke web -1",
+          "Pedalier",
+          "shock_upper through bolt",
+          "shock_upper mounting lug 1",
+          "shock_upper support 1",
+          "seat",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "2025 official Sender press kit and model photos; hidden link counterparts and mounting transitions inferred without borrowing old Sender topology."
+    },
+    "model": "canyon-sender-cfr-high-pivot",
+    "variant_id": "c9fc82f5-0247-583d-874c-b229584496d6",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/canyon-sender-cfr-high-pivot.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "03c44208-7141-5c63-94ee-d1c9befbb135": {
+    "file": "canyon-sender-cfr-high-pivot--l.glb",
+    "bytes": 2842172,
+    "triangles": 44988,
+    "meshes": 4,
+    "paintable_nodes": [
+      "canyon-sender-cfr-high-pivot--l__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.437926934545022,
+        0.008,
+        0
+      ],
+      "head_tube": [
+        0.495,
+        0.635,
+        0
+      ],
+      "head_tube_lower": [
+        0.5449389549713501,
+        0.5369892823392796,
+        0
+      ],
+      "seat_tube": [
+        0.0762105023922571,
+        0.41090190885468725,
+        0
+      ],
+      "shock_upper": [
+        0.19484530619075366,
+        0.23517860192975124,
+        0
+      ],
+      "shock_lower": [
+        -0.007548704743385315,
+        0.08842487633228302,
+        0.0
+      ],
+      "saddle": [
+        0.0512105023922571,
+        0.5559019088546873,
+        0
+      ],
+      "suspension_pivot": [
+        0.11555553992297388,
+        0.2161880417204223,
+        0
+      ],
+      "chain_idler": [
+        0.007401120485654816,
+        0.04748659440699217,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "down",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "chain yoke web 1",
+          "chain55",
+          "Rear dropout 1",
+          "Idler",
+          "Idler bearing axle",
+          "guard",
+          "stay55",
+          "Pivot outer washer 3.001",
+          "lower_link",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 2",
+          "lower_link__hidden",
+          "Pivot outer washer 3",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "stay yoke web -1",
+          "upper_link__hidden",
+          "Pivot bearing bridge 0",
+          "upper_link",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "chain-55",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower mounting lug -1",
+          "shock_lower support -1",
+          "shock_lower support 1",
+          "Pivot outer washer 2.001",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 1.001",
+          "Pivot bearing bridge 1",
+          "stay yoke web 1",
+          "Idler fixed carrier",
+          "chain yoke web -1",
+          "Pedalier",
+          "shock_upper through bolt",
+          "shock_upper mounting lug 1",
+          "shock_upper support 1",
+          "seat",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "2025 official Sender press kit and model photos; hidden link counterparts and mounting transitions inferred without borrowing old Sender topology."
+    },
+    "model": "canyon-sender-cfr-high-pivot",
+    "variant_id": "03c44208-7141-5c63-94ee-d1c9befbb135",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/canyon-sender-cfr-high-pivot.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "15b32e4a-ead0-5c87-919b-dcd67a9e745a": {
+    "file": "specialized-s-works-enduro-udh--s3.glb",
+    "bytes": 2595648,
+    "triangles": 39626,
+    "meshes": 4,
+    "paintable_nodes": [
+      "specialized-s-works-enduro-udh--s3__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.44111223061710725,
+        0.028,
+        0
+      ],
+      "head_tube": [
+        0.464,
+        0.62,
+        0
+      ],
+      "head_tube_lower": [
+        0.5079939169855916,
+        0.5301972424239384,
+        0
+      ],
+      "seat_tube": [
+        -0.06630210557010824,
+        0.43807817795821075,
+        0
+      ],
+      "shock_upper": [
+        0.16741169343881523,
+        0.1787779805579351,
+        0
+      ],
+      "shock_lower": [
+        -0.021795183420181274,
+        0.09987453371286392,
+        0.0
+      ],
+      "saddle": [
+        -0.09130210557010823,
+        0.5830781779582107,
+        0
+      ],
+      "suspension_pivot": [
+        0.05383960436016211,
+        0.21990420499832394,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "down",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pedalier",
+          "shock_upper mounting lug 1",
+          "seat",
+          "Pivot bearing bridge 0",
+          "upper_link",
+          "stay yoke web 1",
+          "stay55",
+          "chain55",
+          "Pivot outer washer 2.001",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "chain-55",
+          "Pivot outer washer 2",
+          "stay-55",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot outer washer 1",
+          "Rear brake carrier 0.095",
+          "Rear brake post 0.095",
+          "Rear dropout -1",
+          "lower_link__hidden",
+          "shock_lower support -1",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1",
+          "shock_lower mounting lug -1",
+          "Pivot outer washer 3",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 3.001",
+          "Pivot bearing bridge 2",
+          "guard",
+          "Rear dropout 1",
+          "Pivot outer washer 1.001",
+          "stay yoke web -1",
+          "Pivot bearing bridge 1",
+          "lower_link",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "upper_link__hidden",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Current UDH platform gallery and 2025 manual; separate upper/lower links, lower shock yoke inferred from observed side contours."
+    },
+    "model": "specialized-s-works-enduro-udh",
+    "variant_id": "15b32e4a-ead0-5c87-919b-dcd67a9e745a",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/specialized-s-works-enduro-udh.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "134396a3-2543-5016-afa6-d05087d8b8e3": {
+    "file": "specialized-s-works-enduro-udh--s4.glb",
+    "bytes": 2593064,
+    "triangles": 39590,
+    "meshes": 4,
+    "paintable_nodes": [
+      "specialized-s-works-enduro-udh--s4__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.44111223061710725,
+        0.028,
+        0
+      ],
+      "head_tube": [
+        0.487,
+        0.629,
+        0
+      ],
+      "head_tube_lower": [
+        0.5353933086841507,
+        0.5302169666663323,
+        0
+      ],
+      "seat_tube": [
+        -0.05093686229599503,
+        0.4440906644567768,
+        0
+      ],
+      "shock_upper": [
+        0.17411934859667333,
+        0.18140271518492307,
+        0
+      ],
+      "shock_lower": [
+        -0.015116453170776367,
+        0.10256863385438919,
+        0.0
+      ],
+      "saddle": [
+        -0.07593686229599503,
+        0.5890906644567768,
+        0
+      ],
+      "suspension_pivot": [
+        0.0617484153649171,
+        0.2229989571306194,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "down",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pedalier",
+          "shock_upper mounting lug 1",
+          "seat",
+          "Pivot bearing bridge 0",
+          "upper_link",
+          "stay yoke web 1",
+          "stay55",
+          "chain55",
+          "Pivot outer washer 2.001",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "chain-55",
+          "Pivot outer washer 2",
+          "stay-55",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot outer washer 1",
+          "Rear brake carrier 0.095",
+          "Rear brake post 0.095",
+          "Rear dropout -1",
+          "lower_link__hidden",
+          "shock_lower support -1",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1",
+          "shock_lower mounting lug -1",
+          "Pivot outer washer 3",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 3.001",
+          "Pivot bearing bridge 2",
+          "guard",
+          "Rear dropout 1",
+          "Pivot outer washer 1.001",
+          "stay yoke web -1",
+          "Pivot bearing bridge 1",
+          "lower_link",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "upper_link__hidden",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Current UDH platform gallery and 2025 manual; separate upper/lower links, lower shock yoke inferred from observed side contours."
+    },
+    "model": "specialized-s-works-enduro-udh",
+    "variant_id": "134396a3-2543-5016-afa6-d05087d8b8e3",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/specialized-s-works-enduro-udh.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "6610f32d-b8dc-5ea1-a243-fc92163de297": {
+    "file": "specialized-s-works-enduro-udh--s3.glb",
+    "bytes": 2595552,
+    "triangles": 39626,
+    "meshes": 4,
+    "paintable_nodes": [
+      "specialized-s-works-enduro-udh--s3__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.44111223061710725,
+        0.028,
+        0
+      ],
+      "head_tube": [
+        0.464,
+        0.62,
+        0
+      ],
+      "head_tube_lower": [
+        0.5079939169855916,
+        0.5301972424239384,
+        0
+      ],
+      "seat_tube": [
+        -0.06630210557010824,
+        0.43807817795821075,
+        0
+      ],
+      "shock_upper": [
+        0.16741169343881523,
+        0.1787779805579351,
+        0
+      ],
+      "shock_lower": [
+        -0.021795183420181274,
+        0.09987453371286392,
+        0.0
+      ],
+      "saddle": [
+        -0.09130210557010823,
+        0.5830781779582107,
+        0
+      ],
+      "suspension_pivot": [
+        0.05383960436016211,
+        0.21990420499832394,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "down",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pedalier",
+          "shock_upper mounting lug 1",
+          "seat",
+          "Pivot bearing bridge 0",
+          "upper_link",
+          "stay yoke web 1",
+          "stay55",
+          "chain55",
+          "Pivot outer washer 2.001",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "chain-55",
+          "Pivot outer washer 2",
+          "stay-55",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot outer washer 1",
+          "Rear brake carrier 0.095",
+          "Rear brake post 0.095",
+          "Rear dropout -1",
+          "lower_link__hidden",
+          "shock_lower support -1",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1",
+          "shock_lower mounting lug -1",
+          "Pivot outer washer 3",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 3.001",
+          "Pivot bearing bridge 2",
+          "guard",
+          "Rear dropout 1",
+          "Pivot outer washer 1.001",
+          "stay yoke web -1",
+          "Pivot bearing bridge 1",
+          "lower_link",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "upper_link__hidden",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Current UDH platform gallery and 2025 manual; separate upper/lower links, lower shock yoke inferred from observed side contours."
+    },
+    "model": "specialized-s-works-enduro-udh",
+    "variant_id": "6610f32d-b8dc-5ea1-a243-fc92163de297",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/specialized-s-works-enduro-udh.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "7865e716-a837-5470-9e52-96336abcefb2": {
+    "file": "specialized-s-works-enduro-udh--s4.glb",
+    "bytes": 2593064,
+    "triangles": 39590,
+    "meshes": 4,
+    "paintable_nodes": [
+      "specialized-s-works-enduro-udh--s4__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.44111223061710725,
+        0.028,
+        0
+      ],
+      "head_tube": [
+        0.487,
+        0.629,
+        0
+      ],
+      "head_tube_lower": [
+        0.5353933086841507,
+        0.5302169666663323,
+        0
+      ],
+      "seat_tube": [
+        -0.05093686229599503,
+        0.4440906644567768,
+        0
+      ],
+      "shock_upper": [
+        0.17411934859667333,
+        0.18140271518492307,
+        0
+      ],
+      "shock_lower": [
+        -0.015116453170776367,
+        0.10256863385438919,
+        0.0
+      ],
+      "saddle": [
+        -0.07593686229599503,
+        0.5890906644567768,
+        0
+      ],
+      "suspension_pivot": [
+        0.0617484153649171,
+        0.2229989571306194,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ],
+        [
+          "lower_link",
+          "lower_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "down",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pedalier",
+          "shock_upper mounting lug 1",
+          "seat",
+          "Pivot bearing bridge 0",
+          "upper_link",
+          "stay yoke web 1",
+          "stay55",
+          "chain55",
+          "Pivot outer washer 2.001",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "chain-55",
+          "Pivot outer washer 2",
+          "stay-55",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot outer washer 1",
+          "Rear brake carrier 0.095",
+          "Rear brake post 0.095",
+          "Rear dropout -1",
+          "lower_link__hidden",
+          "shock_lower support -1",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1",
+          "shock_lower mounting lug -1",
+          "Pivot outer washer 3",
+          "Pivot bearing bridge 3",
+          "Pivot outer washer 3.001",
+          "Pivot bearing bridge 2",
+          "guard",
+          "Rear dropout 1",
+          "Pivot outer washer 1.001",
+          "stay yoke web -1",
+          "Pivot bearing bridge 1",
+          "lower_link",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "upper_link__hidden",
+          "Seat collar"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Current UDH platform gallery and 2025 manual; separate upper/lower links, lower shock yoke inferred from observed side contours."
+    },
+    "model": "specialized-s-works-enduro-udh",
+    "variant_id": "7865e716-a837-5470-9e52-96336abcefb2",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/specialized-s-works-enduro-udh.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "e375a89c-3ab3-5219-8e04-4a231c9055af": {
+    "file": "da-bomb-cherry-bomb-29--17in.glb",
+    "bytes": 2543588,
+    "triangles": 38904,
+    "meshes": 4,
+    "paintable_nodes": [
+      "da-bomb-cherry-bomb-29--17in__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.4342810150121693,
+        0.025,
+        0
+      ],
+      "head_tube": [
+        0.4422,
+        0.627,
+        0
+      ],
+      "head_tube_lower": [
+        0.4878162566921863,
+        0.5269042602035803,
+        0
+      ],
+      "seat_tube": [
+        -0.045672951270955775,
+        0.4234374213170824,
+        0
+      ],
+      "shock_upper": [
+        0.09295513893658017,
+        0.32186905491371337,
+        0
+      ],
+      "shock_lower": [
+        0.08582262694835663,
+        0.11199021339416504,
+        0.0
+      ],
+      "saddle": [
+        -0.07067295127095577,
+        0.5684374213170824,
+        0
+      ],
+      "suspension_pivot": [
+        0.038535527768667754,
+        0.28028670105504744,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "rocker",
+          "rocker__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "seat",
+          "Pivot bearing bridge 3",
+          "chain55",
+          "stay55",
+          "stay yoke web 1",
+          "rocker",
+          "shock_upper support 1",
+          "shock_upper mounting lug 1",
+          "Pivot bearing bridge 2",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pivot outer washer 2.001",
+          "Pivot outer washer 2",
+          "rocker__hidden",
+          "shock_upper through bolt",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot bearing bridge 1",
+          "Pivot outer washer 1.001",
+          "Rear dropout 1",
+          "guard",
+          "chain-55",
+          "Pivot outer washer 3.001",
+          "Pivot outer washer 3",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "Pivot outer washer 0.001",
+          "Seat collar",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "shock_yoke",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower mounting lug -1",
+          "shock_lower support 1",
+          "shock_lower support -1",
+          "down",
+          "Pedalier"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Horst rear triangle and rocker inferred from model photo/catalog. No calibrated rear/top view; hidden counterpart is an explicit structural inference."
+    },
+    "model": "da-bomb-cherry-bomb-29",
+    "variant_id": "e375a89c-3ab3-5219-8e04-4a231c9055af",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/da-bomb-cherry-bomb-29.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "1f73a5b6-3362-54aa-adf2-86b71d3dcc83": {
+    "file": "da-bomb-cherry-bomb-29--19in.glb",
+    "bytes": 2544768,
+    "triangles": 38908,
+    "meshes": 4,
+    "paintable_nodes": [
+      "da-bomb-cherry-bomb-29--19in__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.4342810150121693,
+        0.025,
+        0
+      ],
+      "head_tube": [
+        0.4592,
+        0.6361,
+        0
+      ],
+      "head_tube_lower": [
+        0.5048162566921863,
+        0.5360042602035803,
+        0
+      ],
+      "seat_tube": [
+        -0.03470862457391144,
+        0.42930656090197084,
+        0
+      ],
+      "shock_upper": [
+        0.10148099149732617,
+        0.32643289363740685,
+        0
+      ],
+      "shock_lower": [
+        0.08905773609876633,
+        0.11680068075656891,
+        0.0
+      ],
+      "saddle": [
+        -0.05970862457391144,
+        0.5743065609019709,
+        0
+      ],
+      "suspension_pivot": [
+        0.04589631053139906,
+        0.28422688476921537,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "rocker",
+          "rocker__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "seat",
+          "Pivot bearing bridge 3",
+          "chain55",
+          "stay55",
+          "stay yoke web 1",
+          "rocker",
+          "shock_upper support 1",
+          "shock_upper mounting lug 1",
+          "Pivot bearing bridge 2",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "Pivot outer washer 2.001",
+          "Pivot outer washer 2",
+          "rocker__hidden",
+          "shock_upper through bolt",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot bearing bridge 1",
+          "Pivot outer washer 1.001",
+          "Rear dropout 1",
+          "guard",
+          "chain-55",
+          "Pivot outer washer 3.001",
+          "Pivot outer washer 3",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "Pivot outer washer 0.001",
+          "Seat collar",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "shock_yoke",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower mounting lug -1",
+          "shock_lower support 1",
+          "shock_lower support -1",
+          "down",
+          "Pedalier"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Horst rear triangle and rocker inferred from model photo/catalog. No calibrated rear/top view; hidden counterpart is an explicit structural inference."
+    },
+    "model": "da-bomb-cherry-bomb-29",
+    "variant_id": "1f73a5b6-3362-54aa-adf2-86b71d3dcc83",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/da-bomb-cherry-bomb-29.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "49af39a2-ff5a-5047-989e-0d1b47f15267": {
+    "file": "scott-ransom-rc-427727--m.glb",
+    "bytes": 1749800,
+    "triangles": 26766,
+    "meshes": 4,
+    "paintable_nodes": [
+      "scott-ransom-rc-427727--m__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.43928919859245347,
+        0.025,
+        0
+      ],
+      "head_tube": [
+        0.458,
+        0.6193,
+        0
+      ],
+      "head_tube_lower": [
+        0.5021505852791746,
+        0.5295741630325671,
+        0
+      ],
+      "seat_tube": [
+        -0.05437399760076245,
+        0.3872606898719258,
+        0
+      ],
+      "shock_upper": [
+        0.075,
+        0.095,
+        0
+      ],
+      "shock_lower": [
+        -0.13,
+        0.095,
+        0
+      ],
+      "saddle": [
+        -0.07937399760076244,
+        0.5322606898719258,
+        0
+      ],
+      "suspension_pivot": [
+        -0.0032423339842945903,
+        0.17467186296849216,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "top",
+          "seat",
+          "access_cover",
+          "Pedalier",
+          "Ransom tie 1",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "chain-55",
+          "Rear dropout -1",
+          "Pivot outer washer 2",
+          "stay-55",
+          "stay yoke web -1",
+          "stay yoke web 1",
+          "Rear brake carrier 0.095",
+          "Rear brake post 0.095",
+          "Pivot outer washer 1",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot outer washer 2.001",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 1.001",
+          "Pivot bearing bridge 1",
+          "chain55",
+          "Rear dropout 1",
+          "stay55",
+          "Ransom tie -1",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "Seat collar",
+          "down",
+          "Head tube"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Ransom platform manual shows paired tie links and lower outer link; integrated shock stays concealed. No claim of complete internal six-bar mechanism."
+    },
+    "model": "scott-ransom-rc-427727",
+    "variant_id": "49af39a2-ff5a-5047-989e-0d1b47f15267",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/scott-ransom-rc-427727.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "b7c5ef12-c15c-5dcf-a22a-35e2fa031e37": {
+    "file": "scott-ransom-rc-427727--l.glb",
+    "bytes": 1754812,
+    "triangles": 26822,
+    "meshes": 4,
+    "paintable_nodes": [
+      "scott-ransom-rc-427727--l__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.43928919859245347,
+        0.025,
+        0
+      ],
+      "head_tube": [
+        0.483,
+        0.6327999999999999,
+        0
+      ],
+      "head_tube_lower": [
+        0.5337731730710507,
+        0.5296152874874521,
+        0
+      ],
+      "seat_tube": [
+        -0.03949225013474533,
+        0.39529683350357503,
+        0
+      ],
+      "shock_upper": [
+        0.075,
+        0.095,
+        0
+      ],
+      "shock_lower": [
+        -0.13,
+        0.095,
+        0
+      ],
+      "saddle": [
+        -0.06449225013474533,
+        0.540296833503575,
+        0
+      ],
+      "suspension_pivot": [
+        0.0035169179996764888,
+        0.17832185903983652,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [],
+      "connected_groups": [
+        [
+          "top",
+          "seat",
+          "access_cover",
+          "Pedalier",
+          "Ransom tie 1",
+          "chain yoke web 1",
+          "chain yoke web -1",
+          "chain-55",
+          "Rear dropout -1",
+          "Pivot outer washer 2",
+          "stay-55",
+          "stay yoke web -1",
+          "stay yoke web 1",
+          "Rear brake carrier 0.095",
+          "Rear brake post 0.095",
+          "Pivot outer washer 1",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "Pivot outer washer 2.001",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 1.001",
+          "Pivot bearing bridge 1",
+          "chain55",
+          "Rear dropout 1",
+          "stay55",
+          "Ransom tie -1",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0.001",
+          "Pivot outer washer 0",
+          "Seat collar",
+          "down",
+          "Head tube"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Ransom platform manual shows paired tie links and lower outer link; integrated shock stays concealed. No claim of complete internal six-bar mechanism."
+    },
+    "model": "scott-ransom-rc-427727",
+    "variant_id": "b7c5ef12-c15c-5dcf-a22a-35e2fa031e37",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/scott-ransom-rc-427727.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "4b1045b3-4c45-50c1-97a2-f8358592d2cb": {
+    "file": "trek-slash-al-gen-6--m.glb",
+    "bytes": 2489088,
+    "triangles": 39616,
+    "meshes": 4,
+    "paintable_nodes": [
+      "trek-slash-al-gen-6--m__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.4283499037002343,
+        0.027,
+        0
+      ],
+      "head_tube": [
+        0.448,
+        0.6231,
+        0
+      ],
+      "head_tube_lower": [
+        0.4929318998615897,
+        0.5337628611672163,
+        0
+      ],
+      "seat_tube": [
+        -0.06580738404654785,
+        0.4059469351895655,
+        0
+      ],
+      "shock_upper": [
+        0.08875481319901701,
+        0.3292526660809624,
+        0
+      ],
+      "shock_lower": [
+        0.11640803515911102,
+        0.10092110931873322,
+        0.0
+      ],
+      "saddle": [
+        -0.09080738404654784,
+        0.5509469351895655,
+        0
+      ],
+      "suspension_pivot": [
+        0.014567850078583605,
+        0.2654217341352977,
+        0
+      ],
+      "chain_idler": [
+        0.014131329377340157,
+        0.1569441711157667,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "seat",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 2.001",
+          "chain55",
+          "stay55",
+          "Pivot outer washer 1.001",
+          "stay yoke web 1",
+          "upper_link",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "shock_upper mounting lug 1",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "upper_link__hidden",
+          "Pivot bearing bridge 1",
+          "guard",
+          "Rear dropout 1",
+          "chain-55",
+          "Pivot outer washer 2",
+          "chain yoke web 1",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "Pivot outer washer 0.001",
+          "Seat collar",
+          "Pedalier",
+          "chain yoke web -1",
+          "Idler fixed carrier",
+          "Idler bearing axle",
+          "Idler",
+          "down",
+          "shock_lower support -1",
+          "shock_lower mounting lug -1",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Two-piece rocker and rear-triangle joints observed in Gen 6 service manual pages 7\u20139; visual installation widths inferred."
+    },
+    "model": "trek-slash-al-gen-6",
+    "variant_id": "4b1045b3-4c45-50c1-97a2-f8358592d2cb",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/trek-slash-al-gen-6.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  },
+  "770aa949-c3fb-5f68-820b-1cbbff6e5b67": {
+    "file": "trek-slash-al-gen-6--l.glb",
+    "bytes": 2486696,
+    "triangles": 39580,
+    "meshes": 4,
+    "paintable_nodes": [
+      "trek-slash-al-gen-6--l__frame"
+    ],
+    "anchors": {
+      "rear_axle": [
+        -0.43335971201762624,
+        0.027,
+        0
+      ],
+      "head_tube": [
+        0.48810000000000003,
+        0.6411,
+        0
+      ],
+      "head_tube_lower": [
+        0.5420182798339076,
+        0.5338954334006595,
+        0
+      ],
+      "seat_tube": [
+        -0.04507231168806791,
+        0.4170508075961344,
+        0
+      ],
+      "shock_upper": [
+        0.10771424668742371,
+        0.3385062985740353,
+        0
+      ],
+      "shock_lower": [
+        0.12321793287992477,
+        0.10902942717075348,
+        0.0
+      ],
+      "saddle": [
+        -0.0700723116880679,
+        0.5620508075961343,
+        0
+      ],
+      "suspension_pivot": [
+        0.028993044366920795,
+        0.27278214502939785,
+        0
+      ],
+      "chain_idler": [
+        0.02274410484547565,
+        0.1613060012164628,
+        0
+      ]
+    },
+    "structure": {
+      "pairs": [
+        [
+          "upper_link",
+          "upper_link__hidden"
+        ]
+      ],
+      "connected_groups": [
+        [
+          "top",
+          "Head tube",
+          "seat",
+          "Pivot bearing bridge 2",
+          "Pivot outer washer 2.001",
+          "chain55",
+          "stay55",
+          "Pivot outer washer 1.001",
+          "stay yoke web 1",
+          "upper_link",
+          "shock_upper support 1",
+          "shock_upper through bolt",
+          "shock_upper mounting lug -1",
+          "shock_upper support -1",
+          "shock_upper mounting lug 1",
+          "stay yoke web -1",
+          "stay-55",
+          "Rear dropout -1",
+          "Pivot outer washer 1",
+          "Rear brake post 0.095",
+          "Rear brake carrier 0.095",
+          "Rear brake carrier 0.021",
+          "Rear brake post 0.021",
+          "upper_link__hidden",
+          "Pivot bearing bridge 1",
+          "guard",
+          "Rear dropout 1",
+          "chain-55",
+          "Pivot outer washer 2",
+          "chain yoke web 1",
+          "Pivot bearing bridge 0",
+          "Pivot outer washer 0",
+          "Pivot outer washer 0.001",
+          "Seat collar",
+          "Pedalier",
+          "chain yoke web -1",
+          "Idler fixed carrier",
+          "Idler bearing axle",
+          "Idler",
+          "down",
+          "shock_lower support -1",
+          "shock_lower mounting lug -1",
+          "shock_lower through bolt",
+          "shock_lower mounting lug 1",
+          "shock_lower support 1"
+        ]
+      ],
+      "surface_contact_tolerance_mm": 2,
+      "inferred_closures": "Two-piece rocker and rear-triangle joints observed in Gen 6 service manual pages 7\u20139; visual installation widths inferred."
+    },
+    "model": "trek-slash-al-gen-6",
+    "variant_id": "770aa949-c3fb-5f68-820b-1cbbff6e5b67",
+    "category": "frame",
+    "source_trace": "../catalog-v5/traces/trek-slash-al-gen-6.json",
+    "reference_estimated": true,
+    "anchor_rotations": {
+      "shock_upper": [
+        0,
+        0.0,
+        0
+      ]
+    }
+  }
+}
