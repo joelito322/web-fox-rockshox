@@ -31,10 +31,22 @@ const admin = createClient(env.SUPABASE_URL, env.SUPABASE_SECRET_KEY, options),
 const presets = (name) =>
   JSON.parse(readFileSync("supabase/catalog/" + name + ".json", "utf8"))
     .presets;
-const target=process.argv.find(a=>a.startsWith('--version='))?.split('=')[1]??'v4';
-if(!['v4','v5'].includes(target))throw Error('Unsupported transition');
-const previous=target==='v5'?'v4':'v3';
-const old = [presets(`visual-${previous}-examples`)[0], presets(`visual-${previous}-examples`)[2]],
+const target =
+  process.argv.find((a) => a.startsWith("--version="))?.split("=")[1] ?? "v4";
+if (!["v4", "v5", "v6", "v7"].includes(target))
+  throw Error("Unsupported transition");
+const previous =
+  target === "v7"
+    ? "v6"
+    : target === "v6"
+      ? "v5"
+      : target === "v5"
+        ? "v4"
+        : "v3";
+const old = [
+    presets(`visual-${previous}-examples`)[0],
+    presets(`visual-${previous}-examples`)[2],
+  ],
   fresh = presets(`visual-${target}-examples`);
 let user;
 const check = (condition, name) => {
@@ -71,7 +83,7 @@ try {
   }
   const publication = spawnSync(
     process.execPath,
-    ["scripts/publish-visuals.mjs", "--version="+target, "--apply"],
+    ["scripts/publish-visuals.mjs", "--version=" + target, "--apply"],
     { encoding: "utf8" },
   );
   if (publication.status !== 0) throw Error("Atomic visual publication failed");
@@ -121,7 +133,14 @@ try {
   }
   const sql = spawnSync(
     "psql",
-    ["-X", "-q", "-v", "ON_ERROR_STOP=1", "-f", `supabase/tests/visual-${target}.sql`],
+    [
+      "-X",
+      "-q",
+      "-v",
+      "ON_ERROR_STOP=1",
+      "-f",
+      `supabase/tests/visual-${target}.sql`,
+    ],
     { env: postgresEnvironment(env), encoding: "utf8" },
   );
   check(sql.status === 0, "cloud_profiles_categories_and_inventory");

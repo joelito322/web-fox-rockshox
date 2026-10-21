@@ -1,0 +1,26 @@
+begin;
+do $$declare target public.component_variants;asset public.visual_assets;reference uuid;begin
+ if (select count(distinct manifest->'parameters'->>'profile_key') from public.visual_assets where generator_key in ('atlas-bike-v5','atlas-bike-v6','atlas-bike-v7') or manifest->'parameters'->>'mount_space' is not null)<>53 then raise exception 'incomplete_v6_profile_coverage';end if;
+ if exists(select 1 from public.component_variants v join public.visual_assets a on a.id=v.visual_asset_id where v.selectable and v.published and not(a.generator_key in ('atlas-bike-v5','atlas-bike-v6','atlas-bike-v7') or a.manifest->'parameters'->>'mount_space' is not null)) then raise exception 'old_visual_still_selectable';end if;
+ if (select count(*) from public.component_variants where selectable and published)<>114 then raise exception 'selectable_inventory_changed';end if;
+ if (select count(*) from public.visual_assets where storage_path like 'catalog/v6/%')<>76 then raise exception 'glb_capture_coverage_changed';end if;
+ select v.* into strict target from public.component_variants v join public.components c on c.id=v.component_id where c.category='fork' and v.published limit 1;
+ select a.id into reference from public.visual_assets a where manifest->'parameters'->>'mount_space'='frame' limit 1;
+ target.id=gen_random_uuid();target.visual_asset_id=reference;target.published=false;target.selectable=false;
+ begin insert into public.component_variants select(target).*;raise exception 'mismatched_glb_profile_was_accepted';exception when check_violation then null;end;
+ select * into strict asset from public.visual_assets where manifest->'parameters'->>'mount_space'='fork' limit 1;
+ asset.id=gen_random_uuid();asset.published=false;asset.manifest=asset.manifest #- '{anchors,axle}';
+ begin insert into public.visual_assets select(asset).*;raise exception 'missing_axle_was_accepted';exception when check_violation then null;end;
+ select * into strict asset from public.visual_assets where manifest->'parameters'->>'mount_space'='frame' limit 1;
+ asset.id=gen_random_uuid();asset.published=false;asset.manifest=asset.manifest #- '{parameters,assembly_version}';
+ begin insert into public.visual_assets select(asset).*;raise exception 'missing_assembly_was_accepted';exception when check_violation then null;end;
+ for reference in select id from public.visual_assets where generator_key in('atlas-bike-v1','atlas-bike-v2','atlas-bike-v3','atlas-bike-v4') and published limit 1 loop null;end loop;
+ if not exists(select 1 from public.visual_assets where generator_key='atlas-bike-v4' and published) then raise exception 'legacy_resources_missing';end if;
+ if (select count(*) from public.component_variants v join public.visual_assets a on a.id=v.visual_asset_id where v.published and v.selectable and a.storage_path like 'catalog/v6/%')<>63 then raise exception 'new_mesh_selection_coverage';end if;
+ if (select count(*) from public.component_variants v join public.visual_assets a on a.id=v.visual_asset_id where v.published and v.selectable and a.generator_key='atlas-bike-v5')<>42 then raise exception 'unchanged_capture_was_archived';end if;
+ if not exists(select 1 from public.visual_assets where storage_path like 'catalog/v5/%' and published) then raise exception 'v5_mesh_history_missing';end if;
+ if not exists(select 1 from storage.buckets where id='models' and public) then raise exception 'models_bucket_missing';end if;
+ if (select count(*) from public.component_variants v join public.visual_assets a on a.id=v.visual_asset_id where v.selectable and v.published and a.generator_key='atlas-bike-v7')<>9 then raise exception 'brake_successors_missing';end if;
+ if exists(select 1 from public.component_variants v join public.visual_assets a on a.id=v.visual_asset_id where v.selectable and v.published and a.generator_key='atlas-bike-v6') then raise exception 'incomplete_brakes_still_selectable';end if;
+end$$;
+rollback;

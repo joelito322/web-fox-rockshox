@@ -3,12 +3,15 @@ import { readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { createClient } from "@supabase/supabase-js";
 import { readProjectEnvironment } from "./lib/environment.mjs";
+const version =
+  process.argv.find((a) => a.startsWith("--version="))?.split("=")[1] ?? "v5";
+if (!["v5", "v6"].includes(version)) throw Error("Unsupported mesh version");
 const env = readProjectEnvironment(),
   client = createClient(env.SUPABASE_URL, env.SUPABASE_SECRET_KEY, {
     auth: { persistSession: false, autoRefreshToken: false },
   });
 const captures = JSON.parse(
-  readFileSync("models/catalog-v5/uploads.json", "utf8"),
+  readFileSync(`models/catalog-${version}/uploads.json`, "utf8"),
 );
 const rows = [...new Map(captures.map((row) => [row.path, row])).values()];
 for (const row of rows) {

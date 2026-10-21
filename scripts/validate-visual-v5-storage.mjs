@@ -4,11 +4,16 @@ import { readFileSync } from "node:fs";
 import { randomUUID } from "node:crypto";
 import { createClient } from "@supabase/supabase-js";
 import { readProjectEnvironment } from "./lib/environment.mjs";
+const version =
+  process.argv.find((a) => a.startsWith("--version="))?.split("=")[1] ?? "v5";
+if (!["v5", "v6"].includes(version)) throw Error("Unsupported mesh version");
 const env = readProjectEnvironment(),
   opts = { auth: { persistSession: false, autoRefreshToken: false } };
 const admin = createClient(env.SUPABASE_URL, env.SUPABASE_SECRET_KEY, opts),
   anon = createClient(env.SUPABASE_URL, env.SUPABASE_PUBLISHABLE_KEY, opts);
-const rows = JSON.parse(readFileSync("models/catalog-v5/uploads.json", "utf8"));
+const rows = JSON.parse(
+  readFileSync(`models/catalog-${version}/uploads.json`, "utf8"),
+);
 const current = new Map(rows.map((r) => [r.path, r]));
 const references = await admin
   .from("visual_assets")
@@ -52,7 +57,7 @@ await Promise.all(
     }
   }),
 );
-const probe = "catalog/v5/validation-" + randomUUID() + ".glb";
+const probe = `catalog/${version}/validation-` + randomUUID() + ".glb";
 const attempt = await anon.storage
   .from("models")
   .upload(probe, Buffer.from([0]), {

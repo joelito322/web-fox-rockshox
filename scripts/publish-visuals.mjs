@@ -10,7 +10,7 @@ import {
 const read = (path) =>
   JSON.parse(readFileSync("supabase/catalog/" + path + ".json", "utf8"));
 const versionArg = process.argv.find((a) => a.startsWith("--version="));
-if (versionArg && !/^--version=v[345]$/.test(versionArg))
+if (versionArg && !/^--version=v[34567]$/.test(versionArg))
   throw Error("Unsupported visual source version");
 const version = versionArg?.split("=")[1] ?? "v4";
 const catalog = parseCatalogImport(read(`visual-${version}-reviewed`));
