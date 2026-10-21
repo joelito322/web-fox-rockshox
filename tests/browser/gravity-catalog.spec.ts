@@ -1,3 +1,4 @@
+import { selectAssemblySlot } from "./helpers/assembly";
 import { test,expect } from '@playwright/test';
 import { readFileSync } from 'node:fs';
 const source=JSON.parse(readFileSync('supabase/catalog/gravity-reviewed.json','utf8')) as {
@@ -32,7 +33,7 @@ for(const [i,frame]of frames.entries())test(`${frame.slug} mounts new suspension
  const forkSlug=['rockshox-boxxer-ultimate-d2','rockshox-boxxer-select-d2','ohlins-dh38-m2','marzocchi-bomber-58'][i%4];
  const fork=source.components.find(c=>c.slug===forkSlug)!;
  const forkVariant=source.variants.find(v=>v.component_id===fork.id&&v.specs.wheel_format===frameVariant.specs.wheel_front)??source.variants.find(v=>v.component_id===fork.id)!;
- await page.locator('.slot-nav').getByRole('button',{name:'Horquilla',exact:true}).click();await page.getByLabel('Buscar alternativa',{exact:true}).fill(fork.name);
+ await selectAssemblySlot(page, 'Horquilla');await page.getByLabel('Buscar alternativa',{exact:true}).fill(fork.name);
  const option=page.locator('.piece-options > button').filter({hasText:fork.name}).filter({hasText:forkVariant.label});await expect(option).toBeVisible();await option.click();await expect(page.locator('.selected-piece h2')).toHaveText(fork.name);
  const name=`Gravity ${i} ${Date.now()}`;await page.getByLabel('Nombre del montaje').fill(name);await page.getByRole('button',{name:'Guardar',exact:true}).click();await expect(page.locator('.save-status')).toHaveText('Guardado');
  await page.locator('.editor-toolbar').getByRole('link',{name:'Mis bicicletas',exact:true}).click();const card=page.locator('.preset-card').filter({hasText:name});await expect(card).toBeVisible();await expect(card.locator('.bike-preview')).toHaveAttribute('data-preview-state','ready');

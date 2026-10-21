@@ -6,8 +6,8 @@ import { spawnSync } from "node:child_process";
 const project = process.argv[2] ?? "desktop";
 if (!["desktop", "mobile"].includes(project)) throw new Error("Choose desktop or mobile");
 const scenario = process.argv[3] ?? "performance";
-if (!["performance", "commercial", "gravity", "motion"].includes(scenario)) throw new Error("Choose performance, commercial, gravity or motion");
-const testFile = scenario === "motion" ? "tests/browser/suspension-motion.spec.ts" : scenario === "gravity" ? "tests/browser/gravity-catalog.spec.ts" : scenario === "commercial" ? "tests/browser/commercial-cockpit.spec.ts" : "tests/browser/configurator-performance.spec.ts";
+if (!["performance", "commercial", "gravity", "motion", "guided"].includes(scenario)) throw new Error("Choose performance, commercial, gravity, motion or guided");
+const testFile = scenario === "guided" ? "tests/browser/guided-assembly.spec.ts" : scenario === "motion" ? "tests/browser/suspension-motion.spec.ts" : scenario === "gravity" ? "tests/browser/gravity-catalog.spec.ts" : scenario === "commercial" ? "tests/browser/commercial-cockpit.spec.ts" : "tests/browser/configurator-performance.spec.ts";
 const env = readProjectEnvironment();
 const admin = createClient(env.SUPABASE_URL, env.SUPABASE_SECRET_KEY, {
   auth: { persistSession: false, autoRefreshToken: false },

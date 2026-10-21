@@ -1,3 +1,4 @@
+import { selectAssemblySlot } from "./helpers/assembly";
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 const source = JSON.parse(readFileSync("supabase/catalog/cockpit-reviewed.json", "utf8")) as {
@@ -29,7 +30,7 @@ for (const scenario of scenarios) test(`commercial ${scenario.name} components m
     const component = source.components.find(row => row.slug === slug)!;
     const variant = source.variants.find(row => row.component_id === component.id)!;
     expected.push(variant.id);
-    await page.locator(".slot-nav").getByRole("button", { name: slot, exact: true }).click();
+    await selectAssemblySlot(page, slot);
     const option = page.locator(".piece-options > button").filter({ hasText: component.name }).first();
     await expect(option).toBeVisible(); await option.click();
     await expect(page.locator(".selected-piece h2")).toHaveText(component.name);
@@ -58,7 +59,7 @@ for (const scenario of scenarios) test(`commercial ${scenario.name} components m
   await expect(page.locator(".viewer canvas")).toBeVisible();
   await expect(page.locator(".slot-complete")).toHaveCount(23);
   for (const [slot, slug] of scenario.choices) {
-    await page.locator(".slot-nav").getByRole("button", { name: slot, exact: true }).click();
+    await selectAssemblySlot(page, slot);
     await expect(page.locator(".selected-piece h2")).toHaveText(source.components.find(row => row.slug === slug)!.name);
   }
   await expect(page.getByText("Vista 3D no disponible", { exact: true })).toHaveCount(0);

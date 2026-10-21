@@ -1,3 +1,4 @@
+import { selectAssemblySlot } from "./helpers/assembly";
 import { test, expect } from "@playwright/test";
 import { installSceneMetrics } from "../../scripts/lib/scene-metrics.mjs";
 test.use({ launchOptions: { args: ["--use-angle=swiftshader", "--enable-unsafe-swiftshader"] } });
@@ -35,29 +36,30 @@ test("configurator batches search, reuses categories and warms only the intended
   await expect(page.locator(".save-status")).toContainText("Pieza aplicada");
   const applyMs = Math.round(performance.now() - start);
   expect(assets).toHaveLength(downloadsAfterIntent);
+  const downloadsOnApply = assets.length - downloadsAfterIntent;
   expect(queries).toHaveLength(queriesBeforeApply);
   await expect(page.locator(".viewer canvas")).toBeVisible();
   await page.waitForFunction(() => (window as any).atlasSceneProof?.firstDrawMs != null);
   const firstDrawMs = Math.round(await page.evaluate(() => (window as any).atlasSceneProof.firstDrawMs) - browserStart);
-  await page.locator(".slot-nav button").filter({ hasText: "Horquilla" }).click();
+  await selectAssemblySlot(page, "Horquilla");
   await expect(page.locator(".piece-options > button").first()).toBeVisible();
   const beforeTyping = queries.length;
   await page.getByLabel("Buscar alternativa").pressSequentially("Fac", { delay: 35 });
   await expect.poll(() => queries.length - beforeTyping).toBe(1);
   await expect(page.locator(".piece-options > button").first()).toBeVisible();
   const beforeSwitch = queries.length;
-  await page.locator(".slot-nav button").filter({ hasText: "Amortiguador" }).click();
+  await selectAssemblySlot(page, "Amortiguador");
   await expect(page.locator(".piece-options > button").first()).toBeVisible();
   const switched = queries.slice(beforeSwitch);
   expect(switched).toHaveLength(1);
   expect(switched[0].searchParams.get("name")).toBeNull();
   const beforeReturn = queries.length;
-  await page.locator(".slot-nav button").filter({ hasText: "Horquilla" }).click();
+  await selectAssemblySlot(page, "Horquilla");
   await expect(page.getByLabel("Buscar alternativa")).toHaveValue("");
   await expect(page.locator(".piece-options > button").first()).toBeVisible();
   expect(queries).toHaveLength(beforeReturn);
   await expect(page.getByText("Vista 3D no disponible", { exact: true })).toHaveCount(0);
-  console.log(JSON.stringify({ scope: "configurator", applyAfterIntentMs: applyMs, firstDrawAfterIntentMs: firstDrawMs, modelDownloadsOnApply: assets.length - downloadsAfterIntent, databaseQueriesOnApply: 0, searchQueriesForThreeKeys: 1, cachedCategoryQueries: queries.length - beforeReturn }));
+  console.log(JSON.stringify({ scope: "configurator", applyAfterIntentMs: applyMs, firstDrawAfterIntentMs: firstDrawMs, modelDownloadsOnApply: downloadsOnApply, databaseQueriesOnApply: 0, searchQueriesForThreeKeys: 1, cachedCategoryQueries: queries.length - beforeReturn }));
 });
 
 test("saved builds reuse their confirmed snapshot across details, tabs and editor", async ({ page }) => {

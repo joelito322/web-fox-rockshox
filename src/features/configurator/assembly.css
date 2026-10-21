@@ -1,0 +1,422 @@
+/* The inventory, scene and picker have distinct scrolling areas on wide screens. */
+.configurator .editor-layout {
+  grid-template-columns: 220px minmax(0, 1fr) 360px;
+  min-height: 680px;
+}
+.assembly-index {
+  min-width: 0;
+  overflow: auto;
+  background: #f8f9f3;
+  border-right: 1px solid var(--border);
+}
+.assembly-index summary {
+  list-style: none;
+  padding: 22px 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+.assembly-index summary::-webkit-details-marker {
+  display: none;
+}
+.assembly-index summary > span {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #68745e;
+}
+.assembly-index-body {
+  padding: 0 8px 20px;
+}
+.assembly-index section {
+  border-top: 1px solid var(--border);
+  padding: 12px 0 6px;
+}
+.assembly-index h2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 8px 8px;
+  font-size: 0.72rem;
+}
+.assembly-index h2 > span {
+  font-weight: 400;
+  color: #77806e;
+}
+.assembly-index button {
+  width: 100%;
+  min-height: 52px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 5px;
+  padding: 9px 7px;
+  color: var(--ink);
+}
+.assembly-index button.selected {
+  border-color: #b6c494;
+  background: #edf2df;
+}
+.assembly-index button > span:first-child {
+  flex: none;
+  margin-top: 2px;
+  color: #7c896c;
+}
+.assembly-index button .slot-complete {
+  color: #477125;
+}
+.assembly-index button > span:last-child {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+.assembly-index strong {
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+.assembly-index small {
+  font-size: 0.61rem;
+  line-height: 1.4;
+  color: #64705c;
+  overflow-wrap: anywhere;
+}
+.assembly-index .index-variant {
+  font-size: 0.56rem;
+  color: #79816f;
+}
+.configurator .editor-panel {
+  min-width: 0;
+  padding: 18px;
+}
+.assembly-wheel-tabs,
+.assembly-groups,
+.assembly-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.assembly-wheel-tabs {
+  padding: 4px;
+  background: #f0f2e9;
+  border-radius: 6px;
+}
+.assembly-wheel-tabs button {
+  flex: 1;
+}
+.assembly-navigation button {
+  border: 1px solid transparent;
+  background: transparent;
+  color: #596451;
+  min-height: 40px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 0.71rem;
+}
+.assembly-navigation button[aria-pressed="true"] {
+  background: #26351e;
+  color: white;
+}
+.assembly-groups {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.assembly-groups button {
+  padding-inline: 4px;
+  font-size: 0.68rem;
+}
+.assembly-categories {
+  margin-top: 12px;
+}
+.assembly-categories button {
+  border-color: var(--border);
+  flex: 1 0 auto;
+}
+.assembly-categories button[aria-pressed="true"] {
+  background: #eaf0da;
+  color: #26351e;
+  border-color: #a7b684;
+}
+.assembly-context {
+  font-size: 0.66rem;
+  color: #66725a;
+  margin: 8px 0 0;
+}
+.assembly-pair {
+  padding: 14px 0 12px;
+  border-bottom: 1px solid var(--border);
+}
+.assembly-pair label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 40px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.assembly-pair input {
+  width: 18px;
+  height: 18px;
+  accent-color: #3b512a;
+}
+.assembly-pair > div {
+  display: flex;
+  gap: 5px;
+  margin: 4px 0;
+}
+.assembly-pair > div button {
+  flex: 1;
+  background: #f4f5ee;
+}
+.assembly-pair small {
+  display: block;
+  margin-top: 7px;
+  font-size: 0.64rem;
+  line-height: 1.5;
+  color: #67715e;
+}
+.configurator .assembly-active-heading h1 {
+  font-size: 1.75rem;
+  margin: 18px 0 0;
+}
+.configurator .selected-piece {
+  padding: 14px 0;
+}
+.configurator .selected-piece h2 {
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+.finish-palette fieldset {
+  border: 0;
+  padding: 0;
+  margin: 16px 0;
+  min-width: 0;
+}
+.finish-palette legend {
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.finish-swatches,
+.color-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.finish-swatches button {
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+  min-width: 52px;
+  max-width: 100px;
+  padding: 5px;
+  border: 1px solid transparent;
+  background: transparent;
+  border-radius: 4px;
+}
+.finish-swatches button[aria-pressed="true"] {
+  border-color: #566d3f;
+  background: #edf2e3;
+}
+.finish-swatches button > span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #1a291133;
+}
+.finish-swatches small {
+  font-size: 0.6rem;
+  line-height: 1.4;
+}
+.color-swatches button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #1a291133;
+  border-radius: 50%;
+}
+.color-swatches button[aria-pressed="true"] {
+  outline: 2px solid #354a24;
+  outline-offset: 3px;
+}
+.hex-color {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.66rem;
+  margin-top: 14px;
+}
+.hex-color input {
+  width: 100px;
+  min-width: 0;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.hex-color input[aria-invalid="true"] {
+  border-color: #a13a2f;
+}
+.finish-palette [role="alert"] {
+  color: #983b2d;
+  font-size: 0.7rem;
+}
+@media (max-width: 1150px) and (min-width: 981px) {
+  .configurator .editor-layout {
+    grid-template-columns: 190px minmax(0, 1fr) 320px;
+  }
+  .configurator .editor-panel {
+    padding: 14px;
+  }
+}
+@media (max-width: 980px) {
+  .configurator .editor-layout {
+    grid-template-columns: minmax(0, 1fr) 320px;
+    height: auto;
+  }
+  .assembly-index {
+    grid-column: 1/-1;
+    border-bottom: 1px solid var(--border);
+    max-height: 300px;
+  }
+  .assembly-index summary {
+    padding: 12px 18px;
+  }
+  .assembly-index summary:after {
+    content: "+";
+    margin-left: 12px;
+  }
+  .assembly-index details[open] > summary:after {
+    content: "−";
+  }
+  .assembly-index summary > span {
+    margin-left: auto;
+  }
+  .assembly-index-body {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .configurator .viewer {
+    min-height: 600px;
+  }
+}
+@media (max-width: 720px) {
+  .configurator .editor-layout {
+    display: flex;
+    height: auto;
+  }
+  .configurator .viewer {
+    order: 0;
+    height: 440px;
+    min-height: 440px;
+  }
+  .assembly-index {
+    order: 1;
+    width: 100%;
+    max-height: none;
+    border-right: 0;
+  }
+  .assembly-index-body {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 12px 16px;
+  }
+  .configurator .editor-panel {
+    order: 2;
+    width: 100%;
+    padding: 18px;
+  }
+  .configurator .piece-options {
+    grid-template-columns: 1fr;
+  }
+  .assembly-navigation button {
+    min-height: 44px;
+  }
+  .finish-swatches button {
+    min-height: 56px;
+  }
+  .color-swatches {
+    gap: 6px;
+  }
+  .color-swatches button {
+    width: 38px;
+    height: 38px;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .assembly-navigation button,
+  .assembly-index button,
+  .finish-palette button {
+    transition:
+      background-color 0.16s ease,
+      border-color 0.16s ease,
+      outline-color 0.16s ease;
+  }
+}
+.assembly-navigation {
+  position: sticky;
+  top: -18px;
+  z-index: 2;
+  background: #fff;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.assembly-size-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+}
+.assembly-size-tabs > span {
+  margin-right: auto;
+  font-size: 0.68rem;
+  color: #68745e;
+}
+.assembly-size-tabs button {
+  min-width: 48px;
+  border-color: var(--border);
+}
+.assembly-index summary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f8f9f3;
+}
+.assembly-notice {
+  border-left: 3px solid #a88b37;
+  background: #f8f3e2;
+  padding: 12px;
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+@media (max-width: 1150px) and (min-width: 981px) {
+  .assembly-navigation {
+    top: -14px;
+  }
+}
+@media (max-width: 720px) {
+  .assembly-navigation {
+    position: static;
+    padding-top: 0;
+  }
+  .color-swatches button {
+    width: 44px;
+    height: 44px;
+  }
+}
+.configurator .viewer:has(.suspension-controls) {
+  min-height: 650px;
+}
+@media (max-width: 720px) {
+  .configurator .viewer:has(.suspension-controls) {
+    height: 650px;
+  }
+}

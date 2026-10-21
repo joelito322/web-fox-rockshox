@@ -39,6 +39,8 @@ const catalogStaleTime = 300_000;
 export const filterKeys = [
   "size_label",
   "wheel_bsd_mm",
+  "wheel_front",
+  "wheel_rear",
   "spring_type",
   "crown_type",
   "piston_count",
@@ -194,31 +196,46 @@ export function useCatalog(
     },
   });
 }
+export async function readCachedComponent(client: QueryClient, slug: string) {
+  return client.fetchQuery({
+    queryKey: ["component", slug],
+    staleTime: catalogStaleTime,
+    queryFn: async ({ signal }) => readComponent(client, slug, signal),
+  });
+}
+async function readComponent(
+  client: QueryClient,
+  slug: string,
+  signal: AbortSignal,
+) {
+  const { data, error } = await requireSupabase()
+    .from("components")
+    // A component can still be opened from an old saved version even when
+    // it no longer has current choices. Keep the parent row in that case.
+    .select(
+      catalogProjection.replace(
+        "component_variants!inner",
+        "component_variants",
+      ),
+    )
+    .eq("slug", slug)
+    .eq("published", true)
+    .eq("component_variants.published", true)
+    .eq("component_variants.selectable", true)
+    .abortSignal(signal)
+    .single();
+  if (error) throw error;
+  const component = componentSchema.parse(data);
+  cacheComponentVariants(client, [component]);
+  return component;
+}
 export function useComponent(slug?: string) {
   const client = useQueryClient();
   return useQuery({
     queryKey: ["component", slug],
     enabled: !!slug,
-    staleTime: 300_000,
-    queryFn: async ({ signal }) => {
-      const { data, error } = await requireSupabase()
-        .from("components")
-        // A component can still be opened from an old saved version even when
-        // it no longer has current choices. Keep the parent row in that case.
-        .select(
-          catalogProjection.replace("component_variants!inner", "component_variants"),
-        )
-        .eq("slug", slug!)
-        .eq("published", true)
-        .eq("component_variants.published", true)
-        .eq("component_variants.selectable", true)
-        .abortSignal(signal)
-        .single();
-      if (error) throw error;
-      const component = componentSchema.parse(data);
-      cacheComponentVariants(client, [component]);
-      return component;
-    },
+    staleTime: catalogStaleTime,
+    queryFn: ({ signal }) => readComponent(client, slug!, signal),
   });
 }
 /** Resolve only an explicitly requested old version, not the model's entire history. */

@@ -1,3 +1,4 @@
+import { selectAssemblySlot } from "./helpers/assembly";
 import { test, expect } from "@playwright/test";
 test("administrator manages real drafts and roles with the approved tables and panels", async ({
   page,
@@ -331,10 +332,7 @@ test("reviewed enduro reference can be saved and reopened as a personal bicycle"
   await page.getByRole("button", { name: "Entrar", exact: true }).click();
   await expect(page.locator(".slot-complete")).toHaveCount(23);
   await expect(page.locator(".selected-piece")).toContainText("META SX V5");
-  await page
-    .locator(".slot-nav")
-    .getByRole("button", { name: "Aro delantero", exact: false })
-    .click();
+  await selectAssemblySlot(page, "Aro delantero");
   await page.getByLabel("Buscar alternativa").fill("E 593");
   await page
     .locator(".piece-options button")
@@ -441,7 +439,7 @@ test("reviewed DH reference preserves size, versioned assembly and all pieces af
   );
   await expect(
     page.getByLabel("Color personalizado", { exact: true }),
-  ).toHaveValue("#49614c");
+  ).toHaveValue("#49614C");
   await expect(page.locator("canvas")).toBeVisible({ timeout: 20000 });
   expect(errors).toEqual([]);
 });
@@ -568,17 +566,11 @@ test("two- and four-piston brakes replace independently and persist with the doc
     .fill(process.env.ATLAS_TEST_PASSWORD!);
   await page.getByRole("button", { name: "Entrar", exact: true }).click();
   await expect(page.locator(".slot-complete")).toHaveCount(23);
-  await page
-    .locator(".slot-nav")
-    .getByRole("button", { name: "Freno delantero", exact: false })
-    .click();
+  await selectAssemblySlot(page, "Freno delantero");
   await page.getByLabel("Buscar alternativa").fill("SLX M7100");
   await page.locator(".piece-options button").click();
   await expect(page.locator(".selected-piece")).toContainText("2 pistones");
-  await page
-    .locator(".slot-nav")
-    .getByRole("button", { name: "Freno trasero", exact: false })
-    .click();
+  await selectAssemblySlot(page, "Freno trasero");
   await page.getByLabel("Buscar alternativa").fill("MT5");
   await page
     .locator(".piece-options button")
@@ -589,10 +581,7 @@ test("two- and four-piston brakes replace independently and persist with the doc
   await expect(page.locator(".mount-notes")).toContainText(
     "Falta confirmar el espesor del disco trasero",
   );
-  await page
-    .locator(".slot-nav")
-    .getByRole("button", { name: "Disco trasero", exact: false })
-    .click();
+  await selectAssemblySlot(page, "Disco trasero");
   await page.getByLabel("Buscar alternativa").fill("MDR-P");
   await page
     .locator(".piece-options button")
@@ -737,7 +726,7 @@ test("a saved imported resource waits for its binary and remains editable when d
   await page.getByLabel("Contraseña", { exact: true }).fill(process.env.ATLAS_TEST_PASSWORD!);
   await page.getByRole("button", { name: "Entrar", exact: true }).click();
   await expect(page.locator(".slot-complete")).toHaveCount(23);
-  await page.locator(".slot-nav").getByRole("button", { name: "Horquilla", exact: false }).click();
+  await selectAssemblySlot(page, "Horquilla");
   await page.getByLabel("Buscar alternativa").fill("Entrega remota " + run.slice(-8));
   await page.locator(".piece-options button").click();
   await expect(page.locator(".selected-piece")).toContainText("Archivo de validación");

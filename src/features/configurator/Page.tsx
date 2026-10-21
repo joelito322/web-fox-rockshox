@@ -1,4 +1,19 @@
-import { SuspensionControls, useSuspensionInspection } from "./SuspensionControls";
+import "./assembly.css";
+import { AssemblyIndex, AssemblyNavigation } from "./AssemblyNavigation";
+import { FinishPalette } from "./FinishPalette";
+import {
+  counterpart,
+  entryFor,
+  pairedSlot,
+  wheelBSD,
+  wheelFilters,
+  chooseTogether,
+  type WheelSetup,
+} from "./model/guided";
+import {
+  SuspensionControls,
+  useSuspensionInspection,
+} from "./SuspensionControls";
 import {
   Component,
   lazy,
@@ -23,22 +38,20 @@ import {
   Trash2,
 } from "lucide-react";
 import { useAuth } from "../auth/provider";
-import { useCatalog, readCachedVariants } from "../catalog/api";
 import {
-  categoryLabels,
-  selectVariant,
-  type SelectedVariant,
-} from "../catalog/model";
+  useCatalog,
+  readCachedVariants,
+  readCachedComponent,
+} from "../catalog/api";
+import { selectVariant, type SelectedVariant } from "../catalog/model";
 import {
   canonical,
   choose,
   configurationSchema,
   draftConfigurationSchema,
   emptyConfiguration,
-  paint,
   remove,
   slotCategories,
-  slotLabels,
   slots,
   warnings,
   type Configuration,
@@ -97,6 +110,11 @@ function Configurator({ buildId }: { buildId?: string }) {
   const [confirmed, setConfirmed] = useState("");
   const [variants, setVariants] = useState<VariantMap>({});
   const [slot, setSlot] = useState<Slot>("frame");
+  const [frameSize, setFrameSize] = useState("all");
+  const [selectionNote, setSelectionNote] = useState("");
+  const [wheelSetup, setWheelSetup] = useState<WheelSetup>("all");
+  const [pairing, setPairing] = useState<Record<string, boolean>>({});
+  const linked = pairing[slotCategories[slot]] !== false;
   const [previous, setPrevious] = useState<Configuration>();
   const suspension = useSuspensionInspection(configuration, variants);
   const [error, setError] = useState("");
@@ -164,11 +182,19 @@ function Configurator({ buildId }: { buildId?: string }) {
     setPending(false);
     setPieceFilter({ slot, search: "", page: 0 });
     setSettledSearch({ slot, search: "", page: 0 });
+    setSelectionNote("");
   }, [slot]);
+  const selectionSpecs = {
+    ...wheelFilters(wheelSetup, slot),
+    ...(slot === "frame" && frameSize !== "all"
+      ? { size_label: frameSize }
+      : {}),
+  };
   const catalog = useCatalog(
     slotCategories[slot],
     settledSearch.slot === slot ? settledSearch.search : "",
     settledSearch.slot === slot ? settledSearch.page : 0,
+    Object.keys(selectionSpecs).length ? { specs: selectionSpecs } : {},
   );
   const item = configuration.items.find((i) => i.slot === slot);
   const selected = item ? variants[item.variantId] : undefined;
@@ -378,6 +404,15 @@ function Configurator({ buildId }: { buildId?: string }) {
   }
   async function apply(v: SelectedVariant, approved = false) {
     if (
+      slot !== "frame" &&
+      !current.current.items.some((i) => i.slot === "frame")
+    ) {
+      setIntendedPiece(v);
+      setSlot("frame");
+      return;
+    }
+
+    if (
       slot === "frame" &&
       current.current.items.some((i) => i.slot === "frame") &&
       !approved
@@ -386,15 +421,52 @@ function Configurator({ buildId }: { buildId?: string }) {
       return;
     }
     const target = slot;
+    const otherSlot = linked ? pairedSlot(target) : undefined;
     const serial = ++request.current;
     const dependencies = canonical(current.current);
     setPending(true);
     setError("");
+    setSelectionNote("");
     try {
+      const choices = [{ slot: target, variant: v }];
+      if (otherSlot) {
+        const wantedBSD = wheelBSD(wheelSetup, otherSlot);
+        let other = v;
+        if (
+          ["rim", "tire"].includes(v.component.category) &&
+          wantedBSD &&
+          wantedBSD !== v.specs.wheel_bsd_mm
+        ) {
+          const component = await readCachedComponent(
+            queryClient,
+            v.component.slug,
+          );
+          const equivalent = counterpart(
+            v,
+            wantedBSD,
+            component.component_variants.map((option) =>
+              selectVariant(component, option),
+            ),
+          );
+          if (!equivalent) {
+            if (serial === request.current) {
+              const message =
+                "No hay una variante equivalente para la otra rueda. Desactiva «Aplicar a ambos lados» y elige cada lado por separado.";
+              setStatus("Selección sin aplicar.");
+              setSelectionNote(message);
+            }
+            return;
+          }
+          other = equivalent;
+        }
+        choices.push({ slot: otherSlot, variant: other });
+      }
       if (!textMode && v.visual_assets) {
         const scene = await import("./scene/BikeScene");
         await Promise.all([
-          scene.prepareVisual(v.visual_assets),
+          ...choices.map((choice) =>
+            scene.prepareVisual(choice.variant.visual_assets!),
+          ),
           ...(target === "frame" && intendedPiece?.visual_assets
             ? [scene.prepareVisual(intendedPiece.visual_assets)]
             : []),
@@ -407,7 +479,7 @@ function Configurator({ buildId }: { buildId?: string }) {
         );
         return;
       }
-      let next = choose(current.current, target, v);
+      let next = chooseTogether(current.current, choices);
       const intention = target === "frame" ? intendedPiece : undefined;
       if (intention) {
         const intendedSlot = slots.find(
@@ -420,11 +492,17 @@ function Configurator({ buildId }: { buildId?: string }) {
       setPrevious(current.current);
       setVariants((map) => ({
         ...map,
-        [v.id]: v,
+        ...Object.fromEntries(
+          choices.map((choice) => [choice.variant.id, choice.variant]),
+        ),
         ...(intention ? { [intention.id]: intention } : {}),
       }));
       setConfiguration(next);
-      setStatus("Pieza aplicada. Cambios sin guardar.");
+      setStatus(
+        otherSlot
+          ? "Piezas aplicadas delante y detrás. Cambios sin guardar."
+          : "Pieza aplicada. Cambios sin guardar.",
+      );
     } catch (e) {
       setError(userError(e));
     } finally {
@@ -535,6 +613,70 @@ function Configurator({ buildId }: { buildId?: string }) {
     setConfiguration(next);
     setStatus("Cambios sin guardar.");
   }
+  function finish(id?: string, color?: string) {
+    if (!selected || !item) return;
+    const targets = [
+      slot,
+      ...(linked && pairedSlot(slot) ? [pairedSlot(slot)!] : []),
+    ];
+    const sourceFinish = selected.allowed_finishes.options.find(
+      (f) => f.id === id,
+    );
+    const installed = configuration.items.filter((i) =>
+      targets.includes(i.slot),
+    );
+    const changed = installed.map((i) => {
+      const variant = variants[i.variantId];
+      if (!variant) return null;
+      if (color)
+        return variant.allowed_finishes.custom_color_enabled
+          ? { ...i, customColor: color.toUpperCase() }
+          : null;
+      const match =
+        variant.allowed_finishes.options.find(
+          (f) =>
+            f.id === id &&
+            f.label === sourceFinish?.label &&
+            f.material.color === sourceFinish?.material.color,
+        ) ??
+        variant.allowed_finishes.options.find(
+          (f) =>
+            f.label === sourceFinish?.label &&
+            f.material.color === sourceFinish?.material.color,
+        );
+      return match ? { ...i, finishId: match.id, customColor: null } : null;
+    });
+    if (changed.some((i) => !i)) {
+      const message =
+        "Este acabado no está disponible en ambos lados. Desactiva la selección conjunta para cambiar una pieza.";
+      setStatus("Acabado sin aplicar.");
+      setSelectionNote(message);
+      return;
+    }
+    setSelectionNote("");
+    edit({
+      ...configuration,
+      items: configuration.items.map(
+        (i) => changed.find((c) => c?.slot === i.slot) ?? i,
+      ),
+    });
+  }
+  function changeFrameSize(size: string) {
+    request.current++;
+    setPending(false);
+    setFrameSize(size);
+    setSelectionNote("");
+    setPieceFilter({ slot, search: pieceSearch, page: 0 });
+    setSettledSearch({ slot, search: pieceSearch, page: 0 });
+  }
+  function changeWheelSetup(setup: WheelSetup) {
+    request.current++;
+    setPending(false);
+    setWheelSetup(setup);
+    setSelectionNote("");
+    setPieceFilter({ slot, search: pieceSearch, page: 0 });
+    setSettledSearch({ slot, search: pieceSearch, page: 0 });
+  }
   async function reload() {
     if (
       !confirm("¿Recargar el montaje y descartar los cambios de esta sesión?")
@@ -596,6 +738,12 @@ function Configurator({ buildId }: { buildId?: string }) {
         )}
       </div>
       <div className="editor-layout">
+        <AssemblyIndex
+          configuration={configuration}
+          variants={variants}
+          slot={slot}
+          onSelect={setSlot}
+        />
         <section className="viewer" aria-label="Montaje visual">
           {configuration.items.length && !textMode ? (
             !visualReady ? (
@@ -643,51 +791,60 @@ function Configurator({ buildId }: { buildId?: string }) {
             <button
               aria-pressed={suspension.open}
               onClick={suspension.toggle}
-              disabled={textMode || !configuration.items.some(i => i.slot === "frame")}
-            >Suspensión</button>
-            <button onClick={() => { suspension.reset(); setTextMode((v) => !v); }}>
+              disabled={
+                textMode || !configuration.items.some((i) => i.slot === "frame")
+              }
+            >
+              Suspensión
+            </button>
+            <button
+              onClick={() => {
+                suspension.reset();
+                setTextMode((v) => !v);
+              }}
+            >
               {textMode ? "Probar vista 3D" : "Lista sin 3D"}
             </button>
           </div>
           {!textMode && <SuspensionControls controls={suspension} />}
         </section>
         <aside className="editor-panel">
-          <header>
-            <p className="eyebrow">Tu montaje</p>
-            <h1>{slotLabels[slot]}</h1>
+          <AssemblyNavigation
+            slot={slot}
+            onSelect={setSlot}
+            wheelSetup={wheelSetup}
+            onWheelSetup={changeWheelSetup}
+            frameSize={frameSize}
+            onFrameSize={changeFrameSize}
+            linked={linked}
+            onLinked={(value) => {
+              request.current++;
+              setPending(false);
+              setSelectionNote("");
+              setPairing((previous) => ({
+                ...previous,
+                [slotCategories[slot]]: value,
+              }));
+            }}
+          />
+          <header
+            id="assembly-selection"
+            tabIndex={-1}
+            className="assembly-active-heading"
+          >
+            <h1>{entryFor(slot).label}</h1>
           </header>
-          <div className="slot-nav">
-            {slots.map((s) => (
-              <button
-                className={slot === s ? "selected" : ""}
-                aria-pressed={slot === s}
-                key={s}
-                onClick={() => setSlot(s)}
-              >
-                <span
-                  className={
-                    configuration.items.some((i) => i.slot === s)
-                      ? "slot-complete"
-                      : ""
-                  }
-                >
-                  {configuration.items.some((i) => i.slot === s) ? (
-                    <Check size={13} />
-                  ) : (
-                    <span />
-                  )}
-                </span>
-                {slotLabels[s]}
-                <ChevronRight size={14} />
-              </button>
-            ))}
-          </div>
           {intendedPiece && (
             <p role="status">
               Elige un cuadro para probar {intendedPiece.component.name}.
             </p>
           )}
           {error && <Notice>{error}</Notice>}
+          {selectionNote && (
+            <p className="assembly-notice" role="status">
+              {selectionNote}
+            </p>
+          )}
           {pending && <Loading label="Preparando pieza" />}
           {selected && (
             <MotionRegion
@@ -697,50 +854,12 @@ function Configurator({ buildId }: { buildId?: string }) {
               <p>{selected.component.brands.name}</p>
               <h2>{selected.component.name}</h2>
               <span>{selected.label}</span>
-              <label className="field">
-                Acabado
-                <select
-                  value={item!.finishId}
-                  onChange={(e) =>
-                    edit({
-                      ...configuration,
-                      items: configuration.items.map((i) =>
-                        i.slot === slot
-                          ? {
-                              ...i,
-                              finishId: e.target.value,
-                              customColor: null,
-                            }
-                          : i,
-                      ),
-                    })
-                  }
-                >
-                  {selected.allowed_finishes.options.map((f) => (
-                    <option key={f.id} value={f.id}>
-                      {f.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              {selected.allowed_finishes.custom_color_enabled && (
-                <label className="color-field">
-                  Color personalizado
-                  <input
-                    type="color"
-                    value={
-                      item?.customColor ??
-                      selected.allowed_finishes.options.find(
-                        (f) => f.id === item?.finishId,
-                      )?.material.color ??
-                      "#56634d"
-                    }
-                    onChange={(e) =>
-                      edit(paint(configuration, slot, e.target.value, selected))
-                    }
-                  />
-                </label>
-              )}
+              <FinishPalette
+                variant={selected}
+                item={item!}
+                onFinish={(id) => finish(id)}
+                onColor={(color) => finish(undefined, color)}
+              />
               <details className="piece-information">
                 <summary>Ficha de la pieza</summary>
                 <VariantInformation
@@ -751,16 +870,31 @@ function Configurator({ buildId }: { buildId?: string }) {
               {slot !== "frame" && (
                 <button
                   className="text-button"
-                  onClick={() => edit(remove(configuration, slot))}
+                  onClick={() => {
+                    const targets = [
+                      slot,
+                      ...(linked && pairedSlot(slot)
+                        ? [pairedSlot(slot)!]
+                        : []),
+                    ];
+                    edit(
+                      targets.reduce(
+                        (next, target) => remove(next, target),
+                        configuration,
+                      ),
+                    );
+                  }}
                 >
-                  <Trash2 size={14} /> Quitar pieza
+                  <Trash2 size={14} />{" "}
+                  {linked && pairedSlot(slot)
+                    ? "Quitar de ambos lados"
+                    : "Quitar pieza"}
                 </button>
               )}
             </MotionRegion>
           )}
           <h2 className="panel-subtitle">
-            {selected ? "Cambiar por" : "Elegir"}{" "}
-            {categoryLabels[slotCategories[slot]].toLowerCase()}
+            {selected ? "Alternativas" : "Elegir pieza"}
           </h2>
           <label className="field">
             Buscar alternativa
@@ -779,14 +913,18 @@ function Configurator({ buildId }: { buildId?: string }) {
             </Notice>
           ) : !catalog.data.components.length ? (
             <p className="muted">
-              No hay variantes publicadas en esta categoría.
+              No hay opciones con estos filtros. Prueba otra medida o selecciona
+              Todas.
             </p>
           ) : (
             <div className="piece-options">
               {catalog.data.components.flatMap((c) =>
                 c.component_variants.map((v) => (
                   <button
-                    disabled={pending || item?.variantId === v.id}
+                    disabled={
+                      pending || (slot === "frame" && item?.variantId === v.id)
+                    }
+                    aria-pressed={item?.variantId === v.id}
                     key={v.id}
                     onPointerEnter={() =>
                       preloadPiece(selectVariant(c, v), true)
@@ -846,9 +984,7 @@ function Configurator({ buildId }: { buildId?: string }) {
             </button>
           )}
           <details className="mount-notes">
-            <summary>
-              Avisos del montaje ({mountWarnings.length})
-            </summary>
+            <summary>Avisos del montaje ({mountWarnings.length})</summary>
             {mountWarnings.map((w) => (
               <p key={w.code}>{w.message}</p>
             ))}
