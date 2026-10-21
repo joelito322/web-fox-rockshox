@@ -1,6 +1,13 @@
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { memo, Suspense, useEffect, useLayoutEffect, useMemo } from "react";
+import {
+  memo,
+  Suspense,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+} from "react";
 import * as THREE from "three";
 import { loadGlb, disposeVisual } from "./loadGlb";
 import { resolveAssembly } from "../model/assemblyV2";
@@ -15,6 +22,8 @@ import BikeV8 from "./generators/BikeV8";
 import { importedMount } from "../model/assemblyV5";
 import Selection from "./Selection";
 import { instantiateVisual } from "./imported-instance";
+import SuspensionMotion, { type Inspection } from "./SuspensionMotion";
+import { createMotionRig } from "./motion-rig";
 import type { Configuration, Slot, VariantMap } from "../model";
 import type { VisualAsset } from "../../catalog/model";
 import {
@@ -87,7 +96,9 @@ function Imported({
   rotation,
   localRotation,
   onSelect,
+  inspection,
 }: {
+  inspection?: Inspection;
   asset: VisualAsset;
   color: string;
   slot: Slot;
@@ -100,7 +111,34 @@ function Imported({
     const source = loaded.get(asset.id);
     if (!source) throw new Error("visual_not_prepared");
     return instantiateVisual(source, asset.manifest.paintable_nodes);
-  }, [asset]);
+  }, [asset, !!inspection]);
+  const rig = useMemo(
+    () =>
+      inspection && ["frame", "fork", "shock"].includes(slot)
+        ? createMotionRig(instance.object, slot, inspection.definition)
+        : null,
+    [instance, inspection?.definition, slot],
+  );
+  useEffect(() => () => rig?.dispose(), [rig]);
+  const outer = useRef<THREE.Group>(null);
+  useLayoutEffect(() => {
+    if (!outer.current || !rig) return;
+    outer.current.userData.applySuspension = (
+      pose: Parameters<typeof rig.apply>[0],
+    ) => {
+      rig.apply(pose);
+      if (slot === "shock") {
+        outer.current!.position.fromArray(pose.shockUpper);
+        outer.current!.rotation.z = Math.atan2(
+          pose.shockLower[0] - pose.shockUpper[0],
+          pose.shockUpper[1] - pose.shockLower[1],
+        );
+      }
+    };
+    return () => {
+      if (outer.current) delete outer.current.userData.applySuspension;
+    };
+  }, [rig, slot]);
   const invalidate = useThree((state) => state.invalidate);
   useLayoutEffect(() => {
     instance.paint(color);
@@ -109,6 +147,7 @@ function Imported({
   useEffect(() => () => instance.dispose(), [instance]);
   return (
     <group
+      ref={outer}
       position={origin}
       rotation={rotation}
       onClick={(e) => {
@@ -117,7 +156,7 @@ function Imported({
       }}
     >
       <group rotation={localRotation}>
-        <primitive object={instance.object} dispose={null} />
+        <primitive object={rig?.object ?? instance.object} dispose={null} />
       </group>
     </group>
   );
@@ -200,13 +239,22 @@ export function StudioLighting() {
     </>
   );
 }
-export function BikeAssembly({ configuration, variants, onSelect = () => {}, selectedSlot, assembly }: {
+export function BikeAssembly({
+  configuration,
+  variants,
+  onSelect = () => {},
+  selectedSlot,
+  assembly,
+  inspection,
+}: {
   configuration: Configuration;
   variants: VariantMap;
   onSelect?: (slot: Slot) => void;
   selectedSlot?: Slot;
   assembly?: ReturnType<typeof resolveAssembly>;
+  inspection?: Inspection;
 }) {
+  const motionRoot = useRef<THREE.Group>(null);
   const resolved = useMemo(
     () => assembly ?? resolveAssembly(configuration, variants),
     [assembly, configuration.items, variants],
@@ -229,55 +277,65 @@ export function BikeAssembly({ configuration, variants, onSelect = () => {}, sel
     ];
   const frameV2 = frame?.visual_assets?.generator_key === "atlas-bike-v2";
   useEffect(() => {
-    const ids = configuration.items.map(i => variants[i.variantId]?.visual_asset_id).filter((id): id is string => !!id);
-    ids.forEach(id => activeAssets.set(id, (activeAssets.get(id) ?? 0) + 1));
-    return () => ids.forEach(id => {
-      const count = (activeAssets.get(id) ?? 1) - 1;
-      if (count) activeAssets.set(id,count); else activeAssets.delete(id);
-    });
+    const ids = configuration.items
+      .map((i) => variants[i.variantId]?.visual_asset_id)
+      .filter((id): id is string => !!id);
+    ids.forEach((id) => activeAssets.set(id, (activeAssets.get(id) ?? 0) + 1));
+    return () =>
+      ids.forEach((id) => {
+        const count = (activeAssets.get(id) ?? 1) - 1;
+        if (count) activeAssets.set(id, count);
+        else activeAssets.delete(id);
+      });
   }, [configuration, variants]);
   return (
-      <group
-        rotation={[
-          0,
-          0,
-          "settleAngle" in resolved ? Number(resolved.settleAngle) : 0,
-        ]}
-      >
-        <Suspense fallback={null}>
-          {configuration.items.map((item) => {
-            const variant = variants[item.variantId];
-            if (!variant) return null;
-            const finish = variant.allowed_finishes.options.find(
-              (f) => f.id === item.finishId,
-            );
-            const color =
-              item.customColor ?? finish?.material.color ?? "#57634e";
-            const asset = variant.visual_assets;
-            const Generator =
-              frameV2 &&
-              ![
-                "atlas-bike-v3",
-                "atlas-bike-v4",
-                "atlas-bike-v5",
-                "atlas-bike-v6",
-                "atlas-bike-v7",
-                "atlas-bike-v8",
-              ].includes(asset?.generator_key ?? "")
-                ? BikeV2
-                : generators[
-                    knownProceduralGenerator(asset?.generator_key)
-                      ? asset.generator_key
-                      : "atlas-bike-v1"
-                  ];
-            const mount = asset?.kind === "glb"
+    <group
+      ref={motionRoot}
+      name="motion_bicycle"
+      rotation={[
+        0,
+        0,
+        "settleAngle" in resolved ? Number(resolved.settleAngle) : 0,
+      ]}
+    >
+      {inspection && (
+        <SuspensionMotion root={motionRoot} inspection={inspection} />
+      )}
+      <Suspense fallback={null}>
+        {configuration.items.map((item) => {
+          const variant = variants[item.variantId];
+          if (!variant) return null;
+          const finish = variant.allowed_finishes.options.find(
+            (f) => f.id === item.finishId,
+          );
+          const color = item.customColor ?? finish?.material.color ?? "#57634e";
+          const asset = variant.visual_assets;
+          const Generator =
+            frameV2 &&
+            ![
+              "atlas-bike-v3",
+              "atlas-bike-v4",
+              "atlas-bike-v5",
+              "atlas-bike-v6",
+              "atlas-bike-v7",
+              "atlas-bike-v8",
+            ].includes(asset?.generator_key ?? "")
+              ? BikeV2
+              : generators[
+                  knownProceduralGenerator(asset?.generator_key)
+                    ? asset.generator_key
+                    : "atlas-bike-v1"
+                ];
+          const mount =
+            asset?.kind === "glb"
               ? importedMount(item.slot, asset, resolved)
               : undefined;
-            return (
+          return (
+            <group key={item.slot} userData={{ motionSlot: item.slot }}>
               <Selection
                 key={item.slot}
                 active={selectedSlot === item.slot}
-                identity={`${item.variantId}:${color}:${frame?.id ?? ""}`}
+                identity={`${item.variantId}:${color}:${frame?.id ?? ""}:${inspection ? "motion" : "rest"}`}
               >
                 {asset?.kind === "glb" ? (
                   <Imported
@@ -289,6 +347,7 @@ export function BikeAssembly({ configuration, variants, onSelect = () => {}, sel
                     rotation={mount!.rotation}
                     localRotation={mount!.localRotation}
                     onSelect={onSelect}
+                    inspection={inspection}
                   />
                 ) : (
                   <Generator
@@ -302,11 +361,26 @@ export function BikeAssembly({ configuration, variants, onSelect = () => {}, sel
                   />
                 )}
               </Selection>
-            );
-          })}
-        </Suspense>
-      </group>
+            </group>
+          );
+        })}
+      </Suspense>
+    </group>
   );
+}
+
+function ContextLoss({ onUnavailable }: { onUnavailable: () => void }) {
+  const gl = useThree((state) => state.gl);
+  useEffect(() => {
+    const element = gl.domElement;
+    const lost = (event: Event) => {
+      event.preventDefault();
+      onUnavailable();
+    };
+    element?.addEventListener("webglcontextlost", lost);
+    return () => element?.removeEventListener("webglcontextlost", lost);
+  }, [gl, onUnavailable]);
+  return null;
 }
 
 function BikeScene({
@@ -316,7 +390,9 @@ function BikeScene({
   view,
   onUnavailable,
   selectedSlot,
+  inspection,
 }: {
+  inspection?: Inspection;
   configuration: Configuration;
   variants: VariantMap;
   onSelect: (slot: Slot) => void;
@@ -334,17 +410,19 @@ function BikeScene({
       frameloop="demand"
       dpr={[1, 1.5]}
       camera={{ position: [1.4, 0.8, 2.1], fov: 37 }}
-      onCreated={({ gl }) => {
-        gl.domElement.addEventListener("webglcontextlost", (event) => {
-          event.preventDefault();
-          onUnavailable();
-        });
-      }}
     >
       <color attach="background" args={["#e8e9e1"]} />
+      <ContextLoss onUnavailable={onUnavailable} />
       <StudioLighting />
       <StableShadows configuration={configuration} variants={variants} />
-      <BikeAssembly configuration={configuration} variants={variants} onSelect={onSelect} selectedSlot={selectedSlot} assembly={resolved} />
+      <BikeAssembly
+        configuration={configuration}
+        variants={variants}
+        onSelect={onSelect}
+        selectedSlot={selectedSlot}
+        assembly={resolved}
+        inspection={inspection}
+      />
       <mesh
         position={[0, resolved.ground, 0]}
         rotation={[-Math.PI / 2, 0, 0]}

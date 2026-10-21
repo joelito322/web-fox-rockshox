@@ -1,3 +1,4 @@
+import { SuspensionControls, useSuspensionInspection } from "./SuspensionControls";
 import {
   Component,
   lazy,
@@ -97,6 +98,7 @@ function Configurator({ buildId }: { buildId?: string }) {
   const [variants, setVariants] = useState<VariantMap>({});
   const [slot, setSlot] = useState<Slot>("frame");
   const [previous, setPrevious] = useState<Configuration>();
+  const suspension = useSuspensionInspection(configuration, variants);
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
   const [pending, setPending] = useState(false);
@@ -608,6 +610,7 @@ function Configurator({ buildId }: { buildId?: string }) {
                     selectedSlot={slot}
                     view={view}
                     onUnavailable={onUnavailable}
+                    inspection={suspension.inspection}
                   />
                 </Suspense>
               </SceneBoundary>
@@ -637,10 +640,16 @@ function Configurator({ buildId }: { buildId?: string }) {
                   : v.charAt(0).toUpperCase() + v.slice(1)}
               </button>
             ))}
-            <button onClick={() => setTextMode((v) => !v)}>
+            <button
+              aria-pressed={suspension.open}
+              onClick={suspension.toggle}
+              disabled={textMode || !configuration.items.some(i => i.slot === "frame")}
+            >Suspensión</button>
+            <button onClick={() => { suspension.reset(); setTextMode((v) => !v); }}>
               {textMode ? "Probar vista 3D" : "Lista sin 3D"}
             </button>
           </div>
+          {!textMode && <SuspensionControls controls={suspension} />}
         </section>
         <aside className="editor-panel">
           <header>
