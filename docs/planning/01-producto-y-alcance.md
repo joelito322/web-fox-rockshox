@@ -139,7 +139,7 @@ El usuario aprobó dos formas de comenzar: desde un cuadro y desde una bicicleta
 
 Fuera del alcance acordado: tienda, pagos, stock, precios en tiempo real, integración con ERP, comunidad, enlaces públicos a montajes, colaboración simultánea, realidad aumentada, editor CAD, simulación estructural y simulación física de suspensión. Se incorpora administración web de datos, referencias, cuentas y roles, por decisión posterior del usuario. Los permisos y operaciones concretos están en [administración](04b-administracion-y-operaciones.md); no incluye editar código, SQL o infraestructura desde la web.
 
-Las animaciones de suspensión, si se añaden después, ilustrarán movimiento; no se presentarán como predicciones de comportamiento mecánico.
+Ampliación autorizada el 21/10/2026: inspección de compresión de suspensión por recorrido según [05c](05c-movimiento-suspension.md). Ilustra movimiento mediante perfiles exteriores por modelo; no se presenta como predicción mecánica, cálculo por peso ni simulación física.
 
 La compatibilidad tendrá tres resultados: sin conflicto conocido en las comprobaciones disponibles, conflicto identificado y datos insuficientes. Por decisión del usuario, cualquier combinación entre piezas de sus categorías correspondientes puede aplicarse y guardarse como montaje visual, incluso con conflictos conocidos. Los avisos explican el problema; no bloquean la elección ni certifican instalación real. Las entradas malformadas o categorías incorrectas siguen siendo errores del contrato, no combinaciones válidas.
 

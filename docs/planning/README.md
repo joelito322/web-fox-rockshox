@@ -20,11 +20,13 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [05 · Configurador 3D](05-configurador-3d.md) | Modelos, geometría por código, ensamblaje y rendimiento |
 | [05a · Fidelidad por modelo](05a-fidelidad-modelos.md) | Mejora exterior de los 53 modelos, referencias y conservación de versiones |
 | [05b · Miniaturas](05b-miniaturas-montajes.md) | Portadas del estado guardado, captura y persistencia protegida |
+| [05c · Movimiento de suspensión](05c-movimiento-suspension.md) | Inspección temporal de compresión por recorrido y cinemática por modelo |
 | [06 · UI y UX](06-ui-y-ux.md) | Principios de contenido, dirección visual, marca, movimiento y accesibilidad |
 | [06a · Portada y acceso](06a-portada-y-acceso.md) | Composición de portada, entrada, registro y confirmación de correo |
 | [06b · Espacio de trabajo](06b-espacio-de-trabajo.md) | Pestañas, galerías, tarjetas, paneles, configurador y Mis bicicletas |
 | [06c · UI administrativa](06c-administracion-usuarios-roles-y-permisos.md) | Tablas de usuarios/roles, paneles derechos y matriz de permisos por rol |
 | [06d · Administración de negocio](06d-administracion-catalogo-y-prearmadas.md) | Tablas y paneles de catálogo/prearmadas aprobados durante implementación |
+| [06e · Armado guiado](06e-armado-guiado.md) | Índice de piezas, grupos, medidas, pares y paletas del configurador |
 | [07 · Entornos y despliegue](07-entornos-y-despliegue.md) | Variables, Git, Supabase y publicación del frontend |
 | [08 · Fases y validación](08-fases-y-validacion.md) | Qué construir primero y cómo comprobar cada entrega |
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |

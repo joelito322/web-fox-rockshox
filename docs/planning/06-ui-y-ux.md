@@ -208,3 +208,7 @@ Móvil:           | margen | controles y 2 tarjetas | margen |
 ```
 
 Rejillas de componentes/cuadros calculadas por ancho mínimo legible y ancho real; sin ampliar siempre las mismas tres tarjetas. Bicicletas/montajes adaptan sus columnas; las imágenes conservan proporción y un alto razonable en pantallas grandes. Mantener límites de lectura en formularios cortos y estados de texto, con estructura exterior flexible; no convertir campos de acceso en una línea del ancho del monitor. Validar 360/393, 1440, 1920 y 2560 px, conservación de contexto y ausencia de desplazamiento horizontal accidental. Este ajuste se implementa y valida en fases 1/3/6 de 08, con evidencia en 12.
+
+### Selección visual del configurador
+
+Ampliación solicitada en [06e](06e-armado-guiado.md): clic vacío limpia únicamente el resaltado 3D, conservando el panel. La pieza seleccionada usa un pulso lento de emisión; solo esta selección activa y la inspección de suspensión autorizada en 05c pueden mantener animación durante el trabajo. Parar el pulso al deseleccionar u ocultar pestaña; con movimiento reducido, resaltado fijo. No modificar pintura, geometría, miniaturas ni datos por el pulso.

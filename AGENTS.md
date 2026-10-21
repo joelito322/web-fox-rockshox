@@ -1,5 +1,18 @@
 # Repository Guidelines
 
+## Armado por grupos, medidas y pares · 21/10/2026
+- Dirección solicitada en `docs/planning/06e-armado-guiado.md`: índice izquierdo de las 23 posiciones actuales, seis grupos de selección a la derecha y visor central. En móvil, índice plegable bajo el visor. No es historial ilimitado.
+- Pestañas de aro Todas/29/27,5/Mixto y de talla Todas/M/L para el cuadro: filtran alternativas sin reemplazar lo montado. Pares activados inicialmente por categoría para aros/neumáticos/frenos/discos, con opción independiente; bujes separados.
+- Aplicar un par es atómico y deshacible; Mixto resuelve variantes equivalentes del mismo producto/generación y conserva medidas/características. Si falta contraparte, no cambiar ninguna posición y avisar. Conservar elección visual libre y avisos de compatibilidad.
+- Selección visual independiente del panel: clic vacío en Canvas quita el resaltado sin perder contexto; selección activa pulsa suavemente, con resaltado fijo si hay movimiento reducido. Pulso solo en pestaña visible y sin consultas, geometrías nuevas o React por cuadro; al limpiar selección se detiene. Esta es una excepción explícita solicitada a la ausencia de animaciones continuas.
+- Acabados y colores mediante muestras directas, con código para color libre donde esté habilitado. No añadir campos a guardados ni mutar GLB. Reutilizar QueryClient; no descargar todo el catálogo ni consultar al colorear. Evidencia en 12; sin commits salvo petición explícita.
+
+## Inspección de suspensión por recorrido · 21/10/2026
+- Ampliación autorizada: controles de compresión delantera/trasera, ciclo, pausa y restablecer, con lógica por modelo. Contrato en `docs/planning/05c-movimiento-suspension.md`; fuentes/perfiles versionados `models/motion-v1` y `features/configurator/model/suspension/`. No simulación de peso, sag, esfuerzos ni motor físico.
+- `atlas-motion-v1` articula instancias derivadas en el navegador sin mutar GLB/variantes publicados ni persistir la postura temporal. Guardado y miniaturas mantienen su referencia estática. No alterar v1–v9 para corregir la inspección.
+- Quince perfiles exteriores estimados; SUPREME/Ransom usan guías reducidas, no reconstrucción exacta de seis barras. Algunos intervalos son pequeños/conservadores; porcentaje visual no certifica todo el recorrido comercial. Tolerancia visual de registro no es especificación física. No afirmar ausencia de colisiones, continuidad completa, CAD o 30 fps/Android físico.
+- Render por demanda en reposo; refs durante reproducción, pausa al ocultar pestaña. Editar porcentajes prepara la reproducción y deja reposo; solo Reproducir aplica movimiento. Movimiento reducido deshabilita reproducción. Preservar buffers/materiales compartidos y restaurar estado al cerrar/cambiar piezas. Revisión interna `tests/fixtures/suspension-review.html` excluida del build. Sin commits salvo nueva solicitud explícita.
+
 ## Ampliación gravity e históricos · 21/10/2026
 - El usuario autoriza también generaciones anteriores identificadas; queda sustituida la restricción global de solo gama actual. No presentar archivos históricos como novedades ni mezclar medidas entre generaciones. Contrato/fuentes/evidencia en `docs/planning/11o-ampliacion-gravity.md`.
 - Once modelos adicionales: V10.8 MY27, TUES MK4, CAPRA MK3 MX, GT Fury/Force High Pivot, FRS V3, Furious V3 2021; BoXXer Ultimate/Select D2, Bomber 58 y DH38 m.2. Fuente aditiva `supabase/catalog/gravity-reviewed.json`. Total actual: 70 modelos, 146 elecciones, 638 variantes/636 recursos históricos, cuatro prearmadas; 22 migraciones aplicadas y doce tablas propias. Sin cambios de Auth/IAM/Edge Functions.

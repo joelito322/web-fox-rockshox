@@ -138,6 +138,8 @@ En móvil el detalle se abre como panel inferior ampliable con título, cierre y
 
 ## Configurador en escritorio
 
+Actualización de distribución y selección aprobada por solicitud directa: [06e · Armado por grupos](06e-armado-guiado.md) sustituye la navegación plana, añade índice izquierdo, medidas, aplicación por pares y paletas. Los contratos de guardado, escena y avisos siguientes se conservan.
+
 ```text
 +----------------------------------------------------------------------------------+
 | ATLAS MTB       Bicicletas    Componentes    Mis bicicletas              Cuenta|
@@ -372,3 +374,7 @@ En móvil se conserva la misma jerarquía, sin controles 3D ni animación contin
 Las galerías Bicicletas y Mis bicicletas mantienen dos columnas iguales en cualquier ancho, incluso con un único resultado: la tarjeta ocupa una columna y la otra queda libre. En móvil se compactan márgenes y tipografía, y se apilan las acciones dentro de cada tarjeta; no se cambia a una columna ni se permite desbordamiento horizontal. Las tarjetas de componentes conservan su rejilla adaptable.
 
 Validación del ajuste · 21/10/2026: Chromium, resultado único SUPREME, anchos de 320, 412, 1280 y 1920 px. Dos columnas en todos los casos, tarjeta limitada a una columna, contenido sin desbordamiento y documento sin desplazamiento horizontal. Build correcto; esta comprobación de distribución no sustituye la validación funcional de miniaturas de 05b.
+
+### Inspección temporal de suspensión · 21/10/2026
+
+Botón «Suspensión» en los controles del visor; abre compresión delantera/trasera, reproducción, pausa y restablecimiento en espacio reservado bajo la escena. Boceto, estados de movimiento reducido/móvil y límites en [05c](05c-movimiento-suspension.md). No añade campos al montaje ni movimiento a sus miniaturas.

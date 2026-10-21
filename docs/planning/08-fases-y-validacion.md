@@ -411,3 +411,11 @@ Resultado gravity: once modelos/26 variantes publicados, recursos GLB y fuentes 
 ### Segunda optimización integral de consultas y vistas · 21/10/2026
 
 Trabajo integrado en las fases de datos, administración, catálogo y montaje: revisión cruzada de tres agentes, proyecciones actuales/históricas, lotes compartidos, comparación, búsquedas administrativas, permisos y render/miniaturas. Resultados medidos y aceptación por recorrido en [12d](12d-rendimiento-consultas.md). Incluye pruebas reales Cloud y navegador; no sustituye la aceptación pendiente de hardware Android ni la escena fría con red limitada.
+
+### Movimiento de suspensión por recorrido · 21/10/2026
+
+Ampliación implementada: quince perfiles exteriores estimados, articulación de cuerpos rígidos/telescópicos y controles temporales de compresión, reproducción, pausa y reposo. Contrato y límites en [05c](05c-movimiento-suspension.md); evidencia de pruebas y revisión en [12](12-estado-implementacion.md). Algunas guías tienen intervalos pequeños por referencias incompletas: no equivalen al recorrido comercial. No cálculo de peso ni motor físico; la aceptación visual del usuario y las limitaciones generales de hardware siguen abiertas.
+
+### Armado por grupos, medidas y pares
+
+Integrar [06e](06e-armado-guiado.md) en las fases de UI, reglas y aceptación: índice actual, agrupación, filtros de medida sin mutar selección, pares atómicos (incluido Mixto), paletas accesibles y revisión escritorio/móvil; conservar guardado, deshacer y rendimiento.

@@ -32,7 +32,7 @@ Es posible crear aros, neumáticos, tubos, radios, discos y otras formas mediant
 
 En ambos métodos la visualización es en tiempo real. La diferencia está en si la forma se calcula con un generador o se carga desde un modelo preparado. La construcción por código no garantiza que la forma coincida automáticamente con un producto real; esa fidelidad se prepara y se revisa igual que la de un GLB.
 
-Supabase conserva el catálogo, las cuentas y las elecciones del montaje según el alcance acordado. Dibujar y manipular una escena con parámetros ya disponibles no necesita consultar esos servicios. Guardar una bicicleta significa conservar variantes, acabados y colores para reconstruirla, no almacenar una copia completa de su geometría. No se añade simulación física de esfuerzos o suspensión.
+Supabase conserva el catálogo, las cuentas y las elecciones del montaje según el alcance acordado. Dibujar y manipular una escena con parámetros ya disponibles no necesita consultar esos servicios. Guardar una bicicleta significa conservar variantes, acabados y colores para reconstruirla, no almacenar una copia completa de su geometría. No se añade simulación física de esfuerzos ni cálculo de hundimiento por peso. La ampliación autorizada de inspección de suspensión por recorrido se define en [05c](05c-movimiento-suspension.md).
 
 Las fotos usadas en fichas permanecen en `src/assets/images/`. No son archivos 3D ni se convierten automáticamente en geometría; pueden servir como referencia para preparar una representación.
 
@@ -117,7 +117,7 @@ Una horquilla con longitud diferente puede cambiar la orientación del cuadro y 
 
 La revisión de variantes reales y los límites de cobertura se registran en [revisión adversarial](09-revision-adversarial-de-datos.md). El cambio trasero y su mando asociado forman la unidad de selección confirmada en 03. Su manifiesto compuesto declara ambos nodos y anclajes: montaje del cambio en el cuadro y del mando en el manillar; sustituir o quitar el slot actualiza ambos de forma atómica. No hay selector separado de mando. Los integrados adicionales requieren ocupación/exclusión definida antes de incluirse.
 
-No hay simulación de suspensión. Se usa una postura estática de referencia, consistente entre variantes y sin prometer sag real. Cables se recalculan al cambiar anclajes y se corrigen visualmente cuando haga falta.
+La postura de referencia sigue siendo estática y consistente entre variantes, sin prometer sag real. La inspección temporal por recorrido autorizada posteriormente se rige por [05c](05c-movimiento-suspension.md). Cables se recalculan al cambiar anclajes y se corrigen visualmente cuando haga falta.
 
 ## Comprobaciones disponibles
 
