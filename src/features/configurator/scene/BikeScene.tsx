@@ -1,6 +1,6 @@
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { Suspense, useEffect, useMemo } from "react";
+import { memo, Suspense, useEffect, useLayoutEffect, useMemo } from "react";
 import * as THREE from "three";
 import { loadGlb, disposeVisual } from "./loadGlb";
 import { resolveAssembly } from "../model/assemblyV2";
@@ -14,6 +14,7 @@ import BikeV7 from "./generators/BikeV7";
 import BikeV8 from "./generators/BikeV8";
 import { importedMount } from "../model/assemblyV5";
 import Selection from "./Selection";
+import { instantiateVisual } from "./imported-instance";
 import type { Configuration, Slot, VariantMap } from "../model";
 import type { VisualAsset } from "../../catalog/model";
 import {
@@ -23,7 +24,7 @@ import {
 import { supabase } from "../../../lib/supabase";
 
 type Point = [number, number, number];
-const activeAssets = new Set<string>();
+const activeAssets = new Map<string, number>();
 const loaded = new Map<string, THREE.Group>();
 const preparing = new Map<string, Promise<void>>();
 const generators: Record<ProceduralGeneratorKey, typeof BikeV1> = {
@@ -95,45 +96,17 @@ function Imported({
   localRotation: Point;
   onSelect: (slot: Slot) => void;
 }) {
-  const object = useMemo(() => {
+  const instance = useMemo(() => {
     const source = loaded.get(asset.id);
     if (!source) throw new Error("visual_not_prepared");
-    const clone = source.clone(true);
-    clone.traverse((node) => {
-      if (node instanceof THREE.Mesh) node.castShadow = true;
-      if (
-        node instanceof THREE.Mesh &&
-        asset.manifest.paintable_nodes.includes(node.name)
-      ) {
-        node.material = Array.isArray(node.material)
-          ? node.material.map((m) => m.clone())
-          : node.material.clone();
-        const materials = Array.isArray(node.material)
-          ? node.material
-          : [node.material];
-        materials.forEach((m) => {
-          if ("color" in m) (m as THREE.MeshStandardMaterial).color.set(color);
-        });
-      }
-    });
-    return clone;
-  }, [asset, color]);
-  useEffect(
-    () => () => {
-      object.traverse((node) => {
-        if (
-          node instanceof THREE.Mesh &&
-          asset.manifest.paintable_nodes.includes(node.name)
-        ) {
-          const materials = Array.isArray(node.material)
-            ? node.material
-            : [node.material];
-          materials.forEach((m) => m.dispose());
-        }
-      });
-    },
-    [object, asset],
-  );
+    return instantiateVisual(source, asset.manifest.paintable_nodes);
+  }, [asset]);
+  const invalidate = useThree((state) => state.invalidate);
+  useLayoutEffect(() => {
+    instance.paint(color);
+    invalidate();
+  }, [instance, color, invalidate]);
+  useEffect(() => () => instance.dispose(), [instance]);
   return (
     <group
       position={origin}
@@ -144,7 +117,7 @@ function Imported({
       }}
     >
       <group rotation={localRotation}>
-        <primitive object={object} dispose={null} />
+        <primitive object={instance.object} dispose={null} />
       </group>
     </group>
   );
@@ -212,7 +185,7 @@ function StableShadows({
   }, [gl, invalidate, configuration, variants, compact]);
   return null;
 }
-function StudioLighting() {
+export function StudioLighting() {
   const compact = useThree((state) => state.size.width < 640);
   return (
     <>
@@ -227,21 +200,17 @@ function StudioLighting() {
     </>
   );
 }
-export default function BikeScene({
-  configuration,
-  variants,
-  onSelect,
-  view,
-  onUnavailable,
-  selectedSlot,
-}: {
+export function BikeAssembly({ configuration, variants, onSelect = () => {}, selectedSlot, assembly }: {
   configuration: Configuration;
   variants: VariantMap;
-  onSelect: (slot: Slot) => void;
-  view: string;
-  onUnavailable: () => void;
+  onSelect?: (slot: Slot) => void;
   selectedSlot?: Slot;
+  assembly?: ReturnType<typeof resolveAssembly>;
 }) {
+  const resolved = useMemo(
+    () => assembly ?? resolveAssembly(configuration, variants),
+    [assembly, configuration.items, variants],
+  );
   if (
     configuration.items.some((item) => {
       const asset = variants[item.variantId]?.visual_assets;
@@ -254,36 +223,20 @@ export default function BikeScene({
     })
   )
     throw new Error("missing_visual");
-  const resolved = resolveAssembly(configuration, variants);
   const frame =
     variants[
       configuration.items.find((i) => i.slot === "frame")?.variantId ?? ""
     ];
   const frameV2 = frame?.visual_assets?.generator_key === "atlas-bike-v2";
   useEffect(() => {
-    activeAssets.clear();
-    configuration.items.forEach((i) => {
-      const id = variants[i.variantId]?.visual_asset_id;
-      if (id) activeAssets.add(id);
+    const ids = configuration.items.map(i => variants[i.variantId]?.visual_asset_id).filter((id): id is string => !!id);
+    ids.forEach(id => activeAssets.set(id, (activeAssets.get(id) ?? 0) + 1));
+    return () => ids.forEach(id => {
+      const count = (activeAssets.get(id) ?? 1) - 1;
+      if (count) activeAssets.set(id,count); else activeAssets.delete(id);
     });
-    return () => activeAssets.clear();
   }, [configuration, variants]);
   return (
-    <Canvas
-      shadows="percentage"
-      frameloop="demand"
-      dpr={[1, 1.5]}
-      camera={{ position: [1.4, 0.8, 2.1], fov: 37 }}
-      onCreated={({ gl }) => {
-        gl.domElement.addEventListener("webglcontextlost", (event) => {
-          event.preventDefault();
-          onUnavailable();
-        });
-      }}
-    >
-      <color attach="background" args={["#e8e9e1"]} />
-      <StudioLighting />
-      <StableShadows configuration={configuration} variants={variants} />
       <group
         rotation={[
           0,
@@ -309,7 +262,7 @@ export default function BikeScene({
                 "atlas-bike-v5",
                 "atlas-bike-v6",
                 "atlas-bike-v7",
-        "atlas-bike-v8",
+                "atlas-bike-v8",
               ].includes(asset?.generator_key ?? "")
                 ? BikeV2
                 : generators[
@@ -317,6 +270,9 @@ export default function BikeScene({
                       ? asset.generator_key
                       : "atlas-bike-v1"
                   ];
+            const mount = asset?.kind === "glb"
+              ? importedMount(item.slot, asset, resolved)
+              : undefined;
             return (
               <Selection
                 key={item.slot}
@@ -329,13 +285,9 @@ export default function BikeScene({
                     asset={asset}
                     color={color}
                     slot={item.slot}
-                    origin={importedMount(item.slot, asset, resolved).position}
-                    rotation={
-                      importedMount(item.slot, asset, resolved).rotation
-                    }
-                    localRotation={
-                      importedMount(item.slot, asset, resolved).localRotation
-                    }
+                    origin={mount!.position}
+                    rotation={mount!.rotation}
+                    localRotation={mount!.localRotation}
                     onSelect={onSelect}
                   />
                 ) : (
@@ -354,6 +306,45 @@ export default function BikeScene({
           })}
         </Suspense>
       </group>
+  );
+}
+
+function BikeScene({
+  configuration,
+  variants,
+  onSelect,
+  view,
+  onUnavailable,
+  selectedSlot,
+}: {
+  configuration: Configuration;
+  variants: VariantMap;
+  onSelect: (slot: Slot) => void;
+  view: string;
+  onUnavailable: () => void;
+  selectedSlot?: Slot;
+}) {
+  const resolved = useMemo(
+    () => resolveAssembly(configuration, variants),
+    [configuration.items, variants],
+  );
+  return (
+    <Canvas
+      shadows="percentage"
+      frameloop="demand"
+      dpr={[1, 1.5]}
+      camera={{ position: [1.4, 0.8, 2.1], fov: 37 }}
+      onCreated={({ gl }) => {
+        gl.domElement.addEventListener("webglcontextlost", (event) => {
+          event.preventDefault();
+          onUnavailable();
+        });
+      }}
+    >
+      <color attach="background" args={["#e8e9e1"]} />
+      <StudioLighting />
+      <StableShadows configuration={configuration} variants={variants} />
+      <BikeAssembly configuration={configuration} variants={variants} onSelect={onSelect} selectedSlot={selectedSlot} assembly={resolved} />
       <mesh
         position={[0, resolved.ground, 0]}
         rotation={[-Math.PI / 2, 0, 0]}
@@ -367,3 +358,6 @@ export default function BikeScene({
     </Canvas>
   );
 }
+
+// Search, save status and panel state do not change the mounted scene.
+export default memo(BikeScene);
