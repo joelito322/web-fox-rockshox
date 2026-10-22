@@ -1,6 +1,6 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.118.0'
 
-const origins=(Deno.env.get('ALLOWED_ORIGINS')??'http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174,http://127.0.0.1:4180').split(',').map(s=>s.trim())
+const origins=(Deno.env.get('ALLOWED_ORIGINS')??'http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174,http://127.0.0.1:4180,https://atlasmtb.netlify.app').split(',').map(s=>s.trim())
 Deno.serve(async(request:Request)=>{
  const origin=request.headers.get('origin')??''
  const headers:Record<string,string>={'Content-Type':'application/json','Vary':'Origin','Access-Control-Allow-Headers':'authorization,apikey,content-type,x-client-info','Access-Control-Allow-Methods':'POST,OPTIONS'}
