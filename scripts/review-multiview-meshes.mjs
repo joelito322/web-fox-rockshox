@@ -5,7 +5,7 @@ const version =
   process.argv.find((a) => a.startsWith("--version="))?.split("=")[1] ?? "v6";
 if (!["v5", "v6"].includes(version)) throw Error("Unsupported review version");
 const all = Object.entries(
-  JSON.parse(readFileSync(`models/catalog-${version}/exports/report.json`)),
+  JSON.parse(readFileSync(`models/catalog-${version}/exports/manifest.json`)),
 );
 const rows = all.filter(
   ([, r], i) =>

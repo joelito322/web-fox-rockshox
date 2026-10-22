@@ -1,7 +1,7 @@
 // Internal, locally served frame-to-reference comparisons. No catalog mutation.
 import {chromium} from '@playwright/test';
 import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
-const rows=Object.entries(JSON.parse(readFileSync('models/catalog-v5/exports/report.json','utf8')));
+const rows=Object.entries(JSON.parse(readFileSync('models/catalog-v5/exports/manifest.json','utf8')));
 const frames=rows.filter(([,r],i)=>r.category==='frame'&&rows.findIndex(([,x])=>x.model===r.model)===i);
 const output='/tmp/atlas-v5-overlays';mkdirSync(output,{recursive:true});
 const browser=await chromium.launch({args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']});

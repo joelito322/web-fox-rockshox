@@ -14,3 +14,42 @@ supabase/.temp/
 __pycache__/
 *.py[cod]
 *.blend[0-9]
+
+# Research exclusions are scoped to models/: keep src/assets/images versioned.
+# Final published GLBs, manifests, sources and provenance remain versioned.
+/models/local/
+/models/**/references/*.png
+/models/**/references/*.jpg
+/models/**/references/*.jpeg
+/models/**/references/*.webp
+/models/**/references/*.gif
+/models/**/references/*.svg
+/models/**/references/*.pdf
+/models/**/references/*.mp4
+/models/**/references/*.webm
+/models/**/references/*.mov
+/models/**/references/*.avif
+/models/**/references/*.tif
+/models/**/references/*.tiff
+/models/**/references/images/
+/models/**/evidence/
+/models/**/*.blend
+/models/reference-set/exports/
+/models/**/adversarial-review.json
+/models/**/audit-after.json
+/models/**/audit-before.json
+/models/**/*-review.json
+/models/**/cloud-before.json
+/models/**/cloud-after.json
+/models/**/inspection.json
+/models/**/preservation.json
+/models/**/rollback.json
+/models/**/transition.json
+/models/**/validation.json
+/models/**/structure-validation.json
+
+# Temporary relocation used to verify a clone without local research assets.
+/models/.local-*/
+
+# Keep research provenance and source metadata versioned.
+!/models/**/references/*.json

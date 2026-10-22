@@ -1,0 +1,3558 @@
+[
+  {
+    "from": "models/catalog-v10/cloud-after.json",
+    "to": "models/local/validation/catalog-v10/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "b89d80280ca8a328d6421de4242cd6e7ca2e4873f6abd2424c52a94789e7a9ef"
+  },
+  {
+    "from": "models/catalog-v10/cloud-before.json",
+    "to": "models/local/validation/catalog-v10/cloud-before.json",
+    "kind": "validation",
+    "bytes": 388,
+    "sha256": "73725409f6e47fcec3b3b28212fd8c3360752cd7301a3251397ad30a275f6a2e"
+  },
+  {
+    "from": "models/catalog-v10/inspection.json",
+    "to": "models/local/validation/catalog-v10/inspection.json",
+    "kind": "validation",
+    "bytes": 24908,
+    "sha256": "cb7b821aa7a372ac043719cac8b9b401e9119d68c18113806babf552532e80f5"
+  },
+  {
+    "from": "models/catalog-v10/motion-review.json",
+    "to": "models/local/validation/catalog-v10/motion-review.json",
+    "kind": "validation",
+    "bytes": 311964,
+    "sha256": "81271beac19c4ae0f1a1eae99009d7dbb831e36f19d3d70784f62f0a35d1779c"
+  },
+  {
+    "from": "models/catalog-v10/references/images/capra-video-220.jpg",
+    "to": "models/local/references/catalog-v10/images/capra-video-220.jpg",
+    "kind": "references",
+    "bytes": 24363,
+    "sha256": "300ad1b43574af5ffcb93eee8d4d869d8b3577173e452675b956475bb5ccdee9"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-frs-v3-0.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-frs-v3-0.jpg",
+    "kind": "references",
+    "bytes": 303678,
+    "sha256": "b17a51a26b786e2dbfb152e48b516332bae9a4b0e1a9a18b568f16bcb2a4cf15"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-frs-v3-1.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-frs-v3-1.jpg",
+    "kind": "references",
+    "bytes": 578204,
+    "sha256": "4202cd4e6be861025772674d6d397d32798f7f4e6e6a705250b0b79f88d661d1"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-frs-v3-2.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-frs-v3-2.jpg",
+    "kind": "references",
+    "bytes": 108217,
+    "sha256": "b350d45061bb7df0838f44ec83f63486aa5648e867c80718e9ca1b2b77b3e246"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-frs-v3-3.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-frs-v3-3.jpg",
+    "kind": "references",
+    "bytes": 105007,
+    "sha256": "f0cf46c4a9f824406db06e5c3b21a1c41fa0136a4b18ad2d5e271512c37a97aa"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-meta-sx-v5-0.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-meta-sx-v5-0.jpg",
+    "kind": "references",
+    "bytes": 73922,
+    "sha256": "933a67d2614eaaf12825b9fb438434c1003a7d0ceccc213ef619bfd9edea6072"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-meta-sx-v5-1.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-meta-sx-v5-1.jpg",
+    "kind": "references",
+    "bytes": 720688,
+    "sha256": "ce031e6dc85a5c4c889a088b17009eed475fb4a667eb71937af32de0d47ca308"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-meta-sx-v5-2.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-meta-sx-v5-2.jpg",
+    "kind": "references",
+    "bytes": 343499,
+    "sha256": "beec8c27de8fc7d9591bf682f60dc44c3f90874d6e1e905adb43ff73a930c9b1"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-meta-sx-v5-3.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-meta-sx-v5-3.jpg",
+    "kind": "references",
+    "bytes": 58314,
+    "sha256": "e800d402a26a56604e4476623666dd8e3c45ec01dc64f044a3769c6b6f5cffc0"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-supreme-dh-v5-0.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-supreme-dh-v5-0.jpg",
+    "kind": "references",
+    "bytes": 168498,
+    "sha256": "cfad337cd6ff5fcf88552606f3db8e4373c77962e337bdf89db9f53b6c52a211"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-supreme-dh-v5-1.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-supreme-dh-v5-1.jpg",
+    "kind": "references",
+    "bytes": 107111,
+    "sha256": "124649eb0d1643921033c5b476989df3f6d72a1970d592405fbcb3fd54e56af9"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-supreme-dh-v5-2.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-supreme-dh-v5-2.jpg",
+    "kind": "references",
+    "bytes": 459637,
+    "sha256": "556124b8c201398bac3f381f64e823a9fcc4fecf379cb6b2c6838d0e12108f90"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-supreme-dh-v5-3.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-supreme-dh-v5-3.jpg",
+    "kind": "references",
+    "bytes": 142274,
+    "sha256": "8ed18d82c6f2e06ddfdf12a2431752d9395f2718ccfa418fa46570479bb9e7bd"
+  },
+  {
+    "from": "models/catalog-v10/references/images/commencal-supreme-dh-v5-4.jpg",
+    "to": "models/local/references/catalog-v10/images/commencal-supreme-dh-v5-4.jpg",
+    "kind": "references",
+    "bytes": 124441,
+    "sha256": "3f5c74d09a464453e5cea89030823e6570966fcb118f6b434c4b88fc60d64977"
+  },
+  {
+    "from": "models/catalog-v10/references/images/furious-video-560.jpg",
+    "to": "models/local/references/catalog-v10/images/furious-video-560.jpg",
+    "kind": "references",
+    "bytes": 58330,
+    "sha256": "690f1d87fd4c72ee94bbda9bc63fef26071b49ba77be87ace7b13958f284fd81"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-force-carbon-high-pivot-0.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-force-carbon-high-pivot-0.jpg",
+    "kind": "references",
+    "bytes": 105857,
+    "sha256": "1c7c2bc20edb69529c0ecab77788ad7c596c4fe163f3c847253aed387f2d358f"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-force-carbon-high-pivot-1.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-force-carbon-high-pivot-1.jpg",
+    "kind": "references",
+    "bytes": 105857,
+    "sha256": "1c7c2bc20edb69529c0ecab77788ad7c596c4fe163f3c847253aed387f2d358f"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-force-carbon-high-pivot-2.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-force-carbon-high-pivot-2.jpg",
+    "kind": "references",
+    "bytes": 20064,
+    "sha256": "aa1655fbbdbf506a915ac17cdced0f825fdaf7e41a41090da09bf22f1cbef410"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-force-carbon-high-pivot-3.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-force-carbon-high-pivot-3.jpg",
+    "kind": "references",
+    "bytes": 101299,
+    "sha256": "9ac2f23fb34c8117c8234d339937b2cb55a4e0d17f685a9deea9a8b76f1d4460"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-fury-carbon-high-pivot-0.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-fury-carbon-high-pivot-0.jpg",
+    "kind": "references",
+    "bytes": 163047,
+    "sha256": "db2037edc3b0e30fefc953c3a626ac20d134684de354d344ae58e20625333694"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-fury-carbon-high-pivot-1.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-fury-carbon-high-pivot-1.jpg",
+    "kind": "references",
+    "bytes": 163047,
+    "sha256": "db2037edc3b0e30fefc953c3a626ac20d134684de354d344ae58e20625333694"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-fury-carbon-high-pivot-2.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-fury-carbon-high-pivot-2.jpg",
+    "kind": "references",
+    "bytes": 23000,
+    "sha256": "6004bf944e667b1e657df9da1d6071336ec3b6fa0ffd24a3cf4d4f9aae160de8"
+  },
+  {
+    "from": "models/catalog-v10/references/images/gt-fury-carbon-high-pivot-3.jpg",
+    "to": "models/local/references/catalog-v10/images/gt-fury-carbon-high-pivot-3.jpg",
+    "kind": "references",
+    "bytes": 141696,
+    "sha256": "d9dff50e0dbafa353328937461cdba0ff3c0349bc83b97d23c27f8c4efef8ccd"
+  },
+  {
+    "from": "models/catalog-v10/references/images/santa-cruz-nomad-7-my27-0.png",
+    "to": "models/local/references/catalog-v10/images/santa-cruz-nomad-7-my27-0.png",
+    "kind": "references",
+    "bytes": 3651570,
+    "sha256": "35ed895712f84fbad814d85efb5e44232807d553ca6dc6af80ccba84148ce2c8"
+  },
+  {
+    "from": "models/catalog-v10/references/images/santa-cruz-nomad-7-my27-1.png",
+    "to": "models/local/references/catalog-v10/images/santa-cruz-nomad-7-my27-1.png",
+    "kind": "references",
+    "bytes": 3629357,
+    "sha256": "8b93a69be66584063927a4eb43a99fee3daa3a6af0b12b4ddd295ffe17d07624"
+  },
+  {
+    "from": "models/catalog-v10/references/images/specialized-s-works-enduro-udh-0.png",
+    "to": "models/local/references/catalog-v10/images/specialized-s-works-enduro-udh-0.png",
+    "kind": "references",
+    "bytes": 3600948,
+    "sha256": "5d57a205e37e89554c7d6dfe09591b2a3121ba974e4048db08e57c4465372df3"
+  },
+  {
+    "from": "models/catalog-v10/references/images/specialized-s-works-enduro-udh-1.png",
+    "to": "models/local/references/catalog-v10/images/specialized-s-works-enduro-udh-1.png",
+    "kind": "references",
+    "bytes": 2666841,
+    "sha256": "7e96ecb11c1a909f15b9d9569d9df0616b16055ab1894a19bd1d36fb11332128"
+  },
+  {
+    "from": "models/catalog-v10/references/images/specialized-s-works-enduro-udh-2.png",
+    "to": "models/local/references/catalog-v10/images/specialized-s-works-enduro-udh-2.png",
+    "kind": "references",
+    "bytes": 2646933,
+    "sha256": "00ed2b756b47836a043942916e5dbd14c5ab93c21ba6365099bd4ec122fa1cd2"
+  },
+  {
+    "from": "models/catalog-v10/references/images/tues-video-340.jpg",
+    "to": "models/local/references/catalog-v10/images/tues-video-340.jpg",
+    "kind": "references",
+    "bytes": 19189,
+    "sha256": "b35cd17cb78fbb38fb4b52b0e36b3dfbd051a52c4e86a4dfd858ebd34dd1096e"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-0.jpg",
+    "to": "models/local/references/catalog-v10/images/v10-detail-0.jpg",
+    "kind": "references",
+    "bytes": 156459,
+    "sha256": "e44fd865254b4787f3f9ef9919ba3a8e5774df588566d4073760f1a410040608"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-1.jpg",
+    "to": "models/local/references/catalog-v10/images/v10-detail-1.jpg",
+    "kind": "references",
+    "bytes": 270789,
+    "sha256": "d57ce0004ac9f30dfe12cec08c5b0a3c2980590d3bcb269e22931a208386a96b"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-2.png",
+    "to": "models/local/references/catalog-v10/images/v10-detail-2.png",
+    "kind": "references",
+    "bytes": 1722988,
+    "sha256": "b2519657f544785f45a77a8e63e3a1590d45128a0c892fd4c53eb771a2fa3022"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-3.png",
+    "to": "models/local/references/catalog-v10/images/v10-detail-3.png",
+    "kind": "references",
+    "bytes": 1960338,
+    "sha256": "23809ea6b90d168919bfdfd5cbeffc8bf3c3f3090fac6c0e7305b0ff02530826"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-4.png",
+    "to": "models/local/references/catalog-v10/images/v10-detail-4.png",
+    "kind": "references",
+    "bytes": 2069725,
+    "sha256": "9d8bbe9c917b927cd75d27a8ea76ca8e5b5541913d48ebad645de5055830fa6c"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-5.png",
+    "to": "models/local/references/catalog-v10/images/v10-detail-5.png",
+    "kind": "references",
+    "bytes": 1906816,
+    "sha256": "d2046a2160c986dd6659188d356bca8bb70d4cf386f144de3b6a231b310d5967"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-6.png",
+    "to": "models/local/references/catalog-v10/images/v10-detail-6.png",
+    "kind": "references",
+    "bytes": 788543,
+    "sha256": "32e64fd2ef0f89a1a9f0c5a44831501aba1f57ada311f36bf86a5d77db96e0ae"
+  },
+  {
+    "from": "models/catalog-v10/references/images/v10-detail-7.png",
+    "to": "models/local/references/catalog-v10/images/v10-detail-7.png",
+    "kind": "references",
+    "bytes": 1303334,
+    "sha256": "c91facdc5176f8f770dd2f14c619d68d574c9e7ad139d1ab8baee411d409be97"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-capra-mk3-carbon-mx-0.png",
+    "to": "models/local/references/catalog-v10/images/yt-capra-mk3-carbon-mx-0.png",
+    "kind": "references",
+    "bytes": 63314,
+    "sha256": "d042e7421a016c980413f535e2a5b99ad4ab616197ad54f3cd556354fe7c2a23"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-capra-mk3-carbon-mx-1.png",
+    "to": "models/local/references/catalog-v10/images/yt-capra-mk3-carbon-mx-1.png",
+    "kind": "references",
+    "bytes": 49227,
+    "sha256": "8da42002d4e7973cdc38c76c791294f1a71e136ad11f42459e541ef0c304439e"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-capra-mk3-carbon-mx-2.png",
+    "to": "models/local/references/catalog-v10/images/yt-capra-mk3-carbon-mx-2.png",
+    "kind": "references",
+    "bytes": 50693,
+    "sha256": "0aeff23788c1ff7aa6bc49b54be7278031cad7b3598775150acbf83a45690c32"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-capra-mk3-carbon-mx-3.png",
+    "to": "models/local/references/catalog-v10/images/yt-capra-mk3-carbon-mx-3.png",
+    "kind": "references",
+    "bytes": 426781,
+    "sha256": "d6a5f82930aacb18b9e3f1b5d0defd6e6a89fdb88f1ee47731afd52a42f28265"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-capra-mk3-carbon-mx-4.png",
+    "to": "models/local/references/catalog-v10/images/yt-capra-mk3-carbon-mx-4.png",
+    "kind": "references",
+    "bytes": 379607,
+    "sha256": "1099a5b7373ea6a38d1c2e55b0ca72ef5a9ed47ac926df0f8e23abdbd1148d6d"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-capra-mk3-carbon-mx-5.png",
+    "to": "models/local/references/catalog-v10/images/yt-capra-mk3-carbon-mx-5.png",
+    "kind": "references",
+    "bytes": 44889,
+    "sha256": "23068146cd1b0ea012626aae5ea0d92c936dde37978fb436c538d08e426170f9"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-capra-mk3-carbon-mx-6.png",
+    "to": "models/local/references/catalog-v10/images/yt-capra-mk3-carbon-mx-6.png",
+    "kind": "references",
+    "bytes": 39854,
+    "sha256": "5d72854a152f6c3b3e4454346811bcf715e12bc6d3a502daedd89c19b9786121"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-tues-mk4-carbon-0.png",
+    "to": "models/local/references/catalog-v10/images/yt-tues-mk4-carbon-0.png",
+    "kind": "references",
+    "bytes": 22280,
+    "sha256": "aeb145d7f3c3df32ce8a5cbcc432ec37d373222db8dd4945c2590ac9c5551c33"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-tues-mk4-carbon-1.png",
+    "to": "models/local/references/catalog-v10/images/yt-tues-mk4-carbon-1.png",
+    "kind": "references",
+    "bytes": 17111,
+    "sha256": "b22ffc4fa619ddb58c7a0c78418f835ae45998b82e773f6a0a7163cf33c740b5"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-tues-mk4-carbon-2.png",
+    "to": "models/local/references/catalog-v10/images/yt-tues-mk4-carbon-2.png",
+    "kind": "references",
+    "bytes": 23611,
+    "sha256": "b871ab36196760e888d5b2fb29bdac68538ae2e420b6c3b6fa49942e6adfa3cb"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-tues-mk4-carbon-3.png",
+    "to": "models/local/references/catalog-v10/images/yt-tues-mk4-carbon-3.png",
+    "kind": "references",
+    "bytes": 378322,
+    "sha256": "87f42530f6d3b9d1fc7b6b7bab71d5052fb6711ce5c6332bc97bbea01aa27533"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-tues-mk4-carbon-4.png",
+    "to": "models/local/references/catalog-v10/images/yt-tues-mk4-carbon-4.png",
+    "kind": "references",
+    "bytes": 346163,
+    "sha256": "0839025d2f43aff32fa24c34ea85892c6890bf55012b99dba0ad0480697df853"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-tues-mk4-carbon-5.png",
+    "to": "models/local/references/catalog-v10/images/yt-tues-mk4-carbon-5.png",
+    "kind": "references",
+    "bytes": 50607,
+    "sha256": "29492596b4c2a4bc06004e4d50334cec74998df9945bf9dc89ce2b54c6a1f7a8"
+  },
+  {
+    "from": "models/catalog-v10/references/images/yt-tues-mk4-carbon-6.png",
+    "to": "models/local/references/catalog-v10/images/yt-tues-mk4-carbon-6.png",
+    "kind": "references",
+    "bytes": 40573,
+    "sha256": "0435ad97981aafaee9ea76a506eb56c89b38a2128fd6bc39c49a6e32788d0fb0"
+  },
+  {
+    "from": "models/catalog-v10/render-review.json",
+    "to": "models/local/validation/catalog-v10/render-review.json",
+    "kind": "validation",
+    "bytes": 77708,
+    "sha256": "0c89f7d037fe456a06c22f36e3457b99557ae9cb88dc3d611c35a71db9258926"
+  },
+  {
+    "from": "models/catalog-v10/transition.json",
+    "to": "models/local/validation/catalog-v10/transition.json",
+    "kind": "validation",
+    "bytes": 137,
+    "sha256": "3164860e215a45d81b3f2562151a3838091f18de3e6d37a46b6d29adfd314e60"
+  },
+  {
+    "from": "models/catalog-v10/validation.json",
+    "to": "models/local/validation/catalog-v10/validation.json",
+    "kind": "validation",
+    "bytes": 972,
+    "sha256": "047ffc2f192b1df86ac725c55f26c02d03c8dd860be9caae5c9b6f391dd528eb"
+  },
+  {
+    "from": "models/catalog-v11/bore-review.json",
+    "to": "models/local/validation/catalog-v11/bore-review.json",
+    "kind": "validation",
+    "bytes": 38504,
+    "sha256": "c7a4e1140cb4ba5e039fd9731e6aeb5fe8262f172166e1d7cccc774cb1235c02"
+  },
+  {
+    "from": "models/catalog-v11/cloud-after.json",
+    "to": "models/local/validation/catalog-v11/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "9a3ac8d7de8e6936ba244d3d108e2b0c1e513017b2acb8cc6e484a70d0e7a178"
+  },
+  {
+    "from": "models/catalog-v11/cloud-before.json",
+    "to": "models/local/validation/catalog-v11/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "686031017c88028df5b64060b5c12cd7a08e44fbfde094cbf73cc4a605618764"
+  },
+  {
+    "from": "models/catalog-v11/detail-review.json",
+    "to": "models/local/validation/catalog-v11/detail-review.json",
+    "kind": "validation",
+    "bytes": 6893,
+    "sha256": "6f11f20336562c6862e7cf52c7953ce1e0005a74c1757b4d97ddace86a8fbc57"
+  },
+  {
+    "from": "models/catalog-v11/inspection.json",
+    "to": "models/local/validation/catalog-v11/inspection.json",
+    "kind": "validation",
+    "bytes": 24756,
+    "sha256": "01a79106cabd0c2fbfc2bf09b9a7f3e1b5248e4def527392a91515686344a152"
+  },
+  {
+    "from": "models/catalog-v11/motion-review.json",
+    "to": "models/local/validation/catalog-v11/motion-review.json",
+    "kind": "validation",
+    "bytes": 311964,
+    "sha256": "71d898917e76cde0bedbeb1a52db0a3c7635b4fe5de681fd5e4f59db1971c357"
+  },
+  {
+    "from": "models/catalog-v11/render-review.json",
+    "to": "models/local/validation/catalog-v11/render-review.json",
+    "kind": "validation",
+    "bytes": 77729,
+    "sha256": "c8a15ae7a103e881b6904e81feae8dc80f5977cfc2ed42bfb795c07fecc38037"
+  },
+  {
+    "from": "models/catalog-v11/transition.json",
+    "to": "models/local/validation/catalog-v11/transition.json",
+    "kind": "validation",
+    "bytes": 137,
+    "sha256": "b892383a14d1c29e23c342d09f231dd4ba6f6a5e79c56a4aa70af5351be8c50d"
+  },
+  {
+    "from": "models/catalog-v11/validation.json",
+    "to": "models/local/validation/catalog-v11/validation.json",
+    "kind": "validation",
+    "bytes": 1427,
+    "sha256": "b0bf46b62cd1308607b9b9b4d99b60ae91c95b64374e0ef5c0d813b243b4d088"
+  },
+  {
+    "from": "models/catalog-v12/bore-review.json",
+    "to": "models/local/validation/catalog-v12/bore-review.json",
+    "kind": "validation",
+    "bytes": 46071,
+    "sha256": "93c92c9d0223ef47363b2768f60823ffca61593dcf807c2479cca002d604ad30"
+  },
+  {
+    "from": "models/catalog-v12/cloud-after.json",
+    "to": "models/local/validation/catalog-v12/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "f7cba4f37dc124c77446261739c58ed923ec7a7c639b2ac4dc17f343c27bcb28"
+  },
+  {
+    "from": "models/catalog-v12/cloud-before.json",
+    "to": "models/local/validation/catalog-v12/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "c0633c8b4b07950596ce6373963c9bb2d747802ee7ce4727282979b1231d6701"
+  },
+  {
+    "from": "models/catalog-v12/detail-review.json",
+    "to": "models/local/validation/catalog-v12/detail-review.json",
+    "kind": "validation",
+    "bytes": 200,
+    "sha256": "00bfbb934a4d114142b44f52731f0be853fddea61ffe7e99f414aeb16a4e91cc"
+  },
+  {
+    "from": "models/catalog-v12/inspection.json",
+    "to": "models/local/validation/catalog-v12/inspection.json",
+    "kind": "validation",
+    "bytes": 24760,
+    "sha256": "e2a6a64750ee1617aa72a4f5d53999b48cbe9f1d67f082e6919ef7efbe1bd4fd"
+  },
+  {
+    "from": "models/catalog-v12/motion-review.json",
+    "to": "models/local/validation/catalog-v12/motion-review.json",
+    "kind": "validation",
+    "bytes": 307857,
+    "sha256": "abd36365bef9638538a9d844155eed217fdf03909bfd7473356b95641c3bd1f6"
+  },
+  {
+    "from": "models/catalog-v12/rollback.json",
+    "to": "models/local/validation/catalog-v12/rollback.json",
+    "kind": "validation",
+    "bytes": 315,
+    "sha256": "7962e2a1349bbf64a43e9e22ccc0dc51e42b14f8cebc22c09ffade345ffbf7b4"
+  },
+  {
+    "from": "models/catalog-v12/transition.json",
+    "to": "models/local/validation/catalog-v12/transition.json",
+    "kind": "validation",
+    "bytes": 137,
+    "sha256": "f9377971eb7168e036c858c2a8ecf9bf488795bc3326284359cdbab4b5b99a9c"
+  },
+  {
+    "from": "models/catalog-v12/validation.json",
+    "to": "models/local/validation/catalog-v12/validation.json",
+    "kind": "validation",
+    "bytes": 659,
+    "sha256": "f9359e7a8a49070c2bd437e4888356fad1eba42ba7afca45241b95854b5ae982"
+  },
+  {
+    "from": "models/catalog-v12/views-review.json",
+    "to": "models/local/validation/catalog-v12/views-review.json",
+    "kind": "validation",
+    "bytes": 62589,
+    "sha256": "8c9e368a682349a1a65ce9e56d00f588f420636040afe2106b7066d004a90be4"
+  },
+  {
+    "from": "models/catalog-v13/bore-review.json",
+    "to": "models/local/validation/catalog-v13/bore-review.json",
+    "kind": "validation",
+    "bytes": 30749,
+    "sha256": "493d9547ba398e8d9e0af672cf4c5c258fbe7b24a7d8e828f1835156d8e03300"
+  },
+  {
+    "from": "models/catalog-v13/cloud-after.json",
+    "to": "models/local/validation/catalog-v13/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "1c5ebf2059a99d64439d61be83fa6a3e7f9de855ae2cc095c8b530d87d4db91d"
+  },
+  {
+    "from": "models/catalog-v13/cloud-before.json",
+    "to": "models/local/validation/catalog-v13/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "d4c8f588cd10bac7c44c048923130b4439e60e80e3702e93d9e0c3859da66b7a"
+  },
+  {
+    "from": "models/catalog-v13/detail-review.json",
+    "to": "models/local/validation/catalog-v13/detail-review.json",
+    "kind": "validation",
+    "bytes": 200,
+    "sha256": "2d541a1db5b16ddefe959ed27c973bdf77b34a7098913ac167543cc74386d987"
+  },
+  {
+    "from": "models/catalog-v13/general-review.json",
+    "to": "models/local/validation/catalog-v13/general-review.json",
+    "kind": "validation",
+    "bytes": 41761,
+    "sha256": "42f0149e0b8f1e09fe4a76c2171a453b56209ed894d39402d0d9151e85f46b6f"
+  },
+  {
+    "from": "models/catalog-v13/inspection.json",
+    "to": "models/local/validation/catalog-v13/inspection.json",
+    "kind": "validation",
+    "bytes": 16531,
+    "sha256": "b6f56989ca55b9eff3d0023d3c4b0d7eae5efe652cb820ac1aa6bd760c9dc7f7"
+  },
+  {
+    "from": "models/catalog-v13/motion-review.json",
+    "to": "models/local/validation/catalog-v13/motion-review.json",
+    "kind": "validation",
+    "bytes": 280616,
+    "sha256": "d5e991f806bf6832a3dc23070994ffe2a94c9885820b6eed16724c399529c7a6"
+  },
+  {
+    "from": "models/catalog-v13/preservation.json",
+    "to": "models/local/validation/catalog-v13/preservation.json",
+    "kind": "validation",
+    "bytes": 18407,
+    "sha256": "ccc5ef36ca840afa681ad577d05da360eb48ec3ec444951444a16c720ceb3562"
+  },
+  {
+    "from": "models/catalog-v13/transition.json",
+    "to": "models/local/validation/catalog-v13/transition.json",
+    "kind": "validation",
+    "bytes": 137,
+    "sha256": "798f8fb4e1bf27a08b499dbe793b97df9a993e8c05dc3c5dfcf08379a0fb59b0"
+  },
+  {
+    "from": "models/catalog-v13/validation.json",
+    "to": "models/local/validation/catalog-v13/validation.json",
+    "kind": "validation",
+    "bytes": 1302,
+    "sha256": "813130469f9d4c8fd4179f6313991f785899087471d6349fdf2155e871dccfea"
+  },
+  {
+    "from": "models/catalog-v14/bore-review.json",
+    "to": "models/local/validation/catalog-v14/bore-review.json",
+    "kind": "validation",
+    "bytes": 3109,
+    "sha256": "b84b1dc0b4ab5b7f70dcfd49463ffc5a14c9779c7f9ea49f16ddee3e7874ce44"
+  },
+  {
+    "from": "models/catalog-v14/cloud-after.json",
+    "to": "models/local/validation/catalog-v14/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "badeb6c682190b27c3aff0848e1fe31eef2b8b888a06500ae1c25a257001e477"
+  },
+  {
+    "from": "models/catalog-v14/cloud-before.json",
+    "to": "models/local/validation/catalog-v14/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "af04dbff5d5bbc81c5a60d6ad7cb5b64b85145be4d1d2a362c16f113a7f716ac"
+  },
+  {
+    "from": "models/catalog-v14/detail-review.json",
+    "to": "models/local/validation/catalog-v14/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "5a644fc79a9a6ef3d02576a311dc677de372d5d39da1ee2e9bd4adc6d473fa2a"
+  },
+  {
+    "from": "models/catalog-v14/general-review.json",
+    "to": "models/local/validation/catalog-v14/general-review.json",
+    "kind": "validation",
+    "bytes": 4199,
+    "sha256": "aad2803582a065bf8d88b7fd834da43a9fb82b9ed4435f096d8dc49dda05eb0f"
+  },
+  {
+    "from": "models/catalog-v14/inspection.json",
+    "to": "models/local/validation/catalog-v14/inspection.json",
+    "kind": "validation",
+    "bytes": 1713,
+    "sha256": "09ed2810e21c2e7753f5ea00d57d9fd0d995be90828cda4cf608455f94a3bda8"
+  },
+  {
+    "from": "models/catalog-v14/motion-review.json",
+    "to": "models/local/validation/catalog-v14/motion-review.json",
+    "kind": "validation",
+    "bytes": 19005,
+    "sha256": "1ef0a30644ea2e508cf01f81deb12a5ede0c3cfb8cac000ba6a44e52d9a87139"
+  },
+  {
+    "from": "models/catalog-v14/preservation.json",
+    "to": "models/local/validation/catalog-v14/preservation.json",
+    "kind": "validation",
+    "bytes": 5017,
+    "sha256": "60c5b79c5420e22fc74bcccff1af47034d34ae397200f22f24581a3e8ce2a88b"
+  },
+  {
+    "from": "models/catalog-v14/transition.json",
+    "to": "models/local/validation/catalog-v14/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "393a40d93fa8efc388239a11bda5ce3727fb2ca3bb0c1eafe77be0e47e5b71b9"
+  },
+  {
+    "from": "models/catalog-v14/validation.json",
+    "to": "models/local/validation/catalog-v14/validation.json",
+    "kind": "validation",
+    "bytes": 1067,
+    "sha256": "42b3b3c34ffc734bdc971ed19aeb807e9ba6ee621035f716dc02548b3d34c154"
+  },
+  {
+    "from": "models/catalog-v15/bore-review.json",
+    "to": "models/local/validation/catalog-v15/bore-review.json",
+    "kind": "validation",
+    "bytes": 3148,
+    "sha256": "63c402a6f594eae547a89eb4f99035fceefce2c1de92d54036c8ef0f8435a58e"
+  },
+  {
+    "from": "models/catalog-v15/cloud-after.json",
+    "to": "models/local/validation/catalog-v15/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "b19d8478261f95e82eff75fd3ebc07bca0637db3678460420f0c18e5ff3a8020"
+  },
+  {
+    "from": "models/catalog-v15/cloud-before.json",
+    "to": "models/local/validation/catalog-v15/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "4b3ac3e6ba5c12a4d25d74bbacbff2afb1c34fce2e52220ccb5997f586d6ff30"
+  },
+  {
+    "from": "models/catalog-v15/detail-review.json",
+    "to": "models/local/validation/catalog-v15/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "db0c8c7198497c60322722e68a125f5eff11b5aa2f5382f5e2f0d1dc5367689f"
+  },
+  {
+    "from": "models/catalog-v15/general-review.json",
+    "to": "models/local/validation/catalog-v15/general-review.json",
+    "kind": "validation",
+    "bytes": 4206,
+    "sha256": "6fa1c89afc62edb19034dbbb58e3d72f23722fd210ab7cf1f198f3f48512f52d"
+  },
+  {
+    "from": "models/catalog-v15/inspection.json",
+    "to": "models/local/validation/catalog-v15/inspection.json",
+    "kind": "validation",
+    "bytes": 1714,
+    "sha256": "fb497ceb538f6b0d2a6c1336e639b4d7aa07119321aab8c6e26bf1d53e933b83"
+  },
+  {
+    "from": "models/catalog-v15/motion-review.json",
+    "to": "models/local/validation/catalog-v15/motion-review.json",
+    "kind": "validation",
+    "bytes": 19005,
+    "sha256": "1ef0a30644ea2e508cf01f81deb12a5ede0c3cfb8cac000ba6a44e52d9a87139"
+  },
+  {
+    "from": "models/catalog-v15/overlay-review.json",
+    "to": "models/local/validation/catalog-v15/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1799,
+    "sha256": "cc5760dbe949dc1b12976b3e216533579ec8cce5b4aa8946a57ffd2fd1ebedd4"
+  },
+  {
+    "from": "models/catalog-v15/preservation.json",
+    "to": "models/local/validation/catalog-v15/preservation.json",
+    "kind": "validation",
+    "bytes": 3917,
+    "sha256": "36738c379dd202f28d6255bf49552e423a32d664f509ecb546d8cb13b1d126f6"
+  },
+  {
+    "from": "models/catalog-v15/transition.json",
+    "to": "models/local/validation/catalog-v15/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "c4b80f35809c7694a1a3c70735b0cbbedf7f2e17a8c966bfc1894a47a47b083b"
+  },
+  {
+    "from": "models/catalog-v15/validation.json",
+    "to": "models/local/validation/catalog-v15/validation.json",
+    "kind": "validation",
+    "bytes": 1229,
+    "sha256": "443c0a4f99c88aa82c72a3dd86c956c5e20be6d2efd18f09a8cee004a2c018e5"
+  },
+  {
+    "from": "models/catalog-v16/bore-review.json",
+    "to": "models/local/validation/catalog-v16/bore-review.json",
+    "kind": "validation",
+    "bytes": 3155,
+    "sha256": "60e18bc159ca64fa9dcab2645c9652c77e700c5eb65589c43220061b3d89bf42"
+  },
+  {
+    "from": "models/catalog-v16/cloud-after.json",
+    "to": "models/local/validation/catalog-v16/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "13642ec1cf7f065cc15cfeca04fdc5d52d8bb4bc0a1d8816e28f955029a3dce2"
+  },
+  {
+    "from": "models/catalog-v16/cloud-before.json",
+    "to": "models/local/validation/catalog-v16/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "9bca22c1da46ad7fcbdce3ecb978df21e41dc154e658902a8057e875412dc54c"
+  },
+  {
+    "from": "models/catalog-v16/detail-review.json",
+    "to": "models/local/validation/catalog-v16/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "ccd929744645232fc5c3059dfc48f6b8441fae28ade5b787277d8f1ebeb3fed6"
+  },
+  {
+    "from": "models/catalog-v16/general-review.json",
+    "to": "models/local/validation/catalog-v16/general-review.json",
+    "kind": "validation",
+    "bytes": 4269,
+    "sha256": "14eea7c495658d176d5b2b4b9c5de30ea27acd576117f31dd0dc74c8894a3b99"
+  },
+  {
+    "from": "models/catalog-v16/inspection.json",
+    "to": "models/local/validation/catalog-v16/inspection.json",
+    "kind": "validation",
+    "bytes": 1717,
+    "sha256": "01f0545eb2a3dea11cb8f6037d0baec4aeb33e030bbb8000fb8be71151450a3a"
+  },
+  {
+    "from": "models/catalog-v16/motion-review.json",
+    "to": "models/local/validation/catalog-v16/motion-review.json",
+    "kind": "validation",
+    "bytes": 19011,
+    "sha256": "b662fb5091c8774aef3d6a08075c7a55064d8d4111e3c866327f8e78d10dd98c"
+  },
+  {
+    "from": "models/catalog-v16/overlay-review.json",
+    "to": "models/local/validation/catalog-v16/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1689,
+    "sha256": "34f095237231b637667a1267310ad22a71e29553fbbd88132fb781f728d01c15"
+  },
+  {
+    "from": "models/catalog-v16/preservation.json",
+    "to": "models/local/validation/catalog-v16/preservation.json",
+    "kind": "validation",
+    "bytes": 3939,
+    "sha256": "0bccdf95ace441a8b26791e63395f89a1556eff41f5ecddb23a3f2e730319ec3"
+  },
+  {
+    "from": "models/catalog-v16/references/official-catalog-page4-detail.png",
+    "to": "models/local/references/catalog-v16/official-catalog-page4-detail.png",
+    "kind": "references",
+    "bytes": 6882716,
+    "sha256": "a36cf4cb1bfc2a3334b64939c3c5013beea9eae3e4db5870c031495208a5c3f5"
+  },
+  {
+    "from": "models/catalog-v16/references/official-catalog-page4.png",
+    "to": "models/local/references/catalog-v16/official-catalog-page4.png",
+    "kind": "references",
+    "bytes": 2045616,
+    "sha256": "0df914d41152cdd3f5e46b1594bd7be9f24991e0b53166970880fbf881cbdd1c"
+  },
+  {
+    "from": "models/catalog-v16/references/official-catalog.pdf",
+    "to": "models/local/references/catalog-v16/official-catalog.pdf",
+    "kind": "references",
+    "bytes": 6968808,
+    "sha256": "137811dab7f76cb0c49710236d1fadb4082cb6764844c6be9b95da8de74de7f1"
+  },
+  {
+    "from": "models/catalog-v16/references/official-color.jpg",
+    "to": "models/local/references/catalog-v16/official-color.jpg",
+    "kind": "references",
+    "bytes": 228987,
+    "sha256": "d6103e75f9a570fc11da0b7bae8d8dfba1fb09dff518c51161fba24bbc7a9b2a"
+  },
+  {
+    "from": "models/catalog-v16/references/official-overview.webp",
+    "to": "models/local/references/catalog-v16/official-overview.webp",
+    "kind": "references",
+    "bytes": 645516,
+    "sha256": "1a4da9c41d973c982c7437f5951c90265a41df572d18a939e5c97e65bd72869e"
+  },
+  {
+    "from": "models/catalog-v16/transition.json",
+    "to": "models/local/validation/catalog-v16/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "4683f4ef4cd7bc32008eb2b6c514b2ee6ca2510d397674e9dc8dcb5ad44f1452"
+  },
+  {
+    "from": "models/catalog-v16/validation.json",
+    "to": "models/local/validation/catalog-v16/validation.json",
+    "kind": "validation",
+    "bytes": 1247,
+    "sha256": "9103178487bec8c80b489c48fc3604326463112c299e305dc74cc7fbf97cff9e"
+  },
+  {
+    "from": "models/catalog-v17/bore-review.json",
+    "to": "models/local/validation/catalog-v17/bore-review.json",
+    "kind": "validation",
+    "bytes": 3155,
+    "sha256": "35a8b0711a7e6bfdc9ba9daa1ba0f3b158a5be87c097315bc82bd68d46289807"
+  },
+  {
+    "from": "models/catalog-v17/cloud-after.json",
+    "to": "models/local/validation/catalog-v17/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "b3b3bc3f64e3ffe33786ca241be277d9d3308c1484ee3aa0743897698cbfc637"
+  },
+  {
+    "from": "models/catalog-v17/cloud-before.json",
+    "to": "models/local/validation/catalog-v17/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "81f2f01bed383e1c9dd4f9d5a90c6ccaab5fc9c8efb4f6c4b918cb742a8aa056"
+  },
+  {
+    "from": "models/catalog-v17/detail-review.json",
+    "to": "models/local/validation/catalog-v17/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "c607f7a98dcdc6f09501f94675d95c0b7f13e97c225d8fd0a630aac580d37ecc"
+  },
+  {
+    "from": "models/catalog-v17/general-review.json",
+    "to": "models/local/validation/catalog-v17/general-review.json",
+    "kind": "validation",
+    "bytes": 4318,
+    "sha256": "af548323613fa962dca185ec015823ef044a67518cf7be62d2254bc64c85c598"
+  },
+  {
+    "from": "models/catalog-v17/inspection.json",
+    "to": "models/local/validation/catalog-v17/inspection.json",
+    "kind": "validation",
+    "bytes": 1712,
+    "sha256": "124908960a8547186ff64f84365276fc030ef4a69edbcb5017e79e21a7af88d3"
+  },
+  {
+    "from": "models/catalog-v17/motion-review.json",
+    "to": "models/local/validation/catalog-v17/motion-review.json",
+    "kind": "validation",
+    "bytes": 17818,
+    "sha256": "8f0b8d49afbe6048daf209f2aa6093e3b5b9f71ccc2c4b9a9bc1b5e2db07a15d"
+  },
+  {
+    "from": "models/catalog-v17/overlay-review.json",
+    "to": "models/local/validation/catalog-v17/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1856,
+    "sha256": "c2c15a3ecec90e1b8422f035fb2400067da3a60a6246d048067f406668fcccdb"
+  },
+  {
+    "from": "models/catalog-v17/preservation.json",
+    "to": "models/local/validation/catalog-v17/preservation.json",
+    "kind": "validation",
+    "bytes": 4689,
+    "sha256": "3f5a9a3cc97278e3604453eb3eed877d729c2ad3627830ed79b6d49f1f849014"
+  },
+  {
+    "from": "models/catalog-v17/references/official-dropout.jpg",
+    "to": "models/local/references/catalog-v17/official-dropout.jpg",
+    "kind": "references",
+    "bytes": 146520,
+    "sha256": "9f6568215fe083a5caa26accbeb1fe6b9cdeaa86277a2713cf988cf32b11752f"
+  },
+  {
+    "from": "models/catalog-v17/references/official-high-pivot.jpg",
+    "to": "models/local/references/catalog-v17/official-high-pivot.jpg",
+    "kind": "references",
+    "bytes": 127105,
+    "sha256": "c77b32dace2dc586bf38040745be07764d5d9f44a8c42f6eacacf3a8b3915a19"
+  },
+  {
+    "from": "models/catalog-v17/references/official-lateral.jpg",
+    "to": "models/local/references/catalog-v17/official-lateral.jpg",
+    "kind": "references",
+    "bytes": 105857,
+    "sha256": "1c7c2bc20edb69529c0ecab77788ad7c596c4fe163f3c847253aed387f2d358f"
+  },
+  {
+    "from": "models/catalog-v17/references/official-oblique.jpg",
+    "to": "models/local/references/catalog-v17/official-oblique.jpg",
+    "kind": "references",
+    "bytes": 101299,
+    "sha256": "9ac2f23fb34c8117c8234d339937b2cb55a4e0d17f685a9deea9a8b76f1d4460"
+  },
+  {
+    "from": "models/catalog-v17/references/official-protection.jpg",
+    "to": "models/local/references/catalog-v17/official-protection.jpg",
+    "kind": "references",
+    "bytes": 116476,
+    "sha256": "56b73612a0f988a2fd4f4325cf555df2001df661a5e160779260de53e6d71a6e"
+  },
+  {
+    "from": "models/catalog-v17/transition.json",
+    "to": "models/local/validation/catalog-v17/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "0891db6e3e78ec5b50e10ef60e0e3c7159ec907b265884f2c5e4680f5014d1e4"
+  },
+  {
+    "from": "models/catalog-v18/bore-review.json",
+    "to": "models/local/validation/catalog-v18/bore-review.json",
+    "kind": "validation",
+    "bytes": 3135,
+    "sha256": "b6fa879042999bba0563323081f0b70767dd2bc8a33201f41fc4c18967c0e179"
+  },
+  {
+    "from": "models/catalog-v18/card-review.json",
+    "to": "models/local/validation/catalog-v18/card-review.json",
+    "kind": "validation",
+    "bytes": 266,
+    "sha256": "1b87ae804bdfe728aff8882bfddb170551f02bdbaad6396cd1e9a965172070b4"
+  },
+  {
+    "from": "models/catalog-v18/cloud-after.json",
+    "to": "models/local/validation/catalog-v18/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "5a7300a0d0404c1fe47ad37556a6918fdd71070ab12d902c535f0bd5c8c8ac4d"
+  },
+  {
+    "from": "models/catalog-v18/cloud-before.json",
+    "to": "models/local/validation/catalog-v18/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "2b97c4b7aac7e75c4bf6a78a94b124c7482ec169bff0960c736f768e63a8ab6e"
+  },
+  {
+    "from": "models/catalog-v18/detail-review.json",
+    "to": "models/local/validation/catalog-v18/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "0a917cc4eda214934dcef1768f7ddbe306f6f2d6eca7b7a47f11fba3858bd1dc"
+  },
+  {
+    "from": "models/catalog-v18/general-review.json",
+    "to": "models/local/validation/catalog-v18/general-review.json",
+    "kind": "validation",
+    "bytes": 4038,
+    "sha256": "a7eaf71ab89d477e870d592e7ca1030880979d02c4faaf0ad2e6a1f7992c22d6"
+  },
+  {
+    "from": "models/catalog-v18/inspection.json",
+    "to": "models/local/validation/catalog-v18/inspection.json",
+    "kind": "validation",
+    "bytes": 1712,
+    "sha256": "143a90c2ddd5d77388ff932ba71ad876eea2d17a8fbc525b6f845653090aba18"
+  },
+  {
+    "from": "models/catalog-v18/motion-review.json",
+    "to": "models/local/validation/catalog-v18/motion-review.json",
+    "kind": "validation",
+    "bytes": 17795,
+    "sha256": "8c5b512fdbfc43cdc4ae479074a6b685601730740105d50cec66fcd0bd517f76"
+  },
+  {
+    "from": "models/catalog-v18/overlay-review.json",
+    "to": "models/local/validation/catalog-v18/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1840,
+    "sha256": "538ec31cc71eedeabf5a8d0aadccb999ed2f636b05a942a8edee3a34fd32dfd7"
+  },
+  {
+    "from": "models/catalog-v18/preservation.json",
+    "to": "models/local/validation/catalog-v18/preservation.json",
+    "kind": "validation",
+    "bytes": 5539,
+    "sha256": "41f493fd52bf892ec9853db8988cb451efe27f3551ca558a2a0692c1fa196e39"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-routing1.jpg",
+    "to": "models/local/references/catalog-v18/FRS-routing1.jpg",
+    "kind": "references",
+    "bytes": 144871,
+    "sha256": "77eb31477dbb775508219a419b3822c250e902bea3d6686ee3396059e1ec8b4d"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-routing2.jpg",
+    "to": "models/local/references/catalog-v18/FRS-routing2.jpg",
+    "kind": "references",
+    "bytes": 127611,
+    "sha256": "afcfdc5def376cf6218c10faef2bea0e0000727f8d13d451d5f5c2c53b5587d5"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-V3-bumpers.jpg",
+    "to": "models/local/references/catalog-v18/FRS-V3-bumpers.jpg",
+    "kind": "references",
+    "bytes": 99004,
+    "sha256": "1fdc4f68caba25b8c69e356ce6bf23e5090d156ef9549584e735ca21dd51e4eb"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-V3-chain-stays.jpg",
+    "to": "models/local/references/catalog-v18/FRS-V3-chain-stays.jpg",
+    "kind": "references",
+    "bytes": 127621,
+    "sha256": "56694b5d062d6b284ad99a474892a66807cca0ef52d3bd72cd276d7972113815"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-V3-downtube.jpg",
+    "to": "models/local/references/catalog-v18/FRS-V3-downtube.jpg",
+    "kind": "references",
+    "bytes": 113593,
+    "sha256": "548a58b42279569839d75cca76d688fc2c93d3500499c3ececec2bd4eb447869"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-V3-main-pivot.jpg",
+    "to": "models/local/references/catalog-v18/FRS-V3-main-pivot.jpg",
+    "kind": "references",
+    "bytes": 133057,
+    "sha256": "4266fd0c85708977e6244cfac8b65969a7f5b701ba804485f312e997a6fa6923"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-V3-protections.jpg",
+    "to": "models/local/references/catalog-v18/FRS-V3-protections.jpg",
+    "kind": "references",
+    "bytes": 104701,
+    "sha256": "ac97af19bf8aa3217922e26da3992f6d78ad58aa04469d1ef82b0a0c58245fdb"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-V3-rear-axle.jpg",
+    "to": "models/local/references/catalog-v18/FRS-V3-rear-axle.jpg",
+    "kind": "references",
+    "bytes": 111680,
+    "sha256": "12f54e82ddaad9100def610b2283275723dc49f7832948e65e0fc6a734687814"
+  },
+  {
+    "from": "models/catalog-v18/references/FRS-V3-rocker.jpg",
+    "to": "models/local/references/catalog-v18/FRS-V3-rocker.jpg",
+    "kind": "references",
+    "bytes": 112703,
+    "sha256": "f1a8f8b8a3a07967d869121d37761f62e6ede7bd718f04620c5ad6ece957bd97"
+  },
+  {
+    "from": "models/catalog-v18/references/FT4FRS3_00.jpg",
+    "to": "models/local/references/catalog-v18/FT4FRS3_00.jpg",
+    "kind": "references",
+    "bytes": 100021,
+    "sha256": "0c2c28a530edcbea51e3f707298f6bf9a7059d7217a99ca63dbb89f8a0f7dcdf"
+  },
+  {
+    "from": "models/catalog-v18/references/FT4FRS3_01.jpg",
+    "to": "models/local/references/catalog-v18/FT4FRS3_01.jpg",
+    "kind": "references",
+    "bytes": 97132,
+    "sha256": "4642e83e113f441e727b1badd354d21ecb379dc81a55627a78a02e4b6c58b293"
+  },
+  {
+    "from": "models/catalog-v18/references/prior-card-render.webp",
+    "to": "models/local/references/catalog-v18/prior-card-render.webp",
+    "kind": "references",
+    "bytes": 17712,
+    "sha256": "f6c0b642c99f1d74f574a881daefc1b5c808021c8fd1e7134cba388f5b8b150b"
+  },
+  {
+    "from": "models/catalog-v18/transition.json",
+    "to": "models/local/validation/catalog-v18/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "b82bf327df6743d52ed75a9e1b809a31994907a907084a34ad25afd91e1c09b6"
+  },
+  {
+    "from": "models/catalog-v19/bore-review.json",
+    "to": "models/local/validation/catalog-v19/bore-review.json",
+    "kind": "validation",
+    "bytes": 3152,
+    "sha256": "c4952d568acb5375217f1cb83686ffe7dbf01d62a637af02bdd03143c78bca15"
+  },
+  {
+    "from": "models/catalog-v19/cloud-after.json",
+    "to": "models/local/validation/catalog-v19/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "163e5414604d3b957c5772b23d4a1d1fd54baad25d0fb94f396c407f948bcf97"
+  },
+  {
+    "from": "models/catalog-v19/cloud-before.json",
+    "to": "models/local/validation/catalog-v19/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "432e05202ada56b95842b640406bd8a9c5a24b5cefc3f47ffcfd94a667eacbf6"
+  },
+  {
+    "from": "models/catalog-v19/detail-review.json",
+    "to": "models/local/validation/catalog-v19/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "67f04dbb6a0d7055114c163a5b2f7db858349c25e433c455f05b950fecb27a86"
+  },
+  {
+    "from": "models/catalog-v19/general-review.json",
+    "to": "models/local/validation/catalog-v19/general-review.json",
+    "kind": "validation",
+    "bytes": 4297,
+    "sha256": "4122120fc55decb746075849c68869ab5c1d14e9975c9b51392d69ee063bd3ee"
+  },
+  {
+    "from": "models/catalog-v19/inspection.json",
+    "to": "models/local/validation/catalog-v19/inspection.json",
+    "kind": "validation",
+    "bytes": 1713,
+    "sha256": "14d80a4ac210034f81f6cfca50f56ccc1e89e4331f4ec150a87a916ff3bae06b"
+  },
+  {
+    "from": "models/catalog-v19/motion-review.json",
+    "to": "models/local/validation/catalog-v19/motion-review.json",
+    "kind": "validation",
+    "bytes": 17816,
+    "sha256": "9cf1befeee1fbb5602ab6300e39192b38410ece3fdba83a836fdac6ff2cc8db5"
+  },
+  {
+    "from": "models/catalog-v19/overlay-review.json",
+    "to": "models/local/validation/catalog-v19/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1704,
+    "sha256": "320b2bd1cbf2054137a2fddb4e211aab5a66c876bfba125ad33d017eec085c1f"
+  },
+  {
+    "from": "models/catalog-v19/preservation.json",
+    "to": "models/local/validation/catalog-v19/preservation.json",
+    "kind": "validation",
+    "bytes": 5647,
+    "sha256": "e446617b022fc425ba785f51aad78312a458798a5074ff1f43c33844140eb936"
+  },
+  {
+    "from": "models/catalog-v19/references/21FUREGM_01_2000.jpg",
+    "to": "models/local/references/catalog-v19/21FUREGM_01_2000.jpg",
+    "kind": "references",
+    "bytes": 249975,
+    "sha256": "3379ac26fb98b0249dfd2f8c74927bb1a120531883e887addfc23440db21b04e"
+  },
+  {
+    "from": "models/catalog-v19/references/21FUREGM_02_2000.jpg",
+    "to": "models/local/references/catalog-v19/21FUREGM_02_2000.jpg",
+    "kind": "references",
+    "bytes": 367819,
+    "sha256": "ad975dbc210a703224e89b0cc4cbfc40b9739ce9b4621172dca42eb7b8286ea7"
+  },
+  {
+    "from": "models/catalog-v19/references/21FUREGM_03_2000.jpg",
+    "to": "models/local/references/catalog-v19/21FUREGM_03_2000.jpg",
+    "kind": "references",
+    "bytes": 273574,
+    "sha256": "8322c04e61a1e98c90d5acb2189d541019464eea83f75ae1c967392e5fabf49e"
+  },
+  {
+    "from": "models/catalog-v19/references/21FUREGM_2000.jpg",
+    "to": "models/local/references/catalog-v19/21FUREGM_2000.jpg",
+    "kind": "references",
+    "bytes": 273398,
+    "sha256": "9ee196c75d9f17861c9321119212fa8f76e14641615b713da066b990d7bda2c0"
+  },
+  {
+    "from": "models/catalog-v19/references/frame_furious-gunmetal.jpg",
+    "to": "models/local/references/catalog-v19/frame_furious-gunmetal.jpg",
+    "kind": "references",
+    "bytes": 495048,
+    "sha256": "d9b124af3982f8ca53d47a8a98eeae71b4c25cb1faa8b2d62b5f7d7a6040a851"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-routing1.jpg",
+    "to": "models/local/references/catalog-v19/FRS-routing1.jpg",
+    "kind": "references",
+    "bytes": 144871,
+    "sha256": "77eb31477dbb775508219a419b3822c250e902bea3d6686ee3396059e1ec8b4d"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-routing2.jpg",
+    "to": "models/local/references/catalog-v19/FRS-routing2.jpg",
+    "kind": "references",
+    "bytes": 127611,
+    "sha256": "afcfdc5def376cf6218c10faef2bea0e0000727f8d13d451d5f5c2c53b5587d5"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-V3-bumpers.jpg",
+    "to": "models/local/references/catalog-v19/FRS-V3-bumpers.jpg",
+    "kind": "references",
+    "bytes": 99004,
+    "sha256": "1fdc4f68caba25b8c69e356ce6bf23e5090d156ef9549584e735ca21dd51e4eb"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-V3-chain-stays.jpg",
+    "to": "models/local/references/catalog-v19/FRS-V3-chain-stays.jpg",
+    "kind": "references",
+    "bytes": 127621,
+    "sha256": "56694b5d062d6b284ad99a474892a66807cca0ef52d3bd72cd276d7972113815"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-V3-downtube.jpg",
+    "to": "models/local/references/catalog-v19/FRS-V3-downtube.jpg",
+    "kind": "references",
+    "bytes": 113593,
+    "sha256": "548a58b42279569839d75cca76d688fc2c93d3500499c3ececec2bd4eb447869"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-V3-main-pivot.jpg",
+    "to": "models/local/references/catalog-v19/FRS-V3-main-pivot.jpg",
+    "kind": "references",
+    "bytes": 133057,
+    "sha256": "4266fd0c85708977e6244cfac8b65969a7f5b701ba804485f312e997a6fa6923"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-V3-protections.jpg",
+    "to": "models/local/references/catalog-v19/FRS-V3-protections.jpg",
+    "kind": "references",
+    "bytes": 104701,
+    "sha256": "ac97af19bf8aa3217922e26da3992f6d78ad58aa04469d1ef82b0a0c58245fdb"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-V3-rear-axle.jpg",
+    "to": "models/local/references/catalog-v19/FRS-V3-rear-axle.jpg",
+    "kind": "references",
+    "bytes": 111680,
+    "sha256": "12f54e82ddaad9100def610b2283275723dc49f7832948e65e0fc6a734687814"
+  },
+  {
+    "from": "models/catalog-v19/references/FRS-V3-rocker.jpg",
+    "to": "models/local/references/catalog-v19/FRS-V3-rocker.jpg",
+    "kind": "references",
+    "bytes": 112703,
+    "sha256": "f1a8f8b8a3a07967d869121d37761f62e6ede7bd718f04620c5ad6ece957bd97"
+  },
+  {
+    "from": "models/catalog-v19/transition.json",
+    "to": "models/local/validation/catalog-v19/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "e895092f0724e6fcb77c47e67ae9e1e1099824fc074aa79f15535f69d7a448c2"
+  },
+  {
+    "from": "models/catalog-v20/bore-review.json",
+    "to": "models/local/validation/catalog-v20/bore-review.json",
+    "kind": "validation",
+    "bytes": 3153,
+    "sha256": "d8eb2ebf5d304b5211187614cbb55ad874856e2b3cc7eadd017eb42edc870931"
+  },
+  {
+    "from": "models/catalog-v20/cloud-after.json",
+    "to": "models/local/validation/catalog-v20/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "b1e4bf68b65b96ddbf25b4e5686066535d3886fb3616527ee04f791a0aa42c49"
+  },
+  {
+    "from": "models/catalog-v20/cloud-before.json",
+    "to": "models/local/validation/catalog-v20/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "7463fdb763c636684d50853ee702ad95b3545e25c564503730ef3338f947ca80"
+  },
+  {
+    "from": "models/catalog-v20/detail-review.json",
+    "to": "models/local/validation/catalog-v20/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "8bf833f91e4e1a040b6d725afbdd6aed9592ed0c387be1972d54bd0c505a38cf"
+  },
+  {
+    "from": "models/catalog-v20/general-review.json",
+    "to": "models/local/validation/catalog-v20/general-review.json",
+    "kind": "validation",
+    "bytes": 4304,
+    "sha256": "90995e3f95a78dc6201e61d6a042c1565a66b9a3e615515dd4a12b3320fc5204"
+  },
+  {
+    "from": "models/catalog-v20/inspection.json",
+    "to": "models/local/validation/catalog-v20/inspection.json",
+    "kind": "validation",
+    "bytes": 1715,
+    "sha256": "45462af01f92def0f35b95290dcc7268598cc3376abea3ee914f0f55b4214e6a"
+  },
+  {
+    "from": "models/catalog-v20/motion-review.json",
+    "to": "models/local/validation/catalog-v20/motion-review.json",
+    "kind": "validation",
+    "bytes": 17814,
+    "sha256": "90e175f4ba7378626fb7e80084acb1db4a26712e3c31380c746d2727e86d2cc0"
+  },
+  {
+    "from": "models/catalog-v20/overlay-review.json",
+    "to": "models/local/validation/catalog-v20/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1878,
+    "sha256": "19f05a324bcf200dcfad827095953b6f71d18106cb84b0716523a090b054163d"
+  },
+  {
+    "from": "models/catalog-v20/preservation.json",
+    "to": "models/local/validation/catalog-v20/preservation.json",
+    "kind": "validation",
+    "bytes": 5195,
+    "sha256": "4fb0ad71fb8bfc53ab534dfbe259de6923fabb6ef95510e705e5e3b35071d9dd"
+  },
+  {
+    "from": "models/catalog-v20/references/2024_GT_Tech_Book.pdf",
+    "to": "models/local/references/catalog-v20/2024_GT_Tech_Book.pdf",
+    "kind": "references",
+    "bytes": 10996532,
+    "sha256": "96eaa373a5de3f4831ce31f5d6f8b55bd0c44c2a4ac00841cbc5779534573252"
+  },
+  {
+    "from": "models/catalog-v20/references/FuryCRB_Frame_3Q_BLK.jpg",
+    "to": "models/local/references/catalog-v20/FuryCRB_Frame_3Q_BLK.jpg",
+    "kind": "references",
+    "bytes": 141696,
+    "sha256": "d9dff50e0dbafa353328937461cdba0ff3c0349bc83b97d23c27f8c4efef8ccd"
+  },
+  {
+    "from": "models/catalog-v20/references/FuryCRB_Frame_PD_BLK.jpg",
+    "to": "models/local/references/catalog-v20/FuryCRB_Frame_PD_BLK.jpg",
+    "kind": "references",
+    "bytes": 163047,
+    "sha256": "db2037edc3b0e30fefc953c3a626ac20d134684de354d344ae58e20625333694"
+  },
+  {
+    "from": "models/catalog-v20/references/G24_GT_Fury_OMS.pdf",
+    "to": "models/local/references/catalog-v20/G24_GT_Fury_OMS.pdf",
+    "kind": "references",
+    "bytes": 8246243,
+    "sha256": "4568d3544d9ebde29fba0066445064d7f980a85588e41abcb3c93d7b6b55fc55"
+  },
+  {
+    "from": "models/catalog-v20/references/High-Pivot-LTS.jpg",
+    "to": "models/local/references/catalog-v20/High-Pivot-LTS.jpg",
+    "kind": "references",
+    "bytes": 301371,
+    "sha256": "ef0387fc6143d940d65531fc4a97a42b62a9c5794086b2ca31aa5c6f1c34f2fd"
+  },
+  {
+    "from": "models/catalog-v20/references/Maximum-tunability.jpg",
+    "to": "models/local/references/catalog-v20/Maximum-tunability.jpg",
+    "kind": "references",
+    "bytes": 316889,
+    "sha256": "613262e53f4c91c117bc8677cc5b59c552a47c6e693aa80e0a33621cb9612c23"
+  },
+  {
+    "from": "models/catalog-v20/references/Ruckus-management.jpg",
+    "to": "models/local/references/catalog-v20/Ruckus-management.jpg",
+    "kind": "references",
+    "bytes": 346408,
+    "sha256": "1f73fdae87bbb7c766d803975c66f7a02b8b52ce4bc626b23e407b5074863614"
+  },
+  {
+    "from": "models/catalog-v20/transition.json",
+    "to": "models/local/validation/catalog-v20/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "cb03295e46cdab81bdc3ec8463a8bcdbc74f7e3042481d299176f33ab4009202"
+  },
+  {
+    "from": "models/catalog-v21/bore-review.json",
+    "to": "models/local/validation/catalog-v21/bore-review.json",
+    "kind": "validation",
+    "bytes": 3142,
+    "sha256": "bcfef2d9ceb74f43cb673b0ee95e94ba28f9a11c6afc3aa545bf9887f926a092"
+  },
+  {
+    "from": "models/catalog-v21/cloud-after.json",
+    "to": "models/local/validation/catalog-v21/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "a39b5e5dadc2e7c8345a55a0bba56680bfb09f77e2552277aedd5f8b3e34b4bb"
+  },
+  {
+    "from": "models/catalog-v21/cloud-before.json",
+    "to": "models/local/validation/catalog-v21/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "6616f2edaa959591e4b364532ca1bd8eed9784da876462d124e77a34670a7cab"
+  },
+  {
+    "from": "models/catalog-v21/detail-review.json",
+    "to": "models/local/validation/catalog-v21/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "d6fe9955261ac9b81d2b2c958a76d9fc7800629ea9b72fb935b031d3c7663010"
+  },
+  {
+    "from": "models/catalog-v21/general-review.json",
+    "to": "models/local/validation/catalog-v21/general-review.json",
+    "kind": "validation",
+    "bytes": 4150,
+    "sha256": "c62dd58fe0d9d36f4b2f62522cd7b3c0c5f04e6913870c5df7a26aab9f0e7187"
+  },
+  {
+    "from": "models/catalog-v21/inspection.json",
+    "to": "models/local/validation/catalog-v21/inspection.json",
+    "kind": "validation",
+    "bytes": 1713,
+    "sha256": "833810f55289fbeec786650ad916caa3e272dcc51570bebcfd7cb5f5edae5bd9"
+  },
+  {
+    "from": "models/catalog-v21/motion-review.json",
+    "to": "models/local/validation/catalog-v21/motion-review.json",
+    "kind": "validation",
+    "bytes": 18979,
+    "sha256": "a0f578659657aba0b388f73e9aa6729dcbaf63bc931e53af7653bfbbd3ed9d0c"
+  },
+  {
+    "from": "models/catalog-v21/overlay-review.json",
+    "to": "models/local/validation/catalog-v21/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1691,
+    "sha256": "379ef5eea0032c10d0cf85d74d6b04940ebb0e3dd40050dcafd8f95906e8f6ae"
+  },
+  {
+    "from": "models/catalog-v21/preservation.json",
+    "to": "models/local/validation/catalog-v21/preservation.json",
+    "kind": "validation",
+    "bytes": 4807,
+    "sha256": "e5498e03779a5bed34f327d8490b45a638eccfd8c9299f84eef335380b3bc677"
+  },
+  {
+    "from": "models/catalog-v21/references/FT3MSXV5TME.jpeg",
+    "to": "models/local/references/catalog-v21/FT3MSXV5TME.jpeg",
+    "kind": "references",
+    "bytes": 73922,
+    "sha256": "933a67d2614eaaf12825b9fb438434c1003a7d0ceccc213ef619bfd9edea6072"
+  },
+  {
+    "from": "models/catalog-v21/references/META-SX-V5-full-assembly.jpg",
+    "to": "models/local/references/catalog-v21/META-SX-V5-full-assembly.jpg",
+    "kind": "references",
+    "bytes": 282216,
+    "sha256": "e660e77d3754262b519f6722e57331c181b39d5c5614d47f21bfe05c723913aa"
+  },
+  {
+    "from": "models/catalog-v21/references/META-SX-V5-rear-triangle.jpg",
+    "to": "models/local/references/catalog-v21/META-SX-V5-rear-triangle.jpg",
+    "kind": "references",
+    "bytes": 189085,
+    "sha256": "bb1471ff37b9b4f24d8d365287fb1ec809eaadc0c52487b707f034a116d3bb9a"
+  },
+  {
+    "from": "models/catalog-v21/references/meta-sx-v5-suspensions.jpg",
+    "to": "models/local/references/catalog-v21/meta-sx-v5-suspensions.jpg",
+    "kind": "references",
+    "bytes": 337454,
+    "sha256": "c29b4c9f64f69150d30cfc02e0dbadd756485b358c0ee5865393c342bb59ed33"
+  },
+  {
+    "from": "models/catalog-v21/references/META-V5-front-triangle.jpg",
+    "to": "models/local/references/catalog-v21/META-V5-front-triangle.jpg",
+    "kind": "references",
+    "bytes": 257987,
+    "sha256": "0dd3d47d44e9bfee25c9d7d0cdc051572c4a43c12fdac96fabc27eb62e57e99e"
+  },
+  {
+    "from": "models/catalog-v21/references/META-V5-links.jpg",
+    "to": "models/local/references/catalog-v21/META-V5-links.jpg",
+    "kind": "references",
+    "bytes": 215101,
+    "sha256": "2a19096a7fa839f14285c3ccee8e739b134a52c74ea0a1b28a4ad36e5678f587"
+  },
+  {
+    "from": "models/catalog-v21/references/META-V5-protectors.jpg",
+    "to": "models/local/references/catalog-v21/META-V5-protectors.jpg",
+    "kind": "references",
+    "bytes": 400590,
+    "sha256": "41b72d8fb559de831ce91c8cc4e120da01272568e13031a9d5e1bad606a9ccea"
+  },
+  {
+    "from": "models/catalog-v21/references/META-V5-SX-routing1.jpg",
+    "to": "models/local/references/catalog-v21/META-V5-SX-routing1.jpg",
+    "kind": "references",
+    "bytes": 99147,
+    "sha256": "d10d6a47c0a1475d13869b9192825055999a0f0ad1e181b9a33ade099bba219f"
+  },
+  {
+    "from": "models/catalog-v21/references/META-V5-SX-routing2.jpg",
+    "to": "models/local/references/catalog-v21/META-V5-SX-routing2.jpg",
+    "kind": "references",
+    "bytes": 92520,
+    "sha256": "15d7a2227a6dfffcbab82a4d42f98980275ca33fd77171f6453938b72f31f02b"
+  },
+  {
+    "from": "models/catalog-v21/transition.json",
+    "to": "models/local/validation/catalog-v21/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "7d9976d1d3836de973cf45b884e03783ab27a43068d418bd0956c89dd3232edb"
+  },
+  {
+    "from": "models/catalog-v22/bore-review.json",
+    "to": "models/local/validation/catalog-v22/bore-review.json",
+    "kind": "validation",
+    "bytes": 3149,
+    "sha256": "ebef23482bb706034aa009c085bf87f72d2e68d38d3febf519ca2cd359fbdd4c"
+  },
+  {
+    "from": "models/catalog-v22/cloud-after.json",
+    "to": "models/local/validation/catalog-v22/cloud-after.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "f206ff3350abac9900ed1aa886dba7828cfcf09f2bbe6af97c271574c2853710"
+  },
+  {
+    "from": "models/catalog-v22/cloud-before.json",
+    "to": "models/local/validation/catalog-v22/cloud-before.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "ed79ad1e88b55c6b39c1bbd5687abb7eae6b676ad8fa1b3be103bf2497f4c2e0"
+  },
+  {
+    "from": "models/catalog-v22/detail-review.json",
+    "to": "models/local/validation/catalog-v22/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "694b2d94e63c681a1f3b4611709836f596d6f1ad4735734aa3bc4da3b39134fa"
+  },
+  {
+    "from": "models/catalog-v22/general-review.json",
+    "to": "models/local/validation/catalog-v22/general-review.json",
+    "kind": "validation",
+    "bytes": 4248,
+    "sha256": "6fb685bc983cf39e5c04c042b96fe4c2d11c888e70a28315e7be5b2a14356a3d"
+  },
+  {
+    "from": "models/catalog-v22/inspection.json",
+    "to": "models/local/validation/catalog-v22/inspection.json",
+    "kind": "validation",
+    "bytes": 1713,
+    "sha256": "b6e74abc457550427618657d43b41e6bbd7dbb1efc547f699d2e8114220047de"
+  },
+  {
+    "from": "models/catalog-v22/motion-review.json",
+    "to": "models/local/validation/catalog-v22/motion-review.json",
+    "kind": "validation",
+    "bytes": 21514,
+    "sha256": "09237d583a8421187b03390cba23c13ebb2bae6cf0801f5f43bddc62ddcd3f4e"
+  },
+  {
+    "from": "models/catalog-v22/overlay-review.json",
+    "to": "models/local/validation/catalog-v22/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1873,
+    "sha256": "f690aa344b6a8c463003d49c0f2ecab885b6ff52c7776c4868edf9acfcda4627"
+  },
+  {
+    "from": "models/catalog-v22/passage-review.json",
+    "to": "models/local/validation/catalog-v22/passage-review.json",
+    "kind": "validation",
+    "bytes": 6157,
+    "sha256": "bc83f79aa0eda45f6720e588cd6e4777f1d641b74397e978cfcc2af588332daa"
+  },
+  {
+    "from": "models/catalog-v22/preservation.json",
+    "to": "models/local/validation/catalog-v22/preservation.json",
+    "kind": "validation",
+    "bytes": 5571,
+    "sha256": "15bfdc9404e15d8df8d26e2dfddba65226b37bf67e42250bd9c7c8a3eced0887"
+  },
+  {
+    "from": "models/catalog-v22/references/04-27474_UpperLink_Brsn5-aspect-4-3_e4d248f5-336b-403e-a089-6ad5d8e449fa.jpg",
+    "to": "models/local/references/catalog-v22/04-27474_UpperLink_Brsn5-aspect-4-3_e4d248f5-336b-403e-a089-6ad5d8e449fa.jpg",
+    "kind": "references",
+    "bytes": 191643,
+    "sha256": "78322d5118c4976945a96be11c3e5dfeb5fbdcad2a3074afec82903d9d09d97b"
+  },
+  {
+    "from": "models/catalog-v22/references/04-29383_SG_NMD7.jpg",
+    "to": "models/local/references/catalog-v22/04-29383_SG_NMD7.jpg",
+    "kind": "references",
+    "bytes": 123715,
+    "sha256": "9db463d33b90f1b2ee9301e3e8b253343754926333d3a3d08f41065881241f43"
+  },
+  {
+    "from": "models/catalog-v22/references/04-29384_DTPro_NMD7.jpg",
+    "to": "models/local/references/catalog-v22/04-29384_DTPro_NMD7.jpg",
+    "kind": "references",
+    "bytes": 101498,
+    "sha256": "e8edf49514b3dc0a15e97a54f8b81333ccc4de57c390008828eec40ce9e317d0"
+  },
+  {
+    "from": "models/catalog-v22/references/04-29425_CG_NMD7.jpg",
+    "to": "models/local/references/catalog-v22/04-29425_CG_NMD7.jpg",
+    "kind": "references",
+    "bytes": 201393,
+    "sha256": "ef05a2f1da90736adc2d7d0bbfab8b33764a196943958390800be0ffc2f29a16"
+  },
+  {
+    "from": "models/catalog-v22/references/04-29426_NMD7_lowerlink.jpg",
+    "to": "models/local/references/catalog-v22/04-29426_NMD7_lowerlink.jpg",
+    "kind": "references",
+    "bytes": 228807,
+    "sha256": "9bbb3257a8c00e60115e622ab75b1771163d9e1bb5c17a0bb3c613e3298fcba3"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_CC_DHX2_FrameOnly_GlossAquaMagenta.png",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_CC_DHX2_FrameOnly_GlossAquaMagenta.png",
+    "kind": "references",
+    "bytes": 877327,
+    "sha256": "a1cdc61f298095fc6003f5555b2047be471ebfe5124015235921a68f29eafb77"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_CC_DHX2_FrameOnly_MatteMetallicEarth.png",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_CC_DHX2_FrameOnly_MatteMetallicEarth.png",
+    "kind": "references",
+    "bytes": 850345,
+    "sha256": "a2e4534ad40dfeea4f1125dccc223e2e435ccc86e45af207abafb831831bf767"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_001.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_001.jpg",
+    "kind": "references",
+    "bytes": 677781,
+    "sha256": "6986f72de898b19eec5bfdc1dd54caf531bf3f5c99850ff88cb7c89200d12dfc"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_0010.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_0010.jpg",
+    "kind": "references",
+    "bytes": 601306,
+    "sha256": "0ab0eec35c990b2b49f24f625464dcfd7119ae794b711edbe6bd39018a808644"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_0018.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_0018.jpg",
+    "kind": "references",
+    "bytes": 1037908,
+    "sha256": "c6d035af517114f86e51402e0176c25236987bce274d6c991a3b2dd5c5f81a54"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_0019.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_0019.jpg",
+    "kind": "references",
+    "bytes": 633048,
+    "sha256": "2af450f3f6ad8085ec31246c4ee9f7d389c74139b70b2ece76de27224d988d1f"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_0021_d93c00d7-b549-47cc-94cf-851cb769ab43.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_0021_d93c00d7-b549-47cc-94cf-851cb769ab43.jpg",
+    "kind": "references",
+    "bytes": 891856,
+    "sha256": "547e5440169732c8bd42713ab619705122b15d0d094712c887c0d97388f7d2dc"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_0022_12e8e162-2873-4b57-a7d8-d30f20ff43fa.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_0022_12e8e162-2873-4b57-a7d8-d30f20ff43fa.jpg",
+    "kind": "references",
+    "bytes": 1014389,
+    "sha256": "ad1067a6f22a84ef2e601e20c0ad1823eb3d1adcb1734a69379d0e06e79f00ab"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_0022.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_0022.jpg",
+    "kind": "references",
+    "bytes": 891120,
+    "sha256": "9c455fa166794c7e5073470fbbf425ea2b3d96b9209e5e0b8c5b5aed3ebf3e7b"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_003_0493bda5-5c77-401c-9067-840d9eed7bee.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_003_0493bda5-5c77-401c-9067-840d9eed7bee.jpg",
+    "kind": "references",
+    "bytes": 809158,
+    "sha256": "942f4b1af44e04e12cc69cef5ecbcf03303492b053545ab9d7953d905678f860"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_003.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_003.jpg",
+    "kind": "references",
+    "bytes": 809158,
+    "sha256": "942f4b1af44e04e12cc69cef5ecbcf03303492b053545ab9d7953d905678f860"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_006.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_006.jpg",
+    "kind": "references",
+    "bytes": 458165,
+    "sha256": "8bbfe2f8b6995bfea2f0ac43559d0a043bd38cd98a9b6dd4a5fd539d78fa8f35"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_007_218f5322-3637-440f-b763-c730b4b3eca7.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_007_218f5322-3637-440f-b763-c730b4b3eca7.jpg",
+    "kind": "references",
+    "bytes": 493483,
+    "sha256": "a62c544561bdc6329a07fbcda4330ab6c3df6786035be40bad24a00fe73047f6"
+  },
+  {
+    "from": "models/catalog-v22/references/MY27_Nomad_Details_009.jpg",
+    "to": "models/local/references/catalog-v22/MY27_Nomad_Details_009.jpg",
+    "kind": "references",
+    "bytes": 741882,
+    "sha256": "e82dca27d289176d6bcfc86569906fd4c263eff91c9dad2866f25570807b5881"
+  },
+  {
+    "from": "models/catalog-v22/references/Nomad_7C_Exp_View_1.png",
+    "to": "models/local/references/catalog-v22/Nomad_7C_Exp_View_1.png",
+    "kind": "references",
+    "bytes": 1405129,
+    "sha256": "b481d58bf30107ee1e018b576c06e18dca2bf2710d37a6f5e4932257373c1a9a"
+  },
+  {
+    "from": "models/catalog-v22/references/Nomad_7C_Exp_View_2.png",
+    "to": "models/local/references/catalog-v22/Nomad_7C_Exp_View_2.png",
+    "kind": "references",
+    "bytes": 2547001,
+    "sha256": "bc5e33547e51594d3d384f4b2c4a1e156f9efe9eb45cd53f1dc04dbbabc436bc"
+  },
+  {
+    "from": "models/catalog-v22/references/Nomad_7C_Exp_View_3.png",
+    "to": "models/local/references/catalog-v22/Nomad_7C_Exp_View_3.png",
+    "kind": "references",
+    "bytes": 1630690,
+    "sha256": "bf7c771d560bda868e7c16f80159578cd634237bee4de12365ed91455f5297c8"
+  },
+  {
+    "from": "models/catalog-v22/references/Nomad_7C_Exp_View_4.png",
+    "to": "models/local/references/catalog-v22/Nomad_7C_Exp_View_4.png",
+    "kind": "references",
+    "bytes": 2777311,
+    "sha256": "77fa73bd82156493a513087f756f60680ddd3ee633fc6fee08a574b4ddf9218a"
+  },
+  {
+    "from": "models/catalog-v22/references/Nomad_7C_Exp_View_5.png",
+    "to": "models/local/references/catalog-v22/Nomad_7C_Exp_View_5.png",
+    "kind": "references",
+    "bytes": 2327970,
+    "sha256": "24a4ce1c9093abc8c21303196bcca6d7995faa88f9b1e086463f76e44cb5e07f"
+  },
+  {
+    "from": "models/catalog-v22/references/Nomad_7C_Exp_View_6.png",
+    "to": "models/local/references/catalog-v22/Nomad_7C_Exp_View_6.png",
+    "kind": "references",
+    "bytes": 1881697,
+    "sha256": "c00b5954b539c4c10f15925c2d93f58c4ec1900a789d163691b1ce93b7862c5b"
+  },
+  {
+    "from": "models/catalog-v22/references/Nomad_7C_Exp_View_7.png",
+    "to": "models/local/references/catalog-v22/Nomad_7C_Exp_View_7.png",
+    "kind": "references",
+    "bytes": 1315632,
+    "sha256": "aa8edd53efebd6a943452a1b7b4b1542d78549410596e027f05e41343767ce1c"
+  },
+  {
+    "from": "models/catalog-v22/transition.json",
+    "to": "models/local/validation/catalog-v22/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "7312fce8fd0dc7091a160d873f7bc0c5a730bb9d9182882f201ec545e63538bc"
+  },
+  {
+    "from": "models/catalog-v23/bore-review.json",
+    "to": "models/local/validation/catalog-v23/bore-review.json",
+    "kind": "validation",
+    "bytes": 3164,
+    "sha256": "71f2870d27fff38edfb6c0f0449db9b4888e3172dc97f67ba14cc6f000fc3fb4"
+  },
+  {
+    "from": "models/catalog-v23/cloud-after.json",
+    "to": "models/local/validation/catalog-v23/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "3d2412c02a211af69c0bd0edceb68d7803c056710b2eb99ec642a99a90af7fb2"
+  },
+  {
+    "from": "models/catalog-v23/cloud-before.json",
+    "to": "models/local/validation/catalog-v23/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "1d34a88667af6bcb2361ad232d769cba44e46c7ce31e36b3eefb8b3f27883787"
+  },
+  {
+    "from": "models/catalog-v23/detail-review.json",
+    "to": "models/local/validation/catalog-v23/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "cc473b21d304dd005d234603c0d0a4edc5c7fb4d4cf5c5e386f5ca783f66ec70"
+  },
+  {
+    "from": "models/catalog-v23/general-review.json",
+    "to": "models/local/validation/catalog-v23/general-review.json",
+    "kind": "validation",
+    "bytes": 4451,
+    "sha256": "189d3dc1bf60e1e1e2781eae2ba88b59ca54247db4f2a19e3e3e68c747d31ede"
+  },
+  {
+    "from": "models/catalog-v23/inspection.json",
+    "to": "models/local/validation/catalog-v23/inspection.json",
+    "kind": "validation",
+    "bytes": 1727,
+    "sha256": "6293047178a2ca85d3a5805ab4299578a96e4ffd511e3d3f58ba18dae9b3ecd2"
+  },
+  {
+    "from": "models/catalog-v23/linkage-review.json",
+    "to": "models/local/validation/catalog-v23/linkage-review.json",
+    "kind": "validation",
+    "bytes": 1006,
+    "sha256": "1bc8fe30c3524c707cf1ce065e58295f5b07a78ae168a81eecfa7e19e9abb958"
+  },
+  {
+    "from": "models/catalog-v23/motion-review.json",
+    "to": "models/local/validation/catalog-v23/motion-review.json",
+    "kind": "validation",
+    "bytes": 21138,
+    "sha256": "4554364378e4df5f8d29f60a6b6ba58e997c04d5fc4cc4f92e01235c013da540"
+  },
+  {
+    "from": "models/catalog-v23/overlay-review.json",
+    "to": "models/local/validation/catalog-v23/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1709,
+    "sha256": "2e4b8b7c5732150e022d95f8c6d614dadae87e49c5d88a144ee6e67c912b5be3"
+  },
+  {
+    "from": "models/catalog-v23/preservation.json",
+    "to": "models/local/validation/catalog-v23/preservation.json",
+    "kind": "validation",
+    "bytes": 5193,
+    "sha256": "e401821f01775676d656643ab6ecd102191c28879a2e24ee53949335b69a925a"
+  },
+  {
+    "from": "models/catalog-v23/references/2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+    "to": "models/local/references/catalog-v23/2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+    "kind": "references",
+    "bytes": 5392627,
+    "sha256": "c8933e2232b878874f090699afbc632326e5c3a1f432d6ee02b91d61b9fcdb9f"
+  },
+  {
+    "from": "models/catalog-v23/references/specialized-s-works-enduro-udh-0.png",
+    "to": "models/local/references/catalog-v23/specialized-s-works-enduro-udh-0.png",
+    "kind": "references",
+    "bytes": 3600948,
+    "sha256": "5d57a205e37e89554c7d6dfe09591b2a3121ba974e4048db08e57c4465372df3"
+  },
+  {
+    "from": "models/catalog-v23/references/specialized-s-works-enduro-udh-1.png",
+    "to": "models/local/references/catalog-v23/specialized-s-works-enduro-udh-1.png",
+    "kind": "references",
+    "bytes": 2666841,
+    "sha256": "7e96ecb11c1a909f15b9d9569d9df0616b16055ab1894a19bd1d36fb11332128"
+  },
+  {
+    "from": "models/catalog-v23/references/specialized-s-works-enduro-udh-2.png",
+    "to": "models/local/references/catalog-v23/specialized-s-works-enduro-udh-2.png",
+    "kind": "references",
+    "bytes": 2646933,
+    "sha256": "00ed2b756b47836a043942916e5dbd14c5ab93c21ba6365099bd4ec122fa1cd2"
+  },
+  {
+    "from": "models/catalog-v23/transition.json",
+    "to": "models/local/validation/catalog-v23/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "8bf295952fbe70e1b9572afe5e084c559a893737f19f1d6ebed39df406d2288f"
+  },
+  {
+    "from": "models/catalog-v24/bore-review.json",
+    "to": "models/local/validation/catalog-v24/bore-review.json",
+    "kind": "validation",
+    "bytes": 3158,
+    "sha256": "bbf0683c47f20472ff027d336afb85f3ff2a15fc026f5f0f75abfc972f362dde"
+  },
+  {
+    "from": "models/catalog-v24/card-review.json",
+    "to": "models/local/validation/catalog-v24/card-review.json",
+    "kind": "validation",
+    "bytes": 406,
+    "sha256": "a5b1fb52c792e4d1f9d2c617dff44cc2db56dd23b45e5b8d5618828988e5070a"
+  },
+  {
+    "from": "models/catalog-v24/cloud-after.json",
+    "to": "models/local/validation/catalog-v24/cloud-after.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "3270506e119230d57decec6aee379ebc3f5de80ce38dd9d28c4950c5a3cfd2b3"
+  },
+  {
+    "from": "models/catalog-v24/cloud-before.json",
+    "to": "models/local/validation/catalog-v24/cloud-before.json",
+    "kind": "validation",
+    "bytes": 472,
+    "sha256": "b3e411d7377881132b69d1c56b300ddfb3eac631d1f6c816872301d603a11e8a"
+  },
+  {
+    "from": "models/catalog-v24/detail-review.json",
+    "to": "models/local/validation/catalog-v24/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "0bc5122e1391a74bdc73dc2808b6d8369f454f02fb494b3651e55ad3ae3d60d1"
+  },
+  {
+    "from": "models/catalog-v24/general-review.json",
+    "to": "models/local/validation/catalog-v24/general-review.json",
+    "kind": "validation",
+    "bytes": 4374,
+    "sha256": "2d64d15c4feda30711f738e9b09b3ec24fb1a56e4ac0ec17763591ef3c35f147"
+  },
+  {
+    "from": "models/catalog-v24/inspection.json",
+    "to": "models/local/validation/catalog-v24/inspection.json",
+    "kind": "validation",
+    "bytes": 1714,
+    "sha256": "6d415185aa228c850a2f3661a4d5b3b3fe5b05978f6d55d68959b4d7eb93d1ca"
+  },
+  {
+    "from": "models/catalog-v24/motion-review.json",
+    "to": "models/local/validation/catalog-v24/motion-review.json",
+    "kind": "validation",
+    "bytes": 19827,
+    "sha256": "7a8e715c039ed4cd039522cee2384b8bbf4d9fdedcd83c2465c4b19f23a6b254"
+  },
+  {
+    "from": "models/catalog-v24/overlay-review.json",
+    "to": "models/local/validation/catalog-v24/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1709,
+    "sha256": "a47852b0059e54e03b75635a482927e0a4254fff228b4c02fa71a1990490ed17"
+  },
+  {
+    "from": "models/catalog-v24/references/official-00.jpg",
+    "to": "models/local/references/catalog-v24/official-00.jpg",
+    "kind": "references",
+    "bytes": 10757961,
+    "sha256": "4b2d492d296f5664976b9bf7195480f2b3973adab2724bd8278b10282a86fe1b"
+  },
+  {
+    "from": "models/catalog-v24/references/official-01.jpg",
+    "to": "models/local/references/catalog-v24/official-01.jpg",
+    "kind": "references",
+    "bytes": 9326544,
+    "sha256": "be80fc13bc129ab90ddb95f8967c4fb0ec0e24afeb0f99f6faa522ca0791a60f"
+  },
+  {
+    "from": "models/catalog-v24/references/official-02.jpg",
+    "to": "models/local/references/catalog-v24/official-02.jpg",
+    "kind": "references",
+    "bytes": 18773792,
+    "sha256": "3ad44632ece05a06e5695e7e044794dd7fc49d206c4ce388c1d8605fe069de41"
+  },
+  {
+    "from": "models/catalog-v24/references/official-03.jpg",
+    "to": "models/local/references/catalog-v24/official-03.jpg",
+    "kind": "references",
+    "bytes": 10583906,
+    "sha256": "47a594ea07cd266f50cf8e71d7c66907918d195246b541e0bfc365008607e3ad"
+  },
+  {
+    "from": "models/catalog-v24/references/official-04.jpg",
+    "to": "models/local/references/catalog-v24/official-04.jpg",
+    "kind": "references",
+    "bytes": 14174659,
+    "sha256": "3bb69bf24d6247256dafbba5c6ad5463dd9f152f1ce7d22317d743067d625dd4"
+  },
+  {
+    "from": "models/catalog-v24/references/official-05.jpg",
+    "to": "models/local/references/catalog-v24/official-05.jpg",
+    "kind": "references",
+    "bytes": 9334601,
+    "sha256": "aca5bdda693a8da5ba80b0013b556aa3cb849e7b676498654762b0244ebbee26"
+  },
+  {
+    "from": "models/catalog-v24/references/official-06.jpg",
+    "to": "models/local/references/catalog-v24/official-06.jpg",
+    "kind": "references",
+    "bytes": 9179749,
+    "sha256": "ce1760b18a1aecf61dd1dbe29fd260612c0282ae1b4bbf52247a5aea03a3a936"
+  },
+  {
+    "from": "models/catalog-v24/references/official-07.jpg",
+    "to": "models/local/references/catalog-v24/official-07.jpg",
+    "kind": "references",
+    "bytes": 9756364,
+    "sha256": "9779af457efa63d6394571160ad9c0c4201fa4683258823078b4ac376a935e78"
+  },
+  {
+    "from": "models/catalog-v24/references/official-08.jpg",
+    "to": "models/local/references/catalog-v24/official-08.jpg",
+    "kind": "references",
+    "bytes": 11090647,
+    "sha256": "8378b9649f9122872ac524faf6c4e476307a1db76a69c25c5c2516941b44da24"
+  },
+  {
+    "from": "models/catalog-v24/references/official-09.jpg",
+    "to": "models/local/references/catalog-v24/official-09.jpg",
+    "kind": "references",
+    "bytes": 11619981,
+    "sha256": "9b77e0b8eae6412ee3a5c17129895b8e1828a25a9d3d84900ae3d692a1ff11a3"
+  },
+  {
+    "from": "models/catalog-v24/references/prior-card-generation-2021.webp",
+    "to": "models/local/references/catalog-v24/prior-card-generation-2021.webp",
+    "kind": "references",
+    "bytes": 48578,
+    "sha256": "0e24d2ef7ddcfef270d4766f30f8f0603f9191df4b87931791742550fccbec44"
+  },
+  {
+    "from": "models/catalog-v24/references/retired-card-render-v24.webp",
+    "to": "models/local/references/catalog-v24/retired-card-render-v24.webp",
+    "kind": "references",
+    "bytes": 30484,
+    "sha256": "462ce894776c58803e9c19ac95a448b4556de9016685d7dc0cbeae79eab0b5be"
+  },
+  {
+    "from": "models/catalog-v24/references/side-registration.jpg",
+    "to": "models/local/references/catalog-v24/side-registration.jpg",
+    "kind": "references",
+    "bytes": 654133,
+    "sha256": "2b92e9a75fdbcf58c9d8d94a764ab9d96b04bd594cfbb08c31b14d4bc037759c"
+  },
+  {
+    "from": "models/catalog-v24/transition.json",
+    "to": "models/local/validation/catalog-v24/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "e8e2af6a65695302c6e0df3661925d640fa19cca76e273fb969bfc80465c005e"
+  },
+  {
+    "from": "models/catalog-v25/bore-review.json",
+    "to": "models/local/validation/catalog-v25/bore-review.json",
+    "kind": "validation",
+    "bytes": 3149,
+    "sha256": "54226ea297d76d782bfa641d9d97335792e8f012fa6cfae1b9c32f254a61b636"
+  },
+  {
+    "from": "models/catalog-v25/cloud-after.json",
+    "to": "models/local/validation/catalog-v25/cloud-after.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "1b3ea459a25ad6ee3e1edc0d1bfd564a4d5f1fb05433a2780f533fc8fd9c9aee"
+  },
+  {
+    "from": "models/catalog-v25/cloud-before.json",
+    "to": "models/local/validation/catalog-v25/cloud-before.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "001e37592f0339ba2b9fe0e387799159d6bc7f6d8da1a54cb16197c4345bbb8c"
+  },
+  {
+    "from": "models/catalog-v25/detail-review.json",
+    "to": "models/local/validation/catalog-v25/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "e75868453a6cc53e89c164634cc0756855021a0a9d2794db760e6a2379a5e9a0"
+  },
+  {
+    "from": "models/catalog-v25/general-review.json",
+    "to": "models/local/validation/catalog-v25/general-review.json",
+    "kind": "validation",
+    "bytes": 4248,
+    "sha256": "e4383c88d3937f6e2de507935044f41848d443b99ce433105f9acbf25d54f718"
+  },
+  {
+    "from": "models/catalog-v25/inspection.json",
+    "to": "models/local/validation/catalog-v25/inspection.json",
+    "kind": "validation",
+    "bytes": 1718,
+    "sha256": "4fbb87e92c612c5016f21557e720d4b46dc990635995642de8ba1acb69d107e1"
+  },
+  {
+    "from": "models/catalog-v25/motion-review.json",
+    "to": "models/local/validation/catalog-v25/motion-review.json",
+    "kind": "validation",
+    "bytes": 21065,
+    "sha256": "1cb5233037b59e0a94ba13f9ca6b2df4105ffaa12a2d61bba492a9f1dcec76bc"
+  },
+  {
+    "from": "models/catalog-v25/overlay-review.json",
+    "to": "models/local/validation/catalog-v25/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1696,
+    "sha256": "5afc40a8dfba366f543b5578f3fa63d9865f4e6e059e69f2706dac9e5da2fe14"
+  },
+  {
+    "from": "models/catalog-v25/passage-review.json",
+    "to": "models/local/validation/catalog-v25/passage-review.json",
+    "kind": "validation",
+    "bytes": 6157,
+    "sha256": "018b4834ba0aa50f3a51332bcb3a3e66505d7e6b09b5ba39370fd8351c22ac98"
+  },
+  {
+    "from": "models/catalog-v25/preservation.json",
+    "to": "models/local/validation/catalog-v25/preservation.json",
+    "kind": "validation",
+    "bytes": 5925,
+    "sha256": "ba9dc84f978b5ceff4c20e7a84b2e77675925eafc3976cc8642b09be6f14980d"
+  },
+  {
+    "from": "models/catalog-v25/references/FT3SUPV54_01.jpg",
+    "to": "models/local/references/catalog-v25/FT3SUPV54_01.jpg",
+    "kind": "references",
+    "bytes": 103349,
+    "sha256": "521a2d1854ace779e0afac609989809ab7161fe3c41e65919c490ef1b962d927"
+  },
+  {
+    "from": "models/catalog-v25/references/FT3SUPV54.jpg",
+    "to": "models/local/references/catalog-v25/FT3SUPV54.jpg",
+    "kind": "references",
+    "bytes": 168498,
+    "sha256": "cfad337cd6ff5fcf88552606f3db8e4373c77962e337bdf89db9f53b6c52a211"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-bridge-sampled.jpg",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-bridge-sampled.jpg",
+    "kind": "references",
+    "bytes": 176002,
+    "sha256": "8105bd7d6ce5ef6f3859a7bfa56dc30f5a9ed47f95f0e4dd8b55046ed0e86d8d"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-bridge.mp4",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-bridge.mp4",
+    "kind": "references",
+    "bytes": 553560,
+    "sha256": "879888258d316f380005009951ceb391063f1b2fa310364d14064df8c63faf9c"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-cinematique1-web-sampled.jpg",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-cinematique1-web-sampled.jpg",
+    "kind": "references",
+    "bytes": 59036,
+    "sha256": "ad8641c30c042eda35e9f0f3af5d7e7e55a30024755d1f8a4756d0893f7f5c8a"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-cinematique1-web.mp4",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-cinematique1-web.mp4",
+    "kind": "references",
+    "bytes": 379990,
+    "sha256": "70adfc0bd92f1ba5672e925f524eeef04de097261ea2b9a99acdc832788d1d39"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-cinematique2-web-sampled.jpg",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-cinematique2-web-sampled.jpg",
+    "kind": "references",
+    "bytes": 132878,
+    "sha256": "9033d30ac4e6678e7fddf6bc0e7ff0398ba51b387680af9c4113fe702ad72ea0"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-cinematique2-web.mp4",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-cinematique2-web.mp4",
+    "kind": "references",
+    "bytes": 7810127,
+    "sha256": "fa6422f4afc3184decaa985e26082ab5ceb87e9b6d1c84e0ce9d786b5a9dd29b"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-flipchip-sampled.jpg",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-flipchip-sampled.jpg",
+    "kind": "references",
+    "bytes": 169596,
+    "sha256": "28a685c6ed2ad0cf044bfe00f3f7fa185b4b4839284ba2f71495bc11d2b1226c"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-flipchip.mp4",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-flipchip.mp4",
+    "kind": "references",
+    "bytes": 1417764,
+    "sha256": "b4817a40a32b1e2111845f91ce9d53148440548a65bcf3ad0332b25e870f505e"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-stays-sampled.jpg",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-stays-sampled.jpg",
+    "kind": "references",
+    "bytes": 155082,
+    "sha256": "d3fa655df82cd294a306f2ad8a4273324890b3f9ac874340e19c9834f2e59b9e"
+  },
+  {
+    "from": "models/catalog-v25/references/landing-supremedhv5-stays.mp4",
+    "to": "models/local/references/catalog-v25/landing-supremedhv5-stays.mp4",
+    "kind": "references",
+    "bytes": 688582,
+    "sha256": "fe5fa19c573c96b4c2e257658b057a48fe6e267788ea7552985b63327f90bf48"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-6bar-link.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-6bar-link.jpg",
+    "kind": "references",
+    "bytes": 123054,
+    "sha256": "73bec309c5dd371bbc0b848505b8eec3c11a8a552c2f7252795d1949cdb02abf"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-assembly-full.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-assembly-full.jpg",
+    "kind": "references",
+    "bytes": 168324,
+    "sha256": "aa04b00af9e1ef6aad10410dfebbc791674c4d74a6b301424d2c3469536043f1"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-chain-stays.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-chain-stays.jpg",
+    "kind": "references",
+    "bytes": 171877,
+    "sha256": "aa09093796ee64c66a7cc31e2d33be6b055c0f53d94222d3311b13aceaa3b014"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-front-triangle.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-front-triangle.jpg",
+    "kind": "references",
+    "bytes": 259925,
+    "sha256": "f9a6542b31e53bd3be499b99ebb8bf68c6947ad043fb011b9e00e5610b087f35"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-lower-link.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-lower-link.jpg",
+    "kind": "references",
+    "bytes": 133330,
+    "sha256": "a1d2326ff7f0efb8140a4605a73a6821c1bdf286076e73d3fc81d9c185483a01"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-protectors1.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-protectors1.jpg",
+    "kind": "references",
+    "bytes": 237310,
+    "sha256": "6bd4a5c45fa0d9be29cf41c479784f8a678439422dd0f3925403f79402ee96b9"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-protectors2.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-protectors2.jpg",
+    "kind": "references",
+    "bytes": 242811,
+    "sha256": "7bb0b7df043c1d6c5db2a23c00ed4bb848bea5ba18e50ecb57027ca5cf3a6f7f"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-protectors3.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-protectors3.jpg",
+    "kind": "references",
+    "bytes": 280034,
+    "sha256": "d27b9689666a46e7cd8dbfd4302a72421eb574ef73edd4d7aa27be6a20c639e4"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-protectors4.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-protectors4.jpg",
+    "kind": "references",
+    "bytes": 64505,
+    "sha256": "c0c907bc4d2d862db6722f7981e626d3441bf5b8a6fc889014e184342c486892"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-protectors5.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-protectors5.jpg",
+    "kind": "references",
+    "bytes": 191137,
+    "sha256": "792b723177d30eea574c21bacafd26ba59ce9d4562c901019eff611b30cf82e8"
+  },
+  {
+    "from": "models/catalog-v25/references/supreme-dh-v5-reglages.jpg",
+    "to": "models/local/references/catalog-v25/supreme-dh-v5-reglages.jpg",
+    "kind": "references",
+    "bytes": 92101,
+    "sha256": "b5c01a53ca8888061fb6b8109f12a8b609d7422bdf0329a43fa8e9e1bc8931dd"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-routing-brake.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-routing-brake.jpg",
+    "kind": "references",
+    "bytes": 86955,
+    "sha256": "e63542fb125f070731f2fecbee8b2e58b832641ff88b70970f35e16f1b246684"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-routing-derailleur.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-routing-derailleur.jpg",
+    "kind": "references",
+    "bytes": 89692,
+    "sha256": "46584048c5cde86ec5009567ed95db2f6fb4c8e5f25054c7030a764b8409426c"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-seat-stays.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-seat-stays.jpg",
+    "kind": "references",
+    "bytes": 207841,
+    "sha256": "3070558fcd76a25a685c9a95a8c2f930f88769b5506d29389588b1cc733a5cbb"
+  },
+  {
+    "from": "models/catalog-v25/references/SUPREME-DH-V5-upper-link.jpg",
+    "to": "models/local/references/catalog-v25/SUPREME-DH-V5-upper-link.jpg",
+    "kind": "references",
+    "bytes": 130326,
+    "sha256": "ec7be30e31d061e23a998bba136675dd7f43eadbd7fb757c1de35053c0da27f1"
+  },
+  {
+    "from": "models/catalog-v25/transition.json",
+    "to": "models/local/validation/catalog-v25/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "7597528b714c9115e959ebdbe428b2f807d3c1ce0a68e858db234f529709b266"
+  },
+  {
+    "from": "models/catalog-v26/bore-review.json",
+    "to": "models/local/validation/catalog-v26/bore-review.json",
+    "kind": "validation",
+    "bytes": 3139,
+    "sha256": "cc2418725c6aee88a87e8b5e6e7e0e6f81a933939022eb0ff897e1457b686a5d"
+  },
+  {
+    "from": "models/catalog-v26/cloud-after.json",
+    "to": "models/local/validation/catalog-v26/cloud-after.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "f3258f01a8a66988985804ad860a4027826998b1cfa397a023fb3fb0cdcaba1c"
+  },
+  {
+    "from": "models/catalog-v26/cloud-before.json",
+    "to": "models/local/validation/catalog-v26/cloud-before.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "0550d4b108359be30338a7405cccf7ce7c664aa261970a958ec1b2154d503501"
+  },
+  {
+    "from": "models/catalog-v26/detail-review.json",
+    "to": "models/local/validation/catalog-v26/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "0c7457d70698f3e4f3f297c91caa3517826dcb30bbea049f0e19838fdddbe26e"
+  },
+  {
+    "from": "models/catalog-v26/general-review.json",
+    "to": "models/local/validation/catalog-v26/general-review.json",
+    "kind": "validation",
+    "bytes": 4101,
+    "sha256": "82f6ba2feffa57323ccec18b7ece5dd7b4ca4b80f831cc0825137d058ded6055"
+  },
+  {
+    "from": "models/catalog-v26/inspection.json",
+    "to": "models/local/validation/catalog-v26/inspection.json",
+    "kind": "validation",
+    "bytes": 1717,
+    "sha256": "38fdbc5ada904f6c171fef6eb50311a18cae24fc449c33fb09d7ab419cd819a7"
+  },
+  {
+    "from": "models/catalog-v26/motion-review.json",
+    "to": "models/local/validation/catalog-v26/motion-review.json",
+    "kind": "validation",
+    "bytes": 18970,
+    "sha256": "9195d8dec24d1d5373dd28bbce230a6c8c6e88a8d873cb493809bb995f17ec42"
+  },
+  {
+    "from": "models/catalog-v26/overlay-review.json",
+    "to": "models/local/validation/catalog-v26/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1798,
+    "sha256": "75fc0b993bc359905a542656c30f36fa4267ec45293d829e1b105822f19bdcc7"
+  },
+  {
+    "from": "models/catalog-v26/passage-review.json",
+    "to": "models/local/validation/catalog-v26/passage-review.json",
+    "kind": "validation",
+    "bytes": 6157,
+    "sha256": "b0c0bc6a71db3dc2b581b808e58c59e8e70ab09f51235b95a5fdf1fc37a84035"
+  },
+  {
+    "from": "models/catalog-v26/preservation.json",
+    "to": "models/local/validation/catalog-v26/preservation.json",
+    "kind": "validation",
+    "bytes": 5173,
+    "sha256": "70df9b3d2605eee22e03c868ee361e46b81fc68979a716874ca5d481a3c338c4"
+  },
+  {
+    "from": "models/catalog-v26/references/manual.pdf",
+    "to": "models/local/references/catalog-v26/manual.pdf",
+    "kind": "references",
+    "bytes": 9076703,
+    "sha256": "fd3ce5a27ce4396ebf663b85835ed6047b13b7c71fc161debd5a113fc607ff2e"
+  },
+  {
+    "from": "models/catalog-v26/references/workshop-180.jpg",
+    "to": "models/local/references/catalog-v26/workshop-180.jpg",
+    "kind": "references",
+    "bytes": 52391,
+    "sha256": "8eef35e9ce772128c5a87d355d26d9d3e876bc8e48c96596a554ae6ed5f89153"
+  },
+  {
+    "from": "models/catalog-v26/references/workshop-280.jpg",
+    "to": "models/local/references/catalog-v26/workshop-280.jpg",
+    "kind": "references",
+    "bytes": 23173,
+    "sha256": "035f2b4b8b868f047ea02ae9d38db14b4f1bf980eb2532426c125711c339f517"
+  },
+  {
+    "from": "models/catalog-v26/references/workshop-340.jpg",
+    "to": "models/local/references/catalog-v26/workshop-340.jpg",
+    "kind": "references",
+    "bytes": 18763,
+    "sha256": "814868c34e06df81f643300c3ee43030f4eb7114b606c82d5f42b460a00bb8fb"
+  },
+  {
+    "from": "models/catalog-v26/references/workshop-40.jpg",
+    "to": "models/local/references/catalog-v26/workshop-40.jpg",
+    "kind": "references",
+    "bytes": 22562,
+    "sha256": "04d9d8557af7596c9b2bb3eabea6ea6b5c1a1e1ff5c63d887381cfaf65e7c81e"
+  },
+  {
+    "from": "models/catalog-v26/references/workshop-400.jpg",
+    "to": "models/local/references/catalog-v26/workshop-400.jpg",
+    "kind": "references",
+    "bytes": 50391,
+    "sha256": "479cbcccc24fe0d74dcbd9b5e516a21dbe7d024a020959b3c42b0b7bb32b7cac"
+  },
+  {
+    "from": "models/catalog-v26/references/workshop-470.jpg",
+    "to": "models/local/references/catalog-v26/workshop-470.jpg",
+    "kind": "references",
+    "bytes": 19296,
+    "sha256": "63d3b17640bf7d40663c50c76485629d1ff3ed41cb7ea8786615b1bd5b95e650"
+  },
+  {
+    "from": "models/catalog-v26/references/workshop-contact.jpg",
+    "to": "models/local/references/catalog-v26/workshop-contact.jpg",
+    "kind": "references",
+    "bytes": 276137,
+    "sha256": "ff5f560e97d2cb74c840b69991b10fde7c921caa60caacf298e007aa3fb6d87a"
+  },
+  {
+    "from": "models/catalog-v26/transition.json",
+    "to": "models/local/validation/catalog-v26/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "1fca9cfaff68a33df7127bd7d1c39695fc782ab22b666ca9efa8320065bc2249"
+  },
+  {
+    "from": "models/catalog-v27/bore-review.json",
+    "to": "models/local/validation/catalog-v27/bore-review.json",
+    "kind": "validation",
+    "bytes": 3101,
+    "sha256": "ebf9c863f8c5e14e79b1792bfcfd65449d99d7f4885ff514c45ad33897f0374b"
+  },
+  {
+    "from": "models/catalog-v27/cloud-after.json",
+    "to": "models/local/validation/catalog-v27/cloud-after.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "351779e69be758e809c8160664560c20c4c84eaf305f3aab20a7747c796c728b"
+  },
+  {
+    "from": "models/catalog-v27/cloud-before.json",
+    "to": "models/local/validation/catalog-v27/cloud-before.json",
+    "kind": "validation",
+    "bytes": 508,
+    "sha256": "7e745c9c405cf7337669388a8066672f9ff280b4d51814a046898f87c1cffb2a"
+  },
+  {
+    "from": "models/catalog-v27/detail-review.json",
+    "to": "models/local/validation/catalog-v27/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "ec46053dbb4a8e21cdbc1c7a68390b58cab1bc59c978e97e3da5e13b633de7e8"
+  },
+  {
+    "from": "models/catalog-v27/general-review.json",
+    "to": "models/local/validation/catalog-v27/general-review.json",
+    "kind": "validation",
+    "bytes": 4101,
+    "sha256": "e07e78b56e01d81530e1ecf9f237e9da4b7df3e177e29014767866b10841ea2e"
+  },
+  {
+    "from": "models/catalog-v27/inspection.json",
+    "to": "models/local/validation/catalog-v27/inspection.json",
+    "kind": "validation",
+    "bytes": 1717,
+    "sha256": "6788641b643c5efd047ce9591e667890b661b04b9ccb9227b3b17c94e8183716"
+  },
+  {
+    "from": "models/catalog-v27/motion-review.json",
+    "to": "models/local/validation/catalog-v27/motion-review.json",
+    "kind": "validation",
+    "bytes": 18970,
+    "sha256": "9195d8dec24d1d5373dd28bbce230a6c8c6e88a8d873cb493809bb995f17ec42"
+  },
+  {
+    "from": "models/catalog-v27/overlay-review.json",
+    "to": "models/local/validation/catalog-v27/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1798,
+    "sha256": "6f0ffa8682213a0567f48c766f7bd4b1609419c1ecbd85aa6e7bc158d1063b1d"
+  },
+  {
+    "from": "models/catalog-v27/passage-review.json",
+    "to": "models/local/validation/catalog-v27/passage-review.json",
+    "kind": "validation",
+    "bytes": 6157,
+    "sha256": "12bd6e443dcba48cbca3465ada0be8281496db26df83c5662b4bc779b0668316"
+  },
+  {
+    "from": "models/catalog-v27/preservation.json",
+    "to": "models/local/validation/catalog-v27/preservation.json",
+    "kind": "validation",
+    "bytes": 5195,
+    "sha256": "001bcc9705d48f2fb103b70f4f6830aed55d7f550f5a12707033b5456b91a0a9"
+  },
+  {
+    "from": "models/catalog-v27/transition.json",
+    "to": "models/local/validation/catalog-v27/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "59d4229ab6b0bd90433490b1a9e33966a2062ef35a3936080576d739c606541b"
+  },
+  {
+    "from": "models/catalog-v28/adversarial-review.json",
+    "to": "models/local/validation/catalog-v28/adversarial-review.json",
+    "kind": "validation",
+    "bytes": 2447,
+    "sha256": "e3d6884d7828601bc762f0018da761f954337424f271458eeef1be1e1726012b"
+  },
+  {
+    "from": "models/catalog-v28/bore-review.json",
+    "to": "models/local/validation/catalog-v28/bore-review.json",
+    "kind": "validation",
+    "bytes": 3136,
+    "sha256": "a6e98cefc1788992d44ef4db562b85723568381e11b685ef66e25b41f1459e1c"
+  },
+  {
+    "from": "models/catalog-v28/cloud-after.json",
+    "to": "models/local/validation/catalog-v28/cloud-after.json",
+    "kind": "validation",
+    "bytes": 517,
+    "sha256": "1a24e09413d976dadf80ca4861e92e3a4199c5dbf0fd9cea20b648f5d1cad5fb"
+  },
+  {
+    "from": "models/catalog-v28/cloud-before.json",
+    "to": "models/local/validation/catalog-v28/cloud-before.json",
+    "kind": "validation",
+    "bytes": 517,
+    "sha256": "546c8e63b3a7c0612607cfc041f20283ea61926e158461baa13aebc3f8954f0b"
+  },
+  {
+    "from": "models/catalog-v28/contour-review.json",
+    "to": "models/local/validation/catalog-v28/contour-review.json",
+    "kind": "validation",
+    "bytes": 38217,
+    "sha256": "cd3bb4c7d43b2308e9cbeff4383709b1922885962ebb874f45ce1dc6c6fb1b98"
+  },
+  {
+    "from": "models/catalog-v28/detail-review.json",
+    "to": "models/local/validation/catalog-v28/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "7d670e30f2f6579459c3c82e4c0e08211b51a21e210520c08d5ff70721ce8dd4"
+  },
+  {
+    "from": "models/catalog-v28/general-review.json",
+    "to": "models/local/validation/catalog-v28/general-review.json",
+    "kind": "validation",
+    "bytes": 4108,
+    "sha256": "7cf908e2a14d7df0af4a551af4922e14709d9088d79246d00d9cef147027e9b6"
+  },
+  {
+    "from": "models/catalog-v28/inspection.json",
+    "to": "models/local/validation/catalog-v28/inspection.json",
+    "kind": "validation",
+    "bytes": 1715,
+    "sha256": "f13c7e91ef22f57c79110b1b59f503216cbd403912ef1a656c077bdd6f3351f5"
+  },
+  {
+    "from": "models/catalog-v28/motion-review.json",
+    "to": "models/local/validation/catalog-v28/motion-review.json",
+    "kind": "validation",
+    "bytes": 19031,
+    "sha256": "fd161ea2b0f67a6e5d9fba4ed045c237d22df295a97b2c82c4f1ebf51db0d4ef"
+  },
+  {
+    "from": "models/catalog-v28/overlay-review.json",
+    "to": "models/local/validation/catalog-v28/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1762,
+    "sha256": "5c26d47edcdf48d26cd56efa8f4f86cd13565ee42a4462230235870f10f429a7"
+  },
+  {
+    "from": "models/catalog-v28/passage-review.json",
+    "to": "models/local/validation/catalog-v28/passage-review.json",
+    "kind": "validation",
+    "bytes": 6157,
+    "sha256": "776cc3606bb364456470fe79da8cef5a90be4ff77ea3947708d730b8b1869383"
+  },
+  {
+    "from": "models/catalog-v28/preservation.json",
+    "to": "models/local/validation/catalog-v28/preservation.json",
+    "kind": "validation",
+    "bytes": 5195,
+    "sha256": "208ae57f8c3ddf891263e2e76f45183716a4ac77395be0024fa88246ff25a8c2"
+  },
+  {
+    "from": "models/catalog-v28/transition.json",
+    "to": "models/local/validation/catalog-v28/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "00bfd754ef1501752692e4ba81f487b06008318b91d352c1ea727d801db1c16b"
+  },
+  {
+    "from": "models/catalog-v29/bore-review.json",
+    "to": "models/local/validation/catalog-v29/bore-review.json",
+    "kind": "validation",
+    "bytes": 3101,
+    "sha256": "2f9ab083dcc1a66dc0643cf16806e725bb485e3f26c7be7c4902c7d2d960083b"
+  },
+  {
+    "from": "models/catalog-v29/cloud-after.json",
+    "to": "models/local/validation/catalog-v29/cloud-after.json",
+    "kind": "validation",
+    "bytes": 517,
+    "sha256": "9ccccdf2eec4cc53b94324890f90d456a3fff3e07c8b3ead50d1b3cadc75ea12"
+  },
+  {
+    "from": "models/catalog-v29/cloud-before.json",
+    "to": "models/local/validation/catalog-v29/cloud-before.json",
+    "kind": "validation",
+    "bytes": 517,
+    "sha256": "0d95495623b2f2977b33d30dc01db96c5617d461d14ab840860ccff00d218efa"
+  },
+  {
+    "from": "models/catalog-v29/general-review.json",
+    "to": "models/local/validation/catalog-v29/general-review.json",
+    "kind": "validation",
+    "bytes": 4108,
+    "sha256": "6de1ff5fbbaed469fbf748137abfa1a0a25f3a00baeeb0651e950d944524a6ca"
+  },
+  {
+    "from": "models/catalog-v29/inspection.json",
+    "to": "models/local/validation/catalog-v29/inspection.json",
+    "kind": "validation",
+    "bytes": 1715,
+    "sha256": "143593cd18324fe15a925c1052e40d3ed61063cf4d15092bba41dccafb9fc33c"
+  },
+  {
+    "from": "models/catalog-v29/motion-review.json",
+    "to": "models/local/validation/catalog-v29/motion-review.json",
+    "kind": "validation",
+    "bytes": 19031,
+    "sha256": "fd161ea2b0f67a6e5d9fba4ed045c237d22df295a97b2c82c4f1ebf51db0d4ef"
+  },
+  {
+    "from": "models/catalog-v29/passage-review.json",
+    "to": "models/local/validation/catalog-v29/passage-review.json",
+    "kind": "validation",
+    "bytes": 6157,
+    "sha256": "fd874e72741dae08eb30e08430579993f0ad15b09808d381a39080d4a3991143"
+  },
+  {
+    "from": "models/catalog-v29/preservation.json",
+    "to": "models/local/validation/catalog-v29/preservation.json",
+    "kind": "validation",
+    "bytes": 5191,
+    "sha256": "4e52f768153c3ece900363f41870f37be6d52c478ba415601a621baf51a6b83d"
+  },
+  {
+    "from": "models/catalog-v29/sides-review.json",
+    "to": "models/local/validation/catalog-v29/sides-review.json",
+    "kind": "validation",
+    "bytes": 31570,
+    "sha256": "3a496babebeb91f9aff206fde9fc64d82d9454d66cc5ef91eeb8d30a58e0776c"
+  },
+  {
+    "from": "models/catalog-v29/transition.json",
+    "to": "models/local/validation/catalog-v29/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "a53ee835225773309a58c553db210a4e0785e5127681ff10195f54fa8e8421ee"
+  },
+  {
+    "from": "models/catalog-v30/bore-review.json",
+    "to": "models/local/validation/catalog-v30/bore-review.json",
+    "kind": "validation",
+    "bytes": 3144,
+    "sha256": "bdfa524850bcc2d35ec73191aac937965d3bf9bcef7063e5e290ec8a862d8888"
+  },
+  {
+    "from": "models/catalog-v30/cloud-after.json",
+    "to": "models/local/validation/catalog-v30/cloud-after.json",
+    "kind": "validation",
+    "bytes": 517,
+    "sha256": "6243772d286ba38d6ae7e9a465d507ad10d65cfd5ca076c3d9f76b510da5923a"
+  },
+  {
+    "from": "models/catalog-v30/cloud-before.json",
+    "to": "models/local/validation/catalog-v30/cloud-before.json",
+    "kind": "validation",
+    "bytes": 517,
+    "sha256": "ebcc052f72ec05bf4da332435fbc6f2caa3cfd91ef5423945ee36add081d8750"
+  },
+  {
+    "from": "models/catalog-v30/contour-review.json",
+    "to": "models/local/validation/catalog-v30/contour-review.json",
+    "kind": "validation",
+    "bytes": 38387,
+    "sha256": "b8c4bf4b2e178fcfcbc922450b070ea6343eac7ebb6283b307f89cd54e215174"
+  },
+  {
+    "from": "models/catalog-v30/detail-review.json",
+    "to": "models/local/validation/catalog-v30/detail-review.json",
+    "kind": "validation",
+    "bytes": 197,
+    "sha256": "0aa0b044b61914da3a6fc2a0285945e748bf12c22c4ce4f9ab324897bc3c24a7"
+  },
+  {
+    "from": "models/catalog-v30/evidence/motion.jpg",
+    "to": "models/local/captures/catalog-v30/motion.jpg",
+    "kind": "captures",
+    "bytes": 122155,
+    "sha256": "a1496a9e064f02050aae4d8a540a881622b5af79c5b0c822c486ffb7c4a10ccd"
+  },
+  {
+    "from": "models/catalog-v30/evidence/overlay-m.jpg",
+    "to": "models/local/captures/catalog-v30/overlay-m.jpg",
+    "kind": "captures",
+    "bytes": 72399,
+    "sha256": "de436c0d651fef72676312ee6d4ded5fd914588df7088447ee1616ba375a5862"
+  },
+  {
+    "from": "models/catalog-v30/evidence/views.jpg",
+    "to": "models/local/captures/catalog-v30/views.jpg",
+    "kind": "captures",
+    "bytes": 140330,
+    "sha256": "14e981d373f366fdc47fd53855ccfecfc63b0a14379adba3d7fbe7e7b737a8e9"
+  },
+  {
+    "from": "models/catalog-v30/inspection.json",
+    "to": "models/local/validation/catalog-v30/inspection.json",
+    "kind": "validation",
+    "bytes": 1711,
+    "sha256": "95d7f9c09f36e466913a3c3415b307cc7305fc20a66aa20461567fe735c55093"
+  },
+  {
+    "from": "models/catalog-v30/motion-review.json",
+    "to": "models/local/validation/catalog-v30/motion-review.json",
+    "kind": "validation",
+    "bytes": 19019,
+    "sha256": "355dceaa7ce946e5c07fab732b099fb92e5a648598459da1c80dd35b568d4a7b"
+  },
+  {
+    "from": "models/catalog-v30/overlay-review.json",
+    "to": "models/local/validation/catalog-v30/overlay-review.json",
+    "kind": "validation",
+    "bytes": 1703,
+    "sha256": "c7307787a03a9b33b85a576c2a0067cdd812b109f3b22e472d11943463e70b73"
+  },
+  {
+    "from": "models/catalog-v30/passage-review.json",
+    "to": "models/local/validation/catalog-v30/passage-review.json",
+    "kind": "validation",
+    "bytes": 6157,
+    "sha256": "7da1338f0d2e0c8fceb1622928d1fd7aa6516a6d99e6b62bc0609b91289fd178"
+  },
+  {
+    "from": "models/catalog-v30/preservation.json",
+    "to": "models/local/validation/catalog-v30/preservation.json",
+    "kind": "validation",
+    "bytes": 5869,
+    "sha256": "58331227f25310314d931e3a198706bfc4eef66aad09e0f3a24eabca050fccf7"
+  },
+  {
+    "from": "models/catalog-v30/references/detail-0.png",
+    "to": "models/local/references/catalog-v30/detail-0.png",
+    "kind": "references",
+    "bytes": 2487435,
+    "sha256": "8091be5c6d3492881276314d7b59c63d0d1a6a7f232010f3526103cc96a6e195"
+  },
+  {
+    "from": "models/catalog-v30/references/detail-1.jpg",
+    "to": "models/local/references/catalog-v30/detail-1.jpg",
+    "kind": "references",
+    "bytes": 939223,
+    "sha256": "e330f7a80503aeb4cac0b8bd7a782b2b11ed278fce32146c087aac4181f213a2"
+  },
+  {
+    "from": "models/catalog-v30/references/detail-2.jpg",
+    "to": "models/local/references/catalog-v30/detail-2.jpg",
+    "kind": "references",
+    "bytes": 183540,
+    "sha256": "b0a0ac5a3bf3079af2b2eb7929e8d86da4797946cf6d22b164f63c3c4b532e38"
+  },
+  {
+    "from": "models/catalog-v30/references/detail-3.jpg",
+    "to": "models/local/references/catalog-v30/detail-3.jpg",
+    "kind": "references",
+    "bytes": 221031,
+    "sha256": "bc5235ca01011fd5f9fbd091ef674032ec716108fba88d11da703e095885f221"
+  },
+  {
+    "from": "models/catalog-v30/references/frame-blue.png",
+    "to": "models/local/references/catalog-v30/frame-blue.png",
+    "kind": "references",
+    "bytes": 2248670,
+    "sha256": "b45fc9e30ccac7c7efdfe2f5b193c37a7b7f43d1be2c2d871db4e0d0a56b371a"
+  },
+  {
+    "from": "models/catalog-v30/sides-review.json",
+    "to": "models/local/validation/catalog-v30/sides-review.json",
+    "kind": "validation",
+    "bytes": 30804,
+    "sha256": "acc36ebd918474cb482bfe7ee1f470e2a982a3259162eb3a4841ac23ee9acb73"
+  },
+  {
+    "from": "models/catalog-v30/transition.json",
+    "to": "models/local/validation/catalog-v30/transition.json",
+    "kind": "validation",
+    "bytes": 118,
+    "sha256": "b834d1ccd61503639d29bcef87f5bb8da6a01ba5801bb8b966f2b89ccb553a46"
+  },
+  {
+    "from": "models/catalog-v30/views-review.json",
+    "to": "models/local/validation/catalog-v30/views-review.json",
+    "kind": "validation",
+    "bytes": 4185,
+    "sha256": "1fe6339f93d0bfcfee9e8af230db4d26990786ce9a9f26f23876a9d60eef8777"
+  },
+  {
+    "from": "models/catalog-v5/exports/canyon-sender-cfr-high-pivot--l.blend",
+    "to": "models/local/experiments/catalog-v5/exports/canyon-sender-cfr-high-pivot--l.blend",
+    "kind": "experiments",
+    "bytes": 948033,
+    "sha256": "681ae8d6fb5092a3d5a4969f4b158628c6687427c653e1d2452ac3883d1b7a1f"
+  },
+  {
+    "from": "models/catalog-v5/exports/canyon-sender-cfr-high-pivot--m.blend",
+    "to": "models/local/experiments/catalog-v5/exports/canyon-sender-cfr-high-pivot--m.blend",
+    "kind": "experiments",
+    "bytes": 939817,
+    "sha256": "7f49fb89a355626e56b240ce3f8f50d094133653ae457208e524179a5d395aca"
+  },
+  {
+    "from": "models/catalog-v5/exports/commencal-meta-sx-v5--l.blend",
+    "to": "models/local/experiments/catalog-v5/exports/commencal-meta-sx-v5--l.blend",
+    "kind": "experiments",
+    "bytes": 681631,
+    "sha256": "0ccc0d4570e1a5d3ab52b7438fbb7a07ced39def95ba52ebe0f9cfbc377f4f3f"
+  },
+  {
+    "from": "models/catalog-v5/exports/commencal-meta-sx-v5--m.blend",
+    "to": "models/local/experiments/catalog-v5/exports/commencal-meta-sx-v5--m.blend",
+    "kind": "experiments",
+    "bytes": 673415,
+    "sha256": "bc45907ea3c7f7c022a6bb65dabc9a638133b73e5b586909ec9c14d253156d07"
+  },
+  {
+    "from": "models/catalog-v5/exports/commencal-supreme-dh-v5--l.blend",
+    "to": "models/local/experiments/catalog-v5/exports/commencal-supreme-dh-v5--l.blend",
+    "kind": "experiments",
+    "bytes": 949710,
+    "sha256": "69531de71344f2a16bc52cbf980c7832228a1374b30de3e82322e54591057063"
+  },
+  {
+    "from": "models/catalog-v5/exports/commencal-supreme-dh-v5--m.blend",
+    "to": "models/local/experiments/catalog-v5/exports/commencal-supreme-dh-v5--m.blend",
+    "kind": "experiments",
+    "bytes": 941494,
+    "sha256": "0bdf2344fc896313dab722984e9dbd50470c6046271d6e32cc3eeb7537ca05b7"
+  },
+  {
+    "from": "models/catalog-v5/exports/da-bomb-cherry-bomb-29--17in.blend",
+    "to": "models/local/experiments/catalog-v5/exports/da-bomb-cherry-bomb-29--17in.blend",
+    "kind": "experiments",
+    "bytes": 863826,
+    "sha256": "7537d464378bb57ab3efa99690423526f166e971d289b371b74890f66a80771c"
+  },
+  {
+    "from": "models/catalog-v5/exports/da-bomb-cherry-bomb-29--19in.blend",
+    "to": "models/local/experiments/catalog-v5/exports/da-bomb-cherry-bomb-29--19in.blend",
+    "kind": "experiments",
+    "bytes": 872042,
+    "sha256": "d718b833a4932afdb833b72b081872ad1a620a848561c69c85073aab2ef3643f"
+  },
+  {
+    "from": "models/catalog-v5/exports/fox-38-factory-my27.blend",
+    "to": "models/local/experiments/catalog-v5/exports/fox-38-factory-my27.blend",
+    "kind": "experiments",
+    "bytes": 814742,
+    "sha256": "708a06bf7d7447716874fe2b1c6720cb5eecd0dbbfa0385957d06849234c7a55"
+  },
+  {
+    "from": "models/catalog-v5/exports/fox-40-factory-my27.blend",
+    "to": "models/local/experiments/catalog-v5/exports/fox-40-factory-my27.blend",
+    "kind": "experiments",
+    "bytes": 893669,
+    "sha256": "e33ad4cc7eff7dbb4b1ee7246ea113abda34a7ad237cab8db9e6aa6ba8362cd9"
+  },
+  {
+    "from": "models/catalog-v5/exports/fox-float-x2-factory-my26.blend",
+    "to": "models/local/experiments/catalog-v5/exports/fox-float-x2-factory-my26.blend",
+    "kind": "experiments",
+    "bytes": 811481,
+    "sha256": "81cde49f157f28f0ef0977bf5bb3767da707cfc86c5e78980f75b64256c42b56"
+  },
+  {
+    "from": "models/catalog-v5/exports/marzocchi-bomber-cr.blend",
+    "to": "models/local/experiments/catalog-v5/exports/marzocchi-bomber-cr.blend",
+    "kind": "experiments",
+    "bytes": 1099063,
+    "sha256": "0c99be8452a46699cf20fdf3cbf0a5946ec45d9e4cc098c29ca0e67334e6bcde"
+  },
+  {
+    "from": "models/catalog-v5/exports/marzocchi-bomber-z1-rail.blend",
+    "to": "models/local/experiments/catalog-v5/exports/marzocchi-bomber-z1-rail.blend",
+    "kind": "experiments",
+    "bytes": 854208,
+    "sha256": "a8c0ac01bcfc4b05e31ea020a019c0d0886cbffdf17dd686bf76882c39b35d34"
+  },
+  {
+    "from": "models/catalog-v5/exports/ohlins-rxf38-m3.blend",
+    "to": "models/local/experiments/catalog-v5/exports/ohlins-rxf38-m3.blend",
+    "kind": "experiments",
+    "bytes": 814742,
+    "sha256": "1adfcd5b83bf7fffc6d9d5fc22a324f26eb082595deffcd998260222d4674f16"
+  },
+  {
+    "from": "models/catalog-v5/exports/ohlins-ttx22m2-coil.blend",
+    "to": "models/local/experiments/catalog-v5/exports/ohlins-ttx22m2-coil.blend",
+    "kind": "experiments",
+    "bytes": 1115495,
+    "sha256": "dba9323ecaeee1da8c20e86e9066c7de145eac3a98102ead1bd012d27b913a52"
+  },
+  {
+    "from": "models/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1.blend",
+    "to": "models/local/experiments/catalog-v5/exports/rockshox-vivid-coil-ultimate-d1.blend",
+    "kind": "experiments",
+    "bytes": 1058311,
+    "sha256": "56ed8cf5de7516c071dbdc102aa8532e5bad8fd9116e2596beb7d8d4c62c2207"
+  },
+  {
+    "from": "models/catalog-v5/exports/rockshox-zeb-ultimate-b1.blend",
+    "to": "models/local/experiments/catalog-v5/exports/rockshox-zeb-ultimate-b1.blend",
+    "kind": "experiments",
+    "bytes": 854315,
+    "sha256": "defa8bf5d7c587266683c8fd27544d716ec714ffc134a06a7b1ae24c62391d86"
+  },
+  {
+    "from": "models/catalog-v5/exports/santa-cruz-nomad-7-my27--l.blend",
+    "to": "models/local/experiments/catalog-v5/exports/santa-cruz-nomad-7-my27--l.blend",
+    "kind": "experiments",
+    "bytes": 804816,
+    "sha256": "910f7057618b55f5536c871555763fd77059e1a792061611418d272f0e2be74d"
+  },
+  {
+    "from": "models/catalog-v5/exports/santa-cruz-nomad-7-my27--m.blend",
+    "to": "models/local/experiments/catalog-v5/exports/santa-cruz-nomad-7-my27--m.blend",
+    "kind": "experiments",
+    "bytes": 796600,
+    "sha256": "9f5fa26205359ef841def1ae45eec19561ab126370867ff43e285cae31328358"
+  },
+  {
+    "from": "models/catalog-v5/exports/scott-ransom-rc-427727--l.blend",
+    "to": "models/local/experiments/catalog-v5/exports/scott-ransom-rc-427727--l.blend",
+    "kind": "experiments",
+    "bytes": 875350,
+    "sha256": "738621b7b6e32fcb67b2f61b04cf87c7d45fbc912e7b39959e27693dc7c089ac"
+  },
+  {
+    "from": "models/catalog-v5/exports/scott-ransom-rc-427727--m.blend",
+    "to": "models/local/experiments/catalog-v5/exports/scott-ransom-rc-427727--m.blend",
+    "kind": "experiments",
+    "bytes": 867134,
+    "sha256": "89a13e421222203b5d0b3242923bf04c2e23de10b00f26f0020161ed581aa501"
+  },
+  {
+    "from": "models/catalog-v5/exports/specialized-s-works-enduro-udh--s3.blend",
+    "to": "models/local/experiments/catalog-v5/exports/specialized-s-works-enduro-udh--s3.blend",
+    "kind": "experiments",
+    "bytes": 847432,
+    "sha256": "7fc4ce8e7222b160ef2b7ad8c7689cc3f54397bc537d42dd776eeb828938eab6"
+  },
+  {
+    "from": "models/catalog-v5/exports/specialized-s-works-enduro-udh--s4.blend",
+    "to": "models/local/experiments/catalog-v5/exports/specialized-s-works-enduro-udh--s4.blend",
+    "kind": "experiments",
+    "bytes": 855648,
+    "sha256": "e72a44ca33ba53ffd735c983b08f8e9059c2c81bcc01f0878a5b15d92ab842d3"
+  },
+  {
+    "from": "models/catalog-v5/exports/trek-slash-al-gen-6--l.blend",
+    "to": "models/local/experiments/catalog-v5/exports/trek-slash-al-gen-6--l.blend",
+    "kind": "experiments",
+    "bytes": 1023077,
+    "sha256": "e42836ed0a4111f223f4a2889b2f3596cfbc0c4430c3c2f5bcaea787bb5395e7"
+  },
+  {
+    "from": "models/catalog-v5/exports/trek-slash-al-gen-6--m.blend",
+    "to": "models/local/experiments/catalog-v5/exports/trek-slash-al-gen-6--m.blend",
+    "kind": "experiments",
+    "bytes": 1014861,
+    "sha256": "f2e3b471f74d9a290ff08524d880665cb3809baf1fc01026a5a03f64aa865450"
+  },
+  {
+    "from": "models/catalog-v5/references/canyon-sender-cfr-high-pivot.jpg",
+    "to": "models/local/references/catalog-v5/canyon-sender-cfr-high-pivot.jpg",
+    "kind": "references",
+    "bytes": 103173,
+    "sha256": "a9b459af330a51ab1c7aeb2dae65758664d7549ebcc8980689beeb709608e11c"
+  },
+  {
+    "from": "models/catalog-v5/references/commencal-meta-sx-v5.jpg",
+    "to": "models/local/references/catalog-v5/commencal-meta-sx-v5.jpg",
+    "kind": "references",
+    "bytes": 76858,
+    "sha256": "062c85c26c9933bea3ec7221df0e83426c242eb6a9851ebd2560546b4ef4457e"
+  },
+  {
+    "from": "models/catalog-v5/references/da-bomb-cherry-bomb-29.jpg",
+    "to": "models/local/references/catalog-v5/da-bomb-cherry-bomb-29.jpg",
+    "kind": "references",
+    "bytes": 121464,
+    "sha256": "d37c72bf916294b054762f021f2e01a96f8e5d0520333c706476ee064dae4fda"
+  },
+  {
+    "from": "models/catalog-v5/references/santa-cruz-nomad-7-my27.jpg",
+    "to": "models/local/references/catalog-v5/santa-cruz-nomad-7-my27.jpg",
+    "kind": "references",
+    "bytes": 43023,
+    "sha256": "18af108851c6095b5020d5dbdbe967bfa52b1fffddf9546ef7e087f8d3b783b2"
+  },
+  {
+    "from": "models/catalog-v5/references/scott-ransom-rc-427727.png",
+    "to": "models/local/references/catalog-v5/scott-ransom-rc-427727.png",
+    "kind": "references",
+    "bytes": 210301,
+    "sha256": "8903d52bfda6bde0fe08ac0b1373c2bcd8c284f5407d8037187f42fff6317051"
+  },
+  {
+    "from": "models/catalog-v5/references/specialized-s-works-enduro-udh.jpg",
+    "to": "models/local/references/catalog-v5/specialized-s-works-enduro-udh.jpg",
+    "kind": "references",
+    "bytes": 115576,
+    "sha256": "528c5fbbf853b79635c39cbcac74f8cb0736221c0e122b93907122d13a380c16"
+  },
+  {
+    "from": "models/catalog-v5/references/trek-slash-al-gen-6.jpg",
+    "to": "models/local/references/catalog-v5/trek-slash-al-gen-6.jpg",
+    "kind": "references",
+    "bytes": 36017,
+    "sha256": "cc337715f6c5fbd8809cba07c463b4b17f87cf58e0b845cacf8ec3a888da5ddc"
+  },
+  {
+    "from": "models/catalog-v6/exports/canyon-sender-cfr-high-pivot--l.blend",
+    "to": "models/local/experiments/catalog-v6/exports/canyon-sender-cfr-high-pivot--l.blend",
+    "kind": "experiments",
+    "bytes": 1362135,
+    "sha256": "e2ff4662cd1a39d82b68de762d67089c3263167ff84863bbac0e57773c417d7f"
+  },
+  {
+    "from": "models/catalog-v6/exports/canyon-sender-cfr-high-pivot--m.blend",
+    "to": "models/local/experiments/catalog-v6/exports/canyon-sender-cfr-high-pivot--m.blend",
+    "kind": "experiments",
+    "bytes": 1353919,
+    "sha256": "56602fe0cdd686c022c1668606139439e7f814f44e596af3bee09defcf3e35b8"
+  },
+  {
+    "from": "models/catalog-v6/exports/commencal-meta-sx-v5--l.blend",
+    "to": "models/local/experiments/catalog-v6/exports/commencal-meta-sx-v5--l.blend",
+    "kind": "experiments",
+    "bytes": 1027296,
+    "sha256": "14095f732c933c25fc0aa073007975d951a62250e354b934044ee51407c29f2e"
+  },
+  {
+    "from": "models/catalog-v6/exports/commencal-meta-sx-v5--m.blend",
+    "to": "models/local/experiments/catalog-v6/exports/commencal-meta-sx-v5--m.blend",
+    "kind": "experiments",
+    "bytes": 1019080,
+    "sha256": "1a3fa5dae4438cb45c6620a551384c1f640f1fc8db0be2c9e168756f1f281500"
+  },
+  {
+    "from": "models/catalog-v6/exports/commencal-supreme-dh-v5--l.blend",
+    "to": "models/local/experiments/catalog-v6/exports/commencal-supreme-dh-v5--l.blend",
+    "kind": "experiments",
+    "bytes": 1304186,
+    "sha256": "1d5f129cb7a5e859b2ad83e1e0f437fb1124047b03ac2c7ebab57f9afa427c5e"
+  },
+  {
+    "from": "models/catalog-v6/exports/commencal-supreme-dh-v5--m.blend",
+    "to": "models/local/experiments/catalog-v6/exports/commencal-supreme-dh-v5--m.blend",
+    "kind": "experiments",
+    "bytes": 1295970,
+    "sha256": "c1bcbb9334de62808469e949838223fd4569e82489e8e0d2bfcbd7943b48180f"
+  },
+  {
+    "from": "models/catalog-v6/exports/da-bomb-cherry-bomb-29--17in.blend",
+    "to": "models/local/experiments/catalog-v6/exports/da-bomb-cherry-bomb-29--17in.blend",
+    "kind": "experiments",
+    "bytes": 1260975,
+    "sha256": "ac4dd2e636b5edcd52c013388b21649190674083ef0fa1202aef99160f1d7fdb"
+  },
+  {
+    "from": "models/catalog-v6/exports/da-bomb-cherry-bomb-29--19in.blend",
+    "to": "models/local/experiments/catalog-v6/exports/da-bomb-cherry-bomb-29--19in.blend",
+    "kind": "experiments",
+    "bytes": 1269191,
+    "sha256": "959123061177c6ce1e08aadbc1a14ee079951d0babcd98efa09b619e5c4de5d2"
+  },
+  {
+    "from": "models/catalog-v6/exports/fox-38-factory-my27.blend",
+    "to": "models/local/experiments/catalog-v6/exports/fox-38-factory-my27.blend",
+    "kind": "experiments",
+    "bytes": 837909,
+    "sha256": "c8c30dc4fd75c422e75059de41213736b8d700242efa8e22442a8e87a1748700"
+  },
+  {
+    "from": "models/catalog-v6/exports/fox-40-factory-my27.blend",
+    "to": "models/local/experiments/catalog-v6/exports/fox-40-factory-my27.blend",
+    "kind": "experiments",
+    "bytes": 940003,
+    "sha256": "15d5e434ef72252f50dd5de31e97ae12dc38ddd13dacf0851a35d43278bf187f"
+  },
+  {
+    "from": "models/catalog-v6/exports/fox-float-x2-factory-my26.blend",
+    "to": "models/local/experiments/catalog-v6/exports/fox-float-x2-factory-my26.blend",
+    "kind": "experiments",
+    "bytes": 820642,
+    "sha256": "24085489e141fe76bcc3d2abc6f873f5bd8017bb2ec9fefafbb6bb2166b72da8"
+  },
+  {
+    "from": "models/catalog-v6/exports/marzocchi-bomber-cr.blend",
+    "to": "models/local/experiments/catalog-v6/exports/marzocchi-bomber-cr.blend",
+    "kind": "experiments",
+    "bytes": 1108224,
+    "sha256": "8d07faeed33a7c1772adc69fe861a339b2db3bf1c37c6c421c1020bb9be8ab42"
+  },
+  {
+    "from": "models/catalog-v6/exports/marzocchi-bomber-z1-rail.blend",
+    "to": "models/local/experiments/catalog-v6/exports/marzocchi-bomber-z1-rail.blend",
+    "kind": "experiments",
+    "bytes": 877375,
+    "sha256": "2eb164faae9bf916cf0312ce1821345293ea001b07763e89e7cf634f9a5ef815"
+  },
+  {
+    "from": "models/catalog-v6/exports/ohlins-rxf38-m3.blend",
+    "to": "models/local/experiments/catalog-v6/exports/ohlins-rxf38-m3.blend",
+    "kind": "experiments",
+    "bytes": 837909,
+    "sha256": "457e5207afe6da603ada0ef537a6ea53df98b37b40b6975ac184756ec31671dc"
+  },
+  {
+    "from": "models/catalog-v6/exports/ohlins-ttx22m2-coil.blend",
+    "to": "models/local/experiments/catalog-v6/exports/ohlins-ttx22m2-coil.blend",
+    "kind": "experiments",
+    "bytes": 1124656,
+    "sha256": "5fc5f7505e705e8aebf3645573b09aa3f8e9f8741e86799877497a79b452023a"
+  },
+  {
+    "from": "models/catalog-v6/exports/rockshox-vivid-coil-ultimate-d1.blend",
+    "to": "models/local/experiments/catalog-v6/exports/rockshox-vivid-coil-ultimate-d1.blend",
+    "kind": "experiments",
+    "bytes": 1067472,
+    "sha256": "186f5575186c9e8e6346807497568fd0947ff8d82d6d266852f00dd38df232c4"
+  },
+  {
+    "from": "models/catalog-v6/exports/rockshox-zeb-ultimate-b1.blend",
+    "to": "models/local/experiments/catalog-v6/exports/rockshox-zeb-ultimate-b1.blend",
+    "kind": "experiments",
+    "bytes": 877482,
+    "sha256": "b2127aa03f6d50671fd3ebdd8826f571ad0ac6d68483e1c565803e6841f91d67"
+  },
+  {
+    "from": "models/catalog-v6/exports/santa-cruz-nomad-7-my27--l.blend",
+    "to": "models/local/experiments/catalog-v6/exports/santa-cruz-nomad-7-my27--l.blend",
+    "kind": "experiments",
+    "bytes": 1207438,
+    "sha256": "2bef4cb56e501d44a541312556e98ff78593814663a760f52211afd217d6e24d"
+  },
+  {
+    "from": "models/catalog-v6/exports/santa-cruz-nomad-7-my27--m.blend",
+    "to": "models/local/experiments/catalog-v6/exports/santa-cruz-nomad-7-my27--m.blend",
+    "kind": "experiments",
+    "bytes": 1199222,
+    "sha256": "8bf90515726107be6461442275e0a69f5f1caac9b4638a7b208038ec32647ec8"
+  },
+  {
+    "from": "models/catalog-v6/exports/scott-ransom-rc-427727--l.blend",
+    "to": "models/local/experiments/catalog-v6/exports/scott-ransom-rc-427727--l.blend",
+    "kind": "experiments",
+    "bytes": 1114543,
+    "sha256": "08de71fdc456b408482a09bc10f5705e598b95afb200b251dc194eae2c379d01"
+  },
+  {
+    "from": "models/catalog-v6/exports/scott-ransom-rc-427727--m.blend",
+    "to": "models/local/experiments/catalog-v6/exports/scott-ransom-rc-427727--m.blend",
+    "kind": "experiments",
+    "bytes": 1106327,
+    "sha256": "383ec6473947d58fdea37d9b72804dcb502c8927e79ada9822b4374048578b2c"
+  },
+  {
+    "from": "models/catalog-v6/exports/specialized-s-works-enduro-udh--s3.blend",
+    "to": "models/local/experiments/catalog-v6/exports/specialized-s-works-enduro-udh--s3.blend",
+    "kind": "experiments",
+    "bytes": 1250199,
+    "sha256": "dd0baf863b94f7b5a405750ae3104155db1157d5a764165b8b1b2961ae5ed324"
+  },
+  {
+    "from": "models/catalog-v6/exports/specialized-s-works-enduro-udh--s4.blend",
+    "to": "models/local/experiments/catalog-v6/exports/specialized-s-works-enduro-udh--s4.blend",
+    "kind": "experiments",
+    "bytes": 1258415,
+    "sha256": "c1f5fde9eeb4dc448437bc107521028616709cf7329a1f806f9f38bba36ede11"
+  },
+  {
+    "from": "models/catalog-v6/exports/structure-validation.json",
+    "to": "models/local/validation/catalog-v6/exports/structure-validation.json",
+    "kind": "validation",
+    "bytes": 1720,
+    "sha256": "a8a7afcc651a28811487b49ba34974b64fea51a21bdf8571e0a3d25969ce8f98"
+  },
+  {
+    "from": "models/catalog-v6/exports/trek-slash-al-gen-6--l.blend",
+    "to": "models/local/experiments/catalog-v6/exports/trek-slash-al-gen-6--l.blend",
+    "kind": "experiments",
+    "bytes": 1375534,
+    "sha256": "5d984dd612556bf598839ae1d55f3e2c3d3a91794815ed0f9342243659e99df7"
+  },
+  {
+    "from": "models/catalog-v6/exports/trek-slash-al-gen-6--m.blend",
+    "to": "models/local/experiments/catalog-v6/exports/trek-slash-al-gen-6--m.blend",
+    "kind": "experiments",
+    "bytes": 1367318,
+    "sha256": "c1c0e312995e25bb3f913f53fef2ce9f303b851bc566568cd8b164ea76b51d13"
+  },
+  {
+    "from": "models/catalog-v6/references/meta-0.webp",
+    "to": "models/local/references/catalog-v6/meta-0.webp",
+    "kind": "references",
+    "bytes": 201972,
+    "sha256": "7c5b74c0c3509c59fa03e7c42d8cb116b48ecce1b3f3609ceab5a29850e98c8b"
+  },
+  {
+    "from": "models/catalog-v6/references/meta-2.webp",
+    "to": "models/local/references/catalog-v6/meta-2.webp",
+    "kind": "references",
+    "bytes": 18150,
+    "sha256": "02ff56f280ef365caa17fd1d4cf60f8e941bd67e016c864de68d8e82b8ddab39"
+  },
+  {
+    "from": "models/catalog-v6/references/meta-5.webp",
+    "to": "models/local/references/catalog-v6/meta-5.webp",
+    "kind": "references",
+    "bytes": 124290,
+    "sha256": "6da648df7600114fce336a43fe319fc3264aaddfc316af8dde740a773cc2473f"
+  },
+  {
+    "from": "models/catalog-v6/references/meta-6.webp",
+    "to": "models/local/references/catalog-v6/meta-6.webp",
+    "kind": "references",
+    "bytes": 142930,
+    "sha256": "a9fe9222b9b5dbc36f6432d20b8a774626987bbad8ed549022921b021774809d"
+  },
+  {
+    "from": "models/catalog-v6/references/nomad-exploded-2.webp",
+    "to": "models/local/references/catalog-v6/nomad-exploded-2.webp",
+    "kind": "references",
+    "bytes": 113194,
+    "sha256": "4d1e749d4a2112760010cf5af3b52ab9ee8f5f59d7dc6c172d96a0a9e8baf710"
+  },
+  {
+    "from": "models/catalog-v6/references/nomad-exploded-6.webp",
+    "to": "models/local/references/catalog-v6/nomad-exploded-6.webp",
+    "kind": "references",
+    "bytes": 94584,
+    "sha256": "5e3121fc0b6e88e4caab3e7adae5c432b63437bf408481737b7dcdf6c377c8c6"
+  },
+  {
+    "from": "models/catalog-v6/references/nomad-exploded-7.webp",
+    "to": "models/local/references/catalog-v6/nomad-exploded-7.webp",
+    "kind": "references",
+    "bytes": 71440,
+    "sha256": "691b28943068a52d60c799054056b1f51ec12fd0d03368de4599864a94640f42"
+  },
+  {
+    "from": "models/catalog-v6/references/scott-09.webp",
+    "to": "models/local/references/catalog-v6/scott-09.webp",
+    "kind": "references",
+    "bytes": 37794,
+    "sha256": "01e811be176f35ba65a04256772cadf25cee324bfc73421c73571a3eb82296e7"
+  },
+  {
+    "from": "models/catalog-v6/references/scott-10.webp",
+    "to": "models/local/references/catalog-v6/scott-10.webp",
+    "kind": "references",
+    "bytes": 40960,
+    "sha256": "976b9d28a4d456c5bddb5aef97ff1b823c4713d8e60785794f85d7e38d4ff5da"
+  },
+  {
+    "from": "models/catalog-v6/references/specialized-17.webp",
+    "to": "models/local/references/catalog-v6/specialized-17.webp",
+    "kind": "references",
+    "bytes": 121078,
+    "sha256": "6157d3997d88c2a537a73beac95847cef0a63d101fc49bd09e1cb4a948d7f0e5"
+  },
+  {
+    "from": "models/catalog-v6/references/specialized-19.webp",
+    "to": "models/local/references/catalog-v6/specialized-19.webp",
+    "kind": "references",
+    "bytes": 94236,
+    "sha256": "32f00eefa4d7376e06a16dfa4d80a4773599d1bee0bd890462cbfb3c8753b475"
+  },
+  {
+    "from": "models/catalog-v6/references/specialized-20.webp",
+    "to": "models/local/references/catalog-v6/specialized-20.webp",
+    "kind": "references",
+    "bytes": 83424,
+    "sha256": "2a7c90041dd610e94f56e7d7c99577560503793e4df14ae842ae4be991c11f21"
+  },
+  {
+    "from": "models/catalog-v6/references/supreme-full-1.webp",
+    "to": "models/local/references/catalog-v6/supreme-full-1.webp",
+    "kind": "references",
+    "bytes": 460200,
+    "sha256": "0f692a7ca19a81b41b3d33edcd1142253597a6d523e55590ca8dfbb6cc8c44ab"
+  },
+  {
+    "from": "models/catalog-v6/references/trek-08.webp",
+    "to": "models/local/references/catalog-v6/trek-08.webp",
+    "kind": "references",
+    "bytes": 64614,
+    "sha256": "971f0d772a96ecea0fb1f2ac99cad974395a444a5800ab09ecbc9305357d90de"
+  },
+  {
+    "from": "models/catalog-v6/references/trek-09.webp",
+    "to": "models/local/references/catalog-v6/trek-09.webp",
+    "kind": "references",
+    "bytes": 94634,
+    "sha256": "9232783948e32b85c08d621cfb7bdcf7d97a7acd4d7ad9c27a3091d7746eec9c"
+  },
+  {
+    "from": "models/catalog-v9/references/bomber-red.webp",
+    "to": "models/local/references/catalog-v9/bomber-red.webp",
+    "kind": "references",
+    "bytes": 9994,
+    "sha256": "f4772cadd9168288d911933075429e9c35b9295cfe288d9b6cd7412f3d353cfc"
+  },
+  {
+    "from": "models/catalog-v9/references/bomber.webp",
+    "to": "models/local/references/catalog-v9/bomber.webp",
+    "kind": "references",
+    "bytes": 18794,
+    "sha256": "587c80f7ea2e00524ae2fdfae0b8e6618afee11b58719b785b6cb7d0e4340b2a"
+  },
+  {
+    "from": "models/catalog-v9/references/boxxer-black.webp",
+    "to": "models/local/references/catalog-v9/boxxer-black.webp",
+    "kind": "references",
+    "bytes": 93736,
+    "sha256": "b60937bc9e3f85e15d9e528724452d63e6de606b732af45c1ea4309c67ef335e"
+  },
+  {
+    "from": "models/catalog-v9/references/boxxer.webp",
+    "to": "models/local/references/catalog-v9/boxxer.webp",
+    "kind": "references",
+    "bytes": 105960,
+    "sha256": "d8a0938989766caddfd0917822dc950292761713dcddb1f17cdb9193c8bd9400"
+  },
+  {
+    "from": "models/catalog-v9/references/capra-side.webp",
+    "to": "models/local/references/catalog-v9/capra-side.webp",
+    "kind": "references",
+    "bytes": 318734,
+    "sha256": "7018e116e5518769f0350075b0d182f946c4a301ad981a3791ecb403445557e9"
+  },
+  {
+    "from": "models/catalog-v9/references/force.webp",
+    "to": "models/local/references/catalog-v9/force.webp",
+    "kind": "references",
+    "bytes": 88786,
+    "sha256": "efe3154ab2e6b50fabec7ca10b6f52e168fd4f9591d8c1b4f80356e8fbe58505"
+  },
+  {
+    "from": "models/catalog-v9/references/frs-frame.webp",
+    "to": "models/local/references/catalog-v9/frs-frame.webp",
+    "kind": "references",
+    "bytes": 69030,
+    "sha256": "984cefaccd2669c44e02be2bf9fd0fb89ad2e1706d4d1119f28da2c01f5d2f28"
+  },
+  {
+    "from": "models/catalog-v9/references/furious.webp",
+    "to": "models/local/references/catalog-v9/furious.webp",
+    "kind": "references",
+    "bytes": 234626,
+    "sha256": "1ea72c017ce6d5584669f4ae29ad49c108caebb3034caaa4bdcbf39f8ea071ae"
+  },
+  {
+    "from": "models/catalog-v9/references/fury.webp",
+    "to": "models/local/references/catalog-v9/fury.webp",
+    "kind": "references",
+    "bytes": 164580,
+    "sha256": "91f30fd222e3b586d1187f1203d7403709067c27b14a46437305b885cb497137"
+  },
+  {
+    "from": "models/catalog-v9/references/ohlins.webp",
+    "to": "models/local/references/catalog-v9/ohlins.webp",
+    "kind": "references",
+    "bytes": 36542,
+    "sha256": "6091799de6f7fcbd55dd4d4dfd5e92a9b7d23daee0d191fa50d3c8a8eca9a5db"
+  },
+  {
+    "from": "models/catalog-v9/references/select.webp",
+    "to": "models/local/references/catalog-v9/select.webp",
+    "kind": "references",
+    "bytes": 168076,
+    "sha256": "a925021794fb6557a6654a973e19e63ad88354af967d84fe0023169f5af9518a"
+  },
+  {
+    "from": "models/catalog-v9/references/tues.webp",
+    "to": "models/local/references/catalog-v9/tues.webp",
+    "kind": "references",
+    "bytes": 356940,
+    "sha256": "c9b9f0e402d6a4f6f3bedc7ca9943bc597b585b42b118d81ce75b7551af352cc"
+  },
+  {
+    "from": "models/catalog-v9/references/v10-frame.webp",
+    "to": "models/local/references/catalog-v9/v10-frame.webp",
+    "kind": "references",
+    "bytes": 56960,
+    "sha256": "ca88d0c28f85ac711db02dc1afa2c77bafaddd5dede6070342f939ca649e0782"
+  },
+  {
+    "from": "models/catalog-v9/references/v10.webp",
+    "to": "models/local/references/catalog-v9/v10.webp",
+    "kind": "references",
+    "bytes": 269112,
+    "sha256": "216dcc1dc5c51da178c64a7984f7e48419dbcdcab0e59a9dbad82fb89736f7c5"
+  },
+  {
+    "from": "models/motion-v2/audit-after.json",
+    "to": "models/local/validation/motion-v2/audit-after.json",
+    "kind": "validation",
+    "bytes": 1387478,
+    "sha256": "501b62d285206bac167c5e2ab4f5cf890741655a1fc41210acdceb93f725a9ea"
+  },
+  {
+    "from": "models/motion-v2/audit-before.json",
+    "to": "models/local/validation/motion-v2/audit-before.json",
+    "kind": "validation",
+    "bytes": 1184738,
+    "sha256": "fa4446c4d8e53dcb8422622abdc62d22dd29c74b11a908c1a03ed693d3cc8e57"
+  },
+  {
+    "from": "models/motion-v2/browser-review.json",
+    "to": "models/local/validation/motion-v2/browser-review.json",
+    "kind": "validation",
+    "bytes": 306447,
+    "sha256": "18f99f4ee95651c217ea082ecd0597aac35ea4a039dcd2c13bb1b503211c7f84"
+  },
+  {
+    "from": "models/motion-v2/evidence/frames-compressed.jpg",
+    "to": "models/local/captures/motion-v2/frames-compressed.jpg",
+    "kind": "captures",
+    "bytes": 463897,
+    "sha256": "9867caff57e8d7b735b6c6e8c98d0394459f88c0d446505c94638c19eb4aa099"
+  },
+  {
+    "from": "models/motion-v2/evidence/meta-capra.jpg",
+    "to": "models/local/captures/motion-v2/meta-capra.jpg",
+    "kind": "captures",
+    "bytes": 287846,
+    "sha256": "f429dae2f09d19ed8a022e9a098c4f73a99a65493c8e63fc7faf793f5b8faa0d"
+  },
+  {
+    "from": "models/motion-v2/validation.json",
+    "to": "models/local/validation/motion-v2/validation.json",
+    "kind": "validation",
+    "bytes": 1412,
+    "sha256": "9e7346f69a7336e567139d690f6d5ca81a72ae5458e5981dd79c9ffc109d9df0"
+  },
+  {
+    "from": "models/reference-set/exports/bomber-cr-250.glb",
+    "to": "models/local/experiments/reference-set/exports/bomber-cr-250.glb",
+    "kind": "experiments",
+    "bytes": 1054016,
+    "sha256": "5930d4de60ed1f763b3d9d4a538c2116caf183f95d76958c2eabf8b216b6a8d1"
+  },
+  {
+    "from": "models/reference-set/exports/fox-40-my27.glb",
+    "to": "models/local/experiments/reference-set/exports/fox-40-my27.glb",
+    "kind": "experiments",
+    "bytes": 1508556,
+    "sha256": "ba55d452c299735253376462b2e09ad0acb1c0c404d890faa544ad849d5610af"
+  },
+  {
+    "from": "models/reference-set/exports/report.json",
+    "to": "models/local/experiments/reference-set/exports/report.json",
+    "kind": "experiments",
+    "bytes": 489,
+    "sha256": "26dabca46d1ba3f35800391a9056202ae13132aa94bd3e2153dd0b0b77570bb2"
+  },
+  {
+    "from": "models/reference-set/exports/supreme-v5.glb",
+    "to": "models/local/experiments/reference-set/exports/supreme-v5.glb",
+    "kind": "experiments",
+    "bytes": 1278948,
+    "sha256": "d1adc0ed41fbbcda1777d97a503fbf2370e2a93b2cb42358b9c2827c994a8dbd"
+  },
+  {
+    "from": "models/reference-set/reference-set.blend",
+    "to": "models/local/experiments/reference-set/reference-set.blend",
+    "kind": "experiments",
+    "bytes": 2295190,
+    "sha256": "64ebbef93def7babbcb2fd034e6458cabd3bd0ccfbdce7f964ed590de5c8ec29"
+  },
+  {
+    "from": "models/reference-set/references/supreme-lateral.jpg",
+    "to": "models/local/references/reference-set/supreme-lateral.jpg",
+    "kind": "references",
+    "bytes": 55279,
+    "sha256": "d7ec8a2675410b502b8217e82a0fb8144f5bde2318cab4191fee46f44c9a8029"
+  }
+]

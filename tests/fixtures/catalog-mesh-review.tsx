@@ -3,8 +3,8 @@ import { createRoot } from "react-dom/client";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Bounds, OrbitControls, useGLTF } from "@react-three/drei";
 import * as T from "three";
-import reportV5 from "../../models/catalog-v5/exports/report.json";
-import reportV6 from "../../models/catalog-v6/exports/report.json";
+import reportV5 from "../../models/catalog-v5/exports/manifest.json";
+import reportV6 from "../../models/catalog-v6/exports/manifest.json";
 const generation =
   new URLSearchParams(location.search).get("generation") === "v6" ? "v6" : "v5";
 const report: Record<

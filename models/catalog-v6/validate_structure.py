@@ -5,7 +5,7 @@ import bpy
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT.parent))
 import structure
-report=json.loads((ROOT/'exports/report.json').read_text());seen=set();results=[]
+report=json.loads((ROOT/'exports/manifest.json').read_text());seen=set();results=[]
 for row in report.values():
     if row['model'] in seen:continue
     seen.add(row['model'])

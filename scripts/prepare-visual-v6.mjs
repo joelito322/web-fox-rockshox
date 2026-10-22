@@ -7,7 +7,7 @@ const base = JSON.parse(
   readFileSync("supabase/catalog/visual-v5-reviewed.json", "utf8"),
 );
 const exports = JSON.parse(
-  readFileSync("models/catalog-v6/exports/report.json", "utf8"),
+  readFileSync("models/catalog-v6/exports/manifest.json", "utf8"),
 );
 const oldAssets = new Map(base.assets.map((a) => [a.id, a]));
 const models = new Map(base.components.map((m) => [m.id, m]));

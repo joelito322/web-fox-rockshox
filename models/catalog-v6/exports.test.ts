@@ -11,7 +11,7 @@ const successors = JSON.parse(
   readFileSync("supabase/catalog/visual-v6-successors.json", "utf8"),
 );
 const rows = JSON.parse(
-  readFileSync("models/catalog-v6/exports/report.json", "utf8"),
+  readFileSync("models/catalog-v6/exports/manifest.json", "utf8"),
 ) as Record<
   string,
   {

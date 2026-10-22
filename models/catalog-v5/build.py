@@ -125,5 +125,5 @@ for model in CAT['components']:
             if model['slug'] not in saved_models:
                 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/(model['slug']+'.blend')))
                 saved_models.add(model['slug'])
-(OUT/'report.json').write_text(json.dumps(report,indent=2)+'\n')
+(OUT/'manifest.json').write_text(json.dumps(report,indent=2)+'\n')
 print('CATALOG EXPORTS',len(report))

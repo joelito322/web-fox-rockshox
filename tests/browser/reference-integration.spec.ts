@@ -4,7 +4,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 import { readFileSync } from "node:fs";
 import type Source from "../../supabase/catalog/visual-v5-reviewed.json";
 import type Examples from "../../supabase/catalog/visual-v5-examples.json";
-import type Report from "../../models/catalog-v5/exports/report.json";
+import type Report from "../../models/catalog-v5/exports/manifest.json";
 import { parseCatalogImport } from "../../src/features/catalog/model/ingestion";
 import { resolveAssembly } from "../../src/features/configurator/model/assemblyV2";
 import { rotatePoint } from "../../src/features/configurator/model/assemblyV5";
