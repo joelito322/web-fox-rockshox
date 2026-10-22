@@ -43,16 +43,5 @@
     "date": "2026-10-21",
     "script": "scripts/generate-generic-component-images.mjs --apply",
     "bytes": 3146
-  },
-  {
-    "slug": "commencal-frs-v3",
-    "file": "commencal-frs-v3.webp",
-    "source_file": "supabase/catalog/gravity-reviewed.json",
-    "source_asset_id": "8dc5dd4a-6c13-5aaf-ac07-407573888865",
-    "representation": "published-3d-model-render",
-    "date": "2026-10-21",
-    "script": "scripts/generate-gravity-reference-images.mjs --apply",
-    "bytes": 17712,
-    "note": "Render transparente del GLB real. Los tres recortes fotográficos ensayados dejaban halo y se descartaron; la foto original se conserva como evidencia, no se presenta este render como fotografía."
   }
 ]

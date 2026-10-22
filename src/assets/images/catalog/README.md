@@ -62,3 +62,17 @@ No se retiraron fondos de fotografías históricas que esta ampliación no modif
 ## Corrección de cuadros aislados · 21/10/2026
 
 Revisados los 15 cuadros. Se reemplazan TUES MK4, CAPRA MK3 MX y Furious 2021 por imágenes de cuadro separado, con alfa real y sin componentes del montaje. Herramienta: imagegen integrado, modo de edición. Prompts exactos y rutas finales en `photos.json` (`editing.prompt` y `file`). Se descarta el primer ensayo de Furious por alterar la marca; se repite desde el original de mayor resolución. Las fuentes originales de investigación y los GLB permanecen intactos.
+
+## FRS V3 Pure White · revisión v18
+
+La tarjeta `commencal-frs-v3.webp` usa ahora la fotografía oficial del frameset Pure White, conservada previamente en `models/catalog-v9/references/frs-frame.webp`. Se sustituye el render anterior (archivado en `models/catalog-v18/references/prior-card-render.webp`). Foto del cuadro solo, sin ruedas/horquilla, sin reconstrucción generativa ni recorte con halo; conserva el fondo de estudio original. Registro vigente en `photos.json`, retirado del listado de renders actuales. Cobertura actual: 65 referencias fotográficas y cinco renders. El párrafo anterior de seis renders/FRS describe el snapshot previo, no la elección vigente.
+
+## Sender CFR MY25 · revisión v24
+
+La fotografía verde anterior del Sender pertenece a la plataforma 2021, distinta de la ficha High Pivot MY25; se archiva junto con su procedencia en `models/catalog-v24/references/`. La tarjeta utiliza ahora render transparente del GLB MY25 publicado en Void Black: `scripts/generate-frame-v24-card.mjs --apply`. Su registro en `renders.json` incluye SHA del GLB y de la imagen; no se presenta como foto oficial. `review-frame-v24-card.mjs` comprueba los bytes servidos y la tarjeta real. Las referencias fotográficas oficiales MY25 disponibles incluyen bicicleta completa/detalles; no se usa otra generación para fingir un frameset aislado.
+
+Cobertura vigente: **70 modelos, 64 referencias fotográficas y seis renders**. La etiqueta común «Referencia visual» mantiene ambos tipos sin atribuir fotografía al render. Las miniaturas privadas de montajes siguen representando solo el avance guardado, sin cambios.
+
+## Portada Sender restaurada por el usuario · 21/10/2026
+
+El usuario solicita conservar la fotografía real anterior en el card del Sender. Restaurada exactamente desde `models/catalog-v24/references/prior-card-generation-2021.webp`; es una referencia fotográfica de la plataforma 2021, sin atribuirla al 3D MY25. El modelo 3D v24, sus anclajes y movimiento permanecen. Render retirado archivado, registro vigente en `photos.json`, eliminado de renders actuales. Cobertura: 65 referencias fotográficas y cinco renders. El generador v24 bloquea `--apply` para impedir reemplazarla otra vez. Sin commits.

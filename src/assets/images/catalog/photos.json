@@ -13,7 +13,8 @@
       "tool": "imagegen built-in",
       "prompt": "Eliminar el fondo de estudio conservando cuadro, pintura, logotipos, herrajes y perspectiva; transparencia real también dentro de huecos. Sin añadir piezas.",
       "output": "WebP con canal alfa, lado máximo 800 px"
-    }
+    },
+    "note": "Fotografía real anterior restaurada por solicitud explícita del usuario; referencia de plataforma 2021, no foto exacta del modelo 3D MY25."
   },
   {
     "slug": "commencal-meta-sx-v5",
@@ -667,5 +668,17 @@
     "scope": "model-reference",
     "original_sha256": "1f0a3fc76351fe35eee22bc35edfcdee0fd16e4748c01353146fa23936fa7d37",
     "bytes": 21912
+  },
+  {
+    "slug": "commencal-frs-v3",
+    "file": "commencal-frs-v3.webp",
+    "page": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+    "url": "https://www.commencal.com/on/demandware.static/-/Sites-commencal-master/default/dw267d01bc/images/FT4FRS3_00.jpg",
+    "source_file": "models/catalog-v9/references/frs-frame.webp",
+    "consulted_at": "2026-10-21",
+    "scope": "exact-model-and-finish-reference",
+    "bytes": 69030,
+    "sha256": "984cefaccd2669c44e02be2bf9fd0fb89ad2e1706d4d1119f28da2c01f5d2f28",
+    "note": "Fotografía oficial real del cuadro FRS V3 Pure White; conserva fondo de estudio original. Sustituye render sin alterar la foto."
   }
 ]
