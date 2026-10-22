@@ -181,3 +181,9 @@ Migraciones 019/020 (bucket privado y políticas de miniaturas) y 021 (seis perf
 ## Ampliación gravity · 21/10/2026
 
 Migración 022 aplicada y fuente aditiva `gravity-reviewed.json` publicada. Nuevos GLB inmutables en `catalog/v9/`, verificados por SHA256 y descarga pública; fuentes/binarios conservados en models/catalog-v9. Estado: 70 modelos, 146 elecciones y 22 migraciones; doce tablas propias, mismas cuatro prearmadas. No cambia Auth/IAM/Edge Functions ni despliegue Netlify; frontend local en 5174. Ver 11o/12.
+
+## Google OAuth · 21/10/2026
+
+El usuario creó el proyecto/cliente web en Google y configuró el proveedor directamente en Supabase. Lectura posterior de Management API HTTP 200: Google habilitado, ID y secreto presentes (sin imprimir valores), Site URL `http://localhost:5174` y retorno permitido `http://localhost:5174/auth/callback`. Estas observaciones sustituyen para el acceso local los valores antiguos de localhost:3000 y allow-list vacía; no confirman cambios en plantillas ni SMTP.
+
+Frontend con PKCE y detección automática de tokens deshabilitada; el callback distingue código OAuth de los token_hash de correo. No se copian secretos a variables VITE. La comprobación de navegador llegó a la pantalla real de Google sin introducir credenciales; consentimiento y regreso con una cuenta del usuario siguen pendientes. Al desplegar habrá que registrar el dominio definitivo y su retorno.

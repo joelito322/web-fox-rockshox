@@ -6,7 +6,7 @@ El proyecto Cloud y los accesos de lectura a Auth/Admin ya fueron comprobados; [
 
 ## Alcance inicial
 
-Registro con correo y contraseña, confirmación de correo, inicio de sesión, recuperación de contraseña y cierre de sesión mediante Supabase Auth. Formularios propios coherentes con la interfaz. No se implementan contraseñas en SQL, tokens propios, OAuth ni cuentas anónimas de Supabase. Formularios comunes para todos los roles; autorización mediante el esquema propio IAM. El registro público siempre asigna user; solo operaciones autorizadas pueden asignar admin u otros roles. La administración web y creación de roles están incluidas según [04a](04a-iam-roles-y-permisos.md) y [04b](04b-administracion-y-operaciones.md).
+Registro con correo y contraseña, confirmación de correo, inicio de sesión, recuperación de contraseña y cierre de sesión mediante Supabase Auth. Formularios propios coherentes con la interfaz. No se implementan contraseñas en SQL, tokens propios ni cuentas anónimas de Supabase. Ampliación autorizada el 21/10/2026: acceso y registro mediante Google OAuth gestionado por Supabase, conservando correo y contraseña. Formularios comunes para todos los roles; autorización mediante el esquema propio IAM. El registro público siempre asigna user; solo operaciones autorizadas pueden asignar admin u otros roles. La administración web y creación de roles están incluidas según [04a](04a-iam-roles-y-permisos.md) y [04b](04b-administracion-y-operaciones.md).
 
 La portada, catálogo, fichas, comparación y exploración de bicicletas de referencia son públicos. En el espacio de trabajo, Componentes y Bicicletas permiten explorar sin cuenta; Mis bicicletas pide sesión y aplicar una prearmada también. El configurador, los avisos del montaje, el guardado y «Mis bicicletas» requieren sesión. Crear una cuenta no implica contratar una membresía. Los contenidos técnicos públicos de una ficha siguen disponibles sin cuenta.
 
@@ -22,7 +22,7 @@ Una sesión válida sin permiso no se trata como una sesión ausente: no redirig
 
 ## Presentación aprobada
 
-La composición de acceso y registro está aprobada en [portada y acceso](06a-portada-y-acceso.md#inicio-de-sesión-en-escritorio): panel estático de bicicleta a la izquierda y formulario claro a la derecha en escritorio; una columna sin fotografía en móvil. Títulos «Iniciar sesión» y «Crear cuenta», etiquetas persistentes, controles «Mostrar» independientes y retorno al origen público. Registro pide solo correo, contraseña y confirmación, con requisitos coherentes con Auth; después muestra «Revisa tu correo», reenvío y vuelta al acceso. La confirmación de contraseña es validación local, no un dato almacenado. No añadir perfiles o nuevos métodos de entrada.
+La composición de acceso y registro está aprobada en [portada y acceso](06a-portada-y-acceso.md#inicio-de-sesión-en-escritorio): panel estático de bicicleta a la izquierda y formulario claro a la derecha en escritorio; una columna sin fotografía en móvil. Títulos «Iniciar sesión» y «Crear cuenta», etiquetas persistentes, controles «Mostrar» independientes y retorno al origen público. Registro pide solo correo, contraseña y confirmación, con requisitos coherentes con Auth; después muestra «Revisa tu correo», reenvío y vuelta al acceso. La confirmación de contraseña es validación local, no un dato almacenado. Se añade «Continuar con Google» en acceso y registro; no se añaden campos de perfil ni otros proveedores.
 
 ## Flujos
 
@@ -69,7 +69,7 @@ Para evitar mezclar rutas hash con tokens y evitar depender de un verificador al
 - Plantilla de invitación: enlace a `{{ .RedirectTo }}?token_hash={{ .TokenHash }}&type=invite`.
 - El callback acepta únicamente `email`, `recovery` e `invite`, llama una sola vez a `verifyOtp` y elimina los parámetros sensibles de la barra mediante reemplazo de historial.
 
-No combinar en el mismo flujo este contrato, el canje manual de código PKCE y la detección automática de tokens. En este diseño el cliente deshabilita `detectSessionInUrl`, mientras el SDK sigue gestionando persistencia y renovación. El manejador comparte una única verificación en curso para resistir remontajes de React StrictMode; un doble efecto no debe consumir el enlace dos veces.
+Los enlaces de correo mantienen este contrato. Google usa un flujo separado PKCE: `signInWithOAuth` con proveedor Google y retorno al mismo `/auth/callback`; el callback canjea `code` una sola vez con `exchangeCodeForSession`. No se aceptan tokens de sesión del fragmento de URL ni se activa su detección automática. En este diseño el cliente deshabilita `detectSessionInUrl`, mientras el SDK sigue gestionando persistencia y renovación. El manejador comparte una única verificación en curso para resistir remontajes de React StrictMode; un doble efecto no debe consumir el enlace dos veces.
 
 La página de callback no carga el visor ni recursos externos de analítica. Se configura una política de referencia que no propague la URL del callback. Un error conserva un mensaje útil, nunca imprime el token, y permite pedir otro enlace. No usar `next` recibido de Internet como redirección libre: el destino posterior pertenece a una lista de rutas internas.
 
@@ -154,3 +154,9 @@ Antes de abrir el registro a terceros, verificar el servicio de correo. El SMTP 
 - [URLs permitidas de redirección](https://supabase.com/docs/guides/auth/redirect-urls).
 - [Restricciones de correo y SMTP](https://supabase.com/docs/guides/auth/auth-smtp).
 - [Acceso a Storage](https://supabase.com/docs/guides/storage/security/access-control).
+
+## Google · ampliación del 21/10/2026
+
+El usuario creó el cliente OAuth y configuró el proveedor en Supabase Cloud. La lectura de configuración confirma proveedor activo, credenciales presentes y retorno local permitido. El secreto permanece en Supabase; no se copia al frontend ni a documentación. Registro Google conserva el provisionamiento IAM existente de rol user; permisos y aislamiento siguen aplicados por RPC/RLS.
+
+El callback elimina parámetros sensibles antes de verificar, comparte la operación durante remontajes y libera el estado al terminar. Cancelación, retorno inválido o error permiten volver a entrar sin exponer mensajes del proveedor. Tras Google se abre el acceso compartido, que espera la consulta de permisos antes de continuar la intención interna. La prueba con consentimiento real de Google requiere la cuenta del usuario; no se simula como evidencia de acceso real.

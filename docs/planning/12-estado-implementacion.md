@@ -1,6 +1,62 @@
 # 12 · Estado de implementación
 
-## Actualización vigente: continuidad v6 y carcasas v7
+## Suspensión trasera integral · motion v2 · 21/10/2026
+
+Auditoría de los quince cuadros/30 tallas actuales y38 shocks publicados, más cuatro IDs v11 de antiguas prearmadas. Perfil por recurso `current-v2.json`; fuentes/reproducción/evidencia en `models/motion-v2/` y [12y](12y-evidencia-suspension-v2.md). No confundir las pruebas antiguas sobre v7/v9 con cobertura del catálogo actual. Seis modelos acababan extendiendo el shock: asignaciones de ojos/ejes/registros corregidas; detener trayectoria antes del punto de retorno, con compresión/elevación monótonas y carrera/cierre limitados. META: clevis sigue enlace superior/entrada, corregidos ejes inferiores; no aceptar solo acortamiento matemático si el soporte se separa. CAPRA utiliza pivote fijo y unión del tirante de su propio balancín; Nomad/Enduro registros v22/v23. Guías reducidas/ocultaciones siguen estimadas y algunos intervalos son muy pequeños; no certificar recorrido completo/cinemática exacta/CAD/colisiones exhaustivas.
+
+Muelle identificado por hélice, no solo caja envolvente: Vivid deformaba cuerpo y depósito. Coil acorta axialmente con diámetro/apoyo superior conservados; carcasa/depósito rígidos y vástago/apoyo inferior deslizantes; aire sin muelle. Longitud de clasificación propia del shock seleccionado.72 GLB auditados,107 pruebas específicas y45 capturas de quince conjuntos;474 pruebas/70 archivos y build correctos, doce comprobaciones de navegador entre escritorio y móvil emulado. No modificar buffers compartidos/GLB publicados, persistir postura o comitear sin petición. V2 se aplica a30 recursos actuales y cuatro IDs v11 explícitos; otros históricos conservan perfiles previos. Los cuatro v11 reciben corrección de inspección sin cambiar su geometría/identidad.
+
+Prearmadas públicas contenían cuatro cuadros v11 retirados y no podían abrirse: fuente aditiva `supabase/catalog/motion-v2-examples.json`, SQL `supabase/operations/sync-motion-presets.sql`, ejecutor `scripts/sync-motion-presets.mjs --apply` actualizó solo cuatro cuadros a META v21/SUPREME v25 con mismos campos comerciales/acabados,88 posiciones y privados preservados por snapshot. Aplicar esta operación después de v30 al reponer datos; no relajar el control de retirados ni convertir privados. Estado70 modelos/146 elecciones/782 variantes/780 recursos históricos,4 prearmadas/92 posiciones,22 migraciones/12 tablas. Pruebas de navegador incluyen guardado/reapertura y limpieza de temporales; Pixel7/SwiftShader es emulación, sin certificación Android/Brave físico/FPS.
+
+
+## V10.8 CC MY27 · reconstrucción individual v30 · 21/10/2026
+
+M/L del V10 pasan de v13 a v30 con trazado propio de foto oficial MY27 del cuadro desnudo y cuatro despieces inspeccionados. Fuentes/registro/contornos/builders offline en `models/catalog-v30/`; evidencia [12x](12x-evidencia-v10-v30.md). Ventana secundaria, arco del amortiguador, basculante cerrado y enlaces VPP; profundidades/conexiones tapadas inferidas. Registro afín de foto oblicua a BB/dirección/eje trasero oficiales: no afirmar similitud sin cizalla, CAD o100 %.
+
+Cinco anclajes visuales estimados con contrato exacto antes/después: tija/sillín, ojos shock y pivote inferior. Dirección/ruedas/especificaciones/acabados conservados, shock250mm. Perfil `v10-v30.json` únicamente por dos recursos nuevos, VPP exterior estimado0,12rad; históricos conservan movimiento.52 puntos por talla,96 rayos de paredes sin descarte próximo,22 axiales/50 completos BB libres,14 vistas/diez acercamientos/dos overlays/tres poses,28 capturas ajenas y dos v13 intactos.367 pruebas, tipos/build correctos; no afirmar colisiones/contactos exhaustivos, recorrido completo o Android/FPS.
+
+Dos GLB/cinco mallas por talla,3.545.684bytes, cargados/releídosSHA. Transición de dos guardados anteriores/dos nuevos y limpieza confirmadas. Fotos/prearmadas intactas. Estado vigente:70 modelos,146 elecciones,782 variantes/780 recursos históricos, cuatro prearmadas/92 posiciones,22 migraciones/doce tablas. Reposición tras v29: prepare-frame-v30.mjs --apply → publish-frame-v30.mjs --apply; SQL propio en supabase/operations. Auditoría de lectura actual validate-frame-v30.mjs. No modificar bytes publicados, convertir privados automáticamente ni comitear sin petición.
+
+
+## TUES · paredes exteriores v29 · 21/10/2026
+
+El usuario **aprueba la forma v28** y pide corregir el aspecto transparente/hueco al girar. V29 corrige solamente winding/normales de superficies extruidas: imagenY descendente→mundoY ascendente reflejaba coordenadas sin invertir caras. No cambiar la silueta aprobada sin otra petición, no invertir camisas correctas ni activar DoubleSide global. Fuente `models/catalog-v29/`, evidencia [12w](12w-evidencia-caras-tues-v29.md). Contornosv28 y todos los anclajes/medidas/acabados exactos; contrato/publicador/SQL exigen manifiesto completo igual.
+
+Regresión nueva: FrontSide debe encontrar la misma pared próxima que DoubleSide.96 rayos antes descartaban pared cercana/0 después; superficies muestreadas coinciden≈3,31×10⁻¹⁰m y límites dentro1µm numérico. Verificar orientación con render normal: pruebas solo DoubleSide pueden ocultar este bug.14 vistas/tres poses,54 muestras por talla,22 rayos axiales/50 completos BB libres;28 capturas ajenas intactas.355 pruebas/tipos/build correctos. Dos GLB/cinco mallas por talla,4.252.892bytes, cargados/releídosSHA; dos guardados previos/dos nuevos y limpieza comprobados. Fotos/prearmadas intactas.
+
+V29 M/L vigente:70 modelos,146 elecciones,780 variantes/778 recursos históricos,cuatro prearmadas/92 posiciones,22 migraciones/doce tablas. Reposición tras v28 mediante prepare/publish-frame-v29 y SQL individual; auditoría actual validate-frame-v29. Nuevos recursos reutilizan movimiento v28 por asociación explícita `tues-v29-assets.json`; no modificar posturas anteriores. Privados anteriores conservan versión: reelección del cuadro aplica corrección. No CAD/colisiones exhaustivas/Android físico/FPS certificados ni commits sin petición.
+
+
+## TUES MK4 Carbon · revisión adversarial v28 · 21/10/2026
+
+El usuario rechazó el parecido v27. Tres agentes auditaron silueta, trasera y registro, con correcciones/revisión cruzada antes de publicar. V28 vigente para M/L; v26/v27 quedan históricos y no son aceptación de parecido. No volver a usar headtop1277/274 como eje real: caía sobre barraFOX40. Raster2300×1400, normalizado porancho2048/alto1246,6087. Contornos de carbono anchos y perfil propio, registro por similitud sin cizalla. Fuentes/propuestas/constructores en `models/catalog-v28/`, evidencia [12v](12v-evidencia-tues-v28.md).
+
+Ocho anclajes visuales estimados corregidos con contrato completo antes/después porUUID y SQL acotado; rear exacto, shock250mm/pipa110mm, especificaciones y acabados conservados. Collar centrado en corte real, no borde. Perfil propio de movimiento solo para dos assetsv28: similitud, ojo inferior móvil/entrada y pivote oculto887/790 inferido, intervalo0,09rad. Históricos intactos; no afirmar palancas exactas o recorrido completo. Flip Link separado transversalmente del muelle con espaciadores: tres poses confirmaron eliminación de las estrías de intersección.
+
+54 puntos independientes de fotografía pasan en M/L; v27 fallaba14–21 según registro/talla. No confundir muestra con porcentaje de parecido global. 14 vistas/diez acercamientos/dos overlays y tres poses, 22 rayos axiales/50 completos BB libres, 28 SHA ajenos intactos. Normales de bisel se calculan en mm para evitar cuantización1cm de Three; caps mantienen normal plana y profundidad afín sin clamp. Se limpiaron puntas de bisel de dirección tras revisión cercana: las muestras no las detectaban. Resta pequeña transición estimada de pipa; no certificar100%/CAD, profundidades/cinemática/colisiones exhaustivas niAndroid físico/FPS.
+
+Tipos/build y341 pruebas correctos; tras última limpieza se repitieron12 específicas y comprobaciones visuales/GLB. Dos GLB/cinco mallas por talla,4.252.748bytes, cargados/releídosSHA. Dos guardados anteriores/dos nuevos y cuenta temporal eliminada comprobados. Fotos reales y prearmadas intactas. Estado vigente:70 modelos,146 elecciones,778 variantes/776 recursos históricos,cuatro prearmadas/92 posiciones,22 migraciones/doce tablas. Reposición tras v27: prepare/publish-frame-v28, SQL local y contratos exactos; auditoría actual de lectura validate-frame-v28. Guardados previos conservan versión; volver a seleccionar TUES aplica v28. Sin commits.
+
+
+## TUES MK4 Carbon · cierre v27 · 21/10/2026
+
+V27 es la elección vigente M/L tras la reconstrucción individual v26. La inspección final encontró una discontinuidad exterior de la raíz inferior en v26: se conserva ese snapshot inmutable y se corrige únicamente TUES con secciones completas dentro de la pipa. Ninguna corrección global. Fotografías, especificaciones, otros anclajes y las 28 capturas ajenas permanecen; las placas y YT se apoyan sobre la superficie revisada. Fuentes/investigación propias en v26, construcción/capturas/SQL en `models/catalog-v27/` y `supabase/operations/publish-frame-v27.sql`.
+
+Tipos/build y **329 pruebas en 63 archivos** correctos; cinco mallas por talla, 4.899.392 bytes totales; 14 vistas, diez detalles de ambas caras, dos overlays y tres poses. 22 rayos axiales/50 completos BB libres. Dos GLB cargados/releídos por SHA; dos guardados anteriores/dos nuevos comprobados y cuenta temporal eliminada. Estado vigente: **70 modelos, 146 elecciones, 776 variantes/774 recursos históricos**, cuatro prearmadas/92 posiciones, 22 migraciones/doce tablas. Auditoría actual de lectura `validate-frame-v27.mjs`; reposición después de v26 mediante prepare/publish-frame-v27. Guardados previos no se convierten. Evidencia y límites en [12u](12u-evidencia-tues-v26.md); sin CAD/100 % certificado, cinemática/colisiones exhaustivas, Android físico/FPS ni commits.
+
+
+## TUES MK4 Carbon v26 · 21/10/2026
+
+Revisión individual M/L publicada desde v13; fuentes offline `models/catalog-v26/`, evidencia [12u](12u-evidencia-tues-v26.md). Fotos propias MK4, manual2024 p31 y vídeo YT Workshop descargado/seis instantes muestreados. Superior/diagonal/sillín propios, Flip Link macizo y triángulo trasero bilateral con punteras ajustables. Detalles anteriores reconstruidos expresamente; solo saddle visual alineado, conservando longitud y todos los otros anclajes/especificaciones/acabados. Fotos reales de cards intactas.
+
+Dos GLB/cinco mallas por talla,4.901.868bytes; tipos/build y321 pruebas correctos.28 SHA ajenos intactos,14 vistas/diez detalles/dos overlays/tres poses;22 rayos axiales y50 completos BB libres. Carga/relectura SHA y transición de dos guardados anteriores/dos nuevos con cuenta temporal eliminada. Estado vigente:70 modelos,146 elecciones,774 variantes/772 recursos históricos,cuatro prearmadas/92 posiciones,22 migraciones/doce tablas propias. Reposición tras v25 mediante prepare/publish-frame-v26; SQL individual y correcciones por UUID en repo, auditoría vigente de lectura validate-frame-v26. Guardados/prearmadas no se convierten. Sin certificación CAD/100%, cinemática exacta, colisiones exhaustivas ni Android físico/FPS; sin commits. Snapshots anteriores se conservan debajo como historial.
+
+
+## Snapshot más reciente: cuadros individuales v21–v25
+
+META SX V5, Nomad 7 CC, S-Works Enduro, Sender CFR MY25 y SUPREME DH V5 revisados/publicados. Estado: 70 modelos, 146 elecciones, 772 variantes/770 recursos históricos; guardados y prearmadas conservados. Build/tipos y 313 pruebas correctos; evidencia de esta revisión en 12p–12t. Los apartados previos conservan snapshots históricos. Esta revisión visual no cierra por sí sola los pendientes generales de correo, rendimiento/Android físico o aceptación integral del proyecto.
+
+## Snapshot histórico: continuidad v6 y carcasas v7
 
 Aplicadas las migraciones 017 y 018 y las dos publicaciones de sucesoras en el mismo Cloud de desarrollo. Los 53 modelos mantienen 114 elecciones públicas y cuatro prearmadas; 63 elecciones usan GLB v6, nueve frenos el renderer v7 y 42 mantienen geometría v5. El historial alcanza 606 variantes y 604 recursos. Las transiciones reales conservaron los montajes antiguos y guardaron las cuatro prearmadas nuevas; cuentas temporales eliminadas.
 
@@ -349,3 +405,110 @@ Fuentes y boceto conservados en 06e; revisión de capturas de escritorio y móvi
 #### Registro de commits solicitado · 21/10/2026
 
 Por solicitud explícita del usuario, el trabajo se registra por propósito: `d023a0b` (suspensión por modelo), `8d645ad` (armado guiado, medidas, pares y paletas) y `0825baf` (selección visual y pulso). Contratos, contexto de AGENTS y evidencia se registran en un commit documental separado. Las menciones anteriores «sin commits» describen el estado de esas comprobaciones antes de esta autorización; no autorizan commits de cambios futuros. Tipado de las versiones intermedias comprobado y versión final consistente con las 139 pruebas/build ya registrados. No se hizo push ni se incluyeron variables de entorno.
+
+## Revisión integral de los quince cuadros · v10
+
+Treinta nuevas capturas publicadas sin alterar recursos anteriores, anclajes, medidas ni acabados. Estado vigente: 70 modelos, 146 elecciones, 668 variantes/666 recursos históricos y cuatro prearmadas. La revisión comprende fuentes multivista, tres vídeos muestreados, 210 vistas y la transición de montajes guardados. Detalle, verificaciones y límites en [12e](12e-evidencia-cuadros-v10.md); contrato en [05d](05d-revision-integral-cuadros.md). No se cierra aceptación visual final ni CAD/90 %/Android físico.
+
+## Continuación de cuadros · Pasos v11
+
+Corregidas aberturas de dirección/sillín/pedalier en treinta nuevas capturas, manteniendo v10 y sus anclajes. Estado vigente: 70 modelos, 146 elecciones, 698 variantes/696 recursos históricos; sin cambios de tablas, migraciones, Auth o Edge Functions. Build y 149 pruebas correctos; 270 rayos, vistas y transición de guardados documentados en [12f](12f-evidencia-pasos-v11.md). Se mantiene el límite de representación exterior estimada y la aceptación visual pendiente del usuario.
+
+## Dirección exterior v12 · 21/10/2026
+
+Corregidas las uniones exteriores de dirección en los quince cuadros/treinta tallas. Nuevos recursos publicados, conservando anclajes, especificaciones, acabados y todo el historial; cuatro prearmadas actualizadas. Estado: 70 modelos, 146 elecciones, 728 variantes/726 recursos históricos, 22 migraciones y doce tablas propias.
+
+210 vistas generales, 150 primeros planos y quince montajes articulados. Rayos extendidos fuera de los bordes de dirección: 60 obstrucciones antes/cero después en un total de 330 comprobaciones de pasos. Transición real: quince montajes v11 guardados/reabiertos, treinta v12 y cuatro composiciones completas; cuenta temporal eliminada. Auditoría remota de lectura correcta. Build, 152 pruebas/43 archivos y cuatro recorridos de navegador (escritorio/móvil emulado) correctos; detalle y límites en [12g](12g-evidencia-direccion-v12.md). No atribuir CAD, tolerancias físicas o Android real a estas pruebas. Sin commits.
+
+## Reversión solicitada de la pipa v12 · 21/10/2026
+
+El usuario pide deshacer la última corrección global: algunos modelos anteriores estaban bien. Se restaura v11 en las treinta elecciones de cuadro y en las prearmadas, conservando todo el historial y sin cambiar montajes privados. V12 queda retirado y no debe republicarse. Fuente de reversión: `supabase/operations/rollback-frame-v12.sql`; aplicar/verificar con `node scripts/rollback-frame-v12.mjs --apply` (sin `--apply` solo comprueba). Las cifras históricas siguen en 728 variantes/726 recursos y 146 elecciones. Las comprobaciones de publicación v12 describen su snapshot anterior, no la elección actual. Cualquier nueva corrección debe aislar modelos defectuosos y comprobar simetría real sin duplicar detalles legítimamente asimétricos.
+
+## Continuidad localizada v13 · 21/10/2026
+
+Protegidos los cinco cuadros aprobados en sus diez variantes v11; corregidos únicamente los empalmes de dirección de los otros diez cuadros/veinte tallas. Publicación aplicada con veinte GLB inmutables nuevos, sin reescribir prearmadas ni montajes privados. Estado vigente: 70 modelos, 146 elecciones, 748 variantes/746 recursos históricos, cuatro prearmadas/92 posiciones; 22 migraciones y doce tablas propias. V12 sigue retirada.
+
+Build y 175 pruebas correctos; 140 vistas generales, 100 primeros planos, 220 rayos despejados, quince montajes articulados y cuatro recorridos de navegador. Transición real: diez montajes anteriores conservados, veinte nuevos y cuatro completos, cuenta temporal eliminada. Método, evidencia y límites en [12h](12h-evidencia-uniones-v13.md); auditoría vigente `validate-frame-v13.mjs`. La aceptación visual del usuario sigue abierta; no se certifican CAD, porcentaje de parecido, colisiones exhaustivas ni Android físico/FPS. Sin commits.
+
+## CAPRA MK3 Carbon MX v14 · 21/10/2026
+
+Corrección individual aplicada y publicada en ambas tallas: llegadas más próximas a la pipa y tramo diagonal inmediato recto. Los otros catorce cuadros y las cuatro prearmadas no cambian. Estado: 70 modelos, 146 elecciones, 750 variantes/748 recursos históricos; 22 migraciones y doce tablas propias. Build, TypeScript de herramientas y 179 pruebas correctos; 14 vistas generales, diez primeros planos, 22 rayos y 28 recursos ajenos conservados por hash. CAPRA articulado y dos guardados anteriores/dos nuevos comprobados con limpieza de cuenta temporal. Auditoría vigente `validate-frame-v14.mjs`; evidencia y límites en [12i](12i-evidencia-capra-v14.md). Sin commits.
+
+## CAPRA completo v15 · 21/10/2026
+
+V14 era insuficiente para la rectitud del cuerpo completo. Tres agentes contrastaron referencias, código y foto registrada; v15 reconstruye solo CAPRA M/L con rectas y radios locales. Secciones lineales sin abombamiento sinusoidal, tangentes exactas y soporte delantero corregido. Los otros catorce cuadros y las cuatro prearmadas no cambian. Dos recursos publicados: 70 modelos, 146 elecciones, 752 variantes/750 recursos históricos; 22 migraciones y doce tablas propias.
+
+Build/tipos y 192 pruebas correctos; 14 vistas generales, diez primeros planos, dos superposiciones, 22 rayos despejados, 28 recursos ajenos conservados por hash y herrajes no pintables intactos. CAPRA articulado y transición de dos guardados anteriores/dos nuevos con cuenta temporal eliminada. Evidencia, revisión cruzada y límites en [12j](12j-evidencia-capra-trayectos-v15.md); auditoría vigente `validate-frame-v15.mjs`. No se certifica 100 % ni CAD/Android físico/FPS; aceptación visual abierta. Sin commits.
+
+## Acceso Google · 21/10/2026
+
+Ampliación solicitada durante la revisión de registro: proveedor Google configurado por el usuario en el Cloud existente, verificado por lectura sin exponer credenciales. Entrada y registro ofrecen «Continuar con Google»; PKCE con callback de código, URL limpiada y verificación compartida durante remontajes, liberada al terminar. Enlaces de correo conservan su contrato de token_hash. Mismo provisionamiento user y consulta de permisos; ningún cambio de IAM/RLS ni base.
+
+Validación con Node 24.22.0: build y 210 pruebas correctos (20 de Auth); diez escenarios de navegador escritorio/móvil emulado, con redirección real hasta acceso Google y cancelación. La prueba inicial de una página Google interceptada falló; se sustituyó por comprobación de su pantalla real y pasó en ambos perfiles. No se introdujeron credenciales Google ni se aceptó consentimiento. Pendiente prueba manual completa desde `http://localhost:5174/entrar`; secretos permanecen únicamente en configuración del proveedor. No se valida envío de correo ni se despliega frontend. Sin commits.
+
+## Portada lateral de acceso · 21/10/2026
+
+Sustituida la ilustración de bicicleta de Auth por fotografía real local de salto en Sun Peaks, de Julien Kettmann (procedencia/licencia conservadas en assets/images/landing/README.md). Encuadre sobre ciclista, fondo a sangre, gradiente inferior y titular blanco/lima «Tu próxima línea empieza aquí». Composición compartida de entrada/registro y demás pantallas Auth; formulario y operaciones conservados. Fotografía estática, sin animación continua.
+
+Build correcto con Node 24.22.0. Revisión visual mediante capturas de acceso 1440×1000, registro 1280×1000, tablet 768×1024 y móvil 393×851; sin desbordamiento horizontal y Google visible. En móvil panel oculto y cero peticiones de imagen airtime; escritorio descarga una imagen. Aceptación estética del usuario pendiente. Sin commits.
+
+## Menú de cuenta · 21/10/2026
+
+La cabecera autenticada incorpora un desplegable discreto con nombre/correo de la sesión, rol IAM vigente, correo confirmado y Google vinculado cuando corresponde. Incluye Mis bicicletas y Administración según permisos, y Cerrar sesión mediante la acción existente de Layout y el evento cancelable de cambios pendientes. No hay nuevas consultas, tablas, perfil editable ni avatares remotos. Botón compacto en móvil; Escape restaura foco, clic/foco exterior y navegación cierran el panel, y cambiar identidad descarta el panel anterior.
+
+Validación Node 24.22.0: build correcto, seis pruebas de componente y cuatro recorridos Playwright (escritorio/Pixel 7 emulado) correctos, con sesión sintética/API interceptada sin crear usuarios Cloud. Verifican datos/acciones autorizadas, límites de pantalla, Tab/Escape y conservación del evento cancelable de cierre. Adaptados los recorridos autenticados existentes para abrir primero el menú; no se ejecutó de nuevo la suite Cloud completa. Revisión visual de panel escritorio/móvil con identidad ficticia. Sin commits.
+
+## Selector de categorías · 21/10/2026
+
+Revisión solicitada en Componentes: panel de 254 px (242 px en escritorio estrecho), opciones de 15 px y alto mínimo 44 px, títulos de grupo de 12 px con separadores y guía de pertenencia. Dieciocho iconos SVG propios de piezas con trazo único gris verdoso; acción global con icono de rejilla. Activa con fondo tenue, marca lateral, check y aria-pressed. Conserva siete grupos/dieciocho categorías y todas las reglas de consulta/filtros. Cabecera y Todas las piezas fuera del área de desplazamiento de grupos; móvil mantiene botón Categorías, cierra al elegir y devuelve foco. Sin consultas adicionales ni cambios Cloud.
+
+Validación Node 24.22.0: build correcto; suite discovery existente con cinco escenarios correctos y una omisión prevista del escenario exclusivo de escritorio en móvil. Revisión adicional en 1440×1000, 1024×900 y 393×851: siete grupos y diecinueve botones (Todas + dieciocho piezas), texto/áreas ampliados, cambio a horquillas, búsqueda conservada, última opción Sillines alcanzable, regreso a Todas y sin desbordamiento horizontal. En móvil se comprobó foco al botón tras elegir. Capturas locales revisadas; aceptación estética del usuario pendiente. Sin commits.
+
+## CHERRY BOMB completo v16 · 21/10/2026
+
+Reconstrucción específica publicada de las dos tallas 17″/19″, tras aprobación del método CAPRA. Tres agentes contrastaron lateral/opuesta/diagonales oficiales; superior/diagonal centrales rectos, asiento curvado propio, yugo abierto, balancín perforado y pipa cónica. CAPRA y otros trece cuadros no cambian. Estado: 70 modelos, 146 elecciones, 754 variantes/752 recursos históricos; 22 migraciones y doce tablas propias.
+
+Build/tipos y 224 pruebas/51 archivos correctos con dos workers; 14 vistas generales, diez primeros planos, dos superposiciones, 22 rayos y 28 recursos ajenos por SHA, guardas/tornillería conservadas. CHERRY articulado y transición de dos montajes anteriores/dos nuevos con cuenta temporal eliminada. Auditoría actual `validate-frame-v16.mjs`; evidencia/límites en [12k](12k-evidencia-cherry-bomb-v16.md). No se certifica CAD/100%/Android físico/FPS; aceptación visual abierta y sin commits.
+
+## Continuidad al cerrar fichas y transición de salida · 21/10/2026
+
+Corregido salto al inicio: useWorkspaceLinks identifica el listado por pestaña/filtros, separándolo de slug, detail y variant. Abrir/cerrar o recorrer historial de fichas en el mismo listado no ejecuta scrollTo; cambiar de selección sigue su regla de inicio y las pestañas conservan memoria. Drawer restaura foco con preventScroll. Cierre solicitado por X/exterior/Escape mantiene modal/backdrop durante salida de 220 ms, con salida lateral en escritorio y vertical en móvil; evento animationend más espera de respaldo, bloqueo de duplicados y limpieza al desmontar. Movimiento reducido cierra inmediatamente. Navegación/guardado externos y eventos de cambios pendientes conservan sus acciones.
+
+Validación Node 24.22.0: build correcto; nueve escenarios Playwright correctos, una omisión prevista del caso exclusivo de escritorio en móvil. Nuevas pruebas catalog-scroll recorren tres fichas por X/exterior/Escape desde scroll mayor a 300 px y verifican igualdad de posición, foco a la tarjeta, inicio de animación de salida y atrás/adelante; con movimiento reducido no hay animación ni salto. También pasan los recorridos discovery existentes de navegación/filtros/teclado/anchos. Escritorio y Pixel 7 emulado; no prueba Android físico. Sin escrituras Cloud ni commits.
+
+
+## GT Force Carbon High Pivot completo v17 · publicado
+
+Dos elecciones Force M/L publicadas desde v13; las otras 28 capturas actuales mantienen sus SHA, incluidos CAPRA v15 y CHERRY v16. Perfil propio, triángulo GT, bieleta calada y conservación selectiva de polea. Build/tipos y 230 pruebas correctos; 14 vistas generales, diez detalles, dos overlays, 22 rayos despejados y tres poses articuladas. Carga/relectura SHA, auditoría remota y transición de dos montajes anteriores/dos nuevos con limpieza de cuenta temporal comprobadas. Estado: 70 modelos, 146 elecciones, 756 variantes/754 recursos históricos, cuatro prearmadas/92 posiciones, 22 migraciones/doce tablas propias. No se convierten guardados ni prearmadas. Reposición tras v16: `prepare-frame-v17.mjs --apply` → `publish-frame-v17.mjs --apply`; fuente SQL `supabase/operations/publish-frame-v17.sql`. Auditoría vigente `validate-frame-v17.mjs`; validadores anteriores describen sus snapshots. Evidencia y límites en [12l](12l-evidencia-force-v17.md). No certificar CAD/100 %, colisiones exhaustivas o Android físico/FPS. Sin commits.
+
+## FRS V3 Pure White v18 · publicado
+
+Dos elecciones FRS M/L actualizadas desde v13, sin cambiar las otras 28 capturas, prearmadas ni montajes privados. Perfil propio, bieleta calada, soportes superior fijo/inferior móvil, protecciones y fotografía oficial original del cuadro en la tarjeta (65 fotos/cinco renders actuales). Seis mallas por talla; dos GLB cargados/releídos por SHA, build/tipos y 239 pruebas correctos, revisión multivista/pasos/articulación y transición de guardados con cuenta temporal eliminada. Estado: 70 modelos, 146 elecciones, 758 variantes/756 recursos históricos, cuatro prearmadas/92 posiciones, 22 migraciones/doce tablas propias. Reposición tras v17: `prepare-frame-v18.mjs --apply` → `publish-frame-v18.mjs --apply`; SQL `supabase/operations/publish-frame-v18.sql`. Auditoría vigente `validate-frame-v18.mjs`; anteriores describen snapshots. Evidencia y límites en [12m](12m-evidencia-frs-v18.md). Sin certificación CAD/100 %, colisiones exhaustivas o Android/FPS físicos. Sin commits.
+
+## Furious V3 2021 v19 · publicado
+
+Dos elecciones M/L actualizadas desde v13, con perfil propio de la generación 2021, soporte superior ensanchado, bieleta calada, basculante y protecciones; otras 28 capturas intactas. Seis mallas por talla, dos GLB cargados/releídos por SHA y publicados, tipos/build y 247 pruebas correctos; revisión multivista/pasos/articulación y transición con cuenta temporal eliminada. Estado: 70 modelos, 146 elecciones, 760 variantes/758 recursos históricos, cuatro prearmadas/92 posiciones, 22 migraciones/doce tablas propias. Guardados y prearmadas sin conversión. Reposición tras v18: `prepare-frame-v19.mjs --apply` → `publish-frame-v19.mjs --apply`; SQL `supabase/operations/publish-frame-v19.sql`. Auditoría vigente `validate-frame-v19.mjs`; anteriores son snapshots. Evidencia y límites en [12n](12n-evidencia-furious-v19.md). No certificar CAD/100 %, colisiones exhaustivas o Android físico/FPS. Sin commits.
+
+## Fury Carbon High Pivot v20 · publicado
+
+Dos elecciones M/L actualizadas desde v13 para Fury 2023+, con perfil propio, ventana triangular inferior, yugo sólido, guía y protecciones; otras 28 capturas intactas. Cinco mallas por talla, dos GLB cargados/releídos por SHA y publicados; tipos/build y 255 pruebas correctos. Revisión multivista/pasos/articulación y transición con cuenta temporal eliminada. Estado: 70 modelos, 146 elecciones, 762 variantes/760 recursos históricos, cuatro prearmadas/92 posiciones, 22 migraciones/doce tablas propias. Guardados y prearmadas sin conversión. Reposición tras v19: `prepare-frame-v20.mjs --apply` → `publish-frame-v20.mjs --apply`; SQL `supabase/operations/publish-frame-v20.sql`. Auditoría vigente `validate-frame-v20.mjs`; anteriores son snapshots. Evidencia y límites en [12o](12o-evidencia-fury-v20.md). No certificar CAD/100 %, colisiones/cinemática exhaustivas o Android físico/FPS. Sin commits.
+
+## META SX V5 v21 · publicado
+
+Dos elecciones M/L desde v11, perfil propio y VCS conservado; otros 28 recursos intactos. Tipos/build y 263 pruebas correctos, vistas/pasos/articulación, carga/relectura SHA y transición comprobadas. Estado: 70 modelos, 146 elecciones, 764 variantes/762 recursos históricos, cuatro prearmadas/92 posiciones, 22 migraciones/doce tablas propias. Reposición tras v20: `prepare-frame-v21.mjs --apply` → `publish-frame-v21.mjs --apply`; SQL `supabase/operations/publish-frame-v21.sql`, auditoría vigente `validate-frame-v21.mjs`. Guardados y prearmadas sin conversión. [12p](12p-evidencia-meta-v21.md). Sin certificación CAD/100 % ni commits.
+
+## Nomad v22, S-Works Enduro v23 y Sender v24 · publicados
+
+Revisión por tres agentes con contraste cruzado y coordinación principal. Seis elecciones nuevas, seis GLB cargados/releídos por SHA, guardados anteriores/nuevos comprobados y cuentas temporales eliminadas. Tipos/build y 303 pruebas correctos. Nomad M/L y Enduro S3/S4 conservan anclajes de suspensión y corrigen únicamente saddle visual con contrato exacto; Sender M/L corrige la generación MY25, anclajes visuales y perfil propio de movimiento seleccionado por ID de recurso. No se convierten montajes históricos ni prearmadas.
+
+Estado final del snapshot: **70 modelos, 146 elecciones, 770 variantes/768 recursos históricos, cuatro prearmadas/92 posiciones**, 22 migraciones/doce tablas propias. Reposición secuencial tras v21: prepare/publish v22 → v23 → v24 con contratos SQL propios antes de publicación. Auditoría vigente `validate-frame-v24.mjs`; las anteriores describen sus snapshots. Tarjeta Sender usa render del recurso MY25 identificado; fotografía2021 archivada. Evidencia: [12q](12q-evidencia-nomad-v22.md), [12r](12r-evidencia-enduro-v23.md) y [12s](12s-evidencia-sender-v24.md). No certificar CAD/100 %, colisiones o cinemática exhaustivas ni Android físico/FPS. Sin commits.
+
+## Portada Sender restaurada por el usuario · 21/10/2026
+
+El usuario solicita conservar la fotografía real anterior en el card del Sender. Restaurada exactamente desde `models/catalog-v24/references/prior-card-generation-2021.webp`; es una referencia fotográfica de la plataforma 2021, sin atribuirla al 3D MY25. El modelo 3D v24, sus anclajes y movimiento permanecen. Render retirado archivado, registro vigente en `photos.json`, eliminado de renders actuales. Cobertura: 65 referencias fotográficas y cinco renders. El generador v24 bloquea `--apply` para impedir reemplazarla otra vez. Sin commits.
+
+## SUPREME DH V5 v25 · publicado
+
+Dos elecciones M/L desde v11, silueta propia y HVCS exterior contrastados con fotos/despieces y cinco vídeos oficiales realmente muestreados. Cinco mallas/talla, dos GLB cargados/releídos por SHA y publicados; build/tipos y 313 pruebas correctos. 28 recursos ajenos conservados, multivista/overlay/articulación, pasos completos y transición anteriores/nuevos con cuenta temporal eliminada. Solo saddle visual alineado mediante contrato por ID; suspensión/especificaciones/acabados conservados. Fotos reales y prearmadas sin cambios.
+
+Estado del snapshot: **70 modelos, 146 elecciones, 772 variantes/770 recursos históricos, cuatro prearmadas/92 posiciones**, mismas 22 migraciones/doce tablas propias. Reposición tras v24: `prepare-frame-v25.mjs --apply` → `publish-frame-v25.mjs --apply`; SQL `supabase/operations/publish-frame-v25.sql`, auditoría vigente `validate-frame-v25.mjs`. Anteriores son snapshots; no convertir guardados ni alterar bytes publicados. Evidencia [12t](12t-evidencia-supreme-v25.md). Sin certificación CAD/100 %, cinemática/colisiones exhaustivas o Android físico/FPS. Sin commits.

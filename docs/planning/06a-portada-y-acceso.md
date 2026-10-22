@@ -207,3 +207,38 @@ Aceptación de este cambio: foto real visible en escritorio/móvil, titular y ac
 Revisión posterior del usuario: conserva logo, tipografía y composición, y solicita fotografías más potentes, expansivas y explorables. Sustituir la selección inicial por salto alpino de Leysin, salto lateral de Sun Peaks y vista aérea del trazado de Haldon Forest; encuadres con profundidad y terreno, sin modificar los destinos o el eslogan. Fuentes/autores actualizados en el README de imágenes.
 
 Aceptación visual: el usuario aprobó el resultado final de esta portada, incluida la selección revisada de fotografías, antes de solicitar los commits por partes. Esta aceptación corresponde a portada e identidad; no cierra los pendientes del resto del proyecto.
+
+## Acceso con Google · 21/10/2026
+
+Ampliación solicitada por el usuario: conservar la composición y añadir en acceso y registro, antes del formulario, la alternativa Google. Distribución compartida en escritorio/móvil:
+
+```text
+Iniciar sesión / Crear cuenta
+[ Continuar con Google ]
+       o con tu correo
+Correo electrónico
+Contraseña [Mostrar]
+Confirmar contraseña [Mostrar] (solo registro)
+[ Entrar / Crear cuenta ]
+```
+
+La acción Google no valida ni envía los campos de contraseña. Durante el inicio se bloquean ambos envíos; si falla se conservan los valores y se permite reintentar. Cancelación o retorno inválido ofrecen «Volver a iniciar sesión». No se añade Google en recuperación ni cambio de contraseña.
+
+Revisión visual solicitada: botón con la G oficial en color junto a «Continuar con Google», sobre fondo blanco, compartido por acceso/registro y móvil. Recurso local `src/assets/images/auth/google-g.png`, descargado de https://developers.google.com/static/identity/images/g-logo.png; referencia de marca: https://developers.google.com/identity/branding-guidelines. Conservar proporción; imagen decorativa para no repetir el nombre accesible.
+
+## Revisión del panel de acceso · 21/10/2026
+
+El usuario rechaza la ilustración lateral y solicita una portada real, agresiva y llamativa. Sustituirla por la fotografía local de acción en Sun Peaks (Julien Kettmann; fuente/licencia en el README de landing), estática a sangre y con recorte centrado en ciclista/bicicleta. Oscurecimiento gradual inferior para sostener titular grande blanco/lima y crédito discreto. Conservar formulario y Google a la derecha; móvil sin panel ni descarga de esa fotografía.
+
+```text
+ESCRITORIO
+[ Fotografía MTB de acción  ][ Iniciar sesión / Crear cuenta ]
+[ ENDURO / DESCENSO         ][ Continuar con Google          ]
+[                          ][ Correo / contraseña           ]
+[ TU PRÓXIMA               ][ Entrar / Crear cuenta         ]
+[ LÍNEA EMPIEZA AQUÍ.       ][                               ]
+[ Firma · crédito           ][                               ]
+MÓVIL: formulario a una columna; panel oculto.
+```
+
+Aplicar a las pantallas compartidas de Auth sin carrusel ni animación continua. La fotografía es ambientación, no un montaje creado por ATLAS. Validar recortes, legibilidad y ausencia de desbordamiento en acceso/registro de escritorio y móvil; aceptación estética posterior del usuario pendiente.

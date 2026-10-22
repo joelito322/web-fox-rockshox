@@ -146,6 +146,8 @@ Se pueden sustituir páginas y CSS actuales. No borrar imágenes o datos hasta c
 
 ## Fase 2 · Supabase, datos y autenticación
 
+Ampliación 21/10/2026: integrar Google OAuth con PKCE en acceso/registro y callback; verificar errores, canje único, conservación del acceso por correo e intención autorizada. Proveedor Cloud configurado por el usuario y comprobado por lectura. Consentimiento real con su cuenta pendiente hasta prueba manual.
+
 **Objetivo:** conectar catálogo y cuentas reales con aislamiento de montajes.
 
 - [ ] Reproducir las composiciones de acceso y registro aprobadas de [06a](06a-portada-y-acceso.md) en escritorio y móvil; incluir confirmación de contraseña, visibilidad por campo, requisitos reales y estado de confirmación de correo/reenvío.
@@ -419,3 +421,150 @@ Ampliación implementada: quince perfiles exteriores estimados, articulación de
 ### Armado por grupos, medidas y pares
 
 Integrar [06e](06e-armado-guiado.md) en las fases de UI, reglas y aceptación: índice actual, agrupación, filtros de medida sin mutar selección, pares atómicos (incluido Mixto), paletas accesibles y revisión escritorio/móvil; conservar guardado, deshacer y rendimiento.
+
+### Revisión integral de los quince cuadros
+
+Solicitud incluida en las fases de recursos, configurador y validación: [05d](05d-revision-integral-cuadros.md). Investigar referencias multivista/vídeo, revisar por generación, reconstruir perfiles, corregir conexiones por inferencia explícita y publicar nuevas identidades tras comprobarlas, conservando versiones y montajes anteriores.
+
+Estado: revisión implementada y publicada; evidencia y límites de aceptación en [12e](12e-evidencia-cuadros-v10.md). La revisión visual final del usuario sigue abierta.
+
+Continuación de la misma rúbrica: pasos de montaje y pared interior de dirección v11, sobre copias inmutables de v10. Contrato actualizado en 05d y evidencia en [12f](12f-evidencia-pasos-v11.md); incluye investigación previa heredada, recorte offline, rayos de paso, primeros planos, montaje y transición de guardados.
+
+Estado de la continuación v11: implementada y publicada; rayos, vistas, articulación y transición de guardados verificadas en 12f. Se mantienen sus límites documentados y la aceptación visual pendiente.
+
+## Corrección de dirección exterior v12
+
+Dentro de la fase de fidelidad: revisar los quince cuadros y treinta tallas según 05d; corregir extremos fuera de la pipa y uniones exteriores sin modificar versiones publicadas. Resultado: perfiles de dirección, capturas nuevas, fuentes y publicación SQL acotada. Aceptación: vistas lateral/frontal/posterior/inferior/axial, paso despejado también fuera de los bordes, anclajes y especificaciones conservados, inspección con horquilla, transición de montajes y auditoría remota. Avance y límites en [12g](12g-evidencia-direccion-v12.md).
+
+## Reversión solicitada de la pipa v12 · 21/10/2026
+
+El usuario pide deshacer la última corrección global: algunos modelos anteriores estaban bien. Se restaura v11 en las treinta elecciones de cuadro y en las prearmadas, conservando todo el historial y sin cambiar montajes privados. V12 queda retirado y no debe republicarse. Fuente de reversión: `supabase/operations/rollback-frame-v12.sql`; aplicar/verificar con `node scripts/rollback-frame-v12.mjs --apply` (sin `--apply` solo comprueba). Las cifras históricas siguen en 728 variantes/726 recursos y 146 elecciones. Las comprobaciones de publicación v12 describen su snapshot anterior, no la elección actual. Cualquier nueva corrección debe aislar modelos defectuosos y comprobar simetría real sin duplicar detalles legítimamente asimétricos.
+
+## Continuidad localizada v13
+
+Alcance de 05d: proteger los cinco cuadros aprobados y corregir solo las veinte variantes de los otros diez. Reconstrucción offline, conservación de cuerpo/anclajes, secciones simétricas, rayos de paso, vistas multivista y primeros planos, carga por SHA, revisión articulada de los quince montajes, transición de guardados y auditoría remota forman parte de esta fase. Evidencia y estado en [12h](12h-evidencia-uniones-v13.md). No reactivar v12 ni actualizar automáticamente los montajes privados.
+
+Estado v13: implementado y publicado con las comprobaciones de 12h correctas. Los cinco modelos aprobados permanecen intactos y la aceptación estética final del usuario sigue abierta.
+
+## Ajuste individual CAPRA v14
+
+Aplicar la solicitud localizada de 05d a las dos tallas del CAPRA: referencias, reconstrucción de raíces, conservación del resto del cuadro y de los catorce modelos ajenos, vistas, simetría/pasos, montaje articulado, carga por SHA y transición de guardados/publicación. Evidencia y estado en [12i](12i-evidencia-capra-v14.md). No reconstruir ni actualizar otros cuadros por esta solicitud.
+
+Estado del ajuste CAPRA v14: implementado y publicado; comprobaciones de 12i correctas. Pendiente de aceptación visual del usuario, sin ampliar la corrección a otros modelos.
+
+## Reconstrucción CAPRA completa v15
+
+La solicitud posterior exige revisar los trayectos completos: referencias multivista y tres agentes adversariales, retrazado de ejes/contornos, rectas explícitas con radios locales, verificación negativa de curvas distribuidas, foto registrada y revisión cruzada antes de carga, anclajes/pasos/montaje, publicación acotada y transición de guardados. Evidencia en [12j](12j-evidencia-capra-trayectos-v15.md). No tratar v14 como aceptación de la silueta completa ni certificar 100 % sin fuente dimensional.
+
+Estado v15: reconstrucción específica implementada y publicada, revisión cruzada y comprobaciones de 12j correctas. La fidelidad física absoluta y la aceptación visual del usuario no se deducen de estas pruebas.
+
+## Evidencia fase 2 · Google OAuth · 21/10/2026
+
+Integrados «Continuar con Google» en entrada/registro y callback PKCE separado de confirmación/invitación/recuperación. Proveedor Cloud habilitado por el usuario y comprobado mediante lectura; sin cambios de IAM, tablas o políticas. Node 24.22.0: build correcto, 49 archivos/210 pruebas correctas, incluidas 20 de Auth. Navegador: diez escenarios entre escritorio y Pixel 7 emulado, incluida salida real hacia Google, cancelación limpia y recorridos públicos. La primera aserción de salida esperaba una página interceptada que Chromium no sustituyó tras la redirección; se corrigió para comprobar la pantalla real de Google y ambas ejecuciones pasan. El origen aislado de pruebas 4180 verifica salida y errores; el retorno autorizado para el recorrido real es localhost:5174. Pendiente consentimiento y regreso real con cuenta del usuario; no declarar aceptado ese recorrido completo ni el correo SMTP.
+
+### Fase 2 · Revisión visual de acceso solicitada
+
+Sustituir ilustración lateral por fotografía real local de acción, según boceto de 06a, conservando formularios y acceso Google. Comprobar carga/recorte en acceso y registro de escritorio, y móvil sin panel/descarga fotográfica. Sin cambios de Auth o datos.
+
+Resultado de la revisión visual de acceso: implementada fotografía estática de Sun Peaks y titular blanco/lima. Build correcto; capturas de acceso/registro, tablet y móvil sin desbordamientos. Móvil no descarga la fotografía; Google/formulario siguen visibles. Evidencia en 12; aceptación estética pendiente.
+
+### Fase 2 · Menú de cuenta
+
+Implementar el desplegable solicitado según 06b con identidad actual, rol y acciones autorizadas. Verificar teclado/cierre, cambio de identidad y permisos, cierre de sesión conservando el evento de cambios sin guardar y disposición móvil/escritorio. Reutilizar AuthProvider sin consultas adicionales.
+
+Resultado del menú de cuenta: implementado según 06b, build correcto y seis pruebas de componente más cuatro escenarios de navegador con sesión sintética correctos. Comprobados foco/Escape, acciones por permiso y delegación al cierre cancelable existente. No hubo escrituras Cloud; evidencia/limitaciones en 12.
+
+### Fase 3 · Selector de categorías
+
+Aplicar revisión solicitada de jerarquía/tamaño/iconos monocromáticos según 06b. Verificar siete grupos/dieciocho opciones, estado activo, categorías al navegar, filtrado y vuelta a todas; móvil con foco/restablecimiento tras elegir. Mantener consultas/filtros existentes.
+
+Resultado del selector: implementado; build y cinco recorridos discovery correctos (una omisión prevista de escritorio en móvil). Comprobación adicional en tres anchos de selección, búsqueda conservada, último grupo alcanzable y foco móvil. Evidencia y límites en 12.
+
+## CHERRY BOMB completo v16
+
+La solicitud posterior aplica el rigor aprobado del CAPRA a CHERRY 17″/19″, conservando sus curvaturas y geometría propias. Investigación multivista nueva, tres agentes/revisión cruzada, perfil/reconstrucción, hueco de balancín, foto registrada, pasos/rectas/curva de sillín, conservación de otros modelos, carga SHA, articulación, transición y publicación acotada forman parte de la fase. Evidencia en [12k](12k-evidencia-cherry-bomb-v16.md). No editar bytes anteriores ni declarar CAD/100 % a partir de fotografías.
+
+### Fase 3 · Continuidad de fichas
+
+Corregir scroll al abrir/cerrar detalle y añadir salida de Drawer según 06b. Reproducir abajo en catálogo y verificar X/exterior/Escape repetidos, cambio de pieza, pestañas, filtros y navegación atrás/adelante; salida lateral/móvil y movimiento reducido.
+
+Estado v16: reconstrucción CHERRY implementada y publicada, revisión cruzada y comprobaciones de 12k correctas. CAPRA aprobado y otros cuadros intactos; aceptación estética final del usuario abierta.
+
+Resultado de continuidad de fichas: corregidos scroll y foco; salida de Drawer lateral/vertical con movimiento reducido. Build correcto y nueve escenarios de navegador correctos (una omisión prevista), incluida apertura/cierre repetida, historial y regresión de galerías. Evidencia en 12.
+
+
+## GT Force Carbon High Pivot completo v17 · publicado
+
+Dos elecciones Force M/L publicadas desde v13; las otras 28 capturas actuales mantienen sus SHA, incluidos CAPRA v15 y CHERRY v16. Perfil propio, triángulo GT, bieleta calada y conservación selectiva de polea. Build/tipos y 230 pruebas correctos; 14 vistas generales, diez detalles, dos overlays, 22 rayos despejados y tres poses articuladas. Carga/relectura SHA, auditoría remota y transición de dos montajes anteriores/dos nuevos con limpieza de cuenta temporal comprobadas. Estado: 70 modelos, 146 elecciones, 756 variantes/754 recursos históricos, cuatro prearmadas/92 posiciones, 22 migraciones/doce tablas propias. No se convierten guardados ni prearmadas. Reposición tras v16: `prepare-frame-v17.mjs --apply` → `publish-frame-v17.mjs --apply`; fuente SQL `supabase/operations/publish-frame-v17.sql`. Auditoría vigente `validate-frame-v17.mjs`; validadores anteriores describen sus snapshots. Evidencia y límites en [12l](12l-evidencia-force-v17.md). No certificar CAD/100 %, colisiones exhaustivas o Android físico/FPS. Sin commits.
+
+## FRS V3 Pure White completo v18 · publicado
+
+Solo FRS M/L desde v13; conservar otros catorce cuadros/28 capturas. Investigación oficial (dos fotos generales y nueve detalles técnicos), reconstrucción de perfil propio, protecciones, bieleta, uniones y soportes de amortiguador. Reemplazar render de tarjeta por fotografía original del cuadro Pure White. La fase incluye tipado/build/pruebas, revisión M/L multivista y registrada, rayos de pasos/ventana, conservación SHA y articulación; cargar/releer dos GLB y publicar SQL acotado con prueba de transición y limpieza de cuenta temporal. No modificar recursos publicados ni convertir guardados anteriores. No certificar 100 % CAD.
+
+Cierre v18: build/tipos y 239 pruebas correctos; 28 SHA ajenos intactos, 14 vistas generales/diez detalles/dos overlays, 22 rayos despejados y tres poses articuladas. Dos GLB cargados/releídos y publicados con transición de dos guardados previos/dos nuevos y cuenta temporal eliminada. Fotografía original de la tarjeta comprobada desde catálogo público. Estado y límites en [12m](12m-evidencia-frs-v18.md).
+
+## Furious V3 2021 v19 · publicado
+
+La fase individual incluye investigación de la generación, reconstrucción completa de dos capturas M/L, anatomía propia y solo accesorios comunes confirmados, revisión multivista y registrada, pruebas de pasos/ventana/apoyos/rectas, preservación de 28 recursos ajenos, articulación, tipos/build/pruebas, carga/relectura SHA y publicación acotada con transición y limpieza de cuenta temporal. Conservar anclajes/especificaciones/acabados, guardados y cuatro prearmadas. No modificar recursos publicados, no añadir generador runtime ni certificar CAD/100 %. Sin commits.
+
+Cierre v19: build/tipos y 247 pruebas correctos; 28 SHA ajenos intactos, 14 vistas generales/diez detalles/dos overlays, 22 rayos despejados y tres poses. Carga/relectura SHA y publicación acotada aplicadas con transición de dos montajes anteriores/dos nuevos y limpieza de cuenta temporal. Evidencia y límites en [12n](12n-evidencia-furious-v19.md).
+
+## Fury Carbon High Pivot v20 · publicado
+
+La revisión autorizada comprende investigación de la generación, reconstrucción propia de dos capturas M/L, ventana inferior y apoyos, revisión multivista y registrada, pruebas de aberturas/rectas/soportes, preservación de 28 recursos ajenos, articulación, tipos/build/pruebas, carga/relectura SHA y publicación SQL acotada con transición y limpieza de cuenta temporal. Mantener especificaciones, anclajes, acabados, montajes históricos y prearmadas; no modificar recursos publicados ni prometer identidad CAD del 100 %. Sin commits.
+
+Cierre v20: build/tipos y 255 pruebas correctos; 28 SHA ajenos intactos, 14 vistas generales/diez detalles/dos overlays, 22 rayos despejados y tres poses. Carga/relectura SHA y publicación acotada aplicadas, dos montajes anteriores/dos nuevos y cuenta temporal eliminada. Evidencia y límites en [12o](12o-evidencia-fury-v20.md).
+
+## META SX V5 completo v21 · publicado
+
+Solicitud individual para META M/L desde v11; conservar otros catorce cuadros/28 capturas, anclajes, acabados y especificaciones. Investigar foto y despieces oficiales propios, reconstruir trayectos y secciones, conservar doble enlace VCS y revisar las conexiones de amortiguador y ambas caras. La fase incluye vistas/overlay/articulación, pruebas de rectas/pasos/apoyos, conservación SHA, tipos/build/pruebas, carga/relectura y publicación/transición Cloud acotadas. No convertir guardados ni prearmadas; nueva identidad sin mutar versiones publicadas. Fuentes offline `models/catalog-v21/`; sin certificación CAD del 100 % ni commits.
+
+## Revisión paralela Nomad v22, S-Works Enduro v23 y Sender v24 · publicada
+
+El usuario autoriza explícitamente tres agentes en paralelo, además del META v21. Cada uno investiga referencias propias, reconstruye dos tallas con controles de silueta/partes ocultas y conserva las versiones anteriores. Nomad 7 CC usa M/L; S-Works Enduro conserva S3/S4 (no renombrarlas M/L); Sender CFR High Pivot usa M/L. No trasladar formas genéricas entre plataformas.
+
+Las fases incluyen fuentes y observación/inferencia, perfiles/GLB offline, vistas y comparación registrada, pasos/soportes, pruebas/tipos/build, conservación de recursos ajenos, ensamblaje y movimiento, carga/relectura SHA y publicación/transición Cloud. El coordinador revisa cada resultado y publica en secuencia v21 → v22 → v23 → v24 para evitar snapshots incompatibles. Ningún agente publica o modifica los runners compartidos por su cuenta. No commits ni certificación dimensional del 100 %.
+
+Excepción justificada Sender v24: la ficha vigente declara High Pivot MY25 y el trazado anterior usaba otra generación. Corregir exclusivamente los anclajes visuales estimados necesarios mediante manifiesto nuevo, con antes/después explícito por ID y perfil de inspección de suspensión específico para esos recursos. Mantener medidas comerciales, BB, centros de rueda y dirección cuando ya correspondan, así como manifiestos/GLB/movimiento históricos. No deformar la generación actual para sostener una referencia equivocada ni reutilizar sin validar la animación anterior. El resultado y sus límites deben quedar registrados en `models/catalog-v24/` y evidencia documental propia.
+
+Cierre META v21: tipos/build y 263 pruebas correctos; 28 capturas ajenas conservadas, dos GLB con seis mallas por talla, 14 vistas/diez detalles/dos overlays, 22 rayos despejados y tres poses. Publicación y transición anteriores/nuevos aplicadas. Evidencia y límites en [12p](12p-evidencia-meta-v21.md).
+
+Comprobación Nomad v22: se descartó una hipótesis de desplazamiento del ojo trasero al comprobar en el despiece que el punto visible era el comienzo del cuerpo del amortiguador. El ojo está oculto detrás de las mejillas y el entreojos heredado ronda 230 mm; no mover el anclaje por confundir cuerpo y ojo. Completar el clevis según despiece, distinguiendo inferencia de observación.
+
+Corrección de orientación Enduro v23: la revisión cruzada encuentra aproximadamente 14,5° entre la tija estimada heredada y el último tramo del tubo propio. Ajustar exclusivamente el anclaje visual `saddle` de las nuevas identidades, conservando su longitud de referencia y todos los otros anclajes/campos comerciales. Contrato antes/después por ID, prueba de colinealidad y SQL limitado; manifiestos históricos intactos. Sender v24 incluye la misma comprobación y respeta el entreojos comercial 250 mm al registrar los ojos fotográficos con perspectiva. Ampliar los rayos de pedalier hasta fuera de toda la envolvente del cuadro para no pasar pruebas que acaben antes de las mejillas laterales.
+
+Corrección acotada de orientación Nomad v22: tras descartar el supuesto error de ojo, se verifica una desviación de tija de 8,8°/10,3° según talla. Conservar el perfil observado del tubo y corregir únicamente `saddle` visual en las nuevas identidades manteniendo longitud; todos los anclajes de suspensión y comerciales previos permanecen. Contrato y prueba de colinealidad exactos por ID, como Enduro, sin cambiar el perfil de suspensión histórico. Rayos completos ±0,15 m descartan que la cuna esté tapando el centro de pedalier.
+
+Cierre conjunto v22–v24: tres agentes por modelo más revisión cruzada/coordinada; tipos/build y 303 pruebas correctos. Seis GLB nuevos cargados/releídos por SHA y publicados secuencialmente; seis montajes antiguos y seis nuevos comprobados con cuentas temporales eliminadas. Cada revisión conserva 28 capturas ajenas. Nueve poses integradas sin errores; Nomad y Enduro conservan perfil de suspensión anterior y corrigen solo saddle estimado; Sender selecciona perfil nuevo por ID de recurso para su generación MY25 y corrige los anclajes exactos documentados. Tarjeta Sender sustituida por render MY25 identificado, anterior foto2021 archivada. Evidencia y límites en [12q](12q-evidencia-nomad-v22.md), [12r](12r-evidencia-enduro-v23.md) y [12s](12s-evidencia-sender-v24.md). No certificación CAD/100 % ni commits.
+
+## SUPREME DH V5 completo v25 · publicado
+
+Revisión individual autorizada para M/L desde v11, sin modificar los otros catorce cuadros/28 capturas ni las imágenes reales de cards. Investigar fuentes oficiales específicas V5 de talla completa, no XS ni V5.2; reconstruir perfil propio, triángulo delantero con huecos, HVCS exterior con dos enlaces/barras/polea, tirantes/vainas y uniones ocultas estimadas. La fase incluye multivista/overlay/articulación, comprobación de pasos extendidos y orientación tija, pruebas/tipos/build, preservación SHA, carga/relectura y publicación/transición Cloud. Conservar especificaciones, versiones y montajes históricos; correcciones de anclajes visuales solo justificadas y versionadas con contrato exacto. Sin CAD/100 % certificado ni commits. Fuentes offline `models/catalog-v25/`.
+
+V25: cinco vídeos técnicos oficiales descargados y muestreados (seis fotogramas por vídeo) corroboran enlaces/6-bar, refuerzos, punteras y flip chip; no se deduce de ellos una cinemática exacta. Se alinea SOLO saddle visual en la nueva identidad con el último tramo observado, preservando longitud y los demás anclajes. SQL exige corrección exacta por UUID. La revisión extendida detectó una pequeña intrusión de la mejilla inferior en el paso BB de L: corregir la holgura de esa pieza antes de subir. No basta con revisar solo la malla pintada ni rayos cortos.
+
+Cierre SUPREME v25: build/tipos y 313 pruebas correctos; cinco vídeos oficiales muestreados, 14 vistas/diez detalles/dos overlays y tres poses. Dos GLB cargados/releídos por SHA y publicación/transición acotadas; 28 recursos ajenos conservados, 22 rayos axiales y 50 rayos completos de BB despejados. Cuna/ventana, HVCS exterior y anclaje saddle versionado; sin convertir guardados/prearmadas ni alterar fotos de cards. Evidencia y límites en [12t](12t-evidencia-supreme-v25.md). No equivalencia CAD del 100 % ni commits.
+
+## TUES MK4 Carbon individual v26 · publicado
+
+Fase completa: contrastar MK4 oficial/multivista/despiece y muestreo de vídeo; reconstruir perfil, V4L/Flip Link y contrapartes; corregir apoyos/protecciones, revisar ventanas/pasos completos y montaje; probar/tipar/build, cargar/releer SHA, publicar/transicionar y auditar. Resultado y límites en [12u](12u-evidencia-tues-v26.md). Dos nuevas tallas M/L desde v13,28 capturas ajenas intactas; solo referencia saddle alineada con contrato exacto y misma longitud.321 pruebas correctas,14 vistas/diez detalles/dos overlays/tres poses,22 rayos axiales y50 completos BB libres. Fotos reales, guardados y prearmadas conservados. Sin CAD/100% certificado ni commits.
+
+Cierre final TUES v27: la revisión cercana de v26 detectó la raíz inferior discontinua; no se considera aceptada esa unión en v26. Nueva identidad v27, misma investigación específica, sección final dentro de pipa y placas/pequeño YT apoyados. Ambas caras revisadas antes de cargar; build/tipos y329 pruebas,14 vistas/diez detalles/dos overlays/tres poses,22 rayos axiales/50 completos libres. Publicación y transición individual comprobadas; fotos y28 capturas ajenas intactas. Estado/evidencia final en12u; sin modificar bytes anteriores.
+
+## Revalidación adversarial TUES MK4 Carbon v28
+
+Rechazo explícito del parecido v27: tres agentes independientes y revisión cruzada corrigen referencia de pipa falsa, cizalla, trayectoria del superior y geometrías tubulares. Reconstrucción por contornos propios, caras/biseles, collar y cuerpos articulados; contratos exactos de ocho anclajes estimados, sin cambios comerciales. Revisiones incluidas en la fase:54 puntos fotográficos independientes por talla, multivista/zoom/movimiento y corrección de defectos no capturados por los puntos (normales mezcladas, puntas de bisel y muelle atravesando placa).
+
+Publicación/transición individual aplicadas tras v27; 28 recursos ajenos, fotografías y guardados históricos conservados. Tipos/build y341 pruebas correctos;12 específicas repetidas tras limpieza final. Resultado y limitaciones en [12v](12v-evidencia-tues-v28.md). No porcentaje global/100%CAD certificado ni commits.
+
+## TUES · caras exteriores v29
+
+Forma v28 aprobada por el usuario: conservar todos los contornos/anclajes/medidas. Corregir exclusivamente winding y normales tras reflexión de imagen a mundo; no ocultar con DoubleSide global. Fase ejecutada con96 rayos FrontSide/DoubleSide (96 descartes anteriores/0 nuevos), conservación de superficie muestreada/límites,54 muestras por talla,14 vistas/tres poses,22+50rayos de pasos,355 pruebas/tipos/build, carga/relectura SHA y transición/auditoría individual. Evidencia [12w](12w-evidencia-caras-tues-v29.md). Fotografías, otras28 capturas y guardados anteriores conservados; reelección usa v29. Sin commits.
+
+
+## V10.8 CC MY27 · revisión individual v30
+
+Reconstrucción propia M/L desde foto oficial del cuadro desnudo y despieces V10.8: ventanas, arco delantero, basculante cerrado y enlaces VPP. Cinco anclajes visuales estimados con contrato antes/después; geometría oficial de dirección/ruedas, medidas y acabados conservados. Perfil de movimiento nuevo solo para recursos v30; conservar históricos y fotografías. Preparación, controles de silueta/paredes/pasos, multivista, pruebas y publicación forman parte de la fase 3, con evidencia y límites en [12x](12x-evidencia-v10-v30.md). No afirmar CAD/100 % de parecido ni aceptación integral del producto.
+
+
+Revisión integral de suspensión v2 implementada en fase3: quince modelos/30 tallas y38 shocks, cuatro recursos anteriores de prearmadas, compresión monótona y resorte separado de cuerpos rígidos. Se corrigieron cuatro referencias de prearmadas retiradas manteniendo88 posiciones y privados. Evidencia, reproducción y límites en [12y](12y-evidencia-suspension-v2.md).

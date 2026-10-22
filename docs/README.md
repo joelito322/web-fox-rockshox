@@ -106,3 +106,7 @@ No hace falta un informe aparte para cada comando: la evidencia puede vivir al f
 Documentación en español; nombres técnicos y de productos conservan su forma original. No incluir secretos, tokens, contraseñas, datos privados de cuentas o archivos `.env` reales. Las plantillas de entorno contienen solo nombres y valores vacíos. Referirse a datos de prueba como tales.
 
 Mantener suficiente detalle para implementar y validar. Evitar reglas para infraestructura que el proyecto no necesita. Los cambios de alcance del usuario prevalecen sobre estos planes; después se actualizan los documentos afectados.
+
+## Recursos finales y archivo local
+
+La política de modelos, fotos visibles, referencias y resultados se define en [models/README.md](../models/README.md). Fotos de cards/portada en `src/assets/images/` y GLB publicados se versionan; referencias de investigación, resultados, capturas y prototipos se conservan en `models/local/` ignorado. Los manifiestos y la procedencia permanecen en Git. Las pruebas de producto no deben depender de informes generados o de originales fotográficos que un clon no recibe.

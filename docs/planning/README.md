@@ -21,6 +21,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [05a · Fidelidad por modelo](05a-fidelidad-modelos.md) | Mejora exterior de los 53 modelos, referencias y conservación de versiones |
 | [05b · Miniaturas](05b-miniaturas-montajes.md) | Portadas del estado guardado, captura y persistencia protegida |
 | [05c · Movimiento de suspensión](05c-movimiento-suspension.md) | Inspección temporal de compresión por recorrido y cinemática por modelo |
+| [05d · Revisión integral de cuadros](05d-revision-integral-cuadros.md) | Rúbrica multivista y mejora versionada de los quince cuadros |
 | [06 · UI y UX](06-ui-y-ux.md) | Principios de contenido, dirección visual, marca, movimiento y accesibilidad |
 | [06a · Portada y acceso](06a-portada-y-acceso.md) | Composición de portada, entrada, registro y confirmación de correo |
 | [06b · Espacio de trabajo](06b-espacio-de-trabajo.md) | Pestañas, galerías, tarjetas, paneles, configurador y Mis bicicletas |
@@ -32,6 +33,25 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |
 | [10 · Auditoría integral](10-auditoria-integral-de-planes.md) | Revisión adversarial de todo el plan, incluyendo IAM; correcciones y pendientes |
 | [12 · Estado de implementación](12-estado-implementacion.md) | Evidencia real, integración Cloud y pendientes de ejecución |
+| [12f · Pasos v11](12f-evidencia-pasos-v11.md) | Continuidad de aberturas, pared interior de dirección y conservación de v10 |
+| [12k · CHERRY BOMB completo v16](12k-evidencia-cherry-bomb-v16.md) | Perfiles hidroformados propios, pipa cónica y balancín perforado, con revisión cruzada |
+| [12n · Furious V3 2021 v19](12n-evidencia-furious-v19.md) | Silueta 2021, soporte acampanado, bieleta y revisión de articulación |
+| [12o · Fury Carbon High Pivot v20](12o-evidencia-fury-v20.md) | Perfil 2023+, ventana inferior, yugo sólido y revisión de montaje |
+| [12p · META SX V5 v21](12p-evidencia-meta-v21.md) | Perfil propio, doble enlace VCS, apoyos y conservación |
+| [12q · Nomad 7 CC v22](12q-evidencia-nomad-v22.md) | VPP propio, cuna abierta y tija alineada |
+| [12r · S-Works Enduro v23](12r-evidencia-enduro-v23.md) | Cuna baja, tres enlaces y tija versionada |
+| [12s · Sender CFR MY25 v24](12s-evidencia-sender-v24.md) | Generación correcta, anclajes y movimiento propios |
+| [12t · SUPREME DH V5 v25](12t-evidencia-supreme-v25.md) | Perfil propio, HVCS exterior, vídeos y pasos completos |
+| [12u · TUES MK4 Carbon v26/v27](12u-evidencia-tues-v26.md) | Perfil propio, Flip Link, punteras y transición individual M/L |
+| [12v · TUES MK4 adversarial v28](12v-evidencia-tues-v28.md) | Tres agentes, contornos fotográficos, registro sin cizalla y publicación individual |
+| [12w · Paredes TUES v29](12w-evidencia-caras-tues-v29.md) | Corrección de caras invertidas, forma aprobada intacta y regresión FrontSide |
+| [12m · FRS V3 Pure White v18](12m-evidencia-frs-v18.md) | Perfil propio, bieleta, protecciones y fotografía original del cuadro |
+| [12l · Force Carbon High Pivot v17](12l-evidencia-force-v17.md) | Reconstrucción individual publicada, triángulo GT y bieleta calada; evidencia y límites |
+| [12j · CAPRA completo v15](12j-evidencia-capra-trayectos-v15.md) | Rectas longitudinales, radios locales y revisión cruzada contra fotografías |
+| [12i · CAPRA v14](12i-evidencia-capra-v14.md) | Corrección individual de llegadas y diagonal inmediata del CAPRA MK3 MX |
+| [12h · Continuidad localizada v13](12h-evidencia-uniones-v13.md) | Cinco cuadros protegidos y empalmes corregidos en los otros diez |
+| [12g · Dirección exterior v12](12g-evidencia-direccion-v12.md) | Revisión retirada por el usuario; restaurado v11, recursos y evidencia histórica |
+| [12e · Cuadros v10](12e-evidencia-cuadros-v10.md) | Revisión de quince cuadros, fuentes multivista, publicación y conservación del historial |
 | [12d · Rendimiento de consultas](12d-rendimiento-consultas.md) | Auditoría SQL/red, caché, transferencia y selección 3D |
 | [12c · Continuidad multivista](12c-evidencia-continuidad.md) | Conexiones exteriores v6, frenos v7, referencias e inferencias |
 | [12b · Evidencia de geometría](12b-evidencia-geometria.md) | Cobertura de modelos, conservación de versiones y límites de parecido |
@@ -88,7 +108,7 @@ flowchart TD
 - Las combinaciones con incompatibilidades mecánicas se permiten como montaje visual, con avisos; no se ocultan ni bloquean por ese motivo.
 - Colores libres en cuadro y piezas habilitadas; el resto mantiene los acabados del catálogo. El color elegido forma parte del montaje guardado.
 - Portada, catálogo, fichas y comparación públicos. Crear o editar montajes, consultar sus avisos y guardar exige iniciar sesión; «Mis bicicletas» contiene solo montajes propios. Tener cuenta no implica una membresía de pago.
-- Auth nativo y formulario común con correo y contraseña, sin OAuth. Registro público siempre user; user/admin iniciales protegidos y capacidad completa de crear/configurar roles personalizados y asignarlos según permisos. Primer admin por operación controlada del proyecto; administración posterior mediante la web y funciones protegidas de Supabase. Composición de acceso y registro aprobada en el documento 06: imagen estática y formulario en escritorio, formulario sin panel fotográfico en móvil; registro con confirmación de contraseña y estado de confirmación de correo.
+- Auth nativo con correo y contraseña y, por ampliación del usuario del 21/10/2026, «Continuar con Google» mediante OAuth de Supabase. Registro público siempre user; user/admin iniciales protegidos y capacidad completa de crear/configurar roles personalizados y asignarlos según permisos. Primer admin por operación controlada del proyecto; administración posterior mediante la web y funciones protegidas de Supabase. Composición de acceso y registro aprobada en el documento 06: imagen estática y formulario en escritorio, formulario sin panel fotográfico en móvil; registro con confirmación de contraseña y estado de confirmación de correo.
 - La reconstrucción del prototipo está autorizada. Se sustituye por fases verificables, sin conservar código o diseño por obligación.
 
 ## Comunicación y lectura en nuevas sesiones
@@ -110,3 +130,14 @@ Una ampliación debe indicar qué necesidad resuelve y qué fase afecta. No aña
 El trabajo de concreción e implementación se distribuye en el documento 08: completar inventario, contratos por categoría, referencias de ensamblaje, bocetos administrativos y validación visual/rendimiento forma parte de las fases, con resultados y criterios de aceptación. No se exige resolverlo fuera del plan antes de comenzar. La cobertura ya está cerrada: todas las piezas del catálogo se montan en 3D. La conexión Supabase, el dominio de Netlify y el correo son requisitos de integración. Los datos de prueba pueden ayudar a desarrollar; no cumplen la aceptación final de una función que exige datos o integración reales.
 
 - [11o · Ampliación gravity](11o-ampliacion-gravity.md): cuadros y horquillas adicionales; generaciones históricas identificadas autorizadas.
+
+
+## V10.8 CC MY27 · revisión individual v30
+
+Reconstrucción propia M/L desde foto oficial del cuadro desnudo y despieces V10.8: ventanas, arco delantero, basculante cerrado y enlaces VPP. Cinco anclajes visuales estimados con contrato antes/después; geometría oficial de dirección/ruedas, medidas y acabados conservados. Perfil de movimiento nuevo solo para recursos v30; conservar históricos y fotografías. Preparación, controles de silueta/paredes/pasos, multivista, pruebas y publicación forman parte de la fase 3, con evidencia y límites en [12x](12x-evidencia-v10-v30.md). No afirmar CAD/100 % de parecido ni aceptación integral del producto.
+
+
+Revisión integral de suspensión v2 implementada en fase3: quince modelos/30 tallas y38 shocks, cuatro recursos anteriores de prearmadas, compresión monótona y resorte separado de cuerpos rígidos. Se corrigieron cuatro referencias de prearmadas retiradas manteniendo88 posiciones y privados. Evidencia, reproducción y límites en [12y](12y-evidencia-suspension-v2.md).
+
+
+Política de archivos finales y archivo local aprobada: [models/README.md](../../models/README.md). Fotos visibles y GLB publicados se versionan; investigación/resultados/prototipos permanecen locales. No convertir un informe generado en requisito para ejecutar los tests de producto.

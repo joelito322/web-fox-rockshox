@@ -378,3 +378,48 @@ Validación del ajuste · 21/10/2026: Chromium, resultado único SUPREME, anchos
 ### Inspección temporal de suspensión · 21/10/2026
 
 Botón «Suspensión» en los controles del visor; abre compresión delantera/trasera, reproducción, pausa y restablecimiento en espacio reservado bajo la escena. Boceto, estados de movimiento reducido/móvil y límites en [05c](05c-movimiento-suspension.md). No añade campos al montaje ni movimiento a sus miniaturas.
+
+## Menú de cuenta · 21/10/2026
+
+Petición del usuario: identificar la cuenta conectada mediante un desplegable sutil en la cabecera. Botón con icono, nombre corto cuando exista y chevrón; móvil compacto. Panel con nombre y correo de la sesión actual, rol obtenido de IAM, correo confirmado y proveedor Google vinculado cuando corresponda. Sin consultas adicionales, campos de perfil ni edición de cuenta.
+
+```text
+[ Usuario · nombre ▾ ]
+      Cuenta activa
+      Nombre
+      correo
+      [Rol] [Correo confirmado]
+      Google vinculado (si existe)
+      -------------------------
+      Mis bicicletas (con permiso)
+      Administración (con permiso)
+      Cerrar sesión
+```
+
+Acciones con enlaces/botones nativos, navegación por Tab, Escape devuelve foco al botón. Cierre al pulsar fuera, mover foco fuera, navegar o cambiar cuenta; no modal ni bloqueo del resto de la página. El cierre de sesión reutiliza la confirmación de cambios pendientes del configurador. Nombre/correo escapan como texto; no descargar avatares remotos. La información visual nunca concede permisos.
+
+## Selector de categorías · 21/10/2026
+
+El usuario solicita diferenciar grupos/opciones, aumentar texto y añadir iconos monocromáticos estructurados. Conservar las siete agrupaciones y dieciocho categorías existentes, sin nuevos filtros ni cambiar datos. Panel lateral más ancho (aprox. 250 px), título «Categorías», acción «Todas las piezas» y secciones con títulos de grupo de 12 px, separadores suaves y opciones de 15 px/44 px de alto mínimo. Iconos propios de trazo uniforme para cada pieza, en gris verdoso; opción activa con fondo tenue, marca lateral y check. Títulos sin acción, opciones con estado `aria-pressed`.
+
+```text
+CATEGORÍAS
+[▦ Todas las piezas          ✓]
+─────────────────────────────
+SUSPENSIÓN
+  [icono] Horquillas
+  [icono] Amortiguadores
+─────────────────────────────
+RUEDAS
+  [icono] Aros
+  [icono] Neumáticos
+  [icono] Bujes
+```
+
+Cabecera/acción global visibles y grupos con desplazamiento propio; no acordeón que esconda categorías. Móvil: mismo listado bajo el botón Categorías, altura limitada para no desplazar toda la galería, opciones de ancho completo, cierre al elegir y foco devuelto al botón. Conservar búsqueda, filtros/página y navegación; no añadir consultas ni cantidades por categoría.
+
+## Continuidad de catálogo y salida del detalle · 21/10/2026
+
+Corrección solicitada: abrir/cerrar fichas de piezas no debe restablecer el desplazamiento del catálogo. Los cambios de slug, detail o variant dentro del mismo listado conservan su posición; cambiar filtros/página mantiene el comportamiento de nueva selección. El retorno entre pestañas conserva su propia posición e intención. Al cerrar se restaura foco con preventScroll, sin llevar la tarjeta al centro ni desplazar a la cabecera.
+
+Añadir salida breve del Drawer compartido: lateral en escritorio y hacia abajo en móvil, con desvanecimiento del fondo. X, clic exterior y Escape esperan el final visual antes de ejecutar onClose; cierre duplicado bloqueado y desmontaje cancela esperas. Con movimiento reducido el cierre es inmediato. No retrasar acciones externas como guardar/navegar ni modificar confirmaciones de cambios sin guardar.
