@@ -68,3 +68,17 @@ La comprobación de guardado detectó que las cuatro prearmadas públicas conser
 
 
 Revisión integral de suspensión v2 implementada en fase3: quince modelos/30 tallas y38 shocks, cuatro recursos anteriores de prearmadas, compresión monótona y resorte separado de cuerpos rígidos. Se corrigieron cuatro referencias de prearmadas retiradas manteniendo88 posiciones y privados. Evidencia, reproducción y límites en [12y](12y-evidencia-suspension-v2.md).
+
+## Alineación de manetas con el manillar · 21/10/2026
+
+Corrección solicitada: las abrazaderas/manetas deben seguir la altura y el eje local del tubo del manillar, en ambos lados. El montaje previo usaba la altura del centro de la potencia y omitía elevación y barrido del manillar. La corrección de instancia del visor calcula la posición/tangente sobre la curva comercial v8 o el tramo exterior genérico v3–v7; mueve rígidamente la maneta y acompaña la salida del latiguillo sin desplazar la pinza. No modifica generadores publicados, GLB, variantes ni datos guardados; las miniaturas nuevas comparten el visor corregido. Las miniaturas ya almacenadas no se regeneran automáticamente.
+
+Validación: doce combinaciones de lado, familia de manillar y elevación contrastadas mediante rayos contra la geometría real del tubo; centros y ejes coincidentes, simetría, extremo de pinza fijo y geometría original intacta. Una prueba adicional de simetría y las regresiones de escena/movimiento completan 17 pruebas unitarias correctas. Build y TypeScript correctos; prueba de navegador de reproducción, reutilización de recursos y restablecimiento de suspensión correcta (escritorio Chromium/SwiftShader). No se atribuye un ángulo de ergonomía personalizado ni ajuste mecánico exacto.
+
+### Mando de cambio y potencia
+
+Extensión solicitada: el mando asociado al cambio trasero usaba z=240 mm fijo y la altura del centro del manillar. `ControlMount` reutiliza la curva/tangente de las manetas de freno para situarlo a la derecha, 25 mm más hacia el centro que la abrazadera del freno; conserva íntegra la geometría del cambio junto al eje trasero. El ajuste sigue siendo de instancia, sin modificar generadores publicados ni guardar posturas nuevas.
+
+Potencias: revisión geométrica de las 180 combinaciones de quince familias de cuadro, cuatro potencias y tres manillares, con horquilla delantera instalada (FOX40 para anclaje directo y FOX38 para abrazadera). Rayos comprueban presencia de la abrazadera en el centro del manillar y del apoyo en dirección/pletina; los recursos comerciales también se contrastan contra su anclaje `bar_clamp`. No se detectó desfase de centros que requiera desplazar la potencia. Esto no certifica diámetros compatibles, tolerancias mecánicas ni reconstrucción exacta de abrazaderas; los avisos de compatibilidad se conservan.
+
+Validación conjunta: 19 pruebas unitarias correctas (incluyen 24 combinaciones de mando/manillar/potencia y regresión de escena/movimiento), compilación correcta y prueba de reproducción/restablecimiento en navegador correcta. Sin nuevas consultas, campos persistidos ni commits.

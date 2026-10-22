@@ -1,3 +1,4 @@
+import { ControlMount } from "./ControlMount";
 import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import {
@@ -330,6 +331,12 @@ export function BikeAssembly({
             asset?.kind === "glb"
               ? importedMount(item.slot, asset, resolved)
               : undefined;
+          const procedural = (
+            <Generator key={item.slot} slot={item.slot} color={color}
+              configuration={configuration} resolved={resolved} variants={variants} onSelect={onSelect} />
+          );
+          const mountedControl = ["brake", "rear_derailleur"].includes(variant.component.category) &&
+            /^atlas-bike-v[3-7]$/.test(asset?.generator_key ?? "");
           return (
             <group key={item.slot} userData={{ motionSlot: item.slot }}>
               <Selection
@@ -350,15 +357,13 @@ export function BikeAssembly({
                     inspection={inspection}
                   />
                 ) : (
-                  <Generator
-                    key={item.slot}
-                    slot={item.slot}
-                    color={color}
-                    configuration={configuration}
-                    resolved={resolved}
-                    variants={variants}
-                    onSelect={onSelect}
-                  />
+                  mountedControl ? <ControlMount bar={resolved.bar}
+                    handlebar={variants[configuration.items.find(part => part.slot === "handlebar")?.variantId ?? ""]}
+                    front={item.slot.startsWith("front")}
+                    shifter={variant.component.category === "rear_derailleur"}
+                    identity={`${item.variantId}:${color}:${configuration.items.map(part => part.variantId).join(":")}`}>
+                    {procedural}
+                  </ControlMount> : procedural
                 )}
               </Selection>
             </group>
