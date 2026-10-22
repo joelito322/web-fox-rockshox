@@ -1,0 +1,37 @@
+ENTREGABLE 3: MANUAL DE USUARIO — ATLAS MTB
+Autor: Joel Ito Luque
+Fecha de portada: 21 de octubre de 2026
+
+CONTENIDO
+- manual.tex: único archivo LaTeX con todos los apartados, tablas y referencia.
+- manual.pdf: manual compilado, con capturas integradas y navegación por índice.
+- recursos/: capturas reales, registro de comprobaciones y tipografías con licencia.
+
+COMPILAR
+Abre una terminal en esta carpeta y ejecuta:
+    tectonic manual.tex
+Alternativa con una distribución TeX completa:
+    latexmk -xelatex manual.tex
+También puedes ejecutar XeLaTeX varias veces para resolver el índice y las referencias.
+No se utiliza un archivo bibliográfico externo ni se requiere BibTeX/Biber.
+
+Conserva las rutas relativas de recursos al trasladar el documento. Las fuentes
+Liberation se incluyen para no depender de las tipografías del equipo. Tectonic
+puede descargar paquetes TeX la primera vez. Una distribución TeX completa debe
+incluir fontspec, babel en español, geometry, setspace, graphicx, booktabs,
+longtable, tabularx, array, ragged2e, caption, float, enumitem, fancyhdr,
+hyperref y xurl.
+
+No necesitas credenciales, variables de entorno ni acceso a Supabase para compilar.
+Para utilizar la aplicación, consulta https://atlasmtb.netlify.app/.
+
+CRITERIOS
+- Estructura académica y formato basado en APA 7, con instrucciones de uso prácticas.
+- Portada individual y sin logotipos institucionales.
+- Pasos de consulta, comparación, configuración, guardado y gestión de montajes.
+- Sección separada para administración según permisos.
+- Capturas reales recortadas a controles, sin datos de cuentas personales.
+- Entrega de correos no certificada; Google confirmado previamente por el usuario.
+- La representación 3D y la suspensión son aproximaciones visuales.
+- La revisión móvil corresponde a emulación de navegador.
+- Informe técnico, presentación y paquete del software son entregables independientes.

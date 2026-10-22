@@ -1,0 +1,110 @@
+[
+  {
+    "key": "foto",
+    "author": "Desmeules, N.",
+    "year": "2021",
+    "title": "Man in black jacket and black helmet riding on motocross dirt bike on mountain during daytime",
+    "url": "https://unsplash.com/photos/man-in-black-jacket-and-black-helmet-riding-on-motocross-dirt-bike-on-mountain-during-daytime-XpB8y73sEEw",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "gltf",
+    "author": "Khronos 3D Formats Working Group",
+    "year": "2021",
+    "title": "glTF 2.0 specification",
+    "url": "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "netlify",
+    "author": "Netlify",
+    "year": "s. f.",
+    "title": "Vite on Netlify",
+    "url": "https://docs.netlify.com/build/frameworks/framework-setup-guides/vite/",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "playwright",
+    "author": "Playwright",
+    "year": "s. f.",
+    "title": "Installation",
+    "url": "https://playwright.dev/docs/intro",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "postgres",
+    "author": "PostgreSQL Global Development Group",
+    "year": "s. f.",
+    "title": "Row security policies",
+    "url": "https://www.postgresql.org/docs/17/ddl-rowsecurity.html",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "react",
+    "author": "React",
+    "year": "s. f.",
+    "title": "Thinking in React",
+    "url": "https://react.dev/learn/thinking-in-react",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "shimano",
+    "author": "Shimano",
+    "year": "s. f.",
+    "title": "Compatibility",
+    "url": "https://productinfo.shimano.com/en/compatibility",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "sram",
+    "author": "SRAM",
+    "year": "s. f.",
+    "title": "Compatibility map",
+    "url": "https://www.sram.com/en/service/manuals--documents/compatability-map",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "rls",
+    "author": "Supabase",
+    "year": "s. f.-a",
+    "title": "Row level security",
+    "url": "https://supabase.com/docs/guides/database/postgres/row-level-security",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "oauth",
+    "author": "Supabase",
+    "year": "s. f.-b",
+    "title": "Sign in with Google",
+    "url": "https://supabase.com/docs/guides/auth/social-login/auth-google",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "vitest",
+    "author": "Vitest",
+    "year": "s. f.",
+    "title": "Getting started",
+    "url": "https://vitest.dev/guide/",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  },
+  {
+    "key": "wcag",
+    "author": "World Wide Web Consortium",
+    "year": "2024",
+    "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+    "url": "https://www.w3.org/TR/2024/REC-WCAG22-20241212/",
+    "verification": "Consultada en fuente oficial mediante herramienta web; fotografía consultada en página original.",
+    "date_note": "s. f. indica que no se atribuye una fecha de publicación no identificada."
+  }
+]

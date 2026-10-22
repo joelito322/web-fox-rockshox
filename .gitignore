@@ -2,6 +2,9 @@ node_modules
 .DS_Store
 dist
 .vite
+.cache/
+coverage/
+*.tsbuildinfo
 .env
 .env.*
 !.env.example
@@ -53,3 +56,27 @@ __pycache__/
 
 # Keep research provenance and source metadata versioned.
 !/models/**/references/*.json
+
+# Academic delivery archives and rehearsal notes stay local.
+/entregables/02_Informe_Tecnico.zip
+/entregables/03_Manual_Usuario.zip
+/entregables/04_Presentacion.zip
+/entregables/04_Presentacion/recursos/guion-exposicion.txt
+
+# Rebuildable LaTeX auxiliary files in academic deliveries.
+/entregables/**/*.aux
+/entregables/**/*.log
+/entregables/**/*.out
+/entregables/**/*.toc
+/entregables/**/*.nav
+/entregables/**/*.snm
+/entregables/**/*.vrb
+/entregables/**/*.xdv
+/entregables/**/*.fls
+/entregables/**/*.fdb_latexmk
+/entregables/**/*.synctex.gz
+
+# Generated documentary validation outputs; retain the evidence cited by the report.
+/entregables/**/recursos/validacion-*.json
+!/entregables/02_Informe_Tecnico/recursos/validacion-publica.json
+/entregables/**/recursos/validacion-documento.txt

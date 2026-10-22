@@ -1,0 +1,611 @@
+% Archivo único. Compilar dentro de esta carpeta: tectonic manual.tex
+% Alternativa: latexmk -xelatex manual.tex. Bibliografía integrada, sin BibTeX.
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fontspec}
+\setmainfont{LiberationSerif}[Path=recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+\setsansfont{LiberationSans}[Path=recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+\setmonofont{LiberationMono}[Path=recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic,Scale=0.85]
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{setspace,graphicx,booktabs,longtable,tabularx,array,ragged2e}
+\usepackage{caption,float,enumitem,fancyhdr}
+\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{xurl}
+\hypersetup{pdftitle={Manual de usuario de ATLAS MTB},pdfauthor={Joel Ito Luque},pdfsubject={Selección, comparación y configuración tridimensional de bicicletas de montaña}}
+\doublespacing\RaggedRight
+\setlength{\parindent}{1.27cm}\setlength{\parskip}{0pt}\setlength{\headheight}{15pt}
+\pagestyle{fancy}\fancyhf{}\fancyhead[R]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\captionsetup{labelfont=bf,textfont=it,labelsep=newline,justification=raggedright,singlelinecheck=false,skip=8pt}
+\setlist[enumerate]{leftmargin=*,itemsep=2pt,topsep=5pt}
+\setlist[itemize]{leftmargin=*,itemsep=0pt,topsep=5pt}
+\setcounter{tocdepth}{2}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+\newenvironment{tabla}{\begingroup\singlespacing\small\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.25}}{\endgroup}
+\newcommand{\control}[1]{\textbf{#1}}
+\newcommand{\nota}[1]{\par\vspace{3pt}{\singlespacing\small\RaggedRight\noindent\textit{Nota.} #1\par}}
+\newcommand{\resultado}[1]{\par\noindent\textbf{Resultado esperado.} #1\par}
+\newcommand{\consejo}[1]{\par\noindent\textbf{Ten en cuenta.} #1\par}
+\newcommand{\captura}[5]{\begin{figure}[H]\caption{#2}\label{#1}\centering\includegraphics[width=#4\textwidth,height=#5\textheight,keepaspectratio]{recursos/#3}\nota{Captura propia de los controles de la web publicada. Los datos de práctica pertenecen a una cuenta temporal.}\end{figure}}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{fancy}\centering
+{\large\bfseries Universidad Nacional de Juliaca\par}
+\vspace{0.35cm}
+Facultad de Ciencias de la Ingeniería\par
+Ingeniería de Software y Sistemas\par
+\vspace{1.5cm}
+{\large\bfseries Manual de usuario de la plataforma web para la selección, comparación y configuración tridimensional de bicicletas de montaña\par}
+\vspace{0.6cm}\textbf{ATLAS MTB}\par
+Entregable 3\par
+\vspace{1cm}Joel Ito Luque\par
+\vspace{0.6cm}Gestión de Proyectos\par
+Docente: Fidel Huanco Ramos\par
+Octavo semestre\par
+\vfill Juliaca, Perú\par
+21 de octubre de 2026
+\end{titlepage}
+\setcounter{page}{2}
+\section*{Presentación}\addcontentsline{toc}{section}{Presentación}
+Este manual explica cómo consultar piezas de bicicletas de montaña, comparar sus versiones, preparar un montaje visual y conservarlo en una cuenta personal. Está dirigido a personas que utilizan la web y a quienes tienen autorización para administrar sus contenidos y accesos.
+
+Los procedimientos emplean los nombres de los botones, pestañas y campos de ATLAS MTB. No se necesita instalar el proyecto ni conocer programación. Los ejemplos utilizan nombres de práctica y describen las piezas por su función, sin depender de un fabricante específico.
+
+El documento corresponde a la versión revisada el 21 de octubre de 2026. Las capturas muestran controles reales de la web publicada; se recortan las zonas pertinentes para facilitar su lectura. La disposición puede variar según el ancho de la pantalla y las acciones disponibles dependen de los permisos de la cuenta.
+
+La representación tridimensional ayuda a explorar el aspecto de un conjunto. No sustituye la revisión de medidas, instrucciones de montaje ni evaluación de un especialista antes de adquirir o instalar piezas físicas.
+\clearpage\tableofcontents
+\clearpage\listoffigures\listoftables
+\clearpage
+\section{Primeros pasos}
+\subsection{Dirección y requisitos de uso}
+Abre \url{https://atlasmtb.netlify.app/} en un navegador con conexión a Internet. Puedes consultar el catálogo como visitante. Para crear y conservar montajes personales necesitas iniciar sesión con una cuenta habilitada.
+
+La vista tridimensional requiere que el navegador pueda mostrar gráficos 3D. Si no está disponible, utiliza la lista de piezas del configurador. La carga inicial puede tardar mientras se descargan las referencias visuales; espera a que termine antes de repetir una selección.
+
+\begin{table}[H]\caption{Preparación para utilizar la plataforma}\label{tab:requisitos}\begin{tabla}\begin{tabularx}{\textwidth}{L{3.5cm}X}\toprule
+Elemento & Comprobación inicial\\\midrule
+Navegador & Abre la dirección pública y verifica que aparecen los controles del catálogo.\\
+Conexión & Mantén Internet disponible para consultar piezas, entrar y guardar.\\
+Cuenta personal & Usa una cuenta de Google o un correo al que tengas acceso, según el método elegido.\\
+Pantalla & En escritorio se muestran más zonas simultáneas; en móvil algunas se despliegan mediante botones.\\
+Visor 3D & Si falla, continúa con \control{Lista sin 3D} y revisa el montaje por sus piezas.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+
+\subsection{Qué puedes hacer según tu acceso}
+\begin{table}[H]\caption{Acciones según el tipo de acceso}\label{tab:accesos}\begin{tabla}\begin{tabularx}{\textwidth}{L{3cm}XX}\toprule
+Acceso & Acciones habituales & Observación\\\midrule
+Visitante & Consultar bicicletas y componentes; abrir fichas y comparar. & Para configurar o consultar montajes privados, la web solicita sesión y permisos.\\
+Cuenta de usuario & Configurar, guardar, continuar, renombrar y eliminar sus propios montajes, si tiene los permisos correspondientes. & Los montajes de otra cuenta no aparecen en su espacio personal.\\
+Cuenta administradora & Acciones autorizadas sobre catálogo, bicicletas de referencia, usuarios, roles y permisos. & No todos los administradores o roles personalizados tienen necesariamente las mismas acciones.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+
+\subsection{Ruta rápida para tu primer montaje}\label{sec:rapida}
+\begin{enumerate}
+\item Entra en la web e inicia sesión.
+\item Abre \control{Bicicletas} y busca una bicicleta de referencia.
+\item Pulsa \control{Personalizar} para abrir una copia editable de esa composición.
+\item Escribe \textit{Mi bicicleta de práctica} en \control{Nombre del montaje}.
+\item Explora las vistas y elige una posición del montaje para consultar sus alternativas.
+\item Revisa los \control{Avisos del montaje} y pulsa \control{Guardar}.
+\item Espera el estado \control{Guardado}; después abre \control{Mis bicicletas}.
+\item Localiza el nombre de práctica y pulsa \control{Continuar} para retomar la edición.
+\end{enumerate}
+\resultado{El montaje queda asociado a tu cuenta y puedes volver a abrirlo. Personalizar una bicicleta de referencia no modifica la composición pública original.}
+\clearpage
+\section{Crear una cuenta e iniciar sesión}\label{sec:cuenta}
+\subsection{Entrar con Google}
+\begin{enumerate}
+\item Pulsa \control{Entrar} para abrir la pantalla \control{Iniciar sesión}.
+\item Selecciona \control{Continuar con Google}.
+\item En la página del proveedor, elige la cuenta que deseas utilizar. Si se solicita, completa su acceso y autorización.
+\item Espera el regreso automático a ATLAS MTB. Evita cerrar la pestaña mientras termina el retorno.
+\item Abre \control{Mi cuenta} y comprueba que el correo corresponde a la cuenta elegida.
+\end{enumerate}
+\resultado{La web reconoce tu identidad y habilita las acciones que tenga asignadas tu cuenta. En un primer acceso se crea el registro de acceso de la aplicación; no necesitas crear antes una contraseña propia de ATLAS MTB para utilizar este método.}
+
+La selección de cuenta puede mostrar la dirección del servicio de autenticación en vez del nombre de la web. Es parte del recorrido configurado. Si cancelas la selección, vuelve a la pantalla de entrada y repite cuando quieras continuar.
+\consejo{Si utilizas Google, la contraseña de esa cuenta se introduce en la página del proveedor, no en el formulario de correo de ATLAS MTB. Elegir otra cuenta puede mostrar un espacio de bicicletas diferente.}
+
+\subsection{Registrarte con correo y contraseña}\label{sec:registro}
+\begin{enumerate}
+\item En \control{Iniciar sesión}, pulsa \control{Crear cuenta}.
+\item Escribe un correo real que puedas consultar.
+\item Introduce una contraseña de al menos 12 caracteres y repítela en \control{Confirmar contraseña}.
+\item Puedes utilizar el botón del ojo para comprobar temporalmente lo escrito y volver a ocultarlo.
+\item Pulsa \control{Crear cuenta}. Si aparece \control{Las contraseñas no coinciden}, corrige ambos campos.
+\item Si la web solicita confirmación, revisa la bandeja de entrada y el correo no deseado. Abre el enlace recibido y continúa el acceso.
+\item Si necesitas solicitar otro mensaje, utiliza \control{Reenviar correo} desde el estado \control{Revisa tu correo}.
+\end{enumerate}
+\resultado{El registro se solicita para el correo indicado. La disponibilidad del acceso queda sujeta a la confirmación que solicite el servicio.}
+\consejo{La pantalla de registro está implementada; la entrega real de mensajes de confirmación y recuperación no se ha validado en esta entrega. Si el mensaje no llega, no supongas que la cuenta está confirmada: revisa el correo y consulta a quien administra la plataforma. No uses una dirección inventada.}
+\captura{fig:registro}{Campos para solicitar una cuenta con correo}{02-registro.png}{.72}{.52}
+
+\subsection{Entrar con correo y contraseña}
+\begin{enumerate}
+\item Abre \control{Entrar}.
+\item Completa \control{Correo electrónico} y \control{Contraseña} con los datos de tu cuenta.
+\item Pulsa \control{Entrar} una sola vez y espera la respuesta.
+\item Si la cuenta está habilitada, accede al espacio personal o al montaje que intentabas abrir.
+\end{enumerate}
+\resultado{La sesión queda iniciada. Un correo confirmado y una contraseña válida no conceden por sí solos permisos de administración.}
+\captura{fig:entrada}{Formulario de entrada con credenciales}{01-entrada-correo.png}{.72}{.43}
+
+\subsection{Recuperar el acceso}
+\begin{enumerate}
+\item Desde la entrada por correo, pulsa \control{¿Olvidaste tu contraseña?}.
+\item Escribe el correo de la cuenta y pulsa \control{Enviar enlace}.
+\item Si recibes el mensaje de recuperación, abre el enlace en el navegador y espera el retorno a la web.
+\item En \control{Nueva contraseña}, escribe una contraseña de al menos 12 caracteres, confírmala y pulsa \control{Guardar contraseña}.
+\item Vuelve a entrar con la nueva contraseña cuando corresponda.
+\end{enumerate}
+La pantalla puede mostrar una respuesta general para proteger la privacidad de las cuentas; ese mensaje no demuestra que el correo exista ni que haya sido entregado. Para una cuenta utilizada mediante Google, recupera primero el acceso con ese proveedor.
+
+\subsection{Comprobar la cuenta activa y salir}
+Pulsa \control{Mi cuenta} en la cabecera. El desplegable muestra el correo de la sesión y, cuando están disponibles, el nombre, rol y estado de confirmación. Una cuenta vinculada con Google también puede mostrar esa relación.
+
+Para terminar, selecciona \control{Cerrar sesión}. Si tienes cambios pendientes en el configurador, resuelve primero el aviso de salida explicado en la sección~\ref{sec:salida}. En un equipo compartido, verifica que vuelve a aparecer \control{Entrar} antes de retirarte.
+\clearpage
+\section{Orientarte en la web}
+\subsection{Pestañas principales}
+\begin{table}[H]\caption{Dónde realizar cada tarea}\label{tab:navegacion}\begin{tabla}\begin{tabularx}{\textwidth}{L{3.3cm}X}\toprule
+Pestaña o zona & Uso\\\midrule
+Bicicletas & Elegir una composición de referencia o empezar desde un cuadro.\\
+Componentes & Buscar piezas, revisar medidas y seleccionar variantes para comparar.\\
+Mis bicicletas & Consultar y continuar los montajes guardados por tu cuenta.\\
+Comparar & Revisar en columnas hasta tres variantes de una misma categoría.\\
+Mi cuenta & Comprobar identidad, abrir accesos autorizados y cerrar sesión.\\
+Administración & Gestionar contenido y accesos cuando la cuenta tiene los permisos necesarios.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+\captura{fig:navegacion}{Pestañas del espacio de trabajo}{03-navegacion.png}{1}{.13}
+
+\subsection{Abrir y cerrar paneles de detalle}
+Pulsa una tarjeta o su nombre para abrir la ficha correspondiente. En escritorio el detalle aparece en un panel lateral; en una pantalla estrecha se adapta a un panel inferior.
+
+Puedes cerrarlo con \control{Cerrar detalle}, la tecla \control{Esc} o un clic fuera del panel. En formularios editables, la web puede solicitar qué hacer con los cambios pendientes. Al consultar el catálogo, cerrar una ficha permite continuar explorando desde el contexto en que estabas.
+\clearpage
+\section{Buscar y revisar componentes}\label{sec:catalogo}
+\subsection{Seleccionar una categoría}
+\begin{enumerate}
+\item Abre \control{Componentes}.
+\item En el selector \control{Categorías}, elige el tipo de pieza: por ejemplo, \control{Horquillas}, \control{Aros} o \control{Frenos}.
+\item Identifica el grupo general y pulsa la opción concreta que necesitas. El estado seleccionado permite reconocer el filtro activo.
+\item Para volver al conjunto del catálogo, selecciona \control{Todas las piezas}.
+\end{enumerate}
+En móvil, pulsa primero \control{Categorías} para desplegar el selector. La lista puede tener desplazamiento propio; recórrela para encontrar las categorías inferiores.
+\captura{fig:categorias}{Agrupación de categorías y selección directa}{05-categorias.png}{.55}{.61}
+
+\subsection{Buscar y combinar filtros}
+\begin{enumerate}
+\item Escribe una palabra o parte del nombre en \control{Buscar componentes}.
+\item Espera a que se actualice la selección; no es necesario pulsar un botón de envío.
+\item Ajusta \control{Marca}, \control{Disciplina} y los campos de medida disponibles para esa categoría.
+\item Revisa las tarjetas y, si hay más páginas, usa \control{Anterior} y \control{Siguiente}.
+\item Si la búsqueda queda demasiado restringida, borra el texto o pulsa \control{Limpiar filtros}. La categoría elegida puede mantenerse.
+\end{enumerate}
+\resultado{La lista muestra los modelos que cumplen los filtros. Una combinación sin resultados no significa que el catálogo haya desaparecido.}
+\captura{fig:busqueda}{Campo de búsqueda de componentes}{04-busqueda.png}{1}{.15}
+
+\subsection{Interpretar una ficha}
+\begin{enumerate}
+\item Pulsa una tarjeta para abrir \control{Detalle de la pieza}.
+\item Lee la descripción y selecciona la \control{Versión} que quieres consultar.
+\item Revisa las características de esa versión: las medidas pueden cambiar aunque el nombre del modelo sea el mismo.
+\item Consulta las referencias y observaciones disponibles antes de incorporar la pieza.
+\item Usa \control{Comparar} para reservar esa variante en la comparación o \control{Probar en mi bicicleta} para abrir el configurador con esa selección.
+\end{enumerate}
+Una \control{Referencia visual} ayuda a reconocer el producto. Las etiquetas \control{Representación aproximada} o \control{Representación genérica} describen el alcance del dibujo, no garantizan una reproducción exacta.
+
+Si se indica \control{Referencia anterior} o \control{Retirada de nuevos montajes}, esa variante puede conservarse en un montaje guardado, aunque no se ofrezca para nuevas elecciones. No reemplaces una pieza histórica solo por el cambio de etiqueta si quieres conservar la configuración anterior.
+
+\subsection{Ejemplo: localizar una horquilla}
+Selecciona \control{Horquillas}, escribe una parte del modelo que te interese y aplica una medida si el filtro está disponible. Abre la ficha, cambia \control{Versión} y comprueba el recorrido y las interfaces declaradas. Si no hay resultados, elimina primero el filtro más restrictivo. El objetivo del ejercicio es llegar a una variante concreta y conocer sus datos antes de compararla o probarla.
+\clearpage
+\section{Comparar alternativas}\label{sec:comparar}
+\begin{enumerate}
+\item Desde \control{Componentes}, abre la ficha de una pieza y elige una \control{Versión}.
+\item Pulsa \control{Comparar}. La cabecera del catálogo refleja la cantidad seleccionada sobre un máximo de tres.
+\item Cierra la ficha y repite con otra variante de la misma categoría. También puedes cambiar de versión en la misma ficha y añadirla.
+\item Abre \control{Comparar} en la cabecera del catálogo.
+\item Lee cada columna y contrasta las mismas filas de características.
+\item Para retirar una columna, utiliza su botón de quitar. Para elegir otras piezas, pulsa \control{Elegir componentes}.
+\item Usa \control{Ver ficha} si necesitas el detalle o \control{Probar} para llevar la variante al configurador.
+\end{enumerate}
+\resultado{Las variantes seleccionadas se muestran lado a lado. Añadir de nuevo una variante que ya estaba elegida no crea otra columna.}
+
+\begin{table}[H]\caption{Reglas de la comparación}\label{tab:comparacion}\begin{tabla}\begin{tabularx}{\textwidth}{L{4cm}X}\toprule
+Situación & Qué hacer\\\midrule
+Ya hay tres variantes & Quita una columna antes de añadir otra.\\
+Intentas mezclar categorías & Compara piezas de la misma función; retira la selección anterior para cambiar de categoría.\\
+Una característica no está informada & No la interpretes como equivalente a la de otra pieza; consulta su ficha o referencia.\\
+Una referencia ya no está disponible & Utiliza \control{Quitar de la comparación} y elige otra.\\
+Quieres conservar una bicicleta & Abre el configurador y guarda un montaje. La lista de comparación es temporal en esa pestaña del navegador.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+Si aparece un \control{Precio de referencia}, revisa también la moneda, el mercado y la fecha que lo acompañan. No es una cotización de compra en tiempo real; cuando no hay un importe informado, la tabla muestra esa ausencia.
+
+\consejo{Comparar sirve para revisar información; no constituye una confirmación automática de que las piezas sean intercambiables.}
+\clearpage
+\section{Comenzar una bicicleta}
+\subsection{A partir de una bicicleta de referencia}
+\begin{enumerate}
+\item Abre \control{Bicicletas} y mantén seleccionada \control{Bicicletas de referencia}.
+\item Busca una composición con el campo de búsqueda o los filtros disponibles.
+\item Consulta su detalle y versión si necesitas revisar la lista de piezas.
+\item Pulsa \control{Personalizar}. Si se solicita, inicia sesión.
+\item Espera a que se prepare la composición y asigna un nombre propio en \control{Nombre del montaje}.
+\end{enumerate}
+\resultado{Se abre un montaje editable con las piezas de esa referencia. No se modifica la bicicleta pública original.}
+
+\subsection{A partir de un cuadro}
+\begin{enumerate}
+\item En \control{Bicicletas}, selecciona \control{Cuadros}. También puedes localizar un cuadro desde \control{Componentes}.
+\item Abre su ficha, revisa la \control{Versión} y selecciona \control{Probar en mi bicicleta}.
+\item Inicia sesión si la web lo solicita.
+\item En el configurador, añade las demás posiciones desde los grupos del montaje.
+\end{enumerate}
+Partir de una pieza diferente también permite iniciar una selección; si el visor indica \control{Elige tu cuadro}, completa primero esa base para interpretar el conjunto. La configuración puede guardarse como trabajo parcial: el contador de posiciones no obliga a llenar todos los espacios antes de guardar.
+\clearpage
+\section{Utilizar el configurador}\label{sec:configurador}
+\subsection{Reconocer las zonas de trabajo}
+En escritorio, el configurador reúne el índice de piezas a la izquierda, la vista visual en el centro y el selector a la derecha. En la parte superior están el nombre y el guardado. En móvil las zonas se reorganizan y el índice puede estar plegado debajo del visor.
+
+\begin{table}[H]\caption{Controles principales del configurador}\label{tab:zonas}\begin{tabla}\begin{tabularx}{\textwidth}{L{4cm}X}\toprule
+Zona & Función\\\midrule
+Nombre del montaje & Identificar la bicicleta. Admite hasta 80 caracteres y no puede quedar vacío al guardar.\\
+Estado y Guardar & Mostrar si hay cambios pendientes y enviarlos a tu cuenta.\\
+Piezas del montaje & Localizar una de las 23 posiciones y comprobar cuáles tienen pieza.\\
+Visor central & Explorar la representación y elegir una pieza visible.\\
+Grupos y alternativas & Elegir función, posición, medida, talla y variante.\\
+Acabados y Color & Ajustar la apariencia permitida por la pieza seleccionada.\\
+Avisos del montaje & Revisar incompatibilidades o datos insuficientes detectados.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+
+\subsection{Elegir el grupo y la posición}
+\begin{enumerate}
+\item Pulsa una posición en \control{Piezas del montaje}, por ejemplo \control{Horquilla}. También puedes usar los grupos del selector.
+\item Si el grupo tiene varias funciones, elige la pieza concreta: por ejemplo, en \control{Ruedas}, pulsa \control{Aros}.
+\item Si existen dos posiciones, selecciona \control{Delante} o \control{Detrás}.
+\item Revisa la pieza que ya está colocada y la lista de \control{Alternativas}. Si la posición está vacía, aparecerá \control{Elegir pieza}.
+\item Escribe en \control{Buscar alternativa} si quieres reducir las opciones de esa posición.
+\item Pulsa la variante elegida y espera a que termine \control{Preparando pieza}.
+\end{enumerate}
+\resultado{La selección pasa a formar parte del montaje. El cambio debe guardarse si quieres conservarlo en tu cuenta.}
+\captura{fig:grupos}{Filtros de medida, talla y grupos del montaje}{07-grupos-talla.png}{.82}{.39}
+
+\begin{table}[H]\caption{Grupos y posiciones disponibles}\label{tab:grupos}\begin{tabla}\begin{tabularx}{\textwidth}{L{3.2cm}X}\toprule
+Grupo & Posiciones\\\midrule
+Cuadro & Cuadro.\\
+Suspensión & Horquilla y amortiguador.\\
+Ruedas & Aro, neumático y buje delanteros y traseros.\\
+Frenos & Freno y disco delanteros y traseros.\\
+Transmisión & Cambio trasero, cassette, cadena, pedalier, bielas y plato, pedales.\\
+Contacto & Manillar, potencia, tija y sillín.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+El contador indica posiciones ocupadas, hasta 23. Completar las 23 no certifica que el conjunto físico pueda montarse sin otros ajustes o comprobaciones.
+
+\subsection{Filtrar por ruedas y talla}
+En \control{Medida de ruedas}, las opciones son \control{Todas}, \control{29\textquotedbl}, \control{27,5\textquotedbl} y \control{Mixto}. Esta última representa 29 pulgadas delante y 27,5 detrás. Para el cuadro están disponibles \control{Todas}, \control{M} y \control{L} en \control{Talla}.
+
+Estos controles filtran las alternativas; no cambian por sí solos las piezas ya montadas. Para sustituir una pieza debes seleccionar una variante de la lista. Si no aparece ninguna, prueba otra medida o vuelve a \control{Todas}.
+
+\subsection{Aplicar piezas a ambos lados}\label{sec:pares}
+\begin{enumerate}
+\item Selecciona una categoría con par: aros, neumáticos, frenos o discos.
+\item Comprueba la casilla \control{Aplicar a ambos lados}. Está activada inicialmente en esas categorías.
+\item Si quieres trabajar de forma independiente, desmárcala y elige \control{Delante} o \control{Detrás}.
+\item Si mantienes el par activado, pulsa la alternativa que quieras aplicar al conjunto.
+\item Revisa las dos posiciones para confirmar el resultado.
+\end{enumerate}
+\resultado{Cuando existe la contraparte necesaria, el par se aplica como un solo cambio. Si no se puede resolver, se muestra un aviso y se conservan las piezas anteriores. Los bujes se eligen por separado.}
+
+En una selección \control{Mixto}, el sistema busca las medidas correspondientes de la misma referencia y generación; no basta con que dos variantes tengan un nombre parecido. Si no hay contraparte, desactiva el par y revisa cada posición por separado.
+\captura{fig:pares}{Elección de posición y aplicación por pares}{09-pares.png}{.82}{.42}
+
+\subsection{Acabados y color}
+\begin{enumerate}
+\item Selecciona la pieza que deseas personalizar.
+\item En \control{Acabados}, pulsa una de las muestras disponibles. Revisa su etiqueta para reconocer el acabado activo.
+\item Si la pieza ofrece \control{Color}, pulsa una muestra rápida o escribe un valor en \control{Color personalizado}.
+\item El valor personalizado utiliza el formato \texttt{\#RRGGBB}, por ejemplo \texttt{\#56634D}. Si aparece una validación, corrige el valor completo.
+\item Observa el resultado y guarda el montaje.
+\end{enumerate}
+No todas las piezas permiten color libre; las opciones dependen de la variante. La elección visual no demuestra disponibilidad comercial de una pintura o acabado.
+\captura{fig:acabados}{Muestras de acabados de una pieza}{08-acabados.png}{.75}{.32}
+
+\subsection{Quitar una pieza y deshacer}
+Selecciona la posición y pulsa \control{Quitar pieza}. Si está activo el par, puede aparecer \control{Quitar de ambos lados}: revisa la casilla antes de confirmar tu intención con ese botón.
+
+Después de una edición compatible con esa función, \control{Deshacer último cambio} permite recuperar el estado inmediatamente anterior. Es un único paso de recuperación, no un historial ilimitado. Tras deshacer, revisa el estado y vuelve a guardar si quieres conservar ese resultado.
+
+El cuadro no se retira con el botón de quitar. Para sustituirlo, selecciona otro cuadro y resuelve el diálogo \control{Cambiar de cuadro}: \control{Guardar y cambiar}, \control{Cambiar sin guardar} o \control{Cambiar cuadro}, según el estado, y \control{Seguir con este cuadro} para cancelar. Las demás piezas se conservan y se revisan los avisos del nuevo conjunto.
+
+\subsection{Revisar los avisos}
+Abre \control{Avisos del montaje} para leer las observaciones. Algunas indican diferencias de medidas o interfaces; otras reflejan información insuficiente. Una selección que la aplicación permite conservar no equivale a una aprobación mecánica.
+
+Para resolver un aviso, identifica las posiciones mencionadas, abre \control{Ficha de la pieza} y compara sus medidas. Sustituye la variante que corresponda o conserva la propuesta para revisarla con un especialista. No interpretes la ausencia de avisos como garantía universal de compatibilidad.
+\clearpage
+\section{Explorar el visor y la suspensión}
+\subsection{Cambiar la vista}
+Usa \control{Lateral}, \control{Frontal} o \control{Superior} para pasar a una vista predefinida. \control{Restablecer} recupera la perspectiva inicial de la cámara; no elimina las piezas.
+
+En escritorio, arrastra con el botón principal para orbitar y usa la rueda para acercar o alejar. En una pantalla táctil, los gestos del visor permiten mover la vista y variar el acercamiento cuando el navegador los reconoce. Si pierdes el encuadre, pulsa \control{Restablecer}.
+
+Pulsa una pieza visible para seleccionarla y consultar su posición. Un clic en el fondo vacío quita el resaltado sin borrar la pieza ni reiniciar el montaje. Si resulta difícil seleccionar una pieza pequeña, utiliza el índice de posiciones.
+\captura{fig:visor}{Visor en una vista frontal predefinida}{06-visor.png}{1}{.57}
+
+\subsection{Inspeccionar el movimiento de suspensión}\label{sec:suspension}
+\begin{enumerate}
+\item Con un cuadro colocado y la vista 3D activa, pulsa \control{Suspensión}.
+\item Ajusta \control{Delantera} y \control{Trasera} para preparar el porcentaje de movimiento que deseas explorar.
+\item Pulsa \control{Reproducir} para iniciar el movimiento. Cambiar un porcentaje por sí solo prepara la reproducción y deja la escena en reposo.
+\item Utiliza \control{Pausar} para detener el ciclo.
+\item Pulsa \control{Restablecer suspensión} para volver a la postura de referencia.
+\item Cierra los controles pulsando otra vez \control{Suspensión}.
+\end{enumerate}
+Si falta una horquilla, la compresión delantera no estará disponible. El movimiento trasero depende de la combinación y de las referencias que puede representar el modelo; algunas versiones mantienen la postura de referencia o un intervalo limitado.
+
+El porcentaje es una herramienta de inspección visual. No equivale a una simulación de peso, esfuerzo o ajuste físico de la suspensión. La postura temporal y el movimiento de la cámara no se guardan como una nueva configuración de piezas; el guardado mantiene su referencia estática.
+\captura{fig:suspension}{Controles de suspensión con movimiento reducido activo}{10-suspension.png}{.92}{.38}
+\consejo{Cuando el sistema o navegador tiene activado movimiento reducido, aparece \control{Movimiento reducido · Reproducción desactivada}. Es un comportamiento previsto. Los controles de selección y guardado siguen disponibles.}
+
+\subsection{Continuar sin vista tridimensional}
+Pulsa \control{Lista sin 3D} para trabajar sin el dibujo. Si el visor falla, la web también puede presentar \control{Vista 3D no disponible}. Revisa y cambia las piezas desde el índice y el selector. Utiliza \control{Probar vista 3D} si quieres intentar recuperarlo.
+\clearpage
+\section{Guardar y gestionar tus bicicletas}\label{sec:guardar}
+\subsection{Guardar por primera vez y actualizar}
+\begin{enumerate}
+\item Escribe un nombre reconocible en \control{Nombre del montaje}; por ejemplo, \textit{Mi bicicleta de práctica}.
+\item Revisa las piezas y los avisos antes de guardar.
+\item Pulsa \control{Guardar}. Mientras aparece \control{Guardando\ldots}, espera sin repetir la acción.
+\item Comprueba que el estado cambia a \control{Guardado}.
+\item Si editas otra pieza o el nombre, vuelve a pulsar \control{Guardar} para conservar los cambios nuevos.
+\end{enumerate}
+\resultado{La composición queda almacenada en tu cuenta. El guardado conserva las piezas y la apariencia elegidas, no un archivo 3D descargable independiente de la bicicleta.}
+\captura{fig:guardado}{Nombre y confirmación de un montaje guardado}{11-guardado.png}{1}{.17}
+
+Un borrador recuperable en el navegador no sustituye el guardado de la cuenta. Antes de cerrar la pestaña, cambiar de equipo o borrar datos del navegador, espera la confirmación \control{Guardado}. Una miniatura puede tardar en aparecer; comprueba el montaje por su nombre y contenido, no únicamente por la imagen.
+
+\subsection{Resolver cambios pendientes al salir}\label{sec:salida}
+Si intentas abandonar el configurador o cerrar sesión con una edición pendiente, puede aparecer \control{Hay cambios sin guardar}.
+\begin{itemize}
+\item \control{Guardar y salir}: conserva el estado antes de continuar, si el guardado termina correctamente.
+\item \control{Descartar y salir}: abandona la edición pendiente. No recupera automáticamente esos cambios más adelante.
+\item \control{Seguir editando}: cancela la salida para continuar trabajando.
+\end{itemize}
+\captura{fig:pendientes}{Decisión antes de salir con cambios sin guardar}{12-cambios-pendientes.png}{.82}{.4}
+Al cerrar o recargar la pestaña, el navegador puede mostrar su propio aviso. El texto y los botones de ese aviso dependen del navegador.
+
+\subsection{Volver a abrir una bicicleta}
+\begin{enumerate}
+\item Abre \control{Mis bicicletas} con la misma cuenta utilizada para guardar.
+\item Busca el nombre del montaje; si hay varias páginas, usa \control{Anterior} y \control{Siguiente}.
+\item Pulsa el nombre para abrir \control{Mi bicicleta}, consultar sus piezas y ver los datos guardados.
+\item Para editar, pulsa \control{Continuar} en la tarjeta o \control{Continuar montaje} en el detalle.
+\item Modifica lo que necesites y vuelve a guardar.
+\end{enumerate}
+Si la lista está vacía, utiliza \control{Crear mi bicicleta} para empezar otra. Antes de concluir que falta un montaje, verifica el correo de la cuenta activa y confirma que el guardado anterior terminó.
+
+\subsection{Renombrar una bicicleta}
+\begin{enumerate}
+\item En \control{Mis bicicletas}, abre el montaje por su nombre. Otra ruta es el botón de opciones de la tarjeta y \control{Renombrar}.
+\item Edita \control{Nombre} en el panel \control{Mi bicicleta}.
+\item Pulsa \control{Guardar cambios} y espera \control{Nombre actualizado}.
+\item Cierra el panel y comprueba el nombre en la lista.
+\end{enumerate}
+\captura{fig:renombrar}{Formulario para cambiar el nombre de una bicicleta}{13-renombrar.png}{.78}{.27}
+
+\subsection{Eliminar una bicicleta}
+\begin{enumerate}
+\item Identifica la tarjeta correcta en \control{Mis bicicletas}.
+\item Abre su botón de opciones y pulsa \control{Eliminar}.
+\item Lee el mensaje \textit{¿Eliminar esta bicicleta? Esta acción no se puede deshacer.}
+\item Acepta para eliminarla o cancela para conservarla.
+\end{enumerate}
+Eliminar afecta al montaje de tu cuenta. No elimina piezas del catálogo ni la composición pública de la que partiste. Esta operación no cuenta con una papelera o restauración desde la interfaz.
+
+\subsection{Si el montaje cambió en otra sesión}
+Si la aplicación detecta que otra edición ya guardó una versión más reciente, puede mostrar un conflicto. Evita repetir \control{Guardar} sin revisar el mensaje.
+
+\control{Recargar} obtiene el estado guardado más reciente y puede sustituir los cambios locales; anota lo que quieras conservar antes de usarlo. \control{Guardar como copia} permite conservar la propuesta local como un montaje distinto. Después, comprueba las entradas de \control{Mis bicicletas} y continúa con la que corresponda. Si la propuesta contiene piezas retiradas de nuevas selecciones, la web puede pedir que las reemplaces o quites antes de crear una copia.
+
+\subsection{Piezas de versiones anteriores}
+Un montaje guardado mantiene sus referencias anteriores aunque el catálogo publique una revisión nueva. Puedes ver una indicación de pieza retirada de nuevos montajes. Si deseas utilizar una versión nueva, selecciona de nuevo la pieza desde las alternativas y guarda el resultado; revisa sus avisos, medidas y acabados antes de sustituirla.
+\clearpage
+\section{Uso desde una pantalla móvil}
+\begin{enumerate}
+\item Abre la misma dirección pública. No se requiere una aplicación móvil instalada.
+\item Utiliza las pestañas del espacio de trabajo para cambiar de sección.
+\item En \control{Componentes}, pulsa \control{Categorías} para mostrar u ocultar el selector.
+\item Abre las fichas y recorre su contenido; el panel se adapta a la parte inferior de la pantalla.
+\item En el configurador, despliega \control{Piezas del montaje} cuando necesites cambiar de posición.
+\item Tras elegir una posición, continúa en el selector de alternativas. Puedes desplazarte entre el visor y los controles.
+\item Guarda y comprueba el estado antes de salir, igual que en escritorio.
+\end{enumerate}
+\captura{fig:movil}{Selector de categorías en una pantalla móvil emulada}{14-categorias-movil.png}{.74}{.54}
+La disposición móvil fue revisada en emulación de navegador. El tiempo de carga y la fluidez dependen del equipo, la conexión y los gráficos disponibles. Si el visor dificulta la interacción, utiliza la lista sin 3D; no es necesario borrar el montaje para cambiar de modo.
+
+\subsection{Uso con teclado y movimiento reducido}
+Utiliza \control{Tab} para recorrer controles y \control{Mayús + Tab} para volver. Activa botones con \control{Enter} o la barra espaciadora según el control. En listas y selectores, utiliza las teclas que ofrece tu navegador. La tecla \control{Esc} permite cerrar paneles de detalle; si hay ediciones, resuelve el aviso correspondiente.
+
+Los nombres de posiciones permiten navegar sin seleccionar directamente objetos pequeños del visor. El movimiento reducido limita las animaciones, incluida la reproducción de suspensión. Estas alternativas facilitan el uso, aunque no representan una declaración de conformidad completa de accesibilidad.
+\clearpage
+\section{Administración para cuentas autorizadas}\label{sec:admin}
+Esta sección corresponde a quienes administran la plataforma. Si \control{Administración} no aparece en \control{Mi cuenta}, verifica la cuenta activa y consulta a la persona responsable. El registro público crea una cuenta de usuario; no concede administración por elegir un nombre o proveedor de acceso.
+
+Las pestañas y acciones dependen de los permisos asignados. Los procedimientos siguientes describen los controles implementados; las capturas de este manual se limitaron al recorrido de una cuenta de usuario, sin modificar el catálogo público ni los roles existentes.
+
+\subsection{Entrar y reconocer las secciones}
+\begin{enumerate}
+\item Inicia sesión con una cuenta que tenga las autorizaciones necesarias.
+\item Abre \control{Mi cuenta} y selecciona \control{Administración}.
+\item Elige la pestaña de la tarea que deseas realizar.
+\item Usa \control{Volver al trabajo} para regresar al espacio de consulta.
+\end{enumerate}
+\begin{table}[H]\caption{Secciones de administración}\label{tab:admin}\begin{tabla}\begin{tabularx}{\textwidth}{L{4cm}X}\toprule
+Sección & Finalidad\\\midrule
+Catálogo & Mantener modelos, variantes y datos de piezas con las acciones disponibles.\\
+Bicicletas de referencia & Editar composiciones públicas de ejemplo o de fábrica.\\
+Usuarios & Buscar cuentas, consultar su estado, invitar y asignar un rol cuando esté permitido.\\
+Roles & Crear y mantener roles personalizados.\\
+Permisos & Revisar y ajustar la matriz de acciones por rol autorizado.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+
+\subsection{Consultar usuarios y enviar una invitación}
+\begin{enumerate}
+\item En \control{Usuarios}, escribe parte del correo en \control{Buscar usuario}.
+\item Abre una cuenta para consultar sus datos y estado de confirmación.
+\item Para invitar una persona, pulsa \control{Crear usuario}, escribe su correo y elige un \control{Rol} disponible.
+\item Pulsa \control{Enviar invitación} y revisa la respuesta.
+\item La persona invitada debe utilizar el enlace recibido para confirmar su cuenta y establecer su contraseña cuando corresponda.
+\end{enumerate}
+Enviar una invitación y comprobar que llegó son acciones diferentes. La entrega por correo no se ha validado en esta entrega académica; verifica ese canal antes de depender de él para incorporar personas.
+
+Para cambiar un rol, abre la cuenta, elige un rol permitido y pulsa \control{Guardar cambios}. No puedes cambiar tu propio rol desde ese formulario: otro administrador debe realizar esa acción. Si no aparece el botón o el selector está deshabilitado, revisa tus autorizaciones; no intentes sustituirlo por cambios en tu perfil de acceso.
+
+\subsection{Mantener roles y permisos}
+\begin{enumerate}
+\item En \control{Roles}, revisa los existentes antes de crear uno personalizado.
+\item Pulsa \control{Crear rol} y completa su nombre, descripción, estado y permisos.
+\item Pulsa \control{Guardar rol} y verifica la respuesta. Si se indican dependencias entre permisos, resuélvelas antes de repetir el guardado.
+\item En \control{Permisos}, revisa la matriz: cada columna corresponde a un rol y cada fila a una acción.
+\item Modifica únicamente las casillas habilitadas y pulsa \control{Guardar cambios}. Usa \control{Descartar} si deseas abandonar la edición pendiente de la matriz.
+\end{enumerate}
+Los roles de sistema Usuario y Administrador están protegidos; no se editan como roles personalizados. Un rol no puede eliminarse mientras tenga usuarios asignados. Antes de cambiar permisos, identifica qué tareas necesitan las personas afectadas y evita retirar accidentalmente su acceso de trabajo.
+
+\subsection{Mantener el catálogo}
+\begin{enumerate}
+\item En \control{Catálogo}, busca el modelo o selecciona una categoría.
+\item Abre la entrada existente para editarla o utiliza la acción de creación si está disponible.
+\item Completa la información general y revisa las variantes, medidas, acabados, referencias y campos solicitados para esa categoría.
+\item Usa \control{Guardar borrador} para conservar contenido no publicado o \control{Guardar cambios} para una entrada publicada, cuando tu permiso lo permita.
+\item Si la entrada está en borrador y está lista para mostrarse, utiliza \control{Publicar} si tienes esa autorización.
+\item Revisa el resultado desde el catálogo de consulta.
+\end{enumerate}
+No confundas el borrador con una pieza visible públicamente. Mantén información comprobable y no completes medidas desconocidas por suposición. La preparación y publicación de nuevos archivos 3D no se describe como una carga de archivos desde este formulario: esa tarea corresponde al mantenimiento técnico del proyecto.
+
+\subsection{Mantener bicicletas de referencia}
+\begin{enumerate}
+\item Abre \control{Bicicletas de referencia} y selecciona la composición o la acción de creación disponible.
+\item Completa sus datos y el tipo de referencia que corresponda.
+\item Selecciona una posición del montaje, elige una variante y revisa el acabado. Repite con las posiciones necesarias.
+\item Usa \control{Quitar pieza} cuando debas retirar una selección de la composición.
+\item Guarda el borrador o publica mediante las acciones autorizadas; comprueba después la ficha pública.
+\end{enumerate}
+Esta operación mantiene una base pública de personalización. Los montajes privados ya guardados conservan sus selecciones; revisa las versiones antes de asumir que una edición pública ha actualizado las bicicletas de cada persona.
+\clearpage
+\section{Problemas frecuentes y cómo resolverlos}\label{sec:problemas}
+\begin{tabla}\begin{longtable}{L{4.2cm}L{9.9cm}}
+\caption{Situaciones habituales y acciones recomendadas}\label{tab:problemas}\\\toprule
+Situación & Acción\\\midrule\endfirsthead
+\multicolumn{2}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule
+Situación & Acción\\\midrule\endhead
+No hay resultados en el catálogo & Borra parte de la búsqueda, vuelve a Todas o limpia filtros. Comprueba también la categoría seleccionada.\\
+No puedo añadir otra comparación & El límite es tres variantes de una misma categoría. Quita una columna o cambia la selección anterior.\\
+El acceso con Google no termina & Comprueba si cancelaste la selección o autorización; vuelve a Entrar y repite. Si ocurre siempre, informa del paso en que se detiene sin compartir contraseñas.\\
+El correo de confirmación no llega & Revisa la dirección, bandeja no deseada y Reenviar correo. La entrega real de correo requiere comprobación administrativa; un mensaje de solicitud enviada no garantiza recepción.\\
+La contraseña no se acepta al registrarme & Comprueba un mínimo de 12 caracteres y que la confirmación coincida. Revisa la escritura con el botón del ojo en un lugar privado.\\
+No aparece Guardar o Administración & Comprueba la sesión y sus permisos. Entrar con otra cuenta puede habilitar acciones diferentes; el registro público no convierte una cuenta en administradora.\\
+Guardar está deshabilitado & Escribe un nombre no vacío y espera si hay una operación en curso. En el detalle de renombrado, debe existir un cambio de nombre para habilitar Guardar cambios.\\
+No aparece mi bicicleta & Verifica el correo activo, revisa las páginas y recuerda si el guardado mostró Guardado. Un borrador local o una comparación temporal no sustituyen un montaje guardado.\\
+El visor tarda o no aparece & Espera la carga inicial, comprueba la conexión y utiliza Lista sin 3D. Intenta Probar vista 3D cuando quieras recuperarlo.\\
+La cámara quedó mal encuadrada & Pulsa Restablecer o una vista predefinida. Esto no elimina las piezas.\\
+No se aplica un par & Comprueba Aplicar a ambos lados y la medida elegida. Si falta una contraparte, se conserva el conjunto anterior; elige otra referencia o trabaja por separado.\\
+Cambiar el filtro no cambia mis ruedas & Es el comportamiento previsto: el filtro limita alternativas. Selecciona una variante para reemplazar una pieza.\\
+No puedo reproducir la suspensión & Comprueba si está activo movimiento reducido, si falta horquilla o si la combinación no tiene movimiento disponible. No todos los modelos permiten el mismo intervalo visual.\\
+El color personalizado muestra error & Escribe el signo numeral seguido de seis dígitos hexadecimales, por ejemplo \texttt{\#56634D}. Si no hay campo Color, esa variante no ofrece color libre.\\
+Aparece un conflicto al guardar & Conserva una copia si deseas mantener tu propuesta local o recarga la versión más reciente, considerando que puede reemplazar cambios pendientes.\\
+Una pieza indica referencia anterior & Puede seguir conservada en un montaje guardado. Selecciona una alternativa actual solo si deseas sustituirla.\\
+La miniatura no aparece inmediatamente & Espera y abre el montaje por su nombre. La imagen resume un estado guardado; su ausencia temporal no demuestra pérdida de las piezas.\\
+Falla una consulta y aparece Reintentar & Comprueba la conexión y pulsa Reintentar cuando esté disponible. Evita recargar si tienes cambios sin guardar; conserva primero una copia cuando la interfaz lo permita.\\\bottomrule
+\end{longtable}\end{tabla}
+
+\subsection{Qué información comunicar al solicitar ayuda}
+Describe la sección, la acción que realizabas, el texto del mensaje, la hora aproximada y si utilizabas escritorio o móvil. Indica si el problema se repite con la misma cuenta y si existían cambios pendientes. Si envías una captura, oculta los datos personales que no sean necesarios.
+
+No compartas contraseñas ni enlaces de confirmación o recuperación. La web no incorpora en esta versión un chat de soporte ni un formulario de incidencias; utiliza el canal establecido por quien administra la plataforma.
+\clearpage
+\section{Ejercicios prácticos de comprobación}
+\subsection{Ejercicio 1: consultar y comparar}
+\textbf{Objetivo.} Revisar dos variantes de una categoría antes de tomar una decisión.
+\begin{enumerate}
+\item Abre Componentes y selecciona una categoría con varias alternativas.
+\item Abre una ficha, elige una versión y pulsa Comparar.
+\item Añade una segunda variante de la misma categoría.
+\item Abre Comparar y localiza dos características relevantes para esa pieza.
+\item Abre Ver ficha para comprobar el contexto de una de las variantes y vuelve a la comparación.
+\end{enumerate}
+\resultado{Puedes explicar qué datos cambian entre las dos variantes, sin suponer equivalencias donde falte información. No necesitas guardar una bicicleta para completar este ejercicio.}
+
+\subsection{Ejercicio 2: personalizar, guardar y continuar}
+\textbf{Objetivo.} Conservar una composición en tu cuenta y retomarla.
+\begin{enumerate}
+\item Inicia sesión y personaliza una bicicleta de referencia.
+\item Asigna el nombre Mi bicicleta de práctica.
+\item Selecciona una pieza y cambia su acabado si ofrece una alternativa.
+\item Explora Frontal y Restablecer, y revisa Avisos del montaje.
+\item Pulsa Guardar y espera el estado Guardado.
+\item Abre Mis bicicletas y pulsa Continuar en el montaje de práctica.
+\item Comprueba que el nombre y el acabado corresponden a lo guardado.
+\end{enumerate}
+\resultado{La bicicleta vuelve a abrirse con sus selecciones. Cambiar la cámara no reemplaza ni guarda una pieza distinta.}
+
+\subsection{Ejercicio 3: practicar una edición por pares}
+\textbf{Objetivo.} Distinguir entre filtrar, aplicar en pareja y trabajar por posición.
+\begin{enumerate}
+\item Abre un montaje de práctica y entra en Ruedas, Aros.
+\item Revisa el estado de Aplicar a ambos lados.
+\item Selecciona una medida y observa las alternativas; verifica que el filtro no reemplaza lo que ya estaba montado.
+\item Si existe una pareja adecuada, aplícala y comprueba ambas posiciones. Si no existe, lee el aviso y comprueba que se conservaron las piezas.
+\item Desmarca el par para consultar Delante y Detrás de forma independiente.
+\item Si aparece Deshacer último cambio, úsalo para recuperar la edición anterior. Decide después si guardar o descartar el ejercicio.
+\end{enumerate}
+\resultado{Reconoces qué acción filtra y cuál modifica el montaje; identificas también cuándo el sistema conserva el estado anterior por falta de contraparte.}
+
+\subsection{Ejercicio 4: renombrar y eliminar una copia de práctica}
+\begin{enumerate}
+\item Usa un montaje de prueba que puedas eliminar; evita practicar con una bicicleta que quieras conservar.
+\item En Mis bicicletas, abre su nombre, cámbialo por Mi bicicleta revisada y guarda.
+\item Cierra y abre el detalle para comprobar el nuevo nombre.
+\item En las opciones de esa tarjeta, pulsa Eliminar y cancela una primera vez para reconocer el aviso.
+\item Si ya no necesitas la copia, repite Eliminar y acepta.
+\end{enumerate}
+\resultado{Cancelar conserva la tarjeta y aceptar elimina únicamente el montaje seleccionado. No existe deshacer para esa eliminación.}
+\clearpage
+\section{Glosario y consulta rápida}
+\begin{tabla}\begin{longtable}{L{3.8cm}L{10.3cm}}
+\caption{Términos utilizados en el manual}\label{tab:glosario}\\\toprule
+Término & Significado\\\midrule\endfirsthead
+\multicolumn{2}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule
+Término & Significado\\\midrule\endhead
+Componente o pieza & Elemento de la bicicleta que se consulta o se selecciona para una función.\\
+Modelo & Referencia que agrupa opciones de una pieza.\\
+Variante o versión & Elección concreta con sus medidas y características.\\
+Posición & Lugar funcional dentro del montaje, como aro delantero o disco trasero.\\
+Montaje & Conjunto personal de piezas, nombre y apariencia elegido en el configurador.\\
+Bicicleta de referencia & Composición pública que sirve como punto de partida para una personalización.\\
+Acabado & Apariencia predefinida disponible para una variante.\\
+Mixto & Selección de ruedas de 29 pulgadas delante y 27,5 pulgadas detrás.\\
+Par & Aplicación conjunta a las posiciones delantera y trasera de ciertas categorías.\\
+Aviso del montaje & Observación sobre datos, medidas o relaciones entre las piezas elegidas.\\
+Referencia anterior & Variante que puede conservarse en un montaje histórico aunque no se ofrezca para nuevas selecciones.\\
+Borrador & Edición que todavía no equivale a un montaje guardado en la cuenta o a una entrada administrativa publicada.\\
+Rol & Conjunto de acciones asignadas a una cuenta según sus autorizaciones.\\
+Movimiento reducido & Preferencia del sistema o navegador que limita animaciones y desactiva la reproducción de suspensión.\\\bottomrule
+\end{longtable}\end{tabla}
+
+\subsection{Antes de terminar una sesión}
+\begin{enumerate}
+\item Revisa el nombre y las piezas que deseas conservar.
+\item Guarda y espera la confirmación.
+\item Comprueba el montaje en Mis bicicletas si necesitas verificarlo.
+\item Cierra sesión desde Mi cuenta cuando utilices un equipo compartido.
+\end{enumerate}
+\clearpage
+\section*{Referencia y procedencia}\addcontentsline{toc}{section}{Referencia y procedencia}
+\noindent Ito Luque, J. (2026). \textit{ATLAS MTB} [Aplicación web]. \url{https://atlasmtb.netlify.app/}
+
+Las instrucciones se elaboraron a partir de los controles y reglas implementados en el proyecto y de recorridos sobre la web publicada. Las capturas corresponden al 21 de octubre de 2026 y muestran formularios o controles reales recortados, sin introducir datos de cuentas personales. Los montajes de demostración y la cuenta temporal utilizados para la comprobación fueron eliminados al finalizar.
+
+Se verificaron recorridos de consulta, comparación, configuración, guardado y gestión de un montaje de práctica. El acceso real con Google fue confirmado previamente por el titular del proyecto. Los pasos de confirmación, recuperación e invitación describen las pantallas implementadas; la entrega real de esos correos no se presenta como comprobada. La administración se documenta según sus controles y restricciones, sin alterar catálogo ni permisos durante la elaboración de este manual.
+
+La carpeta de recursos incluye las imágenes, las tipografías con su licencia y un registro resumido de los recorridos de comprobación. El contenido, las tablas y la bibliografía están integrados en este único archivo LaTeX; las figuras están incorporadas al PDF.
+\end{document}

@@ -1,0 +1,38 @@
+ENTREGABLE 4 — ATLAS MTB — PRESENTACIÓN REDISEÑADA
+Autor: Joel Ito Luque
+Fecha académica de portada conservada: 21 de octubre de 2026.
+Revisión visual: 22 de octubre de 2026.
+
+CONTENIDO
+- presentacion.tex: única fuente LaTeX Beamer con las doce láminas y notas.
+- presentacion.pdf: PDF único, 12 páginas en formato 16:9.
+- recursos/: fotografía, capturas reales, iconos, fuentes, licencias y guion.
+
+COMPILAR DENTRO DE ESTA CARPETA
+    tectonic presentacion.tex
+Alternativa:
+    latexmk -xelatex presentacion.tex
+No requiere BibTeX, Biber ni archivos .tex externos. Conservar rutas relativas.
+Las fuentes DM Sans y Barlow Condensed se incluyen en TTF junto a sus licencias OFL.
+Paquetes: beamer, fontspec, babel (español), graphicx, tikz y etoolbox.
+Tectonic descarga los paquetes faltantes en su primer uso. No requiere credenciales,
+variables de Supabase, Node ni acceso a las cuentas de la aplicación para compilar.
+
+EXPOSICIÓN
+Abrir el PDF a pantalla completa y ensayar recursos/guion-exposicion.txt.
+Las notas están ocultas para mantener doce páginas. El PDF incluye transiciones
+Fade suaves entre páginas; su reproducción depende del visor utilizado.
+El diseño funciona también cuando el visor no reproduce transiciones.
+La lámina 10 enlaza a la web pública. Preparar antes una cuenta y un montaje de
+práctica; no proyectar contraseñas ni datos de cuentas personales.
+Si falla la red, explicar el recorrido con las capturas.
+
+REDISEÑO
+Portada con fotografía real de acción MTB, composición diagonal y crédito.
+Alternancia de fondos claros/oscuros, tipografía deportiva, más iconografía y
+menos texto, mapas de funciones, flujos, Gantt y montajes lateral/perspectiva.
+Sin logotipos institucionales añadidos. Las capturas son reales y conservan los
+rasgos del producto mostrado; no atribuyen fabricación o colaboración comercial.
+Se mantiene la evidencia y el alcance del informe; no se certifican mecánica,
+FPS, correo real o uso en teléfono físico. Google conserva confirmación manual.
+El ZIP corresponde solo al entregable 4.

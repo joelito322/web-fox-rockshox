@@ -1,0 +1,5 @@
+Comando: pnpm run build
+Entorno: Node.js 24.22.0, pnpm 12.6.0
+Resultado: TypeScript y Vite correctos.
+Vite: build finalizado en 4,09 s.
+Persisten avisos de tamaño de chunks y anotaciones de dependencias; no se consideran fallos funcionales ni prueba de rendimiento de red.

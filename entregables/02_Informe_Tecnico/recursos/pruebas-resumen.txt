@@ -1,0 +1,14 @@
+Validación del software para el informe
+
+Primera pasada: 486 correctas, una fallida por timeout de 5000 ms y dos omitidas.
+Caso: src/features/configurator/scene/cockpit-alignment.test.ts.
+No se modificó el producto ni sus aserciones para repetir.
+
+Repetición: pnpm exec vitest run --maxWorkers=2 --testTimeout=15000
+Archivos: 71 correctos y uno omitido (72 total).
+Pruebas: 487 correctas y dos omitidas (489 total).
+Duración registrada: 64,31 s.
+El timeout de pruebas no es un objetivo de rendimiento de la aplicación.
+
+Prueba pública adicional: 13 comprobaciones correctas; cuentas temporales y recursos eliminados.
+No valida entrega real de correos ni rendimiento de teléfono físico.

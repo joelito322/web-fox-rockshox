@@ -1,0 +1,29 @@
+PROCEDENCIA DE LOS RECURSOS — 21/10/2026
+
+Capturas propias de la web https://atlasmtb.netlify.app/ con Playwright.
+Script reproducible: scripts/capture-manual-evidence.mjs, en el repositorio.
+Las imágenes son recortes de elementos de interfaz reales; no se recrean pantallas.
+Los formularios de acceso y registro se capturan vacíos y sin enviar solicitudes.
+El montaje y los cambios de nombre se realizan con una cuenta temporal de demostración,
+confirmada por API para comprobar el uso sin depender de entrega de correo.
+La cuenta, su montaje y sus recursos se eliminan al terminar.
+No se modifican roles, catálogo ni cuentas reales.
+La captura móvil es emulación de 393 x 851 píxeles.
+No se incluyen fotografías decorativas ni logotipos de instituciones.
+
+01-entrada-correo.png: formulario de correo y contraseña.
+02-registro.png: formulario de creación de cuenta, sin solicitud de registro.
+03-navegacion.png: pestañas principales de trabajo.
+04-busqueda.png: búsqueda de componentes.
+05-categorias.png: selector agrupado de categorías.
+06-visor.png: montaje temporal en vista frontal.
+07-grupos-talla.png: medidas, talla y grupos de configuración.
+08-acabados.png: controles de apariencia de una pieza.
+09-pares.png: selector de ruedas y aplicación por pares.
+10-suspension.png: controles con movimiento reducido activo.
+11-guardado.png: nombre de práctica y estado confirmado.
+12-cambios-pendientes.png: diálogo real de salida del configurador.
+13-renombrar.png: formulario de cambio de nombre ya guardado.
+14-categorias-movil.png: categorías en pantalla móvil emulada.
+
+Tipografías: Liberation Serif, Sans y Mono, con la licencia incluida en fuentes/.

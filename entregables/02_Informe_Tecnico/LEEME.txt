@@ -1,0 +1,39 @@
+ENTREGABLE 2: INFORME TÉCNICO — ATLAS MTB
+Autor: Joel Ito Luque
+Fecha de portada solicitada: 21 de octubre de 2026
+
+CONTENIDO
+- informe.pdf: documento compilado con figuras, tablas, Gantt y anexos.
+- informe.tex: único archivo LaTeX; incluye capítulos, diagramas, Gantt,
+  citas, bibliografía y anexos. No requiere otros archivos .tex ni BibTeX.
+- recursos/: capturas, resultados agregados y tipografías con su licencia.
+
+COMPILACIÓN AUTOCONTENIDA
+Ejecutar dentro de esta carpeta:
+    tectonic informe.tex
+Alternativa con una distribución TeX completa:
+    latexmk -xelatex informe.tex
+O ejecutar XeLaTeX varias veces para resolver índice y referencias.
+
+Se requieren fontspec, babel (español), geometry, setspace, graphicx,
+booktabs, longtable, tabularx, array, pdflscape, tikz, pgfgantt, caption,
+float, enumitem, fancyhdr, natbib, hyperref y xurl.
+Tectonic descarga los paquetes TeX que falten en su primer uso. No necesita
+variables de Supabase, credenciales ni acceso a las cuentas de la aplicación.
+Las tipografías Liberation se incluyen con su licencia para no depender de
+fuentes instaladas en el equipo. No alterar rutas relativas al trasladar.
+
+CRITERIOS DE REDACCIÓN
+- Formato académico basado en APA 7: autor-fecha, referencias, márgenes,
+  tipografía serif de 12 puntos, doble espacio y presentación de figuras/tablas.
+- Se conserva la estructura técnica de la consigna, con índice y Gantt horizontal.
+- Cronograma de tres semanas reconstruido y estimado: no es registro horario.
+- Cuentas de prueba efímeras; sin credenciales ni datos personales de sesiones.
+- Capturas reales del frontend público; la escena se muestra en vista frontal.
+- Se distinguen validaciones automáticas y confirmación manual de acceso Google.
+- No se inventan estudios de usuarios ni se certifica compatibilidad mecánica,
+  rendimiento de teléfono físico o entrega de correo no evaluada.
+- Manual, presentación Beamer y software constituyen entregables independientes.
+
+SITIO PÚBLICO
+https://atlasmtb.netlify.app/

@@ -1,0 +1,19 @@
+{
+  "context": "Frontend público real; cuentas temporales creadas y confirmadas por API para la prueba, sin entrega de correo",
+  "checks": {
+    "portada_publica": true,
+    "catalogo_publico": true,
+    "busqueda_sin_resultados_controlada": true,
+    "entrada_con_cuenta_temporal": true,
+    "configuracion_23_posiciones": true,
+    "guardado_publico": true,
+    "persistencia_23_posiciones": true,
+    "aislamiento_entre_cuentas": true,
+    "rechazo_revision_obsoleta": true,
+    "reapertura_publica": true,
+    "cierre_sesion_publico": true,
+    "sin_errores_javascript": true,
+    "adaptacion_movil_emulada": true
+  },
+  "cleanup": true
+}

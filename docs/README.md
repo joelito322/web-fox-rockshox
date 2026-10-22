@@ -53,8 +53,12 @@ Un bloqueo de credenciales, migración sin aplicar o prueba no ejecutada se decl
 ## Índice actual
 
 - [Plan Atlas MTB](planning/README.md): catálogo, comparación, acceso Supabase y configurador 3D; implementación parcial, con evidencia y pendientes en el documento 12.
-- `validation/`: sin entregas pendientes de validación por ahora.
+- [Informe técnico académico](../entregables/02_Informe_Tecnico/informe.pdf): entregable 2, fuente LaTeX única y recursos autocontenidos; compilación comprobada y contenido aceptado por el usuario.
+- [Manual de usuario](../entregables/03_Manual_Usuario/manual.pdf): entregable 3 con fuente LaTeX única, 14 capturas y ejercicios; compilación independiente y recorridos públicos comprobados, contenido aceptado por el usuario.
+- [Presentación Beamer](../entregables/04_Presentacion/presentacion.pdf): entregable 4 rediseñado con fotografía real, iconos Lucide y vistas completas del montaje; doce diapositivas 16:9, fuente única y transiciones PDF. Compilación autónoma y revisión visual comprobadas; contenido aceptado por el usuario.
 - `finished/`: sin entregas funcionales finalizadas por ahora.
+
+Los entregables académicos aceptados se organizan en [`entregables/`](../entregables/) y se consultan desde el [índice principal](../README.md). Esta organización de entrega es independiente de los estados de documentación técnica anteriores.
 
 Las carpetas vacías contienen `.gitkeep` para conservarlas en Git. No representan planes ni entregas.
 

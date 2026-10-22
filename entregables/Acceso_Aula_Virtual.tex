@@ -1,0 +1,55 @@
+% Índice de entrega. Compilar desde entregables/: tectonic Acceso_Aula_Virtual.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{LiberationSans}[Path=02_Informe_Tecnico/recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+\usepackage[spanish]{babel}
+\usepackage[margin=2.1cm]{geometry}
+\usepackage{xcolor,tabularx,array}
+\definecolor{Atlas}{HTML}{14332D}
+\definecolor{Verde}{HTML}{327A6B}
+\usepackage[colorlinks=true,urlcolor=Verde,linkcolor=Verde]{hyperref}
+\hypersetup{pdftitle={ATLAS MTB: acceso a los entregables},pdfauthor={Joel Ito Luque}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{8pt}
+\newcommand{\repo}{https://github.com/joelito322/web-fox-rockshox}
+\begin{document}
+{\small UNIVERSIDAD NACIONAL DE JULIACA\\Facultad de Ciencias de la Ingeniería\\Ingeniería de Software y Sistemas}
+
+\vspace{10pt}
+{\Huge\bfseries\color{Atlas} ATLAS MTB}\par
+{\large\bfseries Acceso a los entregables}
+
+Desarrollo de una plataforma web para la selección, comparación y configuración tridimensional de bicicletas de montaña
+
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+Autor: & Joel Ito Luque\\
+Curso: & Gestión de Proyectos\\
+Docente: & Fidel Huanco Ramos\\
+Semestre: & Octavo\\
+Lugar y fecha: & Juliaca, Perú · 21 de octubre de 2026
+\end{tabularx}
+
+\vspace{7pt}\textcolor{Verde}{\rule{\textwidth}{1pt}}
+
+{\large\bfseries Material de evaluación}\par
+Los enlaces permiten consultar el software y los tres documentos. Cada carpeta documental incluye su PDF, la fuente LaTeX y los recursos necesarios para recompilarla.
+
+\renewcommand{\arraystretch}{1.65}
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{5.1cm}X@{}}
+1. Software & \href{\repo}{Código e instrucciones de ejecución}\\
+2. Informe técnico & \href{\repo/blob/main/entregables/02_Informe_Tecnico/informe.pdf}{Ver PDF} · \href{\repo/tree/main/entregables/02_Informe_Tecnico}{LaTeX y recursos}\\
+3. Manual de usuario & \href{\repo/blob/main/entregables/03_Manual_Usuario/manual.pdf}{Ver PDF} · \href{\repo/tree/main/entregables/03_Manual_Usuario}{LaTeX y recursos}\\
+4. Presentación & \href{\repo/blob/main/entregables/04_Presentacion/presentacion.pdf}{Ver PDF} · \href{\repo/tree/main/entregables/04_Presentacion}{LaTeX y recursos}
+\end{tabularx}
+
+\vspace{8pt}
+{\large\bfseries Aplicación publicada}\par
+\url{https://atlasmtb.netlify.app/}
+
+{\large\bfseries Repositorio e índice general}\par
+\url{https://github.com/joelito322/web-fox-rockshox}
+
+\vfill
+{\small Los enlaces son interactivos. Si el repositorio se mantiene privado, se requiere acceso autorizado para consultar el código y los documentos. El software corresponde al repositorio completo; los entregables 2, 3 y 4 se organizan en la carpeta \texttt{entregables/}.}
+\end{document}

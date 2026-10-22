@@ -1,0 +1,42 @@
+PROCEDENCIA Y LICENCIAS — REVISIÓN 22/10/2026
+
+FOTOGRAFÍA DE PORTADA Y CIERRE
+Julien Kettmann. (2021, 1 de octubre). A person jumping a bike in the air.
+Sun Peaks, BC, Canadá. Fotografía de ambientación MTB; no es una captura del software.
+https://unsplash.com/photos/a-person-jumping-a-bike-in-the-air-534Moyd3Lf4
+Licencia gratuita: https://unsplash.com/license
+Página original verificada durante la revisión; autor, fecha y ubicación coinciden.
+Fuente local aprobada: src/assets/images/landing/airtime-wide.webp.
+mtb-accion.png es la conversión de formato de esa fuente; los encuadres se realizan
+al componer las láminas. No se generó la fotografía con IA.
+
+CAPTURAS DE LA APLICACIÓN
+montaje-lateral.png y montaje-perspectiva.png: capturas reales del visor público,
+22/10/2026, viewport 1920 x 1080, doble resolución. Script reproducible en el repo:
+scripts/capture-slide-views.mjs. Cuenta temporal confirmada por API y eliminada al
+terminar; no se guardó montaje ni se alteró catálogo, geometría o permisos.
+05-categorias.png, 07-grupos-talla.png, 08-acabados.png y 13-renombrar.png:
+capturas propias verificadas del manual de usuario. Los datos son de práctica.
+Las representaciones 3D son aproximadas y las capturas no certifican mecánica.
+
+ICONOS
+Lucide, paquete local lucide-react 1.59.0. Licencia ISC incluida en iconos/.
+SVG originales conservados; PNG transparentes a 192 x 192 para inclusión portátil
+en LaTeX, en dos tintas sutiles. Geometría SVG sin alteración de contenido.
+No corresponden a logotipos comerciales.
+
+TIPOGRAFÍAS
+DM Sans y Barlow Condensed, paquetes @fontsource usados por el proyecto.
+Convertidas de WOFF a TTF conservando los contornos; licencias OFL incluidas.
+El compilador utiliza las tipografías locales.
+
+REFERENCIAS TÉCNICAS DEL PROBLEMA
+Shimano. (s. f.). Compatibility. https://productinfo.shimano.com/en/compatibility
+SRAM. (s. f.). Compatibility map.
+https://www.sram.com/en/service/manuals--documents/compatability-map
+Fuentes reales ya utilizadas en el informe. No se atribuyen encuestas o ahorros.
+
+GANTT Y RESULTADOS
+Gantt resumido del informe: estimación reconstruida 30/09–20/10/2026.
+Las cifras 487/2 omitidas y 13 comprobaciones proceden de los registros del informe
+y manual; el rediseño no se presenta como una nueva ejecución de esas pruebas.
