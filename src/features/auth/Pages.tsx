@@ -1,10 +1,13 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff, ArrowLeft, ArrowUpRight, MailCheck } from "lucide-react";
-import { BikeIllustration } from "../../components/BikeIllustration";
 import { Loading, Notice } from "../../components/ui/Feedback";
 import { requireSupabase, userError } from "../../lib/supabase";
 import { defaultDestination, readIntent, useAuth } from "./provider";
+import { verifyAuthCallback } from "./callback";
+import googleLogo from "../../assets/images/auth/google-g.png";
+import authPhoto from "../../assets/images/landing/airtime-wide.webp";
+import "./auth.css";
 
 function Password({
   id,
@@ -60,6 +63,7 @@ export default function AuthPage({
   const [confirm, setConfirm] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
+  const [googleBusy, setGoogleBusy] = useState(false);
   const [sent, setSent] = useState(false);
   const auth = useAuth();
   const navigate = useNavigate();
@@ -88,6 +92,7 @@ export default function AuthPage({
   }, [auth.user, auth.loading, auth.error, mode, navigate, auth.permissions]);
   async function submit(event: FormEvent) {
     event.preventDefault();
+    if (busy || googleBusy) return;
     setError("");
     if ((mode === "register" || mode === "password") && password !== confirm) {
       setError("Las contraseñas no coinciden.");
@@ -130,6 +135,22 @@ export default function AuthPage({
       setBusy(false);
     }
   }
+  async function googleSignIn() {
+    if (busy || googleBusy) return;
+    setError("");
+    setGoogleBusy(true);
+    try {
+      const { error } = await requireSupabase().auth.signInWithOAuth({
+        provider: "google",
+        options: { redirectTo: `${location.origin}/auth/callback` },
+      });
+      if (error) throw error;
+      // Keep actions disabled while the browser leaves for Google.
+    } catch (error) {
+      setError(userError(error));
+      setGoogleBusy(false);
+    }
+  }
   async function resend() {
     setBusy(true);
     setError("");
@@ -149,16 +170,33 @@ export default function AuthPage({
   return (
     <div className="auth-layout">
       <aside className="auth-art">
-        <span className="eyebrow">Un montaje propio.</span>
-        <BikeIllustration />
-        <div>
-          <h2>
-            Elige tu próxima
-            <br />
-            línea.
+        <picture className="auth-art-photo">
+          <source media="(min-width: 721px)" srcSet={authPhoto} />
+          <img
+            src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+            alt="Ciclista de descenso saltando entre los bosques de Sun Peaks, Canadá"
+            decoding="async"
+          />
+        </picture>
+        <header className="auth-art-header">
+          <span className="auth-art-marker" aria-hidden="true" />
+          <span>ENDURO / DESCENSO</span>
+        </header>
+        <section className="auth-art-copy">
+          <p className="auth-art-kicker">TU BICI. TUS REGLAS.</p>
+          <h2 className="auth-art-title">
+            Tu próxima<br />
+            línea empieza<br />
+            <span>aquí.</span>
           </h2>
-          <p>ENDURO / DESCENSO</p>
-        </div>
+          <p className="auth-art-tagline">Cada pieza define tu camino.</p>
+        </section>
+        <footer className="auth-art-footer">
+          <span>SUN PEAKS, CANADÁ</span>
+          <a href="https://unsplash.com/photos/534Moyd3Lf4" target="_blank" rel="noreferrer">
+            Foto: Julien Kettmann
+          </a>
+        </footer>
       </aside>
       <section className="auth-form">
         <Link className="back-link" to="/componentes">
@@ -200,6 +238,20 @@ export default function AuthPage({
                     ? "Elige una contraseña de al menos 12 caracteres."
                     : "Te enviaremos un enlace para volver a entrar."}
             </p>
+            {(mode === "login" || mode === "register") && (
+              <>
+                <button
+                  type="button"
+                  className="button outline full google-sign-in"
+                  disabled={busy || googleBusy}
+                  onClick={() => void googleSignIn()}
+                >
+                  <img src={googleLogo} alt="" aria-hidden="true" width={20} height={20} />
+                  {googleBusy ? "Conectando con Google…" : "Continuar con Google"}
+                </button>
+                <p className="auth-divider">o con tu correo</p>
+              </>
+            )}
             <form onSubmit={(e) => void submit(e)}>
               {mode !== "password" && (
                 <label className="field">
@@ -241,7 +293,7 @@ export default function AuthPage({
               )}
               {error && <Notice>{error}</Notice>}
               {auth.error && <Notice>{auth.error}</Notice>}
-              <button className="button dark full" disabled={busy}>
+              <button className="button dark full" disabled={busy || googleBusy}>
                 {busy
                   ? "Procesando…"
                   : {
@@ -269,34 +321,15 @@ export default function AuthPage({
     </div>
   );
 }
-let callbackTask: Promise<"email" | "recovery" | "invite"> | undefined;
-function verifyCallback() {
-  if (callbackTask) return callbackTask;
-  const params = new URLSearchParams(location.search);
-  const hash = params.get("token_hash");
-  const type = params.get("type");
-  history.replaceState(null, "", "/auth/callback");
-  callbackTask = (async () => {
-    if (!hash || (type !== "email" && type !== "recovery" && type !== "invite"))
-      throw new Error("invalid_link");
-    const { error } = await requireSupabase().auth.verifyOtp({
-      token_hash: hash,
-      type,
-    });
-    if (error) throw error;
-    return type;
-  })();
-  return callbackTask;
-}
 export function AuthCallback() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
   useEffect(() => {
     let active = true;
-    void verifyCallback()
+    void verifyAuthCallback()
       .then((type) => {
         if (active)
-          navigate(type === "email" ? "/entrar" : "/nueva-contrasena", {
+          navigate(type === "email" || type === "google" ? "/entrar" : "/nueva-contrasena", {
             replace: true,
           });
       })
@@ -311,7 +344,10 @@ export function AuthCallback() {
     <div className="content narrow">
       <h1>Enlace no disponible</h1>
       <Notice>{error}</Notice>
-      <Link className="button dark" to="/recuperar">
+      <Link className="button dark" to="/entrar">
+        Volver a iniciar sesión
+      </Link>
+      <Link className="text-button" to="/recuperar">
         Solicitar otro enlace
       </Link>
     </div>

@@ -25,6 +25,7 @@ export const supabase =
           },
         },
         auth: {
+          flowType: "pkce",
           detectSessionInUrl: false,
           persistSession: true,
           autoRefreshToken: true,
@@ -48,6 +49,10 @@ export function userError(error: unknown): string {
       "Espera unos minutos antes de solicitar otro correo.",
     weak_password: "Elige una contraseña más segura.",
     otp_expired: "El enlace ha caducado. Solicita uno nuevo.",
+    oauth_cancelled: "No se completó el acceso con Google. Puedes volver a intentarlo.",
+    invalid_link: "El enlace no es válido o ha caducado. Vuelve a iniciar sesión.",
+    flow_state_not_found: "El acceso ha caducado. Vuelve a iniciarlo desde este navegador.",
+    flow_state_expired: "El acceso ha caducado. Vuelve a iniciarlo desde este navegador.",
     "42501": "Tu cuenta no tiene permiso para esta acción.",
     PT409: "Los datos cambiaron en otra sesión. Recarga antes de guardar.",
     P0002: "El registro ya no está disponible.",
@@ -100,6 +105,7 @@ export function userError(error: unknown): string {
     business[message] ??
     business[code] ??
     messages[code] ??
+    messages[message] ??
     "No se pudo completar la operación. Conservamos tus cambios; vuelve a intentarlo."
   );
 }

@@ -159,6 +159,7 @@ test("administrator manages real drafts and roles with the approved tables and p
   await page.getByLabel("Nombre del montaje").fill("");
   await expect(page.getByLabel("Nombre del montaje")).toHaveValue("");
   await page.getByLabel("Nombre del montaje").fill(run);
+  await page.getByRole("button", { name: "Mi cuenta", exact: true }).click();
   await page
     .getByRole("button", { name: "Cerrar sesión", exact: true })
     .click();
@@ -291,6 +292,7 @@ test("native recovery callback consumes a token and changes the password without
     .getByRole("button", { name: "Guardar contraseña", exact: true })
     .click();
   await expect(page).toHaveURL("/mis-bicicletas");
+  await page.getByRole("button", { name: "Mi cuenta", exact: true }).click();
   await page
     .getByRole("button", { name: "Cerrar sesión", exact: true })
     .click();
@@ -303,6 +305,7 @@ test("native recovery callback consumes a token and changes the password without
     .fill(process.env.ATLAS_RECOVERY_PASSWORD!);
   await page.getByRole("button", { name: "Entrar", exact: true }).click();
   await expect(page).toHaveURL("/mis-bicicletas");
+  await page.getByRole("button", { name: "Mi cuenta", exact: true }).click();
   await expect(
     page.getByRole("link", { name: "Administración", exact: true }),
   ).toHaveCount(0);
@@ -480,6 +483,7 @@ test("publishing a catalogue variant refreshes previously cached public facets w
       .locator("option")
       .filter({ hasText: name }),
   ).toHaveCount(0);
+  await page.getByRole("button", { name: "Mi cuenta", exact: true }).click();
   await page.getByRole("link", { name: "Administración", exact: true }).click();
   await page.getByRole("button", { name: "Crear marca", exact: true }).click();
   let panel = page.getByRole("dialog", { name: "Marca", exact: true });
@@ -771,6 +775,7 @@ test("a denied administrative write revalidates access and removes the open priv
   await panel.getByRole("button", { name: "Guardar borrador", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Acceso no disponible", exact: true })).toBeVisible();
   await expect(page.getByRole("dialog")).toHaveCount(0);
+  await page.getByRole("button", { name: "Mi cuenta", exact: true }).click();
   await expect(page.getByRole("link", { name: "Administración", exact: true })).toHaveCount(0);
   await page.getByRole("link", { name: "Volver a mi espacio", exact: true }).click();
   await expect(page).toHaveURL("/mis-bicicletas");
@@ -855,6 +860,7 @@ test("reauthentication retains an account's unsaved recovery and deliberate logo
   await login();
   await expect(page.getByLabel("Nombre del montaje")).toHaveValue(name);
   await expect(page.locator(".slot-complete")).toHaveCount(23);
+  await page.getByRole("button", { name: "Mi cuenta", exact: true }).click();
   await page.getByRole("button", {name:"Cerrar sesión",exact:true}).click();
   const decision = page.getByRole("alertdialog", {name:"Hay cambios sin guardar"});
   await decision.getByRole("button", {name:"Guardar y salir",exact:true}).click();

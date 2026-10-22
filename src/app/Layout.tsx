@@ -5,7 +5,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import { ArrowUpRight, LogOut, UserRound } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useWorkspaceLinks } from "./workspace";
 import { Suspense, useState } from "react";
 import { Loading } from "../components/ui/Feedback";
@@ -14,6 +14,7 @@ import { forgetAccountDrafts } from "../features/auth/drafts";
 import { requireSupabase, userError } from "../lib/supabase";
 import { BrandLogo } from "../components/BrandLogo";
 import { MotionRegion } from "../components/ui/MotionRegion";
+import { AccountMenu } from "./AccountMenu";
 export function Brand() {
   return (
     <Link className="brand" to="/" aria-label="ATLAS MTB, inicio">
@@ -59,22 +60,7 @@ export function Layout() {
         <nav className="header-nav" aria-label="Navegación principal">
           <Link to="/componentes">Catálogo</Link>
           {auth.user ? (
-            <>
-              <Link to="/mis-bicicletas">
-                <UserRound size={16} />
-                <span className="account-label">Mi cuenta</span>
-              </Link>
-              {auth.permissions.some((p) =>
-                /^(catalog|presets|users|roles)\./.test(p),
-              ) && <Link to="/administracion">Administración</Link>}
-              <button
-                className="icon-button"
-                aria-label="Cerrar sesión"
-                onClick={() => void logout()}
-              >
-                <LogOut size={18} />
-              </button>
-            </>
+            <AccountMenu onLogout={logout} />
           ) : (
             <Link className="button small dark" to="/entrar">
               Entrar <ArrowUpRight size={15} />

@@ -1,0 +1,41 @@
+.account-menu { position:relative; }
+.account-trigger {
+  display:flex; align-items:center; gap:9px; max-width:200px;
+  min-height:42px; padding:8px 10px; border:1px solid currentColor;
+  border-color:color-mix(in srgb,currentColor 16%,transparent);
+  border-radius:4px; background:transparent; color:inherit;
+  font-size:.75rem; font-weight:550;
+  transition:background-color var(--motion-fast) ease,border-color var(--motion-fast) ease;
+}
+.account-trigger:hover { background:color-mix(in srgb,currentColor 6%,transparent); }
+.account-trigger-label { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.account-trigger>svg { flex-shrink:0; }
+.account-chevron { transition:transform var(--motion-fast) ease; }
+.account-trigger[aria-expanded=true] .account-chevron { transform:rotate(180deg); }
+.account-panel {
+  position:absolute; top:calc(100% + 12px); right:0; z-index:10;
+  width:310px; max-width:calc(100vw - 32px); padding:0;
+  background:#fff; color:#242d25; border:1px solid #dce1d8;
+  border-radius:7px; box-shadow:0 12px 36px #1018101c;
+}
+.account-identity { padding:21px 20px 17px; }
+.account-caption { margin:0 0 12px; font-size:.6rem; text-transform:uppercase; letter-spacing:.14em; color:#626e60; }
+.account-name { margin:0 0 4px; font-size:.9rem; font-weight:650; overflow-wrap:anywhere; }
+.account-email { margin:0; font-size:.75rem; overflow-wrap:anywhere; color:#53604f; }
+.account-details { display:flex; flex-wrap:wrap; gap:7px; margin-top:13px; }
+.account-details span { display:inline-flex; align-items:center; gap:4px; border-radius:3px; padding:4px 6px; background:#f0f3eb; font-size:.6rem; }
+.account-provider { margin:10px 0 0; color:#626e60; font-size:.65rem; }
+.account-actions { padding:7px; border-top:1px solid #e6e9e2; }
+.header-nav .account-actions>a,.account-actions>button {
+  display:flex; align-items:center; gap:10px; width:100%; min-height:42px;
+  padding:10px 12px; border:0; border-radius:3px; background:transparent;
+  color:#303c2c; text-align:left; font-size:.75rem;
+}
+.header-nav .account-actions>a:hover,.account-actions>button:hover { color:#202a1c; background:#f0f3eb; }
+@media(max-width:720px) {
+  .account-trigger-label { display:none; }
+  .account-trigger { gap:5px; padding:8px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .account-trigger,.account-chevron { transition:none; }
+}

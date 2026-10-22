@@ -5,6 +5,10 @@
 .route-content,.table-scroll { min-width:0; }
 .auth-layout { width:100%; max-width:none; }
 .auth-form { width:100%; max-width:620px; justify-self:center; }
+.google-sign-in { background:#fff; color:#1f1f1f; border-color:#747775; gap:10px; }
+.google-sign-in img { object-fit:contain; flex-shrink:0; }
+.auth-divider { display:flex; align-items:center; gap:12px; margin:20px 0; color:var(--muted); font-size:.75rem; }
+.auth-divider::before,.auth-divider::after { content:""; flex:1; height:1px; background:var(--border); }
 /* Keep a single bicycle in its column instead of stretching across the gallery. */
 .preset-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
 .preset-grid .preset-card { min-width:0; }
