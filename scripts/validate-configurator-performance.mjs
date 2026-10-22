@@ -19,7 +19,7 @@ try {
   const { data, error } = await admin.auth.admin.createUser({ email, password, email_confirm: true });
   if (error) throw new Error("Cannot create temporary performance account");
   userId = data.user.id;
-  const result = spawnSync("pnpm", ["exec", "playwright", "test", testFile, `--project=${project}`, "--workers=1", `--output=/tmp/atlas-query-audit/browser-configurator-${scenario}-${project}-results`], {
+  const result = spawnSync("pnpm", ["exec", "playwright", "test", testFile, `--project=${project}`, "--workers=1", ...(process.argv[4] ? ["--grep", process.argv[4]] : []), `--output=/tmp/atlas-query-audit/browser-configurator-${scenario}-${project}-results`], {
     encoding: "utf8",
     maxBuffer: 4 * 1024 * 1024,
     env: { ...process.env, ATLAS_PLAYWRIGHT_PORT: process.env.ATLAS_PLAYWRIGHT_PORT ?? "4182", ATLAS_TEST_EMAIL: email, ATLAS_TEST_PASSWORD: password },

@@ -50,8 +50,11 @@
 .admin-table tbody tr:focus-within { background-color: #f0f3e8; }
 .permission-table input[type=checkbox] { accent-color: #657d38; }
 
-/* Entry only: closing still executes immediately, including unsaved-change guards. */
+/* Keep the native modal present until its requested exit finishes. */
 .drawer[open] { animation: panel-enter var(--motion-panel) var(--motion-ease); }
+.drawer[open].is-closing { animation:panel-exit var(--motion-panel) var(--motion-ease) both; }
+.drawer.is-closing>* { pointer-events:none; }
+.drawer[open].is-closing::backdrop { animation:surface-exit var(--motion-panel) ease-out both; }
 .drawer[open]::backdrop,.native-confirm[open]::backdrop {
   animation: surface-fade var(--motion-content) ease-out;
 }
@@ -67,6 +70,8 @@ details[open] > :not(summary) { animation: surface-fade var(--motion-content) ea
 @keyframes surface-fade { from { opacity: .4; } to { opacity: 1; } }
 @keyframes surface-enter { from { opacity: .4; transform: translateY(5px); } to { opacity: 1; transform: none; } }
 @keyframes panel-enter { from { opacity: .6; transform: translateX(32px); } to { opacity: 1; transform: none; } }
+@keyframes panel-exit { from { opacity:1; transform:none; } to { opacity:0; transform:translateX(32px); } }
+@keyframes surface-exit { from { opacity:1; } to { opacity:0; } }
 @keyframes confirm-enter { from { opacity: .5; transform: translateY(8px) scale(.985); } to { opacity: 1; transform: none; } }
 @media (hover: hover) and (pointer: fine) {
   .product-card:hover .card-arrow { transform: translate(2px,-2px); }
@@ -79,7 +84,9 @@ details[open] > :not(summary) { animation: surface-fade var(--motion-content) ea
 }
 @media (max-width: 720px) {
   .drawer[open] { animation-name: panel-enter-mobile; }
+  .drawer[open].is-closing { animation-name:panel-exit-mobile; }
   @keyframes panel-enter-mobile { from { opacity: .6; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+  @keyframes panel-exit-mobile { from { opacity:1; transform:none; } to { opacity:0; transform:translateY(28px); } }
 }
 @media (prefers-reduced-motion: reduce) {
   /* Also remove existing hover displacement and the loading spinner's rotation. */

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   Link,
   useNavigate,
@@ -15,7 +15,6 @@ import {
   GitCompareArrows,
 } from "lucide-react";
 import {
-  categoryGroups,
   displaySpec,
   specLabels,
   categoryLabels,
@@ -34,6 +33,7 @@ import { Empty, Loading, Notice } from "../../components/ui/Feedback";
 import { VariantInformation } from "./VariantInformation";
 import { useComparison } from "../compare";
 import { CatalogHeading } from "./CatalogHeading";
+import { CategorySelector } from "./CategorySelector";
 
 function ProductCard({
   component,
@@ -133,6 +133,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
   const page = Math.max(0, Math.floor(Number(params.get("page")) || 0));
   const [draftSearch, setDraftSearch] = useState(search);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const categoryToggle = useRef<HTMLButtonElement>(null);
   const facets = useFacets(category);
   const selectedSpecs = Object.fromEntries(
     filterKeys
@@ -193,6 +194,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       return p;
     });
     setFiltersOpen(false);
+    if (filtersOpen) categoryToggle.current?.focus();
   }
   function open(component: CatalogCard) {
     if (frames)
@@ -229,6 +231,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
           />
         </label>
         <button
+          ref={categoryToggle}
           className="button outline mobile-filter"
           aria-expanded={filtersOpen}
           aria-controls="catalog-categories"
@@ -313,33 +316,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       )}
       <div className="catalog-layout">
         {!frames && (
-          <aside
-            id="catalog-categories"
-            className={`category-list ${filtersOpen ? "open" : ""}`}
-            aria-label="Categorías"
-          >
-            <button
-              className={!category ? "selected" : ""}
-              onClick={() => chooseCategory()}
-            >
-              Todas las piezas <ArrowUpRight size={14} />
-            </button>
-            {categoryGroups.map((group) => (
-              <div className="category-group" key={group.label}>
-                <h2>{group.label}</h2>
-                {group.categories.map((c) => (
-                  <button
-                    key={c}
-                    className={category === c ? "selected" : ""}
-                    onClick={() => chooseCategory(c)}
-                  >
-                    {categoryLabels[c]}
-                    {category === c && <span className="active-mark" />}
-                  </button>
-                ))}
-              </div>
-            ))}
-          </aside>
+          <CategorySelector selected={category} open={filtersOpen} onSelect={chooseCategory} />
         )}
         <section className="catalog-results" aria-label="Resultados">
           {query.isPending ? (
