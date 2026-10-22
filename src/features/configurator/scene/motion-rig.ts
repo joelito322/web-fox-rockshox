@@ -76,6 +76,13 @@ export function createMotionRig(
   source: T.Group,
   slot: string,
   definition: NonNullable<MotionDefinition>,
+  inspect?: (part: {
+    node: string;
+    role: string;
+    min: number[];
+    max: number[];
+    triangles: number;
+  }) => void,
 ) {
   const object = new T.Group(),
     groups = new Map<string, T.Group>(),
@@ -161,16 +168,39 @@ export function createMotionRig(
         // A complete stanchion crosses the seal: keep it rigid with the crown.
         role = box.max.y < -0.1 && box.min.y < -0.2 ? "sliding" : "fixed";
       } else if (slot === "shock") {
-        const eye = definition.restLength;
-        if (
-          definition.shockSpring === "coil" &&
-          size.y > eye * 0.45 &&
-          size.x > 0.035 &&
-          size.z > 0.035
-        )
+        const eye = definition.shockEyeLength;
+        // Helical wire has many axial levels and stays around the main axis.
+        // A wide rigid damper or offset piggyback is never a spring.
+        const levels = new Set<number>();
+        let minRadius = Infinity,
+          maxRadius = 0;
+        for (const tri of triangles)
+          for (let k = 0; k < 3; k++) {
+            const v = connected.at(tri * 3 + k),
+              x = position.getX(v),
+              y = position.getY(v),
+              z = position.getZ(v);
+            levels.add(Math.round(y * 100000));
+            const radius = Math.hypot(x, z);
+            minRadius = Math.min(minRadius, radius);
+            maxRadius = Math.max(maxRadius, radius);
+          }
+        const helix =
+          levels.size > 24 &&
+          minRadius > 0.012 &&
+          minRadius / maxRadius > 0.6 &&
+          Math.hypot(center.x, center.z) < 0.005;
+        if (definition.shockSpring === "coil" && helix && size.y > 0.04)
           role = "spring";
         else if (center.y < -eye * 0.53) role = "sliding";
       }
+      inspect?.({
+        node: node.name,
+        role,
+        min: box.min.toArray(),
+        max: box.max.toArray(),
+        triangles: triangles.length,
+      });
       const list = byBody.get(role) ?? [];
       list.push(...triangles);
       byBody.set(role, list);
@@ -205,7 +235,9 @@ export function createMotionRig(
     g.dispose();
   });
   const springGroup = groups.get("spring");
-  const springBounds = springGroup ? new T.Box3().setFromObject(springGroup) : null;
+  const springBounds = springGroup
+    ? new T.Box3().setFromObject(springGroup)
+    : null;
   return {
     object,
     groups,

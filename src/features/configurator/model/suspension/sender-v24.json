@@ -1,0 +1,343 @@
+{
+  "version": "atlas-motion-sender-v24",
+  "architecture": "MY25 high single pivot, reduced lower-rocker exterior guide",
+  "estimated": true,
+  "note": "New MY25 profile; principal pivot and idler coaxial. Hidden actuation guide C inferred and limited to conservative small interval, not full 200mm or CAD linkage.",
+  "registration": {
+    "bottom_bracket": [
+      779,
+      672
+    ],
+    "head_top": [
+      1083,
+      249
+    ],
+    "rear_axle": [
+      498,
+      673
+    ]
+  },
+  "joints": {
+    "a": [
+      759,
+      604
+    ],
+    "b": [
+      759,
+      653
+    ],
+    "c": [
+      790,
+      625
+    ],
+    "d": [
+      790,
+      598
+    ]
+  },
+  "rear_body": "input",
+  "shock_body": "output",
+  "shock_upper_body": "fixed",
+  "shock_lower_body": "output",
+  "max_input_radians": 0.09,
+  "regions": [
+    {
+      "role": "fixed",
+      "points": [
+        [
+          807,
+          475
+        ],
+        [
+          833,
+          461
+        ],
+        [
+          1055,
+          290
+        ],
+        [
+          1085,
+          272
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "role": "fixed",
+      "points": [
+        [
+          779,
+          672
+        ],
+        [
+          820,
+          656
+        ],
+        [
+          854,
+          605
+        ],
+        [
+          1007,
+          384
+        ],
+        [
+          1071,
+          306
+        ],
+        [
+          1103,
+          302
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "role": "fixed",
+      "points": [
+        [
+          779,
+          569
+        ],
+        [
+          793,
+          525
+        ],
+        [
+          809,
+          479
+        ],
+        [
+          796,
+          461
+        ],
+        [
+          769,
+          415
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "role": "input",
+      "points": [
+        [
+          498,
+          673
+        ],
+        [
+          526,
+          646
+        ],
+        [
+          732,
+          558
+        ],
+        [
+          765,
+          552
+        ],
+        [
+          779,
+          569
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "role": "input",
+      "points": [
+        [
+          498,
+          673
+        ],
+        [
+          530,
+          682
+        ],
+        [
+          726,
+          696
+        ],
+        [
+          751,
+          682
+        ]
+      ],
+      "closed": false
+    },
+    {
+      "role": "input",
+      "points": [
+        [
+          752,
+          558
+        ],
+        [
+          777,
+          557
+        ],
+        [
+          784,
+          571
+        ],
+        [
+          774,
+          612
+        ],
+        [
+          767,
+          665
+        ],
+        [
+          751,
+          697
+        ],
+        [
+          738,
+          698
+        ],
+        [
+          741,
+          683
+        ],
+        [
+          752,
+          660
+        ],
+        [
+          759,
+          611
+        ],
+        [
+          760,
+          580
+        ]
+      ],
+      "closed": true
+    },
+    {
+      "role": "output",
+      "points": [
+        [
+          744,
+          615
+        ],
+        [
+          754,
+          593
+        ],
+        [
+          772,
+          584
+        ],
+        [
+          794,
+          581
+        ],
+        [
+          807,
+          594
+        ],
+        [
+          800,
+          612
+        ],
+        [
+          779,
+          622
+        ],
+        [
+          777,
+          651
+        ],
+        [
+          759,
+          663
+        ],
+        [
+          743,
+          650
+        ]
+      ],
+      "closed": true
+    },
+    {
+      "role": "fixed",
+      "points": [
+        [
+          889,
+          487
+        ],
+        [
+          910,
+          464
+        ],
+        [
+          929,
+          461
+        ],
+        [
+          939,
+          479
+        ],
+        [
+          921,
+          500
+        ],
+        [
+          905,
+          513
+        ],
+        [
+          893,
+          510
+        ]
+      ],
+      "closed": true
+    },
+    {
+      "role": "fixed",
+      "points": [
+        [
+          784,
+          471
+        ],
+        [
+          804,
+          459
+        ],
+        [
+          831,
+          453
+        ],
+        [
+          840,
+          460
+        ],
+        [
+          821,
+          484
+        ],
+        [
+          807,
+          517
+        ],
+        [
+          788,
+          520
+        ],
+        [
+          788,
+          491
+        ]
+      ],
+      "closed": true
+    }
+  ],
+  "asset_ids": [
+    "6ec55956-08eb-510d-9daf-6ae0a6571b14",
+    "730610b2-550d-5c36-a4e2-22642690d849"
+  ]
+}

@@ -1,4 +1,9 @@
+import currentV2 from "./current-v2.json";
 import profiles from "./profiles.json";
+import senderV24 from "./sender-v24.json";
+import tuesV28 from "./tues-v28.json";
+import v10V30 from "./v10-v30.json";
+import tuesV29Assets from "./tues-v29-assets.json";
 import type { Assembly, Point } from "../assembly";
 import type { Configuration, VariantMap } from "../index";
 export type Body = "fixed" | "input" | "output" | "rear";
@@ -97,7 +102,21 @@ export function createMotionDefinition(
   const frame = get("frame"),
     fork = get("fork"),
     shock = get("shock");
-  const profile = profiles[frame?.component.slug as keyof typeof profiles];
+  // Corrected articulations are selected by immutable resource IDs; saved historical resources retain theirs.
+  const corrected = currentV2[frame?.component.slug as keyof typeof currentV2];
+  const profile = corrected?.asset_ids.includes(frame?.visual_assets?.id ?? "")
+    ? corrected
+    : frame?.component.slug === "santa-cruz-v10-8-my27" &&
+        v10V30.asset_ids.includes(frame.visual_assets?.id ?? "")
+      ? v10V30
+      : frame?.component.slug === "canyon-sender-cfr-high-pivot" &&
+          senderV24.asset_ids.includes(frame.visual_assets?.id ?? "")
+        ? senderV24
+        : frame?.component.slug === "yt-tues-mk4-carbon" &&
+            (tuesV28.asset_ids.includes(frame.visual_assets?.id ?? "") ||
+              tuesV29Assets.includes(frame.visual_assets?.id ?? ""))
+          ? tuesV28
+          : profiles[frame?.component.slug as keyof typeof profiles];
   const anchors = frame?.visual_assets?.manifest.anchors;
   const supported =
     !!profile &&
@@ -117,8 +136,15 @@ export function createMotionDefinition(
     rear = anchors.rear_axle.position;
   const map = (pixel: number[]): Point => {
     const x = pixel[0] - bb[0],
-      y = bb[1] - pixel[1],
-      c = (x * v[1] - v[0] * y) / det,
+      y = bb[1] - pixel[1];
+    if ("mode" in registration && registration.mode === "similarity") {
+      const scale = Math.hypot(rear[0], rear[1]) / Math.hypot(v[0], v[1]);
+      const angle = Math.atan2(rear[1], rear[0]) - Math.atan2(v[1], v[0]);
+      const c = Math.cos(angle),
+        s = Math.sin(angle);
+      return [scale * (c * x - s * y), scale * (s * x + c * y), 0];
+    }
+    const c = (x * v[1] - v[0] * y) / det,
       d = (u[0] * y - x * u[1]) / det;
     return [c * head[0] + d * rear[0], c * head[1] + d * rear[1], 0];
   };
@@ -164,19 +190,37 @@ export function createMotionDefinition(
   const direction =
     (plus?.rear[1] ?? -Infinity) > (minus?.rear[1] ?? -Infinity) ? 1 : -1;
   let limit = 0,
+    previousCompression = 0,
+    previousRise = 0,
     previous = j.d;
   for (let i = 1; i <= 240; i++) {
     const theta = (direction * i * profile.max_input_radians) / 240,
       s = sample(theta, previous);
     if (!s) break;
     const compression = restLength - distance(s.upper, s.lower);
+    const rise = s.rear[1] - a.rear[1];
+    const strict = profile.version === "atlas-motion-v2";
     if (
-      s.rear[1] - a.rear[1] > rearTravel ||
+      strict &&
+      (compression < -1e-10 ||
+        compression < previousCompression - 1e-10 ||
+        rise < previousRise - 1e-10)
+    ) {
+      // Leave one sampled interval before a turning point, not beyond the peak between samples.
+      limit =
+        direction *
+        Math.max(0, Math.abs(limit) - profile.max_input_radians / 240);
+      break;
+    }
+    if (
+      rise > rearTravel ||
       compression > stroke * 0.98 ||
       compression < -0.004
     )
       break;
     limit = theta;
+    previousCompression = compression;
+    previousRise = rise;
     previous = s.b.d;
   }
   const axisLength = distance(a.head, a.lower),
@@ -208,6 +252,10 @@ export function createMotionDefinition(
   }
   return {
     shockSpring: shock?.specs.spring_type,
+    shockEyeLength:
+      typeof shock?.specs.eye_to_eye_mm === "number"
+        ? shock.specs.eye_to_eye_mm / 1000
+        : restLength,
     version: profile.version,
     slug: frame.component.slug,
     architecture: profile.architecture,

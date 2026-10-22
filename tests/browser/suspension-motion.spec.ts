@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 import { installSceneMetrics } from "../../scripts/lib/scene-metrics.mjs";
 import { readFileSync } from "node:fs";
 const examples = JSON.parse(
-  readFileSync("supabase/catalog/visual-v7-examples.json", "utf8"),
+  readFileSync("supabase/catalog/motion-v2-examples.json", "utf8"),
 ) as { presets: { id: string; slug: string }[] };
 test.use({
   launchOptions: {
@@ -33,7 +33,11 @@ test("explicit playback reuses resources, follows separate bodies and closing re
   await page.getByRole("button", { name: "Suspensión", exact: true }).click();
   await page.getByLabel("Compresión delantera", { exact: true }).fill("65");
   await page.getByLabel("Compresión trasera", { exact: true }).fill("65");
-  expect(await page.evaluate(() => (window as any).atlasMotionReview.inspect()?.position)).toEqual(initial.position);
+  expect(
+    await page.evaluate(
+      () => (window as any).atlasMotionReview.inspect()?.position,
+    ),
+  ).toEqual(initial.position);
   await page.getByRole("button", { name: "Reproducir", exact: true }).click();
   await expect
     .poll(() =>
@@ -42,10 +46,16 @@ test("explicit playback reuses resources, follows separate bodies and closing re
       ),
     )
     .not.toBe(0);
-  await expect.poll(async () => {
-    const state = await page.evaluate(() => (window as any).atlasMotionReview.inspect());
-    return state?.parts.find((p: any) => p.slot === "rear_tire")?.position.some((n: number) => Math.abs(n) > 0.001);
-  }).toBe(true);
+  await expect
+    .poll(async () => {
+      const state = await page.evaluate(() =>
+        (window as any).atlasMotionReview.inspect(),
+      );
+      return state?.parts
+        .find((p: any) => p.slot === "rear_tire")
+        ?.position.some((n: number) => Math.abs(n) > 0.001);
+    })
+    .toBe(true);
   const compressed = await page.evaluate(() =>
     (window as any).atlasMotionReview.inspect(),
   );
@@ -125,7 +135,11 @@ test("reduced motion keeps percentage selection at rest and keeps the controls i
     page.getByRole("button", { name: "Reproducir", exact: true }),
   ).toBeDisabled();
   await page.getByLabel("Compresión trasera", { exact: true }).fill("30");
-  expect(await page.evaluate(() => (window as any).atlasMotionReview.inspect()?.position[1])).toBe(0);
+  expect(
+    await page.evaluate(
+      () => (window as any).atlasMotionReview.inspect()?.position[1],
+    ),
+  ).toBe(0);
   const panel = await page
     .getByRole("region", { name: "Suspensión", exact: true })
     .boundingBox();
@@ -187,13 +201,28 @@ test("all nine fork and four shock families keep distinct moving bodies", async 
   }
   expect(errors).toEqual([]);
 });
-test("the rear coil shortens between its supports during playback", async ({ page }) => {
+test("the rear coil shortens between its supports during playback", async ({
+  page,
+}) => {
   await review(page);
-  await page.getByLabel("Amortiguador", { exact: true }).selectOption("marzocchi-bomber-cr");
-  await page.waitForFunction(() => (window as any).atlasMotionReview?.ready && (window as any).atlasMotionReview.shock === "marzocchi-bomber-cr");
+  await page
+    .getByLabel("Amortiguador", { exact: true })
+    .selectOption("marzocchi-bomber-cr");
+  await page.waitForFunction(
+    () =>
+      (window as any).atlasMotionReview?.ready &&
+      (window as any).atlasMotionReview.shock === "marzocchi-bomber-cr",
+  );
   await page.getByRole("button", { name: "Suspensión", exact: true }).click();
   await page.getByLabel("Compresión trasera", { exact: true }).fill("100");
-  const scale = () => page.evaluate(() => (window as any).atlasMotionReview.inspect()?.parts.find((p: any) => p.slot === "shock")?.bodies.find((b: any) => b.name === "motion_spring")?.scale);
+  const scale = () =>
+    page.evaluate(
+      () =>
+        (window as any).atlasMotionReview
+          .inspect()
+          ?.parts.find((p: any) => p.slot === "shock")
+          ?.bodies.find((b: any) => b.name === "motion_spring")?.scale,
+    );
   expect(await scale()).toEqual([1, 1, 1]);
   await page.getByRole("button", { name: "Reproducir", exact: true }).click();
   await expect.poll(async () => (await scale())?.[1]).toBeLessThan(0.99);
@@ -201,7 +230,9 @@ test("the rear coil shortens between its supports during playback", async ({ pag
   const compressed = await scale();
   expect(compressed[0]).toBe(1);
   expect(compressed[2]).toBe(1);
-  await page.getByRole("button", { name: "Restablecer suspensión", exact: true }).click();
+  await page
+    .getByRole("button", { name: "Restablecer suspensión", exact: true })
+    .click();
   await expect.poll(scale).toEqual([1, 1, 1]);
 });
 test("saving an inspected build persists choices and reopening restores an uncompressed scene", async ({
@@ -225,7 +256,10 @@ test("saving an inspected build persists choices and reopening restores an uncom
   await page.goto(`/configurador?preset=${preset.id}`);
   await expect(page.locator(".slot-complete")).toHaveCount(23);
   await expect(page.locator(".viewer canvas")).toBeVisible();
-  await page.getByRole("button", { name: "Suspensión", exact: true }).click();
+  await page
+    .getByRole("region", { name: "Montaje visual", exact: true })
+    .getByRole("button", { name: "Suspensión", exact: true })
+    .click();
   await page.getByLabel("Compresión delantera", { exact: true }).fill("50");
   await page.getByLabel("Compresión trasera", { exact: true }).fill("50");
   await page.getByRole("button", { name: "Reproducir", exact: true }).click();
@@ -255,7 +289,10 @@ test("saving an inspected build persists choices and reopening restores an uncom
   await expect(
     page.getByRole("region", { name: "Suspensión", exact: true }),
   ).toHaveCount(0);
-  await page.getByRole("button", { name: "Suspensión", exact: true }).click();
+  await page
+    .getByRole("region", { name: "Montaje visual", exact: true })
+    .getByRole("button", { name: "Suspensión", exact: true })
+    .click();
   await expect(
     page.getByLabel("Compresión delantera", { exact: true }),
   ).toHaveValue("0");

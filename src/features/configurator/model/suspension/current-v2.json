@@ -1,0 +1,5298 @@
+{
+  "scott-ransom-rc-427727": {
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "input",
+    "version": "atlas-motion-v2",
+    "architecture": "six-bar exterior reduced guide",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        487,
+        525
+      ],
+      "head_top": [
+        686,
+        262
+      ],
+      "rear_axle": [
+        301,
+        515
+      ]
+    },
+    "joints": {
+      "a": [
+        487,
+        451
+      ],
+      "b": [
+        478,
+        542
+      ],
+      "c": [
+        467,
+        451
+      ],
+      "d": [
+        450,
+        520
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            671,
+            269
+          ],
+          [
+            691,
+            283
+          ],
+          [
+            521,
+            388
+          ],
+          [
+            503,
+            408
+          ],
+          [
+            484,
+            405
+          ],
+          [
+            475,
+            390
+          ],
+          [
+            488,
+            381
+          ],
+          [
+            506,
+            382
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            687,
+            290
+          ],
+          [
+            705,
+            298
+          ],
+          [
+            668,
+            317
+          ],
+          [
+            594,
+            464
+          ],
+          [
+            574,
+            491
+          ],
+          [
+            543,
+            504
+          ],
+          [
+            511,
+            518
+          ],
+          [
+            499,
+            541
+          ],
+          [
+            484,
+            542
+          ],
+          [
+            468,
+            522
+          ],
+          [
+            467,
+            501
+          ],
+          [
+            479,
+            486
+          ],
+          [
+            518,
+            477
+          ],
+          [
+            551,
+            465
+          ],
+          [
+            570,
+            449
+          ],
+          [
+            642,
+            314
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            460,
+            363
+          ],
+          [
+            474,
+            358
+          ],
+          [
+            483,
+            380
+          ],
+          [
+            497,
+            386
+          ],
+          [
+            502,
+            436
+          ],
+          [
+            505,
+            463
+          ],
+          [
+            518,
+            475
+          ],
+          [
+            506,
+            498
+          ],
+          [
+            480,
+            500
+          ],
+          [
+            482,
+            458
+          ],
+          [
+            482,
+            420
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            298,
+            508
+          ],
+          [
+            314,
+            499
+          ],
+          [
+            454,
+            441
+          ],
+          [
+            470,
+            443
+          ],
+          [
+            479,
+            452
+          ],
+          [
+            471,
+            464
+          ],
+          [
+            453,
+            459
+          ],
+          [
+            322,
+            511
+          ],
+          [
+            313,
+            520
+          ],
+          [
+            300,
+            522
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            298,
+            508
+          ],
+          [
+            314,
+            499
+          ],
+          [
+            454,
+            441
+          ],
+          [
+            470,
+            443
+          ],
+          [
+            479,
+            452
+          ],
+          [
+            471,
+            464
+          ],
+          [
+            453,
+            459
+          ],
+          [
+            322,
+            511
+          ],
+          [
+            313,
+            520
+          ],
+          [
+            300,
+            522
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            302,
+            512
+          ],
+          [
+            331,
+            518
+          ],
+          [
+            453,
+            530
+          ],
+          [
+            476,
+            532
+          ],
+          [
+            484,
+            544
+          ],
+          [
+            474,
+            554
+          ],
+          [
+            451,
+            552
+          ],
+          [
+            328,
+            532
+          ],
+          [
+            302,
+            521
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            302,
+            512
+          ],
+          [
+            331,
+            518
+          ],
+          [
+            453,
+            530
+          ],
+          [
+            476,
+            532
+          ],
+          [
+            484,
+            544
+          ],
+          [
+            474,
+            554
+          ],
+          [
+            451,
+            552
+          ],
+          [
+            328,
+            532
+          ],
+          [
+            302,
+            521
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            485,
+            487
+          ],
+          [
+            518,
+            479
+          ],
+          [
+            540,
+            485
+          ],
+          [
+            531,
+            504
+          ],
+          [
+            504,
+            521
+          ],
+          [
+            492,
+            535
+          ],
+          [
+            480,
+            529
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "max_input_radians": 0.18,
+    "asset_ids": [
+      "7b4344b6-fdfc-5b4d-94bb-54834a8a1922",
+      "1cce9e8c-ebe0-5443-857e-4f8c3c7e3f13"
+    ]
+  },
+  "trek-slash-al-gen-6": {
+    "shock_upper_body": "output",
+    "shock_lower_body": "fixed",
+    "version": "atlas-motion-v2",
+    "architecture": "high-pivot exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        317,
+        554
+      ],
+      "head_top": [
+        506,
+        305
+      ],
+      "rear_axle": [
+        141,
+        551
+      ]
+    },
+    "joints": {
+      "a": [
+        318,
+        514
+      ],
+      "b": [
+        325,
+        451
+      ],
+      "c": [
+        153,
+        540
+      ],
+      "d": [
+        340,
+        427
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            490,
+            311
+          ],
+          [
+            507,
+            320
+          ],
+          [
+            320,
+            432
+          ],
+          [
+            306,
+            437
+          ],
+          [
+            295,
+            431
+          ],
+          [
+            299,
+            417
+          ],
+          [
+            320,
+            416
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            507,
+            330
+          ],
+          [
+            521,
+            336
+          ],
+          [
+            485,
+            358
+          ],
+          [
+            409,
+            518
+          ],
+          [
+            397,
+            535
+          ],
+          [
+            376,
+            545
+          ],
+          [
+            328,
+            562
+          ],
+          [
+            315,
+            555
+          ],
+          [
+            321,
+            540
+          ],
+          [
+            354,
+            534
+          ],
+          [
+            375,
+            523
+          ],
+          [
+            390,
+            504
+          ],
+          [
+            463,
+            349
+          ],
+          [
+            470,
+            335
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            285,
+            401
+          ],
+          [
+            299,
+            397
+          ],
+          [
+            301,
+            411
+          ],
+          [
+            314,
+            418
+          ],
+          [
+            334,
+            435
+          ],
+          [
+            340,
+            469
+          ],
+          [
+            336,
+            518
+          ],
+          [
+            328,
+            543
+          ],
+          [
+            313,
+            545
+          ],
+          [
+            316,
+            524
+          ],
+          [
+            319,
+            472
+          ],
+          [
+            308,
+            445
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            139,
+            543
+          ],
+          [
+            151,
+            528
+          ],
+          [
+            331,
+            417
+          ],
+          [
+            345,
+            417
+          ],
+          [
+            349,
+            430
+          ],
+          [
+            329,
+            438
+          ],
+          [
+            159,
+            546
+          ],
+          [
+            146,
+            558
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            139,
+            543
+          ],
+          [
+            151,
+            528
+          ],
+          [
+            331,
+            417
+          ],
+          [
+            345,
+            417
+          ],
+          [
+            349,
+            430
+          ],
+          [
+            329,
+            438
+          ],
+          [
+            159,
+            546
+          ],
+          [
+            146,
+            558
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            141,
+            548
+          ],
+          [
+            174,
+            536
+          ],
+          [
+            306,
+            501
+          ],
+          [
+            325,
+            505
+          ],
+          [
+            328,
+            520
+          ],
+          [
+            313,
+            530
+          ],
+          [
+            174,
+            558
+          ],
+          [
+            141,
+            562
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            141,
+            548
+          ],
+          [
+            174,
+            536
+          ],
+          [
+            306,
+            501
+          ],
+          [
+            325,
+            505
+          ],
+          [
+            328,
+            520
+          ],
+          [
+            313,
+            530
+          ],
+          [
+            174,
+            558
+          ],
+          [
+            141,
+            562
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            308,
+            430
+          ],
+          [
+            317,
+            425
+          ],
+          [
+            343,
+            418
+          ],
+          [
+            348,
+            424
+          ],
+          [
+            336,
+            450
+          ],
+          [
+            325,
+            464
+          ],
+          [
+            315,
+            458
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            167,
+            539
+          ],
+          [
+            290,
+            508
+          ],
+          [
+            302,
+            514
+          ],
+          [
+            299,
+            529
+          ],
+          [
+            175,
+            556
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "max_input_radians": 0.18,
+    "asset_ids": [
+      "f79b56cd-68a7-56be-bf64-64a5b4927ccc",
+      "c778a744-a6f5-55a1-ae94-80c3279c2e81"
+    ]
+  },
+  "yt-capra-mk3-carbon-mx": {
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "output",
+    "version": "atlas-motion-v2",
+    "architecture": "four-link exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        876,
+        827
+      ],
+      "head_top": [
+        1247,
+        288
+      ],
+      "rear_axle": [
+        467,
+        817
+      ]
+    },
+    "joints": {
+      "a": [
+        870,
+        784
+      ],
+      "b": [
+        820,
+        674
+      ],
+      "c": [
+        492,
+        798
+      ],
+      "d": [
+        823,
+        639
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            876,
+            827
+          ],
+          [
+            958,
+            802
+          ],
+          [
+            1000,
+            751
+          ],
+          [
+            1119,
+            526
+          ],
+          [
+            1290,
+            365
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            812,
+            470
+          ],
+          [
+            842,
+            536
+          ],
+          [
+            876,
+            545
+          ],
+          [
+            1073,
+            420
+          ],
+          [
+            1247,
+            288
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            876,
+            827
+          ],
+          [
+            834,
+            735
+          ],
+          [
+            851,
+            630
+          ],
+          [
+            812,
+            470
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            853,
+            686
+          ],
+          [
+            991,
+            711
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            467,
+            817
+          ],
+          [
+            621,
+            837
+          ],
+          [
+            819,
+            842
+          ],
+          [
+            864,
+            779
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            467,
+            817
+          ],
+          [
+            639,
+            741
+          ],
+          [
+            820,
+            674
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            820,
+            674
+          ],
+          [
+            883,
+            686
+          ],
+          [
+            823,
+            639
+          ]
+        ],
+        "closed": false
+      }
+    ],
+    "max_input_radians": 0.18,
+    "asset_ids": [
+      "442d4dd0-bd67-5040-b253-1c9b2eb7f047",
+      "b4faeaeb-fad3-504f-930e-30803b95316b"
+    ]
+  },
+  "da-bomb-cherry-bomb-29": {
+    "shock_upper_body": "output",
+    "shock_lower_body": "fixed",
+    "version": "atlas-motion-v2",
+    "architecture": "rear-pivot exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        525,
+        894
+      ],
+      "head_top": [
+        997,
+        192
+      ],
+      "rear_axle": [
+        27,
+        874
+      ]
+    },
+    "joints": {
+      "a": [
+        510,
+        845
+      ],
+      "b": [
+        554,
+        583
+      ],
+      "c": [
+        70,
+        850
+      ],
+      "d": [
+        425,
+        574
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            969,
+            206
+          ],
+          [
+            1005,
+            230
+          ],
+          [
+            502,
+            521
+          ],
+          [
+            482,
+            524
+          ],
+          [
+            463,
+            500
+          ],
+          [
+            476,
+            476
+          ],
+          [
+            504,
+            470
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            1010,
+            244
+          ],
+          [
+            1054,
+            269
+          ],
+          [
+            1013,
+            300
+          ],
+          [
+            699,
+            815
+          ],
+          [
+            679,
+            846
+          ],
+          [
+            655,
+            863
+          ],
+          [
+            548,
+            922
+          ],
+          [
+            530,
+            915
+          ],
+          [
+            541,
+            885
+          ],
+          [
+            625,
+            838
+          ],
+          [
+            651,
+            817
+          ],
+          [
+            667,
+            779
+          ],
+          [
+            894,
+            304
+          ],
+          [
+            930,
+            273
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            430,
+            434
+          ],
+          [
+            463,
+            419
+          ],
+          [
+            478,
+            455
+          ],
+          [
+            500,
+            481
+          ],
+          [
+            522,
+            540
+          ],
+          [
+            565,
+            645
+          ],
+          [
+            575,
+            691
+          ],
+          [
+            570,
+            745
+          ],
+          [
+            549,
+            819
+          ],
+          [
+            540,
+            851
+          ],
+          [
+            513,
+            857
+          ],
+          [
+            527,
+            812
+          ],
+          [
+            538,
+            739
+          ],
+          [
+            539,
+            691
+          ],
+          [
+            529,
+            658
+          ],
+          [
+            498,
+            597
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            28,
+            861
+          ],
+          [
+            53,
+            827
+          ],
+          [
+            403,
+            562
+          ],
+          [
+            426,
+            560
+          ],
+          [
+            437,
+            577
+          ],
+          [
+            415,
+            592
+          ],
+          [
+            71,
+            853
+          ],
+          [
+            62,
+            872
+          ],
+          [
+            41,
+            884
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            28,
+            861
+          ],
+          [
+            53,
+            827
+          ],
+          [
+            403,
+            562
+          ],
+          [
+            426,
+            560
+          ],
+          [
+            437,
+            577
+          ],
+          [
+            415,
+            592
+          ],
+          [
+            71,
+            853
+          ],
+          [
+            62,
+            872
+          ],
+          [
+            41,
+            884
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            29,
+            863
+          ],
+          [
+            107,
+            858
+          ],
+          [
+            434,
+            870
+          ],
+          [
+            472,
+            837
+          ],
+          [
+            509,
+            827
+          ],
+          [
+            528,
+            841
+          ],
+          [
+            512,
+            862
+          ],
+          [
+            484,
+            892
+          ],
+          [
+            450,
+            912
+          ],
+          [
+            106,
+            915
+          ],
+          [
+            32,
+            886
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            29,
+            863
+          ],
+          [
+            107,
+            858
+          ],
+          [
+            434,
+            870
+          ],
+          [
+            472,
+            837
+          ],
+          [
+            509,
+            827
+          ],
+          [
+            528,
+            841
+          ],
+          [
+            512,
+            862
+          ],
+          [
+            484,
+            892
+          ],
+          [
+            450,
+            912
+          ],
+          [
+            106,
+            915
+          ],
+          [
+            32,
+            886
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            414,
+            561
+          ],
+          [
+            436,
+            544
+          ],
+          [
+            506,
+            522
+          ],
+          [
+            606,
+            516
+          ],
+          [
+            620,
+            529
+          ],
+          [
+            608,
+            544
+          ],
+          [
+            576,
+            548
+          ],
+          [
+            565,
+            580
+          ],
+          [
+            545,
+            602
+          ],
+          [
+            516,
+            592
+          ],
+          [
+            476,
+            575
+          ],
+          [
+            430,
+            584
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            548,
+            762
+          ],
+          [
+            570,
+            755
+          ],
+          [
+            619,
+            747
+          ],
+          [
+            636,
+            762
+          ],
+          [
+            646,
+            786
+          ],
+          [
+            634,
+            799
+          ],
+          [
+            614,
+            777
+          ],
+          [
+            570,
+            789
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            110,
+            870
+          ],
+          [
+            428,
+            878
+          ],
+          [
+            447,
+            890
+          ],
+          [
+            429,
+            908
+          ],
+          [
+            111,
+            905
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "max_input_radians": 0.18,
+    "asset_ids": [
+      "c7751186-5c5a-51ae-844b-ca33b0c6006b",
+      "34f37a90-e206-57fa-8bbf-bad8ebf8187c"
+    ]
+  },
+  "gt-force-carbon-high-pivot": {
+    "shock_upper_body": "output",
+    "shock_lower_body": "fixed",
+    "version": "atlas-motion-v2",
+    "architecture": "high-pivot rocker exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        742,
+        976
+      ],
+      "head_top": [
+        1459,
+        240
+      ],
+      "rear_axle": [
+        183,
+        863
+      ]
+    },
+    "joints": {
+      "a": [
+        722,
+        842
+      ],
+      "b": [
+        806,
+        699
+      ],
+      "c": [
+        665,
+        706
+      ],
+      "d": [
+        920,
+        626
+      ]
+    },
+    "rear_body": "input",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            742,
+            976
+          ],
+          [
+            847,
+            953
+          ],
+          [
+            974,
+            899
+          ],
+          [
+            1226,
+            537
+          ],
+          [
+            1512,
+            351
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            722,
+            421
+          ],
+          [
+            872,
+            484
+          ],
+          [
+            938,
+            496
+          ],
+          [
+            1181,
+            352
+          ],
+          [
+            1459,
+            240
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            742,
+            976
+          ],
+          [
+            719,
+            888
+          ],
+          [
+            768,
+            731
+          ],
+          [
+            752,
+            550
+          ],
+          [
+            722,
+            421
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            183,
+            863
+          ],
+          [
+            305,
+            890
+          ],
+          [
+            632,
+            894
+          ],
+          [
+            722,
+            842
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            183,
+            863
+          ],
+          [
+            443,
+            773
+          ],
+          [
+            665,
+            706
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            665,
+            706
+          ],
+          [
+            806,
+            699
+          ],
+          [
+            920,
+            626
+          ]
+        ],
+        "closed": false
+      }
+    ],
+    "max_input_radians": 0.7,
+    "asset_ids": [
+      "f0234046-d8d5-562b-b179-233044e8638b",
+      "1d7bc29a-a059-5ded-9dcb-2f99b5ece29f"
+    ]
+  },
+  "commencal-frs-v3": {
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "output",
+    "version": "atlas-motion-v2",
+    "architecture": "single-pivot rocker exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        874,
+        1155
+      ],
+      "head_top": [
+        1711,
+        164
+      ],
+      "rear_axle": [
+        137,
+        1129
+      ]
+    },
+    "joints": {
+      "a": [
+        1114,
+        899
+      ],
+      "b": [
+        1000,
+        1030
+      ],
+      "c": [
+        876,
+        891
+      ],
+      "d": [
+        933,
+        844
+      ]
+    },
+    "rear_body": "input",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            874,
+            1155
+          ],
+          [
+            983,
+            1102
+          ],
+          [
+            1129,
+            984
+          ],
+          [
+            1414,
+            645
+          ],
+          [
+            1780,
+            302
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            904,
+            665
+          ],
+          [
+            1191,
+            488
+          ],
+          [
+            1497,
+            291
+          ],
+          [
+            1711,
+            164
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            874,
+            1155
+          ],
+          [
+            846,
+            1020
+          ],
+          [
+            882,
+            849
+          ],
+          [
+            902,
+            674
+          ],
+          [
+            825,
+            463
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            137,
+            1129
+          ],
+          [
+            335,
+            1134
+          ],
+          [
+            697,
+            1131
+          ],
+          [
+            846,
+            1020
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            137,
+            1129
+          ],
+          [
+            485,
+            1027
+          ],
+          [
+            876,
+            891
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            876,
+            891
+          ],
+          [
+            1114,
+            899
+          ],
+          [
+            933,
+            844
+          ]
+        ],
+        "closed": false
+      }
+    ],
+    "max_input_radians": 0.7,
+    "asset_ids": [
+      "0a65bf14-2892-531d-9d4c-da56440c7d95",
+      "ed6a5072-b7b2-5967-9a09-6bb74ee57bc9"
+    ]
+  },
+  "commencal-furious-v3-2021": {
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "output",
+    "version": "atlas-motion-v2",
+    "architecture": "single-pivot rocker exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        810,
+        767
+      ],
+      "head_top": [
+        1255,
+        198
+      ],
+      "rear_axle": [
+        390,
+        756
+      ]
+    },
+    "joints": {
+      "a": [
+        946,
+        616
+      ],
+      "b": [
+        864,
+        720
+      ],
+      "c": [
+        810,
+        616
+      ],
+      "d": [
+        838,
+        585
+      ]
+    },
+    "rear_body": "input",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            810,
+            767
+          ],
+          [
+            884,
+            737
+          ],
+          [
+            952,
+            665
+          ],
+          [
+            1109,
+            439
+          ],
+          [
+            1294,
+            287
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            823,
+            475
+          ],
+          [
+            995,
+            372
+          ],
+          [
+            1133,
+            281
+          ],
+          [
+            1255,
+            198
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            810,
+            767
+          ],
+          [
+            790,
+            679
+          ],
+          [
+            807,
+            563
+          ],
+          [
+            823,
+            476
+          ],
+          [
+            770,
+            368
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            390,
+            756
+          ],
+          [
+            539,
+            760
+          ],
+          [
+            736,
+            756
+          ],
+          [
+            790,
+            679
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            390,
+            756
+          ],
+          [
+            604,
+            669
+          ],
+          [
+            810,
+            616
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            810,
+            616
+          ],
+          [
+            946,
+            616
+          ],
+          [
+            838,
+            585
+          ]
+        ],
+        "closed": false
+      }
+    ],
+    "max_input_radians": 0.7,
+    "asset_ids": [
+      "95c005e4-971f-5b5e-9796-30b5a9bf1e38",
+      "ad7b8baf-d508-5c30-bfa7-b33a09b62b3d"
+    ]
+  },
+  "gt-fury-carbon-high-pivot": {
+    "shock_upper_body": "output",
+    "shock_lower_body": "fixed",
+    "version": "atlas-motion-v2",
+    "architecture": "high-pivot rocker exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        773,
+        1016
+      ],
+      "head_top": [
+        1414,
+        196
+      ],
+      "rear_axle": [
+        180,
+        995
+      ]
+    },
+    "joints": {
+      "a": [
+        728,
+        881
+      ],
+      "b": [
+        728,
+        754
+      ],
+      "c": [
+        663,
+        740
+      ],
+      "d": [
+        929,
+        643
+      ]
+    },
+    "rear_body": "input",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            773,
+            1016
+          ],
+          [
+            872,
+            976
+          ],
+          [
+            985,
+            905
+          ],
+          [
+            1174,
+            524
+          ],
+          [
+            1472,
+            323
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            722,
+            501
+          ],
+          [
+            772,
+            581
+          ],
+          [
+            834,
+            587
+          ],
+          [
+            1105,
+            411
+          ],
+          [
+            1414,
+            196
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            773,
+            1016
+          ],
+          [
+            731,
+            924
+          ],
+          [
+            768,
+            774
+          ],
+          [
+            764,
+            609
+          ],
+          [
+            722,
+            501
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            180,
+            995
+          ],
+          [
+            312,
+            1028
+          ],
+          [
+            640,
+            1024
+          ],
+          [
+            728,
+            881
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            180,
+            995
+          ],
+          [
+            405,
+            880
+          ],
+          [
+            663,
+            740
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            663,
+            740
+          ],
+          [
+            728,
+            754
+          ],
+          [
+            929,
+            643
+          ]
+        ],
+        "closed": false
+      }
+    ],
+    "max_input_radians": 0.7,
+    "asset_ids": [
+      "ae93b295-cf94-5572-a588-defc15a87426",
+      "f7585892-6207-5d77-a4ed-7dcd35b64674"
+    ]
+  },
+  "commencal-meta-sx-v5": {
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "input",
+    "version": "atlas-motion-v2",
+    "architecture": "dual-link exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        554,
+        671
+      ],
+      "head_top": [
+        1069,
+        78
+      ],
+      "rear_axle": [
+        104,
+        645
+      ]
+    },
+    "joints": {
+      "a": [
+        550,
+        445
+      ],
+      "c": [
+        582,
+        425
+      ],
+      "b": [
+        574,
+        607
+      ],
+      "d": [
+        552,
+        590
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            1038,
+            88
+          ],
+          [
+            1071,
+            113
+          ],
+          [
+            581,
+            379
+          ],
+          [
+            553,
+            398
+          ],
+          [
+            538,
+            393
+          ],
+          [
+            537,
+            365
+          ],
+          [
+            566,
+            352
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            1070,
+            145
+          ],
+          [
+            1120,
+            168
+          ],
+          [
+            739,
+            620
+          ],
+          [
+            707,
+            643
+          ],
+          [
+            673,
+            658
+          ],
+          [
+            582,
+            685
+          ],
+          [
+            560,
+            676
+          ],
+          [
+            567,
+            649
+          ],
+          [
+            652,
+            625
+          ],
+          [
+            685,
+            609
+          ],
+          [
+            705,
+            582
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            490,
+            243
+          ],
+          [
+            524,
+            237
+          ],
+          [
+            531,
+            278
+          ],
+          [
+            567,
+            347
+          ],
+          [
+            558,
+            397
+          ],
+          [
+            572,
+            450
+          ],
+          [
+            575,
+            520
+          ],
+          [
+            560,
+            596
+          ],
+          [
+            537,
+            602
+          ],
+          [
+            541,
+            543
+          ],
+          [
+            539,
+            482
+          ],
+          [
+            523,
+            419
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            562,
+            414
+          ],
+          [
+            592,
+            413
+          ],
+          [
+            614,
+            445
+          ],
+          [
+            608,
+            599
+          ],
+          [
+            584,
+            620
+          ],
+          [
+            555,
+            607
+          ],
+          [
+            570,
+            572
+          ],
+          [
+            575,
+            451
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            766,
+            260
+          ],
+          [
+            813,
+            242
+          ],
+          [
+            808,
+            285
+          ],
+          [
+            795,
+            300
+          ],
+          [
+            784,
+            299
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            99,
+            636
+          ],
+          [
+            120,
+            599
+          ],
+          [
+            151,
+            579
+          ],
+          [
+            555,
+            418
+          ],
+          [
+            580,
+            411
+          ],
+          [
+            594,
+            427
+          ],
+          [
+            577,
+            444
+          ],
+          [
+            158,
+            605
+          ],
+          [
+            141,
+            622
+          ],
+          [
+            122,
+            647
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            99,
+            636
+          ],
+          [
+            120,
+            599
+          ],
+          [
+            151,
+            579
+          ],
+          [
+            555,
+            418
+          ],
+          [
+            580,
+            411
+          ],
+          [
+            594,
+            427
+          ],
+          [
+            577,
+            444
+          ],
+          [
+            158,
+            605
+          ],
+          [
+            141,
+            622
+          ],
+          [
+            122,
+            647
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            98,
+            638
+          ],
+          [
+            155,
+            638
+          ],
+          [
+            453,
+            639
+          ],
+          [
+            481,
+            630
+          ],
+          [
+            570,
+            589
+          ],
+          [
+            589,
+            608
+          ],
+          [
+            570,
+            627
+          ],
+          [
+            484,
+            669
+          ],
+          [
+            465,
+            678
+          ],
+          [
+            151,
+            661
+          ],
+          [
+            101,
+            655
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            98,
+            638
+          ],
+          [
+            155,
+            638
+          ],
+          [
+            453,
+            639
+          ],
+          [
+            481,
+            630
+          ],
+          [
+            570,
+            589
+          ],
+          [
+            589,
+            608
+          ],
+          [
+            570,
+            627
+          ],
+          [
+            484,
+            669
+          ],
+          [
+            465,
+            678
+          ],
+          [
+            151,
+            661
+          ],
+          [
+            101,
+            655
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            172,
+            632
+          ],
+          [
+            466,
+            637
+          ],
+          [
+            471,
+            657
+          ],
+          [
+            455,
+            675
+          ],
+          [
+            185,
+            662
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "max_input_radians": 0.18,
+    "asset_ids": [
+      "ad657a60-e520-5ba9-9206-ff16a058acfc",
+      "e92be71e-b4f1-5f3d-8ec9-ad82e08d1517",
+      "932953e2-1b11-546c-bdc2-430de89192d6",
+      "c99b3935-1b3e-579f-9215-0a392f01c3e8"
+    ]
+  },
+  "santa-cruz-nomad-7-my27": {
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "input",
+    "version": "atlas-motion-v2",
+    "architecture": "VPP exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        738,
+        871
+      ],
+      "head_top": [
+        1168,
+        312
+      ],
+      "rear_axle": [
+        358,
+        863
+      ]
+    },
+    "joints": {
+      "a": [
+        750,
+        813
+      ],
+      "c": [
+        722,
+        834
+      ],
+      "b": [
+        772,
+        590
+      ],
+      "d": [
+        795,
+        690
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            730,
+            601
+          ],
+          [
+            777,
+            582
+          ],
+          [
+            1128,
+            359
+          ],
+          [
+            1165,
+            347
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            738,
+            871
+          ],
+          [
+            833,
+            821
+          ],
+          [
+            929,
+            769
+          ],
+          [
+            971,
+            706
+          ],
+          [
+            1134,
+            405
+          ],
+          [
+            1190,
+            380
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            746,
+            714
+          ],
+          [
+            725,
+            641
+          ],
+          [
+            708,
+            586
+          ],
+          [
+            697,
+            522
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            358,
+            863
+          ],
+          [
+            392,
+            832
+          ],
+          [
+            706,
+            716
+          ],
+          [
+            795,
+            690
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            358,
+            863
+          ],
+          [
+            406,
+            879
+          ],
+          [
+            650,
+            891
+          ],
+          [
+            684,
+            881
+          ],
+          [
+            710,
+            809
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            795,
+            690
+          ],
+          [
+            765,
+            727
+          ],
+          [
+            739,
+            794
+          ],
+          [
+            709,
+            862
+          ],
+          [
+            686,
+            886
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            746,
+            714
+          ],
+          [
+            724,
+            750
+          ],
+          [
+            711,
+            800
+          ],
+          [
+            721,
+            854
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            756,
+            584
+          ],
+          [
+            764,
+            576
+          ],
+          [
+            780,
+            578
+          ],
+          [
+            791,
+            590
+          ],
+          [
+            810,
+            677
+          ],
+          [
+            809,
+            697
+          ],
+          [
+            795,
+            705
+          ],
+          [
+            780,
+            696
+          ],
+          [
+            775,
+            674
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            704,
+            830
+          ],
+          [
+            711,
+            817
+          ],
+          [
+            731,
+            800
+          ],
+          [
+            725,
+            771
+          ],
+          [
+            727,
+            755
+          ],
+          [
+            739,
+            749
+          ],
+          [
+            750,
+            757
+          ],
+          [
+            752,
+            774
+          ],
+          [
+            768,
+            800
+          ],
+          [
+            766,
+            825
+          ],
+          [
+            748,
+            846
+          ],
+          [
+            722,
+            850
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "max_input_radians": 0.18,
+    "asset_ids": [
+      "1a38efe3-8266-5f66-9277-a548eef81dec",
+      "ee472691-6273-5ff5-aaf7-6d4a0605cc66"
+    ]
+  },
+  "specialized-s-works-enduro-udh": {
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "input",
+    "version": "atlas-motion-v2",
+    "architecture": "linked exterior",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        529,
+        904
+      ],
+      "head_top": [
+        1087,
+        278
+      ],
+      "rear_axle": [
+        58,
+        855
+      ]
+    },
+    "joints": {
+      "a": [
+        619,
+        846
+      ],
+      "c": [
+        490,
+        817
+      ],
+      "b": [
+        608,
+        677
+      ],
+      "d": [
+        478,
+        652
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            523,
+            508
+          ],
+          [
+            557,
+            505
+          ],
+          [
+            1049,
+            307
+          ],
+          [
+            1091,
+            309
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            529,
+            904
+          ],
+          [
+            688,
+            846
+          ],
+          [
+            751,
+            811
+          ],
+          [
+            786,
+            758
+          ],
+          [
+            1040,
+            390
+          ],
+          [
+            1080,
+            365
+          ],
+          [
+            1118,
+            347
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            500,
+            444
+          ],
+          [
+            545,
+            567
+          ],
+          [
+            587,
+            669
+          ],
+          [
+            611,
+            730
+          ],
+          [
+            629,
+            795
+          ],
+          [
+            650,
+            826
+          ],
+          [
+            676,
+            832
+          ],
+          [
+            701,
+            823
+          ],
+          [
+            720,
+            798
+          ],
+          [
+            726,
+            746
+          ],
+          [
+            726,
+            725
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            106,
+            873
+          ],
+          [
+            360,
+            899
+          ],
+          [
+            426,
+            903
+          ],
+          [
+            451,
+            885
+          ],
+          [
+            486,
+            855
+          ],
+          [
+            619,
+            846
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            58,
+            855
+          ],
+          [
+            118,
+            829
+          ],
+          [
+            437,
+            669
+          ],
+          [
+            461,
+            656
+          ],
+          [
+            478,
+            652
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            466,
+            645
+          ],
+          [
+            481,
+            636
+          ],
+          [
+            512,
+            642
+          ],
+          [
+            578,
+            649
+          ],
+          [
+            595,
+            636
+          ],
+          [
+            611,
+            634
+          ],
+          [
+            624,
+            658
+          ],
+          [
+            625,
+            681
+          ],
+          [
+            616,
+            694
+          ],
+          [
+            594,
+            696
+          ],
+          [
+            582,
+            686
+          ],
+          [
+            512,
+            676
+          ],
+          [
+            497,
+            685
+          ],
+          [
+            480,
+            677
+          ],
+          [
+            469,
+            659
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            489,
+            670
+          ],
+          [
+            503,
+            663
+          ],
+          [
+            514,
+            677
+          ],
+          [
+            509,
+            705
+          ],
+          [
+            505,
+            783
+          ],
+          [
+            508,
+            804
+          ],
+          [
+            505,
+            822
+          ],
+          [
+            490,
+            830
+          ],
+          [
+            479,
+            817
+          ],
+          [
+            485,
+            795
+          ],
+          [
+            488,
+            701
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            479,
+            810
+          ],
+          [
+            491,
+            801
+          ],
+          [
+            510,
+            807
+          ],
+          [
+            531,
+            819
+          ],
+          [
+            570,
+            825
+          ],
+          [
+            613,
+            833
+          ],
+          [
+            631,
+            838
+          ],
+          [
+            633,
+            851
+          ],
+          [
+            618,
+            862
+          ],
+          [
+            569,
+            851
+          ],
+          [
+            528,
+            843
+          ],
+          [
+            505,
+            832
+          ],
+          [
+            489,
+            831
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "max_input_radians": 0.18,
+    "asset_ids": [
+      "35fa71a8-1f2c-509f-8c07-94dd77740a37",
+      "c3dfe6de-26a0-58fa-a08a-b0999c3a045f"
+    ]
+  },
+  "canyon-sender-cfr-high-pivot": {
+    "version": "atlas-motion-v2",
+    "architecture": "MY25 high single pivot, reduced lower-rocker exterior guide",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        779,
+        672
+      ],
+      "head_top": [
+        1083,
+        249
+      ],
+      "rear_axle": [
+        498,
+        673
+      ]
+    },
+    "joints": {
+      "a": [
+        759,
+        604
+      ],
+      "b": [
+        759,
+        653
+      ],
+      "c": [
+        790,
+        625
+      ],
+      "d": [
+        790,
+        598
+      ]
+    },
+    "rear_body": "input",
+    "shock_body": "output",
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "output",
+    "max_input_radians": 0.09,
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            807,
+            475
+          ],
+          [
+            833,
+            461
+          ],
+          [
+            1055,
+            290
+          ],
+          [
+            1085,
+            272
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            779,
+            672
+          ],
+          [
+            820,
+            656
+          ],
+          [
+            854,
+            605
+          ],
+          [
+            1007,
+            384
+          ],
+          [
+            1071,
+            306
+          ],
+          [
+            1103,
+            302
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            779,
+            569
+          ],
+          [
+            793,
+            525
+          ],
+          [
+            809,
+            479
+          ],
+          [
+            796,
+            461
+          ],
+          [
+            769,
+            415
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            498,
+            673
+          ],
+          [
+            526,
+            646
+          ],
+          [
+            732,
+            558
+          ],
+          [
+            765,
+            552
+          ],
+          [
+            779,
+            569
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            498,
+            673
+          ],
+          [
+            530,
+            682
+          ],
+          [
+            726,
+            696
+          ],
+          [
+            751,
+            682
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            752,
+            558
+          ],
+          [
+            777,
+            557
+          ],
+          [
+            784,
+            571
+          ],
+          [
+            774,
+            612
+          ],
+          [
+            767,
+            665
+          ],
+          [
+            751,
+            697
+          ],
+          [
+            738,
+            698
+          ],
+          [
+            741,
+            683
+          ],
+          [
+            752,
+            660
+          ],
+          [
+            759,
+            611
+          ],
+          [
+            760,
+            580
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            744,
+            615
+          ],
+          [
+            754,
+            593
+          ],
+          [
+            772,
+            584
+          ],
+          [
+            794,
+            581
+          ],
+          [
+            807,
+            594
+          ],
+          [
+            800,
+            612
+          ],
+          [
+            779,
+            622
+          ],
+          [
+            777,
+            651
+          ],
+          [
+            759,
+            663
+          ],
+          [
+            743,
+            650
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            889,
+            487
+          ],
+          [
+            910,
+            464
+          ],
+          [
+            929,
+            461
+          ],
+          [
+            939,
+            479
+          ],
+          [
+            921,
+            500
+          ],
+          [
+            905,
+            513
+          ],
+          [
+            893,
+            510
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            784,
+            471
+          ],
+          [
+            804,
+            459
+          ],
+          [
+            831,
+            453
+          ],
+          [
+            840,
+            460
+          ],
+          [
+            821,
+            484
+          ],
+          [
+            807,
+            517
+          ],
+          [
+            788,
+            520
+          ],
+          [
+            788,
+            491
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "asset_ids": [
+      "6ec55956-08eb-510d-9daf-6ae0a6571b14",
+      "730610b2-550d-5c36-a4e2-22642690d849"
+    ]
+  },
+  "commencal-supreme-dh-v5": {
+    "shock_upper_body": "input",
+    "shock_lower_body": "output",
+    "version": "atlas-motion-v2",
+    "architecture": "HVCS exterior reduced guide",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        555,
+        742
+      ],
+      "head_top": [
+        1014,
+        94
+      ],
+      "rear_axle": [
+        98,
+        743
+      ]
+    },
+    "joints": {
+      "a": [
+        581,
+        538
+      ],
+      "b": [
+        538,
+        686
+      ],
+      "c": [
+        538,
+        526
+      ],
+      "d": [
+        519,
+        741
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "output",
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            994,
+            111
+          ],
+          [
+            1019,
+            133
+          ],
+          [
+            677,
+            391
+          ],
+          [
+            623,
+            430
+          ],
+          [
+            580,
+            461
+          ],
+          [
+            557,
+            475
+          ],
+          [
+            546,
+            448
+          ],
+          [
+            570,
+            434
+          ],
+          [
+            610,
+            416
+          ],
+          [
+            647,
+            386
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            1035,
+            151
+          ],
+          [
+            1061,
+            184
+          ],
+          [
+            756,
+            696
+          ],
+          [
+            741,
+            720
+          ],
+          [
+            718,
+            739
+          ],
+          [
+            646,
+            759
+          ],
+          [
+            606,
+            769
+          ],
+          [
+            567,
+            766
+          ],
+          [
+            541,
+            754
+          ],
+          [
+            536,
+            735
+          ],
+          [
+            551,
+            716
+          ],
+          [
+            571,
+            713
+          ],
+          [
+            596,
+            725
+          ],
+          [
+            616,
+            725
+          ],
+          [
+            679,
+            708
+          ],
+          [
+            700,
+            694
+          ],
+          [
+            717,
+            665
+          ],
+          [
+            1009,
+            176
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            495,
+            365
+          ],
+          [
+            529,
+            351
+          ],
+          [
+            583,
+            489
+          ],
+          [
+            572,
+            527
+          ],
+          [
+            550,
+            520
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            651,
+            389
+          ],
+          [
+            675,
+            375
+          ],
+          [
+            613,
+            522
+          ],
+          [
+            590,
+            555
+          ],
+          [
+            565,
+            630
+          ],
+          [
+            552,
+            681
+          ],
+          [
+            557,
+            715
+          ],
+          [
+            573,
+            729
+          ],
+          [
+            556,
+            748
+          ],
+          [
+            533,
+            736
+          ],
+          [
+            523,
+            714
+          ],
+          [
+            527,
+            685
+          ],
+          [
+            542,
+            638
+          ],
+          [
+            567,
+            560
+          ],
+          [
+            584,
+            514
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            651,
+            389
+          ],
+          [
+            675,
+            375
+          ],
+          [
+            613,
+            522
+          ],
+          [
+            590,
+            555
+          ],
+          [
+            565,
+            630
+          ],
+          [
+            552,
+            681
+          ],
+          [
+            557,
+            715
+          ],
+          [
+            573,
+            729
+          ],
+          [
+            556,
+            748
+          ],
+          [
+            533,
+            736
+          ],
+          [
+            523,
+            714
+          ],
+          [
+            527,
+            685
+          ],
+          [
+            542,
+            638
+          ],
+          [
+            567,
+            560
+          ],
+          [
+            584,
+            514
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            87,
+            736
+          ],
+          [
+            99,
+            708
+          ],
+          [
+            119,
+            678
+          ],
+          [
+            141,
+            662
+          ],
+          [
+            521,
+            508
+          ],
+          [
+            544,
+            508
+          ],
+          [
+            563,
+            520
+          ],
+          [
+            570,
+            539
+          ],
+          [
+            558,
+            557
+          ],
+          [
+            535,
+            557
+          ],
+          [
+            502,
+            546
+          ],
+          [
+            152,
+            688
+          ],
+          [
+            128,
+            701
+          ],
+          [
+            115,
+            722
+          ],
+          [
+            121,
+            738
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            87,
+            736
+          ],
+          [
+            99,
+            708
+          ],
+          [
+            119,
+            678
+          ],
+          [
+            141,
+            662
+          ],
+          [
+            521,
+            508
+          ],
+          [
+            544,
+            508
+          ],
+          [
+            563,
+            520
+          ],
+          [
+            570,
+            539
+          ],
+          [
+            558,
+            557
+          ],
+          [
+            535,
+            557
+          ],
+          [
+            502,
+            546
+          ],
+          [
+            152,
+            688
+          ],
+          [
+            128,
+            701
+          ],
+          [
+            115,
+            722
+          ],
+          [
+            121,
+            738
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            95,
+            728
+          ],
+          [
+            139,
+            726
+          ],
+          [
+            490,
+            730
+          ],
+          [
+            517,
+            733
+          ],
+          [
+            529,
+            744
+          ],
+          [
+            518,
+            758
+          ],
+          [
+            489,
+            759
+          ],
+          [
+            142,
+            753
+          ],
+          [
+            92,
+            755
+          ],
+          [
+            81,
+            744
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            95,
+            728
+          ],
+          [
+            139,
+            726
+          ],
+          [
+            490,
+            730
+          ],
+          [
+            517,
+            733
+          ],
+          [
+            529,
+            744
+          ],
+          [
+            518,
+            758
+          ],
+          [
+            489,
+            759
+          ],
+          [
+            142,
+            753
+          ],
+          [
+            92,
+            755
+          ],
+          [
+            81,
+            744
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            526,
+            510
+          ],
+          [
+            544,
+            508
+          ],
+          [
+            582,
+            520
+          ],
+          [
+            601,
+            534
+          ],
+          [
+            599,
+            552
+          ],
+          [
+            585,
+            565
+          ],
+          [
+            560,
+            560
+          ],
+          [
+            531,
+            549
+          ],
+          [
+            520,
+            533
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            529,
+            651
+          ],
+          [
+            544,
+            649
+          ],
+          [
+            551,
+            672
+          ],
+          [
+            538,
+            711
+          ],
+          [
+            532,
+            741
+          ],
+          [
+            514,
+            753
+          ],
+          [
+            498,
+            748
+          ],
+          [
+            493,
+            735
+          ],
+          [
+            508,
+            713
+          ],
+          [
+            515,
+            677
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            176,
+            729
+          ],
+          [
+            441,
+            731
+          ],
+          [
+            449,
+            737
+          ],
+          [
+            442,
+            750
+          ],
+          [
+            179,
+            749
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            751,
+            638
+          ],
+          [
+            767,
+            643
+          ],
+          [
+            742,
+            699
+          ],
+          [
+            724,
+            723
+          ],
+          [
+            698,
+            739
+          ],
+          [
+            650,
+            753
+          ],
+          [
+            619,
+            759
+          ],
+          [
+            614,
+            748
+          ],
+          [
+            675,
+            728
+          ],
+          [
+            700,
+            714
+          ],
+          [
+            718,
+            693
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            536,
+            546
+          ],
+          [
+            544,
+            570
+          ],
+          [
+            533,
+            622
+          ],
+          [
+            515,
+            660
+          ],
+          [
+            488,
+            654
+          ],
+          [
+            465,
+            627
+          ],
+          [
+            450,
+            612
+          ],
+          [
+            458,
+            578
+          ],
+          [
+            488,
+            560
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            536,
+            546
+          ],
+          [
+            544,
+            570
+          ],
+          [
+            533,
+            622
+          ],
+          [
+            515,
+            660
+          ],
+          [
+            488,
+            654
+          ],
+          [
+            465,
+            627
+          ],
+          [
+            450,
+            612
+          ],
+          [
+            458,
+            578
+          ],
+          [
+            488,
+            560
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "max_input_radians": 0.7,
+    "asset_ids": [
+      "4fdc10d9-52fd-50c7-ba05-d9f8f3328e4c",
+      "3de7c394-b8ff-5770-8691-6fe1b832785f",
+      "6da4a1f1-5ebe-58ce-99c6-d9d05e7466c6",
+      "11c9c519-863f-5817-9738-9d3636dc7d6e"
+    ]
+  },
+  "yt-tues-mk4-carbon": {
+    "version": "atlas-motion-v2",
+    "architecture": "MK4 V4L four-link exterior with estimated occluded lower pivot",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "mode": "similarity",
+      "bottom_bracket": [
+        850,
+        817
+      ],
+      "head_top": [
+        1258,
+        293
+      ],
+      "rear_axle": [
+        443,
+        824
+      ]
+    },
+    "joints": {
+      "a": [
+        887,
+        790
+      ],
+      "b": [
+        997,
+        687
+      ],
+      "c": [
+        534,
+        824
+      ],
+      "d": [
+        899,
+        675
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "input",
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "input",
+    "max_input_radians": 0.09,
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            815,
+            480
+          ],
+          [
+            850,
+            539
+          ],
+          [
+            1050,
+            407
+          ],
+          [
+            1236,
+            265
+          ],
+          [
+            1258,
+            293
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            850,
+            817
+          ],
+          [
+            916,
+            809
+          ],
+          [
+            968,
+            777
+          ],
+          [
+            1060,
+            610
+          ],
+          [
+            1154,
+            457
+          ],
+          [
+            1270,
+            330
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            850,
+            817
+          ],
+          [
+            847,
+            749
+          ],
+          [
+            853,
+            659
+          ],
+          [
+            858,
+            582
+          ],
+          [
+            850,
+            539
+          ],
+          [
+            815,
+            480
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "fixed",
+        "points": [
+          [
+            1023,
+            563
+          ],
+          [
+            1065,
+            574
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            534,
+            824
+          ],
+          [
+            712,
+            831
+          ],
+          [
+            813,
+            820
+          ],
+          [
+            887,
+            790
+          ],
+          [
+            854,
+            744
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            443,
+            824
+          ],
+          [
+            512,
+            785
+          ],
+          [
+            713,
+            712
+          ],
+          [
+            829,
+            680
+          ],
+          [
+            899,
+            675
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            443,
+            824
+          ],
+          [
+            488,
+            824
+          ],
+          [
+            534,
+            824
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            899,
+            675
+          ],
+          [
+            997,
+            687
+          ]
+        ],
+        "closed": false
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            854,
+            744
+          ],
+          [
+            899,
+            746
+          ],
+          [
+            887,
+            790
+          ]
+        ],
+        "closed": false
+      }
+    ],
+    "asset_ids": [
+      "ac484078-ddb9-5ec6-95d4-5d0ae96a8195",
+      "d4f514d4-f1b2-5793-86b3-489705f2dc8d"
+    ]
+  },
+  "santa-cruz-v10-8-my27": {
+    "version": "atlas-motion-v2",
+    "architecture": "V10.8 VPP exterior four-link estimate",
+    "estimated": true,
+    "note": "Resource-scoped exterior inspection guide. Axis/eye body corrections documented in models/motion-v2. Occluded joints, reduced six-bar mechanisms and depth remain estimates; not factory leverage or full travel.",
+    "registration": {
+      "bottom_bracket": [
+        645,
+        754
+      ],
+      "head_top": [
+        1018,
+        278
+      ],
+      "rear_axle": [
+        303,
+        755
+      ]
+    },
+    "joints": {
+      "a": [
+        654,
+        724
+      ],
+      "b": [
+        660,
+        512
+      ],
+      "c": [
+        594,
+        760
+      ],
+      "d": [
+        676,
+        600
+      ]
+    },
+    "rear_body": "rear",
+    "shock_body": "input",
+    "shock_upper_body": "fixed",
+    "shock_lower_body": "input",
+    "max_input_radians": 0.12,
+    "regions": [
+      {
+        "role": "fixed",
+        "points": [
+          [
+            596.0549824326288,
+            427.03833854629835
+          ],
+          [
+            596.1063082477328,
+            435.26577061933205
+          ],
+          [
+            608.0052434815918,
+            465.01245326878063
+          ],
+          [
+            623.9065770376168,
+            502.77812046433985
+          ],
+          [
+            631.0181833991603,
+            510.9702402031722
+          ],
+          [
+            651.0897963696111,
+            516.0112245462014
+          ],
+          [
+            683.0756905202517,
+            520.0134289632705
+          ],
+          [
+            744.5258073627291,
+            530.9158690482261
+          ],
+          [
+            757.8571315306415,
+            538.1275164485145
+          ],
+          [
+            764.0,
+            553.5777472107018
+          ],
+          [
+            763.9184186440561,
+            610.3426416949642
+          ],
+          [
+            758.7021164482884,
+            631.4468253275674
+          ],
+          [
+            743.2024643686083,
+            654.6963034470875
+          ],
+          [
+            707.7033512621036,
+            687.1676710257675
+          ],
+          [
+            684.6435333074626,
+            700.0983356393207
+          ],
+          [
+            655.7652199925087,
+            708.1844700058859
+          ],
+          [
+            628.03131829066,
+            730.0209465429647
+          ],
+          [
+            619.1005844452744,
+            761.6423664168021
+          ],
+          [
+            622.9240627596158,
+            779.6582824182713
+          ],
+          [
+            642.999513728879,
+            788.9293900844215
+          ],
+          [
+            658.2188751275887,
+            781.7185891216717
+          ],
+          [
+            679.2081997665499,
+            754.8155944924844
+          ],
+          [
+            714.0124183396309,
+            723.9884903193665
+          ],
+          [
+            754.9719762797173,
+            686.0259732041644
+          ],
+          [
+            793.052323040561,
+            646.932362898787
+          ],
+          [
+            834.010169168722,
+            593.9862151268436
+          ],
+          [
+            879.0052663187136,
+            532.9926785325201
+          ],
+          [
+            919.980923164333,
+            476.02652145446393
+          ],
+          [
+            958.0489725978233,
+            417.9335371886684
+          ],
+          [
+            986.1597941979533,
+            379.84020580204674
+          ],
+          [
+            998.4265028665905,
+            367.57349713340955
+          ],
+          [
+            999.7843433123112,
+            366.79359386518126
+          ],
+          [
+            1018.1523393590289,
+            361.91934975110235
+          ],
+          [
+            1051.9349722193178,
+            343.9795919846908
+          ],
+          [
+            1017.9684247985745,
+            278.0604619939209
+          ],
+          [
+            988.3643721907486,
+            281.9514170412335
+          ],
+          [
+            980.9336685881084,
+            287.0605634630315
+          ],
+          [
+            797.2315226469009,
+            454.7886097571775
+          ],
+          [
+            779.5378186661774,
+            465.1027069630717
+          ],
+          [
+            752.7291266039563,
+            471.01041820754017
+          ],
+          [
+            675.0576283787578,
+            473.99778352389393
+          ],
+          [
+            653.4340152101264,
+            473.7574350900542
+          ],
+          [
+            640.8197046475666,
+            468.35130199181424
+          ],
+          [
+            639.5053116602905,
+            467.25796749043576
+          ],
+          [
+            631.9057890978604,
+            455.80049456017497
+          ],
+          [
+            614.9771003891269,
+            420.0559777033419
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "rear",
+        "points": [
+          [
+            292.0,
+            747.0
+          ],
+          [
+            291.0,
+            761.0
+          ],
+          [
+            305.0,
+            768.0
+          ],
+          [
+            334.0,
+            770.0
+          ],
+          [
+            559.0,
+            787.0
+          ],
+          [
+            596.0,
+            787.0
+          ],
+          [
+            605.0,
+            776.0
+          ],
+          [
+            608.0,
+            746.0
+          ],
+          [
+            628.0,
+            700.0
+          ],
+          [
+            647.0,
+            659.0
+          ],
+          [
+            671.0,
+            629.0
+          ],
+          [
+            689.0,
+            604.0
+          ],
+          [
+            680.0,
+            596.0
+          ],
+          [
+            664.0,
+            590.0
+          ],
+          [
+            643.0,
+            597.0
+          ],
+          [
+            551.0,
+            633.0
+          ],
+          [
+            440.0,
+            676.0
+          ],
+          [
+            336.0,
+            717.0
+          ],
+          [
+            305.0,
+            731.0
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "output",
+        "points": [
+          [
+            650.0,
+            507.0
+          ],
+          [
+            651.0,
+            526.0
+          ],
+          [
+            662.0,
+            534.0
+          ],
+          [
+            662.0,
+            573.0
+          ],
+          [
+            659.0,
+            600.0
+          ],
+          [
+            665.0,
+            610.0
+          ],
+          [
+            680.0,
+            611.0
+          ],
+          [
+            687.0,
+            599.0
+          ],
+          [
+            688.0,
+            577.0
+          ],
+          [
+            686.0,
+            539.0
+          ],
+          [
+            682.0,
+            520.0
+          ],
+          [
+            671.0,
+            505.0
+          ],
+          [
+            660.0,
+            501.0
+          ]
+        ],
+        "closed": true
+      },
+      {
+        "role": "input",
+        "points": [
+          [
+            609.0,
+            698.0
+          ],
+          [
+            606.0,
+            709.0
+          ],
+          [
+            602.0,
+            721.0
+          ],
+          [
+            588.0,
+            748.0
+          ],
+          [
+            583.0,
+            768.0
+          ],
+          [
+            589.0,
+            778.0
+          ],
+          [
+            605.0,
+            778.0
+          ],
+          [
+            613.0,
+            767.0
+          ],
+          [
+            630.0,
+            748.0
+          ],
+          [
+            648.0,
+            742.0
+          ],
+          [
+            672.0,
+            737.0
+          ],
+          [
+            674.0,
+            726.0
+          ],
+          [
+            668.0,
+            716.0
+          ],
+          [
+            654.0,
+            711.0
+          ],
+          [
+            640.0,
+            717.0
+          ],
+          [
+            631.0,
+            702.0
+          ],
+          [
+            621.0,
+            695.0
+          ]
+        ],
+        "closed": true
+      }
+    ],
+    "asset_ids": [
+      "7c1d1b72-38b9-5c95-a4a7-985f32a50c26",
+      "7b3663b3-78bb-5a7d-8041-cfe0bd369273"
+    ]
+  }
+}

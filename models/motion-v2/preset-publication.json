@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-22T03:14:59.959Z",
+  "updates": [
+    {
+      "preset_id": "aaf0e8d7-e725-5bc3-b612-3ff765af798b",
+      "before": "1651a012-e431-52e9-95d1-1066119a0a06",
+      "after": "2b9b3789-c518-5ee5-9d74-6aedbfd8d7fa"
+    },
+    {
+      "preset_id": "fee7bf58-3e31-5f2b-816b-58b3728c0422",
+      "before": "bd447ce4-2e85-5d1e-bc8f-866daf695940",
+      "after": "3ea648a2-ad8f-5ebf-ab6a-a7b70f742a88"
+    },
+    {
+      "preset_id": "e8cc51de-036b-5e6a-a675-cd28b5b12db8",
+      "before": "5ee56b51-d24b-5dbd-b6f7-25a2d480b4a6",
+      "after": "8ab2e508-dc00-56bb-9ad1-47d95087dbea"
+    },
+    {
+      "preset_id": "6bde207f-cf20-5fa5-801a-153e26753ffa",
+      "before": "ddbe00fd-1d70-5c9d-8d9c-3e78cf678172",
+      "after": "5f06fbc5-4b2a-574a-b6ed-2fc2aabf4c02"
+    }
+  ],
+  "changed_positions": 4,
+  "positions": 92,
+  "non_frame_preserved": true,
+  "private_preserved": true
+}

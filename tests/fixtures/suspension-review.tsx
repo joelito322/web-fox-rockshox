@@ -1,3 +1,31 @@
+import framesV30 from "../../supabase/catalog/frames-v30-reviewed.json";
+import frameMappingV30 from "../../supabase/catalog/frames-v30-successors.json";
+import framesV29 from "../../supabase/catalog/frames-v29-reviewed.json";
+import frameMappingV29 from "../../supabase/catalog/frames-v29-successors.json";
+import framesV28 from "../../supabase/catalog/frames-v28-reviewed.json";
+import frameMappingV28 from "../../supabase/catalog/frames-v28-successors.json";
+import framesV27 from "../../supabase/catalog/frames-v27-reviewed.json";
+import frameMappingV27 from "../../supabase/catalog/frames-v27-successors.json";
+import framesV26 from "../../supabase/catalog/frames-v26-reviewed.json";
+import frameMappingV26 from "../../supabase/catalog/frames-v26-successors.json";
+import framesV25 from "../../supabase/catalog/frames-v25-reviewed.json";
+import frameMappingV25 from "../../supabase/catalog/frames-v25-successors.json";
+import framesV24 from "../../supabase/catalog/frames-v24-reviewed.json";
+import frameMappingV24 from "../../supabase/catalog/frames-v24-successors.json";
+import framesV23 from "../../supabase/catalog/frames-v23-reviewed.json";
+import frameMappingV23 from "../../supabase/catalog/frames-v23-successors.json";
+import framesV22 from "../../supabase/catalog/frames-v22-reviewed.json";
+import frameMappingV22 from "../../supabase/catalog/frames-v22-successors.json";
+import framesV21 from "../../supabase/catalog/frames-v21-reviewed.json";
+import frameMappingV21 from "../../supabase/catalog/frames-v21-successors.json";
+import framesV20 from "../../supabase/catalog/frames-v20-reviewed.json";
+import frameMappingV20 from "../../supabase/catalog/frames-v20-successors.json";
+import framesV19 from "../../supabase/catalog/frames-v19-reviewed.json";
+import frameMappingV19 from "../../supabase/catalog/frames-v19-successors.json";
+import framesV18 from "../../supabase/catalog/frames-v18-reviewed.json";
+import frameMappingV18 from "../../supabase/catalog/frames-v18-successors.json";
+import framesV17 from "../../supabase/catalog/frames-v17-reviewed.json";
+import frameMappingV17 from "../../supabase/catalog/frames-v17-successors.json";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createRoot } from "react-dom/client";
 import * as T from "three";
@@ -17,9 +45,435 @@ import type {
 } from "../../src/features/configurator/model";
 import old from "../../supabase/catalog/visual-v7-reviewed.json";
 import gravity from "../../supabase/catalog/gravity-reviewed.json";
+import framesV16 from "../../supabase/catalog/frames-v16-reviewed.json";
+import frameMappingV16 from "../../supabase/catalog/frames-v16-successors.json";
+import framesV15 from "../../supabase/catalog/frames-v15-reviewed.json";
+import frameMappingV15 from "../../supabase/catalog/frames-v15-successors.json";
+import framesV14 from "../../supabase/catalog/frames-v14-reviewed.json";
+import frameMappingV14 from "../../supabase/catalog/frames-v14-successors.json";
+import framesV13 from "../../supabase/catalog/frames-v13-reviewed.json";
+import frameMappingV13 from "../../supabase/catalog/frames-v13-successors.json";
+import framesV12 from "../../supabase/catalog/frames-v12-reviewed.json";
+import frameMappingV12 from "../../supabase/catalog/frames-v12-successors.json";
+import framesV11 from "../../supabase/catalog/frames-v11-reviewed.json";
+import frameMappingV11 from "../../supabase/catalog/frames-v11-successors.json";
+import framesV10 from "../../supabase/catalog/frames-v10-reviewed.json";
+import frameMapping from "../../supabase/catalog/frames-v10-successors.json";
 import examples from "../../supabase/catalog/visual-v7-examples.json";
-const sources = [old, gravity].map(parseCatalogImport),
-  models = sources.flatMap((s) => s.components),
+const sources = [old, gravity].map(parseCatalogImport);
+if (new URLSearchParams(location.search).get("version") !== "previous") {
+  const reviewed = parseCatalogImport(framesV10);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMapping[v.id as keyof typeof frameMapping],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  !["previous", "v10"].includes(
+    new URLSearchParams(location.search).get("version") ?? "",
+  )
+) {
+  const reviewed = parseCatalogImport(framesV11);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV11[v.id as keyof typeof frameMappingV11],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (new URLSearchParams(location.search).get("version") === "v12") {
+  const reviewed = parseCatalogImport(framesV12);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV12[v.id as keyof typeof frameMappingV12],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  !["previous", "v10", "v11", "v12"].includes(
+    new URLSearchParams(location.search).get("version") ?? "",
+  )
+) {
+  const reviewed = parseCatalogImport(framesV13);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV13[v.id as keyof typeof frameMappingV13],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  !["previous", "v10", "v11", "v12", "v13"].includes(
+    new URLSearchParams(location.search).get("version") ?? "",
+  )
+) {
+  const reviewed = parseCatalogImport(framesV14);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV14[v.id as keyof typeof frameMappingV14],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  !["previous", "v10", "v11", "v12", "v13", "v14"].includes(
+    new URLSearchParams(location.search).get("version") ?? "",
+  )
+) {
+  const reviewed = parseCatalogImport(framesV15);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV15[v.id as keyof typeof frameMappingV15],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  !["previous", "v10", "v11", "v12", "v13", "v14", "v15"].includes(
+    new URLSearchParams(location.search).get("version") ?? "",
+  )
+) {
+  const reviewed = parseCatalogImport(framesV16);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV16[v.id as keyof typeof frameMappingV16],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  !["previous", "v10", "v11", "v12", "v13", "v14", "v15", "v16"].includes(
+    new URLSearchParams(location.search).get("version") ?? "",
+  )
+) {
+  const reviewed = parseCatalogImport(framesV17);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV17[v.id as keyof typeof frameMappingV17],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV18);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV18[v.id as keyof typeof frameMappingV18],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV19);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV19[v.id as keyof typeof frameMappingV19],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV20);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV20[v.id as keyof typeof frameMappingV20],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19",
+    "v20",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV21);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV21[v.id as keyof typeof frameMappingV21],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19",
+    "v20",
+    "v21",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV22);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV22[v.id as keyof typeof frameMappingV22],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19",
+    "v20",
+    "v21",
+    "v22",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV23);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV23[v.id as keyof typeof frameMappingV23],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19",
+    "v20",
+    "v21",
+    "v22",
+    "v23",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV24);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV24[v.id as keyof typeof frameMappingV24],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    "v10",
+    "v11",
+    "v12",
+    "v13",
+    "v14",
+    "v15",
+    "v16",
+    "v17",
+    "v18",
+    "v19",
+    "v20",
+    "v21",
+    "v22",
+    "v23",
+    "v24",
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV25);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV25[v.id as keyof typeof frameMappingV25],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    ...Array.from({ length: 16 }, (_, i) => "v" + (i + 10)),
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV26);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV26[v.id as keyof typeof frameMappingV26],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    ...Array.from({ length: 17 }, (_, i) => "v" + (i + 10)),
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV27);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV27[v.id as keyof typeof frameMappingV27],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    ...Array.from({ length: 18 }, (_, i) => "v" + (i + 10)),
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV28);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV28[v.id as keyof typeof frameMappingV28],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (
+  ![
+    "previous",
+    ...Array.from({ length: 19 }, (_, i) => "v" + (i + 10)),
+  ].includes(new URLSearchParams(location.search).get("version") ?? "")
+) {
+  const reviewed = parseCatalogImport(framesV29);
+  for (const source of sources) {
+    source.variants = source.variants.map(
+      (v) =>
+        reviewed.variants.find(
+          (n) => n.id === frameMappingV29[v.id as keyof typeof frameMappingV29],
+        ) ?? v,
+    );
+    source.assets.push(...reviewed.assets);
+  }
+}
+if (!['previous',...Array.from({length:20},(_,i)=>'v'+(i+10))].includes(new URLSearchParams(location.search).get('version')??'')) {
+ const reviewed=parseCatalogImport(framesV30);
+ for(const source of sources){source.variants=source.variants.map(v=>reviewed.variants.find(n=>n.id===frameMappingV30[v.id as keyof typeof frameMappingV30])??v);source.assets.push(...reviewed.assets);}
+}
+const models = sources.flatMap((s) => s.components),
   variants = sources.flatMap((s) => s.variants),
   assets = sources.flatMap((s) => s.assets),
   brands = sources.flatMap((s) => s.brands);
@@ -149,7 +603,11 @@ function Review() {
           controls.change("rear", rear);
           // Internal still-pose capture, independent from product playback controls.
           if (latestControls.current.inspection) {
-            Object.assign(latestControls.current.inspection.state, { front, rear, playing: false });
+            Object.assign(latestControls.current.inspection.state, {
+              front,
+              rear,
+              playing: false,
+            });
             window.dispatchEvent(new Event("atlas:suspension-inspection"));
           }
         }, 0);
@@ -170,10 +628,18 @@ function Review() {
               slot: p.userData.motionSlot,
               position: p.position.toArray(),
               bodies: p.children.flatMap((c) => {
-                const out: { name: string; matrix: number[]; scale: number[] }[] = [];
+                const out: {
+                  name: string;
+                  matrix: number[];
+                  scale: number[];
+                }[] = [];
                 c.traverse((n) => {
                   if (n.name.startsWith("motion_") && n instanceof T.Group)
-                    out.push({ name: n.name, matrix: n.matrixWorld.toArray(), scale: n.scale.toArray() });
+                    out.push({
+                      name: n.name,
+                      matrix: n.matrixWorld.toArray(),
+                      scale: n.scale.toArray(),
+                    });
                 });
                 return out;
               }),
