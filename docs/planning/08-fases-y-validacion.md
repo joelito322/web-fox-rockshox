@@ -568,3 +568,11 @@ Reconstrucción propia M/L desde foto oficial del cuadro desnudo y despieces V10
 
 
 Revisión integral de suspensión v2 implementada en fase3: quince modelos/30 tallas y38 shocks, cuatro recursos anteriores de prearmadas, compresión monótona y resorte separado de cuerpos rígidos. Se corrigieron cuatro referencias de prearmadas retiradas manteniendo88 posiciones y privados. Evidencia, reproducción y límites en [12y](12y-evidencia-suspension-v2.md).
+
+### Fase 6 · Primer despliegue Netlify
+
+Usuario publica https://atlasmtb.netlify.app mediante GitHub. Verificar rutas profundas, imágenes/modelos, retorno OAuth y CORS administrativo; conservar origen local. Configuración Auth preparada con destino público pero API PATCH devuelve 403: ajuste de Dashboard pendiente. CORS requiere ampliar el origen permitido de admin-users y desplegar fuente antes de comprobar. Registrar resultados reales en 12, sin declarar validado consentimiento/guardado público antes de probar.
+
+Resultado del primer despliegue: frontend HTTPS verificado en atlasmtb.netlify.app, rutas públicas e imágenes/GLB accesibles y filtro móvil/Google de salida correctos. CORS admin-users corregido, desplegado y validado sin abrir acceso anónimo. Retorno OAuth público pendiente de actualización Dashboard por PATCH HTTP 403; detalle en 07/12. Sin prueba de consentimiento/guardado público ni de correo.
+
+Confirmación posterior de fase 6: usuario valida acceso Google en dominio público; lectura de Auth confirma Site URL/callback público, origen local conservado y Google activo. Queda resuelto el ajuste de URLs de Netlify. Persisten solo las limitaciones de evidencia indicadas en 12; no se generó evidencia automatizada de correo o de guardado público por esta confirmación.
