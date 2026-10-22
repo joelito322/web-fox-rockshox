@@ -1,0 +1,136 @@
+[
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/dw4ad73c6c/images/21FUREGM_01_2000.jpg",
+    "file": "21FUREGM_01_2000.jpg",
+    "bytes": 249975,
+    "sha256": "3379ac26fb98b0249dfd2f8c74927bb1a120531883e887addfc23440db21b04e",
+    "kind": "manufacturer-photo",
+    "use": "Exact 2021 Gun Metal model"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/dw5a8b4b18/images/21FUREGM_02_2000.jpg",
+    "file": "21FUREGM_02_2000.jpg",
+    "bytes": 367819,
+    "sha256": "ad975dbc210a703224e89b0cc4cbfc40b9739ce9b4621172dca42eb7b8286ea7",
+    "kind": "manufacturer-photo",
+    "use": "Exact 2021 Gun Metal model"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/dw7226b720/images/21FUREGM_03_2000.jpg",
+    "file": "21FUREGM_03_2000.jpg",
+    "bytes": 273574,
+    "sha256": "8322c04e61a1e98c90d5acb2189d541019464eea83f75ae1c967392e5fabf49e",
+    "kind": "manufacturer-photo",
+    "use": "Exact 2021 Gun Metal model"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/dwccc2b583/images/21FUREGM_2000.jpg",
+    "file": "21FUREGM_2000.jpg",
+    "bytes": 273398,
+    "sha256": "9ee196c75d9f17861c9321119212fa8f76e14641615b713da066b990d7bda2c0",
+    "kind": "manufacturer-photo",
+    "use": "Exact 2021 Gun Metal model"
+  },
+  {
+    "url": "https://www.commencal-jp.com/img-prod/large/frame_furious-gunmetal.jpg",
+    "file": "frame_furious-gunmetal.jpg",
+    "bytes": 495048,
+    "sha256": "d9b124af3982f8ca53d47a8a98eeae71b4c25cb1faa8b2d62b5f7d7a6040a851",
+    "kind": "manufacturer-photo",
+    "use": "Bare frame structural corroboration only; year not asserted"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw19a86653/images/tech/frs-v3/FRS-V3-downtube.jpg",
+    "file": "FRS-V3-downtube.jpg",
+    "sha256": "548a58b42279569839d75cca76d688fc2c93d3500499c3ececec2bd4eb447869",
+    "bytes": 113593,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw4649caee/images/tech/frs-v3/FRS-V3-protections.jpg",
+    "file": "FRS-V3-protections.jpg",
+    "sha256": "ac97af19bf8aa3217922e26da3992f6d78ad58aa04469d1ef82b0a0c58245fdb",
+    "bytes": 104701,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw50cbce23/images/tech/frs-v3/FRS-V3-chain-stays.jpg",
+    "file": "FRS-V3-chain-stays.jpg",
+    "sha256": "56694b5d062d6b284ad99a474892a66807cca0ef52d3bd72cd276d7972113815",
+    "bytes": 127621,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw5586baf7/images/tech/frs-v3/FRS-V3-rocker.jpg",
+    "file": "FRS-V3-rocker.jpg",
+    "sha256": "f1a8f8b8a3a07967d869121d37761f62e6ede7bd718f04620c5ad6ece957bd97",
+    "bytes": 112703,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw57372bc8/images/tech/frs-v3/FRS-V3-rear-axle.jpg",
+    "file": "FRS-V3-rear-axle.jpg",
+    "sha256": "12f54e82ddaad9100def610b2283275723dc49f7832948e65e0fc6a734687814",
+    "bytes": 111680,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw7232149c/images/tech/frs-v3/FRS-V3-bumpers.jpg",
+    "file": "FRS-V3-bumpers.jpg",
+    "sha256": "1fdc4f68caba25b8c69e356ce6bf23e5090d156ef9549584e735ca21dd51e4eb",
+    "bytes": 99004,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw77c0b36d/images/tech/frs-v3/FRS-routing1.jpg",
+    "file": "FRS-routing1.jpg",
+    "sha256": "77eb31477dbb775508219a419b3822c250e902bea3d6686ee3396059e1ec8b4d",
+    "bytes": 144871,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dwa56983f0/images/tech/frs-v3/FRS-routing2.jpg",
+    "file": "FRS-routing2.jpg",
+    "sha256": "afcfdc5def376cf6218c10faef2bea0e0000727f8d13d451d5f5c2c53b5587d5",
+    "bytes": 127611,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dwb6b325c3/images/tech/frs-v3/FRS-V3-main-pivot.jpg",
+    "file": "FRS-V3-main-pivot.jpg",
+    "sha256": "4266fd0c85708977e6244cfac8b65969a7f5b701ba804485f312e997a6fa6923",
+    "bytes": 133057,
+    "kind": "manufacturer-technical-illustration",
+    "observation": "FRS V3 official technical/exploded illustration, used for structural layout; no extracted CAD",
+    "use": "Shared FUV3 hardware corroborated by 2021 Furious Essential official parts list; not the Furious outline or finish"
+  },
+  {
+    "url": "https://static.commencal.com/tech/2021-COMMENCAL-FURIOUS-ESSENTIAL.pdf?nocache=1771013794",
+    "kind": "manufacturer-parts-list",
+    "retrieval": "Read through web cached PDF; direct origin download failed, no local PDF claimed",
+    "confirmed_parts": [
+      "W20FUV3ROCKER",
+      "W20FUV3AXLEMP",
+      "W20FUV3AXLECS",
+      "W20FUV3RHR",
+      "W20FUV3BUMPER",
+      "W20FUV3PROTECDT"
+    ]
+  }
+]

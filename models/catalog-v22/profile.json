@@ -1,0 +1,602 @@
+{
+  "model": "santa-cruz-nomad-7-my27",
+  "reference_image": "references/MY27_Nomad_CC_DHX2_FrameOnly_GlossAquaMagenta.png",
+  "image_landmarks": {
+    "bottom_bracket": [
+      738,
+      871
+    ],
+    "head_top": [
+      1168,
+      312
+    ],
+    "rear_axle": [
+      358,
+      863
+    ],
+    "seat_top": [
+      697,
+      522
+    ],
+    "shock_upper": [
+      925,
+      727
+    ],
+    "shock_lower": [
+      738,
+      759
+    ],
+    "seat_pivot": [
+      772,
+      590
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          730,
+          601
+        ],
+        [
+          777,
+          582
+        ],
+        [
+          1128,
+          359
+        ],
+        [
+          1165,
+          347
+        ]
+      ],
+      "height_mm": [
+        16,
+        14,
+        17,
+        23
+      ],
+      "width_mm": 21,
+      "corners_mm": [
+        0,
+        20,
+        18,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          738,
+          871
+        ],
+        [
+          833,
+          821
+        ],
+        [
+          929,
+          769
+        ],
+        [
+          971,
+          706
+        ],
+        [
+          1134,
+          405
+        ],
+        [
+          1190,
+          380
+        ]
+      ],
+      "height_mm": [
+        25,
+        27,
+        30,
+        28,
+        29,
+        25
+      ],
+      "width_mm": 31,
+      "corners_mm": [
+        0,
+        45,
+        38,
+        35,
+        26,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          746,
+          714
+        ],
+        [
+          725,
+          641
+        ],
+        [
+          708,
+          586
+        ],
+        [
+          697,
+          522
+        ]
+      ],
+      "height_mm": [
+        23,
+        24,
+        20,
+        18
+      ],
+      "width_mm": 21,
+      "corners_mm": [
+        0,
+        28,
+        25,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          358,
+          863
+        ],
+        [
+          392,
+          832
+        ],
+        [
+          706,
+          716
+        ],
+        [
+          795,
+          690
+        ]
+      ],
+      "height_mm": [
+        12,
+        12,
+        15,
+        17
+      ],
+      "width_mm": 11,
+      "corners_mm": [
+        0,
+        24,
+        20,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          358,
+          863
+        ],
+        [
+          406,
+          879
+        ],
+        [
+          650,
+          891
+        ],
+        [
+          684,
+          881
+        ],
+        [
+          710,
+          809
+        ]
+      ],
+      "height_mm": [
+        12,
+        12,
+        14,
+        20,
+        18
+      ],
+      "width_mm": 11,
+      "corners_mm": [
+        0,
+        20,
+        28,
+        25,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "rear_arch",
+      "path": [
+        [
+          795,
+          690
+        ],
+        [
+          765,
+          727
+        ],
+        [
+          739,
+          794
+        ],
+        [
+          709,
+          862
+        ],
+        [
+          686,
+          886
+        ]
+      ],
+      "height_mm": [
+        17,
+        17,
+        16,
+        18,
+        18
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        24,
+        30,
+        27,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "seat_fork",
+      "path": [
+        [
+          746,
+          714
+        ],
+        [
+          724,
+          750
+        ],
+        [
+          711,
+          800
+        ],
+        [
+          721,
+          854
+        ]
+      ],
+      "height_mm": [
+        14,
+        14,
+        13,
+        14
+      ],
+      "width_mm": 10,
+      "corners_mm": [
+        0,
+        23,
+        26,
+        0
+      ],
+      "paired": true
+    }
+  ],
+  "bay": {
+    "outer": [
+      [
+        720,
+        887
+      ],
+      [
+        714,
+        850
+      ],
+      [
+        731,
+        790
+      ],
+      [
+        758,
+        756
+      ],
+      [
+        775,
+        748
+      ],
+      [
+        793,
+        756
+      ],
+      [
+        812,
+        785
+      ],
+      [
+        831,
+        811
+      ],
+      [
+        849,
+        825
+      ],
+      [
+        862,
+        844
+      ],
+      [
+        807,
+        879
+      ],
+      [
+        747,
+        902
+      ]
+    ],
+    "hole": [
+      [
+        781,
+        770
+      ],
+      [
+        789,
+        777
+      ],
+      [
+        807,
+        802
+      ],
+      [
+        810,
+        812
+      ],
+      [
+        802,
+        818
+      ],
+      [
+        781,
+        829
+      ],
+      [
+        773,
+        828
+      ],
+      [
+        763,
+        818
+      ],
+      [
+        760,
+        812
+      ],
+      [
+        767,
+        794
+      ],
+      [
+        773,
+        776
+      ]
+    ]
+  },
+  "links": [
+    {
+      "name": "upper",
+      "outer": [
+        [
+          756,
+          584
+        ],
+        [
+          764,
+          576
+        ],
+        [
+          780,
+          578
+        ],
+        [
+          791,
+          590
+        ],
+        [
+          810,
+          677
+        ],
+        [
+          809,
+          697
+        ],
+        [
+          795,
+          705
+        ],
+        [
+          780,
+          696
+        ],
+        [
+          775,
+          674
+        ]
+      ],
+      "hole": [
+        [
+          772,
+          605
+        ],
+        [
+          780,
+          604
+        ],
+        [
+          796,
+          674
+        ],
+        [
+          788,
+          676
+        ]
+      ],
+      "bores": [
+        [
+          772,
+          590
+        ],
+        [
+          795,
+          690
+        ]
+      ],
+      "z": 0.034,
+      "depth": 0.012
+    },
+    {
+      "name": "lower",
+      "outer": [
+        [
+          704,
+          830
+        ],
+        [
+          711,
+          817
+        ],
+        [
+          731,
+          800
+        ],
+        [
+          725,
+          771
+        ],
+        [
+          727,
+          755
+        ],
+        [
+          739,
+          749
+        ],
+        [
+          750,
+          757
+        ],
+        [
+          752,
+          774
+        ],
+        [
+          768,
+          800
+        ],
+        [
+          766,
+          825
+        ],
+        [
+          748,
+          846
+        ],
+        [
+          722,
+          850
+        ]
+      ],
+      "hole": [],
+      "bores": [
+        [
+          722,
+          834
+        ],
+        [
+          750,
+          813
+        ],
+        [
+          738,
+          759
+        ]
+      ],
+      "z": 0.026,
+      "depth": 0.012
+    }
+  ],
+  "notes": [
+    "Nomad 7 MY27 only; official frame photos and individual upper/lower links constrain VPP anatomy.",
+    "Half tube sections/depths and unseen surfaces are exterior estimates, not CAD.",
+    "The low triangular window remains open between paired carbon cheeks; lower shock eye is on moving VPP link, upper/forward eye on fixed downtube.",
+    "Upper VPP link uses twin arms and bridge; asymmetric guard/UDH/brake mount are not mirrored.",
+    "Photo has perspective; registration fixes immutable assembly landmarks rather than pretending a calibrated orthographic capture.",
+    "Rear shock eye is hidden behind the paired bay and seat fork: visible coil-body start is not its eye. Published 230mm eye spacing is retained, not shortened to the visible spring."
+  ],
+  "junction": [
+    [
+      712,
+      563
+    ],
+    [
+      727,
+      579
+    ],
+    [
+      742,
+      586
+    ],
+    [
+      765,
+      583
+    ],
+    [
+      778,
+      577
+    ],
+    [
+      784,
+      587
+    ],
+    [
+      758,
+      605
+    ],
+    [
+      740,
+      625
+    ],
+    [
+      726,
+      631
+    ],
+    [
+      717,
+      607
+    ]
+  ],
+  "reference_coordinate_space": {
+    "width": 1824,
+    "height": 1368,
+    "native_width": 3200,
+    "native_height": 2400
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/25-V10_VPP_d2a26f08-4dbd-4d36-8e64-a23bab6aea77.png",
+    "file": "models/catalog-v30/references/detail-0.png",
+    "sha256": "8091be5c6d3492881276314d7b59c63d0d1a6a7f232010f3526103cc96a6e195",
+    "kind": "official product-page shared V10.8 platform detail",
+    "note": "Linked by MY27 product page; file naming MY25/MY26 retained; not a claim of new MY27 photographs."
+  },
+  {
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/MY26_V10_details_005_a96b272a-bb3d-4f14-acc7-3937f430e613.jpg",
+    "file": "models/catalog-v30/references/detail-1.jpg",
+    "sha256": "e330f7a80503aeb4cac0b8bd7a782b2b11ed278fce32146c087aac4181f213a2",
+    "kind": "official product-page shared V10.8 platform detail",
+    "note": "Linked by MY27 product page; file naming MY25/MY26 retained; not a claim of new MY27 photographs."
+  },
+  {
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/MY25_V10_Details_003.jpg",
+    "file": "models/catalog-v30/references/detail-2.jpg",
+    "sha256": "b0a0ac5a3bf3079af2b2eb7929e8d86da4797946cf6d22b164f63c3c4b532e38",
+    "kind": "official product-page shared V10.8 platform detail",
+    "note": "Linked by MY27 product page; file naming MY25/MY26 retained; not a claim of new MY27 photographs."
+  },
+  {
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/MY25_V10_Details_006.jpg",
+    "file": "models/catalog-v30/references/detail-3.jpg",
+    "sha256": "bc5235ca01011fd5f9fbd091ef674032ec716108fba88d11da703e095885f221",
+    "kind": "official product-page shared V10.8 platform detail",
+    "note": "Linked by MY27 product page; file naming MY25/MY26 retained; not a claim of new MY27 photographs."
+  },
+  {
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/MY27_V10_CC_FactoryDHX2_FrameOnly_GlossLiquidBlue.png",
+    "file": "models/catalog-v30/references/frame-blue.png",
+    "sha256": "b45fc9e30ccac7c7efdfe2f5b193c37a7b7f43d1be2c2d871db4e0d0a56b371a",
+    "kind": "official MY27 frameset photo"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_1.png",
+    "file": "models/catalog-v10/references/images/v10-detail-2.png",
+    "sha256": "b2519657f544785f45a77a8e63e3a1590d45128a0c892fd4c53eb771a2fa3022",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "official exploded view, platform topology and paired hidden connections"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_3.png",
+    "file": "models/catalog-v10/references/images/v10-detail-4.png",
+    "sha256": "9d8bbe9c917b927cd75d27a8ea76ca8e5b5541913d48ebad645de5055830fa6c",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "official exploded view, platform topology and paired hidden connections"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_5.png",
+    "file": "models/catalog-v10/references/images/v10-detail-6.png",
+    "sha256": "32e64fd2ef0f89a1a9f0c5a44831501aba1f57ada311f36bf86a5d77db96e0ae",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "official exploded view, platform topology and paired hidden connections"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_6.png",
+    "file": "models/catalog-v10/references/images/v10-detail-7.png",
+    "sha256": "c91facdc5176f8f770dd2f14c619d68d574c9e7ad139d1ab8baee411d409be97",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "official exploded view, platform topology and paired hidden connections"
+  }
+]

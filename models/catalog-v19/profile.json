@@ -1,0 +1,363 @@
+{
+  "image_landmarks": {
+    "bottom_bracket": [
+      810,
+      767
+    ],
+    "head_top": [
+      1255,
+      198
+    ],
+    "rear_axle": [
+      390,
+      756
+    ],
+    "seat_top": [
+      770,
+      368
+    ],
+    "shock_upper": [
+      1051,
+      477
+    ],
+    "shock_lower": [
+      838,
+      585
+    ],
+    "pivot": [
+      946,
+      616
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          823,
+          475
+        ],
+        [
+          870,
+          447
+        ],
+        [
+          1215,
+          230
+        ],
+        [
+          1265,
+          218
+        ]
+      ],
+      "height_mm": [
+        19,
+        17,
+        18,
+        22
+      ],
+      "width_mm": 20.01,
+      "corners_mm": [
+        0,
+        22,
+        14,
+        0
+      ]
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          810,
+          767
+        ],
+        [
+          880,
+          739
+        ],
+        [
+          948,
+          671
+        ],
+        [
+          1109,
+          439
+        ],
+        [
+          1216,
+          325
+        ],
+        [
+          1294,
+          287
+        ]
+      ],
+      "height_mm": [
+        24,
+        25,
+        26,
+        26,
+        27,
+        25
+      ],
+      "width_mm": 26.88,
+      "corners_mm": [
+        0,
+        34,
+        35,
+        20,
+        22,
+        0
+      ]
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          810,
+          767
+        ],
+        [
+          790,
+          679
+        ],
+        [
+          807,
+          563
+        ],
+        [
+          823,
+          476
+        ],
+        [
+          770,
+          368
+        ]
+      ],
+      "height_mm": [
+        22,
+        23,
+        21,
+        20,
+        18
+      ],
+      "width_mm": 19.44,
+      "corners_mm": [
+        0,
+        26,
+        34,
+        29,
+        0
+      ]
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          390,
+          756
+        ],
+        [
+          545,
+          760
+        ],
+        [
+          727,
+          758
+        ],
+        [
+          756,
+          745
+        ],
+        [
+          779,
+          713
+        ],
+        [
+          790,
+          679
+        ]
+      ],
+      "height_mm": [
+        12,
+        14,
+        15,
+        17,
+        21,
+        22
+      ],
+      "width_mm": 12,
+      "paired": true,
+      "corners_mm": [
+        0,
+        5,
+        18,
+        22,
+        22,
+        0
+      ]
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          414,
+          713
+        ],
+        [
+          604,
+          669
+        ],
+        [
+          810,
+          616
+        ]
+      ],
+      "height_mm": [
+        12,
+        14,
+        20
+      ],
+      "width_mm": 13,
+      "paired": true,
+      "corners_mm": [
+        0,
+        12,
+        0
+      ]
+    }
+  ],
+  "links": [
+    [
+      [
+        810,
+        616
+      ],
+      [
+        946,
+        616
+      ],
+      [
+        838,
+        585
+      ]
+    ]
+  ],
+  "axle_width_mm": 150,
+  "tire_width_mm": 65,
+  "reference_image": "furious.webp",
+  "estimated_geometry": {
+    "reach_mm": 455,
+    "stack_mm": 613,
+    "chainstay_mm": 435,
+    "head_tube_mm": 120,
+    "head_angle_deg": 64
+  },
+  "reference_coordinate_space": {
+    "width": 2000,
+    "height": 1138
+  },
+  "main_pivot": [
+    790,
+    679
+  ],
+  "rear_seatstay_joint": [
+    414,
+    713
+  ],
+  "upper_cradle_parent": [
+    1074,
+    507
+  ],
+  "rocker": {
+    "outer": [
+      [
+        799,
+        594
+      ],
+      [
+        829,
+        573
+      ],
+      [
+        842,
+        574
+      ],
+      [
+        858,
+        596
+      ],
+      [
+        930,
+        599
+      ],
+      [
+        952,
+        603
+      ],
+      [
+        962,
+        615
+      ],
+      [
+        953,
+        631
+      ],
+      [
+        939,
+        635
+      ],
+      [
+        813,
+        631
+      ],
+      [
+        799,
+        620
+      ]
+    ],
+    "hole": [
+      [
+        883,
+        609
+      ],
+      [
+        901,
+        609
+      ],
+      [
+        910,
+        621
+      ],
+      [
+        881,
+        621
+      ],
+      [
+        878,
+        616
+      ]
+    ],
+    "depth_mm": 10,
+    "half_separation_mm": 43,
+    "fixed_pivot": [
+      946,
+      616
+    ],
+    "rear_pivot": [
+      810,
+      616
+    ],
+    "shock_joint": [
+      838,
+      585
+    ]
+  },
+  "notes": [
+    "Own outline traced from 2021 Gun Metal lateral and oblique photographs; 2021 manufacturer parts list confirms FUV3 rocker, pivots, hanger and protectors shared with FRS.",
+    "Official Japanese Gunmetal bare frame supports hidden yoke/BB structure; year not asserted for this supplementary image. It is not used to change the declared generation or finish.",
+    "Only shared hardware accessory contours are transferred by affine registration from the v18 construction; Furious member paths and rocker outline are independent.",
+    "Upper shock mount is fixed; lower follows rocker and retains immutable length-adjusted anchor. Axial paint shells and opposite paired members complete hidden structure.",
+    "Half-extents, transverse section/depth/radii/lettering remain approximations; no CAD or 100 percent identity certification."
+  ]
+}

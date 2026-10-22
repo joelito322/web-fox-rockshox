@@ -1,0 +1,8 @@
+{
+  "current_file": "src/assets/images/catalog/canyon-sender-cfr-high-pivot.webp",
+  "archived_file": "models/catalog-v24/references/prior-card-generation-2021.webp",
+  "sha256": "0e24d2ef7ddcfef270d4766f30f8f0603f9191df4b87931791742550fccbec44",
+  "observed": "Green Sender CFR, pre-high-pivot 2021 platform, older two-link topology; incompatible as visual reference for MY25 high-pivot. Exact paint-year not established.",
+  "source_url": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Library-Sites-canyon-shared/default/dw6b811ad8/images/plp/Mountain/Sender/CEC-2-1-platform-gallery-Sender-CFR-fullframe-green.jpg?q=80&sfrm=jpg&sh=700&sm=cut&sw=1000",
+  "decision": "Replace with identified MY25 v24 render if no official isolated MY25 frame photograph can be verified. Resolver/image update coordinated separately; not applied by Sender agent."
+}

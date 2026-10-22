@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "8032fe50-6eda-57c8-9295-1ec6d1ae6000",
+    "predecessor_id": "1da36588-8c16-5ca7-bcfb-b0633115f66d",
+    "asset_id": "7c1d1b72-38b9-5c95-a4a7-985f32a50c26",
+    "file": "santa-cruz-v10-8-my27--m.glb",
+    "storage_path": "catalog/v30/santa-cruz-v10-8-my27/5ef4e4555e9d24f312b020cc.glb",
+    "bytes": 1773656,
+    "sha256": "5ef4e4555e9d24f312b020cc9c66e04df301d65f3d5c3924865039124d387d44",
+    "published_at": "2026-10-22T02:52:27.644Z"
+  },
+  {
+    "variant_id": "add3d084-7d1c-52a2-a413-2ad343c332b7",
+    "predecessor_id": "df638678-751e-5977-94b3-57a0de0b647c",
+    "asset_id": "7b3663b3-78bb-5a7d-8041-cfe0bd369273",
+    "file": "santa-cruz-v10-8-my27--l.glb",
+    "storage_path": "catalog/v30/santa-cruz-v10-8-my27/623e0f92f8346f7014bae4c8.glb",
+    "bytes": 1772028,
+    "sha256": "623e0f92f8346f7014bae4c8c2aecf428f598bfef33f61128103ef70733c11e4",
+    "published_at": "2026-10-22T02:52:31.582Z"
+  }
+]

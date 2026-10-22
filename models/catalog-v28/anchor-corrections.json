@@ -1,0 +1,506 @@
+[
+  {
+    "predecessor_id": "dac3a875-4264-5bb7-90ff-a1fcec38d494",
+    "successor_id": "67709315-2a48-52d9-91a4-09b0c6dafec8",
+    "before": {
+      "rear_axle": {
+        "position": [
+          -0.448,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "front_axle": {
+        "position": [
+          0.8069999999999999,
+          0.018000000000000016,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube": {
+        "position": [
+          0.455,
+          0.64,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube_lower": {
+        "position": [
+          0.504081759442079,
+          0.5415572202237773,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "seat_tube": {
+        "position": [
+          -0.01760418202755426,
+          0.4017079374021391,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "saddle": {
+        "position": [
+          -0.03744489934945533,
+          0.5423576652232496,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_upper": {
+        "position": [
+          0.1657921702966688,
+          0.3017554905680698,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_lower": {
+        "position": [
+          0.025099544374297067,
+          0.09510219393076089,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "suspension_pivot": {
+        "position": [
+          0.12515799000886446,
+          0.15574639416106772,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      }
+    },
+    "after": {
+      "rear_axle": {
+        "position": [
+          -0.448,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "front_axle": {
+        "position": [
+          0.7955780767840077,
+          0.011338986180726082,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube": {
+        "position": [
+          0.4343442727853274,
+          0.6181152570440216,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube_lower": {
+        "position": [
+          0.48342603222740643,
+          0.519672477267799,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "seat_tube": {
+        "position": [
+          -0.018255594384125856,
+          0.368383235839744,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "saddle": {
+        "position": [
+          -0.07802334935119865,
+          0.49723902913673157,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_upper": {
+        "position": [
+          0.1971088284910681,
+          0.2789763703977468,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_lower": {
+        "position": [
+          0.053333494288929195,
+          0.07445582552495598,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "suspension_pivot": {
+        "position": [
+          0.16422088377650904,
+          0.14027138529131314,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      }
+    },
+    "changed_keys": [
+      "front_axle",
+      "head_tube",
+      "head_tube_lower",
+      "seat_tube",
+      "saddle",
+      "shock_upper",
+      "shock_lower",
+      "suspension_pivot"
+    ]
+  },
+  {
+    "predecessor_id": "896a0017-b2ed-5db9-b96c-3056ee722413",
+    "successor_id": "c8d8edc8-5fc2-5fd2-bb62-0bd409ca8f30",
+    "before": {
+      "rear_axle": {
+        "position": [
+          -0.44730191146472875,
+          0.025,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "front_axle": {
+        "position": [
+          0.8326980885352713,
+          0.025000000000000022,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube": {
+        "position": [
+          0.48,
+          0.648,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube_lower": {
+        "position": [
+          0.5290817594420789,
+          0.5495572202237773,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "seat_tube": {
+        "position": [
+          -0.0014400196298902102,
+          0.4236485622209151,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "saddle": {
+        "position": [
+          -0.014869633153802944,
+          0.565054522069142,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_upper": {
+        "position": [
+          0.17765543795803818,
+          0.308247139768199,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_lower": {
+        "position": [
+          0.032944232990696404,
+          0.10438770987372492,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "suspension_pivot": {
+        "position": [
+          0.13121934504817945,
+          0.15688786482971162,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      }
+    },
+    "after": {
+      "rear_axle": {
+        "position": [
+          -0.44730191146472875,
+          0.025,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "front_axle": {
+        "position": [
+          0.794971136427316,
+          -0.03307478064037818,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube": {
+        "position": [
+          0.46537553219364647,
+          0.5916213572692293,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "head_tube_lower": {
+        "position": [
+          0.5144572916357254,
+          0.4931785774930065,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "seat_tube": {
+        "position": [
+          0.0023299523059138612,
+          0.3688279361658095,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "saddle": {
+        "position": [
+          -0.05015405708761834,
+          0.5008181962533615,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_upper": {
+        "position": [
+          0.21236956475574073,
+          0.2675422835270705,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "shock_lower": {
+        "position": [
+          0.05740528923806951,
+          0.07136360651735245,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      },
+      "suspension_pivot": {
+        "position": [
+          0.17179263358915717,
+          0.13088869792454697,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "estimated": true
+      }
+    },
+    "changed_keys": [
+      "front_axle",
+      "head_tube",
+      "head_tube_lower",
+      "seat_tube",
+      "saddle",
+      "shock_upper",
+      "shock_lower",
+      "suspension_pivot"
+    ]
+  }
+]

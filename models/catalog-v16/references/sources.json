@@ -1,0 +1,47 @@
+{
+  "inspected": "2026-10-21",
+  "assets": [
+    {
+      "file": "official-catalog-page4-detail.png",
+      "sha256": "a36cf4cb1bfc2a3334b64939c3c5013beea9eae3e4db5870c031495208a5c3f5",
+      "bytes": 6882716,
+      "url": null,
+      "derived_from": "official-catalog.pdf page 4 (one-indexed)"
+    },
+    {
+      "file": "official-catalog-page4.png",
+      "sha256": "0df914d41152cdd3f5e46b1594bd7be9f24991e0b53166970880fbf881cbdd1c",
+      "bytes": 2045616,
+      "url": null,
+      "derived_from": "official-catalog.pdf page 4 (one-indexed)"
+    },
+    {
+      "file": "official-catalog.pdf",
+      "sha256": "137811dab7f76cb0c49710236d1fadb4082cb6764844c6be9b95da8de74de7f1",
+      "bytes": 6968808,
+      "url": "https://dabombmtb.com/upload/download_page_file/DA-BOMB-Catalog.pdf",
+      "derived_from": null
+    },
+    {
+      "file": "official-color.jpg",
+      "sha256": "d6103e75f9a570fc11da0b7bae8d8dfba1fb09dff518c51161fba24bbc7a9b2a",
+      "bytes": 228987,
+      "url": "http://www.dabombmtb.com/upload/color_more/thumb_28825a06d77a5181d14091b4a2227ed9.jpg",
+      "derived_from": null
+    },
+    {
+      "file": "official-overview.webp",
+      "sha256": "1a4da9c41d973c982c7437f5951c90265a41df572d18a939e5c97e65bd72869e",
+      "bytes": 645516,
+      "url": "https://www.dabombmtb.com/upload/tempupload//FRAME/for%20CHERRY%20BOMB%2029.webp",
+      "derived_from": null
+    }
+  ],
+  "observations": [
+    "Black opposite-side product photograph is a 19-inch CHERRY BOMB 29; observed genuine seat-tube bend, mostly straight long downtube, local head/bottom-bracket elbows, open lower yoke window and black triangular rocker.",
+    "Official PDF page 4 contains opposite-side black and same-side purple lateral references plus ivory front-oblique and chameleon rear/underside-oblique frame photographs; inspected the page render. Oblique pictures confirm paired structural stays and tyre clearance, not calibrated transverse tube dimensions.",
+    "Overview is a geometry chart, not an extra photograph. It confirms 17/19-inch geometry; it is not used to overwrite existing variant specifications.",
+    "Original 2023 archive URL returned 404. The current official catalog URL downloaded successfully using a browser User-Agent and official Referer.",
+    "Catalog tyre limit 2.5 versus current product page 2.4 is a source discrepancy; no business data changed."
+  ]
+}

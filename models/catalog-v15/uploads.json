@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "cbba3208-6f58-57db-8cce-a3fb32f2289a",
+    "predecessor_id": "3b5ebc41-df94-59cb-ac5b-711ddb36d368",
+    "asset_id": "442d4dd0-bd67-5040-b253-1c9b2eb7f047",
+    "file": "yt-capra-mk3-carbon-mx--m.glb",
+    "storage_path": "catalog/v15/yt-capra-mk3-carbon-mx/b93b9521a6d80a2801248575.glb",
+    "bytes": 861872,
+    "sha256": "b93b9521a6d80a2801248575447f542d699bb43a70adb7fb8fb2c87b1a695586",
+    "published_at": "2026-10-21T23:35:06.980Z"
+  },
+  {
+    "variant_id": "d15d48d6-a32d-5904-8ce7-b3d35af86160",
+    "predecessor_id": "bf8591aa-0843-5959-ab9a-ddeaee5b1db9",
+    "asset_id": "b4faeaeb-fad3-504f-930e-30803b95316b",
+    "file": "yt-capra-mk3-carbon-mx--l.glb",
+    "storage_path": "catalog/v15/yt-capra-mk3-carbon-mx/56a4f59df3dc10465fe02557.glb",
+    "bytes": 869904,
+    "sha256": "56a4f59df3dc10465fe02557703033abc955d24a8a928ea296fea7d208b112af",
+    "published_at": "2026-10-21T23:35:10.856Z"
+  }
+]

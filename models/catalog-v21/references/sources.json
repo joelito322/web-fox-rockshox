@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw4af9233c/images/tech/meta-v5/META-SX-V5-full-assembly.jpg",
+    "file": "META-SX-V5-full-assembly.jpg",
+    "bytes": 282216,
+    "sha256": "e660e77d3754262b519f6722e57331c181b39d5c5614d47f21bfe05c723913aa",
+    "kind": "manufacturer-technical-drawing"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw76a08da4/images/tech/meta-v5/META-V5-front-triangle.jpg",
+    "file": "META-V5-front-triangle.jpg",
+    "bytes": 257987,
+    "sha256": "0dd3d47d44e9bfee25c9d7d0cdc051572c4a43c12fdac96fabc27eb62e57e99e",
+    "kind": "manufacturer-technical-drawing"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw48b7e383/images/tech/meta-v5/META-V5-links.jpg",
+    "file": "META-V5-links.jpg",
+    "bytes": 215101,
+    "sha256": "2a19096a7fa839f14285c3ccee8e739b134a52c74ea0a1b28a4ad36e5678f587",
+    "kind": "manufacturer-technical-drawing"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw12cb8b83/images/tech/meta-v5/META-SX-V5-rear-triangle.jpg",
+    "file": "META-SX-V5-rear-triangle.jpg",
+    "bytes": 189085,
+    "sha256": "bb1471ff37b9b4f24d8d365287fb1ec809eaadc0c52487b707f034a116d3bb9a",
+    "kind": "manufacturer-technical-drawing"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw629d27a6/images/tech/meta-v5/META-V5-protectors.jpg",
+    "file": "META-V5-protectors.jpg",
+    "bytes": 400590,
+    "sha256": "41b72d8fb559de831ce91c8cc4e120da01272568e13031a9d5e1bad606a9ccea",
+    "kind": "manufacturer-technical-drawing"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw3f85ee62/images/tech/meta-v5/META-V5-SX-routing1.jpg",
+    "file": "META-V5-SX-routing1.jpg",
+    "bytes": 99147,
+    "sha256": "d10d6a47c0a1475d13869b9192825055999a0f0ad1e181b9a33ade099bba219f",
+    "kind": "manufacturer-technical-drawing"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dwfd551280/images/tech/meta-v5/META-V5-SX-routing2.jpg",
+    "file": "META-V5-SX-routing2.jpg",
+    "bytes": 92520,
+    "sha256": "15d7a2227a6dfffcbab82a4d42f98980275ca33fd77171f6453938b72f31f02b",
+    "kind": "manufacturer-technical-drawing"
+  },
+  {
+    "url": "https://www.commencal.com/on/demandware.static/-/Sites-commencal-master/default/dwdb980f9a/images/FT3MSXV5TME.jpeg",
+    "file": "FT3MSXV5TME.jpeg",
+    "bytes": 73922,
+    "sha256": "933a67d2614eaaf12825b9fb438434c1003a7d0ceccc213ef619bfd9edea6072",
+    "kind": "manufacturer-photo"
+  },
+  {
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw32107bcc/images/productPages/meta-sx-v5-suspensions.jpg",
+    "file": "meta-sx-v5-suspensions.jpg",
+    "bytes": 337454,
+    "sha256": "c29b4c9f64f69150d30cfc02e0dbadd756485b358c0ee5865393c342bb59ed33",
+    "kind": "manufacturer-photo"
+  }
+]

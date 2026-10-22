@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "157d9f48-2a33-5dd6-8c94-1764a25f25b9",
+    "predecessor_id": "28a5da16-8640-53fb-9dac-62d927e7415f",
+    "asset_id": "6ec55956-08eb-510d-9daf-6ae0a6571b14",
+    "file": "canyon-sender-cfr-high-pivot--m.glb",
+    "storage_path": "catalog/v24/canyon-sender-cfr-high-pivot/ab147fb13ee34b993b30367b.glb",
+    "bytes": 1406824,
+    "sha256": "ab147fb13ee34b993b30367b59d82616c18ba2602155558509a005d9ac722dc9",
+    "published_at": "2026-10-22T01:19:41.145Z"
+  },
+  {
+    "variant_id": "572a6fd5-ea9c-5161-8f5e-7bb343cab5b1",
+    "predecessor_id": "60c3ad46-fc4f-5850-ac24-ad44d06dce91",
+    "asset_id": "730610b2-550d-5c36-a4e2-22642690d849",
+    "file": "canyon-sender-cfr-high-pivot--l.glb",
+    "storage_path": "catalog/v24/canyon-sender-cfr-high-pivot/eaaf6149e2610185a7d07e0f.glb",
+    "bytes": 1410104,
+    "sha256": "eaaf6149e2610185a7d07e0f7e25fb83e93778fc1b51e95d81f9970f8277dd3a",
+    "published_at": "2026-10-22T01:19:45.293Z"
+  }
+]

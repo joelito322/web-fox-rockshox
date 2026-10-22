@@ -1,0 +1,509 @@
+{
+  "brands": [
+    {
+      "id": "2e00e3fb-a71a-553e-a92d-643a2b7ce015",
+      "name": "DA BOMB",
+      "slug": "da-bomb",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "0d06d89b-1fd7-5351-9e6f-adff106f2f26",
+      "brand_id": "2e00e3fb-a71a-553e-a92d-643a2b7ce015",
+      "name": "CHERRY BOMB 29",
+      "slug": "da-bomb-cherry-bomb-29",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometría documentadas.",
+      "technical_notes": "Exterior aproximado del modelo; acabados y superficies ocultas simplificados, sin simulación de suspensión. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.dabombmtb.com/product_detail/CherryBomb29/",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://www.dabombmtb.com/supports/FRAME-GEOMETRY/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla oficial 2026: 17 y 19 pulgadas, sin equivalencia automática M/L",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "c7751186-5c5a-51ae-844b-ca33b0c6006b",
+      "kind": "glb",
+      "storage_path": "catalog/v16/da-bomb-cherry-bomb-29/0291e30325356016c6d21029.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "da-bomb-cherry-bomb-29",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.4342810150121693,
+              0.025,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.4422,
+              0.627,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.4878162566921863,
+              0.5269042602035803,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.045672951270955775,
+              0.4234374213170824,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.09295513893658017,
+              0.32186905491371337,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.08582262694835663,
+              0.11199021339416504,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07067295127095577,
+              0.5684374213170824,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.038535527768667754,
+              0.28028670105504744,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.7506189849878308,
+              0.045,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "da-bomb-cherry-bomb-29__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "CHERRY BOMB 29: contornos propios de aluminio hidroformado, curvas específicas y rectas contrastadas; conserva anclajes y los otros catorce cuadros. Fuentes heredadas y límites: models/catalog-v16/README.md. No CAD.",
+      "published": true
+    },
+    {
+      "id": "34f37a90-e206-57fa-8bbf-bad8ebf8187c",
+      "kind": "glb",
+      "storage_path": "catalog/v16/da-bomb-cherry-bomb-29/3e7e9f0fce35e9847a6ed1c8.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "da-bomb-cherry-bomb-29",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.4342810150121693,
+              0.025,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.4592,
+              0.6361,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5048162566921863,
+              0.5360042602035803,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.03470862457391144,
+              0.42930656090197084,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.10148099149732617,
+              0.32643289363740685,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.08905773609876633,
+              0.11680068075656891,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.05970862457391144,
+              0.5743065609019709,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.04589631053139906,
+              0.28422688476921537,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.7718189849878306,
+              0.045,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "da-bomb-cherry-bomb-29__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "CHERRY BOMB 29: contornos propios de aluminio hidroformado, curvas específicas y rectas contrastadas; conserva anclajes y los otros catorce cuadros. Fuentes heredadas y límites: models/catalog-v16/README.md. No CAD.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "d6f4ef67-ac2d-5427-86c4-08193fd1c6d8",
+      "component_id": "0d06d89b-1fd7-5351-9e6f-adff106f2f26",
+      "label": "17″ · Matte Black",
+      "model_year": null,
+      "generation": "Geometría 2026",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.dabombmtb.com/product_detail/CherryBomb29/",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.dabombmtb.com/supports/FRAME-GEOMETRY/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla oficial 2026: 17 y 19 pulgadas, sin equivalencia automática M/L",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio",
+        "suspension_type": "Horst linkage",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 147,
+        "shock_fit": {
+          "eye_to_eye_mm": 210,
+          "stroke_mm": 55,
+          "restrictions": "Tornillo M8; confirmar anchura de herrajes. Comprobar interferencia de depósito y tubo inferior al cambiar amortiguador."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 30.9,
+        "fork_restrictions": "Recorrido recomendado 150–160 mm según tabla 2026.",
+        "tire_clearance_notes": "Ficha actual: máximo 29×2.4; un catálogo anterior indica 2.5. No ampliar el límite por esa discrepancia.",
+        "size_label": "17″",
+        "geometry": {
+          "reach_mm": 442.2,
+          "stack_mm": 627,
+          "wheelbase_mm": 1184.9,
+          "effective_top_tube_mm": 598.3,
+          "chainstay_mm": 435,
+          "head_angle_deg": 65.5,
+          "bb_height_mm": 336,
+          "reference_position": "Tabla oficial 2026; talla original en pulgadas. Longitud de dirección y ángulo de sillín sin dato verificable."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Black",
+            "image_key": null,
+            "material": {
+              "color": "#242825",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "c7751186-5c5a-51ae-844b-ca33b0c6006b",
+      "price_reference": null
+    },
+    {
+      "id": "3c539901-b81c-50f7-8228-8a78bc7d1e74",
+      "component_id": "0d06d89b-1fd7-5351-9e6f-adff106f2f26",
+      "label": "19″ · Matte Black",
+      "model_year": null,
+      "generation": "Geometría 2026",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.dabombmtb.com/product_detail/CherryBomb29/",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.dabombmtb.com/supports/FRAME-GEOMETRY/",
+          "consulted_at": "2026-10-19",
+          "note": "Tabla oficial 2026: 17 y 19 pulgadas, sin equivalencia automática M/L",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio",
+        "suspension_type": "Horst linkage",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 147,
+        "shock_fit": {
+          "eye_to_eye_mm": 210,
+          "stroke_mm": 55,
+          "restrictions": "Tornillo M8; confirmar anchura de herrajes. Comprobar interferencia de depósito y tubo inferior al cambiar amortiguador."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 30.9,
+        "fork_restrictions": "Recorrido recomendado 150–160 mm según tabla 2026.",
+        "tire_clearance_notes": "Ficha actual: máximo 29×2.4; un catálogo anterior indica 2.5. No ampliar el límite por esa discrepancia.",
+        "size_label": "19″",
+        "geometry": {
+          "reach_mm": 459.2,
+          "stack_mm": 636.1,
+          "wheelbase_mm": 1206.1,
+          "effective_top_tube_mm": 619.3,
+          "chainstay_mm": 435,
+          "head_angle_deg": 65.5,
+          "bb_height_mm": 336,
+          "reference_position": "Tabla oficial 2026; talla original en pulgadas. Longitud de dirección y ángulo de sillín sin dato verificable."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Black",
+            "image_key": null,
+            "material": {
+              "color": "#242825",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "34f37a90-e206-57fa-8bbf-bad8ebf8187c",
+      "price_reference": null
+    }
+  ]
+}

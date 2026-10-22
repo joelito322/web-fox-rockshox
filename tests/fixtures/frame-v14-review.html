@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ATLAS · Cuadros multivista</title>
+    <style>
+      body {
+        margin: 0;
+        background: #eceee7;
+        font: 13px sans-serif;
+      }
+      header {
+        position: absolute;
+        z-index: 1;
+        padding: 12px;
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      select,
+      output {
+        padding: 8px;
+        background: white;
+        border: 1px solid #bbc3b0;
+      }
+      canvas {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <select id="model" aria-label="Cuadro"></select
+      ><select id="view" aria-label="Vista">
+        <option>lateral</option>
+        <option>opuesta</option>
+        <option>frontal</option>
+        <option>superior</option>
+        <option>inferior</option>
+        <option>diagonal</option>
+        <option>diagonal-opuesta</option>
+        <option value="head-side">Pipa lateral</option>
+        <option value="head-front">Pipa frontal</option>
+        <option value="head-rear">Uniones posteriores</option>
+        <option value="head-low">Pipa desde abajo</option>
+        <option value="headset">Dirección</option>
+        <option value="seat_collar">Collar de sillín</option>
+        <option value="bottom_bracket">Pedalier</option></select
+      ><select id="version" aria-label="Versión">
+        <option value="baseline">Anterior</option>
+        <option value="v14">Revisión v14</option></select
+      ><output>Revisión interna · Aproximación exterior</output>
+    </header>
+    <script type="module" src="/tests/fixtures/frame-v14-review.ts"></script>
+  </body>
+</html>

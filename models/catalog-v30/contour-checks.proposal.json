@@ -1,0 +1,744 @@
+{
+  "source": {
+    "file": "references/frame-blue.png",
+    "dimensions": [
+      3200,
+      2400
+    ],
+    "coordinate_dimensions": [
+      1600,
+      1200
+    ],
+    "method": "Independent visible bands sampled from official photo; RGBA saved before any geometry comparison. Opaque shock/fender or decal occlusions reviewed separately."
+  },
+  "samples": [
+    {
+      "region": "top_tube",
+      "pixel": [
+        850,
+        425
+      ],
+      "hit": true,
+      "source_rgba": [
+        19,
+        28,
+        58,
+        255
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        900,
+        380
+      ],
+      "hit": true,
+      "source_rgba": [
+        20,
+        29,
+        62,
+        255
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        940,
+        342
+      ],
+      "hit": true,
+      "source_rgba": [
+        21,
+        31,
+        65,
+        255
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        820,
+        452
+      ],
+      "hit": true,
+      "source_rgba": [
+        19,
+        27,
+        57,
+        255
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        780,
+        478
+      ],
+      "hit": true,
+      "source_rgba": [
+        20,
+        30,
+        62,
+        255
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        730,
+        482
+      ],
+      "hit": true,
+      "source_rgba": [
+        21,
+        30,
+        63,
+        255
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        850,
+        395
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        900,
+        345
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        940,
+        310
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        850,
+        455
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        900,
+        412
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        900,
+        475
+      ],
+      "hit": true,
+      "source_rgba": [
+        72,
+        78,
+        97,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        850,
+        545
+      ],
+      "hit": true,
+      "source_rgba": [
+        200,
+        200,
+        200,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        820,
+        590
+      ],
+      "hit": true,
+      "source_rgba": [
+        16,
+        23,
+        47,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        780,
+        645
+      ],
+      "hit": true,
+      "source_rgba": [
+        21,
+        28,
+        49,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        730,
+        696
+      ],
+      "hit": true,
+      "source_rgba": [
+        39,
+        45,
+        67,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        680,
+        746
+      ],
+      "hit": true,
+      "source_rgba": [
+        39,
+        45,
+        64,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        966,
+        387
+      ],
+      "hit": true,
+      "source_rgba": [
+        20,
+        29,
+        60,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        910,
+        515
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        860,
+        575
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        790,
+        675
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        740,
+        726
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        820,
+        552
+      ],
+      "hit": false,
+      "source_rgba": [
+        23,
+        35,
+        75,
+        255
+      ]
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        900,
+        426
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        616,
+        449
+      ],
+      "hit": true,
+      "source_rgba": [
+        21,
+        32,
+        66,
+        255
+      ]
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        633,
+        487
+      ],
+      "hit": true,
+      "source_rgba": [
+        21,
+        31,
+        63,
+        255
+      ]
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        658,
+        494
+      ],
+      "hit": true,
+      "source_rgba": [
+        20,
+        29,
+        61,
+        255
+      ]
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        778,
+        515
+      ],
+      "hit": true,
+      "source_rgba": [
+        19,
+        28,
+        59,
+        255
+      ]
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        778,
+        555
+      ],
+      "hit": true,
+      "source_rgba": [
+        18,
+        27,
+        56,
+        255
+      ]
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        778,
+        605
+      ],
+      "hit": true,
+      "source_rgba": [
+        18,
+        26,
+        54,
+        255
+      ]
+    },
+    {
+      "region": "windows",
+      "pixel": [
+        720,
+        500
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "windows",
+      "pixel": [
+        740,
+        503
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "windows",
+      "pixel": [
+        845,
+        468
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "windows",
+      "pixel": [
+        870,
+        440
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "windows",
+      "pixel": [
+        830,
+        495
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        380,
+        708
+      ],
+      "hit": true,
+      "source_rgba": [
+        20,
+        29,
+        61,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        450,
+        681
+      ],
+      "hit": true,
+      "source_rgba": [
+        20,
+        29,
+        62,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        520,
+        651
+      ],
+      "hit": true,
+      "source_rgba": [
+        29,
+        40,
+        72,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        580,
+        627
+      ],
+      "hit": true,
+      "source_rgba": [
+        85,
+        94,
+        120,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        645,
+        611
+      ],
+      "hit": true,
+      "source_rgba": [
+        19,
+        28,
+        59,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        617,
+        698
+      ],
+      "hit": true,
+      "source_rgba": [
+        32,
+        38,
+        62,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        599,
+        741
+      ],
+      "hit": true,
+      "source_rgba": [
+        36,
+        36,
+        36,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        450,
+        761
+      ],
+      "hit": true,
+      "source_rgba": [
+        38,
+        38,
+        38,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        500,
+        765
+      ],
+      "hit": true,
+      "source_rgba": [
+        36,
+        36,
+        36,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        450,
+        660
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        520,
+        631
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        580,
+        602
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        450,
+        704
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        520,
+        680
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        450,
+        735
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        500,
+        780
+      ],
+      "hit": false,
+      "source_rgba": [
+        28,
+        28,
+        28,
+        255
+      ]
+    },
+    {
+      "region": "rear",
+      "pixel": [
+        550,
+        800
+      ],
+      "hit": false,
+      "source_rgba": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

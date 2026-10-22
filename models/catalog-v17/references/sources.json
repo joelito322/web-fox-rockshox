@@ -1,0 +1,46 @@
+{
+  "inspected": "2026-10-21",
+  "page": "https://gtbicycles.com/products/force-carbon-frameset",
+  "assets": [
+    {
+      "file": "official-high-pivot.jpg",
+      "url": "https://gtbicycles.com/cdn/shop/files/high_pivot_lts_1.jpg?v=1692840593&width=1180",
+      "sha256": "c77b32dace2dc586bf38040745be07764d5d9f44a8c42f6eacacf3a8b3915a19",
+      "bytes": 127105,
+      "inspected": true
+    },
+    {
+      "file": "official-dropout.jpg",
+      "url": "https://gtbicycles.com/cdn/shop/files/force_added_adjustability.jpg?v=1692840573&width=1180",
+      "sha256": "9f6568215fe083a5caa26accbeb1fe6b9cdeaa86277a2713cf988cf32b11752f",
+      "bytes": 146520,
+      "inspected": true
+    },
+    {
+      "file": "official-protection.jpg",
+      "url": "https://gtbicycles.com/cdn/shop/files/ruckus_management_1.jpg?v=1692840529&width=1180",
+      "sha256": "56b73612a0f988a2fd4f4325cf555df2001df661a5e160779260de53e6d71a6e",
+      "bytes": 116476,
+      "inspected": true
+    },
+    {
+      "file": "official-lateral.jpg",
+      "url": "https://gtbicycles.com/cdn/shop/files/ForceCRB_Frame_PD_BLK.jpg",
+      "sha256": "1c7c2bc20edb69529c0ecab77788ad7c596c4fe163f3c847253aed387f2d358f",
+      "bytes": 105857,
+      "inspected": true
+    },
+    {
+      "file": "official-oblique.jpg",
+      "url": "https://gtbicycles.com/cdn/shop/files/ForceCRB_Frame_3Q_BLK.jpg",
+      "sha256": "9ac2f23fb34c8117c8234d339937b2cb55a4e0d17f685a9deea9a8b76f1d4460",
+      "bytes": 101299,
+      "inspected": true
+    }
+  ],
+  "observations": [
+    "Force Carbon High Pivot LTS 29, 160mm rear, 230x65mm shock and 12x148 axle; not Fury or Force alloy. Official product specification and geometry page read.",
+    "Two independent frameset photos; v10 image 0/1 duplicates and image2 reduced version do not count as independent views. Three dedicated official detail images add rocker, dropout and drivetrain-side evidence.",
+    "Lateral contour controls use preserved v10 image coordinate space; finite depth estimates are inference, not measured CAD."
+  ]
+}

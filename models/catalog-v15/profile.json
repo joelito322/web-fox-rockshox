@@ -1,0 +1,252 @@
+{
+  "image_landmarks": {
+    "bottom_bracket": [
+      876,
+      827
+    ],
+    "head_top": [
+      1247,
+      288
+    ],
+    "rear_axle": [
+      467,
+      817
+    ],
+    "seat_top": [
+      812,
+      470
+    ],
+    "shock_upper": [
+      1052,
+      532
+    ],
+    "shock_lower": [
+      823,
+      639
+    ],
+    "pivot": [
+      820,
+      674
+    ]
+  },
+  "members": [
+    {
+      "name": "downtube",
+      "path": [
+        [
+          876,
+          827
+        ],
+        [
+          951,
+          803
+        ],
+        [
+          995,
+          720
+        ],
+        [
+          1190,
+          393
+        ],
+        [
+          1290,
+          365
+        ]
+      ],
+      "height_mm": [
+        30,
+        30,
+        27.5,
+        27.5,
+        29
+      ],
+      "width_mm": 30.72,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        25,
+        30,
+        22,
+        0
+      ]
+    },
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          822,
+          513
+        ],
+        [
+          851,
+          554
+        ],
+        [
+          880,
+          535
+        ],
+        [
+          1247,
+          288
+        ]
+      ],
+      "height_mm": [
+        22,
+        21,
+        16,
+        16
+      ],
+      "width_mm": 20.88,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        24,
+        20,
+        0
+      ]
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          876,
+          827
+        ],
+        [
+          847,
+          741
+        ],
+        [
+          852,
+          637
+        ],
+        [
+          812,
+          470
+        ]
+      ],
+      "height_mm": [
+        23,
+        24,
+        25,
+        19
+      ],
+      "width_mm": 20.25,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        25,
+        25,
+        0
+      ]
+    },
+    {
+      "name": "lower_window_rail",
+      "path": [
+        [
+          853,
+          686
+        ],
+        [
+          991,
+          711
+        ]
+      ],
+      "height_mm": [
+        14,
+        16
+      ],
+      "width_mm": 26,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          467,
+          817
+        ],
+        [
+          819,
+          842
+        ],
+        [
+          864,
+          779
+        ]
+      ],
+      "height_mm": [
+        11,
+        16,
+        22
+      ],
+      "width_mm": 12,
+      "material": "paint",
+      "paired": true,
+      "corners_mm": [
+        0,
+        25,
+        0
+      ]
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          467,
+          817
+        ],
+        [
+          820,
+          674
+        ]
+      ],
+      "height_mm": [
+        11,
+        20
+      ],
+      "width_mm": 13,
+      "material": "paint",
+      "paired": true,
+      "corners_mm": [
+        0,
+        0
+      ]
+    }
+  ],
+  "links": [
+    [
+      [
+        820,
+        674
+      ],
+      [
+        883,
+        686
+      ],
+      [
+        823,
+        639
+      ]
+    ]
+  ],
+  "axle_width_mm": 148,
+  "tire_width_mm": 65,
+  "reference_image": "capra-side.webp",
+  "estimated_geometry": {
+    "reach_mm": 444,
+    "stack_mm": 636,
+    "chainstay_mm": 433,
+    "head_tube_mm": 110,
+    "head_angle_deg": 64
+  }
+}

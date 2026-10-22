@@ -1,0 +1,537 @@
+{
+  "brands": [
+    {
+      "id": "0eadf734-3c19-5f9a-9163-06af0c571bff",
+      "name": "Canyon",
+      "slug": "canyon",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "14424ba5-d74e-5c5f-a527-bd9448bde47d",
+      "brand_id": "0eadf734-3c19-5f9a-9163-06af0c571bff",
+      "name": "Sender CFR",
+      "slug": "canyon-sender-cfr-high-pivot",
+      "category": "frame",
+      "disciplines": [
+        "downhill"
+      ],
+      "description": "Cuadro de descenso con talla y geometría documentadas.",
+      "technical_notes": "Exterior aproximado del modelo; acabados y superficies ocultas simplificados, sin simulación de suspensión. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/",
+          "consulted_at": "2026-10-19",
+          "note": "Gama actual con Sender CFR Underdog y CLLCTV",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "6ec55956-08eb-510d-9daf-6ae0a6571b14",
+      "kind": "glb",
+      "storage_path": "catalog/v24/canyon-sender-cfr-high-pivot/ab147fb13ee34b993b30367b.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "canyon-sender-cfr-high-pivot",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.437926934545022,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.468,
+              0.63,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5156690024726525,
+              0.5364443149602214,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.019100620579280525,
+              0.3893578218439764,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.20075450520388122,
+              0.28020626622532785,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.01613132454653947,
+              0.11164090452854697,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.09530446891221304,
+              0.5152266960712905,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.03210033364962238,
+              0.10360829629129802,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.03210033364962238,
+              0.10360829629129802,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8350730654549778,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "canyon-sender-cfr-high-pivot__paint_v24"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "Canyon Sender CFR MY25 high-pivot: trazado propio desde fotografías oficiales, pareja estructural y bieletas específicas; anclajes exteriores versionados cuando se documente. Fuentes y límites: models/catalog-v24/README.md. No CAD.",
+      "published": true
+    },
+    {
+      "id": "730610b2-550d-5c36-a4e2-22642690d849",
+      "kind": "glb",
+      "storage_path": "catalog/v24/canyon-sender-cfr-high-pivot/eaaf6149e2610185a7d07e0f.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "canyon-sender-cfr-high-pivot",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.437926934545022,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.495,
+              0.635,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5449389549713501,
+              0.5369892823392796,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.0026520253650834102,
+              0.39240385799475364,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.20803604614514853,
+              0.27824834642119944,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.020864335115117136,
+              0.11251738796717246,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07447403342563158,
+              0.5208234793855309,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.02774422403331321,
+              0.1044149832572812,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.02774422403331321,
+              0.1044149832572812,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8650730654549779,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "canyon-sender-cfr-high-pivot__paint_v24"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "Canyon Sender CFR MY25 high-pivot: trazado propio desde fotografías oficiales, pareja estructural y bieletas específicas; anclajes exteriores versionados cuando se documente. Fuentes y límites: models/catalog-v24/README.md. No CAD.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "157d9f48-2a33-5dd6-8c94-1764a25f25b9",
+      "component_id": "14424ba5-d74e-5c5f-a527-bd9448bde47d",
+      "label": "M · Void Black",
+      "model_year": null,
+      "generation": "High pivot",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "tire_clearance_notes",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/",
+          "consulted_at": "2026-10-19",
+          "note": "Gama actual con Sender CFR Underdog y CLLCTV",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CFR",
+        "suspension_type": "High pivot con polea",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Tune específico del cuadro; confirmar tipo de ojal, herrajes y posición de progresividad."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 34.9,
+        "tire_clearance_notes": "Paso nominal 63 mm según ficha del cuadro.",
+        "fork_restrictions": "Configuración documentada con doble pletina de 200 mm; confirmar restricciones de altura y dirección.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 468,
+          "stack_mm": 630,
+          "head_tube_mm": 105,
+          "wheelbase_mm": 1273,
+          "effective_top_tube_mm": 596,
+          "seat_tube_mm": 400,
+          "seat_angle_deg": 78.5,
+          "chainstay_mm": 438,
+          "head_angle_deg": 63,
+          "reference_position": "Tabla del Sender CFR actual, configuración MX predeterminada. Reach ajustable; no se combinan posiciones de dirección."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Void Black",
+            "image_key": null,
+            "material": {
+              "color": "#202322",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "6ec55956-08eb-510d-9daf-6ae0a6571b14",
+      "price_reference": null
+    },
+    {
+      "id": "572a6fd5-ea9c-5161-8f5e-7bb343cab5b1",
+      "component_id": "14424ba5-d74e-5c5f-a527-bd9448bde47d",
+      "label": "L · Void Black",
+      "model_year": null,
+      "generation": "High pivot",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "tire_clearance_notes",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/",
+          "consulted_at": "2026-10-19",
+          "note": "Gama actual con Sender CFR Underdog y CLLCTV",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CFR",
+        "suspension_type": "High pivot con polea",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Tune específico del cuadro; confirmar tipo de ojal, herrajes y posición de progresividad."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 34.9,
+        "tire_clearance_notes": "Paso nominal 63 mm según ficha del cuadro.",
+        "fork_restrictions": "Configuración documentada con doble pletina de 200 mm; confirmar restricciones de altura y dirección.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 495,
+          "stack_mm": 635,
+          "head_tube_mm": 110,
+          "wheelbase_mm": 1303,
+          "effective_top_tube_mm": 630,
+          "seat_tube_mm": 420,
+          "seat_angle_deg": 78,
+          "chainstay_mm": 438,
+          "head_angle_deg": 63,
+          "reference_position": "Tabla del Sender CFR actual, configuración MX predeterminada. Reach ajustable; no se combinan posiciones de dirección."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Void Black",
+            "image_key": null,
+            "material": {
+              "color": "#202322",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "730610b2-550d-5c36-a4e2-22642690d849",
+      "price_reference": null
+    }
+  ]
+}

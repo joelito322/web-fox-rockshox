@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "d6f4ef67-ac2d-5427-86c4-08193fd1c6d8",
+    "predecessor_id": "f1e192a8-6741-5f63-9719-a7eea40f579a",
+    "asset_id": "c7751186-5c5a-51ae-844b-ca33b0c6006b",
+    "file": "da-bomb-cherry-bomb-29--17in.glb",
+    "storage_path": "catalog/v16/da-bomb-cherry-bomb-29/0291e30325356016c6d21029.glb",
+    "bytes": 2118848,
+    "sha256": "0291e30325356016c6d21029633a05b5d7ec08f6b7c5f849664b7dce020dbdf2",
+    "published_at": "2026-10-21T23:56:25.098Z"
+  },
+  {
+    "variant_id": "3c539901-b81c-50f7-8228-8a78bc7d1e74",
+    "predecessor_id": "f547ff76-84d7-5791-8f2d-f1fb90223ccb",
+    "asset_id": "34f37a90-e206-57fa-8bbf-bad8ebf8187c",
+    "file": "da-bomb-cherry-bomb-29--19in.glb",
+    "storage_path": "catalog/v16/da-bomb-cherry-bomb-29/3e7e9f0fce35e9847a6ed1c8.glb",
+    "bytes": 2117656,
+    "sha256": "3e7e9f0fce35e9847a6ed1c815e615d877becc9a6b45f41b188ef58eda805859",
+    "published_at": "2026-10-21T23:56:29.985Z"
+  }
+]

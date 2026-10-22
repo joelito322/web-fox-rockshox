@@ -1,0 +1,518 @@
+[
+  {
+    "slug": "commencal-frs-v3",
+    "component": {
+      "id": "182c048b-4793-53f9-ac90-3bf1122b63e4",
+      "name": "FRS V3 \u00b7 Pure White",
+      "slug": "commencal-frs-v3",
+      "category": "frame",
+      "description": "Cuadro de freeride y descenso con ruedas de 27,5 pulgadas y 200 mm de recorrido.",
+      "technical_notes": "Referencia del cuadro Pure White 2025; conservar identidad distinta de Furious 2021. Geometr\u00eda de la ficha del cuadro, no de otra bicicleta completa.",
+      "image_key": "catalog:commencal-frs-v3",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generaci\u00f3n identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "8bb6a4a3-8474-5e54-993d-040c1a64f660",
+      "component_id": "182c048b-4793-53f9-ac90-3bf1122b63e4",
+      "label": "M \u00b7 Pure White",
+      "model_year": 2025,
+      "generation": "FRS V3 \u00b7 MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representaci\u00f3n 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T4/T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 \u00d7 8 mm / 30 \u00d7 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; m\u00e1xima 595 mm.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 465,
+          "stack_mm": 613,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 120,
+          "head_angle_deg": 64,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1248
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Pure White",
+            "image_key": null,
+            "material": {
+              "color": "#e6e6df",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "12c84a72-e1dc-50ae-abb2-4faa89db9632",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "12c84a72-e1dc-50ae-abb2-4faa89db9632",
+      "kind": "glb",
+      "storage_path": "catalog/v13/commencal-frs-v3/c8f28710b1c60d0cbbdec4f4.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-frs-v3",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.813,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.465,
+              0.613,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5176045376146893,
+              0.5051447144440999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.04855211672465759,
+              0.41462500448726214,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07255211672465758,
+              0.5546250044872622,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.24002175823562183,
+              0.3034611988103105,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.0199542268473204,
+              0.18484298086441917,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.13413411795051117,
+              0.1588571322206696,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-frs-v3__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Continuidad aditiva de uniones de direcci\u00f3n sobre v11, sin deformar los tubos ni modificar los cinco cuadros protegidos. Fuentes heredadas y l\u00edmites: models/catalog-v13/README.md. No CAD."
+    },
+    "predecessor_file": "models/catalog-v13/exports/commencal-frs-v3--m.glb"
+  },
+  {
+    "slug": "commencal-frs-v3",
+    "component": {
+      "id": "182c048b-4793-53f9-ac90-3bf1122b63e4",
+      "name": "FRS V3 \u00b7 Pure White",
+      "slug": "commencal-frs-v3",
+      "category": "frame",
+      "description": "Cuadro de freeride y descenso con ruedas de 27,5 pulgadas y 200 mm de recorrido.",
+      "technical_notes": "Referencia del cuadro Pure White 2025; conservar identidad distinta de Furious 2021. Geometr\u00eda de la ficha del cuadro, no de otra bicicleta completa.",
+      "image_key": "catalog:commencal-frs-v3",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generaci\u00f3n identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "4c593aba-2e25-5dd9-b328-acf6f44542cc",
+      "component_id": "182c048b-4793-53f9-ac90-3bf1122b63e4",
+      "label": "L \u00b7 Pure White",
+      "model_year": 2025,
+      "generation": "FRS V3 \u00b7 MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representaci\u00f3n 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T4/T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 \u00d7 8 mm / 30 \u00d7 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; m\u00e1xima 595 mm.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 490,
+          "stack_mm": 613,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 125,
+          "head_angle_deg": 64,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1273
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Pure White",
+            "image_key": null,
+            "material": {
+              "color": "#e6e6df",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b299f5f5-fa02-5b05-8051-8f4c1f3ec0a0",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "b299f5f5-fa02-5b05-8051-8f4c1f3ec0a0",
+      "kind": "glb",
+      "storage_path": "catalog/v13/commencal-frs-v3/2670f907e222b9b0a0956935.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-frs-v3",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8379999999999999,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.49,
+              0.613,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5447963933486347,
+              0.5006507442126041,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.031642450962534374,
+              0.41462500448726214,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.055642450962534375,
+              0.5546250044872622,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.25239782670260025,
+              0.3034611988103105,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.031268480928079156,
+              0.18683439041133093,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.14061279381595446,
+              0.1588571322206696,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-frs-v3__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Continuidad aditiva de uniones de direcci\u00f3n sobre v11, sin deformar los tubos ni modificar los cinco cuadros protegidos. Fuentes heredadas y l\u00edmites: models/catalog-v13/README.md. No CAD."
+    },
+    "predecessor_file": "models/catalog-v13/exports/commencal-frs-v3--l.glb"
+  }
+]

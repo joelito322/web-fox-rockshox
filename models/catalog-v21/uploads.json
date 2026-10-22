@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "2b9b3789-c518-5ee5-9d74-6aedbfd8d7fa",
+    "predecessor_id": "1651a012-e431-52e9-95d1-1066119a0a06",
+    "asset_id": "ad657a60-e520-5ba9-9206-ff16a058acfc",
+    "file": "commencal-meta-sx-v5--m.glb",
+    "storage_path": "catalog/v21/commencal-meta-sx-v5/0a56bfd99b4e7aa8a2f39664.glb",
+    "bytes": 2950144,
+    "sha256": "0a56bfd99b4e7aa8a2f39664473d184dda1ba450a03734a861218817252dd33d",
+    "published_at": "2026-10-22T01:04:25.308Z"
+  },
+  {
+    "variant_id": "3ea648a2-ad8f-5ebf-ab6a-a7b70f742a88",
+    "predecessor_id": "bd447ce4-2e85-5d1e-bc8f-866daf695940",
+    "asset_id": "e92be71e-b4f1-5f3d-8ec9-ad82e08d1517",
+    "file": "commencal-meta-sx-v5--l.glb",
+    "storage_path": "catalog/v21/commencal-meta-sx-v5/4e7018ed25b0f861683fb4e8.glb",
+    "bytes": 2955752,
+    "sha256": "4e7018ed25b0f861683fb4e8026bd668fd63bdcf448ab6c47196e022f7b150fc",
+    "published_at": "2026-10-22T01:04:30.197Z"
+  }
+]

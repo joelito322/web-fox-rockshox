@@ -1,0 +1,543 @@
+{
+  "brands": [
+    {
+      "id": "5f31a398-ec2c-5566-8807-c8f9b5a2e384",
+      "name": "YT Industries",
+      "slug": "yt-industries",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "c6f0029e-434f-51a2-9d1e-601c735608da",
+      "name": "CAPRA MK3 Carbon MX",
+      "slug": "yt-capra-mk3-carbon-mx",
+      "category": "frame",
+      "description": "Cuadro de enduro de carbono con 170 mm de recorrido trasero y ruedas MX.",
+      "technical_notes": "Geometría MX en posición baja del documento del fabricante; no intercambiar cotas con CAPRA 29.",
+      "image_key": "catalog:yt-capra-mk3-carbon-mx",
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "brand_id": "5f31a398-ec2c-5566-8807-c8f9b5a2e384",
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "442d4dd0-bd67-5040-b253-1c9b2eb7f047",
+      "kind": "glb",
+      "storage_path": "catalog/v15/yt-capra-mk3-carbon-mx/b93b9521a6d80a2801248575.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-capra-mk3-carbon-mx",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.79,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.444,
+              0.636,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.4922208261467985,
+              0.5371326549070916,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.03453190786978999,
+              0.4124590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.05853190786978999,
+              0.5524590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.21430439282480007,
+              0.347321523369364,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.009955352033938852,
+              0.24176836364472604,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.04511267794130114,
+              0.17595751268061793,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-capra-mk3-carbon-mx__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "CAPRA MK3 Carbon MX: trayectos completos rectos con desvíos locales según fotografías MK3 MX, conservando anclajes y los otros catorce cuadros. Fuentes heredadas y límites: models/catalog-v15/README.md. No CAD."
+    },
+    {
+      "id": "b4faeaeb-fad3-504f-930e-30803b95316b",
+      "kind": "glb",
+      "storage_path": "catalog/v15/yt-capra-mk3-carbon-mx/56a4f59df3dc10465fe02557.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-capra-mk3-carbon-mx",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.81,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.464,
+              0.636,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5122208261467985,
+              0.5371326549070916,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.02156149820887665,
+              0.4124590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.04556149820887665,
+              0.5524590272170449,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.22522645330811342,
+              0.347321523369364,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.02019156007450909,
+              0.24310687681387988,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.03957942282555843,
+              0.17595751268061793,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-capra-mk3-carbon-mx__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "CAPRA MK3 Carbon MX: trayectos completos rectos con desvíos locales según fotografías MK3 MX, conservando anclajes y los otros catorce cuadros. Fuentes heredadas y límites: models/catalog-v15/README.md. No CAD."
+    }
+  ],
+  "variants": [
+    {
+      "id": "cbba3208-6f58-57db-8cce-a3fb32f2289a",
+      "component_id": "c6f0029e-434f-51a2-9d1e-601c735608da",
+      "label": "M · Deep Green",
+      "model_year": 2025,
+      "generation": "MK3 · MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.mtb-news.de/news/wp-content/uploads/2024/11/capra-core-4.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Documento original de YT alojado por MTB-News: tabla MX Low, no tabla 29.",
+          "fields": [
+            "specs.geometry",
+            "specs.rear_travel_mm"
+          ]
+        },
+        {
+          "url": "https://www.yt-industries.com/media/1c/a7/6f/1729759076/CAPRA-MK3-CF-29-MX-TECHNICAL_INFORMATION_CUSTOMER_210518.pdf?ts=1729759076",
+          "consulted_at": "2026-10-21",
+          "note": "Despiece oficial MK3 CF: herrajes, pedalier, dirección y tija.",
+          "fields": [
+            "specs.shock_fit",
+            "specs.bb_shell",
+            "specs.headset_standard",
+            "specs.seatpost_diameter_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Herrajes delantero 8 × 20 mm y trasero 8 × 15 mm."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "headset_standard": "ZS44/ZS56",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 35.6,
+        "brake_mount": "Post Mount 180",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 444,
+          "stack_mm": 636,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 110,
+          "head_angle_deg": 64,
+          "chainstay_mm": 433,
+          "wheelbase_mm": 1223,
+          "bb_height_mm": 346,
+          "reference_position": "MX · Low"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Deep Green",
+            "image_key": null,
+            "material": {
+              "color": "#14554e",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "442d4dd0-bd67-5040-b253-1c9b2eb7f047",
+      "price_reference": null
+    },
+    {
+      "id": "d15d48d6-a32d-5904-8ce7-b3d35af86160",
+      "component_id": "c6f0029e-434f-51a2-9d1e-601c735608da",
+      "label": "L · Deep Green",
+      "model_year": 2025,
+      "generation": "MK3 · MY25",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.mtb-news.de/news/wp-content/uploads/2024/11/capra-core-4.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Documento original de YT alojado por MTB-News: tabla MX Low, no tabla 29.",
+          "fields": [
+            "specs.geometry",
+            "specs.rear_travel_mm"
+          ]
+        },
+        {
+          "url": "https://www.yt-industries.com/media/1c/a7/6f/1729759076/CAPRA-MK3-CF-29-MX-TECHNICAL_INFORMATION_CUSTOMER_210518.pdf?ts=1729759076",
+          "consulted_at": "2026-10-21",
+          "note": "Despiece oficial MK3 CF: herrajes, pedalier, dirección y tija.",
+          "fields": [
+            "specs.shock_fit",
+            "specs.bb_shell",
+            "specs.headset_standard",
+            "specs.seatpost_diameter_mm"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Herrajes delantero 8 × 20 mm y trasero 8 × 15 mm."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "headset_standard": "ZS44/ZS56",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 35.6,
+        "brake_mount": "Post Mount 180",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 464,
+          "stack_mm": 636,
+          "seat_tube_mm": 445,
+          "head_tube_mm": 110,
+          "head_angle_deg": 64,
+          "chainstay_mm": 433,
+          "wheelbase_mm": 1243,
+          "bb_height_mm": 346,
+          "reference_position": "MX · Low"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Deep Green",
+            "image_key": null,
+            "material": {
+              "color": "#14554e",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b4faeaeb-fad3-504f-930e-30803b95316b",
+      "price_reference": null
+    }
+  ]
+}

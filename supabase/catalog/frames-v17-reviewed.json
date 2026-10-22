@@ -1,0 +1,505 @@
+{
+  "brands": [
+    {
+      "id": "0558b2fa-df7b-5566-8f16-4b4a4ec69b4f",
+      "name": "GT",
+      "slug": "gt",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "92e85ddb-2dea-58d9-afcb-9772c0443530",
+      "name": "Force Carbon · High Pivot",
+      "slug": "gt-force-carbon-high-pivot",
+      "category": "frame",
+      "description": "Cuadro de enduro con 160 mm de recorrido, ruedas de 29 pulgadas y polea de reenvío.",
+      "technical_notes": "Generación histórica documentada por GT; no se presenta como lanzamiento actual. Geometría en ajuste corto de vainas.",
+      "image_key": "catalog:gt-force-carbon-high-pivot",
+      "disciplines": [
+        "enduro"
+      ],
+      "published": true,
+      "brand_id": "0558b2fa-df7b-5566-8f16-4b4a4ec69b4f",
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/force-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "f0234046-d8d5-562b-b179-233044e8638b",
+      "kind": "glb",
+      "storage_path": "catalog/v17/gt-force-carbon-high-pivot/c8e2d27b06480c8e3a7183d1.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-force-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433964284244683,
+              0.03,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8060357157553171,
+              0.030000000000000027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.636,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5085437375731771,
+              0.528607876607757,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.07908366764814273,
+              0.4229063347175827,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.10308366764814272,
+              0.5629063347175827,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.09365934433109126,
+              0.2859693244930906,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.05639873329802628,
+              0.059007550474991566,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.030518016764800898,
+              0.10057325386591397,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.030518016764800898,
+              0.10057325386591397,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-force-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "GT Force Carbon High Pivot: perfiles propios de carbono, triángulo GT y bieleta calada; conserva anclajes y los otros catorce cuadros. Fuentes heredadas y límites: models/catalog-v17/README.md. No CAD."
+    },
+    {
+      "id": "1d7bc29a-a059-5ded-9dcb-2f99b5ece29f",
+      "kind": "glb",
+      "storage_path": "catalog/v17/gt-force-carbon-high-pivot/d3e436b8d736dd414ff650d8.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-force-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.433964284244683,
+              0.03,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8360357157553171,
+              0.030000000000000027,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.645,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5380057157042751,
+              0.5286585329917367,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.06344816520624569,
+              0.42853511559666563,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.08744816520624568,
+              0.5685351155966656,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.10461305489775351,
+              0.289912660297089,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.05965083961043454,
+              0.06435025386273482,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.026829990690823105,
+              0.10190094325254598,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.026829990690823105,
+              0.10190094325254598,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-force-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "GT Force Carbon High Pivot: perfiles propios de carbono, triángulo GT y bieleta calada; conserva anclajes y los otros catorce cuadros. Fuentes heredadas y límites: models/catalog-v17/README.md. No CAD."
+    }
+  ],
+  "variants": [
+    {
+      "id": "b62a04fb-f792-596c-8b18-26cedda96f00",
+      "component_id": "92e85ddb-2dea-58d9-afcb-9772c0443530",
+      "label": "M · Negro / dorado",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY22–24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/force-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 160,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65
+        },
+        "rear_axle_standard": "12x148",
+        "headset_standard": "FSA No.57",
+        "fork_restrictions": "Recorrido delantero de referencia: 170 mm.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 455,
+          "stack_mm": 636,
+          "seat_tube_mm": 410,
+          "head_tube_mm": 120,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1240,
+          "bb_drop_mm": 30,
+          "bb_height_mm": 347
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / dorado",
+            "image_key": null,
+            "material": {
+              "color": "#222827",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f0234046-d8d5-562b-b179-233044e8638b",
+      "price_reference": null
+    },
+    {
+      "id": "c7b5735f-10c2-5518-af6d-e1f1068335a2",
+      "component_id": "92e85ddb-2dea-58d9-afcb-9772c0443530",
+      "label": "L · Negro / dorado",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY22–24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/force-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 160,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65
+        },
+        "rear_axle_standard": "12x148",
+        "headset_standard": "FSA No.57",
+        "fork_restrictions": "Recorrido delantero de referencia: 170 mm.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 480,
+          "stack_mm": 645,
+          "seat_tube_mm": 445,
+          "head_tube_mm": 130,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1270,
+          "bb_drop_mm": 30,
+          "bb_height_mm": 347
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Negro / dorado",
+            "image_key": null,
+            "material": {
+              "color": "#222827",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "1d7bc29a-a059-5ded-9dcb-2f99b5ece29f",
+      "price_reference": null
+    }
+  ]
+}

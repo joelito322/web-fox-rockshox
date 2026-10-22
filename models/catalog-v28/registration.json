@@ -1,0 +1,43 @@
+{
+  "schema": "atlas-tues-photo-registration-v28",
+  "source_image": "models/catalog-v10/references/images/yt-tues-mk4-carbon-3.png",
+  "source_dimensions": [2300, 1400],
+  "normalized_width": 2048,
+  "normalized_height": 1246.608695652174,
+  "source_pixels_per_normalized_pixel": 1.123046875,
+  "landmarks": {
+    "bottom_bracket": [850, 817],
+    "rear_axle": [443, 824],
+    "head_center": [1258, 293],
+    "seat_top": [827.6591304347826, 482.615652173913],
+    "seat_direction_base": [855, 539],
+    "shock_upper": [1023, 563],
+    "shock_lower": [899, 746],
+    "suspension_pivot": [997, 687],
+    "front_axle": [1572.591304347826, 794.2678260869565]
+  },
+  "registration": {
+    "method": "uniform similarity from bottom bracket and rear axle",
+    "base_rear_distance_mm": 448,
+    "scale_m_per_normalized_pixel_at_448mm": 0.0011005743344212559,
+    "size_policy": "Uniform scale by actual rear-anchor distance / 448mm; rigid rotation to the actual rear vector. Rear anchor is preserved exactly. No affine shear or independent reach/stack deformation.",
+    "head_policy": "Estimated 110mm head length and inherited head-axis direction centered on photographed head-center landmark; partly occluded by fork, not CAD metrology.",
+    "saddle_policy": "Seat opening center is the midpoint of the photographed white/black collar boundary, native endpoints approximately [915,550] and [944,534], midpoint [929.5,542] => normalized [827.6591,482.6157]. The previous [815,480] marked the left edge, not the opening center. Seat tangent follows the visible post toward normalized [855,539]; saddle reference length is retained. Perspective and occlusion make these visual estimates.",
+    "shock_policy": "Keep commercial 250mm eye distance; symmetrically extend the photographed eye axis about its midpoint. Photo trace is approximately 243.3mm, a 2.8 percent visual adjustment, not a commercial dimension change.",
+    "front_axle_evidence": "Visible center approximately [1766,892] in original 2300x1400 photo; image inspection crop x1620,y800,width220,height200. Estimated perspective landmark.",
+    "limits": "Photographic perspective and unknown source size prevent exact dimensional certification. Hidden head axis and all new anchor locations remain explicitly estimated. No changes to commercial specs or previous resources."
+  },
+  "estimated_head_length_mm": 110,
+  "commercial_shock_eye_distance_mm": 250,
+  "changed_anchor_fields": [
+    "head_tube",
+    "head_tube_lower",
+    "seat_tube",
+    "saddle",
+    "shock_upper",
+    "shock_lower",
+    "suspension_pivot",
+    "front_axle"
+  ],
+  "unchanged_anchor_fields": ["rear_axle"]
+}

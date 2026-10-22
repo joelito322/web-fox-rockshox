@@ -1,0 +1,274 @@
+{
+  "image_landmarks": {
+    "bottom_bracket": [
+      554,
+      671
+    ],
+    "head_top": [
+      1069,
+      78
+    ],
+    "rear_axle": [
+      104,
+      645
+    ],
+    "seat_top": [
+      507,
+      240
+    ],
+    "shock_upper": [
+      796,
+      285
+    ],
+    "shock_lower": [
+      600,
+      397
+    ],
+    "seat_pivot": [
+      582,
+      425
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          540,
+          380
+        ],
+        [
+          725,
+          277
+        ],
+        [
+          950,
+          151
+        ],
+        [
+          1069,
+          100
+        ]
+      ],
+      "height_mm": [
+        17,
+        17,
+        18,
+        25
+      ],
+      "width_mm": 21,
+      "corners_mm": [
+        0,
+        0,
+        22,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          554,
+          671
+        ],
+        [
+          626,
+          654
+        ],
+        [
+          686,
+          634
+        ],
+        [
+          717,
+          611
+        ],
+        [
+          1000,
+          273
+        ],
+        [
+          1091,
+          160
+        ]
+      ],
+      "height_mm": [
+        27,
+        32,
+        34,
+        32,
+        30,
+        25
+      ],
+      "width_mm": 30,
+      "corners_mm": [
+        0,
+        55,
+        55,
+        40,
+        0,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          554,
+          671
+        ],
+        [
+          558,
+          581
+        ],
+        [
+          559,
+          512
+        ],
+        [
+          545,
+          422
+        ],
+        [
+          507,
+          240
+        ]
+      ],
+      "height_mm": [
+        20,
+        21,
+        22,
+        21,
+        18
+      ],
+      "width_mm": 20,
+      "corners_mm": [
+        0,
+        45,
+        45,
+        35,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          104,
+          645
+        ],
+        [
+          138,
+          607
+        ],
+        [
+          181,
+          589
+        ],
+        [
+          567,
+          426
+        ]
+      ],
+      "height_mm": [
+        14,
+        14,
+        13,
+        17
+      ],
+      "width_mm": 11,
+      "corners_mm": [
+        0,
+        18,
+        20,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          104,
+          645
+        ],
+        [
+          167,
+          647
+        ],
+        [
+          455,
+          657
+        ],
+        [
+          480,
+          648
+        ],
+        [
+          585,
+          601
+        ]
+      ],
+      "height_mm": [
+        14,
+        13,
+        14,
+        16,
+        18
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        0,
+        18,
+        18,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "rear_upright",
+      "path": [
+        [
+          585,
+          426
+        ],
+        [
+          597,
+          465
+        ],
+        [
+          588,
+          558
+        ],
+        [
+          591,
+          594
+        ]
+      ],
+      "height_mm": [
+        18,
+        17,
+        16,
+        19
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        28,
+        30,
+        0
+      ],
+      "paired": true
+    }
+  ],
+  "notes": [
+    "Individual META SX V5 profile, using its own frame photograph and VCS exploded drawings.",
+    "Corners round only actual local deviations; exact welded profiles and depths remain inferred.",
+    "Old VCS links and clevis are retained intact; fixed shock upper support and moving lower eye remain distinct.",
+    "Original anchors are retained, not recalibrated into measured CAD."
+  ]
+}

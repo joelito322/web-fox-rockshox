@@ -1,0 +1,6 @@
+{
+  "withdrawn_at": "2026-10-21T21:30:50.392521+00:00",
+  "reason": "User requested reverting the last head-tube change; restore v11 selections.",
+  "restored_version": "v11",
+  "resources_retained_for_saved_builds": true
+}

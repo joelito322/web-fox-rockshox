@@ -1,0 +1,441 @@
+{
+  "brands": [
+    {
+      "id": "5f31a398-ec2c-5566-8807-c8f9b5a2e384",
+      "name": "YT Industries",
+      "slug": "yt-industries",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "bdbbeacf-6e41-5561-bed8-301ef62ddf81",
+      "name": "TUES MK4 Carbon",
+      "slug": "yt-tues-mk4-carbon",
+      "category": "frame",
+      "description": "Cuadro de descenso de carbono, 200 mm de recorrido y suspensión V4L.",
+      "technical_notes": "Talla M en MX y L en 29 conforme a la distribución de la ficha actual. Cotas no confirmadas se omiten.",
+      "image_key": "catalog:yt-tues-mk4-carbon",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "5f31a398-ec2c-5566-8807-c8f9b5a2e384",
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        },
+        {
+          "url": "https://www.yt-industries.com/media/3d/79/02/1726468232/RTFM-TUES-MK4-MY2024.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Manual MK4: arquitectura, montaje y piezas específicas; no usar geometría MK3.",
+          "fields": [
+            "generation"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "75c88528-c335-5e71-b417-38af390f9854",
+      "kind": "glb",
+      "storage_path": "catalog/v27/yt-tues-mk4-carbon/5789ec170bd2140650cf5254.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-tues-mk4-carbon",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.448,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8069999999999999,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.64,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.504081759442079,
+              0.5415572202237773,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.01760418202755426,
+              0.4017079374021391,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.03744489934945533,
+              0.5423576652232496,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.1657921702966688,
+              0.3017554905680698,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.025099544374297067,
+              0.09510219393076089,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.12515799000886446,
+              0.15574639416106772,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-tues-mk4-carbon__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "YT TUES MK4 Carbon: silueta propia, V4L / Flip Link exterior, pares de brazos y soportes específicos. Fuentes y límites: models/catalog-v27/README.md. No CAD."
+    },
+    {
+      "id": "5ec7a534-d0eb-5852-be0d-74bcf25eeef6",
+      "kind": "glb",
+      "storage_path": "catalog/v27/yt-tues-mk4-carbon/46137f9102a2d7201032fd5a.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "yt-tues-mk4-carbon",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.44730191146472875,
+              0.025,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8326980885352713,
+              0.025000000000000022,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.648,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5290817594420789,
+              0.5495572202237773,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.0014400196298902102,
+              0.4236485622209151,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.014869633153802944,
+              0.565054522069142,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.17765543795803818,
+              0.308247139768199,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.032944232990696404,
+              0.10438770987372492,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.13121934504817945,
+              0.15688786482971162,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "yt-tues-mk4-carbon__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "YT TUES MK4 Carbon: silueta propia, V4L / Flip Link exterior, pares de brazos y soportes específicos. Fuentes y límites: models/catalog-v27/README.md. No CAD."
+    }
+  ],
+  "variants": [
+    {
+      "id": "dac3a875-4264-5bb7-90ff-a1fcec38d494",
+      "component_id": "bdbbeacf-6e41-5561-bed8-301ef62ddf81",
+      "label": "M · Shell White",
+      "model_year": null,
+      "generation": "MK4 · 2024–actual",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "size_label"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "size_label": "M"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Shell White",
+            "image_key": null,
+            "material": {
+              "color": "#e2e0d4",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "75c88528-c335-5e71-b417-38af390f9854",
+      "price_reference": null
+    },
+    {
+      "id": "896a0017-b2ed-5db9-b96c-3056ee722413",
+      "component_id": "bdbbeacf-6e41-5561-bed8-301ef62ddf81",
+      "label": "L · Shell White",
+      "model_year": null,
+      "generation": "MK4 · 2024–actual",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "size_label"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Ultra Modulus Carbon",
+        "suspension_type": "V4L",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 200,
+        "size_label": "L"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Shell White",
+            "image_key": null,
+            "material": {
+              "color": "#e2e0d4",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "5ec7a534-d0eb-5852-be0d-74bcf25eeef6",
+      "price_reference": null
+    }
+  ]
+}

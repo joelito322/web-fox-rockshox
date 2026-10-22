@@ -1,0 +1,532 @@
+{
+  "model": "specialized-s-works-enduro-udh",
+  "image_landmarks": {
+    "bottom_bracket": [
+      529,
+      904
+    ],
+    "head_top": [
+      1087,
+      278
+    ],
+    "rear_axle": [
+      58,
+      855
+    ],
+    "seat_top": [
+      500,
+      444
+    ],
+    "shock_upper": [
+      726,
+      725
+    ],
+    "shock_lower": [
+      529,
+      794
+    ],
+    "pivot": [
+      608,
+      677
+    ]
+  },
+  "reference_coordinate_space": {
+    "width": 1200,
+    "height": 1200
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          523,
+          508
+        ],
+        [
+          557,
+          505
+        ],
+        [
+          1049,
+          307
+        ],
+        [
+          1091,
+          309
+        ]
+      ],
+      "height_mm": [
+        21,
+        19,
+        20,
+        22
+      ],
+      "width_mm": 23,
+      "corners_mm": [
+        0,
+        15,
+        20,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          529,
+          904
+        ],
+        [
+          688,
+          846
+        ],
+        [
+          751,
+          811
+        ],
+        [
+          786,
+          758
+        ],
+        [
+          1040,
+          390
+        ],
+        [
+          1080,
+          365
+        ],
+        [
+          1118,
+          347
+        ]
+      ],
+      "height_mm": [
+        25,
+        32,
+        39,
+        36,
+        31,
+        29,
+        25
+      ],
+      "width_mm": 35,
+      "corners_mm": [
+        0,
+        30,
+        40,
+        30,
+        25,
+        18,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          500,
+          444
+        ],
+        [
+          545,
+          567
+        ],
+        [
+          587,
+          669
+        ],
+        [
+          611,
+          730
+        ],
+        [
+          629,
+          795
+        ],
+        [
+          650,
+          826
+        ],
+        [
+          676,
+          832
+        ],
+        [
+          701,
+          823
+        ],
+        [
+          720,
+          798
+        ],
+        [
+          726,
+          746
+        ],
+        [
+          726,
+          725
+        ]
+      ],
+      "height_mm": [
+        18,
+        19,
+        19,
+        22,
+        22,
+        20,
+        19,
+        19,
+        17,
+        13,
+        14
+      ],
+      "width_mm": 26,
+      "corners_mm": [
+        0,
+        0,
+        18,
+        20,
+        15,
+        15,
+        13,
+        12,
+        15,
+        15,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          106,
+          873
+        ],
+        [
+          360,
+          899
+        ],
+        [
+          426,
+          903
+        ],
+        [
+          451,
+          885
+        ],
+        [
+          486,
+          855
+        ],
+        [
+          619,
+          846
+        ]
+      ],
+      "height_mm": [
+        13,
+        19,
+        24,
+        22,
+        18,
+        18
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        0,
+        17,
+        13,
+        17,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          58,
+          855
+        ],
+        [
+          118,
+          829
+        ],
+        [
+          437,
+          669
+        ],
+        [
+          461,
+          656
+        ],
+        [
+          478,
+          652
+        ]
+      ],
+      "height_mm": [
+        13,
+        12,
+        14,
+        14,
+        15
+      ],
+      "width_mm": 11,
+      "corners_mm": [
+        0,
+        10,
+        10,
+        7,
+        0
+      ],
+      "paired": true
+    }
+  ],
+  "links": [
+    {
+      "name": "upper",
+      "outer": [
+        [
+          466,
+          645
+        ],
+        [
+          481,
+          636
+        ],
+        [
+          512,
+          642
+        ],
+        [
+          578,
+          649
+        ],
+        [
+          595,
+          636
+        ],
+        [
+          611,
+          634
+        ],
+        [
+          624,
+          658
+        ],
+        [
+          625,
+          681
+        ],
+        [
+          616,
+          694
+        ],
+        [
+          594,
+          696
+        ],
+        [
+          582,
+          686
+        ],
+        [
+          512,
+          676
+        ],
+        [
+          497,
+          685
+        ],
+        [
+          480,
+          677
+        ],
+        [
+          469,
+          659
+        ]
+      ],
+      "holes": [
+        [
+          478,
+          652
+        ],
+        [
+          504,
+          677
+        ],
+        [
+          608,
+          677
+        ]
+      ],
+      "depth_mm": 12,
+      "half_separation_mm": 35
+    },
+    {
+      "name": "mid",
+      "outer": [
+        [
+          489,
+          670
+        ],
+        [
+          503,
+          663
+        ],
+        [
+          514,
+          677
+        ],
+        [
+          509,
+          705
+        ],
+        [
+          505,
+          783
+        ],
+        [
+          508,
+          804
+        ],
+        [
+          505,
+          822
+        ],
+        [
+          490,
+          830
+        ],
+        [
+          479,
+          817
+        ],
+        [
+          485,
+          795
+        ],
+        [
+          488,
+          701
+        ]
+      ],
+      "holes": [
+        [
+          504,
+          677
+        ],
+        [
+          490,
+          817
+        ]
+      ],
+      "depth_mm": 10,
+      "half_separation_mm": 48
+    },
+    {
+      "name": "lower",
+      "outer": [
+        [
+          479,
+          810
+        ],
+        [
+          491,
+          801
+        ],
+        [
+          510,
+          807
+        ],
+        [
+          531,
+          819
+        ],
+        [
+          570,
+          825
+        ],
+        [
+          613,
+          833
+        ],
+        [
+          631,
+          838
+        ],
+        [
+          633,
+          851
+        ],
+        [
+          618,
+          862
+        ],
+        [
+          569,
+          851
+        ],
+        [
+          528,
+          843
+        ],
+        [
+          505,
+          832
+        ],
+        [
+          489,
+          831
+        ]
+      ],
+      "holes": [
+        [
+          490,
+          817
+        ],
+        [
+          619,
+          846
+        ]
+      ],
+      "depth_mm": 12,
+      "half_separation_mm": 35
+    }
+  ],
+  "extension": {
+    "from": [
+      529,
+      794
+    ],
+    "to": [
+      570,
+      829
+    ]
+  },
+  "link_mask": {
+    "min": [
+      450,
+      620
+    ],
+    "max": [
+      640,
+      870
+    ],
+    "padding_m": 0.006
+  },
+  "notes": [
+    "Own Enduro 2025 UDH profile, main photo 1200x1200. Three 2025 official perspectives and current manual exploded diagram read, not an older 2020 frame substitution.",
+    "Forward shock support is fixed in the downtube; rear eye follows a distinct extension from the lower link. Upper, mid and lower links stay separate from the painted frame.",
+    "Lower chainstays meet a Horst pivot below and in front of the rear axle; paired structural members are completed, not unilateral brake/hanger duplication.",
+    "Hidden depth, carbon shoulder radii, lettering and transverse contours estimated; no exact CAD or 100 percent correspondence."
+  ]
+}

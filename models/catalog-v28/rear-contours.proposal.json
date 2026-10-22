@@ -1,0 +1,939 @@
+{
+  "schema": "atlas-tues-mk4-rear-contour-proposal-v3",
+  "status": "independent visual audit proposal; parent must overlay against photograph before geometry acceptance",
+  "source": {
+    "image": "models/catalog-v9/references/tues.webp",
+    "width": 2300,
+    "height": 1400,
+    "official_lateral": "models/catalog-v10/references/images/yt-tues-mk4-carbon-3.png",
+    "opposite": "models/catalog-v10/references/images/yt-tues-mk4-carbon-4.png",
+    "manual": "models/catalog-v26/references/manual.pdf",
+    "manual_printed_page": 31,
+    "detail_images": [
+      "models/catalog-v10/references/images/yt-tues-mk4-carbon-0.png",
+      "models/catalog-v10/references/images/yt-tues-mk4-carbon-2.png"
+    ],
+    "video_detail": "models/catalog-v26/references/workshop-470.jpg"
+  },
+  "coordinate_system": "Native official lateral image pixels2300\u00d71400, x right/y down. Initial display-scale hand trace2048px converted by2300/2048; parent MUST check visual overlay against native image before accepting. No world/anchor transform applied.",
+  "landmarks": {
+    "rear_axle": [
+      497.5,
+      925.4
+    ],
+    "horst_pivot": [
+      599.7,
+      925.4
+    ],
+    "main_pivot": [
+      959.1,
+      835.5
+    ],
+    "stay_link_eye": [
+      1009.6,
+      758.1
+    ],
+    "front_link_eye": [
+      1119.7,
+      771.5
+    ],
+    "lower_shock_eye": [
+      1009.6,
+      837.8
+    ],
+    "seat_top": [
+      915.3,
+      539.1
+    ],
+    "bottom_bracket": [
+      954.6,
+      917.5
+    ]
+  },
+  "contours": [
+    {
+      "name": "seat_stay",
+      "role": "paired structural member; broad molded lateral faces, straight long upper run and localized shoulder into link",
+      "outer": [
+        [
+          484.0,
+          914.2
+        ],
+        [
+          500.9,
+          895.1
+        ],
+        [
+          543.6,
+          877.1
+        ],
+        [
+          617.7,
+          835.5
+        ],
+        [
+          673.8,
+          825.4
+        ],
+        [
+          730.0,
+          807.5
+        ],
+        [
+          786.1,
+          789.5
+        ],
+        [
+          842.3,
+          769.3
+        ],
+        [
+          876.0,
+          756.9
+        ],
+        [
+          920.9,
+          742.3
+        ],
+        [
+          954.6,
+          730.0
+        ],
+        [
+          991.7,
+          731.1
+        ],
+        [
+          1015.2,
+          735.6
+        ],
+        [
+          1028.7,
+          749.1
+        ],
+        [
+          1028.7,
+          769.3
+        ],
+        [
+          1014.1,
+          786.1
+        ],
+        [
+          982.7,
+          798.5
+        ],
+        [
+          920.9,
+          798.5
+        ],
+        [
+          876.0,
+          797.4
+        ],
+        [
+          842.3,
+          800.7
+        ],
+        [
+          786.1,
+          819.8
+        ],
+        [
+          730.0,
+          842.3
+        ],
+        [
+          673.8,
+          865.9
+        ],
+        [
+          617.7,
+          886.1
+        ],
+        [
+          561.5,
+          911.9
+        ],
+        [
+          540.2,
+          934.4
+        ],
+        [
+          504.2,
+          942.2
+        ],
+        [
+          487.4,
+          936.6
+        ]
+      ],
+      "half_depth_mm_estimated": 12,
+      "side_center_mm_estimated": 50,
+      "section": "rounded rectangle, flat lateral middle face with softly chamfered perimeter, not ellipse",
+      "occlusion": "rear axle and inner edge partially obscured by cassette/brake; use official highlight0/2 and manual31 as topology"
+    },
+    {
+      "name": "chain_stay",
+      "role": "paired lower swingarm; broad lower edge and shaped rise at front pivot; keep independent from front triangle",
+      "outer": [
+        [
+          584.0,
+          908.5
+        ],
+        [
+          619.9,
+          907.4
+        ],
+        [
+          673.8,
+          909.7
+        ],
+        [
+          730.0,
+          908.5
+        ],
+        [
+          786.1,
+          906.3
+        ],
+        [
+          842.3,
+          904.1
+        ],
+        [
+          876.0,
+          886.1
+        ],
+        [
+          898.4,
+          869.2
+        ],
+        [
+          928.8,
+          845.7
+        ],
+        [
+          942.2,
+          819.8
+        ],
+        [
+          960.2,
+          815.3
+        ],
+        [
+          978.2,
+          824.3
+        ],
+        [
+          983.8,
+          840.0
+        ],
+        [
+          977.1,
+          865.9
+        ],
+        [
+          959.1,
+          900.7
+        ],
+        [
+          932.1,
+          929.9
+        ],
+        [
+          899.6,
+          938.9
+        ],
+        [
+          876.0,
+          938.9
+        ],
+        [
+          842.3,
+          938.9
+        ],
+        [
+          786.1,
+          938.9
+        ],
+        [
+          730.0,
+          938.9
+        ],
+        [
+          673.8,
+          938.9
+        ],
+        [
+          618.8,
+          941.1
+        ],
+        [
+          594.1,
+          941.1
+        ],
+        [
+          582.9,
+          929.9
+        ]
+      ],
+      "half_depth_mm_estimated": 12,
+      "side_center_mm_estimated": 49,
+      "section": "flattened carbon face with protected inner upper shelf, separate round mechanical pivots",
+      "occlusion": "main pivot front rise and BB adjacency partly hidden by crank; contour is proposal supported by opposite/rear photo"
+    },
+    {
+      "name": "dropout_connection",
+      "role": "integrated reinforced seatstay end and separate horst end below/front; axle insert not enormous thin detached plate",
+      "outer": [
+        [
+          480.7,
+          914.2
+        ],
+        [
+          498.6,
+          898.4
+        ],
+        [
+          524.5,
+          899.6
+        ],
+        [
+          545.8,
+          915.3
+        ],
+        [
+          590.7,
+          908.5
+        ],
+        [
+          607.6,
+          910.8
+        ],
+        [
+          617.7,
+          920.9
+        ],
+        [
+          612.1,
+          941.1
+        ],
+        [
+          591.8,
+          947.9
+        ],
+        [
+          553.7,
+          944.5
+        ],
+        [
+          529.0,
+          941.1
+        ],
+        [
+          499.8,
+          941.1
+        ],
+        [
+          482.9,
+          934.4
+        ]
+      ],
+      "half_depth_mm_estimated": 13,
+      "notes": [
+        "Do not merge seatstay and chainstay across their pivot mechanically.",
+        "UDH hanger drive side only; brake base other side.",
+        "Actual rear axle insert is elongated with distinct face, manual16\u201318."
+      ]
+    },
+    {
+      "name": "seat_tube_front_triangle",
+      "role": "front triangle molded spine with broad side face; not cylindrical straight tube down to BB",
+      "outer": [
+        [
+          896.2,
+          537.9
+        ],
+        [
+          917.5,
+          530.1
+        ],
+        [
+          938.9,
+          560.4
+        ],
+        [
+          954.6,
+          582.9
+        ],
+        [
+          980.4,
+          585.1
+        ],
+        [
+          1009.6,
+          573.9
+        ],
+        [
+          1020.8,
+          594.1
+        ],
+        [
+          992.8,
+          621.0
+        ],
+        [
+          979.3,
+          645.8
+        ],
+        [
+          977.1,
+          695.2
+        ],
+        [
+          979.3,
+          742.3
+        ],
+        [
+          977.1,
+          790.6
+        ],
+        [
+          965.8,
+          851.3
+        ],
+        [
+          949.0,
+          892.8
+        ],
+        [
+          929.9,
+          909.7
+        ],
+        [
+          911.9,
+          896.2
+        ],
+        [
+          919.8,
+          868.1
+        ],
+        [
+          929.9,
+          816.5
+        ],
+        [
+          933.3,
+          763.7
+        ],
+        [
+          934.4,
+          707.5
+        ],
+        [
+          935.5,
+          658.1
+        ],
+        [
+          934.4,
+          627.8
+        ],
+        [
+          918.7,
+          598.6
+        ]
+      ],
+      "half_depth_mm_estimated": 23,
+      "occlusion": "BB/lower spine partially hidden by crank; merge smoothly into main front triangle side face; no exact carbon layup claim"
+    },
+    {
+      "name": "flip_link",
+      "role": "paired solid rocker, flat broad face and rounded chamfers, asymmetric settings; no triangular hollow rocker",
+      "outer": [
+        [
+          990.5,
+          735.6
+        ],
+        [
+          1013.0,
+          731.1
+        ],
+        [
+          1116.3,
+          744.6
+        ],
+        [
+          1133.2,
+          752.4
+        ],
+        [
+          1139.9,
+          765.9
+        ],
+        [
+          1137.6,
+          779.4
+        ],
+        [
+          1127.5,
+          791.7
+        ],
+        [
+          1111.8,
+          797.4
+        ],
+        [
+          1011.9,
+          787.3
+        ],
+        [
+          993.9,
+          780.5
+        ],
+        [
+          988.3,
+          764.8
+        ]
+      ],
+      "half_depth_mm_estimated": 8,
+      "side_center_mm_estimated": 43,
+      "bores": [
+        {
+          "center": [
+            1009.6,
+            758.1
+          ],
+          "radius_pixels": 12.4
+        },
+        {
+          "center": [
+            1119.7,
+            771.5
+          ],
+          "radius_pixels": 12.4
+        }
+      ],
+      "notes": [
+        "Use existing bores centers only after registration audit.",
+        "Bolt recesses need integral widened ends and darker central circular heads, not oversized exposed flat metal washers.",
+        "Link thickness and three dimensional lateral taper are inferred."
+      ]
+    },
+    {
+      "name": "lower_shock_support",
+      "role": "MOVING lower-swingarm forward clevis/extension, integrated with chain_stay body around main pivot; not fixed seat spine",
+      "outer": [
+        [
+          965.8,
+          798.5
+        ],
+        [
+          988.3,
+          806.3
+        ],
+        [
+          1015.2,
+          825.4
+        ],
+        [
+          1026.5,
+          841.2
+        ],
+        [
+          1022.0,
+          856.9
+        ],
+        [
+          1007.4,
+          863.6
+        ],
+        [
+          990.5,
+          853.5
+        ],
+        [
+          966.9,
+          829.9
+        ],
+        [
+          951.2,
+          817.6
+        ]
+      ],
+      "half_depth_mm_estimated": 9,
+      "side_center_mm_estimated": 26,
+      "bores": [
+        {
+          "center": [
+            1009.6,
+            837.8
+          ],
+          "radius_pixels": 7.9
+        }
+      ],
+      "notes": [
+        "CORRECTED after adversarial topology review: upper shock mount fixed, lower eye must move with the lower swingarm.",
+        "Manual p31 depicts chainstay assembly independent of front triangle; opposite rear photo shows forked curved lower clevis and perspective overlap with fixed seat spine.",
+        "Union this polygon with chain_stay around shared main-pivot region; do not weld either cheek into fixed BB or seat spine.",
+        "Some linkage interior surfaces are hidden by spring; exact depth/clearance is inferred, but classification as moving body is required."
+      ]
+    }
+  ],
+  "topology_corrections": [
+    "Replace tubular surface sections with molded broad flat faces. Increasing radial thickness alone is insufficient.",
+    "Upper rear bridge immediately behind seat spine is broad carbon band with smooth end integration; not hollow round tube.",
+    "Keep real wheel clearance and opposing structural members. Do not close central wheel opening with mirrored plates.",
+    "Brake uses non-drive postmount base with two bolts and sculpted support; two unrelated thin pegs omit visible base.",
+    "ILA rear axle insert and horst pivot must remain visibly separate.",
+    "Main pivot959.1,835.5 and moving lower shock eye1009.6,837.8 native remain different centers; lower clevis extends from lower swingarm across main-pivot area, not from fixed seat spine."
+  ],
+  "acceptance": [
+    "Overlay lateral silhouette against photograph in actual image coordinates, checking outer and inner edges rather than only member centerlines.",
+    "Check opposite rear view shows flat face, bridge width and smooth member transitions.",
+    "Check saddle spine curvature and lower cheek against original references, then assembled shock orientation.",
+    "Ray clearance/anchors/tests establish functionality only; they do not certify resemblance or 100 percent dimensional accuracy."
+  ],
+  "uncertainty": "All polygon points hand observed from published perspective photos, with hidden edges interpreted from manual and opposite photo. They are a reconstruction proposal, not CAD or exact metrology.",
+  "trace_display_to_native_factor": 1.123046875,
+  "topology": {
+    "fixed_front_triangle": {
+      "combine_solid": [
+        "seat_tube_front_triangle",
+        "front_triangle_down_tube",
+        "bottom_bracket_shell"
+      ],
+      "connections": [
+        "Seat spine continues behind rocker into fixed BB outer housing.",
+        "Fixed main-pivot bearing support resides above BB; the lower-shock clevis overlaps in perspective but is a DIFFERENT moving body."
+      ],
+      "bottom_bracket": "Fixed lower front-triangle body includes BB outer shell, but excludes the moving lower-shock clevis. Keep both BB bore and kinematic separation.",
+      "must_not_join": [
+        "chain_stay",
+        "lower_shock_support",
+        "seat_stay",
+        "flip_link"
+      ],
+      "note": "CORRECTION of prior audit: lower_shock_support is NOT fixed. Both shock ends fixed would prevent shock compression. The apparent seat-spine continuity is photographic overlap."
+    },
+    "upper_rear_body": {
+      "combine_solid": [
+        "seat_stay",
+        "dropout_connection"
+      ],
+      "paired": true,
+      "connection": "One uninterrupted broad side face from front seatstay eye to rear axle/dropout; split only at the true Horst bearing where lower swingarm meets this body. Both sides joined by the upper bridge forward of tire.",
+      "must_not_join": [
+        "chain_stay",
+        "fixed_front_triangle",
+        "flip_link"
+      ]
+    },
+    "lower_rear_body": {
+      "combine_solid": [
+        "chain_stay",
+        "lower_shock_support"
+      ],
+      "paired": true,
+      "connection": "Lower swingarm extends from Horst pivot through main pivot into projecting curved triangular lower-shock clevis. Two side cheeks belong to same moving swingarm, separated by shock-width clearance and smoothly united around main-pivot area.",
+      "must_not_join": [
+        "seat_stay",
+        "dropout_connection",
+        "fixed_front_triangle"
+      ],
+      "note": "Main pivot is the shared rotary center with fixed seat spine; mesh surfaces on each body remain separated transversely. Do not union moving clevis or its triangular cheek with fixed BB/front frame."
+    },
+    "rocker_body": {
+      "combine_solid": [
+        "flip_link"
+      ],
+      "paired": true,
+      "connection": "Independent asymmetric solid rocker halves and transverse axle hardware; at each end, bearing housing registers over corresponding pivot. No literal weld to main frame or stay."
+    },
+    "geometry_join_acceptance": "Coplanar overlap is an offline boolean/outline union within a single solid body; remove interior caps and seams rather than simply rendering several extruded plates through one another. For different kinematic bodies keep real clearance and visual bearing contact."
+  },
+  "pivot_centers_native": {
+    "rear_axle": {
+      "pixel": [
+        497.5,
+        925.4
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "upper rear body / hub"
+    },
+    "horst_pivot": {
+      "pixel": [
+        599.7,
+        925.4
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "joint of lower rear body to upper rear body"
+    },
+    "main_pivot": {
+      "pixel": [
+        959.1,
+        835.5
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "joint of lower rear body to fixed seat spine"
+    },
+    "stay_link_eye": {
+      "pixel": [
+        1009.6,
+        758.1
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "joint of upper rear body to rocker"
+    },
+    "front_link_eye": {
+      "pixel": [
+        1119.7,
+        771.5
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "joint of rocker to fixed diagonal"
+    },
+    "lower_shock_eye": {
+      "pixel": [
+        1009.6,
+        837.8
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "moving lower swingarm shock mounting eye, projecting forward of main pivot"
+    },
+    "seat_top": {
+      "pixel": [
+        915.3,
+        539.1
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "seat tube lip"
+    },
+    "bottom_bracket": {
+      "pixel": [
+        954.6,
+        917.5
+      ],
+      "provenance": "retained hand-observed photolandmark converted to2300px native; registration agent has not approved a new pivot relocation",
+      "role": "fixed bottom bracket shell"
+    }
+  },
+  "transverse_profiles_estimated_mm": {
+    "coordinate": "z0 longitudinal center plane; stations ordered rear to front in photo; full thickness is2\u00d7half_depth. Estimated from opposite photo, tire clearance and widths; not factory drawing.",
+    "seat_stay": {
+      "stations": [
+        {
+          "native_pixel": [
+            497.5,
+            925.4
+          ],
+          "side_center_abs": 79,
+          "half_depth": 10
+        },
+        {
+          "native_pixel": [
+            645,
+            845
+          ],
+          "side_center_abs": 64,
+          "half_depth": 12
+        },
+        {
+          "native_pixel": [
+            825,
+            780
+          ],
+          "side_center_abs": 53,
+          "half_depth": 12
+        },
+        {
+          "native_pixel": [
+            930,
+            760
+          ],
+          "side_center_abs": 44,
+          "half_depth": 12
+        },
+        {
+          "native_pixel": [
+            1009.6,
+            758.1
+          ],
+          "side_center_abs": 38,
+          "half_depth": 10
+        }
+      ],
+      "face": "Broad lateral flat surface with bevel3\u20135mm and softly rounded transverse back; face width varies with traced outer edges, not one radius."
+    },
+    "chain_stay": {
+      "stations": [
+        {
+          "native_pixel": [
+            599.7,
+            925.4
+          ],
+          "side_center_abs": 72,
+          "half_depth": 10
+        },
+        {
+          "native_pixel": [
+            750,
+            925
+          ],
+          "side_center_abs": 56,
+          "half_depth": 12
+        },
+        {
+          "native_pixel": [
+            880,
+            910
+          ],
+          "side_center_abs": 46,
+          "half_depth": 14
+        },
+        {
+          "native_pixel": [
+            959.1,
+            835.5
+          ],
+          "side_center_abs": 35,
+          "half_depth": 13
+        }
+      ],
+      "face": "Wide flat lateral face, upper shelf beneath chain guard; front rise becomes integrated pivot bulb without tubular elbow."
+    },
+    "dropout_connection": {
+      "side_center_abs": 79,
+      "half_depth": 10,
+      "note": "Unite with upper seatstay face. Last section axle opening sidewall at hub mating face requires validation against hub148mm; external thickness does not certify true frame spacing."
+    },
+    "seat_tube_front_triangle": {
+      "center": 0,
+      "half_depth": 23,
+      "upper_lip_half_depth": 18,
+      "lower_root_half_depth": 28,
+      "face": "Oval or softly rectangular across z with broad side plane; smoothly grows into lower fixed cradle and BB."
+    },
+    "lower_shock_support": {
+      "side_center_abs": 26,
+      "half_depth": 8,
+      "root_side_center_abs": 23,
+      "root_half_depth": 12,
+      "note": "Two moving lower-swingarm clevis cheeks merge into chain_stay around main pivot, and remain separated from fixed seat spine/BB. Eye faces narrow to suit shock hardware."
+    },
+    "flip_link": {
+      "side_center_abs": 42,
+      "half_depth": 8,
+      "end_half_depth": 11,
+      "middle_half_depth": 8,
+      "note": "Do not render uniform-depth cardboard plate; end bearing bosses broaden smoothly and front/rear faces softly chamfer."
+    }
+  },
+  "bridge_proposals": [
+    {
+      "name": "upper_seatstay_bridge",
+      "native_pixel_center": [
+        917.5,
+        771.5
+      ],
+      "body": "upper_rear_body",
+      "z_span_mm": [
+        -48,
+        48
+      ],
+      "fore_aft_extent_pixels": 22,
+      "vertical_height_pixels": 20,
+      "section": "Broad low carbon band/rounded rectangular arch with smooth roots joining inner faces of both seatstays. No hollow cylindrical sleeve and no detached straight rod.",
+      "clearance": "Center stays forward of tire envelope. Both roots overlap their own seatstay solid, remove end caps inside union. Keep seat spine/frame mechanically separate.",
+      "source": "Opposite rear view and exploded manual31 show joined upper stays; exact bridge section/depth inferred."
+    },
+    {
+      "name": "lower_swingarm_root_yoke",
+      "native_pixel_center": [
+        927.5,
+        891.0
+      ],
+      "body": "lower_rear_body",
+      "z_span_mm": [
+        -43,
+        43
+      ],
+      "fore_aft_extent_pixels": 24,
+      "vertical_height_pixels": 18,
+      "section": "Sculpted forked yoke joining opposing lower arms and their forward shock clevis around main-pivot region. One moving body; no union with fixed BB/seat spine.",
+      "clearance": "Passes near fixed frame with visible separation. Keep lower shock central slot, BB opening, and independent rotary bearing contact; do not create plate across shock shaft or BB.",
+      "source": "Opposite photo/manual31 support joined lower swingarm; exact brace surface partly hidden and must be verified in integrated view."
+    }
+  ],
+  "critical_warning": "Normalized photo landmarks are visually observed approximate centers. Parent registration.ts is authoritative for world anchors; do not create new anchor corrections directly from this proposal without coordinated contract update.",
+  "topology_evidence_correction": {
+    "prior_error": "The v2 proposal misclassified lower_shock_support as fixed due to perspective overlap in side view. That recommendation is withdrawn.",
+    "observed": [
+      "Upper shock lug lies on fixed down tube.",
+      "Opposite rear official image shows lower shock eye in a forked curved extension above the lower swingarm main pivot.",
+      "Exploded MK4 manual p31 separates lower swingarm with its projecting front geometry from the fixed BB/seat spine."
+    ],
+    "mechanical_inference": "With fixed upper mount, lower mount must belong to a moving link. Shape and continuity at main-pivot region identify lower swingarm extension; making both eyes fixed would eliminate compression.",
+    "limitation": "Video340/470 frames document upper FlipLink but do not by themselves establish full lower-swingarm motion. Do not cite those frames as direct kinematic proof."
+  },
+  "photographic_boundary_audit": {
+    "method": "Read RGBA8 native official PNG directly; white carbon sample=minRGB>120, max-min<38, alpha>150. Vertical white runs at native x=round(normalized_x*2300/2048), then expressed in2048-normalized coordinates solely to match independent checks. No rendered-model sample influenced thresholds. Pixel membership includes perspective shading, and hardware/occlusion must be excluded by region.",
+    "image": "models/catalog-v10/references/images/yt-tues-mk4-carbon-3.png",
+    "seat_stay_vertical_white_runs_normalized": [
+      {
+        "x": 600,
+        "top": 735,
+        "bottom": 771
+      },
+      {
+        "x": 650,
+        "top": 719,
+        "bottom": 750
+      },
+      {
+        "x": 700,
+        "top": 703,
+        "bottom": 730
+      },
+      {
+        "x": 750,
+        "top": 685,
+        "bottom": 713
+      },
+      {
+        "x": 780,
+        "top": 674,
+        "bottom": 710
+      }
+    ],
+    "chain_stay_vertical_white_runs_normalized": [
+      {
+        "x": 600,
+        "top": 810,
+        "bottom": 836
+      },
+      {
+        "x": 650,
+        "top": 809,
+        "bottom": 836
+      },
+      {
+        "x": 700,
+        "top": 807,
+        "bottom": 836
+      },
+      {
+        "x": 750,
+        "top": 805,
+        "bottom": 836
+      },
+      {
+        "x": 780,
+        "top": 789,
+        "bottom": 836
+      }
+    ],
+    "changes": "Rear long member silhouette corrected to observed white bounds rather than overly broad hand guess: seatstay bottom raised9\u201312px at650/700/750, upper boundary adjusted too; chainstay lower edge836 not845 and upper edge805\u2013810 not~798.",
+    "pivot_caution": "These revisions apply visible long-member portions. Main pivot formerly854744 was a mistaken visible detail; registration audit infers true hidden main pivot~887790. Root must reconstruct front swingarm extension using new motion contract rather than interpreting the old chain_stay front corner as a certified pivot."
+  }
+}

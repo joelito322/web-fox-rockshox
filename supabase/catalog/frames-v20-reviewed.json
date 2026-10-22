@@ -1,0 +1,517 @@
+{
+  "brands": [
+    {
+      "id": "0558b2fa-df7b-5566-8f16-4b4a4ec69b4f",
+      "name": "GT",
+      "slug": "gt",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "f0c8276b-6c96-5959-a2eb-4f44d014c299",
+      "name": "Fury Carbon · High Pivot",
+      "slug": "gt-fury-carbon-high-pivot",
+      "category": "frame",
+      "description": "Cuadro de descenso de carbono con pivote alto, polea y 200 mm de recorrido.",
+      "technical_notes": "Generación del Tech Book 2024 todavía documentada en la ficha oficial. Posición MX y vainas cortas; no se declara un modelo de temporada 2026.",
+      "image_key": "catalog:gt-fury-carbon-high-pivot",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "0558b2fa-df7b-5566-8f16-4b4a4ec69b4f",
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/fury-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generación identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "ae93b295-cf94-5572-a588-defc15a87426",
+      "kind": "glb",
+      "storage_path": "catalog/v20/gt-fury-carbon-high-pivot/13adc4e0103200e8a48de5bf.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-fury-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.825,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.45,
+              0.638,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.499081759442079,
+              0.5395572202237773,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.0497195935331915,
+              0.3885342260981628,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07371959353319149,
+              0.5285342260981628,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.10535677908272816,
+              0.2865772501055589,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.02619619758658727,
+              0.07596243026328656,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.036209654987483006,
+              0.10100071840086769,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.036209654987483006,
+              0.10100071840086769,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-fury-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "GT Fury Carbon High Pivot 2023+: perfiles propios de carbono, ventana triangular inferior, bieleta sólida y guías; conserva anclajes y los otros catorce cuadros. Fuentes y límites: models/catalog-v20/README.md. No CAD."
+    },
+    {
+      "id": "f7585892-6207-5d77-a4ed-7dcd35b64674",
+      "kind": "glb",
+      "storage_path": "catalog/v20/gt-fury-carbon-high-pivot/9cf663ddeb4de1826e9d44ce.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "gt-fury-carbon-high-pivot",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8599999999999999,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.647,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5335437375731771,
+              0.539607876607757,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.031449959077165024,
+              0.3940151164349707,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.055449959077165024,
+              0.5340151164349707,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.11883219836668861,
+              0.290619875890747,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.032235760244359035,
+              0.08295173460632771,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.03146040490593752,
+              0.10242549342533135,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.03146040490593752,
+              0.10242549342533135,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "gt-fury-carbon-high-pivot__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "GT Fury Carbon High Pivot 2023+: perfiles propios de carbono, ventana triangular inferior, bieleta sólida y guías; conserva anclajes y los otros catorce cuadros. Fuentes y límites: models/catalog-v20/README.md. No CAD."
+    }
+  ],
+  "variants": [
+    {
+      "id": "b415a847-18a9-5f5d-bba0-fbeccb252382",
+      "component_id": "f0c8276b-6c96-5959-a2eb-4f44d014c299",
+      "label": "M · Galaxy",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/fury-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "headset_standard",
+            "brake_mount",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 225,
+          "stroke_mm": 75,
+          "restrictions": "Trunnion superior; inferior 30 mm × M10."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "headset_standard": "ZS49/28.6 · ZS49/30",
+        "brake_mount": "Post Mount 200",
+        "tire_clearance_notes": "Ancho máximo 2,5 pulgadas.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 450,
+          "stack_mm": 638,
+          "seat_tube_mm": 410,
+          "head_tube_mm": 110,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1260
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Galaxy",
+            "image_key": null,
+            "material": {
+              "color": "#252629",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "ae93b295-cf94-5572-a588-defc15a87426",
+      "price_reference": null
+    },
+    {
+      "id": "e29df8b4-3714-5c27-ba2d-508aad15dfe3",
+      "component_id": "f0c8276b-6c96-5959-a2eb-4f44d014c299",
+      "label": "L · Galaxy",
+      "model_year": 2024,
+      "generation": "Carbon High Pivot · MY24",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://gtbicycles.com/products/fury-carbon-frameset",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representación 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "bb_shell",
+            "headset_standard",
+            "brake_mount",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono",
+        "suspension_type": "High Pivot LTS",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 225,
+          "stroke_mm": 75,
+          "restrictions": "Trunnion superior; inferior 30 mm × M10."
+        },
+        "rear_axle_standard": "12x148",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "headset_standard": "ZS49/28.6 · ZS49/30",
+        "brake_mount": "Post Mount 200",
+        "tire_clearance_notes": "Ancho máximo 2,5 pulgadas.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 480,
+          "stack_mm": 647,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 120,
+          "head_angle_deg": 63.5,
+          "chainstay_mm": 435,
+          "wheelbase_mm": 1295
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Galaxy",
+            "image_key": null,
+            "material": {
+              "color": "#252629",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f7585892-6207-5d77-a4ed-7dcd35b64674",
+      "price_reference": null
+    }
+  ]
+}

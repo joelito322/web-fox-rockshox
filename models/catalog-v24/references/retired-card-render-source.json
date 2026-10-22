@@ -1,0 +1,14 @@
+[
+  {
+    "slug": "canyon-sender-cfr-high-pivot",
+    "file": "canyon-sender-cfr-high-pivot.webp",
+    "source_file": "models/catalog-v24/exports/canyon-sender-cfr-high-pivot--m.glb",
+    "source_sha256": "ab147fb13ee34b993b30367b59d82616c18ba2602155558509a005d9ac722dc9",
+    "representation": "published-3d-model-render",
+    "generation": "MY25 high-pivot",
+    "date": "2026-10-22",
+    "script": "scripts/generate-frame-v24-card.mjs --apply",
+    "bytes": 30484,
+    "sha256": "462ce894776c58803e9c19ac95a448b4556de9016685d7dc0cbeae79eab0b5be"
+  }
+]

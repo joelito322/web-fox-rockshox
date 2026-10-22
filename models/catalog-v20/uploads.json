@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "b415a847-18a9-5f5d-bba0-fbeccb252382",
+    "predecessor_id": "b44212af-bc41-5014-9cda-ea85fdce0634",
+    "asset_id": "ae93b295-cf94-5572-a588-defc15a87426",
+    "file": "gt-fury-carbon-high-pivot--m.glb",
+    "storage_path": "catalog/v20/gt-fury-carbon-high-pivot/13adc4e0103200e8a48de5bf.glb",
+    "bytes": 1576940,
+    "sha256": "13adc4e0103200e8a48de5bf93e45cffe5322126cc5fa06b627db9077cc29f92",
+    "published_at": "2026-10-22T00:53:36.429Z"
+  },
+  {
+    "variant_id": "e29df8b4-3714-5c27-ba2d-508aad15dfe3",
+    "predecessor_id": "86cdd905-f725-5c5d-befa-4ed081d86550",
+    "asset_id": "f7585892-6207-5d77-a4ed-7dcd35b64674",
+    "file": "gt-fury-carbon-high-pivot--l.glb",
+    "storage_path": "catalog/v20/gt-fury-carbon-high-pivot/9cf663ddeb4de1826e9d44ce.glb",
+    "bytes": 1592092,
+    "sha256": "9cf663ddeb4de1826e9d44ce2ce4a6d3ff84b0460497ddd61630bfe76305e1e6",
+    "published_at": "2026-10-22T00:53:40.835Z"
+  }
+]

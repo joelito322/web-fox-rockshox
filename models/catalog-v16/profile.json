@@ -1,0 +1,305 @@
+{
+  "model": "da-bomb-cherry-bomb-29",
+  "reference_image": "../catalog-v5/references/da-bomb-cherry-bomb-29.jpg",
+  "image_landmarks": {
+    "bottom_bracket": [
+      525,
+      894
+    ],
+    "head_top": [
+      997,
+      192
+    ],
+    "rear_axle": [
+      27,
+      874
+    ],
+    "seat_top": [
+      450,
+      426
+    ],
+    "shock_upper": [
+      614,
+      536
+    ],
+    "shock_lower": [
+      617,
+      759
+    ],
+    "seat_pivot": [
+      554,
+      583
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          486,
+          506
+        ],
+        [
+          990,
+          218
+        ]
+      ],
+      "height_mm": [
+        16.0,
+        17.0
+      ],
+      "width_mm": 21.5,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          525,
+          894
+        ],
+        [
+          641,
+          850
+        ],
+        [
+          679,
+          797
+        ],
+        [
+          955,
+          295
+        ],
+        [
+          1035,
+          268
+        ]
+      ],
+      "height_mm": [
+        23,
+        28,
+        27.5,
+        31,
+        29
+      ],
+      "width_mm": 29,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        18,
+        20,
+        23,
+        0
+      ]
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          525,
+          894
+        ],
+        [
+          523,
+          851
+        ],
+        [
+          537,
+          800
+        ],
+        [
+          548,
+          757
+        ],
+        [
+          556,
+          717
+        ],
+        [
+          556,
+          690
+        ],
+        [
+          551,
+          667
+        ],
+        [
+          539,
+          635
+        ],
+        [
+          521,
+          596
+        ],
+        [
+          502,
+          553
+        ],
+        [
+          487,
+          511
+        ],
+        [
+          466,
+          468
+        ],
+        [
+          450,
+          426
+        ]
+      ],
+      "height_mm": [
+        18,
+        18,
+        17,
+        17,
+        17,
+        17,
+        17.5,
+        18,
+        18,
+        18.5,
+        18.5,
+        18.5,
+        18
+      ],
+      "width_mm": 21,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        12,
+        24,
+        22,
+        22,
+        20,
+        18,
+        22,
+        26,
+        26,
+        20,
+        18,
+        0
+      ]
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          57,
+          882
+        ],
+        [
+          111,
+          886
+        ],
+        [
+          437,
+          890
+        ],
+        [
+          475,
+          868
+        ],
+        [
+          514,
+          847
+        ]
+      ],
+      "height_mm": [
+        12,
+        21.5,
+        21.5,
+        21,
+        18
+      ],
+      "width_mm": 11,
+      "material": "paint",
+      "paired": true,
+      "corners_mm": [
+        0,
+        8,
+        12,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          53,
+          850
+        ],
+        [
+          103,
+          817
+        ],
+        [
+          414,
+          575
+        ]
+      ],
+      "height_mm": [
+        10,
+        11,
+        14
+      ],
+      "width_mm": 11,
+      "material": "paint",
+      "paired": true,
+      "corners_mm": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "shock_yoke",
+      "path": [
+        [
+          548,
+          779
+        ],
+        [
+          616,
+          761
+        ],
+        [
+          650,
+          803
+        ]
+      ],
+      "height_mm": [
+        13,
+        13,
+        14
+      ],
+      "width_mm": 12.5,
+      "material": "paint",
+      "paired": false,
+      "corners_mm": [
+        0,
+        7,
+        0
+      ]
+    }
+  ],
+  "axle_width_mm": 148,
+  "measurement_notes": [
+    "Pixel controls refer to the unchanged 1080x1080 manufacturer photograph and v5 landmarks. World registration uses existing v11 anchors; no changes to commercial dimensions.",
+    "height_mm stores half of the in-plane section height; width_mm is half of the transverse depth. Heights estimated from photographed contour separations using rear axle to bottom bracket registration; widths retain v5 depth estimates.",
+    "Top tube is a single straight longitudinal segment. Down tube central segment from [679,797] to [955,295] is straight; only head and bottom-bracket direction changes receive local radii.",
+    "The photographed seat tube is deliberately bent, unlike CAPRA. Dense controls follow the midpoint of v5 measured left/right edges, with local corner blends and no global Catmull or sine curve.",
+    "Chainstay main run follows the almost horizontal photographed beam. Rear dropout, main-pivot adapters and near-bottom-bracket turns are not replaced by one generic diagonal.",
+    "Seatstay endpoint [414,575] is the rocker joint in the photograph, not the seat tube pivot [554,583]. Opposite structural stays are inferred counterparts, not independently observed calibrated surfaces.",
+    "Shock yoke follows the lower-eye bridge and down-tube landing while leaving the lower frame window open. Black rocker and non-painted hardware remain inherited from v11.",
+    "Transverse taper, hidden-side clearance, local weld radii and tube cross-section shape are inferred from construction logic. This is not CAD reconstruction or a percentage certification."
+  ]
+}

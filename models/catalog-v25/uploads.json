@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "8ab2e508-dc00-56bb-9ad1-47d95087dbea",
+    "predecessor_id": "5ee56b51-d24b-5dbd-b6f7-25a2d480b4a6",
+    "asset_id": "4fdc10d9-52fd-50c7-ba05-d9f8f3328e4c",
+    "file": "commencal-supreme-dh-v5--m.glb",
+    "storage_path": "catalog/v25/commencal-supreme-dh-v5/9141a5327cc80b17317d76b9.glb",
+    "bytes": 3038064,
+    "sha256": "9141a5327cc80b17317d76b970440c89fcc27951b2d09a650053b848b5ba041b",
+    "published_at": "2026-10-22T01:42:13.799Z"
+  },
+  {
+    "variant_id": "5f06fbc5-4b2a-574a-b6ed-2fc2aabf4c02",
+    "predecessor_id": "ddbe00fd-1d70-5c9d-8d9c-3e78cf678172",
+    "asset_id": "3de7c394-b8ff-5770-8691-6fe1b832785f",
+    "file": "commencal-supreme-dh-v5--l.glb",
+    "storage_path": "catalog/v25/commencal-supreme-dh-v5/19aac1e653955a2abc42849b.glb",
+    "bytes": 3048444,
+    "sha256": "19aac1e653955a2abc42849b8dc6e1794d66ebaab8286e63737f0a2dc7f1d8e9",
+    "published_at": "2026-10-22T01:42:18.629Z"
+  }
+]

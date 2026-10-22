@@ -1,0 +1,420 @@
+{
+  "model": "gt-force-carbon-high-pivot",
+  "reference_image": "../catalog-v10/references/images/gt-force-carbon-high-pivot-0.jpg",
+  "reference_coordinate_space": {
+    "width": 1696,
+    "height": 1459,
+    "native_width": 2150,
+    "native_height": 1850,
+    "note": "Controls and preserved v10 landmarks share the reduced inspection coordinate space; not native pixel measurements."
+  },
+  "image_landmarks": {
+    "bottom_bracket": [
+      742,
+      976
+    ],
+    "head_top": [
+      1459,
+      240
+    ],
+    "rear_axle": [
+      183,
+      863
+    ],
+    "seat_top": [
+      722,
+      421
+    ],
+    "shock_upper": [
+      920,
+      626
+    ],
+    "shock_lower": [
+      829,
+      904
+    ],
+    "pivot": [
+      722,
+      842
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          735,
+          459
+        ],
+        [
+          924,
+          532
+        ],
+        [
+          1395,
+          300
+        ],
+        [
+          1470,
+          285
+        ]
+      ],
+      "height_mm": [
+        17,
+        19,
+        19,
+        25
+      ],
+      "width_mm": 24,
+      "corners_mm": [
+        0,
+        30,
+        26,
+        0
+      ],
+      "material": "paint",
+      "paired": false
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          742,
+          976
+        ],
+        [
+          865,
+          946
+        ],
+        [
+          961,
+          919
+        ],
+        [
+          1007,
+          869
+        ],
+        [
+          1389,
+          421
+        ],
+        [
+          1494,
+          366
+        ]
+      ],
+      "height_mm": [
+        30,
+        33,
+        33,
+        34,
+        35,
+        34
+      ],
+      "width_mm": 33,
+      "corners_mm": [
+        0,
+        28,
+        32,
+        30,
+        32,
+        0
+      ],
+      "material": "paint",
+      "paired": false
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          742,
+          976
+        ],
+        [
+          739,
+          910
+        ],
+        [
+          747,
+          843
+        ],
+        [
+          783,
+          742
+        ],
+        [
+          779,
+          653
+        ],
+        [
+          752,
+          541
+        ],
+        [
+          722,
+          421
+        ]
+      ],
+      "height_mm": [
+        25,
+        26,
+        28,
+        27,
+        23,
+        19,
+        18
+      ],
+      "width_mm": 25,
+      "corners_mm": [
+        0,
+        24,
+        28,
+        28,
+        25,
+        22,
+        0
+      ],
+      "material": "paint",
+      "paired": false
+    },
+    {
+      "name": "gt_upper_brace",
+      "path": [
+        [
+          782,
+          742
+        ],
+        [
+          852,
+          608
+        ],
+        [
+          928,
+          532
+        ]
+      ],
+      "height_mm": [
+        20,
+        20,
+        19
+      ],
+      "width_mm": 24,
+      "corners_mm": [
+        0,
+        28,
+        0
+      ],
+      "material": "paint",
+      "paired": false
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          272,
+          894
+        ],
+        [
+          332,
+          899
+        ],
+        [
+          637,
+          902
+        ],
+        [
+          686,
+          885
+        ],
+        [
+          722,
+          842
+        ]
+      ],
+      "height_mm": [
+        14,
+        18,
+        18,
+        21,
+        24
+      ],
+      "width_mm": 13,
+      "corners_mm": [
+        0,
+        20,
+        24,
+        20,
+        0
+      ],
+      "material": "paint",
+      "paired": true
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          183,
+          863
+        ],
+        [
+          227,
+          840
+        ],
+        [
+          610,
+          716
+        ],
+        [
+          665,
+          706
+        ]
+      ],
+      "height_mm": [
+        11,
+        14,
+        16,
+        18
+      ],
+      "width_mm": 13,
+      "corners_mm": [
+        0,
+        20,
+        20,
+        0
+      ],
+      "material": "paint",
+      "paired": true
+    },
+    {
+      "name": "lower_yoke",
+      "path": [
+        [
+          742,
+          976
+        ],
+        [
+          783,
+          921
+        ],
+        [
+          829,
+          904
+        ],
+        [
+          855,
+          930
+        ]
+      ],
+      "height_mm": [
+        21,
+        16,
+        13,
+        15
+      ],
+      "width_mm": 17,
+      "corners_mm": [
+        0,
+        22,
+        18,
+        0
+      ],
+      "material": "paint",
+      "paired": false
+    }
+  ],
+  "links": [
+    {
+      "outer": [
+        [
+          644,
+          700
+        ],
+        [
+          682,
+          681
+        ],
+        [
+          891,
+          604
+        ],
+        [
+          918,
+          604
+        ],
+        [
+          934,
+          624
+        ],
+        [
+          822,
+          722
+        ],
+        [
+          794,
+          729
+        ],
+        [
+          646,
+          727
+        ]
+      ],
+      "hole": [
+        [
+          698,
+          688
+        ],
+        [
+          868,
+          637
+        ],
+        [
+          832,
+          675
+        ],
+        [
+          790,
+          698
+        ],
+        [
+          706,
+          712
+        ],
+        [
+          692,
+          705
+        ]
+      ],
+      "fixed_pivot": [
+        806,
+        699
+      ],
+      "rear_pivot": [
+        665,
+        706
+      ],
+      "shock_upper": [
+        920,
+        626
+      ],
+      "sides": "paired plates; transverse separation inferred from official oblique photographs",
+      "half_separation_mm": 43,
+      "depth_mm": 10
+    }
+  ],
+  "idler": [
+    722,
+    842
+  ],
+  "axle_width_mm": 148,
+  "measurement_notes": [
+    "Existing v10 image landmarks are retained exactly for registration to immutable anchors, without changing commercial geometry. Source image is 2150x1850; controls are in the pre-existing 1696x1459 reduced coordinate space.",
+    "height_mm and width_mm are HALF section extents in-plane and transverse respectively, not full diameters. Sections, hidden depths and blend radii are exterior visual estimates.",
+    "Upper and lower long runs use straight segments with only short local corner blends. The real Force retains a dipped top-tube junction and lower/head elbows; it must not inherit CAPRA straightness indiscriminately.",
+    "gt_upper_brace closes the characteristic upper triangular window between seat column and top-tube valley; retain open interior rather than filling triangle.",
+    "Chainstay begins at the separate rear suspension joint near [272,894], not at rear axle [183,863]. Rear dropout adapters connect these two joints; do not turn it into a bowed continuous generic chainstay.",
+    "Rocker outer/hole contours follow lateral manufacturer photo and dedicated High Pivot LTS closeup. Three bearing centers are rear joint [665,706], fixed frame pivot [806,699] and moving upper shock joint [920,626]. Opposite plate/depth inferred from official oblique image.",
+    "Lower shock eye fixed cradle follows [829,904]. Upper eye belongs to moving rocker; do not add fixed frame bar to upper shock eye.",
+    "Idler guide, toothed pulley, ribbed chainstay guard and derailleur hanger are unilateral; brake mount opposite side. Do not mirror these as structural counterparts.",
+    "No CAD identity or 100 percent fidelity certification; true shapes behind occlusions and transverse sections remain inferred."
+  ]
+}

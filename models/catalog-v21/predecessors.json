@@ -1,0 +1,526 @@
+[
+  {
+    "slug": "commencal-meta-sx-v5",
+    "component": {
+      "id": "2f38f908-7582-5edc-bce7-b5fe552c2337",
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "name": "META SX V5",
+      "slug": "commencal-meta-sx-v5",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con ruedas de distinto di\u00e1metro y 165 mm de recorrido trasero.",
+      "technical_notes": "Representaci\u00f3n aproximada. Verifica los herrajes y las medidas antes del montaje real.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/enduro/meta%20sx%20v5/FT3MSXV5TMEXL.html?lang=en_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha oficial \u00b7 META SX V5",
+          "fields": [
+            "name",
+            "category"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "1651a012-e431-52e9-95d1-1066119a0a06",
+      "component_id": "2f38f908-7582-5edc-bce7-b5fe552c2337",
+      "label": "M \u00b7 Team Cloud",
+      "model_year": null,
+      "generation": "V5",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/enduro/meta%20sx%20v5/FT3MSXV5TMEXL.html?lang=en_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones oficiales \u00b7 META SX V5 \u00b7 M \u00b7 Team Cloud",
+          "fields": [
+            "size_label",
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "geometry",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "size_label": "M",
+        "material": "Aluminio 6066 T4/T6",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 165,
+        "geometry": {
+          "reach_mm": 460,
+          "stack_mm": 638.3,
+          "seat_tube_mm": 420,
+          "head_tube_mm": 120,
+          "head_angle_deg": 64,
+          "seat_angle_deg": 77.5,
+          "wheelbase_mm": 1253,
+          "effective_top_tube_mm": 600.6,
+          "chainstay_mm": 442,
+          "reference_position": "Geometr\u00eda de f\u00e1brica. Altura del pedalier sin confirmar."
+        },
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Herraje 20 \u00d7 10 mm y conexi\u00f3n al yugo sin casquillo; confirmar orientaci\u00f3n antes del montaje."
+        },
+        "headset_standard": "ZS56/ZS56",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 34.9,
+        "seat_clamp_diameter_mm": 38.5,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 586 mm; m\u00e1xima 598 mm.",
+        "tire_clearance_notes": "Neum\u00e1tico trasero m\u00e1ximo ETRTO 65-584."
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Team Cloud",
+            "image_key": null,
+            "material": {
+              "color": "#d8d7cf",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "932953e2-1b11-546c-bdc2-430de89192d6",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "932953e2-1b11-546c-bdc2-430de89192d6",
+      "kind": "glb",
+      "storage_path": "catalog/v11/commencal-meta-sx-v5/8a9806e4725be4cdb2a079f7.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-meta-sx-v5",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.44192759587968705,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.46,
+              0.6383,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5126045376146893,
+              0.5304447144440999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.07762825736582035,
+              0.44610680274050807,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.20826718094985508,
+              0.41154426777048236,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.01807624101638794,
+              0.2822097837924957,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.10262825736582035,
+              0.5911068027405081,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.009302164858652512,
+              0.2569411233228661,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8110724041203128,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-meta-sx-v5__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "Pasos de direcci\u00f3n, sill\u00edn y pedalier corregidos sobre v10. Fuentes heredadas y l\u00edmites: models/catalog-v11/README.md. No CAD.",
+      "published": true
+    },
+    "predecessor_file": "models/catalog-v11/exports/commencal-meta-sx-v5--m.glb"
+  },
+  {
+    "slug": "commencal-meta-sx-v5",
+    "component": {
+      "id": "2f38f908-7582-5edc-bce7-b5fe552c2337",
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "name": "META SX V5",
+      "slug": "commencal-meta-sx-v5",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con ruedas de distinto di\u00e1metro y 165 mm de recorrido trasero.",
+      "technical_notes": "Representaci\u00f3n aproximada. Verifica los herrajes y las medidas antes del montaje real.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/enduro/meta%20sx%20v5/FT3MSXV5TMEXL.html?lang=en_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha oficial \u00b7 META SX V5",
+          "fields": [
+            "name",
+            "category"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "bd447ce4-2e85-5d1e-bc8f-866daf695940",
+      "component_id": "2f38f908-7582-5edc-bce7-b5fe552c2337",
+      "label": "L \u00b7 Team Cloud",
+      "model_year": null,
+      "generation": "V5",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/enduro/meta%20sx%20v5/FT3MSXV5TMEXL.html?lang=en_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones oficiales \u00b7 META SX V5 \u00b7 L \u00b7 Team Cloud",
+          "fields": [
+            "size_label",
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "geometry",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "size_label": "L",
+        "material": "Aluminio 6066 T4/T6",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 165,
+        "geometry": {
+          "reach_mm": 480,
+          "stack_mm": 642.8,
+          "seat_tube_mm": 440,
+          "head_tube_mm": 125,
+          "head_angle_deg": 64,
+          "seat_angle_deg": 77.5,
+          "wheelbase_mm": 1280.2,
+          "effective_top_tube_mm": 621.9,
+          "chainstay_mm": 447,
+          "reference_position": "Geometr\u00eda de f\u00e1brica. Altura del pedalier sin confirmar."
+        },
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "restrictions": "Herraje 20 \u00d7 10 mm y conexi\u00f3n al yugo sin casquillo; confirmar orientaci\u00f3n antes del montaje."
+        },
+        "headset_standard": "ZS56/ZS56",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "PF92",
+          "width_mm": 92
+        },
+        "seatpost_diameter_mm": 34.9,
+        "seat_clamp_diameter_mm": 38.5,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 586 mm; m\u00e1xima 598 mm.",
+        "tire_clearance_notes": "Neum\u00e1tico trasero m\u00e1ximo ETRTO 65-584."
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Team Cloud",
+            "image_key": null,
+            "material": {
+              "color": "#d8d7cf",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "c99b3935-1b3e-579f-9215-0a392f01c3e8",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "c99b3935-1b3e-579f-9215-0a392f01c3e8",
+      "kind": "glb",
+      "storage_path": "catalog/v11/commencal-meta-sx-v5/0717de7997555f1c048bab5f.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-meta-sx-v5",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.44692840589964744,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.6427999999999999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5347963933486347,
+              0.5304507442126041,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.06833201975572484,
+              0.44920156437339415,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.22012621327520654,
+              0.4144345189837282,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.028756678104400635,
+              0.2868504226207733,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.09333201975572483,
+              0.5942015643733941,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.015290035355878584,
+              0.25873039680274046,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8332715941003526,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-meta-sx-v5__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "Pasos de direcci\u00f3n, sill\u00edn y pedalier corregidos sobre v10. Fuentes heredadas y l\u00edmites: models/catalog-v11/README.md. No CAD.",
+      "published": true
+    },
+    "predecessor_file": "models/catalog-v11/exports/commencal-meta-sx-v5--l.glb"
+  }
+]

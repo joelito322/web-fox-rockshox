@@ -1,0 +1,302 @@
+[
+  {
+    "variant_id": "1651a012-e431-52e9-95d1-1066119a0a06",
+    "predecessor_id": "5d1a6c8d-d98b-5c06-af2e-5a11b3492271",
+    "asset_id": "932953e2-1b11-546c-bdc2-430de89192d6",
+    "file": "commencal-meta-sx-v5--m.glb",
+    "storage_path": "catalog/v11/commencal-meta-sx-v5/8a9806e4725be4cdb2a079f7.glb",
+    "bytes": 2152164,
+    "sha256": "8a9806e4725be4cdb2a079f72143d3544e860d63442c7adfdf316b7808ba95d8",
+    "published_at": "2026-10-21T20:30:45.759Z"
+  },
+  {
+    "variant_id": "bd447ce4-2e85-5d1e-bc8f-866daf695940",
+    "predecessor_id": "4c4254a4-23c9-5052-993e-eaa66b309843",
+    "asset_id": "c99b3935-1b3e-579f-9215-0a392f01c3e8",
+    "file": "commencal-meta-sx-v5--l.glb",
+    "storage_path": "catalog/v11/commencal-meta-sx-v5/0717de7997555f1c048bab5f.glb",
+    "bytes": 2160340,
+    "sha256": "0717de7997555f1c048bab5f7ba74f056420a083abde8d5f21d2cc538301afdd",
+    "published_at": "2026-10-21T20:31:00.106Z"
+  },
+  {
+    "variant_id": "5ee56b51-d24b-5dbd-b6f7-25a2d480b4a6",
+    "predecessor_id": "5b38a2a4-b1e4-56f3-aa03-b9e57b1317e8",
+    "asset_id": "6da4a1f1-5ebe-58ce-99c6-d9d05e7466c6",
+    "file": "commencal-supreme-dh-v5--m.glb",
+    "storage_path": "catalog/v11/commencal-supreme-dh-v5/9321923b063194cb4fe40282.glb",
+    "bytes": 2529672,
+    "sha256": "9321923b063194cb4fe402822b893edb727818b7b494ed9f1186c026ae16a821",
+    "published_at": "2026-10-21T20:31:05.747Z"
+  },
+  {
+    "variant_id": "ddbe00fd-1d70-5c9d-8d9c-3e78cf678172",
+    "predecessor_id": "56505adb-dce7-5914-9abc-f176b7db4f3c",
+    "asset_id": "11c9c519-863f-5817-9738-9d3636dc7d6e",
+    "file": "commencal-supreme-dh-v5--l.glb",
+    "storage_path": "catalog/v11/commencal-supreme-dh-v5/5a82f6878399c275df3fca38.glb",
+    "bytes": 2524372,
+    "sha256": "5a82f6878399c275df3fca3885eb6b8dce34e98affe0477d8a1eb87437d3789a",
+    "published_at": "2026-10-21T20:31:10.758Z"
+  },
+  {
+    "variant_id": "1ff5a2a4-762e-5c17-8d91-852bc9b2699d",
+    "predecessor_id": "62810599-4471-54d8-b7f1-6bc9a0bb6ff7",
+    "asset_id": "f8d02d1b-3472-534b-95f0-7bcbbedcd2ca",
+    "file": "santa-cruz-nomad-7-my27--m.glb",
+    "storage_path": "catalog/v11/santa-cruz-nomad-7-my27/9428b953fafde7be297bbdf3.glb",
+    "bytes": 2323360,
+    "sha256": "9428b953fafde7be297bbdf3b2ed5ce5fd6dfb382b77339c2976166f28152c62",
+    "published_at": "2026-10-21T20:31:16.160Z"
+  },
+  {
+    "variant_id": "83d346d8-8247-5aac-970b-2ad594e19881",
+    "predecessor_id": "0e6cc376-4662-5efc-ada5-66f1f99cfab4",
+    "asset_id": "54c8f58c-1ca6-55ed-846d-e1b7459088e7",
+    "file": "santa-cruz-nomad-7-my27--l.glb",
+    "storage_path": "catalog/v11/santa-cruz-nomad-7-my27/2d137d4aeff631e7a50c7c29.glb",
+    "bytes": 2332168,
+    "sha256": "2d137d4aeff631e7a50c7c2913fd9c8c6a7d8899b2d29f03cb6bf89f05ca526a",
+    "published_at": "2026-10-21T20:31:21.203Z"
+  },
+  {
+    "variant_id": "b806cd48-c4af-56bf-9140-3e847a78b8b9",
+    "predecessor_id": "5bad4471-6d10-52cc-93a6-7ddb2fb78079",
+    "asset_id": "f50cff19-55d9-5535-a145-ebf797b84509",
+    "file": "canyon-sender-cfr-high-pivot--m.glb",
+    "storage_path": "catalog/v11/canyon-sender-cfr-high-pivot/5321cf3ef3ca41f9a00591dc.glb",
+    "bytes": 2871820,
+    "sha256": "5321cf3ef3ca41f9a00591dce065eda4439ae24ae9e379a93cf655d6795044f2",
+    "published_at": "2026-10-21T20:31:26.208Z"
+  },
+  {
+    "variant_id": "52011e16-3185-5667-b63c-e8c6cae12eea",
+    "predecessor_id": "fc57f269-e2d9-5fcc-9262-86113f9f2cfe",
+    "asset_id": "524672da-e288-5979-9ccc-56b0edc40ccf",
+    "file": "canyon-sender-cfr-high-pivot--l.glb",
+    "storage_path": "catalog/v11/canyon-sender-cfr-high-pivot/051d9ba6484857f80a0f1534.glb",
+    "bytes": 2869604,
+    "sha256": "051d9ba6484857f80a0f15347dff43a12c80fd0055bed563a567fd8055971f04",
+    "published_at": "2026-10-21T20:31:31.095Z"
+  },
+  {
+    "variant_id": "ae2354ee-f279-5043-8fa9-30fc4e0d6be8",
+    "predecessor_id": "1920a8f6-a331-563a-81e5-03724927bec8",
+    "asset_id": "ec3f50ac-759b-5428-88d2-1e56b37fc96b",
+    "file": "specialized-s-works-enduro-udh--s3.glb",
+    "storage_path": "catalog/v11/specialized-s-works-enduro-udh/027ff4edc7c27e3b8d0b8d48.glb",
+    "bytes": 2526436,
+    "sha256": "027ff4edc7c27e3b8d0b8d48d374c86d6e5c674836211f015650e7a4340ff474",
+    "published_at": "2026-10-21T20:31:36.266Z"
+  },
+  {
+    "variant_id": "9748da3f-477a-595c-a8c5-5127988326d1",
+    "predecessor_id": "9a4d725f-66ff-5f67-a43b-2bf15b79c6a8",
+    "asset_id": "36fcbd96-ba2c-5630-86a5-82656f6df1c5",
+    "file": "specialized-s-works-enduro-udh--s4.glb",
+    "storage_path": "catalog/v11/specialized-s-works-enduro-udh/639da14df250ab7eea511f44.glb",
+    "bytes": 2518632,
+    "sha256": "639da14df250ab7eea511f44769dbdee8fbc0efc92fb9629a44b966c7a34f16a",
+    "published_at": "2026-10-21T20:31:41.506Z"
+  },
+  {
+    "variant_id": "f1e192a8-6741-5f63-9719-a7eea40f579a",
+    "predecessor_id": "6cef0dbd-4c5d-5bba-85e4-c5d6a9d8dd3c",
+    "asset_id": "f0e3197f-a36c-5021-92ee-ed3043f65d93",
+    "file": "da-bomb-cherry-bomb-29--17in.glb",
+    "storage_path": "catalog/v11/da-bomb-cherry-bomb-29/367f341df8b0da9a52566b37.glb",
+    "bytes": 2586840,
+    "sha256": "367f341df8b0da9a52566b37e2ac96a4ed864431c252b334a14d394f03189a7b",
+    "published_at": "2026-10-21T20:31:45.697Z"
+  },
+  {
+    "variant_id": "f547ff76-84d7-5791-8f2d-f1fb90223ccb",
+    "predecessor_id": "8bd115a5-2d29-5fc4-8d6b-0391ca907422",
+    "asset_id": "f126d244-5c8a-580a-8d4e-7da55e060c29",
+    "file": "da-bomb-cherry-bomb-29--19in.glb",
+    "storage_path": "catalog/v11/da-bomb-cherry-bomb-29/02ace9d5f962ff63e36d77d6.glb",
+    "bytes": 2584724,
+    "sha256": "02ace9d5f962ff63e36d77d663e62afa9bfe43924460079e44b3dd6ed1946a51",
+    "published_at": "2026-10-21T20:31:49.742Z"
+  },
+  {
+    "variant_id": "cebff79a-4e29-5fec-8055-4c240b8efc45",
+    "predecessor_id": "df504504-ffe0-56cf-9678-e4536d2b4741",
+    "asset_id": "7b4344b6-fdfc-5b4d-94bb-54834a8a1922",
+    "file": "scott-ransom-rc-427727--m.glb",
+    "storage_path": "catalog/v11/scott-ransom-rc-427727/ee2cdffc8f3c4e19a4c1a02a.glb",
+    "bytes": 1746960,
+    "sha256": "ee2cdffc8f3c4e19a4c1a02ad7cbd07b52a8c8ecea3e5a571116b66e9b831778",
+    "published_at": "2026-10-21T20:31:54.037Z"
+  },
+  {
+    "variant_id": "216174fb-d223-5ed2-b2a5-6362c927f69f",
+    "predecessor_id": "de5a0a8f-0d7a-5aac-a506-ff8b9bec8609",
+    "asset_id": "1cce9e8c-ebe0-5443-857e-4f8c3c7e3f13",
+    "file": "scott-ransom-rc-427727--l.glb",
+    "storage_path": "catalog/v11/scott-ransom-rc-427727/fa9378bb9a545876c30148c1.glb",
+    "bytes": 1741876,
+    "sha256": "fa9378bb9a545876c30148c15e4ff88eb4439e9b41bfac7bc38a6ba8676b02ee",
+    "published_at": "2026-10-21T20:31:58.837Z"
+  },
+  {
+    "variant_id": "76e5cf40-1b34-5ded-b21e-34a1e4e2c3cc",
+    "predecessor_id": "b3ef4c47-847d-5011-8c6b-6339219778b2",
+    "asset_id": "340e33d4-4463-5d30-a3ec-08e4c287dc68",
+    "file": "trek-slash-al-gen-6--m.glb",
+    "storage_path": "catalog/v11/trek-slash-al-gen-6/6fc7f5b86524bb642c508925.glb",
+    "bytes": 2547660,
+    "sha256": "6fc7f5b86524bb642c508925a230e225af49ee7c36a06a63ec8b00e5bbf7bc00",
+    "published_at": "2026-10-21T20:32:03.923Z"
+  },
+  {
+    "variant_id": "5b4c39ae-eee7-5d8f-866f-bb7642f2a426",
+    "predecessor_id": "337b0a10-669c-59fc-8f58-505350700862",
+    "asset_id": "cc2b26f4-5258-56f8-acf1-55d1ed5b23e3",
+    "file": "trek-slash-al-gen-6--l.glb",
+    "storage_path": "catalog/v11/trek-slash-al-gen-6/d91b5c06e23704934c4c2169.glb",
+    "bytes": 2542120,
+    "sha256": "d91b5c06e23704934c4c2169e432f8f98def776e4e44a72b076a83b94b563d7d",
+    "published_at": "2026-10-21T20:32:08.358Z"
+  },
+  {
+    "variant_id": "45981a27-4fbe-5b95-9aa5-ed89f9f4e2e2",
+    "predecessor_id": "c01cdbcc-147e-5e25-912e-446a79b7f95c",
+    "asset_id": "c6729acf-8cee-5898-a5fc-7ead93d28f3d",
+    "file": "santa-cruz-v10-8-my27--m.glb",
+    "storage_path": "catalog/v11/santa-cruz-v10-8-my27/1c53fb266c5103133c31a0a3.glb",
+    "bytes": 1077904,
+    "sha256": "1c53fb266c5103133c31a0a3e445ec87c676c77e93c3909c053b0a3f6b5141bd",
+    "published_at": "2026-10-21T20:32:11.656Z"
+  },
+  {
+    "variant_id": "137dc7ba-2c49-5db4-8977-31a730c5e124",
+    "predecessor_id": "4661f29d-ac03-5b35-af2d-6582af2df805",
+    "asset_id": "26fea76b-b002-5e2a-92ba-a4519e1188e2",
+    "file": "santa-cruz-v10-8-my27--l.glb",
+    "storage_path": "catalog/v11/santa-cruz-v10-8-my27/ef2ecd847333b1ebc17b88d7.glb",
+    "bytes": 1076316,
+    "sha256": "ef2ecd847333b1ebc17b88d7089cd802c18ed7f6a11a89f4be3670f8e3c362b8",
+    "published_at": "2026-10-21T20:32:15.801Z"
+  },
+  {
+    "variant_id": "338adc45-97c8-5bb0-8171-7e6a246437ac",
+    "predecessor_id": "41864b28-60da-579c-8f1e-ef985181e867",
+    "asset_id": "fbfe36df-88ea-5749-8fa2-943062c94dc6",
+    "file": "yt-tues-mk4-carbon--m.glb",
+    "storage_path": "catalog/v11/yt-tues-mk4-carbon/21fc4a0a82323be08bd2dea3.glb",
+    "bytes": 803748,
+    "sha256": "21fc4a0a82323be08bd2dea3b18da2343f7ce0c638f3435708fb0ed55a35663e",
+    "published_at": "2026-10-21T20:32:19.006Z"
+  },
+  {
+    "variant_id": "fedba5b6-9536-5336-adea-473df5bf0cdf",
+    "predecessor_id": "a60641e9-9571-5140-a099-4b279843f619",
+    "asset_id": "7818302b-2b95-5faf-b740-088342c73ec3",
+    "file": "yt-tues-mk4-carbon--l.glb",
+    "storage_path": "catalog/v11/yt-tues-mk4-carbon/7cd6bc140a6a3f83f2f1dce6.glb",
+    "bytes": 809844,
+    "sha256": "7cd6bc140a6a3f83f2f1dce6354f5d23c0474e8e2418adb8a91a5b7eb2c5b5b4",
+    "published_at": "2026-10-21T20:32:22.365Z"
+  },
+  {
+    "variant_id": "229fd5ef-7426-5817-9b02-21bb5ad003cc",
+    "predecessor_id": "76c8e841-b7aa-57f0-8139-26003a2987de",
+    "asset_id": "7571a757-76e8-519d-83c9-63e216fe2f90",
+    "file": "yt-capra-mk3-carbon-mx--m.glb",
+    "storage_path": "catalog/v11/yt-capra-mk3-carbon-mx/eaa21482cf7ebd2655d83218.glb",
+    "bytes": 807728,
+    "sha256": "eaa21482cf7ebd2655d83218755079e3925da71a9b9ed1dc81aeb03bdd633c32",
+    "published_at": "2026-10-21T20:32:25.369Z"
+  },
+  {
+    "variant_id": "c83cf0f0-eeb9-57e6-94f0-c9fdf9bff840",
+    "predecessor_id": "ab9eb4fb-9018-5e76-8372-8e4b83c45a00",
+    "asset_id": "f052ccce-6d48-5157-ad88-a0a709363732",
+    "file": "yt-capra-mk3-carbon-mx--l.glb",
+    "storage_path": "catalog/v11/yt-capra-mk3-carbon-mx/d132b67271e54e260b21b932.glb",
+    "bytes": 811280,
+    "sha256": "d132b67271e54e260b21b9329a8aa0fd0b76f8f079a757a68ac39b4d442cab34",
+    "published_at": "2026-10-21T20:32:28.935Z"
+  },
+  {
+    "variant_id": "8e238091-6d5b-53bc-b9f7-dc1ad8499e86",
+    "predecessor_id": "ad65f52b-4d65-5cd2-8a6a-f9c266ddf5e5",
+    "asset_id": "1bcefeb0-308e-56c0-8add-f2fabc298734",
+    "file": "gt-fury-carbon-high-pivot--m.glb",
+    "storage_path": "catalog/v11/gt-fury-carbon-high-pivot/fce7ef6f78c69e6554a788e7.glb",
+    "bytes": 878116,
+    "sha256": "fce7ef6f78c69e6554a788e76a03f89aa40f5b1184c2a1f8d02c690a036ec23a",
+    "published_at": "2026-10-21T20:32:32.319Z"
+  },
+  {
+    "variant_id": "e4261d9f-f28b-512b-85e7-a4bfae1606b6",
+    "predecessor_id": "b3f8304d-471b-5611-9daf-c9d4c20d0691",
+    "asset_id": "f0130cf3-1a35-527a-9e14-efa8821874b0",
+    "file": "gt-fury-carbon-high-pivot--l.glb",
+    "storage_path": "catalog/v11/gt-fury-carbon-high-pivot/43020132c2b1a7e3e9d01252.glb",
+    "bytes": 876788,
+    "sha256": "43020132c2b1a7e3e9d01252dd832dffb72a3fa0be44c789a0a122bf990db973",
+    "published_at": "2026-10-21T20:32:36.719Z"
+  },
+  {
+    "variant_id": "df5cf6c5-5135-5136-bddf-a1280ae37a2b",
+    "predecessor_id": "0e4dc789-16d1-5d2d-9b6a-424b3941dc3b",
+    "asset_id": "65fef173-f9d0-51cc-bbbd-8592210c90dc",
+    "file": "gt-force-carbon-high-pivot--m.glb",
+    "storage_path": "catalog/v11/gt-force-carbon-high-pivot/58f9cb085e4ac31e8ed255b1.glb",
+    "bytes": 851308,
+    "sha256": "58f9cb085e4ac31e8ed255b17247c95a52469b119a32351412e4196972153eb0",
+    "published_at": "2026-10-21T20:32:39.895Z"
+  },
+  {
+    "variant_id": "86b45115-aa9f-5b31-a2bb-71e059969763",
+    "predecessor_id": "b8814ac7-70ac-522d-835f-92252d3337a3",
+    "asset_id": "f54bab00-7a22-537f-9557-f2ed5257bc8d",
+    "file": "gt-force-carbon-high-pivot--l.glb",
+    "storage_path": "catalog/v11/gt-force-carbon-high-pivot/0ac3f3491393692efddbedbf.glb",
+    "bytes": 850284,
+    "sha256": "0ac3f3491393692efddbedbf45b09df26ceba8ad9d8574dd49869d31d37cac4d",
+    "published_at": "2026-10-21T20:32:43.672Z"
+  },
+  {
+    "variant_id": "2eba0528-b76e-5332-bc61-9e6952caca57",
+    "predecessor_id": "9b2ecbbc-91be-5526-aa90-ba0fab60fbda",
+    "asset_id": "29df2575-7bae-59c0-befd-c9fc93c44613",
+    "file": "commencal-frs-v3--m.glb",
+    "storage_path": "catalog/v11/commencal-frs-v3/38a09b8ba02611765cb16e9d.glb",
+    "bytes": 848400,
+    "sha256": "38a09b8ba02611765cb16e9d87b3818ed0740065cc22051b75692cc7ab0cdc9c",
+    "published_at": "2026-10-21T20:32:46.452Z"
+  },
+  {
+    "variant_id": "b9ccdeec-c194-540a-857e-74a6a22a60fc",
+    "predecessor_id": "2741aecc-6958-56e1-bbf5-08902ec13645",
+    "asset_id": "32eeeebd-d19a-5021-84a7-178b88bd6e74",
+    "file": "commencal-frs-v3--l.glb",
+    "storage_path": "catalog/v11/commencal-frs-v3/c1623c5a714471323f9f27ba.glb",
+    "bytes": 845932,
+    "sha256": "c1623c5a714471323f9f27bad3fcdbd7eee16e7aee5badbd0ed0a27ef566e6a7",
+    "published_at": "2026-10-21T20:32:49.273Z"
+  },
+  {
+    "variant_id": "54649528-e3c9-59a6-97a3-daa00e2dcf43",
+    "predecessor_id": "93d67326-fb33-5ef9-b301-609b29e37734",
+    "asset_id": "75033223-99c3-52ed-bbd6-0c4447290a59",
+    "file": "commencal-furious-v3-2021--m.glb",
+    "storage_path": "catalog/v11/commencal-furious-v3-2021/fd8c7e2cad527dde56b501a3.glb",
+    "bytes": 849264,
+    "sha256": "fd8c7e2cad527dde56b501a3040e442a42d962290978e9395421ba4d97e4dfd2",
+    "published_at": "2026-10-21T20:32:52.570Z"
+  },
+  {
+    "variant_id": "ba349f6b-9432-5730-a1cd-41522aac5471",
+    "predecessor_id": "4ffab798-eab9-5575-bbc8-95af4f67c14a",
+    "asset_id": "812da90a-bd01-5d00-b7bd-c055fea2e141",
+    "file": "commencal-furious-v3-2021--l.glb",
+    "storage_path": "catalog/v11/commencal-furious-v3-2021/d4560f43ee8abe31efb15feb.glb",
+    "bytes": 849172,
+    "sha256": "d4560f43ee8abe31efb15feb74a7e22a3534ab066b6f0dc9f078318d92d905df",
+    "published_at": "2026-10-21T20:32:55.921Z"
+  }
+]

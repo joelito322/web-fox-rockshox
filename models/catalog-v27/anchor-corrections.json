@@ -1,0 +1,64 @@
+[
+  {
+    "predecessor_id": "b589e043-0dfc-5e89-99e8-40586c37279c",
+    "successor_id": "dac3a875-4264-5bb7-90ff-a1fcec38d494",
+    "anchor": "saddle",
+    "old_saddle": {
+      "position": [
+        -0.037444899349455316,
+        0.5423576652232496,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "estimated": true
+    },
+    "new_saddle": {
+      "position": [
+        -0.03744489934945533,
+        0.5423576652232496,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "estimated": true
+    }
+  },
+  {
+    "predecessor_id": "dbe904aa-f7db-537b-89f0-c4cc6a626db1",
+    "successor_id": "896a0017-b2ed-5db9-b96c-3056ee722413",
+    "anchor": "saddle",
+    "old_saddle": {
+      "position": [
+        -0.01486963315380294,
+        0.565054522069142,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "estimated": true
+    },
+    "new_saddle": {
+      "position": [
+        -0.014869633153802944,
+        0.565054522069142,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "estimated": true
+    }
+  }
+]

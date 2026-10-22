@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "eb0eddbc-1915-5ceb-a8b0-631510f76a1e",
+    "predecessor_id": "1ff5a2a4-762e-5c17-8d91-852bc9b2699d",
+    "asset_id": "1a38efe3-8266-5f66-9277-a548eef81dec",
+    "file": "santa-cruz-nomad-7-my27--m.glb",
+    "storage_path": "catalog/v22/santa-cruz-nomad-7-my27/c17ae4edd75beaf54e3468a9.glb",
+    "bytes": 2121112,
+    "sha256": "c17ae4edd75beaf54e3468a9559e314968f8f5567c1b07c86c3c56738f0c8d2a",
+    "published_at": "2026-10-22T01:17:46.513Z"
+  },
+  {
+    "variant_id": "4b0af166-0b44-5d12-997c-83fc5968487a",
+    "predecessor_id": "83d346d8-8247-5aac-970b-2ad594e19881",
+    "asset_id": "ee472691-6273-5ff5-aaf7-6d4a0605cc66",
+    "file": "santa-cruz-nomad-7-my27--l.glb",
+    "storage_path": "catalog/v22/santa-cruz-nomad-7-my27/a35d57029710cdf99a820146.glb",
+    "bytes": 2136716,
+    "sha256": "a35d57029710cdf99a820146e8f93bce458d5bb8400b16368363362e8682570b",
+    "published_at": "2026-10-22T01:17:51.056Z"
+  }
+]

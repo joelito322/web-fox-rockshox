@@ -1,0 +1,551 @@
+{
+  "brands": [
+    {
+      "id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "name": "COMMENCAL",
+      "slug": "commencal",
+      "region": "Andorra",
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "df2bfe80-2f03-5513-86e9-d99c721aa4ef",
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "name": "SUPREME DH V5",
+      "slug": "commencal-supreme-dh-v5",
+      "category": "frame",
+      "disciplines": [
+        "downhill"
+      ],
+      "description": "Cuadro de descenso de 220 mm con polea guía y ruedas 29/27,5.",
+      "technical_notes": "Geometría Low. Cuatro posiciones de amortiguador y tres ajustes de vainas; recurso exterior aproximado, sin simulación de suspensión.",
+      "image_key": "catalog:commencal-supreme-dh-v5",
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Ficha comercial oficial vigente.",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "4fdc10d9-52fd-50c7-ba05-d9f8f3328e4c",
+      "kind": "glb",
+      "storage_path": "catalog/v25/commencal-supreme-dh-v5/9141a5327cc80b17317d76b9.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-supreme-dh-v5",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.453929509946203,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.456,
+              0.649,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5063237278449805,
+              0.5489424045072823,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.04266165658817905,
+              0.3877602383682194,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.04870163818717291,
+              0.24072637709392342,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.03459673374891281,
+              0.005011752247810364,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07877323007522485,
+              0.5303994835298848,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.01685775632082892,
+              0.21968702672172674,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.01588250634696268,
+              0.07851044551994237,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8290704900537968,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-supreme-dh-v5--m__frame"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "COMMENCAL SUPREME DH V5: silueta propia, HVCS exterior, pares de brazos y soportes específicos. Fuentes y límites: models/catalog-v25/README.md. No CAD.",
+      "published": true
+    },
+    {
+      "id": "3de7c394-b8ff-5770-8691-6fe1b832785f",
+      "kind": "glb",
+      "storage_path": "catalog/v25/commencal-supreme-dh-v5/19aac1e653955a2abc42849b.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-supreme-dh-v5",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.453929509946203,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.484,
+              0.649,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5343237278449804,
+              0.5489424045072823,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.02616906501020716,
+              0.3877602383682194,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.05899691309864724,
+              0.24072637709392342,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.03310244157910347,
+              0.008309274911880493,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.05651101708078128,
+              0.5317372016107708,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              -0.007508324339308536,
+              0.21968702672172674,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "chain_idler": {
+            "position": [
+              -0.012548665703287318,
+              0.07851044551994237,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8570704900537969,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-supreme-dh-v5--l__frame"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "COMMENCAL SUPREME DH V5: silueta propia, HVCS exterior, pares de brazos y soportes específicos. Fuentes y límites: models/catalog-v25/README.md. No CAD.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "8ab2e508-dc00-56bb-9ad1-47d95087dbea",
+      "component_id": "df2bfe80-2f03-5513-86e9-d99c721aa4ef",
+      "label": "M · Clear Silver · Low",
+      "model_year": null,
+      "generation": "V5",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Medidas de esta variante; no implica un SKU de conjunto.",
+          "fields": [
+            "size_label",
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "geometry",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "size_label": "M",
+        "material": "Aluminio 6066 T4/T6",
+        "suspension_type": "Virtual High Pivot · polea guía de cadena",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 220,
+        "geometry": {
+          "reach_mm": 456,
+          "stack_mm": 649,
+          "seat_tube_mm": 370,
+          "head_tube_mm": 112,
+          "head_angle_deg": 63.3,
+          "seat_angle_deg": 75.7,
+          "wheelbase_mm": 1283,
+          "effective_top_tube_mm": 621,
+          "chainstay_mm": 454,
+          "reference_position": "Low; altura de pedalier sin confirmar."
+        },
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "upper_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "lower_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "No compatible con FOX Float X2 2026. Confirmar herrajes y orientación del depósito."
+        },
+        "headset_standard": "ZS56/ZS56",
+        "rear_axle_standard": "12x157",
+        "derailleur_mount": "Patilla específica; no UDH",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 612 mm; máxima 620 mm.",
+        "tire_clearance_notes": "Neumático trasero máximo ETRTO 65-584."
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Clear Silver",
+            "image_key": null,
+            "material": {
+              "color": "#bebfba",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "4fdc10d9-52fd-50c7-ba05-d9f8f3328e4c",
+      "price_reference": null
+    },
+    {
+      "id": "5f06fbc5-4b2a-574a-b6ed-2fc2aabf4c02",
+      "component_id": "df2bfe80-2f03-5513-86e9-d99c721aa4ef",
+      "label": "L · Clear Silver · Low",
+      "model_year": null,
+      "generation": "V5",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR",
+          "consulted_at": "2026-10-19",
+          "note": "Medidas de esta variante; no implica un SKU de conjunto.",
+          "fields": [
+            "size_label",
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "geometry",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "size_label": "L",
+        "material": "Aluminio 6066 T4/T6",
+        "suspension_type": "Virtual High Pivot · polea guía de cadena",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 220,
+        "geometry": {
+          "reach_mm": 484,
+          "stack_mm": 649,
+          "seat_tube_mm": 370,
+          "head_tube_mm": 112,
+          "head_angle_deg": 63.3,
+          "seat_angle_deg": 75.7,
+          "wheelbase_mm": 1311,
+          "effective_top_tube_mm": 649,
+          "chainstay_mm": 454,
+          "reference_position": "Low; altura de pedalier sin confirmar."
+        },
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "upper_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "lower_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "No compatible con FOX Float X2 2026. Confirmar herrajes y orientación del depósito."
+        },
+        "headset_standard": "ZS56/ZS56",
+        "rear_axle_standard": "12x157",
+        "derailleur_mount": "Patilla específica; no UDH",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 612 mm; máxima 620 mm.",
+        "tire_clearance_notes": "Neumático trasero máximo ETRTO 65-584."
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Clear Silver",
+            "image_key": null,
+            "material": {
+              "color": "#bebfba",
+              "metalness": 0.4,
+              "roughness": 0.4
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "3de7c394-b8ff-5770-8691-6fe1b832785f",
+      "price_reference": null
+    }
+  ]
+}

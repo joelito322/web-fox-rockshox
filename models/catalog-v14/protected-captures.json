@@ -1,0 +1,114 @@
+[
+  {
+    "file": "models/catalog-v13/exports/canyon-sender-cfr-high-pivot--m.glb",
+    "sha256": "e599c2a46a3c9576010773c6d12939b77aace6645340e9881ca21533e17b7596"
+  },
+  {
+    "file": "models/catalog-v13/exports/canyon-sender-cfr-high-pivot--l.glb",
+    "sha256": "f5aea9b94b161d51f4f9d233af43712ef7a8fe8c5a0e55339d98c125a8662a74"
+  },
+  {
+    "file": "models/catalog-v13/exports/specialized-s-works-enduro-udh--s3.glb",
+    "sha256": "4ba5baaddc9ae4f03ddc63ba42b81946748562840d220dc0a56d1011f4413cd8"
+  },
+  {
+    "file": "models/catalog-v13/exports/specialized-s-works-enduro-udh--s4.glb",
+    "sha256": "440f12d6effc23507484cf422d581671e0b59fbba13c1877b86529cec59657cb"
+  },
+  {
+    "file": "models/catalog-v13/exports/trek-slash-al-gen-6--m.glb",
+    "sha256": "e6a3ee5067627875a2f427dcbd44b2f5e2b1f4269e2b8a1504e0c967d8095977"
+  },
+  {
+    "file": "models/catalog-v13/exports/trek-slash-al-gen-6--l.glb",
+    "sha256": "383bac0a034085bffa419e4db294a730d2b148474c8181631ccc26f7e4bfb8c8"
+  },
+  {
+    "file": "models/catalog-v13/exports/santa-cruz-v10-8-my27--m.glb",
+    "sha256": "befac71ae31f73af6c26f2cf06d5cb4da0bec39597d1328c564cf3c1532cc9e4"
+  },
+  {
+    "file": "models/catalog-v13/exports/santa-cruz-v10-8-my27--l.glb",
+    "sha256": "8d4dbb0e56ab5974fca47920474f3df4c6d91310eaa0f0e369392cd0cdaad578"
+  },
+  {
+    "file": "models/catalog-v13/exports/yt-tues-mk4-carbon--m.glb",
+    "sha256": "3ed2370e30b8aa7f64b622ca6ce51e960aaa1f30f9cc3931afb832d4c3f2a1d0"
+  },
+  {
+    "file": "models/catalog-v13/exports/yt-tues-mk4-carbon--l.glb",
+    "sha256": "0f648b205bf3e79202d8b8f2aefcdff2f452b6c61eceaf2bf242011e6a71b04a"
+  },
+  {
+    "file": "models/catalog-v13/exports/gt-fury-carbon-high-pivot--m.glb",
+    "sha256": "486f58954c9964dbd9f63557e5c0d41c3b8749a54384f015228d06cff58bbae7"
+  },
+  {
+    "file": "models/catalog-v13/exports/gt-fury-carbon-high-pivot--l.glb",
+    "sha256": "7f3a57726dc90894c227e1d3aa002bf84a05a34e37caefb18378996d664d7ff0"
+  },
+  {
+    "file": "models/catalog-v13/exports/gt-force-carbon-high-pivot--m.glb",
+    "sha256": "114cf65884276a99378475fe2aaad1d4303c86af996617c0b860b9fd01fc61d1"
+  },
+  {
+    "file": "models/catalog-v13/exports/gt-force-carbon-high-pivot--l.glb",
+    "sha256": "212bc5db0a949d3127d39f49e926b92fa954ac88b75b2fc43870fc903a443fa7"
+  },
+  {
+    "file": "models/catalog-v13/exports/commencal-frs-v3--m.glb",
+    "sha256": "c8f28710b1c60d0cbbdec4f42020b3b6c47ca61db1fc42cd4403fa0050bfd60b"
+  },
+  {
+    "file": "models/catalog-v13/exports/commencal-frs-v3--l.glb",
+    "sha256": "2670f907e222b9b0a09569356fa2400b6e4793bb7cc7e65d7a3b5ac6b607a069"
+  },
+  {
+    "file": "models/catalog-v13/exports/commencal-furious-v3-2021--m.glb",
+    "sha256": "aaeab517044752c22cb709520796e8c9e5d62ad1161a3462377adee984c19d0b"
+  },
+  {
+    "file": "models/catalog-v13/exports/commencal-furious-v3-2021--l.glb",
+    "sha256": "a1a5b51009d92dbafa35b6116a6ef0a3f0c357ddc7cbcbfbd014374eb9dfafc9"
+  },
+  {
+    "file": "models/catalog-v11/exports/commencal-meta-sx-v5--m.glb",
+    "sha256": "8a9806e4725be4cdb2a079f72143d3544e860d63442c7adfdf316b7808ba95d8"
+  },
+  {
+    "file": "models/catalog-v11/exports/commencal-meta-sx-v5--l.glb",
+    "sha256": "0717de7997555f1c048bab5f7ba74f056420a083abde8d5f21d2cc538301afdd"
+  },
+  {
+    "file": "models/catalog-v11/exports/commencal-supreme-dh-v5--m.glb",
+    "sha256": "9321923b063194cb4fe402822b893edb727818b7b494ed9f1186c026ae16a821"
+  },
+  {
+    "file": "models/catalog-v11/exports/commencal-supreme-dh-v5--l.glb",
+    "sha256": "5a82f6878399c275df3fca3885eb6b8dce34e98affe0477d8a1eb87437d3789a"
+  },
+  {
+    "file": "models/catalog-v11/exports/santa-cruz-nomad-7-my27--m.glb",
+    "sha256": "9428b953fafde7be297bbdf3b2ed5ce5fd6dfb382b77339c2976166f28152c62"
+  },
+  {
+    "file": "models/catalog-v11/exports/santa-cruz-nomad-7-my27--l.glb",
+    "sha256": "2d137d4aeff631e7a50c7c2913fd9c8c6a7d8899b2d29f03cb6bf89f05ca526a"
+  },
+  {
+    "file": "models/catalog-v11/exports/da-bomb-cherry-bomb-29--17in.glb",
+    "sha256": "367f341df8b0da9a52566b37e2ac96a4ed864431c252b334a14d394f03189a7b"
+  },
+  {
+    "file": "models/catalog-v11/exports/da-bomb-cherry-bomb-29--19in.glb",
+    "sha256": "02ace9d5f962ff63e36d77d663e62afa9bfe43924460079e44b3dd6ed1946a51"
+  },
+  {
+    "file": "models/catalog-v11/exports/scott-ransom-rc-427727--m.glb",
+    "sha256": "ee2cdffc8f3c4e19a4c1a02ad7cbd07b52a8c8ecea3e5a571116b66e9b831778"
+  },
+  {
+    "file": "models/catalog-v11/exports/scott-ransom-rc-427727--l.glb",
+    "sha256": "fa9378bb9a545876c30148c15e4ff88eb4439e9b41bfac7bc38a6ba8676b02ee"
+  }
+]

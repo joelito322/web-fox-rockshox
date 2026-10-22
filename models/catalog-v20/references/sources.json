@@ -1,0 +1,51 @@
+[
+  {
+    "url": "https://gtbicycles.com/cdn/shop/files/FuryCRB_Frame_PD_BLK.jpg",
+    "file": "FuryCRB_Frame_PD_BLK.jpg",
+    "bytes": 163047,
+    "sha256": "db2037edc3b0e30fefc953c3a626ac20d134684de354d344ae58e20625333694",
+    "kind": "manufacturer-photo"
+  },
+  {
+    "url": "https://gtbicycles.com/cdn/shop/files/FuryCRB_Frame_3Q_BLK.jpg",
+    "file": "FuryCRB_Frame_3Q_BLK.jpg",
+    "bytes": 141696,
+    "sha256": "d9dff50e0dbafa353328937461cdba0ff3c0349bc83b97d23c27f8c4efef8ccd",
+    "kind": "manufacturer-photo"
+  },
+  {
+    "url": "https://gtbicycles.com/cdn/shop/files/G24_GT_Fury_OMS.pdf?v=6564285968978387813",
+    "file": "G24_GT_Fury_OMS.pdf",
+    "bytes": 8246243,
+    "sha256": "4568d3544d9ebde29fba0066445064d7f980a85588e41abcb3c93d7b6b55fc55",
+    "kind": "manufacturer-manual"
+  },
+  {
+    "url": "https://cdn.shopify.com/s/files/1/0775/1912/6825/files/2024_GT_Tech_Book.pdf?v=1715117251",
+    "file": "2024_GT_Tech_Book.pdf",
+    "bytes": 10996532,
+    "sha256": "96eaa373a5de3f4831ce31f5d6f8b55bd0c44c2a4ac00841cbc5779534573252",
+    "kind": "manufacturer-manual"
+  },
+  {
+    "url": "https://gtbicycles.com/cdn/shop/files/High-Pivot-LTS.jpg",
+    "file": "High-Pivot-LTS.jpg",
+    "sha256": "ef0387fc6143d940d65531fc4a97a42b62a9c5794086b2ca31aa5c6f1c34f2fd",
+    "bytes": 301371,
+    "kind": "manufacturer-photo"
+  },
+  {
+    "url": "https://gtbicycles.com/cdn/shop/files/Maximum-tunability.jpg",
+    "file": "Maximum-tunability.jpg",
+    "sha256": "613262e53f4c91c117bc8677cc5b59c552a47c6e693aa80e0a33621cb9612c23",
+    "bytes": 316889,
+    "kind": "manufacturer-photo"
+  },
+  {
+    "url": "https://gtbicycles.com/cdn/shop/files/Ruckus-management.jpg",
+    "file": "Ruckus-management.jpg",
+    "sha256": "1f73fdae87bbb7c766d803975c66f7a02b8b52ce4bc626b23e407b5074863614",
+    "bytes": 346408,
+    "kind": "manufacturer-photo"
+  }
+]

@@ -1,0 +1,549 @@
+{
+  "brands": [
+    {
+      "id": "33b3bc34-40f8-5504-ace2-a7a2819f7376",
+      "name": "Specialized",
+      "slug": "specialized",
+      "region": null,
+      "published": true
+    }
+  ],
+  "components": [
+    {
+      "id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "brand_id": "33b3bc34-40f8-5504-ace2-a7a2819f7376",
+      "name": "S-Works Enduro",
+      "slug": "specialized-s-works-enduro-udh",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometría documentadas.",
+      "technical_notes": "Exterior aproximado del modelo; acabados y superficies ocultas simplificados, sin simulación de suspensión. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "id": "35fa71a8-1f2c-509f-8c07-94dd77740a37",
+      "kind": "glb",
+      "storage_path": "catalog/v23/specialized-s-works-enduro-udh/f9aa211e7865c6486f16aa49.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "specialized-s-works-enduro-udh",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.44111223061710725,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.464,
+              0.62,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5079939169855916,
+              0.5301972424239384,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.06630210557010824,
+              0.43807817795821075,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.16741169343881523,
+              0.1787779805579351,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.021795183420181274,
+              0.09987453371286392,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.12690962602657752,
+              0.5721555006646202,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.05383960436016211,
+              0.21990420499832394,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8048877693828927,
+              0.048,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "specialized-s-works-enduro-udh__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "S-Works Enduro UDH: perfiles propios, cuna abierta del amortiguador bajo, bieletas superior/intermedia/inferior y basculante Horst por pares. Referencias oficiales y límites en models/catalog-v23/README.md. No CAD.",
+      "published": true
+    },
+    {
+      "id": "c3dfe6de-26a0-58fa-a08a-b0999c3a045f",
+      "kind": "glb",
+      "storage_path": "catalog/v23/specialized-s-works-enduro-udh/79c41183801d0db5b7f274cb.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "specialized-s-works-enduro-udh",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.44111223061710725,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.487,
+              0.629,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5353933086841507,
+              0.5302169666663323,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.05093686229599503,
+              0.4440906644567768,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.17411934859667333,
+              0.18140271518492307,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.015116453170776367,
+              0.10256863385438919,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.10699787799589638,
+              0.580131696938508,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.0617484153649171,
+              0.2229989571306194,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8328877693828928,
+              0.048,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "specialized-s-works-enduro-udh__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "S-Works Enduro UDH: perfiles propios, cuna abierta del amortiguador bajo, bieletas superior/intermedia/inferior y basculante Horst por pares. Referencias oficiales y límites en models/catalog-v23/README.md. No CAD.",
+      "published": true
+    }
+  ],
+  "variants": [
+    {
+      "id": "c803d9a6-e8fc-5541-9060-d688fb8d99b9",
+      "component_id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "label": "S3 · Gloss Rebel Pink Tint Carbon / Fog Tint",
+      "model_year": null,
+      "generation": "UDH",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seat_clamp_diameter_mm",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Nombre del acabado comercial; color del visor aproximado, sin código de pintura certificado",
+          "fields": [
+            "allowed_finishes"
+          ]
+        },
+        {
+          "url": "https://media.specialized.com/support/collateral/2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Manual actualmente enlazado, secciones 3.1/4.4: caja BSA roscada de 73 mm. Nueva captura; no sustituye referencias guardadas.",
+          "fields": [
+            "bb_shell"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono FACT 11m",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 60,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "restrictions": "Confirmar herrajes y tune específico Ride Dynamics del montaje de origen."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seat_clamp_diameter_mm": 38.6,
+        "fork_restrictions": "Geometría comercial con longitud total de horquilla 581 mm. No deducir otro máximo a partir de esa referencia.",
+        "size_label": "S3",
+        "geometry": {
+          "reach_mm": 464,
+          "stack_mm": 620,
+          "head_tube_mm": 100,
+          "wheelbase_mm": 1246,
+          "effective_top_tube_mm": 619,
+          "seat_tube_mm": 420,
+          "chainstay_mm": 442,
+          "head_angle_deg": 63.9,
+          "seat_angle_deg": 76,
+          "bb_height_mm": 347,
+          "bb_drop_mm": 28,
+          "reference_position": "Low BB; tallas originales S3/S4, sin convertirlas a M/L. La distancia entre ejes sigue la tabla comercial publicada."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Rebel Pink Tint Carbon / Fog Tint",
+            "image_key": null,
+            "material": {
+              "color": "#8d506a",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "35fa71a8-1f2c-509f-8c07-94dd77740a37",
+      "price_reference": null
+    },
+    {
+      "id": "c377544a-ead4-5a8c-9bde-ea86a7738e11",
+      "component_id": "4653a86e-8c67-594d-af9d-9514598be1b4",
+      "label": "S4 · Gloss Rebel Pink Tint Carbon / Fog Tint",
+      "model_year": null,
+      "generation": "UDH",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seat_clamp_diameter_mm",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://www.specialized.com/ba/en/shop/bikes/mountain-bikes/trail-bikes/enduro?sortBy=price-desc&sortDirection=desc",
+          "consulted_at": "2026-10-19",
+          "note": "Colección comercial Enduro; no usar el año del manual como año de toda variante",
+          "fields": []
+        },
+        {
+          "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+          "consulted_at": "2026-10-19",
+          "note": "Nombre del acabado comercial; color del visor aproximado, sin código de pintura certificado",
+          "fields": [
+            "allowed_finishes"
+          ]
+        },
+        {
+          "url": "https://media.specialized.com/support/collateral/2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+          "consulted_at": "2026-10-19",
+          "note": "Manual actualmente enlazado, secciones 3.1/4.4: caja BSA roscada de 73 mm. Nueva captura; no sustituye referencias guardadas.",
+          "fields": [
+            "bb_shell"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono FACT 11m",
+        "wheel_front": "29",
+        "wheel_rear": "29",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 205,
+          "stroke_mm": 60,
+          "upper_mount": {
+            "type": "Trunnion"
+          },
+          "restrictions": "Confirmar herrajes y tune específico Ride Dynamics del montaje de origen."
+        },
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seat_clamp_diameter_mm": 38.6,
+        "fork_restrictions": "Geometría comercial con longitud total de horquilla 581 mm. No deducir otro máximo a partir de esa referencia.",
+        "size_label": "S4",
+        "geometry": {
+          "reach_mm": 487,
+          "stack_mm": 629,
+          "head_tube_mm": 110,
+          "wheelbase_mm": 1274,
+          "effective_top_tube_mm": 644,
+          "seat_tube_mm": 440,
+          "chainstay_mm": 442,
+          "head_angle_deg": 63.9,
+          "seat_angle_deg": 76,
+          "bb_height_mm": 347,
+          "bb_drop_mm": 28,
+          "reference_position": "Low BB; tallas originales S3/S4, sin convertirlas a M/L. La distancia entre ejes sigue la tabla comercial publicada."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Rebel Pink Tint Carbon / Fog Tint",
+            "image_key": null,
+            "material": {
+              "color": "#8d506a",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "c3dfe6de-26a0-58fa-a08a-b0999c3a045f",
+      "price_reference": null
+    }
+  ]
+}

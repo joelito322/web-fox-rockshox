@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "specialized-s-works-enduro-udh",
+    "url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoCFvCPTRcKM5U4mJR5kkx6g8/73625-70_ENDURO-SW-FRM-RBLPNKTNT-FOGTNT_HERO.webp",
+    "file": "specialized-s-works-enduro-udh-0.png",
+    "sha256": "5d57a205e37e89554c7d6dfe09591b2a3121ba974e4048db08e57c4465372df3",
+    "bytes": 3600948,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "specialized-s-works-enduro-udh",
+    "url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoC8kmuzMNCy7JGgkHJcdkT6t/73625-70_ENDURO-SW-FRM-RBLPNKTNT-FOGTNT_FDSQ.webp",
+    "file": "specialized-s-works-enduro-udh-1.png",
+    "sha256": "7e96ecb11c1a909f15b9d9569d9df0616b16055ab1894a19bd1d36fb11332128",
+    "bytes": 2666841,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "specialized-s-works-enduro-udh",
+    "url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoC4Y5DihMHfu6Tp4iSpIt9y3/73625-70_ENDURO-SW-FRM-RBLPNKTNT-FOGTNT_RDSQ.webp",
+    "file": "specialized-s-works-enduro-udh-2.png",
+    "sha256": "00ed2b756b47836a043942916e5dbd14c5ab93c21ba6365099bd4ec122fa1cd2",
+    "bytes": 2646933,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "url": "https://media.specialized.com/support/collateral/2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+    "file": "2025_ENDURO_USER_MANUAL_ENGLISH.pdf",
+    "sha256": "c8933e2232b878874f090699afbc632326e5c3a1f432d6ee02b91d61b9fcdb9f",
+    "use": "2025 UDH Enduro anatomy; printed pages 10-19, exploded printed page12; no 2020 substitution"
+  }
+]

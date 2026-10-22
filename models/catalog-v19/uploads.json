@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "ec33192c-aa05-5a07-a757-989ad0b7fb03",
+    "predecessor_id": "776def1a-fe45-501c-ae3a-ba1eabac7348",
+    "asset_id": "95c005e4-971f-5b5e-9796-30b5a9bf1e38",
+    "file": "commencal-furious-v3-2021--m.glb",
+    "storage_path": "catalog/v19/commencal-furious-v3-2021/c48b440171c6d1d03cb84383.glb",
+    "bytes": 1399844,
+    "sha256": "c48b440171c6d1d03cb84383636ead944f1148a54a437463212417a8d5d2799d",
+    "published_at": "2026-10-22T00:39:45.044Z"
+  },
+  {
+    "variant_id": "463f6a87-ca0c-50f3-87ab-d92448db4818",
+    "predecessor_id": "90e4a331-4221-51e0-86f4-ff482fdc412a",
+    "asset_id": "ad7b8baf-d508-5c30-bfa7-b33a09b62b3d",
+    "file": "commencal-furious-v3-2021--l.glb",
+    "storage_path": "catalog/v19/commencal-furious-v3-2021/4e44f714dc5d42932948dd58.glb",
+    "bytes": 1404720,
+    "sha256": "4e44f714dc5d42932948dd586022bf537b264589f41445b218b823f64af63f78",
+    "published_at": "2026-10-22T00:39:49.661Z"
+  }
+]

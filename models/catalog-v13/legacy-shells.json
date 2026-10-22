@@ -1,0 +1,38 @@
+{
+  "b806cd48-c4af-56bf-9140-3e847a78b8b9": {
+    "file": "models/catalog-v6/exports/canyon-sender-cfr-high-pivot--m.glb",
+    "paintable_nodes": [
+      "canyon-sender-cfr-high-pivot--m__frame"
+    ]
+  },
+  "52011e16-3185-5667-b63c-e8c6cae12eea": {
+    "file": "models/catalog-v6/exports/canyon-sender-cfr-high-pivot--l.glb",
+    "paintable_nodes": [
+      "canyon-sender-cfr-high-pivot--l__frame"
+    ]
+  },
+  "ae2354ee-f279-5043-8fa9-30fc4e0d6be8": {
+    "file": "models/catalog-v6/exports/specialized-s-works-enduro-udh--s3.glb",
+    "paintable_nodes": [
+      "specialized-s-works-enduro-udh--s3__frame"
+    ]
+  },
+  "9748da3f-477a-595c-a8c5-5127988326d1": {
+    "file": "models/catalog-v6/exports/specialized-s-works-enduro-udh--s4.glb",
+    "paintable_nodes": [
+      "specialized-s-works-enduro-udh--s4__frame"
+    ]
+  },
+  "76e5cf40-1b34-5ded-b21e-34a1e4e2c3cc": {
+    "file": "models/catalog-v6/exports/trek-slash-al-gen-6--m.glb",
+    "paintable_nodes": [
+      "trek-slash-al-gen-6--m__frame"
+    ]
+  },
+  "5b4c39ae-eee7-5d8f-866f-bb7642f2a426": {
+    "file": "models/catalog-v6/exports/trek-slash-al-gen-6--l.glb",
+    "paintable_nodes": [
+      "trek-slash-al-gen-6--l__frame"
+    ]
+  }
+}

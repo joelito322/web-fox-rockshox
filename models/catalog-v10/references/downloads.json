@@ -1,0 +1,479 @@
+[
+  {
+    "slug": "commencal-meta-sx-v5",
+    "url": "https://www.commencal.com/on/demandware.static/-/Sites-commencal-master/default/dwdb980f9a/images/FT3MSXV5TME.jpeg",
+    "file": "images/commencal-meta-sx-v5-0.jpg",
+    "sha256": "933a67d2614eaaf12825b9fb438434c1003a7d0ceccc213ef619bfd9edea6072",
+    "bytes": 73922,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-meta-sx-v5",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw11c05040/images/productPages/meta-sx-v5-comparatif.jpg",
+    "file": "images/commencal-meta-sx-v5-1.jpg",
+    "sha256": "ce031e6dc85a5c4c889a088b17009eed475fb4a667eb71937af32de0d47ca308",
+    "bytes": 720688,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "context-only"
+  },
+  {
+    "slug": "commencal-meta-sx-v5",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw32107bcc/images/productPages/meta-sx-v5-suspensions.jpg",
+    "file": "images/commencal-meta-sx-v5-2.jpg",
+    "sha256": "beec8c27de8fc7d9591bf682f60dc44c3f90874d6e1e905adb43ff73a930c9b1",
+    "bytes": 343499,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "context-only"
+  },
+  {
+    "slug": "commencal-meta-sx-v5",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/images/FT3MSXV5TME.jpeg",
+    "file": "images/commencal-meta-sx-v5-3.jpg",
+    "sha256": "e800d402a26a56604e4476623666dd8e3c45ec01dc64f044a3769c6b6f5cffc0",
+    "bytes": 58314,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-supreme-dh-v5",
+    "url": "https://www.commencal.com/on/demandware.static/-/Sites-commencal-master/default/dw0f53c3d9/images/FT3SUPV54.jpg",
+    "file": "images/commencal-supreme-dh-v5-0.jpg",
+    "sha256": "cfad337cd6ff5fcf88552606f3db8e4373c77962e337bdf89db9f53b6c52a211",
+    "bytes": 168498,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-supreme-dh-v5",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dwa614ebf7/images/productPages/supreme-dh-v5-reglages.jpg",
+    "file": "images/commencal-supreme-dh-v5-1.jpg",
+    "sha256": "124649eb0d1643921033c5b476989df3f6d72a1970d592405fbcb3fd54e56af9",
+    "bytes": 107111,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-supreme-dh-v5",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dwbc2d7f36/images/productPages/supreme-dh-v5-suspensions.jpg",
+    "file": "images/commencal-supreme-dh-v5-2.jpg",
+    "sha256": "556124b8c201398bac3f381f64e823a9fcc4fecf379cb6b2c6838d0e12108f90",
+    "bytes": 459637,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "context-only"
+  },
+  {
+    "slug": "commencal-supreme-dh-v5",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/images/FT3SUPV54.jpg",
+    "file": "images/commencal-supreme-dh-v5-3.jpg",
+    "sha256": "8ed18d82c6f2e06ddfdf12a2431752d9395f2718ccfa418fa46570479bb9e7bd",
+    "bytes": 142274,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-supreme-dh-v5",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/images/FT3SUPV54_01.jpg",
+    "file": "images/commencal-supreme-dh-v5-4.jpg",
+    "sha256": "3f5c74d09a464453e5cea89030823e6570966fcb118f6b434c4b88fc60d64977",
+    "bytes": 124441,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-nomad-7-my27",
+    "url": "https://web.santacruzbicycles.com/cdn/shop/files/MY27_Nomad_CC_X0_AXS_RSV_GlossAquaMagenta_7d1fa07e-8b77-4dea-8748-bd6c023db12b.png",
+    "file": "images/santa-cruz-nomad-7-my27-0.png",
+    "sha256": "35ed895712f84fbad814d85efb5e44232807d553ca6dc6af80ccba84148ce2c8",
+    "bytes": 3651570,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-nomad-7-my27",
+    "url": "https://web.santacruzbicycles.com/cdn/shop/files/MY27_Nomad_CC_X0_AXS_RSV_MatteMetallicEarth_17205175-7a9e-4d75-a0c5-df22bc9861b2.png",
+    "file": "images/santa-cruz-nomad-7-my27-1.png",
+    "sha256": "8b93a69be66584063927a4eb43a99fee3daa3a6af0b12b4ddd295ffe17d07624",
+    "bytes": 3629357,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "specialized-s-works-enduro-udh",
+    "url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoCFvCPTRcKM5U4mJR5kkx6g8/73625-70_ENDURO-SW-FRM-RBLPNKTNT-FOGTNT_HERO.webp",
+    "file": "images/specialized-s-works-enduro-udh-0.png",
+    "sha256": "5d57a205e37e89554c7d6dfe09591b2a3121ba974e4048db08e57c4465372df3",
+    "bytes": 3600948,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "specialized-s-works-enduro-udh",
+    "url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoC8kmuzMNCy7JGgkHJcdkT6t/73625-70_ENDURO-SW-FRM-RBLPNKTNT-FOGTNT_FDSQ.webp",
+    "file": "images/specialized-s-works-enduro-udh-1.png",
+    "sha256": "7e96ecb11c1a909f15b9d9569d9df0616b16055ab1894a19bd1d36fb11332128",
+    "bytes": 2666841,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "specialized-s-works-enduro-udh",
+    "url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoC4Y5DihMHfu6Tp4iSpIt9y3/73625-70_ENDURO-SW-FRM-RBLPNKTNT-FOGTNT_RDSQ.webp",
+    "file": "images/specialized-s-works-enduro-udh-2.png",
+    "sha256": "00ed2b756b47836a043942916e5dbd14c5ab93c21ba6365099bd4ec122fa1cd2",
+    "bytes": 2646933,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "da-bomb-cherry-bomb-29",
+    "url": "https://FRAME/for%20CHERRY%20BOMB%2029.webp",
+    "error": "URLError"
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/media/78/35/c1/1718711400/MainHighlight_01_tues.png",
+    "file": "images/yt-tues-mk4-carbon-0.png",
+    "sha256": "aeb145d7f3c3df32ce8a5cbcc432ec37d373222db8dd4945c2590ac9c5551c33",
+    "bytes": 22280,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/media/b2/26/01/1718711400/MainHighlight_02_tues.png",
+    "file": "images/yt-tues-mk4-carbon-1.png",
+    "sha256": "b22ffc4fa619ddb58c7a0c78418f835ae45998b82e773f6a0a7163cf33c740b5",
+    "bytes": 17111,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/media/82/7c/6f/1718711400/MainHighlight_03_tues.png",
+    "file": "images/yt-tues-mk4-carbon-2.png",
+    "sha256": "b871ab36196760e888d5b2fb29bdac68538ae2e420b6c3b6fa49942e6adfa3cb",
+    "bytes": 23611,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/media/fd/6c/50/1724137322/TUES-MK4-MX-CF-Core4-ShellWhite-SidehwP8Jim4A5BqU.png.png",
+    "file": "images/yt-tues-mk4-carbon-3.png",
+    "sha256": "87f42530f6d3b9d1fc7b6b7bab71d5052fb6711ce5c6332bc97bbea01aa27533",
+    "bytes": 378322,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/media/f4/50/e9/1720601046/TUES-MK4-MX-CF-Core4-ShellWhite-RearND.png.png",
+    "file": "images/yt-tues-mk4-carbon-4.png",
+    "sha256": "0839025d2f43aff32fa24c34ea85892c6890bf55012b99dba0ad0480697df853",
+    "bytes": 346163,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/thumbnail/fd/6c/50/1724137322/TUES-MK4-MX-CF-Core4-ShellWhite-SidehwP8Jim4A5BqU.png_280x280.png",
+    "file": "images/yt-tues-mk4-carbon-5.png",
+    "sha256": "29492596b4c2a4bc06004e4d50334cec74998df9945bf9dc89ce2b54c6a1f7a8",
+    "bytes": 50607,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/thumbnail/f4/50/e9/1720601046/TUES-MK4-MX-CF-Core4-ShellWhite-RearND.png_280x280.png",
+    "file": "images/yt-tues-mk4-carbon-6.png",
+    "sha256": "0435ad97981aafaee9ea76a506eb56c89b38a2128fd6bc39c49a6e32788d0fb0",
+    "bytes": 40573,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/media/d5/f2/3f/1718353162/MainHighlight_01_capra.png",
+    "file": "images/yt-capra-mk3-carbon-mx-0.png",
+    "sha256": "d042e7421a016c980413f535e2a5b99ad4ab616197ad54f3cd556354fe7c2a23",
+    "bytes": 63314,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/media/ef/be/76/1718353162/MainHighlight_02_capra.png",
+    "file": "images/yt-capra-mk3-carbon-mx-1.png",
+    "sha256": "8da42002d4e7973cdc38c76c791294f1a71e136ad11f42459e541ef0c304439e",
+    "bytes": 49227,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/media/89/13/50/1740742348/MainHighlight_03_capra_(1).png",
+    "file": "images/yt-capra-mk3-carbon-mx-2.png",
+    "sha256": "0aeff23788c1ff7aa6bc49b54be7278031cad7b3598775150acbf83a45690c32",
+    "bytes": 50693,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/media/20/51/dc/1732717115/CAPRA-MX-CF-MY25-Core4-DeepGreen-side_w.png.png",
+    "file": "images/yt-capra-mk3-carbon-mx-3.png",
+    "sha256": "d6a5f82930aacb18b9e3f1b5d0defd6e6a89fdb88f1ee47731afd52a42f28265",
+    "bytes": 426781,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/media/bb/12/13/1732717119/CAPRA-MX-CF-MY25-Core4-DeepGreen-rearND_w.png.png",
+    "file": "images/yt-capra-mk3-carbon-mx-4.png",
+    "sha256": "1099a5b7373ea6a38d1c2e55b0ca72ef5a9ed47ac926df0f8e23abdbd1148d6d",
+    "bytes": 379607,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/thumbnail/21/a8/b7/1737972574/CAPRA-MX-CF-MY25-Core4-BlackmagicBolt-side_w.png_280x280.png",
+    "file": "images/yt-capra-mk3-carbon-mx-5.png",
+    "sha256": "23068146cd1b0ea012626aae5ea0d92c936dde37978fb436c538d08e426170f9",
+    "bytes": 44889,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/thumbnail/a6/b9/d8/1732717124/CAPRA-MX-CF-MY25-Core4-Blackmagic-rearND_w.png_280x280.png",
+    "file": "images/yt-capra-mk3-carbon-mx-6.png",
+    "sha256": "5d72854a152f6c3b3e4454346811bcf715e12bc6d3a502daedd89c19b9786121",
+    "bytes": 39854,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-fury-carbon-high-pivot",
+    "url": "http://gtbicycles.com/cdn/shop/files/FuryCRB_Frame_PD_BLK.jpg",
+    "file": "images/gt-fury-carbon-high-pivot-0.jpg",
+    "sha256": "db2037edc3b0e30fefc953c3a626ac20d134684de354d344ae58e20625333694",
+    "bytes": 163047,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-fury-carbon-high-pivot",
+    "url": "https://gtbicycles.com/cdn/shop/files/FuryCRB_Frame_PD_BLK.jpg",
+    "file": "images/gt-fury-carbon-high-pivot-1.jpg",
+    "sha256": "db2037edc3b0e30fefc953c3a626ac20d134684de354d344ae58e20625333694",
+    "bytes": 163047,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-fury-carbon-high-pivot",
+    "url": "https://gtbicycles.com/cdn/shop/files/FuryCRB_Frame_PD_BLK_grande.jpg",
+    "file": "images/gt-fury-carbon-high-pivot-2.jpg",
+    "sha256": "6004bf944e667b1e657df9da1d6071336ec3b6fa0ffd24a3cf4d4f9aae160de8",
+    "bytes": 23000,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-fury-carbon-high-pivot",
+    "url": "https://gtbicycles.com/cdn/shop/files/FuryCRB_Frame_3Q_BLK.jpg",
+    "file": "images/gt-fury-carbon-high-pivot-3.jpg",
+    "sha256": "d9dff50e0dbafa353328937461cdba0ff3c0349bc83b97d23c27f8c4efef8ccd",
+    "bytes": 141696,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-force-carbon-high-pivot",
+    "url": "http://gtbicycles.com/cdn/shop/files/ForceCRB_Frame_PD_BLK.jpg",
+    "file": "images/gt-force-carbon-high-pivot-0.jpg",
+    "sha256": "1c7c2bc20edb69529c0ecab77788ad7c596c4fe163f3c847253aed387f2d358f",
+    "bytes": 105857,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-force-carbon-high-pivot",
+    "url": "https://gtbicycles.com/cdn/shop/files/ForceCRB_Frame_PD_BLK.jpg",
+    "file": "images/gt-force-carbon-high-pivot-1.jpg",
+    "sha256": "1c7c2bc20edb69529c0ecab77788ad7c596c4fe163f3c847253aed387f2d358f",
+    "bytes": 105857,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-force-carbon-high-pivot",
+    "url": "https://gtbicycles.com/cdn/shop/files/ForceCRB_Frame_PD_BLK_grande.jpg",
+    "file": "images/gt-force-carbon-high-pivot-2.jpg",
+    "sha256": "aa1655fbbdbf506a915ac17cdced0f825fdaf7e41a41090da09bf22f1cbef410",
+    "bytes": 20064,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "gt-force-carbon-high-pivot",
+    "url": "https://gtbicycles.com/cdn/shop/files/ForceCRB_Frame_3Q_BLK.jpg",
+    "file": "images/gt-force-carbon-high-pivot-3.jpg",
+    "sha256": "9ac2f23fb34c8117c8234d339937b2cb55a4e0d17f685a9deea9a8b76f1d4460",
+    "bytes": 101299,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-frs-v3",
+    "url": "https://www.commencal.com/on/demandware.static/-/Sites-commencal-master/default/dw267d01bc/images/FT4FRS3_00.jpg",
+    "file": "images/commencal-frs-v3-0.jpg",
+    "sha256": "b17a51a26b786e2dbfb152e48b516332bae9a4b0e1a9a18b568f16bcb2a4cf15",
+    "bytes": 303678,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-frs-v3",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Library-Sites-commencal-shared-library/default/dw94af33b0/images/productPages/frs-suspensions.jpg",
+    "file": "images/commencal-frs-v3-1.jpg",
+    "sha256": "4202cd4e6be861025772674d6d397d32798f7f4e6e6a705250b0b79f88d661d1",
+    "bytes": 578204,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "context-only"
+  },
+  {
+    "slug": "commencal-frs-v3",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/images/FT4FRS3_00.jpg",
+    "file": "images/commencal-frs-v3-2.jpg",
+    "sha256": "b350d45061bb7df0838f44ec83f63486aa5648e867c80718e9ca1b2b77b3e246",
+    "bytes": 108217,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "commencal-frs-v3",
+    "url": "https://www.commencal.com/dw/image/v2/BFNN_PRD/on/demandware.static/-/Sites-commencal-master/default/images/FT4FRS3_01.jpg",
+    "file": "images/commencal-frs-v3-3.jpg",
+    "sha256": "f0cf46c4a9f824406db06e5c3b21a1c41fa0136a4b18ad2d5e271512c37a97aa",
+    "bytes": 105007,
+    "kind": "manufacturer-photo",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/04-27788_UpperLinkKit_V108-aspect-4-3_2e628d11-bd15-4c8d-b065-eaa0f795a822.jpg",
+    "file": "images/v10-detail-0.jpg",
+    "sha256": "e44fd865254b4787f3f9ef9919ba3a8e5774df588566d4073760f1a410040608",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/04-27787_LowerLinkKit_V108-aspect-4-3_07692522-bcb6-49d6-a82f-506c68ab806e.jpg",
+    "file": "images/v10-detail-1.jpg",
+    "sha256": "d57ce0004ac9f30dfe12cec08c5b0a3c2980590d3bcb269e22931a208386a96b",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_1.png",
+    "file": "images/v10-detail-2.png",
+    "sha256": "b2519657f544785f45a77a8e63e3a1590d45128a0c892fd4c53eb771a2fa3022",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_2.png",
+    "file": "images/v10-detail-3.png",
+    "sha256": "23809ea6b90d168919bfdfd5cbeffc8bf3c3f3090fac6c0e7305b0ff02530826",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_3.png",
+    "file": "images/v10-detail-4.png",
+    "sha256": "9d8bbe9c917b927cd75d27a8ea76ca8e5b5541913d48ebad645de5055830fa6c",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_4.png",
+    "file": "images/v10-detail-5.png",
+    "sha256": "d2046a2160c986dd6659188d356bca8bb70d4cf386f144de3b6a231b310d5967",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_5.png",
+    "file": "images/v10-detail-6.png",
+    "sha256": "32e64fd2ef0f89a1a9f0c5a44831501aba1f57ada311f36bf86a5d77db96e0ae",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/cdn/shop/files/V108_EXP_6.png",
+    "file": "images/v10-detail-7.png",
+    "sha256": "c91facdc5176f8f770dd2f14c619d68d574c9e7ad139d1ab8baee411d409be97",
+    "kind": "manufacturer-diagram",
+    "inspected": true,
+    "use": "shape-reference"
+  }
+]

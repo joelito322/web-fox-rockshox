@@ -1,0 +1,154 @@
+{
+  "model": "canyon-sender-cfr-high-pivot",
+  "generation": "Sender CFR high pivot MY25",
+  "reference_coordinate_space": {
+    "width": 1800,
+    "height": 1200
+  },
+  "image_landmarks": {
+    "bottom_bracket": [779, 672],
+    "head_top": [1083, 249],
+    "rear_axle": [498, 673],
+    "seat_top": [769, 415],
+    "shock_upper": [900, 493],
+    "shock_lower": [790, 598],
+    "pivot": [759, 604],
+    "idler": [759, 604]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [807, 475],
+        [833, 461],
+        [1055, 290],
+        [1085, 272]
+      ],
+      "height_mm": [22, 20, 24, 25],
+      "width_mm": 24,
+      "corners_mm": [0, 20, 17, 0],
+      "paired": false
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [779, 672],
+        [820, 656],
+        [854, 605],
+        [1007, 384],
+        [1071, 306],
+        [1103, 302]
+      ],
+      "height_mm": [28, 31, 32, 33, 30, 25],
+      "width_mm": 35,
+      "corners_mm": [0, 25, 23, 0, 22, 0],
+      "paired": false
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [779, 569],
+        [793, 525],
+        [809, 479],
+        [796, 461],
+        [769, 415]
+      ],
+      "height_mm": [26, 28, 26, 24, 21],
+      "width_mm": 26,
+      "corners_mm": [0, 21, 30, 25, 0],
+      "paired": false
+    },
+    {
+      "name": "upper_stay",
+      "path": [
+        [498, 673],
+        [526, 646],
+        [732, 558],
+        [765, 552],
+        [779, 569]
+      ],
+      "height_mm": [15, 17, 18, 22, 24],
+      "width_mm": 14,
+      "corners_mm": [0, 22, 0, 20, 0],
+      "paired": true
+    },
+    {
+      "name": "lower_stay",
+      "path": [
+        [498, 673],
+        [530, 682],
+        [726, 696],
+        [751, 682]
+      ],
+      "height_mm": [16, 16, 21, 23],
+      "width_mm": 14,
+      "corners_mm": [0, 20, 18, 0],
+      "paired": true
+    }
+  ],
+  "junction": [
+    [784, 471],
+    [804, 459],
+    [831, 453],
+    [840, 460],
+    [821, 484],
+    [807, 517],
+    [788, 520],
+    [788, 491]
+  ],
+  "rear_bridge": [
+    [752, 558],
+    [777, 557],
+    [784, 571],
+    [774, 612],
+    [767, 665],
+    [751, 697],
+    [738, 698],
+    [741, 683],
+    [752, 660],
+    [759, 611],
+    [760, 580]
+  ],
+  "link": {
+    "outer": [
+      [744, 615],
+      [754, 593],
+      [772, 584],
+      [794, 581],
+      [807, 594],
+      [800, 612],
+      [779, 622],
+      [777, 651],
+      [759, 663],
+      [743, 650]
+    ],
+    "hole": [
+      [757, 617],
+      [770, 608],
+      [787, 600],
+      [789, 605],
+      [767, 632],
+      [756, 637]
+    ],
+    "fixed_pivot": [759, 653],
+    "rear_pivot": [759, 613],
+    "shock_lower": [790, 598],
+    "depth_mm": 10,
+    "half_separation_mm": 33
+  },
+  "mount_plate": [
+    [889, 487],
+    [910, 464],
+    [929, 461],
+    [939, 479],
+    [921, 500],
+    [905, 513],
+    [893, 510]
+  ],
+  "notes": [
+    "Actual MY25 launch photographs, not legacy green Sender 2021 tracing.",
+    "Native perspective registered by BB/head/rear; hidden widths/radii inferred, not CAD.",
+    "High pivot single rear body and reduced bellcrank guide; idler unilateral.",
+    "Commercial fields unchanged, changed visual anchors explicitly versioned."
+  ]
+}

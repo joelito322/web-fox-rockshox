@@ -1,0 +1,492 @@
+[
+  {
+    "slug": "commencal-furious-v3-2021",
+    "component": {
+      "id": "ee9dac27-431e-5e2e-a217-ffc45b9eeeae",
+      "name": "Furious V3 \u00b7 2021",
+      "slug": "commencal-furious-v3-2021",
+      "category": "frame",
+      "description": "Cuadro de descenso y freeride de la generaci\u00f3n Furious 2021, con ruedas de 27,5 pulgadas.",
+      "technical_notes": "Modelo hist\u00f3rico. Se omiten cotas de geometr\u00eda porque la p\u00e1gina comercial antigua reutiliza bloques FRS actuales. El manual 2021 confirma medidas de montaje; las proporciones visuales se estiman desde su propia fotograf\u00eda.",
+      "image_key": "catalog:commencal-furious-v3-2021",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generaci\u00f3n identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "776def1a-fe45-501c-ae3a-ba1eabac7348",
+      "component_id": "ee9dac27-431e-5e2e-a217-ffc45b9eeeae",
+      "label": "M \u00b7 Gun Metal",
+      "model_year": 2021,
+      "generation": "Furious V3 \u00b7 2021 \u00b7 Archivo",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://static.commencal.com/tech/2021-COMMENCAL-FURIOUS-RIDE.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha t\u00e9cnica 2021: cuadro y montaje. No se traslada geometr\u00eda FRS moderna.",
+          "fields": [
+            "specs",
+            "generation"
+          ]
+        },
+        {
+          "url": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+          "consulted_at": "2026-10-21",
+          "note": "Identidad comercial Essential Gun Metal y tallas M/L.",
+          "fields": [
+            "label",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 \u00d7 8 mm / 30 \u00d7 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; m\u00e1xima 595 mm.",
+        "size_label": "M"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gun Metal",
+            "image_key": null,
+            "material": {
+              "color": "#777e80",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b34dc5bd-5473-5cdc-966d-0b3faa3ab5f8",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "b34dc5bd-5473-5cdc-966d-0b3faa3ab5f8",
+      "kind": "glb",
+      "storage_path": "catalog/v13/commencal-furious-v3-2021/aaeab517044752c22cb70952.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-furious-v3-2021",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8199999999999998,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.613,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5076045376146893,
+              0.5051447144440999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.04546724756535103,
+              0.4201202255253716,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.06946724756535103,
+              0.5601202255253717,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.24659997949769347,
+              0.31281789031266016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.0272114533260768,
+              0.19294848393953312,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.13928854946181446,
+              0.16317173962070733,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-furious-v3-2021__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Continuidad aditiva de uniones de direcci\u00f3n sobre v11, sin deformar los tubos ni modificar los cinco cuadros protegidos. Fuentes heredadas y l\u00edmites: models/catalog-v13/README.md. No CAD."
+    },
+    "predecessor_file": "models/catalog-v13/exports/commencal-furious-v3-2021--m.glb"
+  },
+  {
+    "slug": "commencal-furious-v3-2021",
+    "component": {
+      "id": "ee9dac27-431e-5e2e-a217-ffc45b9eeeae",
+      "name": "Furious V3 \u00b7 2021",
+      "slug": "commencal-furious-v3-2021",
+      "category": "frame",
+      "description": "Cuadro de descenso y freeride de la generaci\u00f3n Furious 2021, con ruedas de 27,5 pulgadas.",
+      "technical_notes": "Modelo hist\u00f3rico. Se omiten cotas de geometr\u00eda porque la p\u00e1gina comercial antigua reutiliza bloques FRS actuales. El manual 2021 confirma medidas de montaje; las proporciones visuales se estiman desde su propia fotograf\u00eda.",
+      "image_key": "catalog:commencal-furious-v3-2021",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "11f35be8-f95a-5084-8dda-85d213956fab",
+      "sources": [
+        {
+          "url": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generaci\u00f3n identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "90e4a331-4221-51e0-86f4-ff482fdc412a",
+      "component_id": "ee9dac27-431e-5e2e-a217-ffc45b9eeeae",
+      "label": "L \u00b7 Gun Metal",
+      "model_year": 2021,
+      "generation": "Furious V3 \u00b7 2021 \u00b7 Archivo",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://static.commencal.com/tech/2021-COMMENCAL-FURIOUS-RIDE.pdf",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha t\u00e9cnica 2021: cuadro y montaje. No se traslada geometr\u00eda FRS moderna.",
+          "fields": [
+            "specs",
+            "generation"
+          ]
+        },
+        {
+          "url": "https://www.commencal.com/en/commencal-furious-essential-gun-metal/21FUREGM.html",
+          "consulted_at": "2026-10-21",
+          "note": "Identidad comercial Essential Gun Metal y tallas M/L.",
+          "fields": [
+            "label",
+            "allowed_finishes"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Aluminio 6069 T6",
+        "suspension_type": "Contact System",
+        "wheel_front": "27.5",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 200,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 20 \u00d7 8 mm / 30 \u00d7 10 mm."
+        },
+        "headset_standard": "ZS44/ZS56",
+        "rear_axle_standard": "12x150",
+        "bb_shell": {
+          "standard": "PF107",
+          "width_mm": 107
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 34.9,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Altura recomendada 581 mm; m\u00e1xima 595 mm.",
+        "size_label": "L"
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gun Metal",
+            "image_key": null,
+            "material": {
+              "color": "#777e80",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "e71851fb-ecc5-5372-9627-ec40d7d325ce",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "e71851fb-ecc5-5372-9627-ec40d7d325ce",
+      "kind": "glb",
+      "storage_path": "catalog/v13/commencal-furious-v3-2021/a1a5b51009d92dbafa35b611.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "commencal-furious-v3-2021",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.435,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.845,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.48,
+              0.621,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5326045376146893,
+              0.5131447144440999,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.028333470015376727,
+              0.4256030343413634,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.05233347001537673,
+              0.5656030343413634,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.2593576422347514,
+              0.31690034238851866,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              0.039514254044421465,
+              0.19786721813734265,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.14594318810866222,
+              0.16530122398769861,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "commencal-furious-v3-2021__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Continuidad aditiva de uniones de direcci\u00f3n sobre v11, sin deformar los tubos ni modificar los cinco cuadros protegidos. Fuentes heredadas y l\u00edmites: models/catalog-v13/README.md. No CAD."
+    },
+    "predecessor_file": "models/catalog-v13/exports/commencal-furious-v3-2021--l.glb"
+  }
+]

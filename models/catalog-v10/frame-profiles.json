@@ -1,0 +1,1644 @@
+{
+  "santa-cruz-v10-8-my27": {
+    "image_landmarks": {
+      "bottom_bracket": [
+        670,
+        754
+      ],
+      "head_top": [
+        1003,
+        278
+      ],
+      "rear_axle": [
+        299,
+        755
+      ],
+      "seat_top": [
+        626,
+        433
+      ],
+      "shock_upper": [
+        754,
+        562
+      ],
+      "shock_lower": [
+        636,
+        699
+      ],
+      "pivot": [
+        672,
+        680
+      ]
+    },
+    "members": [
+      {
+        "name": "downtube",
+        "path": [
+          [
+            670,
+            754
+          ],
+          [
+            730,
+            731
+          ],
+          [
+            794,
+            682
+          ],
+          [
+            846,
+            583
+          ],
+          [
+            938,
+            399
+          ],
+          [
+            1050,
+            375
+          ]
+        ],
+        "height_mm": [
+          31,
+          38,
+          42,
+          41,
+          35,
+          31
+        ],
+        "width_mm": 34.56,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "top_tube",
+        "path": [
+          [
+            651,
+            488
+          ],
+          [
+            750,
+            486
+          ],
+          [
+            809,
+            467
+          ],
+          [
+            1003,
+            278
+          ]
+        ],
+        "height_mm": [
+          23,
+          19,
+          20,
+          26
+        ],
+        "width_mm": 20.88,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_bridge",
+        "path": [
+          [
+            670,
+            754
+          ],
+          [
+            707,
+            674
+          ],
+          [
+            749,
+            599
+          ],
+          [
+            763,
+            494
+          ]
+        ],
+        "height_mm": [
+          24,
+          28,
+          26,
+          23
+        ],
+        "width_mm": 28,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "upper_window_rail",
+        "path": [
+          [
+            655,
+            507
+          ],
+          [
+            756,
+            533
+          ]
+        ],
+        "height_mm": [
+          13,
+          12
+        ],
+        "width_mm": 17,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "chain_stay",
+        "path": [
+          [
+            299,
+            755
+          ],
+          [
+            463,
+            763
+          ],
+          [
+            619,
+            766
+          ],
+          [
+            624,
+            718
+          ]
+        ],
+        "height_mm": [
+          11,
+          15,
+          19,
+          22
+        ],
+        "width_mm": 12,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "seat_stay",
+        "path": [
+          [
+            299,
+            755
+          ],
+          [
+            468,
+            683
+          ],
+          [
+            675,
+            600
+          ]
+        ],
+        "height_mm": [
+          11,
+          16,
+          20
+        ],
+        "width_mm": 13,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "lower_link_support",
+        "path": [
+          [
+            707,
+            674
+          ],
+          [
+            672,
+            680
+          ]
+        ],
+        "height_mm": [
+          21,
+          17
+        ],
+        "width_mm": 24,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_collar",
+        "path": [
+          [
+            626,
+            433
+          ],
+          [
+            651,
+            488
+          ],
+          [
+            655,
+            507
+          ]
+        ],
+        "height_mm": [
+          19,
+          20,
+          19
+        ],
+        "width_mm": 20,
+        "material": "paint",
+        "paired": false
+      }
+    ],
+    "links": [
+      [
+        [
+          661,
+          510
+        ],
+        [
+          675,
+          600
+        ],
+        [
+          720,
+          542
+        ]
+      ],
+      [
+        [
+          624,
+          718
+        ],
+        [
+          672,
+          680
+        ],
+        [
+          707,
+          674
+        ]
+      ]
+    ],
+    "tire_width_mm": 65,
+    "axle_width_mm": 157,
+    "reference_image": "v10.webp",
+    "estimated_geometry": {
+      "reach_mm": 455,
+      "stack_mm": 633,
+      "chainstay_mm": 450,
+      "head_tube_mm": 110,
+      "head_angle_deg": 63
+    }
+  },
+  "yt-tues-mk4-carbon": {
+    "image_landmarks": {
+      "bottom_bracket": [
+        888,
+        820
+      ],
+      "head_top": [
+        1277,
+        274
+      ],
+      "rear_axle": [
+        443,
+        824
+      ],
+      "seat_top": [
+        831,
+        480
+      ],
+      "shock_upper": [
+        1023,
+        563
+      ],
+      "shock_lower": [
+        899,
+        746
+      ],
+      "pivot": [
+        997,
+        687
+      ]
+    },
+    "members": [
+      {
+        "name": "downtube",
+        "path": [
+          [
+            888,
+            820
+          ],
+          [
+            946,
+            792
+          ],
+          [
+            1006,
+            733
+          ],
+          [
+            1122,
+            519
+          ],
+          [
+            1321,
+            359
+          ]
+        ],
+        "height_mm": [
+          31,
+          42,
+          43,
+          41,
+          32
+        ],
+        "width_mm": 33.6,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "top_tube",
+        "path": [
+          [
+            853,
+            538
+          ],
+          [
+            885,
+            547
+          ],
+          [
+            1039,
+            455
+          ],
+          [
+            1277,
+            274
+          ]
+        ],
+        "height_mm": [
+          27,
+          24,
+          23,
+          29
+        ],
+        "width_mm": 20.88,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_tube",
+        "path": [
+          [
+            888,
+            820
+          ],
+          [
+            862,
+            719
+          ],
+          [
+            869,
+            608
+          ],
+          [
+            831,
+            480
+          ]
+        ],
+        "height_mm": [
+          24,
+          27,
+          26,
+          20
+        ],
+        "width_mm": 21.060000000000002,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "chain_stay",
+        "path": [
+          [
+            443,
+            824
+          ],
+          [
+            625,
+            842
+          ],
+          [
+            814,
+            840
+          ],
+          [
+            899,
+            746
+          ]
+        ],
+        "height_mm": [
+          12,
+          16,
+          19,
+          24
+        ],
+        "width_mm": 12,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "seat_stay",
+        "path": [
+          [
+            443,
+            824
+          ],
+          [
+            632,
+            740
+          ],
+          [
+            901,
+            672
+          ],
+          [
+            997,
+            687
+          ]
+        ],
+        "height_mm": [
+          12,
+          17,
+          23,
+          22
+        ],
+        "width_mm": 14,
+        "material": "paint",
+        "paired": true
+      }
+    ],
+    "links": [
+      [
+        [
+          901,
+          672
+        ],
+        [
+          997,
+          687
+        ],
+        [
+          899,
+          746
+        ]
+      ]
+    ],
+    "axle_width_mm": 148,
+    "tire_width_mm": 65,
+    "reference_image": "tues.webp",
+    "estimated_geometry": {
+      "reach_mm": 455,
+      "stack_mm": 640,
+      "chainstay_mm": 448,
+      "head_tube_mm": 110,
+      "head_angle_deg": 63.5
+    }
+  },
+  "yt-capra-mk3-carbon-mx": {
+    "image_landmarks": {
+      "bottom_bracket": [
+        876,
+        827
+      ],
+      "head_top": [
+        1247,
+        288
+      ],
+      "rear_axle": [
+        467,
+        817
+      ],
+      "seat_top": [
+        812,
+        470
+      ],
+      "shock_upper": [
+        1052,
+        532
+      ],
+      "shock_lower": [
+        823,
+        639
+      ],
+      "pivot": [
+        820,
+        674
+      ]
+    },
+    "members": [
+      {
+        "name": "downtube",
+        "path": [
+          [
+            876,
+            827
+          ],
+          [
+            958,
+            802
+          ],
+          [
+            1000,
+            751
+          ],
+          [
+            1119,
+            526
+          ],
+          [
+            1290,
+            365
+          ]
+        ],
+        "height_mm": [
+          30,
+          35,
+          36,
+          35,
+          29
+        ],
+        "width_mm": 30.72,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "top_tube",
+        "path": [
+          [
+            842,
+            536
+          ],
+          [
+            876,
+            545
+          ],
+          [
+            1073,
+            420
+          ],
+          [
+            1247,
+            288
+          ]
+        ],
+        "height_mm": [
+          26,
+          23,
+          21,
+          25
+        ],
+        "width_mm": 20.88,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_tube",
+        "path": [
+          [
+            876,
+            827
+          ],
+          [
+            834,
+            735
+          ],
+          [
+            851,
+            630
+          ],
+          [
+            812,
+            470
+          ]
+        ],
+        "height_mm": [
+          23,
+          24,
+          25,
+          19
+        ],
+        "width_mm": 20.25,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "lower_window_rail",
+        "path": [
+          [
+            853,
+            686
+          ],
+          [
+            991,
+            711
+          ]
+        ],
+        "height_mm": [
+          14,
+          16
+        ],
+        "width_mm": 26,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "chain_stay",
+        "path": [
+          [
+            467,
+            817
+          ],
+          [
+            621,
+            837
+          ],
+          [
+            819,
+            842
+          ],
+          [
+            864,
+            779
+          ]
+        ],
+        "height_mm": [
+          11,
+          15,
+          16,
+          22
+        ],
+        "width_mm": 12,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "seat_stay",
+        "path": [
+          [
+            467,
+            817
+          ],
+          [
+            639,
+            741
+          ],
+          [
+            820,
+            674
+          ]
+        ],
+        "height_mm": [
+          11,
+          15,
+          20
+        ],
+        "width_mm": 13,
+        "material": "paint",
+        "paired": true
+      }
+    ],
+    "links": [
+      [
+        [
+          820,
+          674
+        ],
+        [
+          883,
+          686
+        ],
+        [
+          823,
+          639
+        ]
+      ]
+    ],
+    "axle_width_mm": 148,
+    "tire_width_mm": 65,
+    "reference_image": "capra-side.webp",
+    "estimated_geometry": {
+      "reach_mm": 444,
+      "stack_mm": 636,
+      "chainstay_mm": 433,
+      "head_tube_mm": 110,
+      "head_angle_deg": 64
+    }
+  },
+  "gt-fury-carbon-high-pivot": {
+    "image_landmarks": {
+      "bottom_bracket": [
+        773,
+        1016
+      ],
+      "head_top": [
+        1414,
+        196
+      ],
+      "rear_axle": [
+        180,
+        995
+      ],
+      "seat_top": [
+        722,
+        501
+      ],
+      "shock_upper": [
+        929,
+        643
+      ],
+      "shock_lower": [
+        815,
+        910
+      ],
+      "pivot": [
+        728,
+        881
+      ]
+    },
+    "members": [
+      {
+        "name": "downtube",
+        "path": [
+          [
+            773,
+            1016
+          ],
+          [
+            872,
+            976
+          ],
+          [
+            985,
+            905
+          ],
+          [
+            1174,
+            524
+          ],
+          [
+            1472,
+            323
+          ]
+        ],
+        "height_mm": [
+          30,
+          36,
+          39,
+          39,
+          31
+        ],
+        "width_mm": 32.64,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "top_tube",
+        "path": [
+          [
+            722,
+            501
+          ],
+          [
+            772,
+            581
+          ],
+          [
+            834,
+            587
+          ],
+          [
+            1105,
+            411
+          ],
+          [
+            1414,
+            196
+          ]
+        ],
+        "height_mm": [
+          23,
+          28,
+          24,
+          21,
+          29
+        ],
+        "width_mm": 20.88,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_tube",
+        "path": [
+          [
+            773,
+            1016
+          ],
+          [
+            731,
+            924
+          ],
+          [
+            768,
+            774
+          ],
+          [
+            764,
+            609
+          ],
+          [
+            722,
+            501
+          ]
+        ],
+        "height_mm": [
+          28,
+          34,
+          33,
+          28,
+          20
+        ],
+        "width_mm": 25.110000000000003,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "chain_stay",
+        "path": [
+          [
+            180,
+            995
+          ],
+          [
+            312,
+            1028
+          ],
+          [
+            640,
+            1024
+          ],
+          [
+            728,
+            881
+          ]
+        ],
+        "height_mm": [
+          12,
+          16,
+          18,
+          24
+        ],
+        "width_mm": 12,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "seat_stay",
+        "path": [
+          [
+            180,
+            995
+          ],
+          [
+            405,
+            880
+          ],
+          [
+            663,
+            740
+          ]
+        ],
+        "height_mm": [
+          11,
+          15,
+          21
+        ],
+        "width_mm": 14,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "lower_bay_bridge",
+        "path": [
+          [
+            773,
+            1016
+          ],
+          [
+            828,
+            940
+          ],
+          [
+            984,
+            905
+          ]
+        ],
+        "height_mm": [
+          18,
+          13,
+          17
+        ],
+        "width_mm": 23,
+        "material": "paint",
+        "paired": false
+      }
+    ],
+    "links": [
+      [
+        [
+          663,
+          740
+        ],
+        [
+          728,
+          754
+        ],
+        [
+          929,
+          643
+        ]
+      ]
+    ],
+    "idler": [
+      728,
+      881
+    ],
+    "axle_width_mm": 148,
+    "tire_width_mm": 65,
+    "reference_image": "fury.webp",
+    "estimated_geometry": {
+      "reach_mm": 450,
+      "stack_mm": 638,
+      "chainstay_mm": 435,
+      "head_tube_mm": 110,
+      "head_angle_deg": 63.5
+    }
+  },
+  "gt-force-carbon-high-pivot": {
+    "image_landmarks": {
+      "bottom_bracket": [
+        742,
+        976
+      ],
+      "head_top": [
+        1459,
+        240
+      ],
+      "rear_axle": [
+        183,
+        863
+      ],
+      "seat_top": [
+        722,
+        421
+      ],
+      "shock_upper": [
+        920,
+        626
+      ],
+      "shock_lower": [
+        829,
+        904
+      ],
+      "pivot": [
+        722,
+        842
+      ]
+    },
+    "members": [
+      {
+        "name": "downtube",
+        "path": [
+          [
+            742,
+            976
+          ],
+          [
+            847,
+            953
+          ],
+          [
+            974,
+            899
+          ],
+          [
+            1226,
+            537
+          ],
+          [
+            1512,
+            351
+          ]
+        ],
+        "height_mm": [
+          31,
+          35,
+          38,
+          37,
+          30
+        ],
+        "width_mm": 31.68,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "top_tube",
+        "path": [
+          [
+            722,
+            421
+          ],
+          [
+            872,
+            484
+          ],
+          [
+            938,
+            496
+          ],
+          [
+            1181,
+            352
+          ],
+          [
+            1459,
+            240
+          ]
+        ],
+        "height_mm": [
+          20,
+          23,
+          23,
+          19,
+          27
+        ],
+        "width_mm": 20.88,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_tube",
+        "path": [
+          [
+            742,
+            976
+          ],
+          [
+            719,
+            888
+          ],
+          [
+            768,
+            731
+          ],
+          [
+            752,
+            550
+          ],
+          [
+            722,
+            421
+          ]
+        ],
+        "height_mm": [
+          25,
+          30,
+          29,
+          23,
+          20
+        ],
+        "width_mm": 22.68,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "chain_stay",
+        "path": [
+          [
+            183,
+            863
+          ],
+          [
+            305,
+            890
+          ],
+          [
+            632,
+            894
+          ],
+          [
+            722,
+            842
+          ]
+        ],
+        "height_mm": [
+          11,
+          16,
+          17,
+          23
+        ],
+        "width_mm": 12,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "seat_stay",
+        "path": [
+          [
+            183,
+            863
+          ],
+          [
+            443,
+            773
+          ],
+          [
+            665,
+            706
+          ]
+        ],
+        "height_mm": [
+          11,
+          14,
+          19
+        ],
+        "width_mm": 13,
+        "material": "paint",
+        "paired": true
+      }
+    ],
+    "links": [
+      [
+        [
+          665,
+          706
+        ],
+        [
+          806,
+          699
+        ],
+        [
+          920,
+          626
+        ]
+      ]
+    ],
+    "idler": [
+      722,
+      842
+    ],
+    "axle_width_mm": 148,
+    "tire_width_mm": 65,
+    "reference_image": "force.webp",
+    "estimated_geometry": {
+      "reach_mm": 455,
+      "stack_mm": 636,
+      "chainstay_mm": 435,
+      "head_tube_mm": 120,
+      "head_angle_deg": 63.5
+    }
+  },
+  "commencal-frs-v3": {
+    "image_landmarks": {
+      "bottom_bracket": [
+        874,
+        1155
+      ],
+      "head_top": [
+        1711,
+        164
+      ],
+      "rear_axle": [
+        137,
+        1129
+      ],
+      "seat_top": [
+        825,
+        463
+      ],
+      "shock_upper": [
+        1305,
+        665
+      ],
+      "shock_lower": [
+        933,
+        844
+      ],
+      "pivot": [
+        1114,
+        899
+      ]
+    },
+    "members": [
+      {
+        "name": "downtube",
+        "path": [
+          [
+            874,
+            1155
+          ],
+          [
+            983,
+            1102
+          ],
+          [
+            1129,
+            984
+          ],
+          [
+            1414,
+            645
+          ],
+          [
+            1780,
+            302
+          ]
+        ],
+        "height_mm": [
+          28,
+          30,
+          31,
+          29,
+          27
+        ],
+        "width_mm": 27.84,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "top_tube",
+        "path": [
+          [
+            904,
+            665
+          ],
+          [
+            1191,
+            488
+          ],
+          [
+            1497,
+            291
+          ],
+          [
+            1711,
+            164
+          ]
+        ],
+        "height_mm": [
+          23,
+          22,
+          22,
+          25
+        ],
+        "width_mm": 20.88,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_tube",
+        "path": [
+          [
+            874,
+            1155
+          ],
+          [
+            846,
+            1020
+          ],
+          [
+            882,
+            849
+          ],
+          [
+            902,
+            674
+          ],
+          [
+            825,
+            463
+          ]
+        ],
+        "height_mm": [
+          24,
+          25,
+          25,
+          24,
+          20
+        ],
+        "width_mm": 19.44,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "chain_stay",
+        "path": [
+          [
+            137,
+            1129
+          ],
+          [
+            335,
+            1134
+          ],
+          [
+            697,
+            1131
+          ],
+          [
+            846,
+            1020
+          ]
+        ],
+        "height_mm": [
+          12,
+          18,
+          19,
+          24
+        ],
+        "width_mm": 12,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "seat_stay",
+        "path": [
+          [
+            137,
+            1129
+          ],
+          [
+            485,
+            1027
+          ],
+          [
+            876,
+            891
+          ]
+        ],
+        "height_mm": [
+          12,
+          17,
+          23
+        ],
+        "width_mm": 14,
+        "material": "paint",
+        "paired": true
+      }
+    ],
+    "links": [
+      [
+        [
+          876,
+          891
+        ],
+        [
+          1114,
+          899
+        ],
+        [
+          933,
+          844
+        ]
+      ]
+    ],
+    "axle_width_mm": 150,
+    "tire_width_mm": 65,
+    "reference_image": "frs-frame.webp",
+    "estimated_geometry": {
+      "reach_mm": 465,
+      "stack_mm": 613,
+      "chainstay_mm": 435,
+      "head_tube_mm": 120,
+      "head_angle_deg": 64
+    }
+  },
+  "commencal-furious-v3-2021": {
+    "image_landmarks": {
+      "bottom_bracket": [
+        810,
+        767
+      ],
+      "head_top": [
+        1255,
+        198
+      ],
+      "rear_axle": [
+        390,
+        756
+      ],
+      "seat_top": [
+        770,
+        368
+      ],
+      "shock_upper": [
+        1051,
+        477
+      ],
+      "shock_lower": [
+        838,
+        585
+      ],
+      "pivot": [
+        946,
+        616
+      ]
+    },
+    "members": [
+      {
+        "name": "downtube",
+        "path": [
+          [
+            810,
+            767
+          ],
+          [
+            884,
+            737
+          ],
+          [
+            952,
+            665
+          ],
+          [
+            1109,
+            439
+          ],
+          [
+            1294,
+            287
+          ]
+        ],
+        "height_mm": [
+          26,
+          29,
+          30,
+          28,
+          26
+        ],
+        "width_mm": 26.88,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "top_tube",
+        "path": [
+          [
+            823,
+            475
+          ],
+          [
+            995,
+            372
+          ],
+          [
+            1133,
+            281
+          ],
+          [
+            1255,
+            198
+          ]
+        ],
+        "height_mm": [
+          23,
+          22,
+          22,
+          24
+        ],
+        "width_mm": 20.01,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "seat_tube",
+        "path": [
+          [
+            810,
+            767
+          ],
+          [
+            790,
+            679
+          ],
+          [
+            807,
+            563
+          ],
+          [
+            823,
+            476
+          ],
+          [
+            770,
+            368
+          ]
+        ],
+        "height_mm": [
+          22,
+          24,
+          25,
+          23,
+          19
+        ],
+        "width_mm": 19.44,
+        "material": "paint",
+        "paired": false
+      },
+      {
+        "name": "chain_stay",
+        "path": [
+          [
+            390,
+            756
+          ],
+          [
+            539,
+            760
+          ],
+          [
+            736,
+            756
+          ],
+          [
+            790,
+            679
+          ]
+        ],
+        "height_mm": [
+          11,
+          16,
+          18,
+          22
+        ],
+        "width_mm": 12,
+        "material": "paint",
+        "paired": true
+      },
+      {
+        "name": "seat_stay",
+        "path": [
+          [
+            390,
+            756
+          ],
+          [
+            604,
+            669
+          ],
+          [
+            810,
+            616
+          ]
+        ],
+        "height_mm": [
+          11,
+          16,
+          21
+        ],
+        "width_mm": 13,
+        "material": "paint",
+        "paired": true
+      }
+    ],
+    "links": [
+      [
+        [
+          810,
+          616
+        ],
+        [
+          946,
+          616
+        ],
+        [
+          838,
+          585
+        ]
+      ]
+    ],
+    "axle_width_mm": 150,
+    "tire_width_mm": 65,
+    "reference_image": "furious.webp",
+    "estimated_geometry": {
+      "reach_mm": 455,
+      "stack_mm": 613,
+      "chainstay_mm": 435,
+      "head_tube_mm": 120,
+      "head_angle_deg": 64
+    }
+  }
+}

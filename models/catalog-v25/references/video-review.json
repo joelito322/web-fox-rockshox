@@ -1,0 +1,67 @@
+[
+  {
+    "video": "landing-supremedhv5-cinematique1-web.mp4",
+    "duration_seconds": 8.383375,
+    "timestamps_seconds": [
+      0.0,
+      1.397,
+      2.794,
+      4.192,
+      5.589,
+      6.986
+    ],
+    "sampled_sheet": "landing-supremedhv5-cinematique1-web-sampled.jpg"
+  },
+  {
+    "video": "landing-supremedhv5-bridge.mp4",
+    "duration_seconds": 4.2,
+    "timestamps_seconds": [
+      0.0,
+      0.7,
+      1.4,
+      2.1,
+      2.8,
+      3.5
+    ],
+    "sampled_sheet": "landing-supremedhv5-bridge-sampled.jpg"
+  },
+  {
+    "video": "landing-supremedhv5-stays.mp4",
+    "duration_seconds": 7.866667,
+    "timestamps_seconds": [
+      0.0,
+      1.311,
+      2.622,
+      3.933,
+      5.244,
+      6.556
+    ],
+    "sampled_sheet": "landing-supremedhv5-stays-sampled.jpg"
+  },
+  {
+    "video": "landing-supremedhv5-flipchip.mp4",
+    "duration_seconds": 9.266667,
+    "timestamps_seconds": [
+      0.0,
+      1.544,
+      3.089,
+      4.633,
+      6.178,
+      7.722
+    ],
+    "sampled_sheet": "landing-supremedhv5-flipchip-sampled.jpg"
+  },
+  {
+    "video": "landing-supremedhv5-cinematique2-web.mp4",
+    "duration_seconds": 8.033333,
+    "timestamps_seconds": [
+      0.0,
+      1.339,
+      2.678,
+      4.017,
+      5.356,
+      6.694
+    ],
+    "sampled_sheet": "landing-supremedhv5-cinematique2-web-sampled.jpg"
+  }
+]

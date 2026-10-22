@@ -1,0 +1,522 @@
+[
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "component": {
+      "id": "c5a7f352-d715-5ec2-9769-e19cf73b7dcc",
+      "name": "V10 8 CC \u00b7 MY27",
+      "slug": "santa-cruz-v10-8-my27",
+      "category": "frame",
+      "description": "Cuadro de descenso con 208 mm de recorrido VPP y montaje de ruedas MX.",
+      "technical_notes": "Referencia MY27. Geometr\u00eda en posici\u00f3n alta, direcci\u00f3n y vainas en ajuste central. No confundir con el V10 de generaciones anteriores.",
+      "image_key": "catalog:santa-cruz-v10-8-my27",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "sources": [
+        {
+          "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generaci\u00f3n identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "1da36588-8c16-5ca7-bcfb-b0633115f66d",
+      "component_id": "c5a7f352-d715-5ec2-9769-e19cf73b7dcc",
+      "label": "M \u00b7 Gloss Liquid Blue",
+      "model_year": 2027,
+      "generation": "V10.8 \u00b7 MY27",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representaci\u00f3n 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 208,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 30 \u00d7 8 mm en ambos extremos."
+        },
+        "rear_axle_standard": "12x157",
+        "headset_standard": "IS41/IS41 con ajuste de alcance",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200/220",
+        "fork_restrictions": "Horquilla de doble pletina; recorrido de referencia 200 mm.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 455,
+          "stack_mm": 633,
+          "seat_tube_mm": 445,
+          "head_tube_mm": 110,
+          "head_angle_deg": 63,
+          "chainstay_mm": 450,
+          "wheelbase_mm": 1275,
+          "bb_height_mm": 356,
+          "reference_position": "Alta \u00b7 ajustes centrales"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Liquid Blue",
+            "image_key": null,
+            "material": {
+              "color": "#173569",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "36573b82-372a-52b6-b2ae-c2ebcb9e25fe",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "36573b82-372a-52b6-b2ae-c2ebcb9e25fe",
+      "kind": "glb",
+      "storage_path": "catalog/v13/santa-cruz-v10-8-my27/befac71ae31f73af6c26f2cf.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "santa-cruz-v10-8-my27",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.45,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.825,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.633,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5049389549713501,
+              0.5349892823392796,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.018836766649835746,
+              0.42784052807452505,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.042836766649835746,
+              0.5678405280745251,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.12250977232884953,
+              0.25550843909385407,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.04122214837567541,
+              0.06658554968548422,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.010383120677623772,
+              0.09858629434424694,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "santa-cruz-v10-8-my27__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Continuidad aditiva de uniones de direcci\u00f3n sobre v11, sin deformar los tubos ni modificar los cinco cuadros protegidos. Fuentes heredadas y l\u00edmites: models/catalog-v13/README.md. No CAD."
+    },
+    "predecessor_file": "models/catalog-v13/exports/santa-cruz-v10-8-my27--m.glb"
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "component": {
+      "id": "c5a7f352-d715-5ec2-9769-e19cf73b7dcc",
+      "name": "V10 8 CC \u00b7 MY27",
+      "slug": "santa-cruz-v10-8-my27",
+      "category": "frame",
+      "description": "Cuadro de descenso con 208 mm de recorrido VPP y montaje de ruedas MX.",
+      "technical_notes": "Referencia MY27. Geometr\u00eda en posici\u00f3n alta, direcci\u00f3n y vainas en ajuste central. No confundir con el V10 de generaciones anteriores.",
+      "image_key": "catalog:santa-cruz-v10-8-my27",
+      "disciplines": [
+        "downhill"
+      ],
+      "published": true,
+      "brand_id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "sources": [
+        {
+          "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+          "consulted_at": "2026-10-21",
+          "note": "Ficha y generaci\u00f3n identificadas; consulta 21/10/2026.",
+          "fields": [
+            "name",
+            "generation",
+            "specs"
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": "df638678-751e-5977-94b3-57a0de0b647c",
+      "component_id": "c5a7f352-d715-5ec2-9769-e19cf73b7dcc",
+      "label": "L \u00b7 Gloss Liquid Blue",
+      "model_year": 2027,
+      "generation": "V10.8 \u00b7 MY27",
+      "manufacturer_code": null,
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+          "consulted_at": "2026-10-21",
+          "note": "Medidas documentadas por el fabricante; representaci\u00f3n 3D aproximada.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "rear_axle_standard",
+            "headset_standard",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "size_label",
+            "geometry"
+          ]
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 208,
+        "shock_fit": {
+          "eye_to_eye_mm": 250,
+          "stroke_mm": 75,
+          "restrictions": "Herrajes 30 \u00d7 8 mm en ambos extremos."
+        },
+        "rear_axle_standard": "12x157",
+        "headset_standard": "IS41/IS41 con ajuste de alcance",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 83
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200/220",
+        "fork_restrictions": "Horquilla de doble pletina; recorrido de referencia 200 mm.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 475,
+          "stack_mm": 637,
+          "seat_tube_mm": 455,
+          "head_tube_mm": 115,
+          "head_angle_deg": 63,
+          "chainstay_mm": 455,
+          "wheelbase_mm": 1302,
+          "bb_height_mm": 356,
+          "reference_position": "Alta \u00b7 ajustes centrales"
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Gloss Liquid Blue",
+            "image_key": null,
+            "material": {
+              "color": "#173569",
+              "metalness": 0.35,
+              "roughness": 0.34
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "b6997aa1-cf76-50a1-95cc-65b7644bc3e7",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "b6997aa1-cf76-50a1-95cc-65b7644bc3e7",
+      "kind": "glb",
+      "storage_path": "catalog/v13/santa-cruz-v10-8-my27/8d4dbb0e56ab5974fca47920.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "santa-cruz-v10-8-my27",
+          "assembly_version": "atlas-assembly-v5",
+          "mount_space": "frame"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.455,
+              0,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.847,
+              0.018000000000000016,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.475,
+              0.637,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5272089074700479,
+              0.5345342497183377,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.008945212551698278,
+              0.4305441017116468,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.03294521255169828,
+              0.5705441017116468,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.12990326954607606,
+              0.25712302638670625,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.03674481016865433,
+              0.07076740525497632,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.01282600432308538,
+              0.09920927250755972,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "santa-cruz-v10-8-my27__paint_0"
+        ],
+        "selectable_nodes": []
+      },
+      "published": true,
+      "reference_notes": "Continuidad aditiva de uniones de direcci\u00f3n sobre v11, sin deformar los tubos ni modificar los cinco cuadros protegidos. Fuentes heredadas y l\u00edmites: models/catalog-v13/README.md. No CAD."
+    },
+    "predecessor_file": "models/catalog-v13/exports/santa-cruz-v10-8-my27--l.glb"
+  }
+]

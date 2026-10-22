@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "c043dfcd-13d2-5146-b997-05ccb85afd66",
+    "predecessor_id": "8bb6a4a3-8474-5e54-993d-040c1a64f660",
+    "asset_id": "0a65bf14-2892-531d-9d4c-da56440c7d95",
+    "file": "commencal-frs-v3--m.glb",
+    "storage_path": "catalog/v18/commencal-frs-v3/9275628e7d52e3f02d54c23a.glb",
+    "bytes": 1397352,
+    "sha256": "9275628e7d52e3f02d54c23a9fd7c99af1ca57015c9f704f75266018e9dc0ac9",
+    "published_at": "2026-10-22T00:24:09.505Z"
+  },
+  {
+    "variant_id": "50be2459-1724-5057-b81c-1e1e073162a6",
+    "predecessor_id": "4c593aba-2e25-5dd9-b328-acf6f44542cc",
+    "asset_id": "ed6a5072-b7b2-5967-9a09-6bb74ee57bc9",
+    "file": "commencal-frs-v3--l.glb",
+    "storage_path": "catalog/v18/commencal-frs-v3/5e8af67f8a3f79765d1175ef.glb",
+    "bytes": 1402916,
+    "sha256": "5e8af67f8a3f79765d1175ef74ca7a26cbb429fdd416ba119ee9d17a6425ce83",
+    "published_at": "2026-10-22T00:24:13.734Z"
+  }
+]

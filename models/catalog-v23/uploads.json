@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "c803d9a6-e8fc-5541-9060-d688fb8d99b9",
+    "predecessor_id": "d566ee35-50ba-568e-b827-78ee747026b1",
+    "asset_id": "35fa71a8-1f2c-509f-8c07-94dd77740a37",
+    "file": "specialized-s-works-enduro-udh--s3.glb",
+    "storage_path": "catalog/v23/specialized-s-works-enduro-udh/f9aa211e7865c6486f16aa49.glb",
+    "bytes": 2750520,
+    "sha256": "f9aa211e7865c6486f16aa49bd145c585bc712a4978740352c6af2c93577d5af",
+    "published_at": "2026-10-22T01:18:48.925Z"
+  },
+  {
+    "variant_id": "c377544a-ead4-5a8c-9bde-ea86a7738e11",
+    "predecessor_id": "262ad70e-9559-543a-be39-0ca2863601ca",
+    "asset_id": "c3dfe6de-26a0-58fa-a08a-b0999c3a045f",
+    "file": "specialized-s-works-enduro-udh--s4.glb",
+    "storage_path": "catalog/v23/specialized-s-works-enduro-udh/79c41183801d0db5b7f274cb.glb",
+    "bytes": 2750236,
+    "sha256": "79c41183801d0db5b7f274cbb4ba1a86ad2958e7a09c6819cf32f5d7c8169f31",
+    "published_at": "2026-10-22T01:18:53.291Z"
+  }
+]

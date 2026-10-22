@@ -1,0 +1,114 @@
+[
+  {
+    "file": "models/catalog-v11/exports/commencal-supreme-dh-v5--m.glb",
+    "sha256": "9321923b063194cb4fe402822b893edb727818b7b494ed9f1186c026ae16a821"
+  },
+  {
+    "file": "models/catalog-v11/exports/commencal-supreme-dh-v5--l.glb",
+    "sha256": "5a82f6878399c275df3fca3885eb6b8dce34e98affe0477d8a1eb87437d3789a"
+  },
+  {
+    "file": "models/catalog-v11/exports/scott-ransom-rc-427727--m.glb",
+    "sha256": "ee2cdffc8f3c4e19a4c1a02ad7cbd07b52a8c8ecea3e5a571116b66e9b831778"
+  },
+  {
+    "file": "models/catalog-v11/exports/scott-ransom-rc-427727--l.glb",
+    "sha256": "fa9378bb9a545876c30148c15e4ff88eb4439e9b41bfac7bc38a6ba8676b02ee"
+  },
+  {
+    "file": "models/catalog-v13/exports/trek-slash-al-gen-6--m.glb",
+    "sha256": "e6a3ee5067627875a2f427dcbd44b2f5e2b1f4269e2b8a1504e0c967d8095977"
+  },
+  {
+    "file": "models/catalog-v13/exports/trek-slash-al-gen-6--l.glb",
+    "sha256": "383bac0a034085bffa419e4db294a730d2b148474c8181631ccc26f7e4bfb8c8"
+  },
+  {
+    "file": "models/catalog-v13/exports/santa-cruz-v10-8-my27--m.glb",
+    "sha256": "befac71ae31f73af6c26f2cf06d5cb4da0bec39597d1328c564cf3c1532cc9e4"
+  },
+  {
+    "file": "models/catalog-v13/exports/santa-cruz-v10-8-my27--l.glb",
+    "sha256": "8d4dbb0e56ab5974fca47920474f3df4c6d91310eaa0f0e369392cd0cdaad578"
+  },
+  {
+    "file": "models/catalog-v13/exports/yt-tues-mk4-carbon--m.glb",
+    "sha256": "3ed2370e30b8aa7f64b622ca6ce51e960aaa1f30f9cc3931afb832d4c3f2a1d0"
+  },
+  {
+    "file": "models/catalog-v13/exports/yt-tues-mk4-carbon--l.glb",
+    "sha256": "0f648b205bf3e79202d8b8f2aefcdff2f452b6c61eceaf2bf242011e6a71b04a"
+  },
+  {
+    "file": "models/catalog-v15/exports/yt-capra-mk3-carbon-mx--m.glb",
+    "sha256": "b93b9521a6d80a2801248575447f542d699bb43a70adb7fb8fb2c87b1a695586"
+  },
+  {
+    "file": "models/catalog-v15/exports/yt-capra-mk3-carbon-mx--l.glb",
+    "sha256": "56a4f59df3dc10465fe02557703033abc955d24a8a928ea296fea7d208b112af"
+  },
+  {
+    "file": "models/catalog-v16/exports/da-bomb-cherry-bomb-29--17in.glb",
+    "sha256": "0291e30325356016c6d21029633a05b5d7ec08f6b7c5f849664b7dce020dbdf2"
+  },
+  {
+    "file": "models/catalog-v16/exports/da-bomb-cherry-bomb-29--19in.glb",
+    "sha256": "3e7e9f0fce35e9847a6ed1c815e615d877becc9a6b45f41b188ef58eda805859"
+  },
+  {
+    "file": "models/catalog-v17/exports/gt-force-carbon-high-pivot--m.glb",
+    "sha256": "c8e2d27b06480c8e3a7183d1cc0497be19a0f5aa2466c2acd2f3dfd7170530e9"
+  },
+  {
+    "file": "models/catalog-v17/exports/gt-force-carbon-high-pivot--l.glb",
+    "sha256": "d3e436b8d736dd414ff650d8deb6999f0b38b37a683c482c98c399e788634fb3"
+  },
+  {
+    "file": "models/catalog-v18/exports/commencal-frs-v3--m.glb",
+    "sha256": "9275628e7d52e3f02d54c23a9fd7c99af1ca57015c9f704f75266018e9dc0ac9"
+  },
+  {
+    "file": "models/catalog-v18/exports/commencal-frs-v3--l.glb",
+    "sha256": "5e8af67f8a3f79765d1175ef74ca7a26cbb429fdd416ba119ee9d17a6425ce83"
+  },
+  {
+    "file": "models/catalog-v19/exports/commencal-furious-v3-2021--m.glb",
+    "sha256": "c48b440171c6d1d03cb84383636ead944f1148a54a437463212417a8d5d2799d"
+  },
+  {
+    "file": "models/catalog-v19/exports/commencal-furious-v3-2021--l.glb",
+    "sha256": "4e44f714dc5d42932948dd586022bf537b264589f41445b218b823f64af63f78"
+  },
+  {
+    "file": "models/catalog-v20/exports/gt-fury-carbon-high-pivot--m.glb",
+    "sha256": "13adc4e0103200e8a48de5bf93e45cffe5322126cc5fa06b627db9077cc29f92"
+  },
+  {
+    "file": "models/catalog-v20/exports/gt-fury-carbon-high-pivot--l.glb",
+    "sha256": "9cf663ddeb4de1826e9d44ce2ce4a6d3ff84b0460497ddd61630bfe76305e1e6"
+  },
+  {
+    "file": "models/catalog-v21/exports/commencal-meta-sx-v5--m.glb",
+    "sha256": "0a56bfd99b4e7aa8a2f39664473d184dda1ba450a03734a861218817252dd33d"
+  },
+  {
+    "file": "models/catalog-v21/exports/commencal-meta-sx-v5--l.glb",
+    "sha256": "4e7018ed25b0f861683fb4e8026bd668fd63bdcf448ab6c47196e022f7b150fc"
+  },
+  {
+    "file": "models/catalog-v22/exports/santa-cruz-nomad-7-my27--m.glb",
+    "sha256": "c17ae4edd75beaf54e3468a9559e314968f8f5567c1b07c86c3c56738f0c8d2a"
+  },
+  {
+    "file": "models/catalog-v22/exports/santa-cruz-nomad-7-my27--l.glb",
+    "sha256": "a35d57029710cdf99a820146e8f93bce458d5bb8400b16368363362e8682570b"
+  },
+  {
+    "file": "models/catalog-v23/exports/specialized-s-works-enduro-udh--s3.glb",
+    "sha256": "f9aa211e7865c6486f16aa49bd145c585bc712a4978740352c6af2c93577d5af"
+  },
+  {
+    "file": "models/catalog-v23/exports/specialized-s-works-enduro-udh--s4.glb",
+    "sha256": "79c41183801d0db5b7f274cbb4ba1a86ad2958e7a09c6819cf32f5d7c8169f31"
+  }
+]

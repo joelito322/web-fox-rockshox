@@ -1,0 +1,503 @@
+{
+  "source": {
+    "file": "models/catalog-v10/references/images/yt-tues-mk4-carbon-3.png",
+    "url": "https://www.yt-industries.com/media/fd/6c/50/1724137322/TUES-MK4-MX-CF-Core4-ShellWhite-SidehwP8Jim4A5BqU.png.png",
+    "dimensions": [
+      2300,
+      1400
+    ],
+    "coordinate_width": 2048,
+    "coordinate_height": 1246.608695652174,
+    "scale": 0.8904347826086957,
+    "method": "Independent photographic inspection plus white RGB>155/alpha>100 runs after ImageMagick resize2048x; thresholds only locate observed spans, not derived builder geometry."
+  },
+  "contract": "Cast along Z through registered XY. hit means frame geometry must occupy pixel, false means no frame geometry at pixel. Apply actual photograph registration, not the previous incorrecthead landmark. Samples are high-confidence exterior proportions, not CAD/100%certification; evaluate M/reference photo first before uncalibrated L interpolation.",
+  "samples": [
+    {
+      "region": "top_tube",
+      "pixel": [
+        950,
+        490
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        950,
+        504
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1020,
+        435
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1020,
+        453
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1080,
+        387
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1080,
+        407
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1150,
+        332
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1150,
+        354
+      ],
+      "hit": true,
+      "note": "Interior blanco observado; >=9 px del borde fotogr\u00e1fico local."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        950,
+        471
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        950,
+        522
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1020,
+        416
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1020,
+        472
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1080,
+        368
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1080,
+        426
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1150,
+        313
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "top_tube",
+      "pixel": [
+        1150,
+        373
+      ],
+      "hit": false,
+      "note": "Fuera de silueta superior/inferior observada; >=8 px del borde; no pipa ni oclusiones."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1080,
+        527
+      ],
+      "hit": true,
+      "note": "Interior blanco observado de cara diagonal; >=10 px de borde local."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1080,
+        596
+      ],
+      "hit": true,
+      "note": "Interior blanco observado de cara diagonal; >=10 px de borde local."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1100,
+        495
+      ],
+      "hit": true,
+      "note": "Interior blanco observado de cara diagonal; >=10 px de borde local."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1100,
+        563
+      ],
+      "hit": true,
+      "note": "Interior blanco observado de cara diagonal; >=10 px de borde local."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1150,
+        412
+      ],
+      "hit": true,
+      "note": "Interior blanco observado de cara diagonal; >=10 px de borde local."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1150,
+        480
+      ],
+      "hit": true,
+      "note": "Interior blanco observado de cara diagonal; >=10 px de borde local."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1080,
+        506
+      ],
+      "hit": false,
+      "note": "Exterior de cara diagonal; >=9 px de borde observado."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1080,
+        617
+      ],
+      "hit": false,
+      "note": "Exterior de cara diagonal; >=9 px de borde observado."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1100,
+        474
+      ],
+      "hit": false,
+      "note": "Exterior de cara diagonal; >=9 px de borde observado."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1100,
+        584
+      ],
+      "hit": false,
+      "note": "Exterior de cara diagonal; >=9 px de borde observado."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1150,
+        391
+      ],
+      "hit": false,
+      "note": "Exterior de cara diagonal; >=9 px de borde observado."
+    },
+    {
+      "region": "downtube",
+      "pixel": [
+        1150,
+        501
+      ],
+      "hit": false,
+      "note": "Exterior de cara diagonal; >=9 px de borde observado."
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        850,
+        560
+      ],
+      "hit": true,
+      "note": "Blanco continuo de espina/Y; evita cuello y huecos de montaje."
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        850,
+        620
+      ],
+      "hit": true,
+      "note": "Blanco continuo de espina/Y; evita cuello y huecos de montaje."
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        875,
+        545
+      ],
+      "hit": true,
+      "note": "Blanco continuo de espina/Y; evita cuello y huecos de montaje."
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        815,
+        590
+      ],
+      "hit": false,
+      "note": "Fondo a lados de espina; evita bieleta y amortiguador."
+    },
+    {
+      "region": "seat_y",
+      "pixel": [
+        885,
+        610
+      ],
+      "hit": false,
+      "note": "Fondo a lados de espina; evita bieleta y amortiguador."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        650,
+        730
+      ],
+      "hit": true,
+      "note": "Interior blanco del tirante; separado de rueda/cables."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        700,
+        714
+      ],
+      "hit": true,
+      "note": "Interior blanco del tirante; separado de rueda/cables."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        750,
+        695
+      ],
+      "hit": true,
+      "note": "Interior blanco del tirante; separado de rueda/cables."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        650,
+        709
+      ],
+      "hit": false,
+      "note": "Fuera del tirante; >=9 px del borde blanco local, sin otra pieza de cuadro."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        650,
+        759
+      ],
+      "hit": false,
+      "note": "Fuera del tirante; >=9 px del borde blanco local, sin otra pieza de cuadro."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        700,
+        693
+      ],
+      "hit": false,
+      "note": "Fuera del tirante; >=9 px del borde blanco local, sin otra pieza de cuadro."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        700,
+        740
+      ],
+      "hit": false,
+      "note": "Fuera del tirante; >=9 px del borde blanco local, sin otra pieza de cuadro."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        750,
+        674
+      ],
+      "hit": false,
+      "note": "Fuera del tirante; >=9 px del borde blanco local, sin otra pieza de cuadro."
+    },
+    {
+      "region": "seat_stay",
+      "pixel": [
+        750,
+        723
+      ],
+      "hit": false,
+      "note": "Fuera del tirante; >=9 px del borde blanco local, sin otra pieza de cuadro."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        650,
+        818
+      ],
+      "hit": true,
+      "note": "Interior blanco de vaina, por debajo de guarda/encima de borde inferior."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        700,
+        817
+      ],
+      "hit": true,
+      "note": "Interior blanco de vaina, por debajo de guarda/encima de borde inferior."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        750,
+        818
+      ],
+      "hit": true,
+      "note": "Interior blanco de vaina, por debajo de guarda/encima de borde inferior."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        650,
+        799
+      ],
+      "hit": false,
+      "note": "Fuera de vaina; >=9 px del borde blanco local."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        650,
+        845
+      ],
+      "hit": false,
+      "note": "Fuera de vaina; >=9 px del borde blanco local."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        700,
+        797
+      ],
+      "hit": false,
+      "note": "Fuera de vaina; >=9 px del borde blanco local."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        700,
+        845
+      ],
+      "hit": false,
+      "note": "Fuera de vaina; >=9 px del borde blanco local."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        750,
+        796
+      ],
+      "hit": false,
+      "note": "Fuera de vaina; >=9 px del borde blanco local."
+    },
+    {
+      "region": "chain_stay",
+      "pixel": [
+        750,
+        846
+      ],
+      "hit": false,
+      "note": "Fuera de vaina; >=9 px del borde blanco local."
+    },
+    {
+      "region": "main_window",
+      "pixel": [
+        1080,
+        460
+      ],
+      "hit": false,
+      "note": "Ventana delantera realmente vac\u00eda; sin amortiguador ni tubos; no cerrar por geometr\u00eda auxiliar."
+    },
+    {
+      "region": "main_window",
+      "pixel": [
+        1100,
+        435
+      ],
+      "hit": false,
+      "note": "Ventana delantera realmente vac\u00eda; sin amortiguador ni tubos; no cerrar por geometr\u00eda auxiliar."
+    },
+    {
+      "region": "main_window",
+      "pixel": [
+        1150,
+        382
+      ],
+      "hit": false,
+      "note": "Ventana delantera realmente vac\u00eda; sin amortiguador ni tubos; no cerrar por geometr\u00eda auxiliar."
+    }
+  ]
+}

@@ -1,0 +1,566 @@
+[
+  {
+    "slug": "santa-cruz-nomad-7-my27",
+    "component": {
+      "id": "76b966f2-2480-53ac-8861-7c064034b070",
+      "brand_id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "name": "Nomad 7 CC",
+      "slug": "santa-cruz-nomad-7-my27",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometr\u00eda documentadas.",
+      "technical_notes": "Exterior aproximado del modelo; acabados y superficies ocultas simplificados, sin simulaci\u00f3n de suspensi\u00f3n. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://web.santacruzbicycles.com/products/nomad-frame-2027",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta actual; acabado y SKU por talla desde selector comercial",
+          "fields": []
+        }
+      ]
+    },
+    "variant": {
+      "id": "1ff5a2a4-762e-5c17-8d91-852bc9b2699d",
+      "component_id": "76b966f2-2480-53ac-8861-7c064034b070",
+      "label": "M \u00b7 Matte Metallic Earth",
+      "model_year": 2027,
+      "generation": "7",
+      "manufacturer_code": "68-27322-3-941-2399",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://web.santacruzbicycles.com/products/nomad-frame-2027",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta actual; acabado y SKU por talla desde selector comercial",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "upper_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "lower_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "Confirmar orientaci\u00f3n y herrajes; la coincidencia de medida no certifica el montaje."
+        },
+        "headset_standard": "IS41/IS52",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Horquilla de 170\u2013180 mm; referencia eje-corona de 588 mm y offset 44 mm.",
+        "tire_clearance_notes": "Dise\u00f1o MX 29/27.5. No trasladar las restricciones de Nomad 6 a esta generaci\u00f3n.",
+        "size_label": "M",
+        "geometry": {
+          "reach_mm": 455,
+          "stack_mm": 633,
+          "head_tube_mm": 110,
+          "chainstay_mm": 441,
+          "wheelbase_mm": 1246,
+          "effective_top_tube_mm": 587,
+          "seat_tube_mm": 400,
+          "seat_angle_deg": 78.2,
+          "head_angle_deg": 63.6,
+          "bb_height_mm": 346,
+          "reference_position": "Hi; tabla MY27. Sin sag. \u00c1ngulo efectivo de sill\u00edn de la tabla, no \u00e1ngulo f\u00edsico del tubo."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Metallic Earth",
+            "image_key": null,
+            "material": {
+              "color": "#5c5145",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "f8d02d1b-3472-534b-95f0-7bcbbedcd2ca",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "f8d02d1b-3472-534b-95f0-7bcbbedcd2ca",
+      "kind": "glb",
+      "storage_path": "catalog/v11/santa-cruz-nomad-7-my27/9428b953fafde7be297bbdf3.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "santa-cruz-nomad-7-my27",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.4409274316710177,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.455,
+              0.633,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.503909869710342,
+              0.5344717063736646,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.058197325406369405,
+              0.40593027471369353,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.21814091325942148,
+              0.16956359165320034,
+              0
+            ],
+            "rotation": [
+              0,
+              3.141592653589793,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.008196815848350525,
+              0.1286829113960266,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.0831973254063694,
+              0.5509302747136935,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.03194573387985397,
+              0.325792454155835,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8050725683289823,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "santa-cruz-nomad-7-my27__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "Pasos de direcci\u00f3n, sill\u00edn y pedalier corregidos sobre v10. Fuentes heredadas y l\u00edmites: models/catalog-v11/README.md. No CAD.",
+      "published": true
+    },
+    "predecessor_file": "models/catalog-v11/exports/santa-cruz-nomad-7-my27--m.glb"
+  },
+  {
+    "slug": "santa-cruz-nomad-7-my27",
+    "component": {
+      "id": "76b966f2-2480-53ac-8861-7c064034b070",
+      "brand_id": "f84f13ef-d63c-5c6f-b293-0048c31c6963",
+      "name": "Nomad 7 CC",
+      "slug": "santa-cruz-nomad-7-my27",
+      "category": "frame",
+      "disciplines": [
+        "enduro"
+      ],
+      "description": "Cuadro de enduro con talla y geometr\u00eda documentadas.",
+      "technical_notes": "Exterior aproximado del modelo; acabados y superficies ocultas simplificados, sin simulaci\u00f3n de suspensi\u00f3n. Los anclajes del visor son estimaciones independientes de las especificaciones.",
+      "image_key": null,
+      "published": true,
+      "sources": [
+        {
+          "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta/ficha comercial actual del fabricante",
+          "fields": []
+        },
+        {
+          "url": "https://web.santacruzbicycles.com/products/nomad-frame-2027",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta actual; acabado y SKU por talla desde selector comercial",
+          "fields": []
+        }
+      ]
+    },
+    "variant": {
+      "id": "83d346d8-8247-5aac-970b-2ad594e19881",
+      "component_id": "76b966f2-2480-53ac-8861-7c064034b070",
+      "label": "L \u00b7 Matte Metallic Earth",
+      "model_year": 2027,
+      "generation": "7",
+      "manufacturer_code": "68-27322-4-941-2399",
+      "image_key": null,
+      "sources": [
+        {
+          "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+          "consulted_at": "2026-10-19",
+          "note": "Especificaciones por talla; las estimaciones solo viven en el manifiesto.",
+          "fields": [
+            "material",
+            "suspension_type",
+            "wheel_front",
+            "wheel_rear",
+            "rear_travel_mm",
+            "shock_fit",
+            "headset_standard",
+            "rear_axle_standard",
+            "derailleur_mount",
+            "bb_shell",
+            "seatpost_diameter_mm",
+            "seat_clamp_diameter_mm",
+            "brake_mount",
+            "fork_restrictions",
+            "tire_clearance_notes",
+            "size_label",
+            "geometry"
+          ]
+        },
+        {
+          "url": "https://web.santacruzbicycles.com/products/nomad-frame-2027",
+          "consulted_at": "2026-10-19",
+          "note": "Oferta actual; acabado y SKU por talla desde selector comercial",
+          "fields": []
+        }
+      ],
+      "specs_schema_version": 1,
+      "specs": {
+        "material": "Carbono CC",
+        "suspension_type": "VPP",
+        "wheel_front": "29",
+        "wheel_rear": "27.5",
+        "rear_travel_mm": 170,
+        "shock_fit": {
+          "eye_to_eye_mm": 230,
+          "stroke_mm": 65,
+          "upper_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "lower_mount": {
+            "width_mm": 30,
+            "bolt_diameter_mm": 8
+          },
+          "restrictions": "Confirmar orientaci\u00f3n y herrajes; la coincidencia de medida no certifica el montaje."
+        },
+        "headset_standard": "IS41/IS52",
+        "rear_axle_standard": "12x148",
+        "derailleur_mount": "UDH",
+        "bb_shell": {
+          "standard": "BSA",
+          "width_mm": 73
+        },
+        "seatpost_diameter_mm": 31.6,
+        "seat_clamp_diameter_mm": 36.4,
+        "brake_mount": "Post Mount 200",
+        "fork_restrictions": "Horquilla de 170\u2013180 mm; referencia eje-corona de 588 mm y offset 44 mm.",
+        "tire_clearance_notes": "Dise\u00f1o MX 29/27.5. No trasladar las restricciones de Nomad 6 a esta generaci\u00f3n.",
+        "size_label": "L",
+        "geometry": {
+          "reach_mm": 475,
+          "stack_mm": 643,
+          "head_tube_mm": 120,
+          "chainstay_mm": 444,
+          "wheelbase_mm": 1276,
+          "effective_top_tube_mm": 604,
+          "seat_tube_mm": 420,
+          "seat_angle_deg": 78.6,
+          "head_angle_deg": 63.6,
+          "bb_height_mm": 346,
+          "reference_position": "Hi; tabla MY27. Sin sag. \u00c1ngulo efectivo de sill\u00edn de la tabla, no \u00e1ngulo f\u00edsico del tubo."
+        }
+      },
+      "allowed_finishes": {
+        "default_finish_id": "factory",
+        "custom_color_enabled": true,
+        "options": [
+          {
+            "id": "factory",
+            "label": "Matte Metallic Earth",
+            "image_key": null,
+            "material": {
+              "color": "#5c5145",
+              "metalness": 0.35,
+              "roughness": 0.45
+            }
+          }
+        ]
+      },
+      "representation": "approximate",
+      "published": true,
+      "selectable": true,
+      "visual_asset_id": "54c8f58c-1ca6-55ed-846d-e1b7459088e7",
+      "price_reference": null
+    },
+    "asset": {
+      "id": "54c8f58c-1ca6-55ed-846d-e1b7459088e7",
+      "kind": "glb",
+      "storage_path": "catalog/v11/santa-cruz-nomad-7-my27/2d137d4aeff631e7a50c7c29.glb",
+      "generator_key": null,
+      "manifest": {
+        "manifest_version": 1,
+        "units": "meters",
+        "origin": "bottom_bracket",
+        "parameters": {
+          "profile_key": "santa-cruz-nomad-7-my27",
+          "mount_space": "frame",
+          "assembly_version": "atlas-assembly-v5"
+        },
+        "anchors": {
+          "rear_axle": {
+            "position": [
+              -0.44392792207744713,
+              0.008,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube": {
+            "position": [
+              0.475,
+              0.643,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "head_tube_lower": {
+            "position": [
+              0.5283562215021913,
+              0.5355145887712704,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "seat_tube": {
+            "position": [
+              -0.04792070550293509,
+              0.412244052553924,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_upper": {
+            "position": [
+              0.2241994465394468,
+              0.17226955666409052,
+              0
+            ],
+            "rotation": [
+              0,
+              3.141592653589793,
+              0
+            ],
+            "estimated": true
+          },
+          "shock_lower": {
+            "position": [
+              -0.0021020621061325073,
+              0.1311887502670288,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "saddle": {
+            "position": [
+              -0.07292070550293508,
+              0.557244052553924,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "suspension_pivot": {
+            "position": [
+              0.040766421002805475,
+              0.33088203470807276,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          },
+          "front_axle": {
+            "position": [
+              0.8320720779225529,
+              0.028,
+              0
+            ],
+            "rotation": [
+              0,
+              0,
+              0
+            ],
+            "estimated": true
+          }
+        },
+        "paintable_nodes": [
+          "santa-cruz-nomad-7-my27__paint_v10"
+        ],
+        "selectable_nodes": []
+      },
+      "reference_notes": "Pasos de direcci\u00f3n, sill\u00edn y pedalier corregidos sobre v10. Fuentes heredadas y l\u00edmites: models/catalog-v11/README.md. No CAD.",
+      "published": true
+    },
+    "predecessor_file": "models/catalog-v11/exports/santa-cruz-nomad-7-my27--l.glb"
+  }
+]

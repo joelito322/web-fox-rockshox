@@ -1,0 +1,349 @@
+{
+  "image_landmarks": {
+    "bottom_bracket": [
+      874,
+      1155
+    ],
+    "head_top": [
+      1711,
+      164
+    ],
+    "rear_axle": [
+      137,
+      1129
+    ],
+    "seat_top": [
+      825,
+      463
+    ],
+    "shock_upper": [
+      1305,
+      665
+    ],
+    "shock_lower": [
+      933,
+      844
+    ],
+    "pivot": [
+      1114,
+      899
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          904,
+          665
+        ],
+        [
+          1191,
+          488
+        ],
+        [
+          1497,
+          291
+        ],
+        [
+          1688,
+          202
+        ]
+      ],
+      "height_mm": [
+        19,
+        17,
+        18,
+        22
+      ],
+      "width_mm": 20,
+      "corners_mm": [
+        0,
+        0,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          874,
+          1155
+        ],
+        [
+          977,
+          1105
+        ],
+        [
+          1115,
+          996
+        ],
+        [
+          1435,
+          611
+        ],
+        [
+          1718,
+          300
+        ]
+      ],
+      "height_mm": [
+        24,
+        25,
+        25,
+        27,
+        26
+      ],
+      "width_mm": 28,
+      "corners_mm": [
+        0,
+        40,
+        35,
+        25,
+        0
+      ]
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          874,
+          1155
+        ],
+        [
+          849,
+          1020
+        ],
+        [
+          882,
+          851
+        ],
+        [
+          902,
+          674
+        ],
+        [
+          825,
+          463
+        ]
+      ],
+      "height_mm": [
+        22,
+        23,
+        21,
+        20,
+        18
+      ],
+      "width_mm": 19,
+      "corners_mm": [
+        0,
+        30,
+        45,
+        35,
+        0
+      ]
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          137,
+          1129
+        ],
+        [
+          330,
+          1134
+        ],
+        [
+          687,
+          1131
+        ],
+        [
+          763,
+          1118
+        ],
+        [
+          809,
+          1080
+        ],
+        [
+          846,
+          1020
+        ]
+      ],
+      "height_mm": [
+        12,
+        14,
+        15,
+        17,
+        19,
+        22
+      ],
+      "width_mm": 12,
+      "paired": true,
+      "corners_mm": [
+        0,
+        5,
+        16,
+        22,
+        22,
+        0
+      ]
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          181,
+          1058
+        ],
+        [
+          485,
+          974
+        ],
+        [
+          876,
+          891
+        ]
+      ],
+      "height_mm": [
+        12,
+        14,
+        20
+      ],
+      "width_mm": 14,
+      "paired": true,
+      "corners_mm": [
+        0,
+        12,
+        0
+      ]
+    }
+  ],
+  "links": [
+    [
+      [
+        876,
+        891
+      ],
+      [
+        1114,
+        899
+      ],
+      [
+        933,
+        844
+      ]
+    ]
+  ],
+  "axle_width_mm": 150,
+  "tire_width_mm": 65,
+  "reference_image": "frs-frame.webp",
+  "estimated_geometry": {
+    "reach_mm": 465,
+    "stack_mm": 613,
+    "chainstay_mm": 435,
+    "head_tube_mm": 120,
+    "head_angle_deg": 64
+  },
+  "reference_coordinate_space": {
+    "width": 1920,
+    "height": 1280
+  },
+  "rocker": {
+    "outer": [
+      [
+        861,
+        851
+      ],
+      [
+        921,
+        818
+      ],
+      [
+        944,
+        822
+      ],
+      [
+        969,
+        858
+      ],
+      [
+        1089,
+        867
+      ],
+      [
+        1126,
+        875
+      ],
+      [
+        1140,
+        896
+      ],
+      [
+        1128,
+        923
+      ],
+      [
+        1104,
+        929
+      ],
+      [
+        884,
+        920
+      ],
+      [
+        860,
+        903
+      ]
+    ],
+    "hole": [
+      [
+        1001,
+        886
+      ],
+      [
+        1046,
+        887
+      ],
+      [
+        1060,
+        910
+      ],
+      [
+        1004,
+        911
+      ],
+      [
+        993,
+        905
+      ],
+      [
+        993,
+        894
+      ]
+    ],
+    "depth_mm": 10,
+    "half_separation_mm": 43,
+    "fixed_pivot": [
+      1114,
+      899
+    ],
+    "rear_pivot": [
+      876,
+      891
+    ],
+    "shock_joint": [
+      933,
+      844
+    ]
+  },
+  "notes": [
+    "Exact Pure White general photographs establish contours and decal placement; technical FRS V3 exploded details explain opposite plates, fixed upper cradle, pivots, rear dropout secondary joint and unilateral guards.",
+    "No Catmull or sinusoidal width in long tubes; short local bends retain genuine FRS shape.",
+    "Image registration preserves existing assembly anchors including length-adjusted lower shock eye. Photo eye and assembly eye may differ; rocker ear connects to immutable actual eye.",
+    "Opposite structural members reconstructed; never mirror brake bosses or derailleur hanger/guard.",
+    "Half section extents/depths/corner radii inferred from photos; not exact CAD or 100 percent certification."
+  ]
+}

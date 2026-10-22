@@ -1,0 +1,31 @@
+{
+  "coordinate_space": {
+    "width": 1600,
+    "height": 1200,
+    "native_width": 3200,
+    "native_height": 2400,
+    "factor": 0.5,
+    "source": "references/frame-blue.png"
+  },
+  "landmarks": {
+    "bottom_bracket": [645, 754],
+    "rear_axle": [303, 755],
+    "head_top": [1018, 278],
+    "head_bottom_observed": [1052, 344],
+    "seat_top": [607, 424],
+    "seat_direction_base": [636, 477],
+    "shock_upper": [772, 583],
+    "shock_lower": [614, 704],
+    "upper_fixed": [660, 512],
+    "upper_rear": [676, 600],
+    "lower_fixed": [654, 724],
+    "lower_rear": [594, 760]
+  },
+  "method": "Three-point affine rectification of oblique MY27 frameset photo to official size-specific BB/head/rear anchors, not orthographic CAD or uniform photo metrology.",
+  "limits": [
+    "Official M/L reach, stack, head length/angle, chainstay and axle references remain unchanged.",
+    "Photo source size and perspective unknown. L is a size-specific registration of the same observed silhouette, not a photographed L scan.",
+    "Shock eyes symmetrically fitted to commercial250mm along observed eye axis; lower eye partly occluded, not reservoir center.",
+    "Only seat/saddle/shock eyes/lower pivot visual estimates change; dimensions and finishes are untouched."
+  ]
+}

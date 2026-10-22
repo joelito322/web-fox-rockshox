@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "commencal-meta-sx-v5",
+    "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/enduro/meta%20sx%20v5/FT3MSXV5TMEXL.html?lang=en_FR",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 25,
+    "video_links_found": 2
+  },
+  {
+    "slug": "commencal-supreme-dh-v5",
+    "url": "https://www.commencal.com/fr/bikes/cadres%20%2F%20a%20la%20carte/downhill/supreme%20dh%20v5/FT3SUPV54M.html?lang=fr_FR",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 27,
+    "video_links_found": 2
+  },
+  {
+    "slug": "santa-cruz-nomad-7-my27",
+    "url": "https://web.santacruzbicycles.com/pages/product-support/nomad-7-my27",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 160,
+    "video_links_found": 1
+  },
+  {
+    "slug": "canyon-sender-cfr-high-pivot",
+    "url": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 10,
+    "video_links_found": 2
+  },
+  {
+    "slug": "specialized-s-works-enduro-udh",
+    "url": "https://www.specialized.com/qa/en/s-works-enduro-frameset/p/4276009",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 41,
+    "video_links_found": 3
+  },
+  {
+    "slug": "da-bomb-cherry-bomb-29",
+    "url": "https://www.dabombmtb.com/product_detail/CherryBomb29/",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 17,
+    "video_links_found": 1
+  },
+  {
+    "slug": "scott-ransom-rc-427727",
+    "url": "https://www.scott-sports.com/global/en/product/scott-ransom-rc-frame-shock",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 0,
+    "video_links_found": 0
+  },
+  {
+    "slug": "trek-slash-al-gen-6",
+    "url": "https://www.trekbikes.com/us/en_US/bikes/mountain-bikes/trail-mountain-bikes/slash/f/F341/slash-al-gen-6-frameset/42271/",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 0,
+    "video_links_found": 1
+  },
+  {
+    "slug": "santa-cruz-v10-8-my27",
+    "url": "https://www.santacruzbicycles.com/pages/product-support/v-10-8-my27",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 160,
+    "video_links_found": 1
+  },
+  {
+    "slug": "yt-tues-mk4-carbon",
+    "url": "https://www.yt-industries.com/en-us/Bikes/Downhill-Tues/CORE-4/",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 160,
+    "video_links_found": 3
+  },
+  {
+    "slug": "yt-capra-mk3-carbon-mx",
+    "url": "https://www.yt-industries.com/en-us/Bikes/Enduro-Capra/CORE-4/",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 160,
+    "video_links_found": 3
+  },
+  {
+    "slug": "gt-fury-carbon-high-pivot",
+    "url": "https://gtbicycles.com/products/fury-carbon-frameset",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 37,
+    "video_links_found": 1
+  },
+  {
+    "slug": "gt-force-carbon-high-pivot",
+    "url": "https://gtbicycles.com/products/force-carbon-frameset",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 52,
+    "video_links_found": 1
+  },
+  {
+    "slug": "commencal-frs-v3",
+    "url": "https://www.commencal.com/en/bikes/frames%20%2F%20a%20la%20carte/downhill/frs/FT4FRS3M.html",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 25,
+    "video_links_found": 2
+  },
+  {
+    "slug": "commencal-furious-v3-2021",
+    "url": "https://static.commencal.com/tech/2021-COMMENCAL-FURIOUS-RIDE.pdf",
+    "status": 200,
+    "discovery_only": true,
+    "image_links_found": 0,
+    "video_links_found": 0
+  }
+]

@@ -1,0 +1,525 @@
+{
+  "image_landmarks": {
+    "bottom_bracket": [
+      773,
+      1016
+    ],
+    "head_top": [
+      1414,
+      196
+    ],
+    "rear_axle": [
+      180,
+      995
+    ],
+    "seat_top": [
+      722,
+      501
+    ],
+    "shock_upper": [
+      929,
+      643
+    ],
+    "shock_lower": [
+      815,
+      910
+    ],
+    "pivot": [
+      728,
+      881
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          772,
+          581
+        ],
+        [
+          815,
+          590
+        ],
+        [
+          870,
+          552
+        ],
+        [
+          1396,
+          235
+        ]
+      ],
+      "height_mm": [
+        24,
+        22,
+        20,
+        25
+      ],
+      "width_mm": 20.88,
+      "corners_mm": [
+        0,
+        22,
+        20,
+        0
+      ]
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          985,
+          905
+        ],
+        [
+          1147,
+          658
+        ],
+        [
+          1324,
+          410
+        ],
+        [
+          1385,
+          346
+        ],
+        [
+          1462,
+          315
+        ]
+      ],
+      "height_mm": [
+        28,
+        32,
+        32,
+        30,
+        26
+      ],
+      "width_mm": 32.64,
+      "corners_mm": [
+        0,
+        0,
+        23,
+        24,
+        0
+      ]
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          806,
+          647
+        ],
+        [
+          764,
+          609
+        ],
+        [
+          722,
+          501
+        ]
+      ],
+      "height_mm": [
+        24,
+        24,
+        18
+      ],
+      "width_mm": 20,
+      "corners_mm": [
+        0,
+        18,
+        0
+      ]
+    },
+    {
+      "name": "seat_spine",
+      "path": [
+        [
+          773,
+          1016
+        ],
+        [
+          734,
+          947
+        ],
+        [
+          728,
+          881
+        ],
+        [
+          818,
+          641
+        ],
+        [
+          849,
+          584
+        ]
+      ],
+      "height_mm": [
+        25,
+        27,
+        23,
+        22,
+        22
+      ],
+      "width_mm": 25.11,
+      "corners_mm": [
+        0,
+        30,
+        23,
+        28,
+        0
+      ]
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          309,
+          1028
+        ],
+        [
+          640,
+          1024
+        ],
+        [
+          690,
+          1008
+        ],
+        [
+          718,
+          963
+        ],
+        [
+          728,
+          881
+        ]
+      ],
+      "height_mm": [
+        12,
+        14,
+        15,
+        19,
+        23
+      ],
+      "width_mm": 12,
+      "paired": true,
+      "corners_mm": [
+        0,
+        18,
+        20,
+        30,
+        0
+      ]
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          180,
+          995
+        ],
+        [
+          405,
+          876
+        ],
+        [
+          636,
+          754
+        ],
+        [
+          663,
+          740
+        ]
+      ],
+      "height_mm": [
+        12,
+        15,
+        17,
+        18
+      ],
+      "width_mm": 14,
+      "paired": true,
+      "corners_mm": [
+        0,
+        0,
+        15,
+        0
+      ]
+    },
+    {
+      "name": "lower_bay_rail",
+      "path": [
+        [
+          773,
+          1016
+        ],
+        [
+          872,
+          976
+        ],
+        [
+          985,
+          905
+        ]
+      ],
+      "height_mm": [
+        12,
+        11,
+        14
+      ],
+      "width_mm": 28,
+      "corners_mm": [
+        0,
+        35,
+        0
+      ]
+    }
+  ],
+  "links": [
+    {
+      "outer": [
+        [
+          638,
+          725
+        ],
+        [
+          656,
+          712
+        ],
+        [
+          688,
+          714
+        ],
+        [
+          739,
+          728
+        ],
+        [
+          813,
+          705
+        ],
+        [
+          885,
+          651
+        ],
+        [
+          908,
+          626
+        ],
+        [
+          928,
+          621
+        ],
+        [
+          948,
+          634
+        ],
+        [
+          951,
+          654
+        ],
+        [
+          938,
+          668
+        ],
+        [
+          897,
+          678
+        ],
+        [
+          836,
+          733
+        ],
+        [
+          748,
+          776
+        ],
+        [
+          704,
+          772
+        ],
+        [
+          655,
+          762
+        ],
+        [
+          638,
+          747
+        ]
+      ],
+      "hole": [],
+      "fixed_pivot": [
+        728,
+        754
+      ],
+      "rear_pivot": [
+        663,
+        740
+      ],
+      "shock_upper": [
+        929,
+        643
+      ],
+      "depth_mm": 10,
+      "half_separation_mm": 43
+    }
+  ],
+  "idler": [
+    728,
+    881
+  ],
+  "axle_width_mm": 148,
+  "tire_width_mm": 65,
+  "reference_image": "fury.webp",
+  "estimated_geometry": {
+    "reach_mm": 450,
+    "stack_mm": 638,
+    "chainstay_mm": 435,
+    "head_tube_mm": 110,
+    "head_angle_deg": 63.5
+  },
+  "reference_coordinate_space": {
+    "width": 1696,
+    "height": 1459,
+    "native_width": 2150,
+    "native_height": 1850
+  },
+  "model": "gt-fury-carbon-high-pivot",
+  "bay": {
+    "outer": [
+      [
+        733,
+        900
+      ],
+      [
+        800,
+        895
+      ],
+      [
+        951,
+        860
+      ],
+      [
+        1005,
+        820
+      ],
+      [
+        1037,
+        840
+      ],
+      [
+        1011,
+        897
+      ],
+      [
+        984,
+        926
+      ],
+      [
+        900,
+        984
+      ],
+      [
+        806,
+        1040
+      ],
+      [
+        754,
+        1036
+      ],
+      [
+        720,
+        983
+      ]
+    ],
+    "hole": [
+      [
+        801,
+        946
+      ],
+      [
+        812,
+        936
+      ],
+      [
+        904,
+        919
+      ],
+      [
+        945,
+        905
+      ],
+      [
+        948,
+        912
+      ],
+      [
+        875,
+        961
+      ],
+      [
+        833,
+        970
+      ],
+      [
+        811,
+        966
+      ],
+      [
+        799,
+        958
+      ]
+    ],
+    "half_separation_mm": 28,
+    "plate_depth_mm": 18
+  },
+  "junction": [
+    [
+      746,
+      550
+    ],
+    [
+      769,
+      565
+    ],
+    [
+      799,
+      568
+    ],
+    [
+      848,
+      547
+    ],
+    [
+      871,
+      552
+    ],
+    [
+      845,
+      596
+    ],
+    [
+      824,
+      644
+    ],
+    [
+      788,
+      638
+    ],
+    [
+      764,
+      610
+    ]
+  ],
+  "notes": [
+    "Exact Fury 2023-generation photos and 2024 GT Tech Book printed pages 4-6 distinguish this frame from both older 2019-2022 Fury and Force.",
+    "Native photographs 2150x1850; tracing coordinates 1696x1459 retained for immutable assembly anchors.",
+    "Observed lower triangular window is genuinely open, not a solid generic bridge. Paired bay cheeks, central lower rail and eye supports are inferred in depth from exploded drawings.",
+    "K91003 shock link is a solid paired yoke with bearing bores; no invented large Force-style side slot.",
+    "Upper shock eye follows rocker, lower mount is fixed; idler on drive-side main pivot only. Structural counterparts are completed without mirroring asymmetric hanger, brake mount or guides.",
+    "Head cup standard ZS49 corroborates the approximate 49mm visual bore, not manufacturing clearance or exact internal geometry.",
+    "Sections/depths/radii/hidden joins and lettering remain visual approximations, not 100 percent CAD or collision certification."
+  ]
+}

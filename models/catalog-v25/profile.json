@@ -1,0 +1,654 @@
+{
+  "image_landmarks": {
+    "bottom_bracket": [
+      555,
+      742
+    ],
+    "rear_axle": [
+      98,
+      743
+    ],
+    "head_top": [
+      1014,
+      94
+    ],
+    "head_bottom": [
+      1064,
+      194
+    ],
+    "seat_top": [
+      512,
+      361
+    ],
+    "seat_pivot": [
+      538,
+      526
+    ],
+    "rocker_pivot": [
+      581,
+      538
+    ],
+    "lower_pivot": [
+      538,
+      686
+    ],
+    "shock_upper": [
+      604,
+      504
+    ],
+    "shock_lower": [
+      519,
+      741
+    ],
+    "idler": [
+      539,
+      665
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          552,
+          451
+        ],
+        [
+          631,
+          411
+        ],
+        [
+          682,
+          377
+        ],
+        [
+          1014,
+          125
+        ]
+      ],
+      "height_mm": [
+        17,
+        17,
+        18,
+        25
+      ],
+      "width_mm": 21,
+      "corners_mm": [
+        0,
+        22,
+        24,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          555,
+          742
+        ],
+        [
+          626,
+          741
+        ],
+        [
+          695,
+          718
+        ],
+        [
+          733,
+          683
+        ],
+        [
+          1039,
+          177
+        ]
+      ],
+      "height_mm": [
+        27,
+        30,
+        34,
+        32,
+        25
+      ],
+      "width_mm": 33,
+      "corners_mm": [
+        0,
+        40,
+        45,
+        42,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          550,
+          500
+        ],
+        [
+          531,
+          434
+        ],
+        [
+          512,
+          361
+        ]
+      ],
+      "height_mm": [
+        19,
+        18,
+        17
+      ],
+      "width_mm": 18,
+      "corners_mm": [
+        0,
+        22,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "front_arch",
+      "path": [
+        [
+          555,
+          742
+        ],
+        [
+          539,
+          707
+        ],
+        [
+          555,
+          635
+        ],
+        [
+          581,
+          538
+        ],
+        [
+          625,
+          465
+        ],
+        [
+          674,
+          383
+        ]
+      ],
+      "height_mm": [
+        20,
+        21,
+        19,
+        19,
+        16,
+        13
+      ],
+      "width_mm": 11,
+      "corners_mm": [
+        0,
+        22,
+        35,
+        30,
+        0,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          98,
+          743
+        ],
+        [
+          129,
+          692
+        ],
+        [
+          174,
+          673
+        ],
+        [
+          538,
+          526
+        ]
+      ],
+      "height_mm": [
+        15,
+        14,
+        14,
+        18
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        20,
+        18,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          155,
+          743
+        ],
+        [
+          435,
+          749
+        ],
+        [
+          511,
+          741
+        ]
+      ],
+      "height_mm": [
+        13,
+        14,
+        17
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        20,
+        0
+      ],
+      "paired": true
+    }
+  ],
+  "links": [
+    {
+      "name": "upper",
+      "outer": [
+        [
+          524,
+          510
+        ],
+        [
+          541,
+          507
+        ],
+        [
+          571,
+          512
+        ],
+        [
+          596,
+          492
+        ],
+        [
+          611,
+          491
+        ],
+        [
+          621,
+          504
+        ],
+        [
+          615,
+          518
+        ],
+        [
+          602,
+          529
+        ],
+        [
+          603,
+          544
+        ],
+        [
+          589,
+          554
+        ],
+        [
+          567,
+          566
+        ],
+        [
+          552,
+          581
+        ],
+        [
+          534,
+          588
+        ],
+        [
+          521,
+          578
+        ],
+        [
+          522,
+          558
+        ],
+        [
+          530,
+          543
+        ]
+      ],
+      "holes": [
+        [
+          [
+            551,
+            525
+          ],
+          [
+            562,
+            527
+          ],
+          [
+            564,
+            532
+          ],
+          [
+            552,
+            531
+          ]
+        ]
+      ],
+      "depth_mm": 10,
+      "z_mm": 34,
+      "bores": [
+        {
+          "pixel": [
+            581,
+            538
+          ],
+          "radius_mm": 6
+        },
+        {
+          "pixel": [
+            538,
+            526
+          ],
+          "radius_mm": 6
+        },
+        {
+          "anchor": "shock_upper",
+          "radius_mm": 4
+        },
+        {
+          "pixel": [
+            526,
+            572
+          ],
+          "radius_mm": 4
+        }
+      ]
+    },
+    {
+      "name": "lower",
+      "outer": [
+        [
+          526,
+          670
+        ],
+        [
+          548,
+          671
+        ],
+        [
+          559,
+          687
+        ],
+        [
+          550,
+          710
+        ],
+        [
+          530,
+          752
+        ],
+        [
+          516,
+          757
+        ],
+        [
+          501,
+          746
+        ],
+        [
+          501,
+          726
+        ],
+        [
+          516,
+          701
+        ]
+      ],
+      "holes": [
+        [
+          [
+            539,
+            699
+          ],
+          [
+            541,
+            703
+          ],
+          [
+            532,
+            720
+          ],
+          [
+            528,
+            714
+          ]
+        ]
+      ],
+      "depth_mm": 10,
+      "z_mm": 31,
+      "bores": [
+        {
+          "pixel": [
+            538,
+            686
+          ],
+          "radius_mm": 6
+        },
+        {
+          "anchor": "shock_lower",
+          "radius_mm": 4
+        },
+        {
+          "pixel": [
+            516,
+            713
+          ],
+          "radius_mm": 4
+        }
+      ]
+    },
+    {
+      "name": "six_bar",
+      "outer": [
+        [
+          524,
+          559
+        ],
+        [
+          536,
+          562
+        ],
+        [
+          543,
+          578
+        ],
+        [
+          536,
+          620
+        ],
+        [
+          530,
+          666
+        ],
+        [
+          529,
+          699
+        ],
+        [
+          522,
+          722
+        ],
+        [
+          510,
+          725
+        ],
+        [
+          501,
+          712
+        ],
+        [
+          503,
+          695
+        ],
+        [
+          513,
+          659
+        ],
+        [
+          518,
+          620
+        ],
+        [
+          524,
+          582
+        ]
+      ],
+      "holes": [
+        [
+          [
+            526,
+            591
+          ],
+          [
+            532,
+            587
+          ],
+          [
+            525,
+            650
+          ],
+          [
+            518,
+            689
+          ],
+          [
+            511,
+            704
+          ],
+          [
+            510,
+            698
+          ],
+          [
+            518,
+            647
+          ]
+        ]
+      ],
+      "depth_mm": 7,
+      "z_mm": 43,
+      "bores": [
+        {
+          "pixel": [
+            526,
+            572
+          ],
+          "radius_mm": 4
+        },
+        {
+          "pixel": [
+            516,
+            713
+          ],
+          "radius_mm": 4
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Own SUPREME DH V5 full-size trace. V5.2 and XS are not used as geometry substitutes.",
+    "Technical drawings support paired front arch, upper/lower link, connecting rods and six-bar element; hidden depths, phase and joint widths are estimated.",
+    "Upper and lower shock eyes keep the original250mm published registration; neither receives an invented fixed paint bridge.",
+    "Only saddle visual axis is corrected in new resources; old manifests remain immutable.",
+    "Offline exterior reconstruction, not exact HVCS leverage, CAD or100percent certification.",
+    "Paired lower reinforcement webs complete the small open cradle seen in oblique factory views; its hidden section remains inferred."
+  ],
+  "bay": {
+    "outer": [
+      [
+        540,
+        684
+      ],
+      [
+        557,
+        665
+      ],
+      [
+        587,
+        688
+      ],
+      [
+        624,
+        708
+      ],
+      [
+        665,
+        703
+      ],
+      [
+        676,
+        720
+      ],
+      [
+        646,
+        741
+      ],
+      [
+        596,
+        757
+      ],
+      [
+        552,
+        751
+      ],
+      [
+        536,
+        731
+      ]
+    ],
+    "hole": [
+      [
+        568,
+        706
+      ],
+      [
+        578,
+        696
+      ],
+      [
+        632,
+        719
+      ],
+      [
+        624,
+        731
+      ],
+      [
+        594,
+        736
+      ],
+      [
+        576,
+        726
+      ]
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "8236a0d2-b5bc-5ff6-aa2f-743a18649b0e",
+    "predecessor_id": "67709315-2a48-52d9-91a4-09b0c6dafec8",
+    "asset_id": "ac484078-ddb9-5ec6-95d4-5d0ae96a8195",
+    "file": "yt-tues-mk4-carbon--m.glb",
+    "storage_path": "catalog/v29/yt-tues-mk4-carbon/358a171e4e16fabd8f95716e.glb",
+    "bytes": 2124504,
+    "sha256": "358a171e4e16fabd8f95716e26a854ed9d6dc167d90437a9c0ddd54833f66a08",
+    "published_at": "2026-10-22T02:37:21.291Z"
+  },
+  {
+    "variant_id": "fe7418ee-ab93-59df-aba7-ee278f6de3f0",
+    "predecessor_id": "c8d8edc8-5fc2-5fd2-bb62-0bd409ca8f30",
+    "asset_id": "d4f514d4-f1b2-5793-86b3-489705f2dc8d",
+    "file": "yt-tues-mk4-carbon--l.glb",
+    "storage_path": "catalog/v29/yt-tues-mk4-carbon/323ae078c8354b265bb386ab.glb",
+    "bytes": 2128388,
+    "sha256": "323ae078c8354b265bb386abd1cf4fef0ceaa31177e297f17b781199b78ab3f7",
+    "published_at": "2026-10-22T02:37:25.374Z"
+  }
+]

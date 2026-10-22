@@ -1,0 +1,120 @@
+{
+  "version": "atlas-motion-tues-v28",
+  "architecture": "MK4 V4L four-link exterior with estimated occluded lower pivot",
+  "estimated": true,
+  "note": "New v28 resource-only similarity registration from BB/rear axle; no affine deformation. Rear Horst and upper Flip Link pivots traced from official MK4 lateral and 2024 exploded drawing p31. The principal lower pivot [887,790] is an occluded exterior-guide estimate retained from the historical profile: the large chainstay front bearing sits below the shock eye and is hidden by chainring in the lateral photo. [854,744] is a yoke/surface feature, not a verified fixed principal pivot. Lower shock eye follows the chainstay extension (input), upper eye remains fixed. This topology raises the rear axle and compresses the shock over a deliberately reduced 0.09rad inspection interval; it does not certify full travel, leverage, complete mechanical contact or factory CAD kinematics.",
+  "registration": {
+    "mode": "similarity",
+    "bottom_bracket": [850, 817],
+    "head_top": [1258, 293],
+    "rear_axle": [443, 824]
+  },
+  "joints": {
+    "a": [887, 790],
+    "b": [997, 687],
+    "c": [534, 824],
+    "d": [899, 675]
+  },
+  "rear_body": "rear",
+  "shock_body": "input",
+  "shock_upper_body": "fixed",
+  "shock_lower_body": "input",
+  "max_input_radians": 0.09,
+  "regions": [
+    {
+      "role": "fixed",
+      "points": [
+        [815, 480],
+        [850, 539],
+        [1050, 407],
+        [1236, 265],
+        [1258, 293]
+      ],
+      "closed": false
+    },
+    {
+      "role": "fixed",
+      "points": [
+        [850, 817],
+        [916, 809],
+        [968, 777],
+        [1060, 610],
+        [1154, 457],
+        [1270, 330]
+      ],
+      "closed": false
+    },
+    {
+      "role": "fixed",
+      "points": [
+        [850, 817],
+        [847, 749],
+        [853, 659],
+        [858, 582],
+        [850, 539],
+        [815, 480]
+      ],
+      "closed": false
+    },
+    {
+      "role": "fixed",
+      "points": [
+        [1023, 563],
+        [1065, 574]
+      ],
+      "closed": false
+    },
+    {
+      "role": "input",
+      "points": [
+        [534, 824],
+        [712, 831],
+        [813, 820],
+        [887, 790],
+        [854, 744]
+      ],
+      "closed": false
+    },
+    {
+      "role": "rear",
+      "points": [
+        [443, 824],
+        [512, 785],
+        [713, 712],
+        [829, 680],
+        [899, 675]
+      ],
+      "closed": false
+    },
+    {
+      "role": "rear",
+      "points": [
+        [443, 824],
+        [488, 824],
+        [534, 824]
+      ],
+      "closed": false
+    },
+    {
+      "role": "output",
+      "points": [
+        [899, 675],
+        [997, 687]
+      ],
+      "closed": false
+    },
+    {
+      "role": "input",
+      "points": [
+        [854, 744],
+        [899, 746],
+        [887, 790]
+      ],
+      "closed": false
+    }
+  ],
+  "asset_ids": [
+    "bdc563d2-aa3d-57f0-874e-80a5350b0350",
+    "58f53404-dbea-5bf3-a455-aeace21b74e3"
+  ]
+}

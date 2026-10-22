@@ -1,0 +1,16 @@
+{
+  "slug": "canyon-sender-cfr-high-pivot",
+  "file": "canyon-sender-cfr-high-pivot.webp",
+  "page": "https://www.canyon.com/en-gb/mountain-bikes/downhill-bikes/sender/sender-cfr/",
+  "url": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Library-Sites-canyon-shared/default/dw6b811ad8/images/plp/Mountain/Sender/CEC-2-1-platform-gallery-Sender-CFR-fullframe-green.jpg?q=80&sfrm=jpg&sh=700&sm=cut&sw=1000",
+  "consulted_at": "2026-10-19",
+  "scope": "model-reference",
+  "bytes": 48578,
+  "editing": {
+    "date": "2026-10-21",
+    "operation": "background-removal",
+    "tool": "imagegen built-in",
+    "prompt": "Eliminar el fondo de estudio conservando cuadro, pintura, logotipos, herrajes y perspectiva; transparencia real también dentro de huecos. Sin añadir piezas.",
+    "output": "WebP con canal alfa, lado máximo 800 px"
+  }
+}

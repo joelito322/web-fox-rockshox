@@ -1,0 +1,360 @@
+{
+  "image_landmarks": {
+    "bottom_bracket": [
+      850,
+      817
+    ],
+    "head_top": [
+      1277,
+      274
+    ],
+    "rear_axle": [
+      443,
+      824
+    ],
+    "seat_top": [
+      815,
+      480
+    ],
+    "shock_upper": [
+      1023,
+      563
+    ],
+    "shock_lower": [
+      899,
+      746
+    ],
+    "pivot": [
+      997,
+      687
+    ]
+  },
+  "members": [
+    {
+      "name": "top_tube",
+      "path": [
+        [
+          849,
+          549
+        ],
+        [
+          894,
+          533
+        ],
+        [
+          1080,
+          418
+        ],
+        [
+          1278,
+          296
+        ]
+      ],
+      "height_mm": [
+        23,
+        19,
+        16,
+        23
+      ],
+      "width_mm": 21,
+      "corners_mm": [
+        0,
+        40,
+        30,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "downtube",
+      "path": [
+        [
+          850,
+          817
+        ],
+        [
+          916,
+          809
+        ],
+        [
+          968,
+          777
+        ],
+        [
+          1060,
+          610
+        ],
+        [
+          1154,
+          457
+        ],
+        [
+          1307,
+          331
+        ]
+      ],
+      "height_mm": [
+        25,
+        29,
+        30,
+        29,
+        30,
+        28
+      ],
+      "width_mm": 34,
+      "corners_mm": [
+        0,
+        50,
+        55,
+        40,
+        32,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_tube",
+      "path": [
+        [
+          850,
+          817
+        ],
+        [
+          847,
+          749
+        ],
+        [
+          853,
+          659
+        ],
+        [
+          858,
+          582
+        ],
+        [
+          850,
+          539
+        ],
+        [
+          815,
+          480
+        ]
+      ],
+      "height_mm": [
+        18,
+        17,
+        16,
+        18,
+        20,
+        17
+      ],
+      "width_mm": 19,
+      "corners_mm": [
+        0,
+        40,
+        55,
+        40,
+        35,
+        0
+      ],
+      "paired": false
+    },
+    {
+      "name": "seat_stay",
+      "path": [
+        [
+          443,
+          824
+        ],
+        [
+          512,
+          785
+        ],
+        [
+          713,
+          712
+        ],
+        [
+          829,
+          680
+        ],
+        [
+          899,
+          675
+        ]
+      ],
+      "height_mm": [
+        12,
+        15,
+        18,
+        21,
+        20
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        38,
+        45,
+        35,
+        0
+      ],
+      "paired": true
+    },
+    {
+      "name": "chain_stay",
+      "path": [
+        [
+          534,
+          824
+        ],
+        [
+          712,
+          831
+        ],
+        [
+          813,
+          820
+        ],
+        [
+          842,
+          787
+        ],
+        [
+          854,
+          744
+        ]
+      ],
+      "height_mm": [
+        13,
+        14,
+        18,
+        20,
+        16
+      ],
+      "width_mm": 12,
+      "corners_mm": [
+        0,
+        35,
+        35,
+        26,
+        0
+      ],
+      "paired": true
+    }
+  ],
+  "links": [
+    {
+      "name": "flip_link",
+      "outer": [
+        [
+          884,
+          654
+        ],
+        [
+          904,
+          650
+        ],
+        [
+          998,
+          664
+        ],
+        [
+          1014,
+          678
+        ],
+        [
+          1013,
+          697
+        ],
+        [
+          998,
+          710
+        ],
+        [
+          900,
+          700
+        ],
+        [
+          883,
+          688
+        ]
+      ],
+      "holes": [],
+      "depth_mm": 12,
+      "z_mm": 38,
+      "bores": [
+        {
+          "pixel": [
+            899,
+            675
+          ],
+          "radius_mm": 7
+        },
+        {
+          "pixel": [
+            997,
+            687
+          ],
+          "radius_mm": 7
+        }
+      ]
+    }
+  ],
+  "axle_width_mm": 148,
+  "tire_width_mm": 65,
+  "reference_image": "tues.webp",
+  "estimated_geometry": {
+    "reach_mm": 455,
+    "stack_mm": 640,
+    "chainstay_mm": 448,
+    "head_tube_mm": 110,
+    "head_angle_deg": 63.5
+  },
+  "dropout": [
+    [
+      429,
+      816
+    ],
+    [
+      449,
+      802
+    ],
+    [
+      488,
+      811
+    ],
+    [
+      535,
+      809
+    ],
+    [
+      550,
+      819
+    ],
+    [
+      546,
+      836
+    ],
+    [
+      527,
+      842
+    ],
+    [
+      478,
+      840
+    ],
+    [
+      442,
+      837
+    ],
+    [
+      429,
+      830
+    ]
+  ],
+  "notes": [
+    "Own MK4 lateral image; BB trace corrected from old mistaken crank/chainring offset. Registration to inherited mechanical anchors is a visual approximation, not orthographic metrology.",
+    "Paired V4L members, solid Flip Link and adjustable rear dropout supported by official 2024 MK4 exploded drawing p31. No MK3 geometry.",
+    "Hidden depths, local blends and M/L interpolation inferred; shock eyes and all mechanical anchors preserved, saddle visual axis follows tube."
+  ]
+}

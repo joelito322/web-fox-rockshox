@@ -1,0 +1,22 @@
+[
+  {
+    "variant_id": "b62a04fb-f792-596c-8b18-26cedda96f00",
+    "predecessor_id": "83967cb9-b7c0-541d-a737-5d8f5fc217dd",
+    "asset_id": "f0234046-d8d5-562b-b179-233044e8638b",
+    "file": "gt-force-carbon-high-pivot--m.glb",
+    "storage_path": "catalog/v17/gt-force-carbon-high-pivot/c8e2d27b06480c8e3a7183d1.glb",
+    "bytes": 1393552,
+    "sha256": "c8e2d27b06480c8e3a7183d1cc0497be19a0f5aa2466c2acd2f3dfd7170530e9",
+    "published_at": "2026-10-22T00:08:33.259Z"
+  },
+  {
+    "variant_id": "c7b5735f-10c2-5518-af6d-e1f1068335a2",
+    "predecessor_id": "0f0c717c-01ef-5467-9174-b13bc892b75b",
+    "asset_id": "1d7bc29a-a059-5ded-9dcb-2f99b5ece29f",
+    "file": "gt-force-carbon-high-pivot--l.glb",
+    "storage_path": "catalog/v17/gt-force-carbon-high-pivot/d3e436b8d736dd414ff650d8.glb",
+    "bytes": 1411292,
+    "sha256": "d3e436b8d736dd414ff650d8deb6999f0b38b37a683c482c98c399e788634fb3",
+    "published_at": "2026-10-22T00:08:37.582Z"
+  }
+]

@@ -1,0 +1,11 @@
+# GT Force Carbon High Pivot · v17
+
+Solicitud individual posterior al CAPRA v15 y CHERRY BOMB v16 aprobados: reconstruir Force Carbon High Pivot M/L según su generación original. Solo dos nuevas variantes; no modificar Fury ni los otros catorce cuadros. Se conservan anclajes, medidas, acabados y montajes históricos; no cambiar bytes publicados v1–v16.
+
+Tres agentes revisan fuentes, geometría y capturas. Lateral y 3/4 oficiales y tres detalles nuevos de LTS/polea, puntera y protecciones; URLs/hashes en `references/sources.json`. Las copias/reducciones de la misma lateral no se cuentan como nuevas perspectivas. El espacio de trazado es 1696×1459; las fotos nativas son mayores, por lo que las superposiciones escalan los landmarks antes de registrar.
+
+`profile.json` describe la forma específica Force: superior principal recto con hombro local y pequeño triángulo GT, diagonal robusta con codos reales, sillín propio, pares traseros y cuna inferior. `frames.ts` usa el helper inmutable v15 con rectas y secciones lineales y radios solo en desvíos; no trasplanta la silueta CAPRA/CHERRY. Reconstruye pintura y bieleta negra calada; conserva polea/patilla fuera de la zona declarada de sustitución de la antigua bieleta combinada, metal y anclajes. El soporte superior corresponde a bieleta móvil; el inferior a cuna fija. La rotulación GT se recoloca en el tubo rectificado. Profundidades y superficies ocultas siguen inferidas; no certifica 100 % CAD.
+
+La comparación debe incluir ambas tallas/caras, frente/superior/inferior/diagonales, foto registrada, dos ventanas, apoyos de bieleta, polea unilateral, aberturas y articulación. Verificar hashes de 28 recursos ajenos incluyendo CAPRA y CHERRY y conservación geométrica fuera de la máscara local; probar transición de montajes antes/después de publicación acotada. Preparación/carga `prepare-frame-v17.mjs --apply`, publicación `publish-frame-v17.mjs --apply` solo tras revisar resultados. Sin commits automáticos.
+
+Publicación aplicada y transición comprobada: dos recursos v17, dos guardados anteriores/dos nuevos; cuenta temporal eliminada. 28 SHA ajenos intactos; 14 vistas generales, diez detalles, dos overlays, 22 rayos despejados, tres poses articuladas, build/tipos y 230 pruebas correctos. Evidencia final en `docs/planning/12l-evidencia-force-v17.md`.

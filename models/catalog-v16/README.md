@@ -1,0 +1,13 @@
+# CHERRY BOMB 29 · reconstrucción específica v16
+
+El usuario aprobó el método CAPRA v15 y solicita aplicarlo al CHERRY BOMB conservando su diseño original. Solo las dos tallas 17″/19″ del CHERRY cambian. El CAPRA aprobado y los otros trece cuadros permanecen intactos. Esta autorización sustituye únicamente para CHERRY su protección anterior v11; no permite correcciones globales ni mutar bytes publicados.
+
+Tres agentes revisan referencias, geometría y capturas de forma adversarial. La foto oficial conservada en `models/catalog-v5/references/da-bomb-cherry-bomb-29.jpg` y sus trazados permiten identificar rectas, el sillín arqueado, codos propios de diagonal y yugo inferior abierto. Referencias históricas de catálogo en v6/v10. La descarga con cabeceras y la URL oficial sin www permitió inspeccionar una nueva foto negra opuesta y la página 4 del catálogo: laterales, diagonal frontal y diagonal trasera/inferior. Fuentes, hashes y límites en `references/sources.json`; la tabla de geometría no se contabiliza como nueva vista estructural.
+
+`profile.json` conserva landmarks de la foto 1080×1080 y separa observación/inferencia. Semialturas, semiprofundidades, radios y superficies ocultas son estimaciones visuales. El método CAPRA se reutiliza como control de trayectos/secciones y revisión, no como silueta: el CHERRY sí tiene curvaturas propias que deben conservarse. Se importa el helper inmutable `catalog-v15/path.ts`, sin Catmull o seno longitudinal global.
+
+Reconstrucción offline de la pintura, manteniendo nombre de malla, anclajes, acabados y medidas. Se reconstruye también el balancín negro con su pequeño hueco triangular observado y se conserva su nombre/material; protecciones y tornillería mantienen sus geometrías. Pipa exterior cónica estimada de 35 a 30 mm de radio; eje e interior visual conservados. Mantener pares estructurales y ventana inferior abierta. No CAD/ajuste mecánico ni parecido del 100 % certificado.
+
+Antes de publicar: ambas tallas/caras, detalles, superposición de foto registrada, pasos, tramos rectos y curvas propias, herrajes/28 recursos ajenos, montaje articulado, carga por SHA y transición de guardados. Fixtures internas excluidas del producto. Preparación `prepare-frame-v16.mjs --apply` y publicación acotada `publish-frame-v16.mjs --apply`; no publicador visual general. Sin commits automáticos.
+
+Estado: dos recursos publicados y auditoría final correcta. 224 pruebas/51 archivos, build/tipos, vistas/superposiciones, revisión articulada y transición de dos montajes antiguos/dos nuevos completados. Evidencia en [12k](../../docs/planning/12k-evidencia-cherry-bomb-v16.md). No cambiar físicamente v16 publicada; futuras correcciones requieren otra identidad. Aceptación visual del usuario abierta.
