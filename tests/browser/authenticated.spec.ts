@@ -22,8 +22,12 @@ test("administrator manages real drafts and roles with the approved tables and p
   await page.getByRole("button", { name: "Crear rol", exact: true }).click();
   let panel = page.getByRole("dialog", { name: "Crear rol", exact: true });
   await panel.getByLabel("Nombre", { exact: true }).fill(run);
-  await panel.getByLabel("Ver mis bicicletas", { exact: false }).check();
+
   await panel.getByRole("button", { name: "Guardar rol" }).click();
+  panel = page.getByRole("dialog", { name: "Detalle de rol", exact: true });
+  await expect(panel.getByRole("status")).toHaveText("Rol guardado.");
+  await panel.getByRole("button", { name: "Cerrar detalle" }).click();
+  await expect(page.getByRole("dialog")).toHaveCount(0);
   await expect(
     page.getByRole("button", { name: run, exact: true }),
   ).toBeVisible();
@@ -34,6 +38,9 @@ test("administrator manages real drafts and roles with the approved tables and p
       exact: true,
     }),
   ).toBeDisabled();
+  await page.getByRole("checkbox", { name: `${run}: Ver mis bicicletas`, exact: true }).check();
+  await page.getByRole("button", { name: "Guardar cambios", exact: true }).click();
+  await expect(page.getByText("Permisos guardados.", { exact: true })).toBeVisible();
   await expect(
     page.getByRole("checkbox", {
       name: `${run}: Ver mis bicicletas`,
@@ -65,10 +72,11 @@ test("administrator manages real drafts and roles with the approved tables and p
   await expect(
     page.getByRole("button", { name: run, exact: true }).first(),
   ).toBeVisible();
+  await panel.getByRole("button", { name: "Variantes", exact: true }).click();
   await panel.getByRole("button", { name: "Añadir variante" }).click();
   panel = page.getByRole("dialog", { name: "Variante", exact: true });
   await panel.getByLabel("Versión", { exact: true }).fill("Aire · Validación");
-  await panel.getByText("Características", { exact: true }).click();
+  await panel.getByRole("button", { name: "Características", exact: true }).click();
   await panel.getByLabel("Recorrido (mm)", { exact: true }).fill("170");
   await panel
     .getByRole("combobox", { name: "Resorte", exact: true })
@@ -78,9 +86,11 @@ test("administrator manages real drafts and roles with the approved tables and p
   await panel.getByRole("button", { name: "Cerrar detalle" }).click();
   await page.getByRole("button", { name: run, exact: true }).first().click();
   panel = page.getByRole("dialog", { name: "Componente", exact: true });
+  await panel.getByRole("button", { name: "Variantes", exact: true }).click();
   await expect(
     panel.getByRole("button", { name: /Aire · Validación/ }),
   ).toBeVisible();
+  await panel.getByRole("button", { name: "General", exact: true }).click();
   await panel
     .getByLabel("Descripción", { exact: true })
     .fill("Cambio sin guardar");
@@ -98,7 +108,7 @@ test("administrator manages real drafts and roles with the approved tables and p
   await expect(page.getByRole("dialog")).toHaveCount(0);
   await page
     .locator(".admin-tabs")
-    .getByRole("link", { name: "Bicicletas de referencia", exact: true })
+    .getByRole("link", { name: "Bicicletas", exact: true })
     .click();
   await page
     .getByRole("button", { name: "Bicicleta de referencia", exact: true })
@@ -147,6 +157,7 @@ test("administrator manages real drafts and roles with the approved tables and p
   await panel
     .getByRole("button", { name: "Cerrar detalle", exact: true })
     .click();
+  await page.getByRole("link", { name: "Accesos", exact: true }).click();
   await page.getByRole("link", { name: "Usuarios", exact: true }).click();
   await expect(
     page.getByRole("button", {
@@ -260,7 +271,9 @@ test("reference families mount all positions and component intent waits for a fr
     page.getByRole("status").filter({ hasText: "Elige un cuadro para probar" }),
   ).toBeVisible();
   await page.getByLabel("Buscar alternativa").fill(run);
-  await page.locator(".piece-options button").click();
+  await page.locator(".piece-options button").filter({
+    has: page.getByText(`${run} scene frame`, { exact: true }),
+  }).click();
   await expect(page.locator(".slot-complete")).toHaveCount(2);
   await expect(page.locator(".editor-panel h1")).toHaveText("Horquilla");
   await page.getByLabel("Nombre del montaje").fill(`${run} intent`);
@@ -507,6 +520,7 @@ test("publishing a catalogue variant refreshes previously cached public facets w
     .getByRole("combobox", { name: "Categoría", exact: true })
     .selectOption("brake");
   await panel.getByRole("button", { name: "Publicar", exact: true }).click();
+  await panel.getByRole("button", { name: "Variantes", exact: true }).click();
   await expect(
     panel.getByRole("button", { name: "Añadir variante", exact: true }),
   ).toBeEnabled();
@@ -517,9 +531,12 @@ test("publishing a catalogue variant refreshes previously cached public facets w
   await panel
     .getByLabel("Versión", { exact: true })
     .fill("Referencia temporal · 2 pistones");
-  await panel.getByText("Características", { exact: true }).click();
+  await panel.getByRole("button", { name: "Características", exact: true }).click();
   await panel.getByLabel("Pistones", { exact: true }).fill("2");
-  await panel.getByText("Representación", { exact: true }).click();
+  await panel.getByRole("button", { name: "Modelo 3D", exact: true }).click();
+  await panel.getByLabel("Buscar representación", { exact: true }).fill(
+    process.env.ATLAS_TEST_RUN! + "-scene",
+  );
   await panel
     .getByRole("combobox", { name: "Recurso existente", exact: true })
     .selectOption({ label: process.env.ATLAS_TEST_RUN! + "-scene" });
@@ -589,6 +606,8 @@ test("two- and four-piston brakes replace independently and persist with the doc
   await page.getByLabel("Buscar alternativa").fill("MDR-P");
   await page
     .locator(".piece-options button")
+    .filter({ has: page.getByText("MAGURA", { exact: true }) })
+    .filter({ has: page.getByText("MDR-P", { exact: true }) })
     .filter({ hasText: "203 mm" })
     .click();
   await expect(page.locator(".selected-piece")).toContainText("203 mm");
@@ -731,8 +750,11 @@ test("a saved imported resource waits for its binary and remains editable when d
   await page.getByRole("button", { name: "Entrar", exact: true }).click();
   await expect(page.locator(".slot-complete")).toHaveCount(23);
   await selectAssemblySlot(page, "Horquilla");
-  await page.getByLabel("Buscar alternativa").fill("Entrega remota " + run.slice(-8));
-  await page.locator(".piece-options button").click();
+  const importedModel = "Entrega remota " + run.slice(-8);
+  await page.getByLabel("Buscar alternativa").fill(importedModel);
+  await page.locator(".piece-options button").filter({
+    has: page.getByText(importedModel, { exact: true }),
+  }).click();
   await expect(page.locator(".selected-piece")).toContainText("Archivo de validación");
   await expect(page.locator("canvas")).toBeVisible();
   const name = run + " imported";
@@ -763,7 +785,7 @@ test("a denied administrative write revalidates access and removes the open priv
   await page.goto("/administracion/catalogo");
   await page.getByRole("button", { name: "Crear marca", exact: true }).click();
   const panel = page.getByRole("dialog", { name: "Marca", exact: true });
-  await panel.getByLabel("Nombre", { exact: true }).fill("Validation denied draft");
+  await panel.getByLabel("Nombre", { exact: true }).fill(process.env.ATLAS_TEST_RUN! + " denied draft");
   // Server revocation with an existing JWT is tested against Cloud by validate-supabase.
   // Inject its two browser-facing responses without revoking the shared test identity.
   await page.route("**/rest/v1/rpc/get_my_access", async route => {
@@ -771,7 +793,7 @@ test("a denied administrative write revalidates access and removes the open priv
     const access = await actual.json();
     await route.fulfill({ response: actual, json: { ...access, permissions: ["configurator.use", "builds.read_own", "builds.write_own", "builds.delete_own"] } });
   });
-  await page.route("**/rest/v1/rpc/save_catalog", route => route.fulfill({status: 403, contentType: "application/json", body: '{"code":"42501","message":"permission_denied"}'}));
+  await page.route("**/rest/v1/rpc/save_admin_catalog", route => route.fulfill({status: 403, contentType: "application/json", body: '{"code":"42501","message":"permission_denied"}'}));
   await panel.getByRole("button", { name: "Guardar borrador", exact: true }).click();
   await expect(page.getByRole("heading", { name: "Acceso no disponible", exact: true })).toBeVisible();
   await expect(page.getByRole("dialog")).toHaveCount(0);

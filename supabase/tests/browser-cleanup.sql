@@ -1,6 +1,6 @@
 begin;
 delete from public.builds where user_id=:'user_id'::uuid;
-delete from public.bike_presets where brand_id in(select id from public.brands where slug=:'run'||'-scene' or slug=:'run');
+delete from public.bike_presets where brand_id in(select id from public.brands where slug=:'run'||'-scene' or slug=:'run' or slug=:'run'||'-cache');
 delete from public.component_variants where component_id in(select id from public.components where brand_id in(select id from public.brands where slug=:'run'||'-scene'));
 delete from public.components where brand_id in(select id from public.brands where slug=:'run'||'-scene');
 delete from public.brands where slug=:'run'||'-scene';
@@ -8,5 +8,5 @@ delete from public.component_variants where component_id in(select id from publi
 delete from public.components where slug in(:'run',:'run'||'-cache');
 delete from public.brands where slug in(:'run',:'run'||'-cache');
 delete from public.visual_assets where reference_notes in(:'run'||'-scene',:'run'||'-scene-glb');
-delete from iam.roles where name=:'run' and not is_system and not exists(select 1 from iam.user_roles where role_id=iam.roles.id);
+delete from iam.roles where name in(:'run',:'run'||'-batch') and not is_system and not exists(select 1 from iam.user_roles where role_id=iam.roles.id);
 commit;

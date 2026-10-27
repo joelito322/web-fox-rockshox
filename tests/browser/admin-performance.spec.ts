@@ -17,10 +17,10 @@ test("admin searches debounce, warm tabs reuse data and reference brands omit in
   await expect(page).toHaveURL(/mis-bicicletas/);
   await page.goto("/administracion/usuarios");
   await expect(page.getByRole("button", { name: process.env.ATLAS_ADMIN_TEST_EMAIL!, exact: true })).toBeVisible();
-  const before = requests.filter((r) => r.endpoint === "admin_list_users").length;
+  const before = requests.filter((r) => r.endpoint === "admin_user_page").length;
   const search = page.getByRole("textbox", { name: "Buscar usuario" });
   await search.fill("a"); await search.fill("at"); await search.fill("atlas-");
-  await expect.poll(() => requests.filter((r) => r.endpoint === "admin_list_users").length).toBe(before + 1);
+  await expect.poll(() => requests.filter((r) => r.endpoint === "admin_user_page").length).toBe(before + 1);
   await expect(page.getByRole("button", { name: process.env.ATLAS_ADMIN_TEST_EMAIL!, exact: true })).toBeVisible();
   const tabs = page.locator(".admin-tabs");
   await tabs.getByRole("link", { name: "Roles", exact: true }).click();
@@ -29,17 +29,17 @@ test("admin searches debounce, warm tabs reuse data and reference brands omit in
   await tabs.getByRole("link", { name: "Permisos", exact: true }).click();
   await expect(page.locator(".permission-table")).toBeVisible();
   expect(requests.filter((r) => r.endpoint === "get_roles_matrix")).toHaveLength(matrixReads);
-  await tabs.getByRole("link", { name: "Bicicletas de referencia", exact: true }).click();
+  await tabs.getByRole("link", { name: "Bicicletas", exact: true }).click();
   await expect(page.getByRole("button", { name: "Bicicleta de referencia", exact: true })).toBeEnabled();
   const options = requests.filter((r) => r.endpoint === "preset_options");
   expect(options).toHaveLength(1);
   expect(options[0].body?.p_ids).toEqual([]);
   await tabs.getByRole("link", { name: "Catálogo", exact: true }).click();
   await expect(page.getByRole("button", { name: "Crear marca", exact: true })).toBeVisible();
-  const catalogBefore = requests.filter((r) => r.endpoint === "admin_catalog").length;
+  const catalogBefore = requests.filter((r) => r.endpoint === "admin_catalog_page").length;
   const modelSearch = page.getByRole("textbox", { name: "Buscar modelo", exact: true });
   await modelSearch.fill("s"); await modelSearch.fill("su"); await modelSearch.fill("supreme");
-  await expect.poll(() => requests.filter((r) => r.endpoint === "admin_catalog").length).toBe(catalogBefore + 1);
+  await expect.poll(() => requests.filter((r) => r.endpoint === "admin_catalog_page").length).toBe(catalogBefore + 1);
   await expect(page.getByRole("button", { name: /SUPREME/i }).first()).toBeVisible();
   expect(requests.filter((r) => r.endpoint === "admin-users")).toHaveLength(0);
   const summary = {

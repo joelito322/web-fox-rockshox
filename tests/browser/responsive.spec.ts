@@ -10,7 +10,7 @@ test("existing views fit mobile, tablet and wide desktop viewports", async ({ pa
   page.on("pageerror", error => errors.push(error.message));
   const widths = [320, 360, 390, 719, 721, 759, 761, 768, 1024, 1049, 1051, 1366, 1449, 1451, 1820, 1920];
   const routes = ["/", "/componentes", "/bicicletas", "/mis-bicicletas", "/configurador",
-    `/configurador?preset=${presets.presets[0].id}`, "/administracion/catalogo", "/administracion/bicicletas", "/administracion/usuarios", "/administracion/roles", "/administracion/permisos"];
+    `/configurador?preset=${presets.presets[0].id}`, "/administracion/catalogo", "/administracion/marcas", "/administracion/recursos", "/administracion/bicicletas", "/administracion/usuarios", "/administracion/roles", "/administracion/permisos"];
   const results: { route: string; width: number; scrollWidth: number; offenders: string[] }[] = [];
   await page.goto("/entrar");
   await expect(page.getByLabel("Correo electrónico")).toBeVisible();

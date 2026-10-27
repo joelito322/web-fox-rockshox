@@ -5,6 +5,8 @@ import {
 import { spawnSync } from "node:child_process";
 import { randomBytes, randomUUID } from "node:crypto";
 import { createClient } from "@supabase/supabase-js";
+const suite = process.argv[4] ?? "authenticated";
+if (!["authenticated", "admin-modular"].includes(suite)) throw new Error("Unknown browser suite");
 const project = process.argv[2] ?? "desktop";
 if (!["desktop", "mobile"].includes(project))
   throw new Error("Choose desktop or mobile");
@@ -66,8 +68,9 @@ try {
       "exec",
       "playwright",
       "test",
-      "tests/browser/authenticated.spec.ts",
+      `tests/browser/${suite}.spec.ts`,
       `--project=${project}`,
+      `--output=models/local/validation/browser/${suite}-${project}-${run}`,
       ...(process.argv[3] ? ["--grep", process.argv[3]] : []),
     ],
     {
@@ -75,10 +78,13 @@ try {
       maxBuffer: 10 * 1024 * 1024,
       env: {
         ...process.env,
+        ATLAS_PLAYWRIGHT_PORT: process.env.ATLAS_PLAYWRIGHT_PORT ?? (suite === "admin-modular" ? "4187" : "4180"),
         ATLAS_TEST_EMAIL: email,
         ATLAS_TEST_PASSWORD: password,
         ATLAS_TEST_RUN: run,
         ATLAS_RECOVERY_EMAIL: recoveryEmail,
+        ATLAS_NORMAL_TEST_EMAIL: recoveryEmail,
+        ATLAS_NORMAL_TEST_PASSWORD: recoveryPassword,
         ATLAS_RECOVERY_PASSWORD: recoveryPassword + "New",
         ATLAS_RECOVERY_TOKEN: recoveryLink.data.properties.hashed_token,
       },
