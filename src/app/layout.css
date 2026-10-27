@@ -33,3 +33,9 @@
   .site-header:not(.is-landing) { padding-inline:12px; }
   .site-header:not(.is-landing) .header-nav { gap:8px; }
 }
+
+/* Shared pagination must fit narrow workspaces without hiding its controls. */
+.pagination { flex-wrap:wrap; gap:clamp(8px,2vw,25px); }
+@media(max-width:720px) {
+  .pagination>.button { min-height:44px; padding-inline:12px; gap:6px; }
+}
