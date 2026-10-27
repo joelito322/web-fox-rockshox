@@ -2,7 +2,7 @@
 
 Relacionado: [principios UI/UX](06-ui-y-ux.md), [espacio de trabajo](06b-espacio-de-trabajo.md), [IAM y permisos](04a-iam-roles-y-permisos.md), [operaciones administrativas](04b-administracion-y-operaciones.md) y [validación](08-fases-y-validacion.md).
 
-Estado: planificación. El usuario aprobó estas composiciones: una sección integrada con pestañas Usuarios, Roles y Permisos; tablas sencillas; creación y detalle en panel lateral derecho; matriz con roles horizontales y permisos verticales. Sustituye el boceto anterior de navegación administrativa lateral. No se crean pantallas ni recursos en esta etapa.
+Estado: contrato aprobado de Accesos, implementado dentro de la refactorización modular de06f. Evidencia de integración, permisos, responsive y límites en [12z](12z-evidencia-administracion-modular.md). Los bocetos históricos inferiores se interpretan con la actualización de distribución siguiente.
 
 ## Actualización aprobada · administración modular
 

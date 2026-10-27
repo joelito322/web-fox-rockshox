@@ -1,5 +1,11 @@
 # Repository Guidelines
 
+## Administración modular · 26/10/2026
+
+Implementación autorizada de06f; evidencia y límites en [12z](docs/planning/12z-evidencia-administracion-modular.md). Catálogo→Componentes/Marcas/Recursos3D; Bicicletas→Prearmadas; Accesos→Usuarios/Roles/Permisos. Reutilizar Drawer con pie fijo, Fields, UnsavedChanges y contexto administrativo acotado por identidad/permisos; no clonar formularios ni persistir búsquedas/borradores de cuentas. Correo en lectura, Google habitual y ningún permiso/acción de identidad nuevos. Roles solo metadatos; matriz es el único editor de asignaciones y conserva revisiones/borradores fuera de filtros.
+
+Migraciones023–027 aplicadas: páginas/detalles autorizados, snapshots completos de catálogo/prearmadas y revisión IAM obligatoria incluso para clientes RPC directos. Preservar API anterior, IAM, GLB y privados; no sustituir guardados con escrituras directas. Estado:12 tablas/27 migraciones,70 modelos/146 elecciones/782 variantes/780 recursos,4 prearmadas. Listas de25, detalles bajo demanda y QueryClient compartido, sin índices añadidos por latencia de transporte. Suites autenticadas `admin-modular` escritorio/móvil y runner responsive; originales/capturas/resultados en models/local ignorado. El contexto borra valores por generación sin remontar el Outlet: solo AdminContent tiene clave por acceso, para no interrumpir login/callback ni perder su destino. Rechazar callbacks antiguos incluso A→B→A. No confundir emulación con Android físico, SMTP o aceptación visual integral. Sin commits hasta petición explícita.
+
 ## Recursos de producto y archivo local · 21/10/2026
 
 Dirección explícita del usuario: fotos reales de cards/catálogo/portada en `src/assets/images/` SÍ se pushean; no confundirlas con referencias usadas para reconstruir modelos. GLB finales publicados, fuentes, contratos, manifiestos/IDs/SHA, procedencia y tests permanecen en Git. Índice `models/product-index.json`:318 GLB,89 archivos actuales y229 históricos. Los históricos publicados pueden usarse en montajes privados: conservarlos. Tres GLB de `reference-set` son experimentos, no producto.

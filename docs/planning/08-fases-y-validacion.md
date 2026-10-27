@@ -194,16 +194,16 @@ Ampliación 21/10/2026: integrar Google OAuth con PKCE en acceso/registro y call
 
 Trabajo pendiente dentro de fase 2b, con criterios principales en [06f](06f-administracion-modular-y-componentes.md):
 
-- [ ] Auditar y reutilizar Page/Users/Roles/Catalog/Presets/Fields, Drawer, Feedback y UnsavedChanges; extraer solo patrones repetidos, sin clonar formularios ni añadir capas innecesarias.
-- [ ] Reorganizar Catálogo/Bicicletas/Accesos y sus secciones, conservando permisos, enlaces directos, búsqueda, filtros, página y selección; sin portada intermedia.
-- [ ] Implementar un único panel con navegación interna y cabecera/pie visibles; en móvil pantalla completa, cuerpo desplazable, teclado/áreas seguras y protección de borradores.
-- [ ] Situar Guardar cambios/Descartar/contador en barra superior fija de la matriz, con encabezados/primera columna identificables, movimiento horizontal móvil, estados de envío y guardado transaccional existentes.
-- [ ] Completar vistas de marcas/recursos existentes/prearmadas y Usuarios/Roles/Permisos según 06c/06d/06f, sin SQL arbitrario, subida GLB ni administración de montajes privados ajenos.
-- [ ] Aplicar simplificación de cuentas de 04b (26/10/2026): correo informativo, Google como acceso habitual, asignación autorizada de un rol existente, sin añadir edición/recuperación administrativa ni permisos nuevos. La matriz es el único editor de permisos por rol.
-- [ ] Auditar responsive con `scripts/validate-responsive.mjs` en 320–1920 px y alrededor de los puntos existentes; distinguir pruebas de vistas actuales de la aceptación del rediseño. CSS existente, sin migración Tailwind por este trabajo.
-- [ ] Validar lectura/escritura/publicación reales, recarga, conflicto concurrente, errores por campo, resultado parcial, pérdida de permisos y peticiones manipuladas; revisar escritorio/móvil con formularios y matriz largos y acciones siempre alcanzables.
+- [x] Auditar y reutilizar Page/Users/Roles/Catalog/Presets/Fields, Drawer, Feedback y UnsavedChanges; extraer solo patrones repetidos, sin clonar formularios ni añadir capas innecesarias.
+- [x] Reorganizar Catálogo/Bicicletas/Accesos y sus secciones, conservando permisos, enlaces directos, búsqueda, filtros, página y selección; sin portada intermedia.
+- [x] Implementar un único panel con navegación interna y cabecera/pie visibles; en móvil pantalla completa, cuerpo desplazable, teclado/áreas seguras y protección de borradores.
+- [x] Situar Guardar cambios/Descartar/contador en barra superior fija de la matriz, con encabezados/primera columna identificables, movimiento horizontal móvil, estados de envío y guardado transaccional existentes.
+- [x] Completar vistas de marcas/recursos existentes/prearmadas y Usuarios/Roles/Permisos según 06c/06d/06f, sin SQL arbitrario, subida GLB ni administración de montajes privados ajenos.
+- [x] Aplicar simplificación de cuentas de 04b (26/10/2026): correo informativo, Google como acceso habitual, asignación autorizada de un rol existente, sin añadir edición/recuperación administrativa ni permisos nuevos. La matriz es el único editor de permisos por rol.
+- [x] Auditar responsive con `scripts/validate-responsive.mjs` en 320–1920 px y alrededor de los puntos existentes; distinguir pruebas de vistas actuales de la aceptación del rediseño. CSS existente, sin migración Tailwind por este trabajo.
+- [x] Validar lectura/escritura/publicación reales, recarga, conflicto concurrente, errores por campo, resultado parcial, pérdida de permisos y peticiones manipuladas; revisar escritorio/móvil con formularios y matriz largos y acciones siempre alcanzables.
 
-Resultado: recorridos completos y simples, componentes reutilizados y evidencia en 12; los bocetos aprobados no acreditan implementación o validación. Esta solicitud actualiza documentación, no ejecuta la refactorización ni autoriza commits.
+Resultado: recorridos completos y simples, componentes reutilizados y evidencia en 12; los bocetos aprobados no acreditan implementación o validación. Implementación y comprobaciones posteriores autorizadas: evidencia en [12z](12z-evidencia-administracion-modular.md), sin commits automáticos.
 
 ## Fase 3 · Catálogo, fichas y comparación
 

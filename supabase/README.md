@@ -8,6 +8,10 @@ Herramientas: `node scripts/supabase.mjs push|status|deploy [función]`, con Nod
 
 `operations/bootstrap-admin.sql` es una operación controlada sobre una identidad confirmada, sin función pública de ascenso. `auth-config.json` y `templates/` contienen configuración de Auth preparada, todavía pendiente por HTTP 403 del token en escritura. `tests/` contiene contratos SQL y preparación/limpieza de pruebas de navegador; no usar sus identidades temporales como administradores reales.
 
+## Actualización administrativa · 26/10/2026
+
+Estado vigente:27 migraciones aplicadas y12 tablas propias. Las migraciones023–026 incorporan consultas paginadas/detalles y guardados administrativos con snapshot de catálogo/prearmadas, sin permisos o tablas nuevos. La027 exige revisión no nula en guardados de roles, eliminación y asignación de usuarios; regresión transaccional en `tests/iam-required-revisions.sql`. Se conservan Auth, IAM y la Edge Function existente. Las pruebas `admin-modular` verifican aislamiento, permisos mínimos, conflictos y limpieza. Evidencia y límites en [12z](../docs/planning/12z-evidencia-administracion-modular.md); los números del encabezado anterior son un snapshot histórico.
+
 ## Entorno acordado
 
 El frontend se ejecuta localmente. PostgreSQL, Auth, Storage y Edge Functions se desarrollan y validan directamente en el proyecto Supabase Cloud ya creado, identificado por las variables locales de la raíz del repositorio.

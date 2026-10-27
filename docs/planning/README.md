@@ -34,6 +34,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |
 | [10 · Auditoría integral](10-auditoria-integral-de-planes.md) | Revisión adversarial de todo el plan, incluyendo IAM; correcciones y pendientes |
 | [12 · Estado de implementación](12-estado-implementacion.md) | Evidencia real, integración Cloud y pendientes de ejecución |
+| [12z · Administración modular](12z-evidencia-administracion-modular.md) | Paneles reutilizados, matriz única, listados acotados y comprobaciones Cloud/navegador |
 | [12f · Pasos v11](12f-evidencia-pasos-v11.md) | Continuidad de aberturas, pared interior de dirección y conservación de v10 |
 | [12k · CHERRY BOMB completo v16](12k-evidencia-cherry-bomb-v16.md) | Perfiles hidroformados propios, pipa cónica y balancín perforado, con revisión cruzada |
 | [12n · Furious V3 2021 v19](12n-evidencia-furious-v19.md) | Silueta 2021, soporte acampanado, bieleta y revisión de articulación |

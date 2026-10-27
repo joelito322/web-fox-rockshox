@@ -1,6 +1,6 @@
 # 06f · Administración modular y componentes compartidos
 
-Estado: propuesta aprobada por el usuario, pendiente de implementación y aceptación. Esta actualización documenta la refactorización; no acredita funciones nuevas implementadas. Se integra en fase 2b de [08](08-fases-y-validacion.md).
+Estado: refactorización implementada según el alcance aprobado, con comprobaciones de integración, seguridad y responsive. Evidencia y límites en [12z](12z-evidencia-administracion-modular.md). Se integra en fase 2b de [08](08-fases-y-validacion.md); no acredita aceptación integral del resto del producto.
 
 Relacionado: [UI compartida](06-ui-y-ux.md), [Accesos](06c-administracion-usuarios-roles-y-permisos.md), [catálogo y prearmadas](06d-administracion-catalogo-y-prearmadas.md), [operaciones](04b-administracion-y-operaciones.md), [arquitectura](02-arquitectura-y-frontend.md).
 
@@ -130,7 +130,7 @@ Trabajar desde el espacio disponible: formulario a una columna en anchos pequeñ
 
 Comprobar portada, acceso, catálogo, bicicletas, montajes propios, configurador y administración existente, además de paneles/matriz. Registrar ausencia de desbordamiento global y distinguirlo del scroll horizontal intencional de tablas. La auditoría de las vistas existentes no acredita la implementación de los nuevos paneles/acciones fijas de este plan. Emulación de tamaños no certifica navegadores Android físicos, teclado real o FPS 3D.
 
-Resultado de revisión inicial: comprobación de vistas actuales completada el26/10/2026 en escritorio y móvil emulado,384 mediciones y24 límites de panel correctos después de corregir paginación de320 px. Evidencia y límites en [12](12-estado-implementacion.md#simplificación-administrativa-y-responsive--26102026). La refactorización modular y acciones fijas nuevas siguen pendientes de implementación/aceptación.
+Resultado de revisión inicial: comprobación de vistas actuales completada el26/10/2026 en escritorio y móvil emulado,384 mediciones y24 límites de panel correctos después de corregir paginación de320 px. Evidencia y límites en [12](12-estado-implementacion.md#simplificación-administrativa-y-responsive--26102026). Ese resultado corresponde a la línea base anterior; la implementación posterior y sus comprobaciones están en 12z.
 
 ## Revisión de preparación para ejecución · 26/10/2026
 
@@ -144,3 +144,6 @@ El alcance administrativo está suficientemente definido para iniciar implementa
 - Aceptación final: repetir responsive sobre las vistas refactorizadas y probar escritura/recarga, filtros/contexto, borradores, conflictos, revocación, protección de roles, fuentes privadas y conservación de montajes. Las384 comprobaciones anteriores son la línea base de las vistas existentes, no aceptación anticipada de la refactorización.
 
 Esta revisión aprueba la preparación del plan, no afirma código completado ni inicia implementación por sí sola. Sin commits por la validación documental.
+
+
+Implementación posterior autorizada: consultas paginadas y guardados con snapshots, navegación modular, panel compartido y matriz única operativos. Resultado detallado, reproducción y limitaciones en [12z](12z-evidencia-administracion-modular.md). Sin commits automáticos.

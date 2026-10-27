@@ -1,6 +1,6 @@
 # 06d · Administración de catálogo y prearmadas
 
-Estado: composición aprobada explícitamente por el usuario el 19 de octubre de 2026: tablas y panel derecho, guardado de borrador y publicación separados. Implementación y pruebas funcionales pendientes. Reutiliza el patrón tabla/panel de 06c; no cambia Usuarios/Roles/Permisos ni sus permisos. Contratos de datos en 03a y operaciones en 04b.
+Estado: composición aprobada explícitamente por el usuario el 19 de octubre de 2026: tablas y panel derecho, guardado de borrador y publicación separados. Refactorización implementada con pruebas funcionales, consultas acotadas y snapshots; evidencia y límites en [12z](12z-evidencia-administracion-modular.md). Reutiliza el patrón tabla/panel de 06c; no cambia Usuarios/Roles/Permisos ni sus permisos. Contratos de datos en 03a y operaciones en 04b.
 
 ## Actualización de distribución
 
