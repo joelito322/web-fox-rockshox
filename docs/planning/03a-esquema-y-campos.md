@@ -282,3 +282,11 @@ La migración 016 conserva el contrato anterior y añade dos parámetros opciona
 
 
 Las miniaturas derivadas no añaden tablas ni binarios en PostgreSQL: bucket privado `bike-previews`, rutas ligadas a propietario/revisión para montajes y a contenido para prearmadas. Contrato y políticas en [05b](05b-miniaturas-montajes.md); no confundir esas imágenes con las fotos de componentes ni con `visual_assets` del montaje.
+
+
+## Ampliación comercial propuesta · 27/10/2026
+
+La exclusión previa de tablas comerciales/precios describe el alcance base. [13b](13b-precios-y-ofertas-comerciales.md) propone oferta/SKU con precio de venta y stock, vínculo explícito de variante/acabado a oferta, promociones y ofertas afectadas. No poner el precio de venta en components ni duplicarlo por revisión GLB; price_reference mantiene su propósito orientativo. No hay nuevas tablas aplicadas. Carrito/propuestas/pedidos y contratos se planifican en13/13a antes de migrar.
+
+
+El árbol comercial complementario y su diccionario están en [13c](13c-esquema-comercial-y-operaciones.md): once tablas nuevas propuestas sobre las doce actuales; reservas mediante pedidos/líneas y cotizaciones versionadas, sin duplicar catálogo ni identidad. Este apartado amplía el modelo base, no declara veintitrés tablas existentes.

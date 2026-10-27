@@ -194,3 +194,11 @@ Las migraciones futuras serán SQL ejecutable dentro de `supabase/migrations/`, 
 Al guardar datos de catálogo, invalidar las listas y fichas afectadas, sus filtros y las referencias que muestran sus piezas. Publicar una marca debe renovar también los selectores públicos de marcas. Al guardar una composición, renovar su lista y detalle. Conservar la caché entre lecturas normales; no exigir recargar la página para ver un cambio confirmado desde la administración. Las invalidaciones independientes pueden ejecutarse juntas con TanStack Query, sin añadir un sistema de eventos o sincronización en tiempo real.
 
 Mediciones de consultas reales con RLS, sus scripts y límites por cardinalidad en [12a](12a-evidencia-del-visor.md#consultas-con-rls). Los tiempos actuales no sustituyen una prueba de carga ni justifican índices por anticipación.
+
+
+## Extensión comercial planificada · 27/10/2026
+
+[13](13-tienda-y-venta-asistida.md) propone ofertas/SKU, precios propios/promociones, pedido/líneas e intentos de pago y seguimiento. El precio referencial de este documento permanece independiente. Una revisión3D no crea stock nuevo y no modifica guardados antiguos. Diccionario y migraciones comerciales quedan pendientes de definición/ejecución posterior; no hay nuevas tablas o datos por crear este plan. Pagos iniciales de interfaz demo, sin integración bancaria activa.
+
+
+Esquema y operaciones comerciales propuestos en [13c](13c-esquema-comercial-y-operaciones.md): oferta estable, carrito remoto, cotización versionada, pedido con reserva implícita y pago demo transaccional. Preservar tablas técnicas y ampliar solo registros de permisos IAM; ninguna escritura Cloud está autorizada por esta planificación.

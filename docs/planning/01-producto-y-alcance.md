@@ -2,6 +2,10 @@
 
 Relacionado: [arquitectura](02-arquitectura-y-frontend.md), [3D](05-configurador-3d.md), [experiencia del espacio de trabajo](06b-espacio-de-trabajo.md) y [fases](08-fases-y-validacion.md).
 
+## Ampliación comercial planificada · 27/10/2026
+
+El usuario propone ATLAS MTB como tienda propia especializada, conservando su guía técnica y configurador. [13](13-tienda-y-venta-asistida.md) define la planificación de precios de venta, promociones, pedidos y pagos inicialmente solo de interfaz. Las exclusiones de comercio y precios meramente orientativos de los apartados siguientes describen el alcance base ya trabajado; la ampliación se prepara por separado y no está implementada. No activar cobros o escribir migraciones por esta actualización documental.
+
 ## Objetivo
 
 Construir una plataforma web donde una persona pueda entender componentes MTB, compararlos y visualizar cómo quedaría una bicicleta al combinarlos. Las fichas técnicas y el configurador comparten el mismo catálogo. La marca aprobada es **ATLAS MTB** y su eslogan es **Cada pieza define tu camino**.
@@ -137,7 +141,7 @@ El usuario aprobó dos formas de comenzar: desde un cuadro y desde una bicicleta
 
 ## Límites del producto
 
-Fuera del alcance acordado: tienda, pagos, stock, precios en tiempo real, integración con ERP, comunidad, enlaces públicos a montajes, colaboración simultánea, realidad aumentada, editor CAD, simulación estructural y simulación física de suspensión. Se incorpora administración web de datos, referencias, cuentas y roles, por decisión posterior del usuario. Los permisos y operaciones concretos están en [administración](04b-administracion-y-operaciones.md); no incluye editar código, SQL o infraestructura desde la web.
+Fuera del alcance base ya trabajado: tienda, pagos, stock y precios de venta. Su ampliación futura se planifica en [13](13-tienda-y-venta-asistida.md); precios en tiempo real de terceros, integración con ERP, comunidad, enlaces públicos a montajes, colaboración simultánea, realidad aumentada, editor CAD, simulación estructural y simulación física de suspensión continúan excluidos. Se incorpora administración web de datos, referencias, cuentas y roles, por decisión posterior del usuario. Los permisos y operaciones concretos están en [administración](04b-administracion-y-operaciones.md); no incluye editar código, SQL o infraestructura desde la web.
 
 Ampliación autorizada el 21/10/2026: inspección de compresión de suspensión por recorrido según [05c](05c-movimiento-suspension.md). Ilustra movimiento mediante perfiles exteriores por modelo; no se presenta como predicción mecánica, cálculo por peso ni simulación física.
 
