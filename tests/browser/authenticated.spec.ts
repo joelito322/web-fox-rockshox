@@ -355,10 +355,12 @@ test("reviewed enduro reference can be saved and reopened as a personal bicycle"
     .filter({ hasText: "27.5" })
     .click();
   await expect(page.locator(".selected-piece")).toContainText("27.5");
-  await page.locator(".mount-notes summary").click();
-  await expect(page.locator(".mount-notes")).toContainText(
+  await page.getByRole("button", { name: "Ver detalles", exact: true }).click();
+  await expect(page.getByRole("dialog", { name: "Compatibilidad", exact: true })).toContainText(
     "tienen diámetros distintos",
   );
+  await page.getByRole("dialog", { name: "Compatibilidad", exact: true }).getByRole("button", { name: "Cerrar detalle" }).click();
+  await expect(page.getByRole("dialog", { name: "Compatibilidad", exact: true })).toHaveCount(0);
   await page.getByLabel("Nombre del montaje").fill(name);
   await page.getByRole("button", { name: "Guardar", exact: true }).click();
   await expect(page.locator(".save-status")).toContainText("Guardado");
@@ -598,10 +600,12 @@ test("two- and four-piston brakes replace independently and persist with the doc
     .filter({ hasText: "MT5 · 4 pistones" })
     .click();
   await expect(page.locator(".selected-piece")).toContainText("4 pistones");
-  await page.locator(".mount-notes summary").click();
-  await expect(page.locator(".mount-notes")).toContainText(
+  await page.getByRole("button", { name: "Ver detalles", exact: true }).click();
+  await expect(page.getByRole("dialog", { name: "Compatibilidad", exact: true })).toContainText(
     "Falta confirmar el espesor del disco trasero",
   );
+  await page.getByRole("dialog", { name: "Compatibilidad", exact: true }).getByRole("button", { name: "Cerrar detalle" }).click();
+  await expect(page.getByRole("dialog", { name: "Compatibilidad", exact: true })).toHaveCount(0);
   await selectAssemblySlot(page, "Disco trasero");
   await page.getByLabel("Buscar alternativa").fill("MDR-P");
   await page
@@ -611,9 +615,12 @@ test("two- and four-piston brakes replace independently and persist with the doc
     .filter({ hasText: "203 mm" })
     .click();
   await expect(page.locator(".selected-piece")).toContainText("203 mm");
-  await expect(page.locator(".mount-notes")).not.toContainText(
+  await page.getByRole("button", { name: "Ver detalles", exact: true }).click();
+  await expect(page.getByRole("dialog", { name: "Compatibilidad", exact: true })).not.toContainText(
     "Falta confirmar el espesor del disco trasero",
   );
+  await page.getByRole("dialog", { name: "Compatibilidad", exact: true }).getByRole("button", { name: "Cerrar detalle" }).click();
+  await expect(page.getByRole("dialog", { name: "Compatibilidad", exact: true })).toHaveCount(0);
   await expect(page.locator("canvas")).toBeVisible({ timeout: 20000 });
   await expect(page.locator(".slot-complete")).toHaveCount(23);
   await page.getByLabel("Nombre del montaje").fill(name);
@@ -832,8 +839,8 @@ test("changing to a documented Nomad size preserves the other pieces and survive
   await expect(page.locator(".slot-complete")).toHaveCount(23);
   await expect(page.locator(".selected-piece")).toContainText("L · Matte Metallic Earth");
   await expect(page.getByLabel("Color personalizado", {exact:true})).toHaveValue("#447755");
-  await page.locator(".mount-notes summary").click();
-  await expect(page.locator(".mount-notes")).toContainText("pedalier");
+  await page.getByRole("button", { name: "Ver detalles", exact: true }).click();
+  await expect(page.getByRole("dialog", { name: "Compatibilidad", exact: true })).toContainText("pedalier");
 });
 
 test("starting with a Sender frame saves an intentionally incomplete bicycle", async ({ page }) => {

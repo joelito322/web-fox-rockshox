@@ -6,7 +6,7 @@ import { spawnSync } from "node:child_process";
 import { randomBytes, randomUUID } from "node:crypto";
 import { createClient } from "@supabase/supabase-js";
 const suite = process.argv[4] ?? "authenticated";
-if (!["authenticated", "admin-modular"].includes(suite)) throw new Error("Unknown browser suite");
+if (!["authenticated", "admin-modular", "compatibility", "configurator-scroll"].includes(suite)) throw new Error("Unknown browser suite");
 const project = process.argv[2] ?? "desktop";
 if (!["desktop", "mobile"].includes(project))
   throw new Error("Choose desktop or mobile");
@@ -78,7 +78,7 @@ try {
       maxBuffer: 10 * 1024 * 1024,
       env: {
         ...process.env,
-        ATLAS_PLAYWRIGHT_PORT: process.env.ATLAS_PLAYWRIGHT_PORT ?? (suite === "admin-modular" ? "4187" : "4180"),
+        ATLAS_PLAYWRIGHT_PORT: process.env.ATLAS_PLAYWRIGHT_PORT ?? (suite === "configurator-scroll" ? "4189" : suite === "compatibility" ? "4188" : suite === "admin-modular" ? "4187" : "4180"),
         ATLAS_TEST_EMAIL: email,
         ATLAS_TEST_PASSWORD: password,
         ATLAS_TEST_RUN: run,
