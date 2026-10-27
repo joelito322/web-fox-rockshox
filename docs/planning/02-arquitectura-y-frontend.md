@@ -345,3 +345,9 @@ Punto de partida para configuración, sujeto a medición: catálogo con `staleTi
 - [Feature-Sliced Design: capas y reglas de dependencia](https://feature-sliced.design/docs/reference/layers).
 - [Clean Architecture: independencia de reglas y dirección de dependencias](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html).
 - [Martin Fowler: costes de empezar con servicios distribuidos](https://martinfowler.com/bliki/MonolithFirst.html).
+
+## Responsive compartido · 26/10/2026
+
+La implementación actual utiliza CSS propio, no Tailwind. Mantener Grid/Flex, tamaños fluidos y media queries por necesidades del contenido; reutilizar componentes React entre anchos sin duplicar vistas o introducir una capa de breakpoints en JavaScript. No migrar de librería de estilos para esta refactorización. La distribución de administración, estrategia por ancho y criterios de aceptación están en [06f](06f-administracion-modular-y-componentes.md#responsive-base-real-y-estrategia).
+
+Las comprobaciones reproducibles se ejecutan con `node scripts/validate-responsive.mjs desktop` y `node scripts/validate-responsive.mjs mobile`, con versiones Node/pnpm del proyecto. Usan una cuenta administrativa temporal aislada, eliminada al terminar; no guardan componentes, roles o montajes. Resultados y trazas quedan en `models/local/validation/responsive/`, fuera de Git. El perfil móvil es emulación, no hardware Android físico.

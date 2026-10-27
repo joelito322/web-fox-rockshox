@@ -52,6 +52,7 @@ Un bloqueo de credenciales, migración sin aplicar o prueba no ejecutada se decl
 
 ## Índice actual
 
+- [Refactorización de Administración](planning/06f-administracion-modular-y-componentes.md): propuesta aprobada de módulos, tablas y paneles reutilizados; ejecución y aceptación pendientes en fase 2b.
 - [Plan Atlas MTB](planning/README.md): catálogo, comparación, acceso Supabase y configurador 3D; implementación parcial, con evidencia y pendientes en el documento 12.
 - [Informe técnico académico](../entregables/02_Informe_Tecnico/informe.pdf): entregable 2, fuente LaTeX única y recursos autocontenidos; compilación comprobada y contenido aceptado por el usuario.
 - [Manual de usuario](../entregables/03_Manual_Usuario/manual.pdf): entregable 3 con fuente LaTeX única, 14 capturas y ejercicios; compilación independiente y recorridos públicos comprobados, contenido aceptado por el usuario.

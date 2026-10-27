@@ -179,7 +179,7 @@ Ampliación 21/10/2026: integrar Google OAuth con PKCE en acceso/registro y call
 - [ ] Reproducir [06c](06c-administracion-usuarios-roles-y-permisos.md): tres pestañas integradas, tablas, búsqueda/paginación reales, crear usuario desde cabecera y detalle en panel derecho; adaptación móvil accesible.
 - [ ] Implementar matriz de permisos: agrupación por área, roles horizontales, sistema en lectura, personalizado editable, borrador local, descarte y guardado transaccional por lote con revisiones; sin concesiones por usuario.
 - [ ] Probar matriz con más de un rol modificado: todo se confirma o revierte, se conservan cambios ante conflicto y no se borran permisos de columnas no cargadas.
-- [ ] Implementar lista y formularios de roles personalizados: crear, editar nombre/descripción/permisos, asignar, desactivar y eliminar no asignados; validaciones, revisión y límites del actor en servidor.
+- [ ] Implementar lista y formularios de roles personalizados: crear, editar nombre/descripción/estado, asignar, desactivar y eliminar no asignados; configurar permisos únicamente en la matriz; validaciones, revisión y límites del actor en servidor.
 - [ ] Proteger user/admin, impedir cambios propios que bloqueen acceso y serializar asignaciones/ediciones para conservar al último administrador incluso con solicitudes simultáneas.
 - [x] Versionar cada Edge Function bajo supabase/functions/<nombre>/index.ts con su configuración/dependencias necesarias antes del despliegue Cloud.
 - [ ] Implementar listado paginado de cuentas, invitación desde Edge Function y asignación segura por identidad; no exponer Auth Admin o correos de otras cuentas a usuarios sin permiso.
@@ -189,6 +189,21 @@ Ampliación 21/10/2026: integrar Google OAuth con PKCE en acceso/registro y call
 - [x] Revalidar permisos y limpiar caché/formularios administrativos ante revocación, cambio de cuenta o denegación; sin confiar en JWT/metadata o interfaz como única autoridad.
 
 **Aceptación:** user no alcanza funciones administrativas mediante UI, API, RPC o payload manipulado; admin puede crear un rol distinto, elegir permisos válidos, asignarlo y comprobar sus restricciones reales. La creación del rol no inventa una capacidad del software. Invitaciones no anuncian éxito total ante asignación fallida. Usuarios con roles administrativos siguen sin acceder a montajes ajenos. Se comprueban privilegios retirados y ediciones concurrentes, sin sustituir pruebas de servidor por ocultar botones.
+
+### Refactorización modular de administración aprobada
+
+Trabajo pendiente dentro de fase 2b, con criterios principales en [06f](06f-administracion-modular-y-componentes.md):
+
+- [ ] Auditar y reutilizar Page/Users/Roles/Catalog/Presets/Fields, Drawer, Feedback y UnsavedChanges; extraer solo patrones repetidos, sin clonar formularios ni añadir capas innecesarias.
+- [ ] Reorganizar Catálogo/Bicicletas/Accesos y sus secciones, conservando permisos, enlaces directos, búsqueda, filtros, página y selección; sin portada intermedia.
+- [ ] Implementar un único panel con navegación interna y cabecera/pie visibles; en móvil pantalla completa, cuerpo desplazable, teclado/áreas seguras y protección de borradores.
+- [ ] Situar Guardar cambios/Descartar/contador en barra superior fija de la matriz, con encabezados/primera columna identificables, movimiento horizontal móvil, estados de envío y guardado transaccional existentes.
+- [ ] Completar vistas de marcas/recursos existentes/prearmadas y Usuarios/Roles/Permisos según 06c/06d/06f, sin SQL arbitrario, subida GLB ni administración de montajes privados ajenos.
+- [ ] Aplicar simplificación de cuentas de 04b (26/10/2026): correo informativo, Google como acceso habitual, asignación autorizada de un rol existente, sin añadir edición/recuperación administrativa ni permisos nuevos. La matriz es el único editor de permisos por rol.
+- [ ] Auditar responsive con `scripts/validate-responsive.mjs` en 320–1920 px y alrededor de los puntos existentes; distinguir pruebas de vistas actuales de la aceptación del rediseño. CSS existente, sin migración Tailwind por este trabajo.
+- [ ] Validar lectura/escritura/publicación reales, recarga, conflicto concurrente, errores por campo, resultado parcial, pérdida de permisos y peticiones manipuladas; revisar escritorio/móvil con formularios y matriz largos y acciones siempre alcanzables.
+
+Resultado: recorridos completos y simples, componentes reutilizados y evidencia en 12; los bocetos aprobados no acreditan implementación o validación. Esta solicitud actualiza documentación, no ejecuta la refactorización ni autoriza commits.
 
 ## Fase 3 · Catálogo, fichas y comparación
 

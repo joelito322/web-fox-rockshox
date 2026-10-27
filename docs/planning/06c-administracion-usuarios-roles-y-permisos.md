@@ -4,11 +4,15 @@ Relacionado: [principios UI/UX](06-ui-y-ux.md), [espacio de trabajo](06b-espacio
 
 Estado: planificación. El usuario aprobó estas composiciones: una sección integrada con pestañas Usuarios, Roles y Permisos; tablas sencillas; creación y detalle en panel lateral derecho; matriz con roles horizontales y permisos verticales. Sustituye el boceto anterior de navegación administrativa lateral. No se crean pantallas ni recursos en esta etapa.
 
+## Actualización aprobada · administración modular
+
+Este documento conserva los contratos de Accesos. Decisión 26/10/2026: Roles solo edita nombre/descripción/estado y la matriz es el único editor de permisos; correo informativo y acceso habitual con Google, sin edición ni recuperación administrativa. La navegación Catálogo/Bicicletas/Accesos, componentes reutilizados y posiciones de acciones se definen en [06f](06f-administracion-modular-y-componentes.md), que prevalece sobre la distribución antigua de los bocetos siguientes. Accesos contiene Usuarios/Roles/Permisos; panel con cabecera y pie visibles y cuerpo desplazable. Matriz con barra de guardado superior fija, sin acción única al final. En móvil panel a pantalla completa y matriz con desplazamiento horizontal y primera columna fija. No se acredita implementación por actualizar estos planes.
+
 ## Estructura común
 
 Entrar desde «Administración» en el menú de cuenta con permiso. Cabecera estable con «Volver al trabajo»; las tres pestañas cambian contenido sin recargar ni encadenar páginas. Conservar búsqueda, posición y selección al volver. Mostrar solo pestañas autorizadas y verificar también sus rutas directas. Para Usuarios se requiere users.read; para Roles y Permisos, roles.manage. No conceder escritura solo por poder ver una tabla.
 
-Catálogo y bicicletas de referencia conservan las operaciones acordadas en 04b, con accesos separados del grupo Usuarios/Roles/Permisos; no añadirlos como columnas de la matriz ni mezclar montajes privados ajenos en administración. Esta composición no rediseña sus formularios de negocio.
+Catálogo y bicicletas de referencia conservan las operaciones acordadas en 04b, con accesos separados del grupo Usuarios/Roles/Permisos; no añadirlos como columnas de la matriz ni mezclar montajes privados ajenos en administración. La composición modular y los formularios de negocio se coordinan con 06d/06f.
 
 ## Usuarios: tabla principal
 
@@ -87,7 +91,7 @@ El panel mantiene los datos y el error si falla el envío. Deshabilitar duplicad
 └──────────────────────────────────────────────┴─────────────────────────────────┘
 ```
 
-Correo, estado, creación y último acceso son informativos; editar el rol requiere permiso y revisión vigente. Sin permiso, detalle en lectura, sin Guardar. No editar manualmente fechas, estado de verificación, IDs o contraseñas. La edición de correo no se incorpora por este boceto: si se solicita, requerirá una operación específica de Auth y su validación; no UPDATE libre ni un campo que aparente guardar sin efecto.
+Estado, creación y último acceso son informativos; editar el rol requiere permiso y revisión vigente. Sin escritura autorizada, detalle en lectura. No editar manualmente fechas, verificación, IDs o contraseñas. Decisión vigente 26/10/2026: correo informativo, sin edición ni recuperación administrativa. Se retira la ampliación previa; el acceso habitual es Google. No solicitar ni mostrar contraseñas en este panel.
 
 Guardar muestra resultado persistente e invalida la página/detalle afectados. La promoción o retirada de acceso identifica cuenta y rol en la confirmación. Proteger rol propio y último administrador según IAM. Si el servidor detecta conflicto, conservar el borrador y ofrecer recargar/revisar, sin sobrescribir silenciosamente la asignación vigente.
 
@@ -159,7 +163,7 @@ La selección del panel y la matriz utilizan el mismo contrato y catálogo de pe
 │ ROLES                                                                          │
 │ Crear y configurar                      —             ✓             ☐          │
 │                                                                                │
-│ Cambios sin guardar                         [ Descartar ] [ Guardar cambios ]  │
+│ Barra de guardado superior fija: distribución vigente en 06f                   │
 └────────────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -177,12 +181,19 @@ La selección del panel y la matriz utilizan el mismo contrato y catálogo de pe
 
 En escritorio, encabezados de roles y columna de permisos permanecen identificables durante el desplazamiento vertical/horizontal. Si crece el catálogo de roles, paginar el eje de roles y conservar únicamente cambios explícitos por ID, sin eliminar permisos de columnas no cargadas. No se introduce virtualización o una biblioteca de tablas por obligación.
 
-En móvil, selector de rol y permisos agrupados en una columna con casillas; mantiene exactamente las mismas asignaciones y botón de guardado. Usuarios/Roles se adaptan con columnas prioritarias legibles y detalle ampliable, sin reducir la tipografía de toda la tabla. El panel derecho se transforma en panel inferior ampliable/una columna, con cierre accesible; no exige gestos.
+En móvil, matriz con desplazamiento horizontal, primera columna fija y barra superior de acciones siempre accesible; mantiene exactamente las mismas asignaciones. Usuarios/Roles se adaptan con columnas prioritarias legibles y detalle ampliable, sin reducir la tipografía de toda la tabla. El panel derecho ocupa la pantalla disponible en móvil, con cabecera y pie visibles y cierre accesible; no exige gestos.
 
-El panel de escritorio es complementario: tabla operativa, sin máscara ni foco atrapado como modal. Si el panel móvil bloquea el fondo, manejarlo como diálogo accesible. Foco inicial y retorno a fila/botón, Escape para cierre y protección de borradores. Solo un panel abierto; no apilar formularios.
+Reutilizar Drawer y su patrón accesible: si el panel bloquea el fondo, manejarlo como diálogo, sin presentar la tabla subyacente como operativa. Foco inicial y retorno a fila/botón, Escape para cierre y protección de borradores. Solo un panel abierto; no apilar formularios.
 
 Pestaña/selección y parámetros de consulta deben poder representarse en URL para recarga y Atrás/Adelante. Correos y borradores de formularios no se colocan en URL; buscar cuentas conserva el texto en estado acotado, sin exponer un correo en enlaces compartidos. Cerrar un detalle abierto por enlace directo devuelve al listado correcto aunque no haya historial previo.
 
 Estados separados: carga, lista vacía, sin resultados, error de consulta, guardando, guardado, conflicto, acceso revocado y resultado parcial de invitación. No guardar datos administrativos en caché pública o persistencia local de formularios. Limpiar al cerrar sesión/cambiar cuenta o perder autorización. No fingir que el rol cambió si solo se actualizó un estado React.
 
 La matriz y el formulario de roles aplican las [dependencias de permisos de 04a](04a-iam-roles-y-permisos.md#dependencias-de-permisos): mostrar requisitos junto al permiso y rechazar conjuntos incompletos sin marcar casillas ni conceder capacidades silenciosamente. El selector de asignación usa solo roles activos otorgables y no exige acceso a la pestaña Roles.
+
+
+## Detalles aprobados de Usuarios y Roles
+
+Usuarios: correo y rol prioritarios, fecha de registro secundaria y confirmación/invitación como etiqueta; búsqueda por correo, filtro por rol y paginación. Crear abre correo/rol y Enviar invitación, sin contraseña temporal. Detalle mantiene correo y fechas informativos, con asignación autorizada de rol; registro público/Google siempre user. No añadir controles de edición de correo/recuperación.
+
+Roles: nombre, descripción, estado y número de usuarios si la consulta autorizada lo proporciona; roles user/admin protegidos. Crear un rol comienza sin permisos. Detalle edita nombre/descripción/estado; «Configurar permisos» cambia a la pestaña matriz y enfoca su columna, sin duplicar una matriz dentro del panel. Proteger borradores antes de navegar. No crear permisos desde la web: la matriz asigna capacidades implementadas. Los estados y restricciones reales se validan en servidor.

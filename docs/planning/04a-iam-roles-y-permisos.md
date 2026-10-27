@@ -181,3 +181,9 @@ En React, permisos remotos se consultan con clave por usuario, sin duplicar auto
 - [Supabase: RBAC y permisos](https://supabase.com/docs/guides/api/custom-claims-and-role-based-access-control-rbac).
 - [Supabase: RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
 - [Supabase: funciones de base](https://supabase.com/docs/guides/database/functions).
+
+## Fuente de verdad y simplificación · 26/10/2026
+
+Se retira la ampliación administrativa de edición de correo/recuperación: no añadir permisos para esas operaciones. Se mantiene el catálogo IAM existente. Cada cuenta tiene un rol (`user_roles`); ese rol concede los permisos definidos en `role_permissions`, con catálogo `permissions`. Las tablas son la fuente de verdad; React muestra el acceso recibido y el servidor lo comprueba en cada operación.
+
+En la UI, Roles edita nombre/descripción/estado y Permisos es el único editor de asignaciones por rol. No duplicar las casillas en el panel del rol, ni crear niveles numéricos, herencia o excepciones por usuario. Crear un rol no le concede permisos; user/admin mantienen sus restricciones de sistema. El acceso Google conserva provisionamiento user y asignación administrativa autorizada.

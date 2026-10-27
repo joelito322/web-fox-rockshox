@@ -2,6 +2,10 @@
 
 Estado: composición aprobada explícitamente por el usuario el 19 de octubre de 2026: tablas y panel derecho, guardado de borrador y publicación separados. Implementación y pruebas funcionales pendientes. Reutiliza el patrón tabla/panel de 06c; no cambia Usuarios/Roles/Permisos ni sus permisos. Contratos de datos en 03a y operaciones en 04b.
 
+## Actualización de distribución
+
+[06f](06f-administracion-modular-y-componentes.md) fija la navegación vigente: Catálogo → Componentes/Marcas/Recursos 3D; Bicicletas → Prearmadas; Accesos → Usuarios/Roles/Permisos. Sustituye la fila antigua de navegación del dibujo inferior. Preservar contratos de edición, permisos y retirada de este documento. Reutilizar controles existentes, un único panel con cabecera/pie visibles y cuerpo desplazable, sin paneles apilados. La variante se abre dentro del panel de su componente con retorno al padre. En móvil el panel ocupa la pantalla disponible. Recurso existente en lectura/selección; no subida de GLB ni editor de SQL/JSON.
+
 ```text
 ATLAS MTB  / Administración                              Volver al trabajo
 Catálogo   Bicicletas de referencia      Usuarios   Roles   Permisos
@@ -24,7 +28,7 @@ FOX 38               ...            Borrador     Abrir
 
 En Bicicletas de referencia se conserva la tabla y el panel: nombre, marca, clase fábrica/ejemplo, fuentes, cuadro/talla y selección de variante/acabado por slot. Los errores se asocian al campo; no mostrar JSON crudo o identificadores internos en el recorrido normal. Los recursos solo se eligen de los existentes; sin subida de GLB desde la web.
 
-Crear/corregir marcas es un panel pequeño reutilizando campos; no una navegación encadenada. Cambiar de registro con cambios ofrece guardar, descartar o cancelar. En móvil panel inferior ampliable, foco/teclado y guardado explícito. Retirar opciones conserva referencias previas. Versiones publicadas protegen interfaces/recursos; una corrección inmutable propone nueva variante.
+Crear/corregir marcas es un panel pequeño reutilizando campos; no una navegación encadenada. Cambiar de registro con cambios ofrece guardar, descartar o cancelar. En móvil panel a pantalla completa, foco/teclado y guardado explícito siempre visible. Retirar opciones conserva referencias previas. Versiones publicadas protegen interfaces/recursos; una corrección inmutable propone nueva variante.
 
 La publicación es una acción separada autorizada; el permiso de edición no permite cambiar contenido público. No publicar hasta verificar datos obligatorios y representación. Confirmar resultado remoto, conservar borrador ante error y no presentar éxito ante fallo parcial.
 

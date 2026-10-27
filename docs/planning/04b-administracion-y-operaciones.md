@@ -118,3 +118,12 @@ La edición de catálogo/prearmadas reutiliza controles y contratos de categorí
 - [Invitar por Auth Admin](https://supabase.com/docs/reference/javascript/auth-admin-inviteuserbyemail).
 - [Crear usuarios: operación de servidor](https://supabase.com/docs/reference/javascript/auth-admin-createuser).
 - [Autenticación de Edge Functions](https://supabase.com/docs/guides/functions/auth).
+
+
+## Simplificación de cuentas · decisión del usuario, 26/10/2026
+
+El acceso habitual es Continuar con Google y seleccionar la cuenta. En esta refactorización el correo de Usuarios es informativo: no incorporar edición administrativa de correo ni envío administrativo de recuperación, ni contraseña temporal o nueva gestión de identidad. Se retira la ampliación documental anterior; no requiere permisos, migraciones o acciones Edge nuevos para esas operaciones.
+
+Las cuentas que se registran con Google reciben user; un actor autorizado puede asignar otro rol desde Usuarios. Roles solo define nombre/descripción/estado; la matriz es el único editor de permisos por rol. Conservar protecciones de roles del sistema, último administrador, revisiones y comprobaciones de servidor. La autorización usa las tablas IAM existentes como fuente de verdad, sin excepciones individuales o permisos duplicados en React.
+
+Esta decisión no borra identidades ni deshabilita automáticamente los flujos Auth de correo/contraseña o invitación ya implementados. No ampliar esos recorridos como parte del rediseño; cualquier retirada global de acceso existente se trataría como cambio independiente. La interfaz nueva no solicita una contraseña para entrar con Google.

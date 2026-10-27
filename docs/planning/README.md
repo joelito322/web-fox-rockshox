@@ -28,6 +28,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 | [06c · UI administrativa](06c-administracion-usuarios-roles-y-permisos.md) | Tablas de usuarios/roles, paneles derechos y matriz de permisos por rol |
 | [06d · Administración de negocio](06d-administracion-catalogo-y-prearmadas.md) | Tablas y paneles de catálogo/prearmadas aprobados durante implementación |
 | [06e · Armado guiado](06e-armado-guiado.md) | Índice de piezas, grupos, medidas, pares y paletas del configurador |
+| [06f · Administración modular](06f-administracion-modular-y-componentes.md) | Grupos y secciones, reutilización React, paneles y acciones siempre visibles |
 | [07 · Entornos y despliegue](07-entornos-y-despliegue.md) | Variables, Git, Supabase y publicación del frontend |
 | [08 · Fases y validación](08-fases-y-validacion.md) | Qué construir primero y cómo comprobar cada entrega |
 | [09 · Revisión adversarial de datos](09-revision-adversarial-de-datos.md) | Revisión histórica de ocho tablas de negocio |
