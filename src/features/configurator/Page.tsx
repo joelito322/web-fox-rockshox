@@ -1,3 +1,4 @@
+import { Compatibility } from "./Compatibility";
 import "./assembly.css";
 import { AssemblyIndex, AssemblyNavigation } from "./AssemblyNavigation";
 import { FinishPalette } from "./FinishPalette";
@@ -146,7 +147,7 @@ function Configurator({ buildId }: { buildId?: string }) {
   const signature = useMemo(() => canonical(configuration), [configuration]);
   const dirty = ready && signature !== confirmed;
   const mountWarnings = useMemo(
-    () => warnings(configuration, variants),
+    () => warnings(configuration, variants).filter((w) => w.code !== "visual_reference"),
     [configuration.items, variants],
   );
   const leaving = useRef(false);
@@ -744,11 +745,13 @@ function Configurator({ buildId }: { buildId?: string }) {
           </button>
         )}
       </div>
+      <Compatibility warnings={mountWarnings} hasParts={configuration.items.length > 0} onSelect={selectSlot} />
       <div className="editor-layout">
         <AssemblyIndex
           configuration={configuration}
           variants={variants}
           slot={slot}
+          warnings={mountWarnings}
           onSelect={selectSlot}
         />
         <section className="viewer" aria-label="Montaje visual">
@@ -991,12 +994,6 @@ function Configurator({ buildId }: { buildId?: string }) {
               <RotateCcw size={16} /> Deshacer último cambio
             </button>
           )}
-          <details className="mount-notes">
-            <summary>Avisos del montaje ({mountWarnings.length})</summary>
-            {mountWarnings.map((w) => (
-              <p key={w.code}>{w.message}</p>
-            ))}
-          </details>
           {conflict && (
             <div className="conflict-actions">
               <button className="button outline" onClick={() => void reload()}>

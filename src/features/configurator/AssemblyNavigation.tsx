@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Check, Circle } from "lucide-react";
+import { Check, Circle, AlertTriangle, CircleHelp } from "lucide-react";
 import {
   assemblyGroups,
   entryFor,
@@ -14,17 +14,20 @@ import {
   type Configuration,
   type Slot,
   type VariantMap,
+  type MountWarning,
 } from "./model";
 
 export function AssemblyIndex({
   configuration,
   variants,
   slot,
+  warnings = [],
   onSelect,
 }: {
   configuration: Configuration;
   variants: VariantMap;
   slot: Slot;
+  warnings?: MountWarning[];
   onSelect: (slot: Slot) => void;
 }) {
   const [expanded, setExpanded] = useState(
@@ -65,11 +68,13 @@ export function AssemblyIndex({
                 {positions.map((s) => {
                   const item = configuration.items.find((i) => i.slot === s);
                   const variant = item ? variants[item.variantId] : undefined;
+                  const affected = warnings.filter((w) => w.slots?.includes(s));
+                  const hasConflict = affected.some((w) => w.level === "conflict");
                   return (
                     <button
                       key={s}
                       aria-label={slotLabels[s]}
-                      aria-describedby={`assembly-piece-${s}`}
+                      aria-describedby={`assembly-piece-${s}${affected.length ? ` assembly-warning-${s}` : ""}`}
                       className={slot === s ? "selected" : ""}
                       aria-pressed={slot === s}
                       onClick={() => {
@@ -88,7 +93,7 @@ export function AssemblyIndex({
                       <span className={item ? "slot-complete" : "slot-empty"}>
                         {item ? <Check size={13} /> : <Circle size={11} />}
                       </span>
-                      <span id={`assembly-piece-${s}`}>
+                      <span className="assembly-piece-copy" id={`assembly-piece-${s}`}>
                         <strong>{slotLabels[s]}</strong>
                         <small>
                           {variant
@@ -101,6 +106,10 @@ export function AssemblyIndex({
                           </small>
                         )}
                       </span>
+                      {!!affected.length && <span className={`assembly-warning ${hasConflict ? "conflict" : "unknown"}`}>
+                        {hasConflict ? <AlertTriangle size={14} aria-hidden="true" /> : <CircleHelp size={14} aria-hidden="true" />}
+                        <span className="assembly-warning-label" id={`assembly-warning-${s}`}>{hasConflict ? "Incompatibilidad detectada" : "Dato por confirmar"}</span>
+                      </span>}
                     </button>
                   );
                 })}

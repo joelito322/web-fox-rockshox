@@ -69,7 +69,7 @@
 .assembly-index button .slot-complete {
   color: #477125;
 }
-.assembly-index button > span:last-child {
+.assembly-index .assembly-piece-copy {
   min-width: 0;
   display: grid;
   gap: 3px;
