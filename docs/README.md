@@ -6,6 +6,8 @@ Este archivo define cómo crear, relacionar y mantener la documentación. El obj
 
 El usuario autorizó comenzar la implementación después de comitear por partes los cambios documentales pendientes. Esos commits se crearon; ahora se ejecutan las fases de [08](planning/08-fases-y-validacion.md), con alcance completo, pruebas y evidencia. La preparación de datos, recursos y propuestas pendientes forma parte del trabajo. No crear nuevos commits sin petición explícita del usuario.
 
+La ampliación comercial del27/10/2026 en [13](planning/13-tienda-y-venta-asistida.md) tiene autorización documental únicamente: no hereda la autorización de código del configurador ni activa pagos reales.
+
 Los planes permanecen en `planning/` mientras exista implementación parcial. No marcar una entrega terminada por redactar su contrato ni trasladar el conjunto antes de cumplir su aceptación.
 
 ## Contexto de entorno y comunicación persistente
@@ -51,6 +53,8 @@ La ubicación indica el estado real del trabajo, no el estado de redacción del 
 Un bloqueo de credenciales, migración sin aplicar o prueba no ejecutada se declara como pendiente. No se marca como terminado lo que solo funciona con datos simulados si el plan exige integración real. Los fallos anteriores al cambio se distinguen de regresiones, pero no se ocultan cuando impiden cumplir la entrega.
 
 ## Índice actual
+
+- [Tienda y venta asistida](planning/13-tienda-y-venta-asistida.md): nueva orientación comercial en planificación; precios propios, promociones, pedidos y primera fase de pagos de interfaz sin cobros reales.
 
 - [Refactorización de Administración](planning/06f-administracion-modular-y-componentes.md): propuesta aprobada de módulos, tablas y paneles reutilizados; ejecución y aceptación pendientes en fase 2b.
 - [Plan Atlas MTB](planning/README.md): catálogo, comparación, acceso Supabase y configurador 3D; implementación parcial, con evidencia y pendientes en el documento 12.
@@ -115,3 +119,9 @@ Mantener suficiente detalle para implementar y validar. Evitar reglas para infra
 ## Recursos finales y archivo local
 
 La política de modelos, fotos visibles, referencias y resultados se define en [models/README.md](../models/README.md). Fotos de cards/portada en `src/assets/images/` y GLB publicados se versionan; referencias de investigación, resultados, capturas y prototipos se conservan en `models/local/` ignorado. Los manifiestos y la procedencia permanecen en Git. Las pruebas de producto no deben depender de informes generados o de originales fotográficos que un clon no recibe.
+
+
+El esquema de la ampliación comercial se detalla en [13c](planning/13c-esquema-comercial-y-operaciones.md), junto a las reglas de13a y precios de13b. Su estado continúa en planning: once tablas propuestas, ninguna migración ni interfaz comercial aplicada.
+
+
+Actualización27/10/2026: el usuario autorizó comitear por partes la planificación comercial y después implementar13–13d. La autorización sustituye el estado documental anterior, incluye Supabase Cloud y frontend por fases y mantiene pagos únicamente demo, sin cobros reales.

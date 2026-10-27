@@ -10,6 +10,11 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 
 | Documento | Pregunta que resuelve |
 | --- | --- |
+| [13 · Tienda y venta asistida](13-tienda-y-venta-asistida.md) | Nueva orientación comercial, ofertas/precios/promociones, pedidos y pagos solo de interfaz en primera fase; planificación sin ejecución autorizada |
+| [13a · Contratos comerciales](13a-contratos-y-validacion-comercial.md) | Revisión de huecos: precio fijado al crear pedido, stock sin doble consumo, pagos de demo y carrito persistente por cuenta |
+| [13b · Precios y ofertas](13b-precios-y-ofertas-comerciales.md) | Precio/stock por SKU estable, relación con revisiones3D, promociones y snapshot de pedidos; sin motor de precios extra |
+| [13c · Esquema comercial](13c-esquema-comercial-y-operaciones.md) | Once tablas propuestas, campos/relaciones, cambios IAM, reservas sin duplicación, RPC, índices y aceptación por fases |
+| [13d · Revisión cruzada comercial](13d-revision-cruzada-del-plan-comercial.md) | Tres agentes y segunda revisión; brechas corregidas, pruebas obligatorias y límites del dictamen documental |
 | [01 · Producto y alcance](01-producto-y-alcance.md) | Qué construimos, para quién y con qué nivel de fidelidad |
 | [02 · Arquitectura y frontend](02-arquitectura-y-frontend.md) | Cómo se relacionan React, el visor, Supabase y Netlify |
 | [03 · Datos y operaciones](03-datos-y-operaciones.md) | Ingesta, composiciones, guardado, archivo, consultas e índices |
@@ -145,3 +150,7 @@ Revisión integral de suspensión v2 implementada en fase3: quince modelos/30 ta
 Política de archivos finales y archivo local aprobada: [models/README.md](../../models/README.md). Fotos visibles y GLB publicados se versionan; investigación/resultados/prototipos permanecen locales. No convertir un informe generado en requisito para ejecutar los tests de producto.
 
 - [06g · Avisos globales de compatibilidad](06g-avisos-globales-de-compatibilidad.md): barra global, panel reutilizado, posiciones afectadas y límites documentados sin bloquear el armado.
+
+## Ampliación comercial en planificación · 27/10/2026
+
+[13](13-tienda-y-venta-asistida.md) registra la evolución a tienda propia de componentes con guía técnica y3D, precios de venta, promociones, carrito de compras y pedidos. El usuario solicitó documentarla: todavía no se implementa ni activa cobro real. Pagos iniciales a nivel interfaz demostrativa; Yape manual y pasarela automática son alternativas posteriores diferenciadas. Las exclusiones anteriores de comercio describen el alcance base, no niegan esta nueva planificación.
