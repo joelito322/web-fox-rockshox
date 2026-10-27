@@ -1,78 +1,157 @@
+import { useEffect } from "react";
+import { Link, NavLink, Navigate, useParams } from "react-router-dom";
 import { useAuth } from "../auth/provider";
 import { RequirePermission } from "../auth/RequirePermission";
+import { Loading } from "../../components/ui/Feedback";
+import { useAdminState, useAdminScroll } from "./workspace";
 import Presets from "./Presets";
 import Users from "./Users";
 import Roles from "./Roles";
 import Catalog from "./Catalog";
-import { Loading } from "../../components/ui/Feedback";
-import { Link, NavLink, Navigate, useParams } from "react-router-dom";
+import "./admin.css";
+const sections = [
+  {
+    key: "catalogo",
+    label: "Componentes",
+    group: "Catálogo",
+    permission: "catalog.manage",
+  },
+  {
+    key: "marcas",
+    label: "Marcas",
+    group: "Catálogo",
+    permission: "catalog.manage",
+  },
+  {
+    key: "recursos",
+    label: "Recursos 3D",
+    group: "Catálogo",
+    permission: "catalog.manage",
+  },
+  {
+    key: "bicicletas",
+    label: "Prearmadas",
+    group: "Bicicletas",
+    permission: "presets.manage",
+  },
+  {
+    key: "usuarios",
+    label: "Usuarios",
+    group: "Accesos",
+    permission: "users.read",
+  },
+  {
+    key: "roles",
+    label: "Roles",
+    group: "Accesos",
+    permission: "roles.manage",
+  },
+  {
+    key: "permisos",
+    label: "Permisos",
+    group: "Accesos",
+    permission: "roles.manage",
+  },
+];
 export default function AdminPage() {
   const auth = useAuth();
-  const { tab } = useParams();
   if (auth.loading) return <Loading />;
-  const allowed = [
-    ["catalogo", "catalog.manage"],
-    ["bicicletas", "presets.manage"],
-    ["usuarios", "users.read"],
-    ["roles", "roles.manage"],
-  ].find(([, p]) => auth.permissions.includes(p));
-  if (!tab && allowed)
-    return <Navigate replace to={`/administracion/${allowed[0]}`} />;
-  if (
-    tab &&
-    !["catalogo", "bicicletas", "usuarios", "roles", "permisos"].includes(tab)
-  )
-    return <Navigate replace to="/administracion" />;
-  const section = tab ?? "catalogo";
-  const permission =
-    section === "usuarios"
-      ? "users.read"
-      : section === "roles" || section === "permisos"
-        ? "roles.manage"
-        : section === "bicicletas"
-          ? "presets.manage"
-          : "catalog.manage";
+  return <AdminContent key={`${auth.user?.id}:${[...auth.permissions].sort().join(":")}`} />;
+}
+function AdminContent() {
+  const auth = useAuth();
+  const { tab } = useParams();
+  const available = sections.filter((s) =>
+    auth.permissions.includes(s.permission),
+  );
+  const [last, setLast] = useAdminState("navigation", "section", "catalogo");
+  const [visits, setVisits] = useAdminState<Record<string, string>>(
+    "navigation",
+    "groups",
+    {},
+  );
+  const section = sections.find((s) => s.key === tab);
+  useAdminScroll(section?.key ?? "entry");
+  useEffect(() => {
+    if (!section || !auth.permissions.includes(section.permission)) return;
+    setLast(section.key);
+    setVisits((previous) =>
+      previous[section.group] === section.key
+        ? previous
+        : { ...previous, [section.group]: section.key },
+    );
+  }, [section?.key]);
+  if (!section)
+    return (
+      <Navigate
+        replace
+        to={`/administracion/${available.find((s) => s.key === last)?.key ?? available[0]?.key ?? "catalogo"}`}
+      />
+    );
   return (
-    <RequirePermission permission={permission}>
-      <div className="content">
+    <RequirePermission permission={section.permission}>
+      <div className="content admin-page">
         <div className="section-heading">
           <div>
-            <p className="eyebrow">Administración</p>
-            <h1>
-              {section === "catalogo"
-                ? "Catálogo"
-                : section === "bicicletas"
-                  ? "Bicicletas de referencia"
-                  : section.charAt(0).toUpperCase() + section.slice(1)}
-            </h1>
+            <h1>Administración</h1>
           </div>
           <Link className="back-link" to="/componentes">
             Volver al trabajo
           </Link>
         </div>
-        <nav className="admin-tabs">
-          {[
-            ["catalogo", "Catálogo", "catalog.manage"],
-            ["bicicletas", "Bicicletas de referencia", "presets.manage"],
-            ["usuarios", "Usuarios", "users.read"],
-            ["roles", "Roles", "roles.manage"],
-            ["permisos", "Permisos", "roles.manage"],
-          ]
-            .filter((t) => auth.permissions.includes(t[2]))
-            .map((t) => (
-              <NavLink key={t[0]} to={`/administracion/${t[0]}`}>
-                {t[1]}
+        <nav
+          className="admin-tabs admin-groups"
+          aria-label="Módulos de administración"
+        >
+          {[...new Set(available.map((s) => s.group))].map((group) => {
+            const target =
+              available.find(
+                (s) => s.key === visits[group] && s.group === group,
+              ) ?? available.find((s) => s.group === group)!;
+            return (
+              <Link
+                key={group}
+                className={section.group === group ? "active" : ""}
+                aria-current={section.group === group ? "page" : undefined}
+                to={`/administracion/${target.key}`}
+              >
+                {group}
+              </Link>
+            );
+          })}
+        </nav>
+        <nav
+          className="admin-tabs admin-sections"
+          aria-label="Secciones de administración"
+        >
+          {available
+            .filter((s) => s.group === section.group)
+            .map((s) => (
+              <NavLink key={s.key} to={`/administracion/${s.key}`}>
+                {s.label}
               </NavLink>
             ))}
         </nav>
-        {section === "usuarios" ? (
+        {section.key === "usuarios" ? (
           <Users />
-        ) : section === "roles" || section === "permisos" ? (
-          <Roles key={section} permissionsView={section === "permisos"} />
-        ) : section === "bicicletas" ? (
+        ) : section.key === "roles" || section.key === "permisos" ? (
+          <Roles
+            key={section.key}
+            permissionsView={section.key === "permisos"}
+          />
+        ) : section.key === "bicicletas" ? (
           <Presets />
         ) : (
-          <Catalog />
+          <Catalog
+            key={section.key}
+            view={
+              section.key === "marcas"
+                ? "brand"
+                : section.key === "recursos"
+                  ? "asset"
+                  : "component"
+            }
+          />
         )}
       </div>
     </RequirePermission>

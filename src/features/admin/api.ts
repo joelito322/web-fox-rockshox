@@ -80,9 +80,9 @@ export async function accountOperation(body: Record<string, unknown>) {
   return data as unknown;
 }
 
-export async function listAccounts(search: string, page: number, signal: AbortSignal) {
-  const { data, error } = await requireSupabase().rpc("admin_list_users", {
-    p_search: search, p_page: page,
+export async function listAccounts(search: string, page: number, signal: AbortSignal, role = "") {
+  const { data, error } = await requireSupabase().rpc("admin_user_page", {
+    p_search: search, p_page: page, p_role: role || null,
   }).abortSignal(signal);
   if (error) throw error;
   return accountPageSchema.parse(data);
@@ -91,6 +91,7 @@ export async function listAccounts(search: string, page: number, signal: AbortSi
 export const accountPageSchema = z.object({
   count: z.number(),
   users: z.array(accountSchema),
+  roles: z.array(z.object({ id: z.uuid(), name: z.string() })),
 });
 const prerequisites: Record<string, string[]> = {
   "builds.write_own": ["builds.read_own"],

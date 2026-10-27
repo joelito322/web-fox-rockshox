@@ -1,3 +1,4 @@
+import { AdminWorkspace } from "../features/admin/workspace";
 import {
   Link,
   NavLink,
@@ -55,7 +56,9 @@ export function Layout() {
       <a className="skip-link" href="#main">
         Ir al contenido
       </a>
-      <header className={`site-header${location.pathname === "/" ? " is-landing" : ""}`}>
+      <header
+        className={`site-header${location.pathname === "/" ? " is-landing" : ""}`}
+      >
         <Brand />
         <nav className="header-nav" aria-label="Navegación principal">
           <Link to="/componentes">Catálogo</Link>
@@ -105,14 +108,24 @@ export function Layout() {
         <Suspense fallback={<Loading />}>
           <MotionRegion
             className="route-content"
-            motionKey={location.pathname.startsWith("/componentes") ? "/componentes" : location.pathname}
+            motionKey={
+              location.pathname.startsWith("/componentes")
+                ? "/componentes"
+                : location.pathname
+            }
             disabled={location.pathname === "/"}
           >
-            <Outlet />
+            <AdminWorkspace
+              scopeKey={`${auth.user?.id}:${[...auth.permissions].sort().join(":")}`}
+            >
+              <Outlet />
+            </AdminWorkspace>
           </MotionRegion>
         </Suspense>
       </main>
-      <footer className={`site-footer${location.pathname === "/" ? " is-landing" : ""}`}>
+      <footer
+        className={`site-footer${location.pathname === "/" ? " is-landing" : ""}`}
+      >
         <span>ATLAS MTB</span>
         <span>Enduro & Descenso</span>
         <span>Diseña tu próximo montaje.</span>

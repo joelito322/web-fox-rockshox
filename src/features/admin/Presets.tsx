@@ -1,5 +1,9 @@
+import { SelectableRow } from "./SelectableRow";
+import { useSearchParams } from "react-router-dom";
+import { useSearchFilters } from "./useSearchFilters";
+import { useAdminState } from "./workspace";
 import { getPresetPreview, readPresetPreviewSource } from "../bike-preview/api";
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, useId, useRef, type FormEvent } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { z } from "zod";
 import { Plus, Search, Trash2 } from "lucide-react";
@@ -29,22 +33,52 @@ function slugify(value: string) {
     .replace(/^-|-$/g, "");
 }
 export default function Presets() {
+  const [params, setParams] = useSearchParams();
+  const detailRequest = useRef(0);
+  useEffect(
+    () => () => {
+      detailRequest.current++;
+    },
+    [],
+  );
   const auth = useAuth();
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useAdminState("presets", "search", "");
+  const [page, setPage] = useAdminState("presets", "page", 0);
+  const filters = useSearchFilters(search, page);
   const [open, setOpen] = useState<Preset | null>(null);
   const [error, setError] = useState("");
   const query = useQuery({
-    queryKey: ["admin-presets", auth.user!.id],
+    queryKey: ["admin-presets", auth.user!.id, filters.search, filters.page],
     staleTime: adminStaleTime,
     queryFn: async ({ signal }) => {
-      const { data, error } = await requireSupabase().rpc("admin_presets").abortSignal(signal);
+      const { data, error } = await requireSupabase()
+        .rpc("admin_preset_page", {
+          p_search: filters.search,
+          p_page: filters.page,
+        })
+        .abortSignal(signal);
       if (error) throw error;
-      return z.array(presetSchema).parse(data);
+      return z
+        .object({
+          count: z.number(),
+          items: z.array(
+            z.object({
+              id: z.uuid(),
+              name: z.string(),
+              label: z.string(),
+              kind: z.enum(["factory", "example"]),
+              published: z.boolean(),
+              selectable: z.boolean(),
+            }),
+          ),
+        })
+        .parse(data);
     },
   });
   const options = usePresetBrands();
   const brands = { data: options.data?.brands };
   function create() {
+    detailRequest.current++;
     if (!brands.data?.length) {
       setError("Crea una marca antes de añadir bicicletas de referencia.");
       return;
@@ -65,9 +99,35 @@ export default function Presets() {
       items: [],
     });
   }
-  const rows = query.data?.filter((p) =>
-    (p.name + " " + p.label).toLowerCase().includes(search.toLowerCase()),
-  );
+  const rows = query.data?.items;
+  async function load(id: string) {
+    const request = ++detailRequest.current;
+    try {
+      const { data, error } = await requireSupabase().rpc(
+        "admin_preset_detail",
+        { p_id: id },
+      );
+      if (error) throw error;
+      if (request !== detailRequest.current) return;
+      setOpen(presetSchema.parse(data));
+      setParams(
+        (previous) => {
+          previous.set("detail", id);
+          return previous;
+        },
+        { replace: true },
+      );
+    } catch (e) {
+      if (request === detailRequest.current) setError(userError(e));
+    }
+  }
+  const detailId = params.get("detail");
+  useEffect(() => {
+    if (!detailId) {
+      detailRequest.current++;
+      setOpen(null);
+    } else if (open?.id !== detailId) void load(detailId);
+  }, [detailId]);
   return (
     <>
       <div className="admin-toolbar">
@@ -75,9 +135,13 @@ export default function Presets() {
           <Search size={16} />
           <input
             aria-label="Buscar bicicleta de referencia"
+            maxLength={150}
             placeholder="Buscar bicicleta…"
             value={search}
-            onChange={(e) => setSearch(e.target.value)}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setPage(0);
+            }}
           />
         </label>
         <button
@@ -115,9 +179,12 @@ export default function Presets() {
             </thead>
             <tbody>
               {rows.map((p) => (
-                <tr key={p.id}>
+                <SelectableRow key={p.id} selected={open?.id === p.id} onSelect={() => void load(p.id)}>
                   <td>
-                    <button className="row-button" onClick={() => setOpen(p)}>
+                    <button
+                      className="row-button"
+                      onClick={() => void load(p.id)}
+                    >
                       {p.name}
                     </button>
                   </td>
@@ -130,10 +197,29 @@ export default function Presets() {
                         : "Retirada"
                       : "Borrador"}
                   </td>
-                </tr>
+                </SelectableRow>
               ))}
             </tbody>
           </table>
+        </div>
+      )}
+      {query.data && (
+        <div className="pagination">
+          <button
+            className="button outline"
+            disabled={!page}
+            onClick={() => setPage((p) => p - 1)}
+          >
+            Anterior
+          </button>
+          <span>{page + 1}</span>
+          <button
+            className="button outline"
+            disabled={(page + 1) * 25 >= query.data.count}
+            onClick={() => setPage((p) => p + 1)}
+          >
+            Siguiente
+          </button>
         </div>
       )}
       {open && (
@@ -141,7 +227,17 @@ export default function Presets() {
           key={open.id}
           initial={open}
           brands={brands.data ?? []}
-          onClose={() => setOpen(null)}
+          onClose={() => {
+            detailRequest.current++;
+            setOpen(null);
+            setParams(
+              (previous) => {
+                previous.delete("detail");
+                return previous;
+              },
+              { replace: true },
+            );
+          }}
         />
       )}
     </>
@@ -156,10 +252,14 @@ function PresetEditor({
   brands: { id: string; name: string }[];
   onClose: () => void;
 }) {
+  const formId = useId();
   const auth = useAuth();
   const cache = useQueryClient();
   const [value, setValue] = useState(initial);
   const [baseline, setBaseline] = useState(JSON.stringify(initial));
+  const [expected, setExpected] = useState<Preset | null>(
+    initial.name ? initial : null,
+  );
   const [slot, setSlot] = useState<Slot>("frame");
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(0);
@@ -177,18 +277,17 @@ function PresetEditor({
   const selected = details.data?.components
     .flatMap((c) => c.component_variants.map((v) => ({ ...v, component: c })))
     .find((v) => v.id === item?.variantId);
-  const guard = useUnsavedChanges(
-    JSON.stringify(value) !== baseline,
-    () => save(false),
-    busy,
-  );
+  const readOnly =
+    value.published && !auth.permissions.includes("presets.publish");
+  const dirty = JSON.stringify(value) !== baseline;
+  const guard = useUnsavedChanges(dirty, () => save(false), busy);
   function updateItem(next: BuildItem) {
     setValue((v) => ({
       ...v,
       items: [...v.items.filter((i) => i.slot !== slot), next],
     }));
   }
-  async function save(publish: boolean) {
+  async function save(publish: boolean, selectable?: boolean) {
     if (busy) return false;
     setBusy(true);
     setError("");
@@ -206,24 +305,57 @@ function PresetEditor({
       }
       presetSchema.parse(value);
       const { items, ...header } = value;
-      const { data: savedId, error } = await requireSupabase().rpc("save_preset", {
-        p_data: { ...header, published: value.published || publish },
-        p_items: items,
-      });
+      const { data: savedId, error } = await requireSupabase().rpc(
+        "save_admin_preset",
+        {
+          p_data: {
+            ...header,
+            published: value.published || publish,
+            ...(selectable === undefined ? {} : { selectable }),
+          },
+          p_items: items,
+          p_expected: expected,
+        },
+      );
       if (error) throw error;
-      if(value.published||publish) void readPresetPreviewSource(savedId)
-        .then(configuration=>getPresetPreview(savedId,configuration,true))
-        .then(()=>cache.invalidateQueries({queryKey:["preset-preview",savedId]}))
-        .catch(()=>{});
+      if (value.published || publish)
+        void readPresetPreviewSource(savedId)
+          .then((configuration) =>
+            getPresetPreview(savedId, configuration, true),
+          )
+          .then(() =>
+            cache.invalidateQueries({ queryKey: ["preset-preview", savedId] }),
+          )
+          .catch(() => {});
       const saved = { ...value, published: value.published || publish };
       setValue(saved);
       setBaseline(JSON.stringify(saved));
-      setMessage(publish ? "Publicación confirmada." : "Cambios guardados.");
+      const { data: confirmed, error: confirmationError } =
+        await requireSupabase().rpc("admin_preset_detail", { p_id: savedId });
+      if (confirmationError) throw confirmationError;
+      const confirmedPreset = presetSchema.parse(confirmed);
+      setExpected(confirmedPreset);
+      setValue(confirmedPreset);
+      setBaseline(JSON.stringify(confirmedPreset));
+      setMessage(
+        selectable === false
+          ? "Prearmada retirada de nuevas selecciones."
+          : selectable === true
+            ? "Prearmada disponible para nuevos montajes."
+            : publish
+              ? "Publicación confirmada."
+              : "Cambios guardados.",
+      );
       await Promise.all([
         cache.invalidateQueries({ queryKey: ["admin-presets", auth.user!.id] }),
-        ...["presets", "preset-detail", "preset-preview-sources", "preset-preview-source",
-          "preset-preview-source-batch", "preset-preview"].map((key) =>
-          cache.invalidateQueries({ queryKey: [key] })),
+        ...[
+          "presets",
+          "preset-detail",
+          "preset-preview-sources",
+          "preset-preview-source",
+          "preset-preview-source-batch",
+          "preset-preview",
+        ].map((key) => cache.invalidateQueries({ queryKey: [key] })),
       ]);
       return true;
     } catch (e) {
@@ -240,303 +372,343 @@ function PresetEditor({
   return (
     <>
       <Drawer
+        busy={busy}
+        footer={
+          <>
+            <button
+              type="button"
+              className="button outline"
+              disabled={busy}
+              onClick={() => guard.request(onClose)}
+            >
+              Cancelar
+            </button>
+            <div className="panel-save-actions">
+              <button
+                className="button outline"
+                type="submit"
+                form={formId}
+                disabled={
+                  busy ||
+                  !dirty ||
+                  (value.published &&
+                    !auth.permissions.includes("presets.publish"))
+                }
+              >
+                {value.published ? "Guardar cambios" : "Guardar borrador"}
+              </button>
+              {value.published &&
+                auth.permissions.includes("presets.publish") && (
+                  <button
+                    type="button"
+                    className="button outline"
+                    disabled={busy || dirty}
+                    onClick={() => void save(false, !value.selectable)}
+                  >
+                    {value.selectable ? "Retirar" : "Volver a ofrecer"}
+                  </button>
+                )}
+              {!value.published &&
+                auth.permissions.includes("presets.publish") && (
+                  <button
+                    type="button"
+                    className="button dark"
+                    disabled={busy}
+                    onClick={() => void save(true)}
+                  >
+                    Publicar
+                  </button>
+                )}
+            </div>
+          </>
+        }
         title="Bicicleta de referencia"
         onClose={() => guard.request(onClose)}
       >
         <form
+          onChange={() => setMessage("")}
+          id={formId}
           onSubmit={(e: FormEvent) => {
             e.preventDefault();
             void save(false);
           }}
         >
-          <label className="field">
-            Nombre
-            <input
-              required
-              maxLength={150}
-              value={value.name}
-              onChange={(e) =>
-                setValue({
-                  ...value,
-                  name: e.target.value,
-                  slug: value.published
-                    ? value.slug
-                    : slugify(e.target.value + " " + value.label),
-                  family_key: value.published
-                    ? value.family_key
-                    : slugify(e.target.value),
-                })
-              }
-            />
-          </label>
-          <label className="field">
-            Versión / talla
-            <input
-              required
-              value={value.label}
-              onChange={(e) =>
-                setValue({
-                  ...value,
-                  label: e.target.value,
-                  slug: value.published
-                    ? value.slug
-                    : slugify(value.name + " " + e.target.value),
-                })
-              }
-            />
-          </label>
-          <label className="field">
-            Familia
-            <input
-              required
-              value={value.family_key}
-              onChange={(e) =>
-                setValue({ ...value, family_key: slugify(e.target.value) })
-              }
-            />
-          </label>
-          <label className="field">
-            Enlace
-            <input
-              required
-              value={value.slug}
-              onChange={(e) =>
-                setValue({ ...value, slug: slugify(e.target.value) })
-              }
-            />
-          </label>
-          <label className="field">
-            Marca
-            <select
-              value={value.brand_id}
-              onChange={(e) => setValue({ ...value, brand_id: e.target.value })}
-            >
-              {brands.map((b) => (
-                <option key={b.id} value={b.id}>
-                  {b.name}
-                </option>
-              ))}
-            </select>
-          </label>
-          <label className="field">
-            Tipo
-            <select
-              value={value.kind}
-              onChange={(e) =>
-                setValue({ ...value, kind: e.target.value as Preset["kind"] })
-              }
-            >
-              <option value="example">Ejemplo ATLAS</option>
-              <option value="factory">Montaje de fábrica</option>
-            </select>
-          </label>
-          <label className="field">
-            Año
-            <input
-              type="number"
-              min={1990}
-              max={2200}
-              value={value.model_year ?? ""}
-              onChange={(e) =>
-                setValue({
-                  ...value,
-                  model_year: e.target.value ? Number(e.target.value) : null,
-                })
-              }
-            />
-          </label>
-          <label className="checkbox-field">
-            <input
-              type="checkbox"
-              checked={value.selectable}
-              onChange={(e) =>
-                setValue({ ...value, selectable: e.target.checked })
-              }
-            />{" "}
-            Disponible para nuevos montajes
-          </label>
-          <Fields
-            fields={sourceFields}
-            value={{ sources: value.sources }}
-            onChange={(v) =>
-              setValue({ ...value, sources: v.sources as Preset["sources"] })
-            }
-          />
-          <h3>Montaje</h3>
-          <label className="field">
-            Pieza
-            <select
-              value={slot}
-              onChange={(e) => {
-                setSlot(e.target.value as Slot);
-                setSearch("");
-                setPage(0);
-              }}
-            >
-              {slots.map((s) => (
-                <option key={s} value={s}>
-                  {value.items.some((i) => i.slot === s) ? "✓ " : ""}
-                  {slotLabels[s]}
-                </option>
-              ))}
-            </select>
-          </label>
-          {selected && item && (
-            <section className="selected-piece">
-              <p>{selected.component.brands.name}</p>
-              <h4>
-                {selected.component.name} · {selected.label}
-              </h4>
-              <label className="field">
-                Acabado
-                <select
-                  value={item.finishId}
-                  onChange={(e) =>
-                    updateItem({
-                      ...item,
-                      finishId: e.target.value,
-                      customColor: null,
-                    })
-                  }
-                >
-                  {selected.allowed_finishes.options.map((f) => (
-                    <option key={f.id} value={f.id}>
-                      {f.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              {selected.allowed_finishes.custom_color_enabled && (
-                <label className="color-field">
-                  Color personalizado
-                  <input
-                    type="color"
-                    value={
-                      item.customColor ??
-                      selected.allowed_finishes.options.find(
-                        (f) => f.id === item.finishId,
-                      )?.material.color ??
-                      "#252a25"
-                    }
-                    onChange={(e) =>
-                      updateItem({ ...item, customColor: e.target.value })
-                    }
-                  />
-                </label>
-              )}
-              <button
-                type="button"
-                className="text-button danger"
-                onClick={() =>
+          <fieldset disabled={busy || readOnly}>
+            <label className="field">
+              Nombre
+              <input
+                required
+                maxLength={150}
+                value={value.name}
+                onChange={(e) =>
                   setValue({
                     ...value,
-                    items: value.items.filter((i) => i.slot !== slot),
+                    name: e.target.value,
+                    slug: value.published
+                      ? value.slug
+                      : slugify(e.target.value + " " + value.label),
+                    family_key: value.published
+                      ? value.family_key
+                      : slugify(e.target.value),
                   })
                 }
+              />
+            </label>
+            <label className="field">
+              Versión / talla
+              <input
+                required
+                value={value.label}
+                onChange={(e) =>
+                  setValue({
+                    ...value,
+                    label: e.target.value,
+                    slug: value.published
+                      ? value.slug
+                      : slugify(value.name + " " + e.target.value),
+                  })
+                }
+              />
+            </label>
+            <label className="field">
+              Familia
+              <input
+                required
+                value={value.family_key}
+                onChange={(e) =>
+                  setValue({ ...value, family_key: slugify(e.target.value) })
+                }
+              />
+            </label>
+            <label className="field">
+              Enlace
+              <input
+                required
+                value={value.slug}
+                onChange={(e) =>
+                  setValue({ ...value, slug: slugify(e.target.value) })
+                }
+              />
+            </label>
+            <label className="field">
+              Marca
+              <select
+                value={value.brand_id}
+                onChange={(e) =>
+                  setValue({ ...value, brand_id: e.target.value })
+                }
               >
-                <Trash2 size={14} /> Quitar pieza
-              </button>
-            </section>
-          )}
-          <label className="field">
-            Buscar alternativa
-            <input
-              value={search}
-              onChange={(e) => {
-                setSearch(e.target.value);
-                setPage(0);
-              }}
+                {brands.map((b) => (
+                  <option key={b.id} value={b.id}>
+                    {b.name}
+                  </option>
+                ))}
+              </select>
+            </label>
+            <label className="field">
+              Tipo
+              <select
+                value={value.kind}
+                onChange={(e) =>
+                  setValue({ ...value, kind: e.target.value as Preset["kind"] })
+                }
+              >
+                <option value="example">Ejemplo ATLAS</option>
+                <option value="factory">Montaje de fábrica</option>
+              </select>
+            </label>
+            <label className="field">
+              Año
+              <input
+                type="number"
+                min={1990}
+                max={2200}
+                value={value.model_year ?? ""}
+                onChange={(e) =>
+                  setValue({
+                    ...value,
+                    model_year: e.target.value ? Number(e.target.value) : null,
+                  })
+                }
+              />
+            </label>
+            {value.published ? (
+              <p className="muted">
+                {value.selectable
+                  ? "Disponible para nuevos montajes"
+                  : "Retirada de nuevas selecciones"}
+              </p>
+            ) : (
+              <label className="checkbox-field">
+                <input
+                  type="checkbox"
+                  checked={value.selectable}
+                  onChange={(e) =>
+                    setValue({ ...value, selectable: e.target.checked })
+                  }
+                />{" "}
+                Disponible para nuevos montajes
+              </label>
+            )}
+            <Fields
+              fields={sourceFields}
+              value={{ sources: value.sources }}
+              onChange={(v) =>
+                setValue({ ...value, sources: v.sources as Preset["sources"] })
+              }
             />
-          </label>
-          {candidates.isPending ? (
-            <Loading />
-          ) : candidates.error ? (
-            <Notice>No se pudieron cargar las piezas.</Notice>
-          ) : (
-            <div className="piece-options">
-              {candidates.data.components.flatMap((c) =>
-                c.component_variants.map((v) => (
-                  <button
-                    type="button"
-                    key={v.id}
-                    disabled={v.id === item?.variantId}
-                    onClick={() =>
+            <h3>Montaje</h3>
+            <label className="field">
+              Pieza
+              <select
+                value={slot}
+                onChange={(e) => {
+                  setSlot(e.target.value as Slot);
+                  setSearch("");
+                  setPage(0);
+                }}
+              >
+                {slots.map((s) => (
+                  <option key={s} value={s}>
+                    {value.items.some((i) => i.slot === s) ? "✓ " : ""}
+                    {slotLabels[s]}
+                  </option>
+                ))}
+              </select>
+            </label>
+            {selected && item && (
+              <section className="selected-piece">
+                <p>{selected.component.brands.name}</p>
+                <h4>
+                  {selected.component.name} · {selected.label}
+                </h4>
+                <label className="field">
+                  Acabado
+                  <select
+                    value={item.finishId}
+                    onChange={(e) =>
                       updateItem({
-                        slot,
-                        variantId: v.id,
-                        finishId: v.allowed_finishes.default_finish_id,
+                        ...item,
+                        finishId: e.target.value,
                         customColor: null,
                       })
                     }
                   >
-                    <span>
-                      <small>{c.brands.name}</small>
-                      <strong>{c.name}</strong>
-                      <span>
-                        {v.label}
-                        {!v.published
-                          ? " · Borrador"
-                          : !v.selectable
-                            ? " · Retirada"
-                            : ""}
-                      </span>
-                    </span>
-                  </button>
-                )),
-              )}
-            </div>
-          )}
-          <div className="pagination">
-            <button
-              type="button"
-              className="button outline"
-              disabled={!page}
-              onClick={() => setPage((p) => p - 1)}
-            >
-              Anterior
-            </button>
-            <span>{page + 1}</span>
-            <button
-              type="button"
-              className="button outline"
-              disabled={
-                !candidates.data || (page + 1) * 24 >= candidates.data.count
-              }
-              onClick={() => setPage((p) => p + 1)}
-            >
-              Siguiente
-            </button>
-          </div>
-          {error && <Notice>{error}</Notice>}
-          {message && (
-            <p className="success-notice" role="status">
-              {message}
-            </p>
-          )}
-          <div className="panel-save-actions">
-            <button
-              className="button outline"
-              type="submit"
-              disabled={
-                busy ||
-                (value.published &&
-                  !auth.permissions.includes("presets.publish"))
-              }
-            >
-              {value.published ? "Guardar cambios" : "Guardar borrador"}
-            </button>
-            {!value.published &&
-              auth.permissions.includes("presets.publish") && (
+                    {selected.allowed_finishes.options.map((f) => (
+                      <option key={f.id} value={f.id}>
+                        {f.label}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                {selected.allowed_finishes.custom_color_enabled && (
+                  <label className="color-field">
+                    Color personalizado
+                    <input
+                      type="color"
+                      value={
+                        item.customColor ??
+                        selected.allowed_finishes.options.find(
+                          (f) => f.id === item.finishId,
+                        )?.material.color ??
+                        "#252a25"
+                      }
+                      onChange={(e) =>
+                        updateItem({ ...item, customColor: e.target.value })
+                      }
+                    />
+                  </label>
+                )}
                 <button
                   type="button"
-                  className="button dark"
-                  disabled={busy}
-                  onClick={() => void save(true)}
+                  className="text-button danger"
+                  onClick={() =>
+                    setValue({
+                      ...value,
+                      items: value.items.filter((i) => i.slot !== slot),
+                    })
+                  }
                 >
-                  Publicar
+                  <Trash2 size={14} /> Quitar pieza
                 </button>
-              )}
-          </div>
+              </section>
+            )}
+            <label className="field">
+              Buscar alternativa
+              <input
+                value={search}
+                onChange={(e) => {
+                  setSearch(e.target.value);
+                  setPage(0);
+                }}
+              />
+            </label>
+            {candidates.isPending ? (
+              <Loading />
+            ) : candidates.error ? (
+              <Notice>No se pudieron cargar las piezas.</Notice>
+            ) : (
+              <div className="piece-options">
+                {candidates.data.components.flatMap((c) =>
+                  c.component_variants.map((v) => (
+                    <button
+                      type="button"
+                      key={v.id}
+                      disabled={v.id === item?.variantId}
+                      onClick={() =>
+                        updateItem({
+                          slot,
+                          variantId: v.id,
+                          finishId: v.allowed_finishes.default_finish_id,
+                          customColor: null,
+                        })
+                      }
+                    >
+                      <span>
+                        <small>{c.brands.name}</small>
+                        <strong>{c.name}</strong>
+                        <span>
+                          {v.label}
+                          {!v.published
+                            ? " · Borrador"
+                            : !v.selectable
+                              ? " · Retirada"
+                              : ""}
+                        </span>
+                      </span>
+                    </button>
+                  )),
+                )}
+              </div>
+            )}
+            <div className="pagination">
+              <button
+                type="button"
+                className="button outline"
+                disabled={!page}
+                onClick={() => setPage((p) => p - 1)}
+              >
+                Anterior
+              </button>
+              <span>{page + 1}</span>
+              <button
+                type="button"
+                className="button outline"
+                disabled={
+                  !candidates.data || (page + 1) * 24 >= candidates.data.count
+                }
+                onClick={() => setPage((p) => p + 1)}
+              >
+                Siguiente
+              </button>
+            </div>
+            {error && <Notice>{error}</Notice>}
+            {message && (
+              <p className="success-notice" role="status">
+                {message}
+              </p>
+            )}
+          </fieldset>
         </form>
       </Drawer>
       {guard.dialog}
