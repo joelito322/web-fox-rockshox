@@ -143,3 +143,5 @@ Revisión integral de suspensión v2 implementada en fase3: quince modelos/30 ta
 
 
 Política de archivos finales y archivo local aprobada: [models/README.md](../../models/README.md). Fotos visibles y GLB publicados se versionan; investigación/resultados/prototipos permanecen locales. No convertir un informe generado en requisito para ejecutar los tests de producto.
+
+- [06g · Avisos globales de compatibilidad](06g-avisos-globales-de-compatibilidad.md): barra global, panel reutilizado, posiciones afectadas y límites documentados sin bloquear el armado.

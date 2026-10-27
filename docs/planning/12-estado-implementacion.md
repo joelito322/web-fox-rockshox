@@ -544,3 +544,19 @@ Refactorización autorizada de06f completada: navegación agrupada y contexto po
 Build correcto, **503 pruebas unitarias correctas y2 prototipos omitidos** (76 archivos). Ocho comprobaciones de la suite nueva entre escritorio/móvil emulado: recorridos, seguridad/concurrencia/lote de roles y teclado/texto ampliado/acciones fijas. Regresiones administrativas existentes y revocación correctas; auditoría de consultas correcta. Responsive repetido sobre las vistas refactorizadas:448 mediciones y24 límites de panel, sin desbordamiento global ni errores JavaScript. Cuentas y fixtures temporales eliminados. Detalle de comandos, capturas inspeccionadas, fallos iniciales corregidos y límites en [12z](12z-evidencia-administracion-modular.md). Sin certificación de móvil físico/SMTP/FPS, sin publicar frontend ni crear commits por esta implementación.
 
 Auditoría adversarial posterior con tres agentes y revisión cruzada: corregidos sincronización de detalles con historial, respuestas tardías, recuperación de invitación parcial, confirmaciones, paginación/foco de matriz, revisión NULL IAM y reinicio del contexto que interrumpía login/callback. Nueva regresión de aislamiento incluye A→B→A. Migración027 y prueba SQL transaccional aplicadas sin fixtures persistentes; evidencia de recorridos y límites en12z.
+
+
+## Avisos globales de compatibilidad · 27/10/2026
+
+Implementación autorizada de06g: barra persistente, panel de detalles con Drawer compartido, medidas comparadas, selección por posición y avisos accesibles en índice. Reutiliza reglas existentes de ejes, ruedas, frenos, transmisión y amortiguador; añade límites de horquilla documentados por generación/año/talla y distinción de dato ausente. Cuatro modelos con límites numéricos oficiales: Nomad7 (recorrido), META SX V5/FRS V3/SUPREME DH V5 (altura máxima eje-corona). Los demás muestran restricciones informativas/datos por confirmar; no se inventan intervalos. No bloquea armado, guardado o reapertura.
+
+Cuatro casos nuevos de navegador correctos entre escritorio/móvil emulado y tres regresiones existentes correctas; se comprobó guardar/reabrir con aro/neumático discordantes, corrección/deshacer, foco y Nomad con horquilla fuera de intervalo. Capturas inspeccionadas locales, cuentas y montajes temporales limpiados. Build y escaneo de secretos correctos. Sin cambio de datos publicados, tablas o migraciones:27 migraciones,70 modelos/782 variantes/780 recursos,146 elecciones y cuatro prearmadas. Fuentes, reproducción, alcance numérico y límites en [06g](06g-avisos-globales-de-compatibilidad.md). Sin commits ni push por esta entrega.
+
+Suite completa posterior:514 pruebas correctas, dos prototipos omitidos,78 archivos; sin fallos.
+
+
+### Vacío posterior al footer del configurador · 27/10/2026
+
+Aclaración del usuario: espacio vacío posterior a los tres textos del pie, que debe terminar automáticamente según contenido. Reproducción con incompatibilidad manillar/potencia: footer en1021px y documento de1965px,944px vacíos. Dos etiquetas accesibles absolutas del índice usaban BODY como bloque contenedor y extendían el scroll fuera del panel. Corrección mínima: icono position:relative y etiqueta anclada con inset0. Se conservaron las descripciones accesibles. Se retiraron las restricciones adicionales de altura del diagnóstico anterior: no se corta body/página ni se fija el footer. La regresión compara el final real del footer con scrollHeight en seis anchos y suspensión abierta/cerrada, y aumenta los textos para comprobar adaptación natural. Evidencia y evolución del diagnóstico en06g. Sin cambios de datos/GLB ni commits.
+
+Verificación del arreglo definitivo: doce combinaciones correctas, sin hueco posterior al footer salvo redondeo inferior a1px, y prueba de aumento de texto en tres anchos correcta. Conservadas descripciones de lector de pantalla.

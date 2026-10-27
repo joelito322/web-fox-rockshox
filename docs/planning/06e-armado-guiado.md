@@ -43,3 +43,8 @@ La selección visual se separa del grupo/posición que edita el panel. Un clic v
 Ajuste posterior solicitado: aumentar la visibilidad del pulso, conservando el ciclo lento de 2,4 s. La emisión oscila entre 0,12 y 0,60; no se hace aparecer/desaparecer la pieza ni se modifica el color guardado. Movimiento reducido mantiene el resaltado fijo.
 
 Resultado: UI y selección comprobadas con cuatro recorridos por plataforma (escritorio/móvil emulado), tres pruebas visuales de selección/sombras y seis regresiones de consultas/reapertura; build y 139 pruebas unitarias correctos. Evidencia y límites en [12](12-estado-implementacion.md). No es aceptación de Android físico ni certificación mecánica.
+
+
+## Compatibilidad global · 27/10/2026
+
+[06g](06g-avisos-globales-de-compatibilidad.md) sustituye el bloque de avisos al pie del selector por barra global persistente y panel reutilizado, con indicadores por posición. Mantener selección/guardado libres y distinguir conflicto de información insuficiente.
