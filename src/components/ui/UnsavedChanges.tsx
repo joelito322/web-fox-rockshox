@@ -52,7 +52,7 @@ export function useUnsavedChanges(
     else action?.();
   }
   const dialog = visible ? (
-    <Drawer title="Cambios sin guardar" onClose={cancel}>
+    <Drawer title="Cambios sin guardar" onClose={cancel} busy={busy}>
       <p>Guarda los cambios antes de continuar o descártalos.</p>
       <div className="stack-actions">
         <button
