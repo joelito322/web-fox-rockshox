@@ -591,3 +591,16 @@ Usuario publica https://atlasmtb.netlify.app mediante GitHub. Verificar rutas pr
 Resultado del primer despliegue: frontend HTTPS verificado en atlasmtb.netlify.app, rutas públicas e imágenes/GLB accesibles y filtro móvil/Google de salida correctos. CORS admin-users corregido, desplegado y validado sin abrir acceso anónimo. Retorno OAuth público pendiente de actualización Dashboard por PATCH HTTP 403; detalle en 07/12. Sin prueba de consentimiento/guardado público ni de correo.
 
 Confirmación posterior de fase 6: usuario valida acceso Google en dominio público; lectura de Auth confirma Site URL/callback público, origen local conservado y Google activo. Queda resuelto el ajuste de URLs de Netlify. Persisten solo las limitaciones de evidencia indicadas en 12; no se generó evidencia automatizada de correo o de guardado público por esta confirmación.
+
+
+## Ampliación futura: tienda y venta asistida · 27/10/2026
+
+Plan en [13](13-tienda-y-venta-asistida.md), con autorización documental solamente. No se declara implementado por existir el configurador ni se inicia al continuar fases anteriores. Secuencia propuesta: cerrar contratos → ofertas/stock simple → promociones → carrito/propuesta/pedido → interfaz de pago demo → seguimiento → validación integral. Mantener reglas visuales libres y separar revisión de armado, oferta vendible y confirmación de pago. Integración financiera automática no pertenece al primer alcance. Las decisiones propuestas, dependencias y comprobaciones completas están en13.
+
+Revisión comercial posterior: [13a](13a-contratos-y-validacion-comercial.md) cierra ambigüedades de autoridad de precio, stock, pago y versión de propuestas. Carrito remoto por cuenta, retiro/envío cotizado y armado opcional confirmados por usuario. No se inicia ejecución ni se confunden pruebas documentales con validación Cloud de comercio.
+
+
+Esquema comercial y ejecución detallados en [13c](13c-esquema-comercial-y-operaciones.md): once tablas propuestas y contratos de operaciones, permisos, concurrencia e índices. La futura fase de contratos incluye límites numéricos, moneda, plazos y política de cuenta; después migraciones nuevas/RLS/RPC, UI reutilizada y pruebas integrales. No exigir que estas comprobaciones ocurran fuera del plan ni dar por implementada una fase por tener el documento.
+
+
+La [revisión cruzada comercial13d](13d-revision-cruzada-del-plan-comercial.md) registra hallazgos y una matriz obligatoria de aceptación para las fases comerciales. Sus correcciones documentales no sustituyen ejecutar pruebas de concurrencia/RLS, verificar UI y medir consultas una vez construido el alcance.
