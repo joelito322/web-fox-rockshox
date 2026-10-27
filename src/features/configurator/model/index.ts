@@ -1,5 +1,6 @@
 import { z } from "zod";
 import { compareAxles } from "./axles";
+import { frameForkWarnings, warningPositions, wheelMeasure } from "./compatibility";
 import type { Category, SelectedVariant } from "../../catalog/model";
 
 export const slotCategories = {
@@ -163,6 +164,9 @@ export type MountWarning = {
   code: string;
   message: string;
   level: "conflict" | "unknown";
+  slots?: Slot[];
+  details?: { label: string; value: string }[];
+  sourceUrl?: string;
 };
 export function warnings(
   configuration: Configuration,
@@ -177,13 +181,14 @@ export function warnings(
     code: string,
     message: string,
     level: MountWarning["level"] = "conflict",
-  ) => result.push({ code, message, level });
+  ) => result.push({ code, message, level, slots: warningPositions(code) });
   const object = (value: unknown): Record<string, unknown> =>
     value && typeof value === "object" && !Array.isArray(value)
       ? (value as Record<string, unknown>)
       : {};
-  const compare = (code: string, a: unknown, b: unknown, message: string) => {
-    if (a != null && b != null && a !== b) add(code, message);
+  const compare = (code: string, a: unknown, b: unknown, message: string, details?: MountWarning["details"]) => {
+    if (a != null && b != null && a !== b)
+      result.push({ code, message, level: "conflict", slots: warningPositions(code), details });
   };
   const bsd = (value: unknown) =>
     value === "29" || value === "29-inch"
@@ -204,6 +209,7 @@ export function warnings(
     cranks = get("crankset");
   if (configuration.items.length && !frame)
     add("frame_missing", "Falta seleccionar el cuadro.", "unknown");
+  result.push(...frameForkWarnings(frame, fork));
   for (const position of ["front", "rear"] as const) {
     const label = position === "front" ? "delantero" : "trasero";
     const tire = get(`${position}_tire`),
@@ -216,8 +222,12 @@ export function warnings(
       tire?.specs.wheel_bsd_mm,
       rim?.specs.wheel_bsd_mm,
       `El aro y el neumático ${label}s tienen diámetros distintos.`,
+      [{ label: `Aro ${label}`, value: wheelMeasure(rim?.specs.wheel_bsd_mm) },
+       { label: `Neumático ${label}`, value: wheelMeasure(tire?.specs.wheel_bsd_mm) }],
     );
-    const actualBSD = tire?.specs.wheel_bsd_mm ?? rim?.specs.wheel_bsd_mm;
+    if (rim && tire && (rim.specs.wheel_bsd_mm == null || tire.specs.wheel_bsd_mm == null))
+      add(`${position}_wheel_unknown`, `Falta el diámetro del aro o del neumático ${label} para comprobarlos.`, "unknown");
+    const actualBSD = rim?.specs.wheel_bsd_mm ?? tire?.specs.wheel_bsd_mm;
     const frameBSD = bsd(
       frame?.specs[position === "front" ? "wheel_front" : "wheel_rear"],
     );
@@ -226,6 +236,7 @@ export function warnings(
       frameBSD,
       actualBSD,
       `El aro ${label} difiere del formato indicado para el cuadro.`,
+      [{ label: "Cuadro", value: wheelMeasure(frameBSD) }, { label: `Rueda ${label}`, value: wheelMeasure(actualBSD) }],
     );
     if (position === "front")
       compare(
@@ -233,6 +244,7 @@ export function warnings(
         fork?.specs.wheel_bsd_mm,
         actualBSD,
         "La horquilla y la rueda delantera indican diámetros distintos.",
+        [{ label: "Horquilla", value: wheelMeasure(fork?.specs.wheel_bsd_mm) }, { label: "Rueda delantera", value: wheelMeasure(actualBSD) }],
       );
     if (rotor && hub)
       compare(
