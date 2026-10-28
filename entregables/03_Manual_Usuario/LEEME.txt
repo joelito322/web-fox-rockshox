@@ -5,7 +5,7 @@ Fecha de portada: 21 de octubre de 2026
 CONTENIDO
 - manual.tex: único archivo LaTeX con todos los apartados, tablas y referencia.
 - manual.pdf: manual compilado, con capturas integradas y navegación por índice.
-- recursos/: capturas reales, registro de comprobaciones y tipografías con licencia.
+- recursos/: capturas reales, procedencia y tipografías con licencia.
 
 COMPILAR
 Abre una terminal en esta carpeta y ejecuta:
@@ -23,7 +23,8 @@ longtable, tabularx, array, ragged2e, caption, float, enumitem, fancyhdr,
 hyperref y xurl.
 
 No necesitas credenciales, variables de entorno ni acceso a Supabase para compilar.
-Para utilizar la aplicación, consulta https://atlasmtb.netlify.app/.
+La publicación anterior está en https://atlasmtb.netlify.app/.
+Esta revisión se demuestra en http://localhost:5174/ con el frontend activo.
 
 CRITERIOS
 - Estructura académica y formato basado en APA 7, con instrucciones de uso prácticas.
@@ -35,3 +36,17 @@ CRITERIOS
 - La representación 3D y la suspensión son aproximaciones visuales.
 - La revisión móvil corresponde a emulación de navegador.
 - Informe técnico, presentación y paquete del software son entregables independientes.
+
+ALCANCE DE LA REVISIÓN 28/10/2026
+Se actualizan la fuente LaTeX y el PDF, manteniendo formato, tipografías,
+portada académica del 21/10/2026 y, en presentación, doce láminas 16:9.
+Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
+opcional con tarifa inicial S/150 editable y exoneración administrativa,
+notificaciones, pedidos, métodos de pago simulados y alternativas de
+compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
+Estado registrado: 24 tablas propias, 41 migraciones; 564 pruebas correctas,
+2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
+Las capturas se renovaron con cuentas temporales y limpieza comprobada;
+no se modificaron precios, catálogo ni cuentas reales durante las capturas.
+Esta revisión no implica push ni despliegue. La publicación previa puede
+mostrar otra versión. Cobros reales, SMTP y móvil físico no certificados.

@@ -11,7 +11,7 @@
 \usepackage{caption,float,enumitem,fancyhdr}
 \usepackage[hidelinks,unicode]{hyperref}
 \usepackage{xurl}
-\hypersetup{pdftitle={Manual de usuario de ATLAS MTB},pdfauthor={Joel Ito Luque},pdfsubject={Selección, comparación y configuración tridimensional de bicicletas de montaña}}
+\hypersetup{pdftitle={Manual de usuario de ATLAS MTB},pdfauthor={Joel Ito Luque},pdfsubject={Venta asistida, montaje visual, cotizaciones y pedidos de componentes MTB}}
 \doublespacing\RaggedRight
 \setlength{\parindent}{1.27cm}\setlength{\parskip}{0pt}\setlength{\headheight}{15pt}
 \pagestyle{fancy}\fancyhf{}\fancyhead[R]{\thepage}\renewcommand{\headrulewidth}{0pt}
@@ -25,7 +25,7 @@
 \newcommand{\nota}[1]{\par\vspace{3pt}{\singlespacing\small\RaggedRight\noindent\textit{Nota.} #1\par}}
 \newcommand{\resultado}[1]{\par\noindent\textbf{Resultado esperado.} #1\par}
 \newcommand{\consejo}[1]{\par\noindent\textbf{Ten en cuenta.} #1\par}
-\newcommand{\captura}[5]{\begin{figure}[H]\caption{#2}\label{#1}\centering\includegraphics[width=#4\textwidth,height=#5\textheight,keepaspectratio]{recursos/#3}\nota{Captura propia de los controles de la web publicada. Los datos de práctica pertenecen a una cuenta temporal.}\end{figure}}
+\newcommand{\captura}[5]{\begin{figure}[H]\caption{#2}\label{#1}\centering\includegraphics[width=#4\textwidth,height=#5\textheight,keepaspectratio]{recursos/#3}\nota{Captura propia de los controles de la versión actual local, conectada al backend Cloud. Los datos de práctica pertenecen a una cuenta temporal.}\end{figure}}
 \begin{document}
 \begin{titlepage}
 \thispagestyle{fancy}\centering
@@ -34,7 +34,7 @@
 Facultad de Ciencias de la Ingeniería\par
 Ingeniería de Software y Sistemas\par
 \vspace{1.5cm}
-{\large\bfseries Manual de usuario de la plataforma web para la selección, comparación y configuración tridimensional de bicicletas de montaña\par}
+{\large\bfseries Manual de usuario de la plataforma web de venta asistida y configuración tridimensional de bicicletas de montaña\par}
 \vspace{0.6cm}\textbf{ATLAS MTB}\par
 Entregable 3\par
 \vspace{1cm}Joel Ito Luque\par
@@ -46,11 +46,11 @@ Octavo semestre\par
 \end{titlepage}
 \setcounter{page}{2}
 \section*{Presentación}\addcontentsline{toc}{section}{Presentación}
-Este manual explica cómo consultar piezas de bicicletas de montaña, comparar sus versiones, preparar un montaje visual y conservarlo en una cuenta personal. Está dirigido a personas que utilizan la web y a quienes tienen autorización para administrar sus contenidos y accesos.
+Este manual explica cómo consultar componentes, comparar variantes, preparar y guardar un montaje visual, resolver avisos, utilizar el carrito y revisar una compra asistida con armado opcional. Está dirigido a personas que utilizan la web y a quienes tienen autorización para administrar sus contenidos y accesos.
 
 Los procedimientos emplean los nombres de los botones, pestañas y campos de ATLAS MTB. No se necesita instalar el proyecto ni conocer programación. Los ejemplos utilizan nombres de práctica y describen las piezas por su función, sin depender de un fabricante específico.
 
-El documento corresponde a la versión revisada el 21 de octubre de 2026. Las capturas muestran controles reales de la web publicada; se recortan las zonas pertinentes para facilitar su lectura. La disposición puede variar según el ancho de la pantalla y las acciones disponibles dependen de los permisos de la cuenta.
+La portada conserva la fecha académica solicitada; el contenido corresponde a la revisión funcional del 28 de octubre de 2026. Las capturas muestran controles reales del código local conectado a Supabase Cloud; se recortan las zonas pertinentes para facilitar su lectura. La disposición puede variar según el ancho de la pantalla y las acciones disponibles dependen de los permisos de la cuenta.
 
 La representación tridimensional ayuda a explorar el aspecto de un conjunto. No sustituye la revisión de medidas, instrucciones de montaje ni evaluación de un especialista antes de adquirir o instalar piezas físicas.
 \clearpage\tableofcontents
@@ -58,7 +58,7 @@ La representación tridimensional ayuda a explorar el aspecto de un conjunto. No
 \clearpage
 \section{Primeros pasos}
 \subsection{Dirección y requisitos de uso}
-Abre \url{https://atlasmtb.netlify.app/} en un navegador con conexión a Internet. Puedes consultar el catálogo como visitante. Para crear y conservar montajes personales necesitas iniciar sesión con una cuenta habilitada.
+La publicación previa se encuentra en \url{https://atlasmtb.netlify.app/}. Para utilizar las funciones de esta revisión antes de su despliegue, abre \url{http://localhost:5174/} con el frontend local levantado por el responsable. La actualización del manual no publica el software por sí sola. Usa un navegador con conexión a Internet. Puedes consultar el catálogo como visitante. Para crear y conservar montajes personales necesitas iniciar sesión con una cuenta habilitada.
 
 La vista tridimensional requiere que el navegador pueda mostrar gráficos 3D. Si no está disponible, utiliza la lista de piezas del configurador. La carga inicial puede tardar mientras se descargan las referencias visuales; espera a que termine antes de repetir una selección.
 
@@ -74,9 +74,9 @@ Visor 3D & Si falla, continúa con \control{Lista sin 3D} y revisa el montaje po
 \subsection{Qué puedes hacer según tu acceso}
 \begin{table}[H]\caption{Acciones según el tipo de acceso}\label{tab:accesos}\begin{tabla}\begin{tabularx}{\textwidth}{L{3cm}XX}\toprule
 Acceso & Acciones habituales & Observación\\\midrule
-Visitante & Consultar bicicletas y componentes; abrir fichas y comparar. & Para configurar o consultar montajes privados, la web solicita sesión y permisos.\\
-Cuenta de usuario & Configurar, guardar, continuar, renombrar y eliminar sus propios montajes, si tiene los permisos correspondientes. & Los montajes de otra cuenta no aparecen en su espacio personal.\\
-Cuenta administradora & Acciones autorizadas sobre catálogo, bicicletas de referencia, usuarios, roles y permisos. & No todos los administradores o roles personalizados tienen necesariamente las mismas acciones.\\\bottomrule
+Visitante & Consultar catálogo, precios, condición, fichas y comparación; añadir al carrito del navegador. & Para configurar o consultar montajes privados, la web solicita sesión y permisos.\\
+Cuenta de usuario & Configurar y gestionar sus montajes, conservar el carrito por cuenta, solicitar cotizaciones y consultar sus pedidos. & Los montajes de otra cuenta no aparecen en su espacio personal.\\
+Cuenta administradora & Acciones autorizadas de catálogo, prearmadas, accesos, ofertas, promociones, cotizaciones y pedidos. & No todos los administradores o roles personalizados tienen necesariamente las mismas acciones.\\\bottomrule
 \end{tabularx}\end{tabla}\end{table}
 
 \subsection{Ruta rápida para tu primer montaje}\label{sec:rapida}
@@ -86,7 +86,7 @@ Cuenta administradora & Acciones autorizadas sobre catálogo, bicicletas de refe
 \item Pulsa \control{Personalizar} para abrir una copia editable de esa composición.
 \item Escribe \textit{Mi bicicleta de práctica} en \control{Nombre del montaje}.
 \item Explora las vistas y elige una posición del montaje para consultar sus alternativas.
-\item Revisa los \control{Avisos del montaje} y pulsa \control{Guardar}.
+\item Revisa el \control{Estado de compatibilidad} y pulsa \control{Guardar}.
 \item Espera el estado \control{Guardado}; después abre \control{Mis bicicletas}.
 \item Localiza el nombre de práctica y pulsa \control{Continuar} para retomar la edición.
 \end{enumerate}
@@ -256,7 +256,7 @@ Piezas del montaje & Localizar una de las 23 posiciones y comprobar cuáles tien
 Visor central & Explorar la representación y elegir una pieza visible.\\
 Grupos y alternativas & Elegir función, posición, medida, talla y variante.\\
 Acabados y Color & Ajustar la apariencia permitida por la pieza seleccionada.\\
-Avisos del montaje & Revisar incompatibilidades o datos insuficientes detectados.\\\bottomrule
+Estado de compatibilidad & Revisar incompatibilidades o datos insuficientes detectados.\\\bottomrule
 \end{tabularx}\end{tabla}\end{table}
 
 \subsection{Elegir el grupo y la posición}
@@ -318,10 +318,18 @@ Después de una edición compatible con esa función, \control{Deshacer último 
 
 El cuadro no se retira con el botón de quitar. Para sustituirlo, selecciona otro cuadro y resuelve el diálogo \control{Cambiar de cuadro}: \control{Guardar y cambiar}, \control{Cambiar sin guardar} o \control{Cambiar cuadro}, según el estado, y \control{Seguir con este cuadro} para cancelar. Las demás piezas se conservan y se revisan los avisos del nuevo conjunto.
 
-\subsection{Revisar los avisos}
-Abre \control{Avisos del montaje} para leer las observaciones. Algunas indican diferencias de medidas o interfaces; otras reflejan información insuficiente. Una selección que la aplicación permite conservar no equivale a una aprobación mecánica.
+\subsection{Revisar avisos y elegir una solución}
+\begin{enumerate}
+\item En la barra \control{Estado de compatibilidad}, pulsa \control{Ver detalles}. El panel separa \control{Incompatibilidades} de \control{Datos por confirmar}.
+\item Dentro de un conflicto conocido, pulsa \control{Ver alternativas}.
+\item Elige la posición que quieres sustituir, por ejemplo \control{Aro delantero} o \control{Neumático delantero}.
+\item Revisa foto, modelo, medida, acabado y los avisos que resuelve la opción. El precio y la diferencia aparecen cuando hay ofertas comparables; si faltan, se indica su ausencia.
+\item Pulsa \control{Usar esta pieza}. Cambia únicamente esa posición, incluso si está activa la aplicación conjunta a ambos lados.
+\item Comprueba el resultado. Puedes utilizar \control{Deshacer último cambio} o guardar y volver a abrir el montaje.
+\end{enumerate}
+Si no existe una alternativa comprobable entre los modelos consultados, revisa otra posición o continúa con la elección manual. \control{Más opciones} y \control{Siguientes modelos} aparecen cuando hay otras páginas. Un dato ausente no equivale a compatibilidad; las observaciones pendientes se conservan. La revisión del taller sigue siendo necesaria antes del armado físico.
+\captura{fig:alternativas}{Alternativas para resolver una incompatibilidad de rueda}{15-alternativas.png}{.96}{.64}
 
-Para resolver un aviso, identifica las posiciones mencionadas, abre \control{Ficha de la pieza} y compara sus medidas. Sustituye la variante que corresponda o conserva la propuesta para revisarla con un especialista. No interpretes la ausencia de avisos como garantía universal de compatibilidad.
 \clearpage
 \section{Explorar el visor y la suspensión}
 \subsection{Cambiar la vista}
@@ -410,6 +418,58 @@ Si la aplicación detecta que otra edición ya guardó una versión más recient
 \subsection{Piezas de versiones anteriores}
 Un montaje guardado mantiene sus referencias anteriores aunque el catálogo publique una revisión nueva. Puedes ver una indicación de pieza retirada de nuevos montajes. Si deseas utilizar una versión nueva, selecciona de nuevo la pieza desde las alternativas y guarda el resultado; revisa sus avisos, medidas y acabados antes de sustituirla.
 \clearpage
+\section{Comprar componentes y solicitar armado}\label{sec:comprar}
+\subsection{Consultar precio y condición}
+La ficha muestra precio de venta por unidad, par o juego y la condición \control{Nuevo} o \control{Segunda mano}. No todos los componentes del montaje visual tienen oferta de venta. Comprueba qué incluye la unidad comercial: un freno individual no equivale a un juego delantero/trasero. Los importes iniciales son editables y no representan cotizaciones verificadas de todos los comercios peruanos.
+
+\subsection{Añadir y revisar el carrito}
+\begin{enumerate}
+\item En \control{Componentes}, abre una ficha y elige la versión y el acabado disponibles.
+\item Pulsa \control{Añadir al carrito}. Espera \control{Añadido al carrito}, el check y la respuesta del contador. Un error no muestra esa confirmación.
+\item Abre \control{Carrito} en la cabecera. Cada línea muestra un importe; el precio unitario se añade solo cuando llevas varias unidades.
+\item Utiliza \control{Sumar unidad}, \control{Restar unidad} o \control{Quitar}; revisa el total de componentes al final.
+\item Pulsa \control{Continuar pedido} para abrir \control{Revisar pedido}.
+\end{enumerate}
+\captura{fig:anadido}{Confirmación visible después de añadir un componente}{19-confirmacion-carrito.png}{.85}{.42}
+
+El carrito de visitante pertenece al navegador. Al iniciar sesión, si existe también un carrito de cuenta, elige explícitamente entre combinar o conservar una selección. El carrito remoto puede recuperarse desde otro dispositivo; cerrar sesión no lo elimina.
+\captura{fig:carrito}{Carrito con un importe por línea y total de componentes}{16-carrito.png}{.92}{.56}
+
+\subsection{Pasar un montaje al carrito}
+Desde el configurador, pulsa \control{Comprar componentes}. Revisa \control{Componentes de tu montaje}: se muestran las posiciones vendibles y las que no pueden convertirse en una oferta. Decide entre \control{Sumar al carrito} y \control{Reemplazar carrito completo}, cuando corresponda. Si hay cambios pendientes, resuelve \control{Guardar y salir} antes de continuar. La conversión no representa una aprobación mecánica ni compra por sí sola.
+
+\subsection{Revisar pedido y elegir el método de pago}
+\begin{enumerate}
+\item Completa \control{Destinatario} y \control{Correo o teléfono de contacto}.
+\item Elige \control{Retiro} o \control{Envío por cotizar}; si hay envío, introduce dirección, ciudad y región.
+\item En \control{Método de pago}, elige Yape, Plin, transferencia o tarjeta. En transferencia, selecciona BCP, Interbank, BBVA o Scotiabank.
+\item Revisa el importe. Pulsa \control{Ver resumen} cuando no se requiera cotización; si corresponde armado o envío, utiliza \control{Solicitar cotización}.
+\item Con el resumen vigente, pulsa \control{Crear pedido} y revisa su estado en \control{Mis pedidos}.
+\end{enumerate}
+Los logotipos identifican métodos de una \textbf{simulación}. No hay cuentas receptoras ni QR reales configurados; no debes transferir dinero ni introducir números de tarjeta. La preferencia de banco se conserva al crear el pedido y puede revisarse al simular el pago.
+\captura{fig:pago}{Selección del método de pago en Revisar pedido}{17-revisar-pedido.png}{1}{.7}
+
+\captura{fig:resumen}{Resumen de importes antes de crear un pedido}{21-resumen.png}{.86}{.58}
+
+\subsection{Solicitar armado y revisar una exoneración}
+\begin{enumerate}
+\item Marca \control{Solicitar armado con revisión técnica}. Aparece la tarifa inicial automática de S/\,150, que el administrador puede actualizar para solicitudes nuevas.
+\item En \control{Montaje que quieres armar}, selecciona un montaje guardado. Las piezas vendibles del montaje deben coincidir con la selección solicitada; usa la conversión desde el configurador para preparar esa lista.
+\item Pulsa \control{Solicitar cotización}. La tienda revisa las piezas y las condiciones antes de ofrecer el armado.
+\item Consulta la campana \control{Notificaciones} o abre \control{Mis pedidos}, pestaña \control{Cotizaciones}.
+\item Si la tienda exonera el servicio, aparecerá \control{Armado sin coste} o el aviso \control{Tu armado va sin coste}. No ocurre automáticamente por comprar muchas piezas.
+\item Pulsa \control{Revisar y aceptar}, comprueba el total y crea el pedido. Puedes marcar la notificación como leída; esa lectura se conserva en tu cuenta.
+\end{enumerate}
+Cambiar la tarifa global no reescribe solicitudes anteriores ni pedidos aceptados. Las cotizaciones tienen vigencia; si caducan o cambia la selección, solicita una revisión. Aceptar una apariencia visual sin conflictos detectados no sustituye la revisión del taller.
+\captura{fig:cotizacion}{Revisión administrativa del armado antes de publicar la cotización}{18-cotizacion.png}{.94}{.64}
+
+\captura{fig:notificacion}{Aviso de una cotización con armado sin coste}{20-notificacion.png}{.9}{.56}
+
+\subsection{Consultar pedidos y simular el resultado}
+En \control{Mi cuenta}, abre \control{Mis pedidos}. La pestaña \control{Pedidos} muestra estado y total; al abrir un pedido puedes revisar piezas, servicio, entrega, reserva y seguimiento. Mientras esté pendiente, usa \control{Simular aprobación}, \control{Simular rechazo} o \control{Cancelar simulación} para ensayar el resultado, sin cobro real.
+
+El cliente puede cancelar antes del pago; el administrador, antes de preparar, dentro de los estados permitidos. Una reserva puede vencer y un importe o stock cambiado puede requerir revisar el resumen. No repitas aprobaciones para forzar disponibilidad: consulta el estado actualizado. La cancelación de una simulación no equivale necesariamente a cancelar el pedido completo; utiliza \control{Cancelar pedido} y su motivo cuando corresponda.
+\clearpage
 \section{Uso desde una pantalla móvil}
 \begin{enumerate}
 \item Abre la misma dirección pública. No se requiere una aplicación móvil instalada.
@@ -431,7 +491,7 @@ Los nombres de posiciones permiten navegar sin seleccionar directamente objetos 
 \section{Administración para cuentas autorizadas}\label{sec:admin}
 Esta sección corresponde a quienes administran la plataforma. Si \control{Administración} no aparece en \control{Mi cuenta}, verifica la cuenta activa y consulta a la persona responsable. El registro público crea una cuenta de usuario; no concede administración por elegir un nombre o proveedor de acceso.
 
-Las pestañas y acciones dependen de los permisos asignados. Los procedimientos siguientes describen los controles implementados; las capturas de este manual se limitaron al recorrido de una cuenta de usuario, sin modificar el catálogo público ni los roles existentes.
+Las secciones y acciones dependen de los permisos asignados. Las capturas utilizan cuentas temporales y solicitudes propias de práctica; no editan el catálogo público ni elevan privilegios de cuentas reales.
 
 \subsection{Entrar y reconocer las secciones}
 \begin{enumerate}
@@ -442,11 +502,10 @@ Las pestañas y acciones dependen de los permisos asignados. Los procedimientos 
 \end{enumerate}
 \begin{table}[H]\caption{Secciones de administración}\label{tab:admin}\begin{tabla}\begin{tabularx}{\textwidth}{L{4cm}X}\toprule
 Sección & Finalidad\\\midrule
-Catálogo & Mantener modelos, variantes y datos de piezas con las acciones disponibles.\\
-Bicicletas de referencia & Editar composiciones públicas de ejemplo o de fábrica.\\
-Usuarios & Buscar cuentas, consultar su estado, invitar y asignar un rol cuando esté permitido.\\
-Roles & Crear y mantener roles personalizados.\\
-Permisos & Revisar y ajustar la matriz de acciones por rol autorizado.\\\bottomrule
+Catálogo & Componentes, Marcas y Recursos 3D, según permisos.\\
+Bicicletas & Prearmadas: composiciones públicas de referencia.\\
+Accesos & Usuarios, Roles y Permisos; una matriz para asignar acciones a roles.\\
+Ventas & Ofertas, Promociones y Pedidos; dentro de Pedidos, pestañas Pedidos y Cotizaciones.\\\bottomrule
 \end{tabularx}\end{tabla}\end{table}
 
 \subsection{Consultar usuarios y enviar una invitación}
@@ -492,6 +551,21 @@ No confundas el borrador con una pieza visible públicamente. Mantén informaci�
 \end{enumerate}
 Esta operación mantiene una base pública de personalización. Los montajes privados ya guardados conservan sus selecciones; revisa las versiones antes de asumir que una edición pública ha actualizado las bicicletas de cada persona.
 \clearpage
+\subsection{Gestionar ofertas, promociones y tarifa de armado}
+En \control{Ventas}, abre \control{Ofertas} para consultar precio, stock, condición y sus vínculos a variantes/acabados. Edita mediante el panel derecho y guarda los cambios; una referencia 3D no equivale a un SKU nuevo. En \control{Tarifa de armado}, modifica \control{Armado (S/)} y pulsa \control{Guardar tarifa}; afecta a solicitudes nuevas, no a cotizaciones o pedidos anteriores.
+
+En \control{Promociones}, define el descuento porcentual o fijo, vigencia y ofertas. Las promociones no se acumulan ni generan pedidos gratuitos. Revisa el importe antes de publicar una campaña; el servidor comprueba el contrato y la revisión de la edición.
+
+\subsection{Revisar cotizaciones y atender pedidos}
+\begin{enumerate}
+\item En \control{Ventas} abre \control{Pedidos} y selecciona \control{Cotizaciones}.
+\item Abre una solicitud para consultar piezas, montaje, datos de contacto y entrega.
+\item Revisa \control{Armado (S/)} y \control{Entrega (S/)}. Para exonerar el armado, marca \control{Armado sin coste}.
+\item Completa \control{Revisión técnica y condiciones} y pulsa \control{Publicar cotización}; el cliente recibirá el aviso en su cuenta. También puedes rechazar una solicitud según lo revisado.
+\item En la pestaña \control{Pedidos}, atiende las transiciones permitidas: preparación, listo y entrega. El seguimiento conserva esos eventos.
+\end{enumerate}
+El aviso se muestra dentro de ATLAS; no se presenta como un correo o notificación externa enviada. La revisión y la exoneración se realizan antes de la aceptación y creación del pedido; no se modifican importes de pedidos ya pagados desde estos controles.
+\clearpage
 \section{Problemas frecuentes y cómo resolverlos}\label{sec:problemas}
 \begin{tabla}\begin{longtable}{L{4.2cm}L{9.9cm}}
 \caption{Situaciones habituales y acciones recomendadas}\label{tab:problemas}\\\toprule
@@ -506,6 +580,9 @@ La contraseña no se acepta al registrarme & Comprueba un mínimo de 12 caracter
 No aparece Guardar o Administración & Comprueba la sesión y sus permisos. Entrar con otra cuenta puede habilitar acciones diferentes; el registro público no convierte una cuenta en administradora.\\
 Guardar está deshabilitado & Escribe un nombre no vacío y espera si hay una operación en curso. En el detalle de renombrado, debe existir un cambio de nombre para habilitar Guardar cambios.\\
 No aparece mi bicicleta & Verifica el correo activo, revisa las páginas y recuerda si el guardado mostró Guardado. Un borrador local o una comparación temporal no sustituyen un montaje guardado.\\
+No veo una alternativa para un conflicto & Puede faltar una medida o no existir solución entre los modelos de esa página. Cambia de posición o revisa otras páginas; conserva la elección manual si necesitas asesoría.\\
+El carrito no coincide con mi montaje & Convierte desde Comprar componentes y revisa las ofertas vendibles; no mezcles piezas adicionales al pedir armado de esa composición.\\
+No aparece una cuenta bancaria & Los métodos de esta entrega son simulados; no hay cuenta receptora ni QR habilitados.\\
 El visor tarda o no aparece & Espera la carga inicial, comprueba la conexión y utiliza Lista sin 3D. Intenta Probar vista 3D cuando quieras recuperarlo.\\
 La cámara quedó mal encuadrada & Pulsa Restablecer o una vista predefinida. Esto no elimina las piezas.\\
 No se aplica un par & Comprueba Aplicar a ambos lados y la medida elegida. Si falta una contraparte, se conserva el conjunto anterior; elige otra referencia o trabaja por separado.\\
@@ -541,7 +618,7 @@ No compartas contraseñas ni enlaces de confirmación o recuperación. La web no
 \item Inicia sesión y personaliza una bicicleta de referencia.
 \item Asigna el nombre Mi bicicleta de práctica.
 \item Selecciona una pieza y cambia su acabado si ofrece una alternativa.
-\item Explora Frontal y Restablecer, y revisa Avisos del montaje.
+\item Explora Frontal y Restablecer, y revisa Estado de compatibilidad.
 \item Pulsa Guardar y espera el estado Guardado.
 \item Abre Mis bicicletas y pulsa Continuar en el montaje de práctica.
 \item Comprueba que el nombre y el acabado corresponden a lo guardado.
@@ -569,6 +646,17 @@ No compartas contraseñas ni enlaces de confirmación o recuperación. La web no
 \item Si ya no necesitas la copia, repite Eliminar y acepta.
 \end{enumerate}
 \resultado{Cancelar conserva la tarjeta y aceptar elimina únicamente el montaje seleccionado. No existe deshacer para esa eliminación.}
+\subsection{Ejercicio 5: preparar una compra asistida de práctica}
+\begin{enumerate}
+\item Abre una ficha, revisa versión, condición y unidad comercial; añade una pieza y espera la confirmación.
+\item Abre el carrito y comprueba cantidad, importe de línea y total.
+\item Pulsa Revisar pedido, completa datos de práctica y elige retiro y un método de pago simulado. No utilices datos bancarios reales.
+\item Abre Ver resumen y comprueba el importe antes de crear un pedido. Puedes terminar aquí sin crear registros de pedido.
+\item Para practicar armado, utiliza una copia guardada de un montaje y convierte sus piezas vendibles al carrito. Marca Solicitar armado con revisión técnica y selecciona esa copia.
+\item Solicita la cotización únicamente si has coordinado la práctica con quien administra la tienda. Después revisa la respuesta en Notificaciones o Mis pedidos.
+\end{enumerate}
+\resultado{Puedes distinguir el montaje visual, el carrito, la cotización y el pedido; elegir un método de pago no realiza un abono. El armado queda sujeto a revisión.}
+
 \clearpage
 \section{Glosario y consulta rápida}
 \begin{tabla}\begin{longtable}{L{3.8cm}L{10.3cm}}
@@ -589,6 +677,11 @@ Aviso del montaje & Observación sobre datos, medidas o relaciones entre las pie
 Referencia anterior & Variante que puede conservarse en un montaje histórico aunque no se ofrezca para nuevas selecciones.\\
 Borrador & Edición que todavía no equivale a un montaje guardado en la cuenta o a una entrada administrativa publicada.\\
 Rol & Conjunto de acciones asignadas a una cuenta según sus autorizaciones.\\
+Oferta / SKU & Artículo vendible con identidad, precio, condición y disponibilidad propios; no es el archivo 3D.\\
+Cotización & Propuesta revisada con importes y vigencia que el cliente acepta antes del pedido cuando corresponde.\\
+Pedido & Registro de compra con sus líneas e importes aceptados y su seguimiento.\\
+Reserva & Disponibilidad temporal asociada a un pedido pendiente; no equivale a un pago.\\
+Pago simulado & Resultado de práctica sin transferencia de dinero ni cobro real.\\
 Movimiento reducido & Preferencia del sistema o navegador que limita animaciones y desactiva la reproducción de suspensión.\\\bottomrule
 \end{longtable}\end{tabla}
 
@@ -603,9 +696,9 @@ Movimiento reducido & Preferencia del sistema o navegador que limita animaciones
 \section*{Referencia y procedencia}\addcontentsline{toc}{section}{Referencia y procedencia}
 \noindent Ito Luque, J. (2026). \textit{ATLAS MTB} [Aplicación web]. \url{https://atlasmtb.netlify.app/}
 
-Las instrucciones se elaboraron a partir de los controles y reglas implementados en el proyecto y de recorridos sobre la web publicada. Las capturas corresponden al 21 de octubre de 2026 y muestran formularios o controles reales recortados, sin introducir datos de cuentas personales. Los montajes de demostración y la cuenta temporal utilizados para la comprobación fueron eliminados al finalizar.
+Las instrucciones se actualizaron a partir del código implementado y de recorridos de la versión local conectada a Supabase Cloud. Las capturas actualizadas corresponden al 28 de octubre de 2026 y muestran formularios o controles reales recortados, sin introducir datos de cuentas personales. Los montajes de demostración y la cuenta temporal utilizados para la comprobación fueron eliminados al finalizar.
 
-Se verificaron recorridos de consulta, comparación, configuración, guardado y gestión de un montaje de práctica. El acceso real con Google fue confirmado previamente por el titular del proyecto. Los pasos de confirmación, recuperación e invitación describen las pantallas implementadas; la entrega real de esos correos no se presenta como comprobada. La administración se documenta según sus controles y restricciones, sin alterar catálogo ni permisos durante la elaboración de este manual.
+Se verificaron consulta, comparación, configuración, alternativas, guardado, carrito y revisión comercial en los entornos indicados. Los cobros siguen simulados. El acceso real con Google fue confirmado previamente por el titular del proyecto. Los pasos de confirmación, recuperación e invitación describen las pantallas implementadas; la entrega real de esos correos no se presenta como comprobada. La administración se documenta según controles reales; las capturas comerciales emplean una cuenta temporal autorizada y solicitudes de práctica, sin cambiar catálogo, precios o roles de usuarios reales.
 
-La carpeta de recursos incluye las imágenes, las tipografías con su licencia y un registro resumido de los recorridos de comprobación. El contenido, las tablas y la bibliografía están integrados en este único archivo LaTeX; las figuras están incorporadas al PDF.
+La carpeta de recursos incluye las imágenes, las tipografías con su licencia y un registro de procedencia de los recorridos de comprobación. El contenido, las tablas y la bibliografía están integrados en este único archivo LaTeX; las figuras están incorporadas al PDF.
 \end{document}

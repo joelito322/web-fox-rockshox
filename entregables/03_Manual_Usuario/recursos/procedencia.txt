@@ -1,13 +1,16 @@
-PROCEDENCIA DE LOS RECURSOS — 21/10/2026
+PROCEDENCIA DE LOS RECURSOS — 28/10/2026
 
-Capturas propias de la web https://atlasmtb.netlify.app/ con Playwright.
+Capturas propias del frontend http://127.0.0.1:5174/ conectado a Supabase Cloud,
+con Playwright. La publicación previa no se declara actualizada.
 Script reproducible: scripts/capture-manual-evidence.mjs, en el repositorio.
 Las imágenes son recortes de elementos de interfaz reales; no se recrean pantallas.
 Los formularios de acceso y registro se capturan vacíos y sin enviar solicitudes.
 El montaje y los cambios de nombre se realizan con una cuenta temporal de demostración,
 confirmada por API para comprobar el uso sin depender de entrega de correo.
 La cuenta, su montaje y sus recursos se eliminan al terminar.
-No se modifican roles, catálogo ni cuentas reales.
+La captura comercial utiliza otra cuenta efímera, con rol admin solo durante
+la práctica; se elimina al terminar junto con su carrito, cotización y montaje.
+No se modifican catálogo, precios ni cuentas o roles de personas reales.
 La captura móvil es emulación de 393 x 851 píxeles.
 No se incluyen fotografías decorativas ni logotipos de instituciones.
 
@@ -27,3 +30,14 @@ No se incluyen fotografías decorativas ni logotipos de instituciones.
 14-categorias-movil.png: categorías en pantalla móvil emulada.
 
 Tipografías: Liberation Serif, Sans y Mono, con la licencia incluida en fuentes/.
+
+15-alternativas.png: panel real de alternativas para un conflicto de rueda.
+16-carrito.png: carrito con un importe por línea y total.
+17-revisar-pedido.png: selector de métodos simulados con marcas locales.
+18-cotizacion.png: revisión administrativa de una solicitud propia de práctica.
+19-confirmacion-carrito.png: respuesta visible tras añadir correctamente.
+20-notificacion.png: aviso de cotización con armado sin coste.
+21-resumen.png: importes previos a crear un pedido.
+Script adicional: scripts/capture-commercial-evidence.mjs. No crea pedido,
+no ejecuta pagos ni consume stock. Limpieza final comprobada.
+Resultados detallados locales: models/local/validation/entregables/.
