@@ -1,0 +1,2919 @@
+{
+  "reviewed_on": "2026-10-28",
+  "currency": "PEN",
+  "policy": "Prices belong to stable physical offers. Same trim/condition may share a price across colors/sizes; never randomize to create artificial uniqueness. Sources are observed asking prices, not physical ATLAS stock. Non-exact matches and second-hand entries are explicitly estimates.",
+  "sources": {
+    "slx-brake": {
+      "url": "https://bikeperushop.pe/product/freno-hidraulico-shimano-slx-m7100-derecho/",
+      "checked_on": "2026-10-28",
+      "note": "Complete right brake, 2 pistons; out of stock listing.",
+      "observed_amount": 580,
+      "currency": "PEN"
+    },
+    "slx-four": {
+      "url": "https://bixci.com/producto/kit-de-frenos-hidraulicos-shimano-slx-br-m7120-4-pistones/",
+      "checked_on": "2026-10-28",
+      "note": "Front/rear kit, hoses 1000/1700 mm; allocation to one brake is an estimate, not a single-brake quote.",
+      "observed_amount": 1350,
+      "currency": "PEN"
+    },
+    "magura-kit": {
+      "url": "https://bikestoreperu.com/",
+      "checked_on": "2026-10-28",
+      "note": "MT5 kit 850 PEN and MT7 Pro HC kit 1600 PEN. Half-kit allocation is an ATLAS estimate; rotors excluded."
+    },
+    "maven-bronze": {
+      "url": "https://www.sram.com/en/sram/models/db-mvn-brz-b1",
+      "checked_on": "2026-10-28",
+      "note": "Manufacturer identifies B1 model; not a Peruvian price quote."
+    },
+    "maven-silver": {
+      "url": "https://www.sram.com/en/sram/models/db-mvn-slv-b1",
+      "checked_on": "2026-10-28",
+      "note": "Manufacturer MSRP; ATLAS PEN price is an estimate, not a live exchange-rate conversion.",
+      "observed_amount": 265,
+      "currency": "USD"
+    },
+    "maven-ultimate": {
+      "url": "https://www.sram.com/en/sram/models/db-mvn-ult-b1",
+      "checked_on": "2026-10-28",
+      "note": "Manufacturer MSRP; ATLAS PEN price is an estimate, not a local quote.",
+      "observed_amount": 299,
+      "currency": "USD"
+    },
+    "slx-cassette": {
+      "url": "https://bikeperushop.pe/product/pinon-shimano-slx-m7100-12v-10-51t-microspline-en-caja/",
+      "checked_on": "2026-10-28",
+      "note": "CS-M7100 10-51 new boxed listing.",
+      "observed_amount": 485,
+      "currency": "PEN"
+    },
+    "slx-chain": {
+      "url": "https://bikman.pe/producto/cadena-shimano-slx-cn-m7100-12v/",
+      "checked_on": "2026-10-28",
+      "note": "CN-M7100 new chain listing.",
+      "observed_amount": 200,
+      "currency": "PEN"
+    },
+    "rockbros": {
+      "url": "https://rockbros.pe/producto/pedal-de-nylon-rockbros-2017-12c/",
+      "checked_on": "2026-10-28",
+      "note": "2017-12C nylon pedals, new pair.",
+      "observed_amount": 129.9,
+      "currency": "PEN"
+    },
+    "fatbar": {
+      "url": "https://www.riderlab.pe/products/renthal-fatbar-v3-35-black",
+      "checked_on": "2026-10-28",
+      "note": "Fatbar V3 35 aluminum listing; generation of existing ATLAS entry is unspecified, so comparable rather than exact quote.",
+      "observed_amount": 449,
+      "currency": "PEN"
+    },
+    "renthal": {
+      "url": "https://www.riderlab.pe/collections/vendors?q=renthal",
+      "checked_on": "2026-10-28",
+      "note": "Apex D35 listing 609 PEN; older Fatbar35 419 and V3 449. Do not substitute carbon 839 PEN price."
+    },
+    "integra": {
+      "url": "https://peruracingstore.pe/producto/steam-integra-renthal/",
+      "checked_on": "2026-10-28",
+      "note": "Integra family listing; clamp version not explicitly established, comparable price.",
+      "observed_amount": 600,
+      "currency": "PEN"
+    },
+    "front-hub": {
+      "url": "https://www.labicicleteria.pe/collections/dt-swiss-lima-peru/products/masa-delantera-dt-swiss-350-classic-dbis-boost-asram",
+      "checked_on": "2026-10-28",
+      "note": "350 front 15x110 6-bolt, 28/32h; out of stock price.",
+      "observed_amount": 447,
+      "currency": "PEN"
+    },
+    "rear-hub": {
+      "url": "https://kuranko.pe/producto/dtswiss-350-classic-posterior-6-agujeros-boost-12x148mm-micro-spline-32h/",
+      "checked_on": "2026-10-28",
+      "note": "350 rear 12x148 Micro Spline 32h; out of stock price.",
+      "observed_amount": 980,
+      "currency": "PEN"
+    },
+    "rim-small": {
+      "url": "https://www.labicicleteria.pe/collections/dt-swiss-lima-peru/products/aro-dt-swiss-e-593-27-5x30mm-remachado",
+      "checked_on": "2026-10-28",
+      "note": "E593 27.5 30mm, 28/32h options; out of stock price.",
+      "observed_amount": 220,
+      "currency": "PEN"
+    },
+    "rim-large": {
+      "url": "https://bikeperushop.pe/product/aros-dt-swiss-e-593-29%E2%80%B328h-tubeles-enduro-dh-und/",
+      "checked_on": "2026-10-28",
+      "note": "E593 29 listing is 28h, whereas ATLAS is 32h. Comparable, not exact specification.",
+      "observed_amount": 325,
+      "currency": "PEN"
+    },
+    "rotor-shimano": {
+      "url": "https://tatoo.ws/pe/a/shimano-disco-xt-sm-rt86-6bolt/24708?cid=618",
+      "checked_on": "2026-10-28",
+      "note": "SM-RT86, 203mm, 6-bolt single rotor.",
+      "observed_amount": 251,
+      "currency": "PEN"
+    },
+    "maxxis": {
+      "url": "https://sport.strada.pe/brand/126-maxxis",
+      "checked_on": "2026-10-28",
+      "note": "Assegai EXO 213.75; 3CT EXO 261.25; DH 313.50. ATLAS EXO+ is not the EXO casing; estimated between comparable builds."
+    },
+    "cst": {
+      "url": "https://sport.strada.pe/brand/119-cst",
+      "checked_on": "2026-10-28",
+      "note": "BFT26 wire 80.75 and Gravateer EPS 27.5 118.75. ATLAS BFT folding EPS/TLR differs; do not copy wire-tire price."
+    },
+    "schwalbe": {
+      "url": "https://toolbikesperu.pe/tienda/para-la-bici/accesorios-de-bicicleta/aros-y-llantas/llantas-schwalbe/?layout=list",
+      "checked_on": "2026-10-28",
+      "note": "Magic Mary Super Gravity29 price270; ATLAS newer GRAVITY casing is comparable, not exact.",
+      "observed_amount": 270,
+      "currency": "PEN"
+    },
+    "kenda": {
+      "url": "https://www.ubuy.pe/en/product/1TY67K8-kenda-pinner-pro-tire-29-x-2-4-atc-tr",
+      "checked_on": "2026-10-28",
+      "note": "Imported Pinner29 ATC listing. No reliable landed PEN price captured; ATLAS casing tiers remain estimates."
+    },
+    "oneup": {
+      "url": "https://www.oneupcomponents.com/products/dropper-post-v3",
+      "checked_on": "2026-10-28",
+      "note": "V3 product, remote sold separately. No usable local price captured; estimate for post only."
+    },
+    "xg795": {
+      "url": "https://www.sram.com/es/service/models/cs-xg-795-a1",
+      "checked_on": "2026-10-28",
+      "note": "XG795 identity; no local price captured. Estimate for cassette only, not a transmission kit."
+    }
+  },
+  "models": {
+    "shimano-sm-bb71-41a": {
+      "price_cents": 14500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Press-fit Hollowtech II MTB cups; no verified local listing matching PF92.",
+      "overrides": []
+    },
+    "sram-dub-pressfit": {
+      "price_cents": 22500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "DUB PF107 DH cups; do not use road DUB or BSA pricing.",
+      "overrides": []
+    },
+    "magura-mt4": {
+      "price_cents": 38000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "One complete 2-piston brake, not a front/rear pair.",
+      "overrides": []
+    },
+    "magura-mt5": {
+      "price_cents": 42500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "850 PEN kit / 2 brakes; approximate unit allocation.",
+      "overrides": []
+    },
+    "magura-mt5-pro": {
+      "price_cents": 58000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "HC lever premium; no exact MT5 PRO local quote captured.",
+      "overrides": []
+    },
+    "magura-mt7-pro": {
+      "price_cents": 80000,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "1600 PEN kit / 2 brakes; approximate unit allocation.",
+      "overrides": []
+    },
+    "shimano-slx-m7100-brake": {
+      "price_cents": 58000,
+      "basis": "local_listing",
+      "source_ids": [
+        "slx-brake"
+      ],
+      "note": "One complete brake; listing availability does not set ATLAS stock.",
+      "overrides": []
+    },
+    "shimano-slx-m7120": {
+      "price_cents": 67500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "slx-four"
+      ],
+      "note": "1350 PEN front/rear kit / 2; unit estimate.",
+      "overrides": []
+    },
+    "sram-maven-brz-b1": {
+      "price_cents": 99000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "maven-bronze"
+      ],
+      "note": "One complete B1 brake, estimated local asking price.",
+      "overrides": []
+    },
+    "sram-maven-slv-b1": {
+      "price_cents": 115000,
+      "basis": "international_reference_estimate",
+      "source_ids": [
+        "maven-silver"
+      ],
+      "note": "One complete B1 brake, estimated PEN retail including local margin; not a quoted FX conversion.",
+      "overrides": []
+    },
+    "sram-maven-ult-b1": {
+      "price_cents": 132000,
+      "basis": "international_reference_estimate",
+      "source_ids": [
+        "maven-ultimate"
+      ],
+      "note": "One complete B1 brake; different trim, not a pair.",
+      "overrides": []
+    },
+    "shimano-slx-cs-m7100-12": {
+      "price_cents": 48500,
+      "basis": "local_listing",
+      "source_ids": [
+        "slx-cassette"
+      ],
+      "note": "",
+      "overrides": []
+    },
+    "sram-xg-795": {
+      "price_cents": 125000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "xg795"
+      ],
+      "note": "Premium 7-speed DH cassette; not GX Eagle 12-speed.",
+      "overrides": []
+    },
+    "shimano-slx-cn-m7100": {
+      "price_cents": 20000,
+      "basis": "local_listing",
+      "source_ids": [
+        "slx-chain"
+      ],
+      "note": "",
+      "overrides": []
+    },
+    "sram-pc1110": {
+      "price_cents": 8500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Basic 11-speed chain with PowerLock; no exact local quote captured.",
+      "overrides": []
+    },
+    "shimano-slx-oem-165-32": {
+      "price_cents": 62000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "SLX 165mm crankset plus32T ring; no cassette, chain, BB or shifter.",
+      "overrides": []
+    },
+    "truvativ-descendant-dh": {
+      "price_cents": 76000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "DESCENDANT DH DUB165 plus34T ring; excludes BB.",
+      "overrides": []
+    },
+    "deity-racepoint-35": {
+      "price_cents": 39500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "fatbar"
+      ],
+      "note": "Aluminum Racepoint810/38; same segment, not a Renthal quote.",
+      "overrides": []
+    },
+    "renthal-fatbar-35": {
+      "price_cents": 44900,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "fatbar"
+      ],
+      "note": "Aluminum35mm; generation unspecified in ATLAS, comparable V3 listing.",
+      "overrides": []
+    },
+    "dt-swiss-350": {
+      "price_cents": 44700,
+      "basis": "local_listing",
+      "source_ids": [
+        "front-hub"
+      ],
+      "note": "Base is front15x110. Other configurations reviewed explicitly below.",
+      "overrides": [
+        {
+          "measures": {
+            "position": "rear",
+            "axle_standard": "12x148"
+          },
+          "price_cents": 98000,
+          "basis": "local_listing",
+          "source_ids": [
+            "rear-hub"
+          ],
+          "note": "Rear freehub included, not a front-hub price."
+        },
+        {
+          "measures": {
+            "position": "rear",
+            "axle_standard": "12x157"
+          },
+          "price_cents": 105000,
+          "basis": "adapted_listing",
+          "source_ids": [
+            "rear-hub"
+          ],
+          "note": "DH157/XD differs from sourced148/MicroSpline; estimate."
+        },
+        {
+          "measures": {
+            "position": "front",
+            "axle_standard": "20x110 BOOST"
+          },
+          "price_cents": 49500,
+          "basis": "adapted_listing",
+          "source_ids": [
+            "front-hub"
+          ],
+          "note": "DH20mm differs from sourced15mm; estimate."
+        }
+      ]
+    },
+    "rockbros-nylon-2017-12": {
+      "price_cents": 12990,
+      "basis": "local_listing",
+      "source_ids": [
+        "rockbros"
+      ],
+      "note": "Price per pair.",
+      "overrides": []
+    },
+    "shimano-slx-rd-m7100-sgs": {
+      "price_cents": 54000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "SLX rear derailleur plus associated SL-M7100 shifter. Not derailleur-only pricing.",
+      "overrides": []
+    },
+    "sram-gx-dh-a3": {
+      "price_cents": 69000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "GX DH7 rear derailleur plus associated mechanical7-speed shifter. Not wireless GX.",
+      "overrides": []
+    },
+    "dt-swiss-e-593": {
+      "price_cents": 22000,
+      "basis": "local_listing",
+      "source_ids": [
+        "rim-small"
+      ],
+      "note": "One rim, no hub/spokes/tire.",
+      "overrides": [
+        {
+          "measures": {
+            "wheel_bsd_mm": 622
+          },
+          "price_cents": 32500,
+          "basis": "adapted_listing",
+          "source_ids": [
+            "rim-large"
+          ],
+          "note": "29-inch32h; local comparable listing28h."
+        }
+      ]
+    },
+    "magura-mdr-p": {
+      "price_cents": 23500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Single two-piece180mm rotor; diameter changes reviewed as an estimate.",
+      "overrides": [
+        {
+          "measures": {
+            "rotor_diameter_mm": 203
+          },
+          "price_cents": 26000,
+          "basis": "model_estimate",
+          "source_ids": [],
+          "note": "203mm unit estimate."
+        },
+        {
+          "measures": {
+            "rotor_diameter_mm": 220
+          },
+          "price_cents": 29000,
+          "basis": "model_estimate",
+          "source_ids": [],
+          "note": "220mm unit estimate."
+        }
+      ]
+    },
+    "shimano-sm-rt86": {
+      "price_cents": 25100,
+      "basis": "local_listing",
+      "source_ids": [
+        "rotor-shimano"
+      ],
+      "note": "",
+      "overrides": []
+    },
+    "sram-hs2": {
+      "price_cents": 28500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "HS2 220mm6-bolt one rotor; no exact local listing captured.",
+      "overrides": []
+    },
+    "wtb-volt": {
+      "price_cents": 49500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Fusion Form titanium rails, not steel-rail Volt pricing.",
+      "overrides": []
+    },
+    "oneup-v3-dropper": {
+      "price_cents": 119000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "oneup"
+      ],
+      "note": "New V3 31.6x180 post only, excludes remote/clamp.",
+      "overrides": []
+    },
+    "renthal-apex-35-v2": {
+      "price_cents": 60900,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "renthal"
+      ],
+      "note": "Apex35 retail reference; V2/40mm exact configuration not established.",
+      "overrides": []
+    },
+    "renthal-integra-35": {
+      "price_cents": 60000,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "integra"
+      ],
+      "note": "Direct-mount stem; clamp version of source unspecified.",
+      "overrides": []
+    },
+    "cst-bft-c1752": {
+      "price_cents": 12500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "cst"
+      ],
+      "note": "EPS/TLR folding version; do not price as basic26 wire bead.",
+      "overrides": []
+    },
+    "kenda-pinner-pro-k1241a": {
+      "price_cents": 23500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "kenda"
+      ],
+      "note": "ATC/SCT estimate; no verified landed local price.",
+      "overrides": [
+        {
+          "measures": {
+            "casing": "AGC"
+          },
+          "price_cents": 28500,
+          "basis": "model_estimate",
+          "source_ids": [
+            "kenda"
+          ],
+          "note": "Heavier gravity casing; estimate, not an observed price."
+        }
+      ]
+    },
+    "maxxis-assegai": {
+      "price_cents": 27500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "maxxis"
+      ],
+      "note": "EXO+ MaxxTerra29, not sourced EXO base/DH.",
+      "overrides": []
+    },
+    "maxxis-minion-dhr-ii": {
+      "price_cents": 26500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "maxxis"
+      ],
+      "note": "EXO+ MaxxTerra27.5; not a bare EXO price.",
+      "overrides": []
+    },
+    "michelin-wild-enduro-ms-racing-line": {
+      "price_cents": 34500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Magi-X MS Racing Line, not entry-level Wild Enduro; no exact local listing captured.",
+      "overrides": []
+    },
+    "schwalbe-gravity-magic-mary": {
+      "price_cents": 29500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "schwalbe"
+      ],
+      "note": "GRAVITY SOFT new casing differs from sourced Super Gravity; estimate.",
+      "overrides": []
+    },
+    "fox-38-factory-my27": {
+      "price_cents": 280000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "fox-40-factory-my27": {
+      "price_cents": 350000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "marzocchi-bomber-58": {
+      "price_cents": 220000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "marzocchi-bomber-z1-rail": {
+      "price_cents": 150000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "ohlins-dh38-m2": {
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "ohlins-rxf38-m3": {
+      "price_cents": 320000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "rockshox-boxxer-select-d2": {
+      "price_cents": 240000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "rockshox-boxxer-ultimate-d2": {
+      "price_cents": 310000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "rockshox-zeb-ultimate-b1": {
+      "price_cents": 240000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "canyon-sender-cfr-high-pivot": {
+      "price_cents": 480000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "commencal-frs-v3": {
+      "price_cents": 280000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "commencal-furious-v3-2021": {
+      "price_cents": 230000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "commencal-meta-sx-v5": {
+      "price_cents": 350000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "commencal-supreme-dh-v5": {
+      "price_cents": 520000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "da-bomb-cherry-bomb-29": {
+      "price_cents": 220000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "gt-force-carbon-high-pivot": {
+      "price_cents": 320000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "gt-fury-carbon-high-pivot": {
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "santa-cruz-nomad-7-my27": {
+      "price_cents": 650000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "santa-cruz-v10-8-my27": {
+      "price_cents": 750000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "scott-ransom-rc-427727": {
+      "price_cents": 550000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "specialized-s-works-enduro-udh": {
+      "price_cents": 580000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "trek-slash-al-gen-6": {
+      "price_cents": 360000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "yt-capra-mk3-carbon-mx": {
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "yt-tues-mk4-carbon": {
+      "price_cents": 460000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "fox-float-x2-factory-my26": {
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "marzocchi-bomber-cr": {
+      "price_cents": 65000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "ohlins-ttx22m2-coil": {
+      "price_cents": 180000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    },
+    "rockshox-vivid-coil-ultimate-d1": {
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote.",
+      "overrides": []
+    }
+  },
+  "offers": [
+    {
+      "offer_id": "b6b78833-03c7-37da-be6e-ee2b41b0be48",
+      "sku": "DEMO-0DDA6AFF2DD7C77B06AE",
+      "slug": "shimano-sm-bb71-41a",
+      "brand": "Shimano",
+      "model": "SM-BB71-41A",
+      "category": "bottom_bracket",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 15000,
+      "price_cents": 14500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Press-fit Hollowtech II MTB cups; no verified local listing matching PF92."
+    },
+    {
+      "offer_id": "3ed30a7c-cff0-6328-8b88-7a16daf2de92",
+      "sku": "DEMO-41CF546A749EFB5E46D5",
+      "slug": "sram-dub-pressfit",
+      "brand": "SRAM",
+      "model": "DUB PressFit",
+      "category": "bottom_bracket",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 15000,
+      "price_cents": 22500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "DUB PF107 DH cups; do not use road DUB or BSA pricing."
+    },
+    {
+      "offer_id": "29a87921-3a96-0b27-3034-01bd89e7cf96",
+      "sku": "DEMO-7999765711799398E3F2",
+      "slug": "magura-mt4",
+      "brand": "MAGURA",
+      "model": "MT4",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 38000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "One complete 2-piston brake, not a front/rear pair."
+    },
+    {
+      "offer_id": "bed12adb-e689-c558-9d13-a33f5340101b",
+      "sku": "DEMO-6AFBC8CD5367F942F8FC",
+      "slug": "magura-mt5",
+      "brand": "MAGURA",
+      "model": "MT5",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 42500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "850 PEN kit / 2 brakes; approximate unit allocation."
+    },
+    {
+      "offer_id": "70b88501-da17-45f9-680a-fd0c95fc8333",
+      "sku": "DEMO-FCDA0E822E6E0C5438AC",
+      "slug": "magura-mt5-pro",
+      "brand": "MAGURA",
+      "model": "MT5 PRO",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 58000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "HC lever premium; no exact MT5 PRO local quote captured."
+    },
+    {
+      "offer_id": "23ade307-49c8-181f-4fc3-1d460bd90263",
+      "sku": "DEMO-3957B90B46434BCFBF72",
+      "slug": "magura-mt7-pro",
+      "brand": "MAGURA",
+      "model": "MT7 PRO",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 80000,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "magura-kit"
+      ],
+      "note": "1600 PEN kit / 2 brakes; approximate unit allocation."
+    },
+    {
+      "offer_id": "bfab58d2-deaa-a1e6-bde7-a2bf3ff63a1e",
+      "sku": "DEMO-F10168A40781A6F44B3A",
+      "slug": "shimano-slx-m7100-brake",
+      "brand": "Shimano",
+      "model": "SLX M7100",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 58000,
+      "basis": "local_listing",
+      "source_ids": [
+        "slx-brake"
+      ],
+      "note": "One complete brake; listing availability does not set ATLAS stock."
+    },
+    {
+      "offer_id": "69409cdc-ee63-46f7-9891-26efd80a8eb8",
+      "sku": "DEMO-9C9AB3B26E0666CA1CB0",
+      "slug": "shimano-slx-m7120",
+      "brand": "Shimano",
+      "model": "SLX M7120",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 67500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "slx-four"
+      ],
+      "note": "1350 PEN front/rear kit / 2; unit estimate."
+    },
+    {
+      "offer_id": "93ad86c9-ecfb-cb35-caaa-125063c9dc78",
+      "sku": "DEMO-4D0AD6EAA3A870C8B081",
+      "slug": "sram-maven-brz-b1",
+      "brand": "SRAM",
+      "model": "Maven Bronze · B1",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 99000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "maven-bronze"
+      ],
+      "note": "One complete B1 brake, estimated local asking price."
+    },
+    {
+      "offer_id": "31b4e1b7-1a0a-f88b-3d00-a3af319bd410",
+      "sku": "DEMO-68EFB25D8DB8EFC27033",
+      "slug": "sram-maven-slv-b1",
+      "brand": "SRAM",
+      "model": "Maven Silver · B1",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 115000,
+      "basis": "international_reference_estimate",
+      "source_ids": [
+        "maven-silver"
+      ],
+      "note": "One complete B1 brake, estimated PEN retail including local margin; not a quoted FX conversion."
+    },
+    {
+      "offer_id": "d1538219-49ea-b132-b2ca-c5882868bc7c",
+      "sku": "DEMO-2E2C9B42DEAC537BDE8F",
+      "slug": "sram-maven-ult-b1",
+      "brand": "SRAM",
+      "model": "Maven Ultimate · B1",
+      "category": "brake",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 90000,
+      "price_cents": 132000,
+      "basis": "international_reference_estimate",
+      "source_ids": [
+        "maven-ultimate"
+      ],
+      "note": "One complete B1 brake; different trim, not a pair."
+    },
+    {
+      "offer_id": "ec681b7e-8c30-3681-09c4-c56f57a8cac8",
+      "sku": "DEMO-355F731C856B15F8EA0A",
+      "slug": "shimano-slx-cs-m7100-12",
+      "brand": "Shimano",
+      "model": "SLX CS-M7100-12",
+      "category": "cassette",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 55000,
+      "price_cents": 48500,
+      "basis": "local_listing",
+      "source_ids": [
+        "slx-cassette"
+      ],
+      "note": ""
+    },
+    {
+      "offer_id": "344d064a-603c-6f22-8779-1a462b74b394",
+      "sku": "DEMO-8455763E0F483FEE2A1B",
+      "slug": "sram-xg-795",
+      "brand": "SRAM",
+      "model": "XG-795 MINI BLOCK",
+      "category": "cassette",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 55000,
+      "price_cents": 125000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "xg795"
+      ],
+      "note": "Premium 7-speed DH cassette; not GX Eagle 12-speed."
+    },
+    {
+      "offer_id": "6bdcfdce-eafd-64aa-d1dc-824adb09214b",
+      "sku": "DEMO-A07DA7DA8FA580CB9762",
+      "slug": "shimano-slx-cn-m7100",
+      "brand": "Shimano",
+      "model": "SLX CN-M7100",
+      "category": "chain",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 10000,
+      "price_cents": 20000,
+      "basis": "local_listing",
+      "source_ids": [
+        "slx-chain"
+      ],
+      "note": ""
+    },
+    {
+      "offer_id": "5588efe2-6b2b-44dc-7d8d-b6757ea2a183",
+      "sku": "DEMO-E493B71C1D4C37B1E012",
+      "slug": "sram-pc1110",
+      "brand": "SRAM",
+      "model": "PC-1110",
+      "category": "chain",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 10000,
+      "price_cents": 8500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Basic 11-speed chain with PowerLock; no exact local quote captured."
+    },
+    {
+      "offer_id": "e666e91c-a8bf-62e6-2076-6defbb6fa0ee",
+      "sku": "DEMO-01EF73701FDCB411997F",
+      "slug": "shimano-slx-oem-165-32",
+      "brand": "Shimano",
+      "model": "SLX · Bielas y plato",
+      "category": "crankset",
+      "unit": "set",
+      "condition": "new",
+      "expected_price_cents": 60000,
+      "price_cents": 62000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "SLX 165mm crankset plus32T ring; no cassette, chain, BB or shifter."
+    },
+    {
+      "offer_id": "adf9a312-13c8-e021-62ec-6d7b24907b4c",
+      "sku": "DEMO-7D628D0E2B441D1E98DE",
+      "slug": "truvativ-descendant-dh",
+      "brand": "TRUVATIV",
+      "model": "DESCENDANT DH",
+      "category": "crankset",
+      "unit": "set",
+      "condition": "new",
+      "expected_price_cents": 60000,
+      "price_cents": 76000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "DESCENDANT DH DUB165 plus34T ring; excludes BB."
+    },
+    {
+      "offer_id": "527eb784-ceaf-fe23-ae2c-2a3496716a88",
+      "sku": "DEMO-3628D07E14915AE09438",
+      "slug": "fox-38-factory-my27",
+      "brand": "FOX",
+      "model": "38 Factory · MY27",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 280000,
+      "price_cents": 280000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "089a1b17-44ea-4820-1742-6889fe8eb9c4",
+      "sku": "DEMO-207A3F885FF5015352E1",
+      "slug": "fox-40-factory-my27",
+      "brand": "FOX",
+      "model": "40 Factory · MY27",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 350000,
+      "price_cents": 350000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "124cd2e8-6337-0078-f653-197ca25ecdb0",
+      "sku": "DEMO-97D157250B5ADEC2AEA0",
+      "slug": "fox-40-factory-my27",
+      "brand": "FOX",
+      "model": "40 Factory · MY27",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 350000,
+      "price_cents": 350000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "df8b0d2f-a2f6-4876-2eb0-9dd2bbf704bc",
+      "sku": "DEMO-A4BE9CD1FC66010A1025",
+      "slug": "fox-40-factory-my27",
+      "brand": "FOX",
+      "model": "40 Factory · MY27",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 350000,
+      "price_cents": 350000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "23b80819-0594-9272-c09c-a6470b20c4c2",
+      "sku": "DEMO-038085A6BBE845705716",
+      "slug": "marzocchi-bomber-58",
+      "brand": "Marzocchi",
+      "model": "Bomber 58",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 220000,
+      "price_cents": 220000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "8dbe26dd-dc4a-d418-2dba-85073aff7a26",
+      "sku": "DEMO-4BDC65FF679840E1102B",
+      "slug": "marzocchi-bomber-58",
+      "brand": "Marzocchi",
+      "model": "Bomber 58",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 220000,
+      "price_cents": 220000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "9717de50-ffdd-fd41-96fe-88f0489a0551",
+      "sku": "DEMO-BB3449C66C982785FE13",
+      "slug": "marzocchi-bomber-z1-rail",
+      "brand": "Marzocchi",
+      "model": "Bomber Z1 RAIL",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 150000,
+      "price_cents": 150000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "a021ab7a-cb60-cbc2-3b68-73cad2edd1bf",
+      "sku": "DEMO-982A6F533FDC8BDFFCBB",
+      "slug": "marzocchi-bomber-z1-rail",
+      "brand": "Marzocchi",
+      "model": "Bomber Z1 RAIL",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 150000,
+      "price_cents": 150000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "bbccb175-de01-79fd-c4c0-65539ea82878",
+      "sku": "DEMO-85D8EFAF042F4AC759D7",
+      "slug": "marzocchi-bomber-z1-rail",
+      "brand": "Marzocchi",
+      "model": "Bomber Z1 RAIL",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 150000,
+      "price_cents": 150000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "1dbb2df1-2a94-3c2f-2084-d69cb106634c",
+      "sku": "DEMO-12D7235E527BD9B569BC",
+      "slug": "ohlins-dh38-m2",
+      "brand": "Öhlins",
+      "model": "DH38 m.2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "590f7364-525f-6ec5-7491-84d3e1372df0",
+      "sku": "DEMO-D9E21929BD686ECD7331",
+      "slug": "ohlins-dh38-m2",
+      "brand": "Öhlins",
+      "model": "DH38 m.2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "9e188c15-63c9-f857-be13-671888720905",
+      "sku": "DEMO-0B0656F2D345A5DCF130",
+      "slug": "ohlins-dh38-m2",
+      "brand": "Öhlins",
+      "model": "DH38 m.2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "d804374f-0202-fc35-d9a9-ca3184ef5d6d",
+      "sku": "DEMO-105B57A17599E608D536",
+      "slug": "ohlins-dh38-m2",
+      "brand": "Öhlins",
+      "model": "DH38 m.2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "01118ff0-7620-8183-02fd-f8d05edf9a9e",
+      "sku": "DEMO-A803106F2FFCD17E96AC",
+      "slug": "ohlins-rxf38-m3",
+      "brand": "Öhlins",
+      "model": "RXF38 m.3",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 320000,
+      "price_cents": 320000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "8c6df287-f9ea-9ecd-2a22-83b318c6d4c1",
+      "sku": "DEMO-494718AECC5A06D23F26",
+      "slug": "rockshox-boxxer-select-d2",
+      "brand": "RockShox",
+      "model": "BoXXer Select · D2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 240000,
+      "price_cents": 240000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "b933983c-76c9-388f-8e6a-e6f6d83f50f1",
+      "sku": "DEMO-C81D17554A19F089043D",
+      "slug": "rockshox-boxxer-select-d2",
+      "brand": "RockShox",
+      "model": "BoXXer Select · D2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 240000,
+      "price_cents": 240000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "0c9f6bc8-c199-6a99-50f3-878d61f33568",
+      "sku": "DEMO-6BD338F7490BE69E7487",
+      "slug": "rockshox-boxxer-ultimate-d2",
+      "brand": "RockShox",
+      "model": "BoXXer Ultimate · D2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 310000,
+      "price_cents": 310000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "39a4ce0c-c362-8c3d-0016-1916ce2da920",
+      "sku": "DEMO-639E8F5CA1763CDE3EE2",
+      "slug": "rockshox-boxxer-ultimate-d2",
+      "brand": "RockShox",
+      "model": "BoXXer Ultimate · D2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 310000,
+      "price_cents": 310000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "8fe9f4a6-f8be-70e8-2bab-3c9b6fa1b20d",
+      "sku": "DEMO-BFC359621CA8B5C8745C",
+      "slug": "rockshox-boxxer-ultimate-d2",
+      "brand": "RockShox",
+      "model": "BoXXer Ultimate · D2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 310000,
+      "price_cents": 310000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "fb0bbb94-609d-0342-bd23-f3ae6f0c039c",
+      "sku": "DEMO-7D56A2C6AF18DEE74726",
+      "slug": "rockshox-boxxer-ultimate-d2",
+      "brand": "RockShox",
+      "model": "BoXXer Ultimate · D2",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 310000,
+      "price_cents": 310000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "faac7503-e3ba-c13a-fb8a-cdc4936a55ea",
+      "sku": "DEMO-95CEA51A36D2CACED4C8",
+      "slug": "rockshox-zeb-ultimate-b1",
+      "brand": "RockShox",
+      "model": "ZEB Ultimate",
+      "category": "fork",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 240000,
+      "price_cents": 240000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "8eecd711-aa0b-5184-9516-c94d0f170698",
+      "sku": "DEMO-97F3C55F7256B8C8DB91",
+      "slug": "canyon-sender-cfr-high-pivot",
+      "brand": "Canyon",
+      "model": "Sender CFR",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 480000,
+      "price_cents": 480000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "fbe28c85-b87b-b279-01eb-e8670fda89e4",
+      "sku": "DEMO-133EBAE9CCEDDA4EECF1",
+      "slug": "canyon-sender-cfr-high-pivot",
+      "brand": "Canyon",
+      "model": "Sender CFR",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 480000,
+      "price_cents": 480000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "374703a4-0171-fcd1-3ef3-bb468cc392f9",
+      "sku": "DEMO-20103A0F8C96B67ADDDB",
+      "slug": "commencal-frs-v3",
+      "brand": "COMMENCAL",
+      "model": "FRS V3 · Pure White",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 280000,
+      "price_cents": 280000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "c274bb6a-c4e4-3a5e-e97d-9e02519cae35",
+      "sku": "DEMO-DC1E9EDD6E044B394B7F",
+      "slug": "commencal-frs-v3",
+      "brand": "COMMENCAL",
+      "model": "FRS V3 · Pure White",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 280000,
+      "price_cents": 280000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "29803ec2-f994-4b23-3983-95c19f5029ce",
+      "sku": "DEMO-34FE96FD06EA6E2AF68C",
+      "slug": "commencal-furious-v3-2021",
+      "brand": "COMMENCAL",
+      "model": "Furious V3 · 2021",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 230000,
+      "price_cents": 230000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "fdf76990-69ed-f53a-8009-fad70c25d421",
+      "sku": "DEMO-ECB47B89449AAC1FA694",
+      "slug": "commencal-furious-v3-2021",
+      "brand": "COMMENCAL",
+      "model": "Furious V3 · 2021",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 230000,
+      "price_cents": 230000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "a5c9d83a-8b99-078c-c2d7-76c6a0a8b12f",
+      "sku": "DEMO-86C8F751254A66FAED57",
+      "slug": "commencal-meta-sx-v5",
+      "brand": "COMMENCAL",
+      "model": "META SX V5",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 350000,
+      "price_cents": 350000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "e779fb0f-9757-f2ea-08be-7fd69fa34b4d",
+      "sku": "DEMO-E66BE2741DFC0C34BC1F",
+      "slug": "commencal-meta-sx-v5",
+      "brand": "COMMENCAL",
+      "model": "META SX V5",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 350000,
+      "price_cents": 350000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "2b290645-9999-5916-f2e3-fba3a8adc060",
+      "sku": "DEMO-D30EB3A215BFB29D8147",
+      "slug": "commencal-supreme-dh-v5",
+      "brand": "COMMENCAL",
+      "model": "SUPREME DH V5",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 520000,
+      "price_cents": 520000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "b742a553-a2a9-3ab8-4aa1-fc4a0f38ed35",
+      "sku": "DEMO-7606CE399E04E6AC4C89",
+      "slug": "commencal-supreme-dh-v5",
+      "brand": "COMMENCAL",
+      "model": "SUPREME DH V5",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 520000,
+      "price_cents": 520000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "5fc1ec1c-c114-7f13-64e2-ef74d95de4f0",
+      "sku": "DEMO-41D63625CDF7808A6216",
+      "slug": "da-bomb-cherry-bomb-29",
+      "brand": "DA BOMB",
+      "model": "CHERRY BOMB 29",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 220000,
+      "price_cents": 220000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "fd1a1e6c-2a5a-5037-95be-2166c3c02dc2",
+      "sku": "DEMO-337C91BC1D74E2C06036",
+      "slug": "da-bomb-cherry-bomb-29",
+      "brand": "DA BOMB",
+      "model": "CHERRY BOMB 29",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 220000,
+      "price_cents": 220000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "5d0f8313-82e0-5330-0cde-e4d9d7798bea",
+      "sku": "DEMO-1FD09A4819F40875DB99",
+      "slug": "gt-force-carbon-high-pivot",
+      "brand": "GT",
+      "model": "Force Carbon · High Pivot",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 320000,
+      "price_cents": 320000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "8e2c874a-2bfc-abb9-36b1-71d3c48737a2",
+      "sku": "DEMO-BBA8DADB1B1D433D19AE",
+      "slug": "gt-force-carbon-high-pivot",
+      "brand": "GT",
+      "model": "Force Carbon · High Pivot",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 320000,
+      "price_cents": 320000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "8d6ae7b3-c9ae-4256-0fbb-5bb97be95765",
+      "sku": "DEMO-E1D133D815D0FB1CA554",
+      "slug": "gt-fury-carbon-high-pivot",
+      "brand": "GT",
+      "model": "Fury Carbon · High Pivot",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "cf2c3a86-2f8d-54cf-aefd-d792647246ba",
+      "sku": "DEMO-8C6EA5C1813490A54CA8",
+      "slug": "gt-fury-carbon-high-pivot",
+      "brand": "GT",
+      "model": "Fury Carbon · High Pivot",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "84f21ddb-54bf-f36a-f67f-0bba6885c61b",
+      "sku": "DEMO-B207B5C30ACD14DC2195",
+      "slug": "santa-cruz-nomad-7-my27",
+      "brand": "Santa Cruz",
+      "model": "Nomad 7 CC",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 650000,
+      "price_cents": 650000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "fa077e7f-b6f8-bcad-955f-73c34c184b46",
+      "sku": "DEMO-C8D8F171E60926FF73B3",
+      "slug": "santa-cruz-nomad-7-my27",
+      "brand": "Santa Cruz",
+      "model": "Nomad 7 CC",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 650000,
+      "price_cents": 650000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "9945c35e-5b43-74be-100b-14334c4dc9df",
+      "sku": "DEMO-3E1A551946D3C3F54D19",
+      "slug": "santa-cruz-v10-8-my27",
+      "brand": "Santa Cruz",
+      "model": "V10 8 CC · MY27",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 750000,
+      "price_cents": 750000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "d0e40196-01d5-1a1b-0139-742a3dddfc1e",
+      "sku": "DEMO-C11082C56D2C9F155302",
+      "slug": "santa-cruz-v10-8-my27",
+      "brand": "Santa Cruz",
+      "model": "V10 8 CC · MY27",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 750000,
+      "price_cents": 750000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "7d6c9258-e594-58fe-a7d9-328f1065494b",
+      "sku": "DEMO-58A057AB295E1687F193",
+      "slug": "scott-ransom-rc-427727",
+      "brand": "SCOTT",
+      "model": "Ransom RC HMX",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 550000,
+      "price_cents": 550000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "972f706f-deec-e189-dbcc-e8796f7f45ac",
+      "sku": "DEMO-55D34B19F4C7052127F0",
+      "slug": "scott-ransom-rc-427727",
+      "brand": "SCOTT",
+      "model": "Ransom RC HMX",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 550000,
+      "price_cents": 550000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "6fb72f57-19fb-d1a5-bea9-b49cad3a90ad",
+      "sku": "DEMO-5B526B4D712637951286",
+      "slug": "specialized-s-works-enduro-udh",
+      "brand": "Specialized",
+      "model": "S-Works Enduro",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 580000,
+      "price_cents": 580000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "7dffe95f-4802-6e22-9538-ca606c0d22ea",
+      "sku": "DEMO-C90642D8139C5B9ECAEA",
+      "slug": "specialized-s-works-enduro-udh",
+      "brand": "Specialized",
+      "model": "S-Works Enduro",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 580000,
+      "price_cents": 580000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "1f14a045-16a1-6b81-571a-8f55a6775be6",
+      "sku": "DEMO-F8E5C133FD7BFC001522",
+      "slug": "trek-slash-al-gen-6",
+      "brand": "Trek",
+      "model": "Slash AL Gen 6",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 360000,
+      "price_cents": 360000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "248bbdfa-47f8-12b7-ce6d-1e1d5a7a3919",
+      "sku": "DEMO-0E60C54D16CF0625E568",
+      "slug": "trek-slash-al-gen-6",
+      "brand": "Trek",
+      "model": "Slash AL Gen 6",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 360000,
+      "price_cents": 360000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "a3bb005d-5f2a-f397-6ad8-5a621fe31577",
+      "sku": "DEMO-1E96D2ADEEE7F152423E",
+      "slug": "yt-capra-mk3-carbon-mx",
+      "brand": "YT Industries",
+      "model": "CAPRA MK3 Carbon MX",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "eecd961d-a430-0ab3-9140-b30340db6fc7",
+      "sku": "DEMO-613D19DA09794EA88753",
+      "slug": "yt-capra-mk3-carbon-mx",
+      "brand": "YT Industries",
+      "model": "CAPRA MK3 Carbon MX",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 380000,
+      "price_cents": 380000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "a72a5d1b-999b-1b3a-f940-7f480676a43f",
+      "sku": "DEMO-ECE3E1CCABA6FBD2CC44",
+      "slug": "yt-tues-mk4-carbon",
+      "brand": "YT Industries",
+      "model": "TUES MK4 Carbon",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 460000,
+      "price_cents": 460000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "c522633d-d786-0fd3-2b34-e5ce3743f378",
+      "sku": "DEMO-544B51AE348275948B7D",
+      "slug": "yt-tues-mk4-carbon",
+      "brand": "YT Industries",
+      "model": "TUES MK4 Carbon",
+      "category": "frame",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 460000,
+      "price_cents": 460000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "eddfb79c-d08b-0129-a9c6-e370d5e26e5b",
+      "sku": "DEMO-29DA79E937C5A13ADE01",
+      "slug": "deity-racepoint-35",
+      "brand": "DEITY",
+      "model": "DEITY Racepoint 35",
+      "category": "handlebar",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 30000,
+      "price_cents": 39500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "fatbar"
+      ],
+      "note": "Aluminum Racepoint810/38; same segment, not a Renthal quote."
+    },
+    {
+      "offer_id": "a3e07122-47a7-1a35-97bc-42c390d77877",
+      "sku": "DEMO-5E54AEF13C2B246FFE27",
+      "slug": "renthal-fatbar-35",
+      "brand": "Renthal",
+      "model": "Renthal Fatbar 35",
+      "category": "handlebar",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 30000,
+      "price_cents": 44900,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "fatbar"
+      ],
+      "note": "Aluminum35mm; generation unspecified in ATLAS, comparable V3 listing."
+    },
+    {
+      "offer_id": "270e6b6e-3e2e-2cdf-9718-d754b8de6284",
+      "sku": "DEMO-48553E0D12AE556D837E",
+      "slug": "dt-swiss-350",
+      "brand": "DT Swiss",
+      "model": "350",
+      "category": "hub",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 65000,
+      "price_cents": 44700,
+      "basis": "local_listing",
+      "source_ids": [
+        "front-hub"
+      ],
+      "note": "Base is front15x110. Other configurations reviewed explicitly below."
+    },
+    {
+      "offer_id": "39f75497-9585-cc04-010e-d1508afc80ed",
+      "sku": "DEMO-1DC2E438084DAECCB139",
+      "slug": "dt-swiss-350",
+      "brand": "DT Swiss",
+      "model": "350",
+      "category": "hub",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 65000,
+      "price_cents": 98000,
+      "basis": "local_listing",
+      "source_ids": [
+        "rear-hub"
+      ],
+      "note": "Rear freehub included, not a front-hub price."
+    },
+    {
+      "offer_id": "ebf8d12a-f3a3-484d-0760-873c7e20be86",
+      "sku": "DEMO-6895BEF099DF497697EE",
+      "slug": "dt-swiss-350",
+      "brand": "DT Swiss",
+      "model": "350",
+      "category": "hub",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 65000,
+      "price_cents": 105000,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "rear-hub"
+      ],
+      "note": "DH157/XD differs from sourced148/MicroSpline; estimate."
+    },
+    {
+      "offer_id": "fe84d08a-565b-e277-5130-66d74fd84298",
+      "sku": "DEMO-976EC34C83B797BA09C3",
+      "slug": "dt-swiss-350",
+      "brand": "DT Swiss",
+      "model": "350",
+      "category": "hub",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 65000,
+      "price_cents": 49500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "front-hub"
+      ],
+      "note": "DH20mm differs from sourced15mm; estimate."
+    },
+    {
+      "offer_id": "6cac629e-4501-0b24-de83-b8e5af3d9493",
+      "sku": "DEMO-E3E9524FEA59BBEC5852",
+      "slug": "rockbros-nylon-2017-12",
+      "brand": "ROCKBROS",
+      "model": "Nylon 2017-12",
+      "category": "pedals",
+      "unit": "pair",
+      "condition": "new",
+      "expected_price_cents": 20000,
+      "price_cents": 12990,
+      "basis": "local_listing",
+      "source_ids": [
+        "rockbros"
+      ],
+      "note": "Price per pair."
+    },
+    {
+      "offer_id": "c0e0afe1-d358-1d45-b719-025499689765",
+      "sku": "DEMO-20D5C1FD3E036CC71B05",
+      "slug": "shimano-slx-rd-m7100-sgs",
+      "brand": "Shimano",
+      "model": "SLX M7100",
+      "category": "rear_derailleur",
+      "unit": "set",
+      "condition": "new",
+      "expected_price_cents": 80000,
+      "price_cents": 54000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "SLX rear derailleur plus associated SL-M7100 shifter. Not derailleur-only pricing."
+    },
+    {
+      "offer_id": "3aa536fb-503e-debc-7865-8584c5ef869e",
+      "sku": "DEMO-4971274075C77B1A2321",
+      "slug": "sram-gx-dh-a3",
+      "brand": "SRAM",
+      "model": "GX DH",
+      "category": "rear_derailleur",
+      "unit": "set",
+      "condition": "new",
+      "expected_price_cents": 80000,
+      "price_cents": 69000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "GX DH7 rear derailleur plus associated mechanical7-speed shifter. Not wireless GX."
+    },
+    {
+      "offer_id": "b0a22948-7b32-2394-63cd-c840c655fdb7",
+      "sku": "DEMO-01D3EDAF263AEBA2745E",
+      "slug": "dt-swiss-e-593",
+      "brand": "DT Swiss",
+      "model": "E 593",
+      "category": "rim",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 40000,
+      "price_cents": 22000,
+      "basis": "local_listing",
+      "source_ids": [
+        "rim-small"
+      ],
+      "note": "One rim, no hub/spokes/tire."
+    },
+    {
+      "offer_id": "deb1d1e6-a706-cf8a-c231-feee536f7a95",
+      "sku": "DEMO-E9F62500A893E63EDF23",
+      "slug": "dt-swiss-e-593",
+      "brand": "DT Swiss",
+      "model": "E 593",
+      "category": "rim",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 40000,
+      "price_cents": 32500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "rim-large"
+      ],
+      "note": "29-inch32h; local comparable listing28h."
+    },
+    {
+      "offer_id": "3c8e8dd4-7ce2-2621-b91c-4b63216c85f1",
+      "sku": "DEMO-1B98B3577ADA453F078B",
+      "slug": "magura-mdr-p",
+      "brand": "MAGURA",
+      "model": "MDR-P",
+      "category": "rotor",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 18000,
+      "price_cents": 26000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "203mm unit estimate."
+    },
+    {
+      "offer_id": "44c09e64-68e9-c427-ea33-074e645efe85",
+      "sku": "DEMO-9667362252B5EF17385F",
+      "slug": "magura-mdr-p",
+      "brand": "MAGURA",
+      "model": "MDR-P",
+      "category": "rotor",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 18000,
+      "price_cents": 29000,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "220mm unit estimate."
+    },
+    {
+      "offer_id": "500a18e6-42d9-cc77-c8a4-7eac6cecaf5b",
+      "sku": "DEMO-8A4CBFAB7FC053F7D8A1",
+      "slug": "magura-mdr-p",
+      "brand": "MAGURA",
+      "model": "MDR-P",
+      "category": "rotor",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 18000,
+      "price_cents": 23500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Single two-piece180mm rotor; diameter changes reviewed as an estimate."
+    },
+    {
+      "offer_id": "248f91d3-7a28-843a-7481-776943fafd7a",
+      "sku": "DEMO-1EF9EB3292DC8035AD9F",
+      "slug": "shimano-sm-rt86",
+      "brand": "Shimano",
+      "model": "SM-RT86",
+      "category": "rotor",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 18000,
+      "price_cents": 25100,
+      "basis": "local_listing",
+      "source_ids": [
+        "rotor-shimano"
+      ],
+      "note": ""
+    },
+    {
+      "offer_id": "c1f7f1ca-ae37-6402-f42c-314e4f9f47f7",
+      "sku": "DEMO-B0CEBE85BEC961AF6537",
+      "slug": "sram-hs2",
+      "brand": "SRAM",
+      "model": "HS2",
+      "category": "rotor",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 18000,
+      "price_cents": 28500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "HS2 220mm6-bolt one rotor; no exact local listing captured."
+    },
+    {
+      "offer_id": "b4a8cccd-d732-ce1f-11fd-8f6cc4039c67",
+      "sku": "DEMO-197B44ACC3489DB8EA91",
+      "slug": "wtb-volt",
+      "brand": "WTB",
+      "model": "WTB Volt Fusion Form",
+      "category": "saddle",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 18000,
+      "price_cents": 49500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Fusion Form titanium rails, not steel-rail Volt pricing."
+    },
+    {
+      "offer_id": "6e5ae7c8-60ab-3d95-7f18-d087ef3b9a1a",
+      "sku": "DEMO-50AD99F8EFAE2E8609CB",
+      "slug": "oneup-v3-dropper",
+      "brand": "OneUp Components",
+      "model": "OneUp V3 Dropper Post",
+      "category": "seatpost",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 50000,
+      "price_cents": 119000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "oneup"
+      ],
+      "note": "New V3 31.6x180 post only, excludes remote/clamp."
+    },
+    {
+      "offer_id": "0ddabb52-e3a0-4fb3-8cba-24716a475eae",
+      "sku": "DEMO-2F0333A3FD52C0ED571A",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "237146ec-fecc-33a3-3a8e-3c5c05e07e96",
+      "sku": "DEMO-5AB60CD299BF80241610",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "241741b1-3e9c-36b4-ebfe-4a588fea406e",
+      "sku": "DEMO-626835105C2282126185",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "2cb84eb6-8197-4e14-4431-80935795f1ca",
+      "sku": "DEMO-46DA8F0699E31E661320",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "3b7d1014-8d13-6ad6-86d5-47e5b6d61271",
+      "sku": "DEMO-A5FF8BC4B7896BD29DAE",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "403f9778-8da1-7ee9-50e4-7793e1324d98",
+      "sku": "DEMO-D33082C8D65C74B8E771",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "476a98c4-2a0e-c2a4-5877-82426eccef6f",
+      "sku": "DEMO-9CF323A44E1537FB4E9D",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "7c1102c7-0da8-ba19-52dd-eabf9cd52443",
+      "sku": "DEMO-B33961B2CD7E73208176",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "844bc079-1f75-3421-3018-33fa112d5d6d",
+      "sku": "DEMO-135ECF3FF4371A16F03E",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "bde4d333-a782-1e10-527d-6170e78b35e7",
+      "sku": "DEMO-603B9704CA4F3363102B",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "d71b1a3f-2cbd-cf7f-92d1-90f5c05859da",
+      "sku": "DEMO-A8B01308FA48B82613C5",
+      "slug": "fox-float-x2-factory-my26",
+      "brand": "FOX",
+      "model": "FLOAT X2 Factory",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 130000,
+      "price_cents": 130000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "292be6d0-e757-2308-4052-64f16d6dd9a7",
+      "sku": "DEMO-B70664A21C6504EB6E9A",
+      "slug": "marzocchi-bomber-cr",
+      "brand": "Marzocchi",
+      "model": "Bomber CR",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 65000,
+      "price_cents": 65000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "920c4f0c-62d3-e276-0e51-dd859ea3862d",
+      "sku": "DEMO-89763609B827AD0F9490",
+      "slug": "marzocchi-bomber-cr",
+      "brand": "Marzocchi",
+      "model": "Bomber CR",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 65000,
+      "price_cents": 65000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "a4acb2ab-088c-2834-6bec-3d66f9c36335",
+      "sku": "DEMO-12C32564A33F940DB938",
+      "slug": "ohlins-ttx22m2-coil",
+      "brand": "Öhlins",
+      "model": "TTX22m.2",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 180000,
+      "price_cents": 180000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "0b0581a3-9c61-dc63-e0b6-f5e971cd350b",
+      "sku": "DEMO-A3B784DD754200CE9D9E",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "16da86e4-04be-49cf-8427-5f20c23e1cf0",
+      "sku": "DEMO-EADD56336CFD959F4243",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "192c1a74-5b2a-8922-788a-19be5ef61785",
+      "sku": "DEMO-9AC502C95E4C557B0CF7",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "1d15722b-020e-7844-d178-8f9e072b74ca",
+      "sku": "DEMO-783DDB73DD2F49323656",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "1e98ee59-f72d-39ea-2cd1-735fa08421cf",
+      "sku": "DEMO-83CD7022B67E8F98D572",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "21cb8e22-9766-6394-71be-33d99724f837",
+      "sku": "DEMO-8881655BE4017C66D4C2",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "25b83e48-e40c-c5eb-1315-418577a127e5",
+      "sku": "DEMO-C8D46835EAD3683E96A7",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "2a5f69eb-4cd4-e3b5-453c-18c4ac5fea38",
+      "sku": "DEMO-D4E13FF7B599E0071A1B",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "409dfc97-ed66-fe56-3e1c-c2ae453c0727",
+      "sku": "DEMO-9B40D7BD8CA9BB59D6AF",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "4a9c9148-8399-2a3a-586d-bd596e82fb7c",
+      "sku": "DEMO-06C18B53381B2C5FB552",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "4d5988b2-36f4-3160-f366-862d635e01f2",
+      "sku": "DEMO-B227F9ED737AEB70D4E3",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "57d04527-60b8-5de0-fa1a-aa500053fd9c",
+      "sku": "DEMO-0BDF3E1C3B431A5FF9E4",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "84fc5aad-6c6e-a938-31d3-38327f0df29d",
+      "sku": "DEMO-1EE0FDE35A27DFBEC118",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "85de48f2-c9be-c047-8b68-f974a4925455",
+      "sku": "DEMO-C6489029D7F682CBA443",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "893ee52f-91c5-1247-4876-b88d14526a76",
+      "sku": "DEMO-81EBA86D0F293F2AE80F",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "8bb691a5-1f42-a195-1694-1cefbb9c66c3",
+      "sku": "DEMO-A19ACBE136A5BA305BD5",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "964538c4-e2ba-69f7-8071-2715b94f8d12",
+      "sku": "DEMO-2ACF6D19060B1D0D33F0",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "9b8910c8-b197-81f3-bee3-a9f7cc14d0d2",
+      "sku": "DEMO-DCAEAD2D366FD0F549CE",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "a68ad84a-f578-0f59-ddab-811c2077083b",
+      "sku": "DEMO-63280A6F6D7035CD5D07",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "a7498aba-03d1-06b8-2437-5a486da9a77f",
+      "sku": "DEMO-CC12A8E60AD8A7232813",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "afc32857-d041-7be2-074a-5e1a831a41c6",
+      "sku": "DEMO-F296E070B834188C5660",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "b932fc16-3787-cfd3-cacf-382c7738b7de",
+      "sku": "DEMO-438B6978AFF8F144192A",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "e46a2ea4-0fc1-6830-52f7-5d425538f135",
+      "sku": "DEMO-D56522389EB7E9E1354A",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "ef49a080-9d16-ece1-f871-4d1ca1d9882e",
+      "sku": "DEMO-2045AA6132794D1A8C13",
+      "slug": "rockshox-vivid-coil-ultimate-d1",
+      "brand": "RockShox",
+      "model": "Vivid Coil Ultimate",
+      "category": "shock",
+      "unit": "unit",
+      "condition": "used",
+      "expected_price_cents": 160000,
+      "price_cents": 160000,
+      "basis": "used_estimate",
+      "source_ids": [],
+      "note": "Retained ATLAS used asking-price estimate. Actual unit age/condition/service history not known; not a verified local sale quote."
+    },
+    {
+      "offer_id": "0b5ceef1-d223-6f39-0561-fac1a4c52bdf",
+      "sku": "DEMO-85EB520BBDD726F69BC2",
+      "slug": "renthal-apex-35-v2",
+      "brand": "Renthal",
+      "model": "Renthal Apex 35 V2",
+      "category": "stem",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 25000,
+      "price_cents": 60900,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "renthal"
+      ],
+      "note": "Apex35 retail reference; V2/40mm exact configuration not established."
+    },
+    {
+      "offer_id": "fb25bfc8-92e4-da17-b578-e6b1f8b5e19a",
+      "sku": "DEMO-C445D800E3842CD04916",
+      "slug": "renthal-integra-35",
+      "brand": "Renthal",
+      "model": "Renthal Integra 35",
+      "category": "stem",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 25000,
+      "price_cents": 60000,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "integra"
+      ],
+      "note": "Direct-mount stem; clamp version of source unspecified."
+    },
+    {
+      "offer_id": "054b86ed-7c11-70f9-cdbc-7aa035bc2d6c",
+      "sku": "DEMO-5E6A5A17E91DFA60CE28",
+      "slug": "cst-bft-c1752",
+      "brand": "CST",
+      "model": "BFT C1752",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 12500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "cst"
+      ],
+      "note": "EPS/TLR folding version; do not price as basic26 wire bead."
+    },
+    {
+      "offer_id": "62349518-b20c-f830-7401-225c09a1885f",
+      "sku": "DEMO-9AF8F209FEBEA2D1B52E",
+      "slug": "cst-bft-c1752",
+      "brand": "CST",
+      "model": "BFT C1752",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 12500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "cst"
+      ],
+      "note": "EPS/TLR folding version; do not price as basic26 wire bead."
+    },
+    {
+      "offer_id": "c099f9d4-796d-b0f6-1c67-57928a765055",
+      "sku": "DEMO-0EFF270F18658189957E",
+      "slug": "cst-bft-c1752",
+      "brand": "CST",
+      "model": "BFT C1752",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 12500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "cst"
+      ],
+      "note": "EPS/TLR folding version; do not price as basic26 wire bead."
+    },
+    {
+      "offer_id": "fbec730c-2de8-cb83-ecf7-8d47e1f446be",
+      "sku": "DEMO-A1D26F7FF2FC26E29F48",
+      "slug": "cst-bft-c1752",
+      "brand": "CST",
+      "model": "BFT C1752",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 12500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "cst"
+      ],
+      "note": "EPS/TLR folding version; do not price as basic26 wire bead."
+    },
+    {
+      "offer_id": "138f6a37-baf0-a664-d9f6-d6e1dde5ddac",
+      "sku": "DEMO-D3F965983C0847F77D70",
+      "slug": "kenda-pinner-pro-k1241a",
+      "brand": "Kenda",
+      "model": "Pinner Pro K1241A",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 23500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "kenda"
+      ],
+      "note": "ATC/SCT estimate; no verified landed local price."
+    },
+    {
+      "offer_id": "339a0598-9cba-fb36-377b-02634609e7ca",
+      "sku": "DEMO-305EB9580D358644C885",
+      "slug": "kenda-pinner-pro-k1241a",
+      "brand": "Kenda",
+      "model": "Pinner Pro K1241A",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 28500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "kenda"
+      ],
+      "note": "Heavier gravity casing; estimate, not an observed price."
+    },
+    {
+      "offer_id": "7f5f9f9a-8a6d-dc1f-063f-c47a9202f543",
+      "sku": "DEMO-3CAA84532A5C67166F04",
+      "slug": "kenda-pinner-pro-k1241a",
+      "brand": "Kenda",
+      "model": "Pinner Pro K1241A",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 23500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "kenda"
+      ],
+      "note": "ATC/SCT estimate; no verified landed local price."
+    },
+    {
+      "offer_id": "a9a455ed-4edb-ce50-4d44-b0781738d4da",
+      "sku": "DEMO-1F9CAD9A025EC7B12945",
+      "slug": "kenda-pinner-pro-k1241a",
+      "brand": "Kenda",
+      "model": "Pinner Pro K1241A",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 28500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "kenda"
+      ],
+      "note": "Heavier gravity casing; estimate, not an observed price."
+    },
+    {
+      "offer_id": "dc148504-5ba7-3b6a-967f-cccc93475d87",
+      "sku": "DEMO-85268B29152142290CBC",
+      "slug": "kenda-pinner-pro-k1241a",
+      "brand": "Kenda",
+      "model": "Pinner Pro K1241A",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 23500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "kenda"
+      ],
+      "note": "ATC/SCT estimate; no verified landed local price."
+    },
+    {
+      "offer_id": "28c5ced3-f910-014c-57cd-a8020cd88f5c",
+      "sku": "DEMO-D1000225619AD457A6E9",
+      "slug": "maxxis-assegai",
+      "brand": "Maxxis",
+      "model": "Assegai",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 27500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "maxxis"
+      ],
+      "note": "EXO+ MaxxTerra29, not sourced EXO base/DH."
+    },
+    {
+      "offer_id": "8378d6e5-0dd4-93ed-2b05-ae8fd348803c",
+      "sku": "DEMO-9592CAEDD69FBAA51F38",
+      "slug": "maxxis-minion-dhr-ii",
+      "brand": "Maxxis",
+      "model": "Minion DHR II",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 26500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "maxxis"
+      ],
+      "note": "EXO+ MaxxTerra27.5; not a bare EXO price."
+    },
+    {
+      "offer_id": "30876686-6456-8e85-429d-98b49484194a",
+      "sku": "DEMO-D4F7F0984CB40CB3CDCE",
+      "slug": "michelin-wild-enduro-ms-racing-line",
+      "brand": "Michelin",
+      "model": "Wild Enduro MS Racing Line",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 34500,
+      "basis": "model_estimate",
+      "source_ids": [],
+      "note": "Magi-X MS Racing Line, not entry-level Wild Enduro; no exact local listing captured."
+    },
+    {
+      "offer_id": "56473299-742e-f786-9707-157700096aa1",
+      "sku": "DEMO-F0EAF8C78371DBE78052",
+      "slug": "schwalbe-gravity-magic-mary",
+      "brand": "Schwalbe",
+      "model": "GRAVITY Magic Mary",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 29500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "schwalbe"
+      ],
+      "note": "GRAVITY SOFT new casing differs from sourced Super Gravity; estimate."
+    },
+    {
+      "offer_id": "eecf73c0-c1ad-c505-3a2a-836f74106e9e",
+      "sku": "DEMO-30A725C0697F6C62A5F1",
+      "slug": "schwalbe-gravity-magic-mary",
+      "brand": "Schwalbe",
+      "model": "GRAVITY Magic Mary",
+      "category": "tire",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 22000,
+      "price_cents": 29500,
+      "basis": "adapted_listing",
+      "source_ids": [
+        "schwalbe"
+      ],
+      "note": "GRAVITY SOFT new casing differs from sourced Super Gravity; estimate."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+-- Per-offer price correction following retail-price-review.json.
+-- No category formula, artificial unique prices, units/stock changes or history rewrite.
+-- Preserve manually edited offers and active campaigns. Expected-price guards
+-- skip changed rows; the read-only audit reports any unapplied reviewed price.
+with prices(id,expected_cents,cents,item_condition) as (values
+ ('b6b78833-03c7-37da-be6e-ee2b41b0be48'::uuid,15000::bigint,14500::bigint,'new'),
+ ('3ed30a7c-cff0-6328-8b88-7a16daf2de92'::uuid,15000::bigint,22500::bigint,'new'),
+ ('29a87921-3a96-0b27-3034-01bd89e7cf96'::uuid,90000::bigint,38000::bigint,'new'),
+ ('bed12adb-e689-c558-9d13-a33f5340101b'::uuid,90000::bigint,42500::bigint,'new'),
+ ('70b88501-da17-45f9-680a-fd0c95fc8333'::uuid,90000::bigint,58000::bigint,'new'),
+ ('23ade307-49c8-181f-4fc3-1d460bd90263'::uuid,90000::bigint,80000::bigint,'new'),
+ ('bfab58d2-deaa-a1e6-bde7-a2bf3ff63a1e'::uuid,90000::bigint,58000::bigint,'new'),
+ ('69409cdc-ee63-46f7-9891-26efd80a8eb8'::uuid,90000::bigint,67500::bigint,'new'),
+ ('93ad86c9-ecfb-cb35-caaa-125063c9dc78'::uuid,90000::bigint,99000::bigint,'new'),
+ ('31b4e1b7-1a0a-f88b-3d00-a3af319bd410'::uuid,90000::bigint,115000::bigint,'new'),
+ ('d1538219-49ea-b132-b2ca-c5882868bc7c'::uuid,90000::bigint,132000::bigint,'new'),
+ ('ec681b7e-8c30-3681-09c4-c56f57a8cac8'::uuid,55000::bigint,48500::bigint,'new'),
+ ('344d064a-603c-6f22-8779-1a462b74b394'::uuid,55000::bigint,125000::bigint,'new'),
+ ('6bdcfdce-eafd-64aa-d1dc-824adb09214b'::uuid,10000::bigint,20000::bigint,'new'),
+ ('5588efe2-6b2b-44dc-7d8d-b6757ea2a183'::uuid,10000::bigint,8500::bigint,'new'),
+ ('e666e91c-a8bf-62e6-2076-6defbb6fa0ee'::uuid,60000::bigint,62000::bigint,'new'),
+ ('adf9a312-13c8-e021-62ec-6d7b24907b4c'::uuid,60000::bigint,76000::bigint,'new'),
+ ('eddfb79c-d08b-0129-a9c6-e370d5e26e5b'::uuid,30000::bigint,39500::bigint,'new'),
+ ('a3e07122-47a7-1a35-97bc-42c390d77877'::uuid,30000::bigint,44900::bigint,'new'),
+ ('270e6b6e-3e2e-2cdf-9718-d754b8de6284'::uuid,65000::bigint,44700::bigint,'new'),
+ ('39f75497-9585-cc04-010e-d1508afc80ed'::uuid,65000::bigint,98000::bigint,'new'),
+ ('ebf8d12a-f3a3-484d-0760-873c7e20be86'::uuid,65000::bigint,105000::bigint,'new'),
+ ('fe84d08a-565b-e277-5130-66d74fd84298'::uuid,65000::bigint,49500::bigint,'new'),
+ ('6cac629e-4501-0b24-de83-b8e5af3d9493'::uuid,20000::bigint,12990::bigint,'new'),
+ ('c0e0afe1-d358-1d45-b719-025499689765'::uuid,80000::bigint,54000::bigint,'new'),
+ ('3aa536fb-503e-debc-7865-8584c5ef869e'::uuid,80000::bigint,69000::bigint,'new'),
+ ('b0a22948-7b32-2394-63cd-c840c655fdb7'::uuid,40000::bigint,22000::bigint,'new'),
+ ('deb1d1e6-a706-cf8a-c231-feee536f7a95'::uuid,40000::bigint,32500::bigint,'new'),
+ ('3c8e8dd4-7ce2-2621-b91c-4b63216c85f1'::uuid,18000::bigint,26000::bigint,'new'),
+ ('44c09e64-68e9-c427-ea33-074e645efe85'::uuid,18000::bigint,29000::bigint,'new'),
+ ('500a18e6-42d9-cc77-c8a4-7eac6cecaf5b'::uuid,18000::bigint,23500::bigint,'new'),
+ ('248f91d3-7a28-843a-7481-776943fafd7a'::uuid,18000::bigint,25100::bigint,'new'),
+ ('c1f7f1ca-ae37-6402-f42c-314e4f9f47f7'::uuid,18000::bigint,28500::bigint,'new'),
+ ('b4a8cccd-d732-ce1f-11fd-8f6cc4039c67'::uuid,18000::bigint,49500::bigint,'new'),
+ ('6e5ae7c8-60ab-3d95-7f18-d087ef3b9a1a'::uuid,50000::bigint,119000::bigint,'new'),
+ ('0b5ceef1-d223-6f39-0561-fac1a4c52bdf'::uuid,25000::bigint,60900::bigint,'new'),
+ ('fb25bfc8-92e4-da17-b578-e6b1f8b5e19a'::uuid,25000::bigint,60000::bigint,'new'),
+ ('054b86ed-7c11-70f9-cdbc-7aa035bc2d6c'::uuid,22000::bigint,12500::bigint,'new'),
+ ('62349518-b20c-f830-7401-225c09a1885f'::uuid,22000::bigint,12500::bigint,'new'),
+ ('c099f9d4-796d-b0f6-1c67-57928a765055'::uuid,22000::bigint,12500::bigint,'new'),
+ ('fbec730c-2de8-cb83-ecf7-8d47e1f446be'::uuid,22000::bigint,12500::bigint,'new'),
+ ('138f6a37-baf0-a664-d9f6-d6e1dde5ddac'::uuid,22000::bigint,23500::bigint,'new'),
+ ('339a0598-9cba-fb36-377b-02634609e7ca'::uuid,22000::bigint,28500::bigint,'new'),
+ ('7f5f9f9a-8a6d-dc1f-063f-c47a9202f543'::uuid,22000::bigint,23500::bigint,'new'),
+ ('a9a455ed-4edb-ce50-4d44-b0781738d4da'::uuid,22000::bigint,28500::bigint,'new'),
+ ('dc148504-5ba7-3b6a-967f-cccc93475d87'::uuid,22000::bigint,23500::bigint,'new'),
+ ('28c5ced3-f910-014c-57cd-a8020cd88f5c'::uuid,22000::bigint,27500::bigint,'new'),
+ ('8378d6e5-0dd4-93ed-2b05-ae8fd348803c'::uuid,22000::bigint,26500::bigint,'new'),
+ ('30876686-6456-8e85-429d-98b49484194a'::uuid,22000::bigint,34500::bigint,'new'),
+ ('56473299-742e-f786-9707-157700096aa1'::uuid,22000::bigint,29500::bigint,'new'),
+ ('eecf73c0-c1ad-c505-3a2a-836f74106e9e'::uuid,22000::bigint,29500::bigint,'new')
+)
+update public.store_offers o set base_price_cents=p.cents,revision=revision+1,updated_at=clock_timestamp()
+from prices p where o.id=p.id and o.sku like 'DEMO-%' and o.updated_by is null
+and o.base_price_cents=p.expected_cents and o.item_condition=p.item_condition
+and not exists(select 1 from public.promotion_offers l join public.promotions d on d.id=l.promotion_id where l.offer_id=o.id and d.active and d.ends_at>clock_timestamp());
