@@ -1,12 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Atlas MTB">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 218" fill="none" role="img" aria-label="ATLAS MTB · Cumbre">
   <defs>
-    <linearGradient id="atlasRed" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#d7261e" />
-      <stop offset="100%" stop-color="#8f0f14" />
-    </linearGradient>
+    <g id="atlas-cumbre-mark"><path xmlns="http://www.w3.org/2000/svg" d="m100 7 67 43-17 77-50 26-50-26-17-77Z" fill="#ef633f" /><path xmlns="http://www.w3.org/2000/svg" d="m56 116 44-80 44 80h-24l-20-39-20 39Z" fill="#171412" /><path xmlns="http://www.w3.org/2000/svg" d="m81 120 19-30 19 30Z" fill="var(--logo-paper,#fff)" /></g>
+    <g id="atlas-cumbre-name"><g xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" fill="currentColor"><path d="M0 48 15 0h24l15 48H39l-3-11H18l-3 11Zm21-23h12l-5-15h-2Z" /><path d="M60 0h49v12H91v36H77V12H60Z" /><path d="M117 0h14v36h30l-4 12h-40Z" /><path d="m168 48 15-48h24l15 48h-15l-3-11h-18l-3 11Zm21-23h12l-5-15h-2Z" /><path d="M241 0h43v12h-37v6h26l11 10v10l-11 10h-44V36h39v-7h-26l-11-10V10Z" /></g></g>
+    <g id="atlas-cumbre-mtb" fill="currentColor"><path xmlns="http://www.w3.org/2000/svg" d="M0 0h4l3 8 3-8h4v19h-4V8l-3 7-3-7v11H0Z" /><path xmlns="http://www.w3.org/2000/svg" d="M17 0h12v4h-4v15h-4V4h-4Z" /><path xmlns="http://www.w3.org/2000/svg" d="M32 0h9l4 4v4l-2 1 2 2v4l-4 4h-9Zm4 4v3h4l1-1V5l-1-1Zm0 7v4h4l1-1v-2l-1-1Z" fill-rule="evenodd" /></g>
+    <g id="atlas-header">
+      <use href="#atlas-cumbre-mark" transform="translate(-13 2) scale(.55)"/>
+      <use href="#atlas-cumbre-name" transform="translate(102 17) scale(.8)"/>
+      <use href="#atlas-cumbre-mtb" transform="translate(104 67) scale(.82)"/>
+    </g>
   </defs>
-  <rect width="160" height="160" rx="26" fill="#111518" />
-  <polygon points="80,18 146,142 118,142 80,58 42,142 14,142" fill="url(#atlasRed)" />
-  <polygon points="80,74 98,108 62,108" fill="#111518" />
-  <path d="M36 126 L124 126" stroke="#e2e6ea" stroke-width="6" stroke-linecap="round" />
+  <g id="atlas-signature" style="color:#f8f3ef;--logo-paper:#171412">
+    <use href="#atlas-cumbre-mark"/>
+    <use href="#atlas-cumbre-name" transform="translate(14 162) scale(.6)"/>
+    <use href="#atlas-cumbre-mtb" transform="translate(76 197) scale(.7)"/>
+  </g>
 </svg>
