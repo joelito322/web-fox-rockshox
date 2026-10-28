@@ -1,7 +1,7 @@
 ENTREGABLE 4 — ATLAS MTB — PRESENTACIÓN REDISEÑADA
 Autor: Joel Ito Luque
 Fecha académica de portada conservada: 21 de octubre de 2026.
-Revisión visual: 22 de octubre de 2026.
+Revisión funcional y visual: 28 de octubre de 2026.
 
 CONTENIDO
 - presentacion.tex: única fuente LaTeX Beamer con las doce láminas y notas.
@@ -23,7 +23,7 @@ Abrir el PDF a pantalla completa y ensayar recursos/guion-exposicion.txt.
 Las notas están ocultas para mantener doce páginas. El PDF incluye transiciones
 Fade suaves entre páginas; su reproducción depende del visor utilizado.
 El diseño funciona también cuando el visor no reproduce transiciones.
-La lámina 10 enlaza a la web pública. Preparar antes una cuenta y un montaje de
+La lámina 10 enlaza a la demostración local en localhost:5174. Preparar antes una cuenta y un montaje de
 práctica; no proyectar contraseñas ni datos de cuentas personales.
 Si falla la red, explicar el recorrido con las capturas.
 
@@ -35,4 +35,18 @@ Sin logotipos institucionales añadidos. Las capturas son reales y conservan los
 rasgos del producto mostrado; no atribuyen fabricación o colaboración comercial.
 Se mantiene la evidencia y el alcance del informe; no se certifican mecánica,
 FPS, correo real o uso en teléfono físico. Google conserva confirmación manual.
-El ZIP corresponde solo al entregable 4.
+No se regeneran archivos ZIP en esta revisión.
+
+ALCANCE DE LA REVISIÓN 28/10/2026
+Se actualizan la fuente LaTeX y el PDF, manteniendo formato, tipografías,
+portada académica del 21/10/2026 y, en presentación, doce láminas 16:9.
+Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
+opcional con tarifa inicial S/150 editable y exoneración administrativa,
+notificaciones, pedidos, métodos de pago simulados y alternativas de
+compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
+Estado registrado: 24 tablas propias, 41 migraciones; 564 pruebas correctas,
+2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
+Las capturas se renovaron con cuentas temporales y limpieza comprobada;
+no se modificaron precios, catálogo ni cuentas reales durante las capturas.
+Esta revisión no implica push ni despliegue. La publicación previa puede
+mostrar otra versión. Cobros reales, SMTP y móvil físico no certificados.

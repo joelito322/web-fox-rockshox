@@ -1,4 +1,4 @@
-PROCEDENCIA Y LICENCIAS — REVISIÓN 22/10/2026
+PROCEDENCIA Y LICENCIAS — REVISIÓN 28/10/2026
 
 FOTOGRAFÍA DE PORTADA Y CIERRE
 Julien Kettmann. (2021, 1 de octubre). A person jumping a bike in the air.
@@ -11,8 +11,8 @@ mtb-accion.png es la conversión de formato de esa fuente; los encuadres se real
 al componer las láminas. No se generó la fotografía con IA.
 
 CAPTURAS DE LA APLICACIÓN
-montaje-lateral.png y montaje-perspectiva.png: capturas reales del visor público,
-22/10/2026, viewport 1920 x 1080, doble resolución. Script reproducible en el repo:
+montaje-lateral.png y montaje-perspectiva.png: capturas reales del visor local conectado a Supabase Cloud,
+28/10/2026, viewport 1920 x 1080, doble resolución. Script reproducible en el repo:
 scripts/capture-slide-views.mjs. Cuenta temporal confirmada por API y eliminada al
 terminar; no se guardó montaje ni se alteró catálogo, geometría o permisos.
 05-categorias.png, 07-grupos-talla.png, 08-acabados.png y 13-renombrar.png:
@@ -38,5 +38,14 @@ Fuentes reales ya utilizadas en el informe. No se atribuyen encuestas o ahorros.
 
 GANTT Y RESULTADOS
 Gantt resumido del informe: estimación reconstruida 30/09–20/10/2026.
-Las cifras 487/2 omitidas y 13 comprobaciones proceden de los registros del informe
-y manual; el rediseño no se presenta como una nueva ejecución de esas pruebas.
+La revisión actual repitió pnpm check: 564 correctas, 2 omitidas, 83 archivos;
+build correcto. Estado Cloud registrado: 24 tablas propias y 41 migraciones.
+No se suman recorridos de navegador con pruebas unitarias como casos únicos.
+
+IDENTIDAD Y CAPTURAS COMERCIALES
+atlas-cumbre-claro.png: exportación vectorial del maestro propio
+src/assets/atlas-mtb.svg, símbolo y letras Cumbre aprobados por el usuario.
+16-carrito.png: captura comercial propia del manual, cuenta efímera eliminada.
+Paleta cálida: coral, marfil y carbón; geometría de iconos preservada.
+La aplicación publicada previamente no se despliega con esta actualización.
+Los métodos de pago y resultados financieros son simulados.
