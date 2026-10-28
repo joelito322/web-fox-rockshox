@@ -1,7 +1,9 @@
-COMPILACIÓN — REVISIÓN FUNCIONAL 28/10/2026
-Comando: pnpm check, que ejecuta pnpm run build y pnpm run test.
-Entorno: Node.js 24.22.0, pnpm 12.6.0.
-Resultado: TypeScript y Vite correctos. Build Vite: 5,06 s.
-Persisten avisos de chunks mayores de 500 kB; no equivalen a una medición
-ni aceptación del rendimiento de red o dispositivo físico.
-La actualización documental no realiza push ni despliegue a Netlify.
+COMPILACIÓN DEL SOFTWARE — FILTRO DE PRECIO — 28/10/2026
+Comando: mise exec node@24.22.0 -- pnpm build
+Entorno:Node.js24.22.0, pnpm12.6.0.
+Resultado:TypeScript y Vite correctos; build Vite3,96s.
+Log de referencia local:/tmp/atlas-price-final-build.log (no se versiona).
+La suite general se ejecutó por separado; resultado en pruebas-resumen.txt.
+Persisten avisos de chunks superiores a500kB y anotaciones de dependencias;
+no equivalen a una medición de rendimiento de red ni de teléfono físico.
+La actualización documental no realiza push ni despliegue en Netlify.

@@ -70,7 +70,7 @@ Mg. Fidel Huanco Ramos\par
 \setcounter{page}{2}
 
 \section*{Resumen}\addcontentsline{toc}{section}{Resumen}
-\noindent ATLAS MTB desarrolla una tienda web de componentes para enduro y descenso que conecta consulta técnica, comparación, configuración tridimensional y venta asistida. El problema abordado es la discontinuidad entre elegir una pieza, relacionar sus medidas con el montaje y convertir la selección en una compra revisada. Se implementaron catálogo, montajes privados, avisos con alternativas comprobables, precios por oferta comercial, carrito persistente, cotizaciones, pedidos y seguimiento. El armado es opcional, con tarifa inicial automática editable y posibilidad de exoneración durante la revisión; el cliente recibe un aviso y acepta el total. Los métodos de pago permiten ensayar el recorrido sin efectuar cobros reales. La arquitectura combina módulos por funcionalidad con independencia de reglas de negocio, React y Three.js en el navegador y Supabase Cloud para identidad, datos y archivos. Esta revisión del 28 de octubre de 2026 documenta el código local y el backend remoto; no afirma que esos últimos cambios estén publicados en Netlify. El cronograma reconstruido integra el alcance completo en cuatro semanas, del 30 de septiembre al 27 de octubre. La evidencia comprueba operaciones, persistencia y controles en escenarios definidos, sin certificar mecánica, rentabilidad, satisfacción de usuarios ni rendimiento de teléfonos físicos.
+\noindent ATLAS MTB desarrolla una tienda web de componentes para enduro y descenso que conecta consulta técnica, comparación, configuración tridimensional y venta asistida. El problema abordado es la discontinuidad entre elegir una pieza, relacionar sus medidas con el montaje y convertir la selección en una compra revisada. Se implementaron catálogo con filtro de precio por categoría, montajes privados, avisos con alternativas comprobables, precios por oferta comercial, carrito persistente, cotizaciones, pedidos y seguimiento. El armado es opcional, con tarifa inicial automática editable y posibilidad de exoneración durante la revisión; el cliente recibe un aviso y acepta el total. Los métodos de pago permiten ensayar el recorrido sin efectuar cobros reales. La arquitectura combina módulos por funcionalidad con independencia de reglas de negocio, React y Three.js en el navegador y Supabase Cloud para identidad, datos y archivos. Esta revisión del 28 de octubre de 2026 documenta el código local y el backend remoto; no afirma que esos últimos cambios estén publicados en Netlify. El cronograma reconstruido integra el alcance completo en cuatro semanas, del 30 de septiembre al 27 de octubre. La evidencia comprueba operaciones, persistencia y controles en escenarios definidos, sin certificar mecánica, rentabilidad, satisfacción de usuarios ni rendimiento de teléfonos físicos.
 
 \indent\textit{Palabras clave:} bicicletas de montaña, configuración tridimensional, venta asistida, componentes, plataforma web, gestión de proyectos.
 \pagina
@@ -132,7 +132,7 @@ Desarrollar e implementar una plataforma web de venta asistida de componentes pa
 \end{enumerate}
 
 \subsection{Alcance funcional y exclusiones}
-El alcance comprende catálogo público, búsqueda, fichas, comparación de hasta tres variantes de una categoría, configuración de 23 posiciones, acabados habilitados, avisos y alternativas que resuelven conflictos documentados, deshacer, pares, inspección visual de suspensión y montajes privados. Incluye tienda propia con ofertas por variante/acabado, precios en soles, condición nueva/usada, stock de validación, promociones porcentuales o fijas no acumulables, carrito por cuenta, cotizaciones versionadas, retiro o envío cotizado, armado opcional, pedidos, simulación de pago y seguimiento. La administración organiza catálogo, prearmadas, accesos y ventas según permisos.
+El alcance comprende catálogo público, búsqueda, filtro individual de precio por categoría, fichas, comparación de hasta tres variantes de una categoría, configuración de 23 posiciones, acabados habilitados, avisos y alternativas que resuelven conflictos documentados, deshacer, pares, inspección visual de suspensión y montajes privados. Incluye tienda propia con ofertas por variante/acabado, precios en soles, condición nueva/usada, stock de validación, promociones porcentuales o fijas no acumulables, carrito por cuenta, cotizaciones versionadas, retiro o envío cotizado, armado opcional, pedidos, simulación de pago y seguimiento. La administración organiza catálogo, prearmadas, accesos y ventas según permisos.
 
 Se excluyen cobros reales, integración contratada con pasarelas, cuentas bancarias receptoras reales, marketplace de terceros, fabricación, colaboración entre cuentas y certificación mecánica. El armado muestra inicialmente S/\,150 al solicitarlo; la tarifa es editable y el administrador puede dejarlo sin coste al revisar la cotización, antes de que el cliente acepte y cree el pedido. El precio comercial reside en la oferta y es distinto de cualquier referencia informativa de catálogo. Las geometrías no son CAD de fabricación ni verificaciones exhaustivas de contactos o resistencia.
 
@@ -277,7 +277,7 @@ El Gantt de la figura~\ref{fig:gantt} utiliza los mismos intervalos de la tabla.
 \end{landscape}
 
 \subsection{Integración del alcance completo}
-La planificación reconstruida incluye las funciones técnicas y comerciales desde sus paquetes de requisitos y diseño: las ofertas preceden al carrito; el carrito y los montajes preceden a las solicitudes de armado; las cotizaciones alimentan los pedidos; y reservas, pagos simulados y avisos completan el recorrido. Los solapamientos se limitan a actividades con insumos ya cerrados; no eliminan los hitos de aprobación del diseño ni las dependencias entre módulos. El corte de planificación es el 27 de octubre; las revisiones efectivamente registradas el 28 se mantienen identificadas por su fecha en la evidencia y no se trasladan como hechos al día anterior.
+La planificación reconstruida incluye las funciones técnicas y comerciales desde sus paquetes de requisitos y diseño: las ofertas preceden al carrito; el carrito y los montajes preceden a las solicitudes de armado; las cotizaciones alimentan los pedidos; y reservas, pagos simulados y avisos completan el recorrido. Los solapamientos se limitan a actividades con insumos ya cerrados; no eliminan los hitos de aprobación del diseño ni las dependencias entre módulos. El corte de planificación es el 27 de octubre; las revisiones efectivamente registradas el 28 se mantienen identificadas por su fecha en la evidencia y no se trasladan como hechos al día anterior. El filtro individual de precio se incorpora como ampliación verificada el 28; no se altera el cronograma base para atribuirle una ejecución anterior.
 
 \subsection{Recursos utilizados}
 \begin{table}[H]
@@ -364,7 +364,8 @@ RF18 & Administrar ofertas y promociones & Precio/stock por SKU, condición y ca
 RF19 & Conservar el carrito & Recuperar líneas por cuenta entre dispositivos; cierre de sesión limpia caché, no elimina carrito remoto.\\
 RF20 & Cotizar armado y entrega & Aplicar tarifa inicial, revisión humana, exoneración opcional y aviso al cliente antes de aceptar.\\
 RF21 & Crear y seguir pedidos & Fijar totales, reservar disponibilidad, rechazar revisiones obsoletas y registrar transiciones autorizadas.\\
-RF22 & Simular el pago & Elegir Yape, Plin, banco o tarjeta y registrar un resultado simulado sin recopilar credenciales bancarias.\\\bottomrule
+RF22 & Simular el pago & Elegir Yape, Plin, banco o tarjeta y registrar un resultado simulado sin recopilar credenciales bancarias.\\
+RF23 & Filtrar el precio individual & Aplicar mínimo/máximo en soles antes de paginar; mostrar variantes elegibles en catálogo y selector 3D y limpiar el rango al cambiar categoría.\\\bottomrule
 \end{longtable}\end{tabla}
 
 \subsection{Requisitos no funcionales}
@@ -559,6 +560,16 @@ La solución emplea TypeScript para los contratos y reglas, React para la interf
 \subsection{Catálogo y comparación}
 El catálogo agrupa información por categoría, modelo y variante. Las tarjetas utilizan una proyección resumida, mientras la ficha solicita la información completa de la pieza seleccionada. La búsqueda incorpora un breve tiempo de espera antes de consultar y el cambio de filtros restablece la página correspondiente. Las respuestas se reutilizan mediante la caché de consultas, evitando cargar todos los manifiestos del catálogo para mostrar una galería.
 
+El control \textbf{Precio} permite aplicar un mínimo, un máximo o ambos en soles al artículo individual de la categoría. El rango se combina con marca, disciplina, medidas y búsqueda; se aplica antes de paginar y solo muestra variantes con una oferta activa dentro del intervalo. La ficha conserva las versiones elegibles y la tarjeta indica la unidad comercial. Un valor ausente no equivale a cero; el filtro no calcula el presupuesto total del montaje ni sustituye una comprobación de stock.
+
+La función \ruta{catalog_price_matches} reutiliza la regla de descuento de la compra para considerar la promoción vigente más favorable sin acumular. Devuelve las variantes elegibles y su menor precio dentro del rango; la consulta paginada intersecta esos identificadores con los demás filtros. Las coincidencias se reutilizan durante 30 segundos entre páginas y proyecciones. Sin rango no se ejecuta esa consulta adicional. El selector 3D utiliza el mismo control y resultado, sin consultar precio por cada opción ni alterar piezas montadas; cambiar categoría limpia el rango. Las operaciones administrativas de catálogo, ofertas y promociones invalidan las coincidencias correspondientes.
+
+\begin{figure}[H]
+\caption{Filtro individual de precio por categoría}\label{fig:precio}
+\centering\includegraphics[width=.65\textwidth,height=.34\textheight,keepaspectratio]{recursos/05-filtro-precio.png}
+\nota{Control real del catálogo local conectado a Supabase Cloud. Los límites corresponden al artículo y su unidad de venta, no al coste total del montaje. Elaboración propia.}
+\end{figure}
+
 La revisión registra 70 modelos publicados y 146 elecciones actuales. La diferencia corresponde a alternativas útiles, por ejemplo tallas o medidas, y no a una combinación automática de todos los colores y años. La interfaz distingue dieciocho categorías organizadas en siete grupos. La comparación se limita a variantes de una misma categoría para alinear atributos pertinentes; no asigna una puntuación universal de calidad ni declara una alternativa mejor por un único número.
 
 \begin{figure}[H]
@@ -638,7 +649,7 @@ La evaluación se organiza en cuatro niveles: reglas y contratos automatizados; 
 
 Vitest permite ejecutar pruebas de código y Playwright automatiza interacciones de navegador \citep{vitest,playwright}. En este proyecto, las pruebas comprueban resultados observables, estados y restricciones. Las capturas del informe documentan la interfaz y no sustituyen las aserciones de guardado, propiedad o revisión.
 
-La revisión del 28 de octubre distingue la repetición actual de la suite general (564 pruebas correctas y dos omitidas, 83 archivos), las 60 pruebas dirigidas comerciales/de compatibilidad previas al comiteo y los recorridos autenticados. Los conteos corresponden a ejecuciones concretas y no deben sumarse como escenarios distintos. La recompilación y repetición final para esta actualización se registran en \ruta{recursos/pruebas-resumen.txt}. Las capturas de la revisión actual se obtienen del frontend local conectado al backend Cloud, sin presentar como publicado un código no desplegado.
+La revisión del 28 de octubre distingue la repetición actual de la suite general (571 pruebas correctas y dos omitidas, 85 archivos), las 60 pruebas dirigidas comerciales/de compatibilidad previas al comiteo y los recorridos autenticados. Los conteos corresponden a ejecuciones concretas y no deben sumarse como escenarios distintos. La compilación y las ejecuciones de validación de esta revisión se registran en \ruta{recursos/pruebas-resumen.txt}. Las capturas de la revisión actual se obtienen del frontend local conectado al backend Cloud, sin presentar como publicado un código no desplegado.
 
 \subsection{Validación funcional con cuentas temporales}
 La revisión histórica pública del 21 de octubre utilizó Netlify y dos cuentas temporales; la actualización actual reproduce los recorridos sobre el código local conectado a Supabase Cloud. Se conserva la distinción de entorno en las notas de evidencia. Las cuentas se crean y confirman por API únicamente para comprobar la aplicación, y se eliminan al finalizar. Esa confirmación no valida entrega real de correo ni repite el consentimiento de Google.
@@ -666,7 +677,8 @@ T15 & Abrir y cerrar fichas & Se conserva contexto y foco; movimiento reducido d
 T16 & Resolver un conflicto de rueda & Una alternativa corrige el aviso sin cambiar la rueda opuesta; deshacer y reapertura conservados. & Reglas y navegador.\\
 T17 & Cotizar armado & Tarifa inicial, exoneración y aviso persistente; cliente revisa total antes del pedido. & SQL y navegador.\\
 T18 & Seleccionar canal y simular pago & Banco elegido e intento quedan registrados; sin transferencia real. & Comercio desktop/móvil.\\
-T19 & Reintentar operaciones & Contratos rechazan conflictos y evitan duplicar consumo/reservas. & SQL y pruebas comerciales.\\\bottomrule
+T19 & Reintentar operaciones & Contratos rechazan conflictos y evitan duplicar consumo/reservas. & SQL y pruebas comerciales.\\
+T20 & Filtrar precio por categoría & Límites, promociones, variantes y recuentos coherentes; limpieza por categoría, ficha y selector3D sin desbordamiento. & SQL, API y navegador.\\\bottomrule
 \end{longtable}\end{tabla}
 \nota{T15 corresponde a los recorridos de regresión registrados en el proyecto; no se confunde con una medición de teléfono físico. El anexo detalla los archivos de evidencia y las omisiones.}
 
@@ -685,13 +697,15 @@ Composiciones prearmadas públicas & 4\\
 Ofertas comerciales y vínculos de variantes & 146 y 695\\
 Categorías y posiciones de montaje & 18 y 23\\
 Tablas propias de negocio y autorización & 20 y 4\\
-Migraciones aplicadas & 42\\
+Migraciones aplicadas & 43\\
 Archivos GLB finales versionados & 318\\
 Archivos GLB actuales versionados & 89\\
 Archivos GLB históricos & 229\\\bottomrule
 \end{tabularx}\end{tabla}
 \nota{Consultas de lectura del backend y auditoría de archivos. Los recursos visuales incluyen representaciones generadas por código; por ello 780 registros no equivalen a 780 archivos GLB. Las elecciones tampoco equivalen al número de modelos. Elaboración propia.}
 \end{table}
+
+La migración 043 añade una función de consulta de precios, sin tablas nuevas ni cambios en las 146 ofertas y sus 695 vínculos. La prueba SQL transaccional confirmó límites inclusivos, categoría, promociones vigentes no acumuladas, paridad con el precio de compra, rechazo de rangos inválidos y exclusión de ofertas inactivas o variantes retiradas. En navegador, escritorio y móvil emulado mostraron cuatro modelos y ocho variantes de horquilla hasta S/\,2.500, sin errores JavaScript ni carga de GLB por el filtrado; la cuenta temporal se eliminó al finalizar.
 
 Los conteos separan registros del backend y archivos del inventario local: 780 recursos visuales incluyen representaciones generadas por código, mientras 318 son archivos GLB finales versionados. Los resultados no equivalen a transferencia mensual ni a capacidad de usuarios. El stock inicial y los pagos pertenecen al entorno de validación; no demuestran existencias físicas ni facturación real.
 
@@ -859,6 +873,7 @@ Las siguientes tablas identifican entidades y claves relevantes para reconstruir
 \ruta{recursos/02-categorias.png} & Selector de escritorio, sin destacar modelos comerciales.\\
 \ruta{recursos/03-montaje-3d.png} & Escena de una propuesta completa desde cuenta temporal.\\
 \ruta{recursos/04-categorias-movil.png} & Selector en viewport móvil emulado.\\
+\ruta{recursos/05-filtro-precio.png} & Control de mínimo/máximo por artículo; captura local de esta revisión.\\
 \ruta{recursos/catalogo-resumen.json} & Instantánea histórica del 21 de octubre; el estado actual está en la tabla de inventario.\\
 \ruta{recursos/validacion-publica.json} & Trece comprobaciones públicas históricas; no identifica el último despliegue.\\
 \ruta{recursos/pruebas-resumen.txt} & Resultado de suite, timeout inicial y condiciones de repetición.\\

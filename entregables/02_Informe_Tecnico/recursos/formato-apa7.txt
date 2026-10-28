@@ -36,8 +36,8 @@ COMPROBACIONES
 Corrección posterior: el entorno tabla cierra expresamente el párrafo antes
 de cambiar a espacio sencillo y antes de restaurar el formato exterior.
 Así el espaciado de celdas no alcanza los párrafos introductorios sin línea
-vacía en LaTeX. Se verificaron Requisitos funcionales (p. 20) y la introducción
-del apéndice A (p. 52): ambos con doble espacio y sangría inicial de 1,27 cm.
+vacía en LaTeX. Se verificaron Requisitos funcionales (p. 21) y la introducción
+del apéndice A (p. 54): ambos con doble espacio y sangría inicial de 1,27 cm.
 Compilación Tectonic, fuentes incrustadas, extracción del texto y coordenadas,
 sangrías y distancia entre líneas del PDF; revisión de páginas renderizadas,
 incluyendo portada, índices, cuerpo, tablas, diagramas, referencias y apéndices.

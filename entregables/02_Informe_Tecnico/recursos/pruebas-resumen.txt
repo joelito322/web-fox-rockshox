@@ -1,3 +1,25 @@
+VALIDACIÓN ACTUAL — FILTRO DE PRECIO — 28/10/2026
+Entorno: Node.js24.22.0; frontend local y Supabase Cloud.
+Comando de suite: mise exec node@24.22.0 -- node node_modules/vitest/vitest.mjs run --maxWorkers=2 --testTimeout=15000
+Pruebas:571 correctas,2 omitidas (573 total),84 archivos correctos y uno omitido
+(85 total). Duración:74,15s. Log local:/tmp/atlas-price-tests-node24.log.
+Build final separado correcto:/tmp/atlas-price-final-build.log, Vite3,96s.
+Pruebas dirigidas del filtro:18 correctas; no se suman a la suite como casos únicos.
+Prueba SQL:supabase/tests/catalog-price-filter.sql, transaccional con rollback.
+Browser:scripts/validate-price-filter-browser.mjs, escritorio y Pixel7 emulado:
+cuatro modelos/ocho variantes de horquilla hasta S/2500, ficha, rango inválido,
+sin resultados, cambio de categoría, selector3D y viewport. Sin errores JS;
+cuenta y carrito temporales eliminados. Sin pedidos, pagos o cambios de stock.
+Estado Cloud:24 tablas,43 migraciones,146 ofertas y695 vínculos preservados.
+Capturas de documentos:scripts/capture-price-deliverables.mjs; seis imágenes
+nuevas/renovadas y limpieza comprobada, con copias usadas en informe/diapositivas.
+La primera suite con Node26 del terminal falló en cuatro casos preexistentes
+por localStorage; la ejecución de referencia con Node24.22.0 pasó. No se cambió
+código de aplicación para compensar la versión ajena al contrato del proyecto.
+Resultados completos ignorados:models/local/validation/price-filter/ y
+models/local/validation/entregables/price-filter/.
+
+EJECUCIÓN ANTERIOR — ANTES DEL FILTRO — CONSERVADA COMO HISTÓRICO
 VALIDACIÓN — REVISIÓN FUNCIONAL 28/10/2026
 Comando: pnpm check (build y vitest run).
 Entorno: Node.js 24.22.0, pnpm 12.6.0; frontend local y Supabase Cloud.
