@@ -1,14 +1,16 @@
 # ATLAS MTB
 
-Plataforma web para seleccionar, comparar y configurar visualmente bicicletas de montaña. Permite consultar componentes, explorar un montaje tridimensional y guardar propuestas en una cuenta personal.
+Tienda web de componentes enduro y descenso con guía técnica, comparación y configuración 3D. Conecta montajes personales y alternativas de compatibilidad con carrito, cotizaciones, armado opcional y seguimiento de pedidos. Los pagos de esta versión son simulados.
 
-**Aplicación publicada:** [atlasmtb.netlify.app](https://atlasmtb.netlify.app/)
+**Publicación previa:** [atlasmtb.netlify.app](https://atlasmtb.netlify.app/)
 
 ## Entrega académica
 
-**Desarrollo de una plataforma web para la selección, comparación y configuración tridimensional de bicicletas de montaña**
+**Desarrollo de una plataforma web para la venta asistida de componentes y configuración tridimensional de bicicletas de montaña**
 
 Joel Ito Luque · Universidad Nacional de Juliaca · Facultad de Ciencias de la Ingeniería · Ingeniería de Software y Sistemas. Curso: Gestión de Proyectos · Docente: Fidel Huanco Ramos · Octavo semestre · Juliaca, Perú · 21 de octubre de 2026.
+
+Revisión funcional de los entregables: **28 de octubre de 2026**. Se conservan formato y fecha académica de portada; fuentes LaTeX y PDF recompilados. Las capturas actuales usan frontend local y Supabase Cloud; esta actualización no despliega la web.
 
 | Entregable | Documento | Fuente editable y recursos |
 | --- | --- | --- |

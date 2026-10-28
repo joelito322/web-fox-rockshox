@@ -1,5 +1,13 @@
 # Repository Guidelines
 
+## Entregables académicos · revisión 28/10/2026
+
+Petición posterior de comitear por partes atendida: herramientas de captura, informe, manual, presentación, índice de aula y documentación de seguimiento en commits separados, con Conventional Commits en inglés. Fuentes LaTeX y PDF incluidos juntos por entregable. Sin push ni despliegue; la autorización no cubre commits futuros.
+
+El usuario pidió actualizar los entregables conservando su formato, tanto fuentes `.tex` como PDF. Informe y manual mantienen carta, Liberation Serif de 12 puntos, doble espacio y fecha académica de portada 21/10/2026; la revisión funcional se identifica aparte como 28/10. Presentación conserva doce láminas 16:9, DM Sans/Barlow, fotografía acreditada y transiciones; incorpora marca Cumbre/paleta cálida. Actualizar también índice de aula, LEEME, procedencia y guion cuando cambie el contenido. No editar solo el PDF ni declarar desplegados los cambios locales.
+
+Estado y evidencia en [14](docs/validation/14-actualizacion-entregables-academicos.md): tienda/armado/cotizaciones/pagos simulados y alternativas documentados; 24 tablas/41 migraciones, 564 pruebas correctas y dos omitidas, 83 archivos y build correcto. Capturas renovadas con cuentas efímeras y limpieza comprobada; scripts admiten ATLAS_EVIDENCE_ORIGIN (local5174 por defecto). Capturas usadas en documentos sí se versionan; resultados completos en models/local/validation/entregables ignorado. Conservar JSON históricos del21/10 como históricos, sin confundirlos con estado actual. Revisar contenido compilado y límites de página; portada académica no se cambia por fecha de compilación. Sin commits, push ni despliegue sin petición explícita.
+
 ## Commits por partes solicitados ·28/10/2026
 
 Usuario pidió comitear los cambios pendientes. Grupos: ff68acb backend comercial,9c8c2a4 armado/pagos/logotipos,1ca95bc carrito/feedback,a9cd0f6 reglas de alternativas,ae41fc4 interfaz del configurador; documentación en sexto commit independiente. Registro en13h,60 pruebas dirigidas correctas antes de comitear. PDF del manual ajeno conservado sin preparar. Sin push ni despliegue; los siguientes commits requieren nueva petición explícita.

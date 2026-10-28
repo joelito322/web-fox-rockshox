@@ -54,16 +54,17 @@ Un bloqueo de credenciales, migración sin aplicar o prueba no ejecutada se decl
 
 ## Índice actual
 
-- [Tienda y venta asistida](planning/13-tienda-y-venta-asistida.md): nueva orientación comercial en planificación; precios propios, promociones, pedidos y primera fase de pagos de interfaz sin cobros reales.
+- [Tienda y venta asistida](planning/13-tienda-y-venta-asistida.md): orientación comercial implementada con evidencia en 13e y 13h; precios, carrito, cotizaciones, pedidos y pagos simulados.
 
-- [Refactorización de Administración](planning/06f-administracion-modular-y-componentes.md): propuesta aprobada de módulos, tablas y paneles reutilizados; ejecución y aceptación pendientes en fase 2b.
+- [Refactorización de Administración](planning/06f-administracion-modular-y-componentes.md): módulos, tablas y paneles reutilizados; evidencia de implementación y límites en 12z.
 - [Plan Atlas MTB](planning/README.md): catálogo, comparación, acceso Supabase y configurador 3D; implementación parcial, con evidencia y pendientes en el documento 12.
-- [Informe técnico académico](../entregables/02_Informe_Tecnico/informe.pdf): entregable 2, fuente LaTeX única y recursos autocontenidos; compilación comprobada y contenido aceptado por el usuario.
-- [Manual de usuario](../entregables/03_Manual_Usuario/manual.pdf): entregable 3 con fuente LaTeX única, 14 capturas y ejercicios; compilación independiente y recorridos públicos comprobados, contenido aceptado por el usuario.
-- [Presentación Beamer](../entregables/04_Presentacion/presentacion.pdf): entregable 4 rediseñado con fotografía real, iconos Lucide y vistas completas del montaje; doce diapositivas 16:9, fuente única y transiciones PDF. Compilación autónoma y revisión visual comprobadas; contenido aceptado por el usuario.
+- [Informe técnico académico](../entregables/02_Informe_Tecnico/informe.pdf): entregable 2, fuente LaTeX única y recursos autocontenidos; revisión funcional del 28/10/2026, formato conservado y PDF recompilado.
+- [Manual de usuario](../entregables/03_Manual_Usuario/manual.pdf): entregable 3 con fuente LaTeX única, 21 capturas y cinco ejercicios; revisión del 28/10/2026, recorridos locales autenticados y PDF recompilado.
+- [Presentación Beamer](../entregables/04_Presentacion/presentacion.pdf): entregable 4 rediseñado con fotografía real, iconos Lucide y vistas completas del montaje; doce diapositivas 16:9, fuente única y transiciones PDF. Revisión comercial del 28/10/2026 y marca Cumbre; fuente y PDF actualizados.
+- [Actualización de entregables](validation/14-actualizacion-entregables-academicos.md): contenidos, fuentes y PDF revisados; compilación y evidencia, pendiente de revisión del usuario.
 - `finished/`: sin entregas funcionales finalizadas por ahora.
 
-Los entregables académicos aceptados se organizan en [`entregables/`](../entregables/) y se consultan desde el [índice principal](../README.md). Esta organización de entrega es independiente de los estados de documentación técnica anteriores.
+Los entregables académicos se organizan en [`entregables/`](../entregables/) y se consultan desde el [índice principal](../README.md). Esta organización de entrega es independiente de los estados de documentación técnica anteriores.
 
 Las carpetas vacías contienen `.gitkeep` para conservarlas en Git. No representan planes ni entregas.
 

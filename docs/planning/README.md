@@ -10,6 +10,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 
 | Documento | Pregunta que resuelve |
 | --- | --- |
+| [14 · Actualización académica](../validation/14-actualizacion-entregables-academicos.md) | Informe, manual, presentación e índice: fuentes LaTeX, PDF, capturas y alcance comercial actualizados conservando el formato |
 | [06i · Alternativas de compatibilidad](06i-alternativas-para-incompatibilidades.md) | Soluciones comprobables desde avisos, sustitución individual y diferencia de precio; implementación y evidencia de validación |
 | [13h · Armado y métodos de pago](13h-armado-automatico-y-metodos-de-pago.md) | Tarifa automática S/150 editable, exoneración y avisos por cuenta; selector de pagos en Revisar pedido, sin cobros reales |
 | [13 · Tienda y venta asistida](13-tienda-y-venta-asistida.md) | Nueva orientación comercial, ofertas/precios/promociones, pedidos y pagos solo de interfaz en primera fase; implementación autorizada y evidencia en13e |
