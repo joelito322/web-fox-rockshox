@@ -10,7 +10,7 @@ Tienda web de componentes enduro y descenso con guía técnica, comparación y c
 
 Joel Ito Luque · Universidad Nacional de Juliaca · Facultad de Ciencias de la Ingeniería · Ingeniería de Software y Sistemas. Curso: Gestión de Proyectos · Docente: Mg. Fidel Huanco Ramos · Octavo semestre · Juliaca, Perú · 21 de octubre de 2026.
 
-Revisión funcional de los entregables: **28 de octubre de 2026**. Se conservan formato y fecha académica de portada; fuentes LaTeX y PDF recompilados. Las capturas actuales usan frontend local y Supabase Cloud; esta actualización no despliega la web.
+Revisión funcional de los entregables: **28 de octubre de 2026**. Se conservan formato y fecha académica de portada; fuentes LaTeX y PDF recompilados. Incluye el filtro individual de precio por categoría en catálogo y selector 3D. Las capturas actuales usan frontend local y Supabase Cloud; esta actualización no despliega la web.
 
 | Entregable | Documento | Fuente editable y recursos |
 | --- | --- | --- |
