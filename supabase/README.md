@@ -100,3 +100,8 @@ La migración 016 aplica el contrato de montaje de mallas y el bucket público `
 Migraciones 017/018 aplicadas y fuentes v6/v7 publicadas; dieciocho migraciones en el Cloud existente. Se conserva todo el historial y el contrato de montaje GLB v5. Nuevos binarios en `models/catalog-v6/` y `catalog/v6/` del bucket; escritura anónima sigue denegada. No hay tablas nuevas ni modificación de Auth gestionado. Reposición y orden de publicaciones en `catalog/README.md`; pruebas SQL `tests/visual-v6.sql` y `tests/visual-v7.sql`, controles Blender y evidencia en el documento 12c.
 
 Actualización gravity 21/10/2026: 22 migraciones aplicadas, doce tablas propias; 70 modelos y 146 elecciones. Migración 022 añade perfiles y contrato GLB; fuentes/orden de reposición en catalog/README.md. Sin cambios de Auth, IAM ni funciones Edge.
+
+
+## Comercio demo ·27/10/2026
+
+Migraciones028–037 aplicadas: once tablas comerciales adicionales (23 propias/37 migraciones),140 ofertas actuales y cuatro permisos en la matriz IAM. Precios/stock demo; identidad comercial separada de GLB. Ninguna credencial nueva para el frontend, ni Edge Function/worker nuevos. RLS y grants impiden acceso directo a tablas; RPC pública acotada y privada por cuenta/permiso/revisión. Pruebas y contratos operativos en [13e](../docs/planning/13e-evidencia-de-implementacion-comercial.md). `node scripts/test-commerce.mjs` revierte datos de prueba; `--pending` prueba también migraciones locales pendientes sin registrarlas/aplicarlas. Concurrencia real en `test-commerce-concurrency.mjs`; no ejecutar pruebas destructivas sobre clientes reales al habilitar una futura tienda real. El entorno actual es de desarrollo y demo.
