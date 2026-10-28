@@ -88,3 +88,5 @@ Por instrucción explícita del usuario se retiraron las restricciones adicional
 La prueba final elimina los topes absolutos de altura como criterio y exige que no haya área posterior al footer ni etiquetas absolutas escapadas. Además alarga los textos del footer y cambia ancho, verificando que la página crece con esas palabras sin dejar huecos. Los resultados de alturas limitadas de los apartados anteriores describen un intento retirado, no la solución final.
 
 Verificación final automática correcta: doce combinaciones de ancho/suspensión sin espacio posterior al footer (diferencia0–0,43px por redondeo). Texto del footer ampliado dinámicamente en escritorio/intermedio/móvil conserva el final natural de la página. Tres pruebas UI de accesibilidad/avisos correctas y build comprobado. No se mantienen límites nuevos de altura para corregir el vacío.
+
+Ampliación28/10/2026: [06i](06i-alternativas-para-incompatibilidades.md) añade alternativas comprobables dentro del mismo panel, con selección individual y diferencia de precio cuando exista una oferta comparable. Conserva los avisos no bloqueantes y las restricciones documentales de este documento.

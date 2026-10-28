@@ -291,3 +291,5 @@ Revisión documental del27/10/2026: las ambigüedades de persistencia, SKU/acaba
 
 
 Actualización de autorización ·27/10/2026: el usuario solicita comitear los planes por partes y después ejecutar esta ampliación. Queda autorizada la implementación por fases, incluidas migraciones Cloud, datos comerciales demo y UI; las declaraciones anteriores de «solo documentación» describen la etapa de redacción. No se habilitan cobros reales. El estado de avance se registra en08 y no se declara terminado por esta autorización.
+
+Actualización28/10/2026: [13h](13h-armado-automatico-y-metodos-de-pago.md) concreta tarifa automática inicial de armado S/150 editable, exoneración durante revisión técnica, aviso en cuenta y selector de métodos peruanos dentro de Revisar pedido. Sustituye la espera de valoración manual del importe inicial; conserva revisión técnica, aceptación del cliente y pagos simulados.

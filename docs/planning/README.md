@@ -10,6 +10,8 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 
 | Documento | Pregunta que resuelve |
 | --- | --- |
+| [06i · Alternativas de compatibilidad](06i-alternativas-para-incompatibilidades.md) | Soluciones comprobables desde avisos, sustitución individual y diferencia de precio; implementación y evidencia de validación |
+| [13h · Armado y métodos de pago](13h-armado-automatico-y-metodos-de-pago.md) | Tarifa automática S/150 editable, exoneración y avisos por cuenta; selector de pagos en Revisar pedido, sin cobros reales |
 | [13 · Tienda y venta asistida](13-tienda-y-venta-asistida.md) | Nueva orientación comercial, ofertas/precios/promociones, pedidos y pagos solo de interfaz en primera fase; implementación autorizada y evidencia en13e |
 | [13a · Contratos comerciales](13a-contratos-y-validacion-comercial.md) | Revisión de huecos: precio fijado al crear pedido, stock sin doble consumo, pagos de demo y carrito persistente por cuenta |
 | [13b · Precios y ofertas](13b-precios-y-ofertas-comerciales.md) | Precio/stock por SKU estable, relación con revisiones3D, promociones y snapshot de pedidos; sin motor de precios extra |

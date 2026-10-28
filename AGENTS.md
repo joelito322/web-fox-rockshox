@@ -1,5 +1,24 @@
 # Repository Guidelines
 
+## Commits por partes solicitados ·28/10/2026
+
+Usuario pidió comitear los cambios pendientes. Grupos: ff68acb backend comercial,9c8c2a4 armado/pagos/logotipos,1ca95bc carrito/feedback,a9cd0f6 reglas de alternativas,ae41fc4 interfaz del configurador; documentación en sexto commit independiente. Registro en13h,60 pruebas dirigidas correctas antes de comitear. PDF del manual ajeno conservado sin preparar. Sin push ni despliegue; los siguientes commits requieren nueva petición explícita.
+
+
+## Alternativas para incompatibilidades ·28/10/2026
+
+Usuario autorizó únicamente esta ampliación del valor agregado; contrato/evidencia en [06i](docs/planning/06i-alternativas-para-incompatibilidades.md). Dentro de Compatibilidad→Ver alternativas, reglas puras en model/alternatives.ts reutilizan warnings/choose y exigen evidencia de la relación, conflicto resuelto, ningún conflicto remanente de la posición ni nuevos conflictos/desconocidos. Solo posiciones ya seleccionadas; datos ausentes no equivalen a solución. Desconocidos previos se muestran, sin certificar mecánica. Límite de horquilla reutiliza registro exacto por generación/año/talla, no extrapola.
+
+Mismo Drawer, useCatalog/caché24 modelos y6 variantes visibles, ofertas por lote≤7 con vínculo variante/acabado y comparación únicamente de unidad/moneda iguales. Sin GLB hasta elegir; stock/precio ausentes no impiden montaje visual. Aplicar solo el lado elegido aunque esté activa la selección conjunta; cuadro conserva confirmación. Guardas de instantánea y variantes actuales antes/después de la carga; deshacer, guardar y reabrir conservados.50 pruebas dirigidas/build y recorridos desktop/móvil emulado correctos; dos regresiones generales de Garage requirieron repetición aislada y están registradas. Sin SQL, modelos/pinturas/precios/cart modificados ni nuevas dependencias. Siguen24 tablas/41 migraciones. No commits ni push salvo nueva petición explícita.
+
+
+## Armado automático y pagos peruanos ·28/10/2026
+
+Ampliación autorizada y contrato en [13h](docs/planning/13h-armado-automatico-y-metodos-de-pago.md). Usuario delegó tarifa a criterio y confirmó pagos simulados; exige métodos en Revisar pedido. Tarifa inicial S/150 basada en referencias de talleres peruanos, editable en Ventas→Ofertas. Armado continúa opcional con montaje guardado coincidente; precio automático no aprueba compatibilidad: administrador revisa solicitud/cotización, puede marcar Armado sin coste y publica; cliente recibe aviso en campana, revisa y acepta antes de crear pedido. No alterar importes de pedidos creados/pagados ni solicitudes anteriores por cambiar tarifa global.
+
+Migraciones040–041 aplicadas a Cloud: canales simulados Plin/BCP/Interbank/BBVA/Scotiabank más históricos, tabla singleton sales_service_settings protegida con RLS/RPC y permiso sales.offers.manage, base de tarifa por cotización, método preferido en pedido y lectura de aviso por revisión. Avisos derivados de cotizaciones propias revisadas vigentes, sin tabla/cola duplicada ni correo/push externos; marcados persistentes. Son24 tablas/41 migraciones; catálogo/GLB/ofertas históricos conservados. Carrito: un importe por línea, unitario solo con cantidad>1 (respetar par/juego), total único; feedback de añadido solo tras éxito, check/acento2,6s y pulso puntual de icono/contador, sin nuevo modal ni consultas. Cuenta/variante y movimiento reducido aislados.10 pruebas comerciales y compra desktop/móvil emulado correctas, evidencia en13h. Selector refinado por petición posterior: tarjetas con logos locales/procedencia en src/assets/images/payments, selección cálida/foco/transición y rejillas por contenedor; mismo PaymentMethods en checkout/pedido, sin recolorear marcas ni cambiar métodos. Checkout reutiliza PaymentMethods y caché de precios por lote del carrito; consulta de avisos compartida con intervalo45s en primer plano y refresco al abrir campana. Seleccionar método no prueba abono; sin números/QR reales ni datos de tarjeta. SQL transaccional,5 recorridos desktop/5 móvil emulado, regresiones finales y build correctos;9 pruebas comerciales dirigidas finales, snapshot sin fixtures. Evidencia/capturas locales ignoradas en13h. No commits ni push sin nueva petición explícita.
+
+
 ## Identidad Cumbre y paleta cálida · 28/10/2026
 
 El usuario eligió explícitamente Cumbre, propuesta18 oscura, y autorizó aplicarla, transición/desenfoque al hover y eliminar las otras propuestas. Maestro src/assets/atlas-mtb.svg: atlas-signature vertical y atlas-header horizontal con mismo símbolo/letras; BrandLogo usa ?no-inline. Favicon autónomo. Once contornos elegidos conservados; tintas/papel cálidos. logo-lab eliminado junto con su exclusión temporal; no depender de esa carpeta ni recuperar propuestas anteriores como dirección vigente. Nombre/eslogan conservados. Desenfoque520ms, fin nítido, sin bucle y desactivado con movimiento reducido.

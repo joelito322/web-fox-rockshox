@@ -162,3 +162,7 @@ No hay migraciones, precios, stock, UI ni cobros creados por esta actualización
 
 
 Actualización de autorización ·27/10/2026: el usuario solicita comitear los planes por partes y después ejecutar esta ampliación. Queda autorizada la implementación por fases, incluidas migraciones Cloud, datos comerciales demo y UI; las declaraciones anteriores de «solo documentación» describen la etapa de redacción. No se habilitan cobros reales. El estado de avance se registra en08 y no se declara terminado por esta autorización.
+
+## Ampliación de armado y canales ·28/10/2026
+
+Contrato complementario vigente en [13h](13h-armado-automatico-y-metodos-de-pago.md): tarifa automática de armado, exoneración en revisión y avisos por cuenta. La migración041 añade `sales_service_settings`, una fila de tarifa global con revisión y permiso de gestión; total24 tablas propias. Amplía sales_quotes con tarifa base fijada por solicitud y revisión leída; orders conserva método preferido.040 amplía canales de simulación a Plin y transferencias por banco, sin tabla bancaria ni cobro real. El cálculo automático del precio no sustituye la revisión técnica previa al pedido con armado.
