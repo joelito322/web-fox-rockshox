@@ -11,32 +11,220 @@
   border-bottom: 1px solid var(--border);
   background: #f5f2f2;
   color: #59504d;
-  font-size: .76rem;
+  font-size: 0.76rem;
   min-height: 46px;
 }
-.compatibility-summary.has-conflicts { background: #fcf3e1; color: #78501e; border-bottom-color: #ead8b5; }
-.compatibility-summary > svg { flex: none; }
-.compatibility-summary > span { min-width: 0; overflow-wrap: anywhere; }
-.compatibility-summary > button { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; flex: none; min-height: 36px; }
-.compatibility-intro { line-height: 1.6; }
-.compatibility-group { margin-top: 26px; }
-.compatibility-group > h3 { display: flex; justify-content: space-between; font-size: .95rem; }
-.compatibility-group > h3 > span { font-weight: 400; color: #716967; }
-.compatibility-card { border: 1px solid var(--border); border-left: 3px solid #b3a7a4; border-radius: 5px; padding: 15px; margin-top: 12px; }
-.compatibility-card.conflict { border-left-color: #bd872e; background: #fffdf8; }
-.compatibility-card > p { margin: 0 0 12px; font-size: .88rem; line-height: 1.5; }
-.compatibility-card dl { margin: 12px 0; font-size: .8rem; }
-.compatibility-card dl > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 12px; padding: 6px 0; }
-.compatibility-card dt { color: #695e5a; }
-.compatibility-card dd { margin: 0; overflow-wrap: anywhere; }
-.compatibility-card > a { font-size: .76rem; text-decoration: underline; }
-.compatibility-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.compatibility-actions button { min-height: 40px; white-space: normal; }
-.assembly-warning { position: relative; margin-left: auto; flex: none; color: #93641e; }
-.assembly-warning.unknown { color: #706460; }
-.assembly-warning-label { position: absolute; inset: 0 auto auto 0; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); }
+.compatibility-summary.has-conflicts {
+  background: #fcf3e1;
+  color: #78501e;
+  border-bottom-color: #ead8b5;
+}
+.compatibility-summary > svg {
+  flex: none;
+}
+.compatibility-summary > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.compatibility-summary > button {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  flex: none;
+  min-height: 36px;
+}
+.compatibility-intro {
+  line-height: 1.6;
+}
+.compatibility-group {
+  margin-top: 26px;
+}
+.compatibility-group > h3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+.compatibility-group > h3 > span {
+  font-weight: 400;
+  color: #716967;
+}
+.compatibility-card {
+  border: 1px solid var(--border);
+  border-left: 3px solid #b3a7a4;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 12px;
+}
+.compatibility-card.conflict {
+  border-left-color: #bd872e;
+  background: #fffdf8;
+}
+.compatibility-card > p {
+  margin: 0 0 12px;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+.compatibility-card dl {
+  margin: 12px 0;
+  font-size: 0.8rem;
+}
+.compatibility-card dl > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+  gap: 12px;
+  padding: 6px 0;
+}
+.compatibility-card dt {
+  color: #695e5a;
+}
+.compatibility-card dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.compatibility-card > a {
+  font-size: 0.76rem;
+  text-decoration: underline;
+}
+.compatibility-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.compatibility-actions button {
+  min-height: 40px;
+  white-space: normal;
+}
+.assembly-warning {
+  position: relative;
+  margin-left: auto;
+  flex: none;
+  color: #93641e;
+}
+.assembly-warning.unknown {
+  color: #706460;
+}
+.assembly-warning-label {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
 @media (max-width: 720px) {
-  .compatibility-summary { padding: 10px 5%; flex-wrap: wrap; font-size: .73rem; }
-  .compatibility-summary > span { flex: 1; }
-  .compatibility-summary > button { min-height: 44px; }
+  .compatibility-summary {
+    padding: 10px 5%;
+    flex-wrap: wrap;
+    font-size: 0.73rem;
+  }
+  .compatibility-summary > span {
+    flex: 1;
+  }
+  .compatibility-summary > button {
+    min-height: 44px;
+  }
+}
+
+.compatibility-card > .button {
+  margin-top: 12px;
+  max-width: 100%;
+  white-space: normal;
+  text-align: left;
+}
+.compatibility-actions [aria-pressed="true"] {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+}
+.compatibility-alternatives {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.compatibility-alternatives-note {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+.compatibility-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+.compatibility-option > img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 8px;
+}
+.compatibility-option-content {
+  display: grid;
+  justify-items: start;
+  gap: 6px;
+  min-width: 0;
+  flex: 1;
+}
+.compatibility-option-content > strong {
+  font-size: 0.9rem;
+}
+.compatibility-option-content > span {
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+}
+.compatibility-option-content small {
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+.compatibility-option-proof {
+  color: #71422f;
+}
+.compatibility-option-price {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-block: 7px;
+}
+.compatibility-option-price > strong {
+  font-size: 1.15rem;
+}
+.compatibility-option-price > span {
+  flex-basis: 100%;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.compatibility-option-price > small:last-child {
+  flex-basis: 100%;
+}
+.compatibility-alternatives nav {
+  font-size: 0.75rem;
+  align-items: center;
+}
+@media (max-width: 420px) {
+  .compatibility-option > img {
+    width: 44px;
+    height: 48px;
+  }
+  .compatibility-card {
+    padding: 12px;
+  }
+  .compatibility-option {
+    gap: 8px;
+  }
+}
+.compatibility-option-content > strong,
+.compatibility-option-content > small {
+  overflow-wrap: anywhere;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .compatibility-alternatives {
+    animation: fade-in 180ms ease both;
+  }
 }

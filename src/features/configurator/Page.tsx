@@ -1,4 +1,5 @@
 import { MontagePurchase } from "../commerce/Conversion";
+import { evaluateAlternative } from "./model/alternatives";
 import { Compatibility } from "./Compatibility";
 import "./assembly.css";
 import { AssemblyIndex, AssemblyNavigation } from "./AssemblyNavigation";
@@ -54,6 +55,7 @@ import {
   emptyConfiguration,
   remove,
   slotCategories,
+  slotLabels,
   slots,
   warnings,
   type Configuration,
@@ -76,6 +78,7 @@ import { userError } from "../../lib/supabase";
 import { ConfirmDialog } from "../../components/ui/ConfirmDialog";
 import { MotionRegion } from "../../components/ui/MotionRegion";
 import { VariantInformation } from "../catalog/VariantInformation";
+type AlternativeGuard = { code: string; signature: string };
 const Scene = lazy(() => import("./scene/BikeScene"));
 class SceneBoundary extends Component<
   { children: ReactNode; onFailure: () => void },
@@ -111,6 +114,8 @@ function Configurator({ buildId }: { buildId?: string }) {
     useState<Configuration>(emptyConfiguration);
   const [confirmed, setConfirmed] = useState("");
   const [variants, setVariants] = useState<VariantMap>({});
+  const currentVariants = useRef(variants);
+  currentVariants.current = variants;
   const [slot, setSlot] = useState<Slot>("frame");
   const [highlightedSlot, setHighlightedSlot] = useState<Slot>();
   const selectSlot = useCallback((next: Slot) => {
@@ -135,7 +140,10 @@ function Configurator({ buildId }: { buildId?: string }) {
   const [status, setStatus] = useState("");
   const [conflict, setConflict] = useState(false);
   const [intendedPiece, setIntendedPiece] = useState<SelectedVariant>();
-  const [replacement, setReplacement] = useState<SelectedVariant>();
+  const [replacement, setReplacement] = useState<{
+    variant: SelectedVariant;
+    guard?: AlternativeGuard;
+  }>();
   const [signout, setSignout] = useState<null | (() => void)>(null);
   const request = useRef(0);
   const preloadTimer = useRef<number>();
@@ -413,9 +421,31 @@ function Configurator({ buildId }: { buildId?: string }) {
       .then((scene) => scene.prepareVisual(variant.visual_assets!))
       .catch(() => {});
   }
-  async function apply(v: SelectedVariant, approved = false) {
+  async function apply(
+    v: SelectedVariant,
+    approved = false,
+    targetSlot: Slot = slot,
+    single = false,
+    guard?: AlternativeGuard,
+  ) {
     if (
-      slot !== "frame" &&
+      guard &&
+      (canonical(current.current) !== guard.signature ||
+        !evaluateAlternative(
+          current.current,
+          currentVariants.current,
+          guard.code,
+          targetSlot,
+          v,
+        ))
+    ) {
+      setStatus(
+        "El montaje cambió. Revisa de nuevo las alternativas antes de sustituir la pieza.",
+      );
+      return;
+    }
+    if (
+      targetSlot !== "frame" &&
       !current.current.items.some((i) => i.slot === "frame")
     ) {
       setIntendedPiece(v);
@@ -424,15 +454,18 @@ function Configurator({ buildId }: { buildId?: string }) {
     }
 
     if (
-      slot === "frame" &&
+      targetSlot === "frame" &&
       current.current.items.some((i) => i.slot === "frame") &&
       !approved
     ) {
-      setReplacement(v);
+      setReplacement({ variant: v, guard });
       return;
     }
-    const target = slot;
-    const otherSlot = linked ? pairedSlot(target) : undefined;
+    const target = targetSlot;
+    const otherSlot =
+      !single && pairing[slotCategories[target]] !== false
+        ? pairedSlot(target)
+        : undefined;
     const serial = ++request.current;
     const dependencies = canonical(current.current);
     setPending(true);
@@ -490,7 +523,23 @@ function Configurator({ buildId }: { buildId?: string }) {
         );
         return;
       }
+      if (
+        guard &&
+        !evaluateAlternative(
+          current.current,
+          currentVariants.current,
+          guard.code,
+          target,
+          v,
+        )
+      ) {
+        setStatus(
+          "Las comprobaciones cambiaron. Vuelve a revisar las alternativas.",
+        );
+        return;
+      }
       let next = chooseTogether(current.current, choices);
+      if (single) setSlot(target);
       setHighlightedSlot(target);
       const intention = target === "frame" ? intendedPiece : undefined;
       if (intention) {
@@ -511,9 +560,11 @@ function Configurator({ buildId }: { buildId?: string }) {
       }));
       setConfiguration(next);
       setStatus(
-        otherSlot
-          ? "Piezas aplicadas delante y detrás. Cambios sin guardar."
-          : "Pieza aplicada. Cambios sin guardar.",
+        single
+          ? `Se sustituyó únicamente ${slotLabels[target].toLocaleLowerCase()}. Cambios sin guardar.`
+          : otherSlot
+            ? "Piezas aplicadas delante y detrás. Cambios sin guardar."
+            : "Pieza aplicada. Cambios sin guardar.",
       );
     } catch (e) {
       setError(userError(e));
@@ -754,6 +805,16 @@ function Configurator({ buildId }: { buildId?: string }) {
         warnings={mountWarnings}
         hasParts={configuration.items.length > 0}
         onSelect={selectSlot}
+        configuration={configuration}
+        variants={variants}
+        disabled={busy || pending || !ready}
+        onApply={(target, variant, code) => {
+          if (!busy && !pending && ready)
+            void apply(variant, false, target, true, {
+              code,
+              signature: canonical(configuration),
+            });
+        }}
       />
       <div className="editor-layout">
         <AssemblyIndex
@@ -1032,7 +1093,13 @@ function Configurator({ buildId }: { buildId?: string }) {
                   if (ok) {
                     const next = replacement;
                     setReplacement(undefined);
-                    void apply(next, true);
+                    void apply(
+                      next.variant,
+                      true,
+                      "frame",
+                      !!next.guard,
+                      next.guard,
+                    );
                   }
                 })
               }
@@ -1046,7 +1113,7 @@ function Configurator({ buildId }: { buildId?: string }) {
             onClick={() => {
               const next = replacement;
               setReplacement(undefined);
-              void apply(next, true);
+              void apply(next.variant, true, "frame", !!next.guard, next.guard);
             }}
           >
             {dirty ? "Cambiar sin guardar" : "Cambiar cuadro"}
