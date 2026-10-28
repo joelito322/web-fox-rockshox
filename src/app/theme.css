@@ -1,0 +1,14 @@
+/* Cumbre identity: shared UI palette, independent of bicycle finishes. */
+:root {
+  --brand: #ef633f;
+  --brand-hover: #ff896b;
+  --brand-soft: #fbe9e2;
+  --accent: var(--brand);
+  --surface: #fff;
+  --page: #f8f5f2;
+  --ink: #28211e;
+  --muted: #77675f;
+  --border: #e7ddd6;
+  --surface-dark: #171412;
+  --viewer-background: #ece6e1;
+}

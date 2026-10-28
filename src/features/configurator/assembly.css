@@ -6,7 +6,7 @@
 .assembly-index {
   min-width: 0;
   overflow: auto;
-  background: #f8f9f3;
+  background: #f8f5f4;
   border-right: 1px solid var(--border);
 }
 .assembly-index summary {
@@ -25,7 +25,7 @@
 .assembly-index summary > span {
   font-family: inherit;
   font-size: 0.95rem;
-  color: #68745e;
+  color: #716561;
 }
 .assembly-index-body {
   padding: 0 8px 20px;
@@ -42,7 +42,7 @@
 }
 .assembly-index h2 > span {
   font-weight: 400;
-  color: #77806e;
+  color: #7e7370;
 }
 .assembly-index button {
   width: 100%;
@@ -58,16 +58,16 @@
   color: var(--ink);
 }
 .assembly-index button.selected {
-  border-color: #b6c494;
-  background: #edf2df;
+  border-color: #c89d90;
+  background: var(--brand-soft);
 }
 .assembly-index button > span:first-child {
   flex: none;
   margin-top: 2px;
-  color: #7c896c;
+  color: #857570;
 }
 .assembly-index button .slot-complete {
-  color: #477125;
+  color: #6f3827;
 }
 .assembly-index .assembly-piece-copy {
   min-width: 0;
@@ -81,12 +81,12 @@
 .assembly-index small {
   font-size: 0.61rem;
   line-height: 1.4;
-  color: #64705c;
+  color: #6e625e;
   overflow-wrap: anywhere;
 }
 .assembly-index .index-variant {
   font-size: 0.56rem;
-  color: #79816f;
+  color: #7f7471;
 }
 .configurator .editor-panel {
   min-width: 0;
@@ -101,7 +101,7 @@
 }
 .assembly-wheel-tabs {
   padding: 4px;
-  background: #f0f2e9;
+  background: #f1ecea;
   border-radius: 6px;
 }
 .assembly-wheel-tabs button {
@@ -110,14 +110,14 @@
 .assembly-navigation button {
   border: 1px solid transparent;
   background: transparent;
-  color: #596451;
+  color: #625753;
   min-height: 40px;
   padding: 8px 10px;
   border-radius: 4px;
   font-size: 0.71rem;
 }
 .assembly-navigation button[aria-pressed="true"] {
-  background: #26351e;
+  background: #2e2725;
   color: white;
 }
 .assembly-groups {
@@ -139,13 +139,13 @@
   flex: 1 0 auto;
 }
 .assembly-categories button[aria-pressed="true"] {
-  background: #eaf0da;
-  color: #26351e;
-  border-color: #a7b684;
+  background: #eee0dc;
+  color: #2e2725;
+  border-color: #be8b7c;
 }
 .assembly-context {
   font-size: 0.66rem;
-  color: #66725a;
+  color: #6f615d;
   margin: 8px 0 0;
 }
 .assembly-pair {
@@ -163,7 +163,7 @@
 .assembly-pair input {
   width: 18px;
   height: 18px;
-  accent-color: #3b512a;
+  accent-color: #523229;
 }
 .assembly-pair > div {
   display: flex;
@@ -172,14 +172,14 @@
 }
 .assembly-pair > div button {
   flex: 1;
-  background: #f4f5ee;
+  background: #f4f0ef;
 }
 .assembly-pair small {
   display: block;
   margin-top: 7px;
   font-size: 0.64rem;
   line-height: 1.5;
-  color: #67715e;
+  color: #6f6460;
 }
 .configurator .assembly-active-heading h1 {
   font-size: 1.75rem;
@@ -221,14 +221,14 @@
   border-radius: 4px;
 }
 .finish-swatches button[aria-pressed="true"] {
-  border-color: #566d3f;
-  background: #edf2e3;
+  border-color: #734639;
+  background: #f0e7e4;
 }
 .finish-swatches button > span {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #1a291133;
+  border: 1px solid #201b1a33;
 }
 .finish-swatches small {
   font-size: 0.6rem;
@@ -237,11 +237,11 @@
 .color-swatches button {
   width: 32px;
   height: 32px;
-  border: 1px solid #1a291133;
+  border: 1px solid #201b1a33;
   border-radius: 50%;
 }
 .color-swatches button[aria-pressed="true"] {
-  outline: 2px solid #354a24;
+  outline: 2px solid #4a2d24;
   outline-offset: 3px;
 }
 .hex-color {
@@ -378,7 +378,7 @@
 .assembly-size-tabs > span {
   margin-right: auto;
   font-size: 0.68rem;
-  color: #68745e;
+  color: #716561;
 }
 .assembly-size-tabs button {
   min-width: 48px;
@@ -388,7 +388,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  background: #f8f9f3;
+  background: #f8f5f4;
 }
 .assembly-notice {
   border-left: 3px solid #a88b37;

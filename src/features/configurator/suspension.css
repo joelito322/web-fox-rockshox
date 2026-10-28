@@ -10,9 +10,9 @@
   width: min(420px, calc(100% - 32px));
   padding: 14px 18px;
   background: #ffffffed;
-  border: 1px solid #d5dacf;
+  border: 1px solid #dbd1ce;
   border-radius: 8px;
-  box-shadow: 0 6px 24px #20302012;
+  box-shadow: 0 6px 24px #2c262412;
   font-size: 0.75rem;
 }
 .suspension-controls label {
@@ -43,7 +43,7 @@
 .suspension-controls small {
   display: block;
   text-align: center;
-  color: #5e6955;
+  color: #665b58;
   margin-top: 7px;
   font-size: 0.65rem;
 }

@@ -38,7 +38,7 @@
 }
 
 .is-landing .brand-logo {
-  --logo-paper: #171412;
+  --logo-paper: var(--surface-dark);
 }
 
 @keyframes brand-cumbre-reveal {

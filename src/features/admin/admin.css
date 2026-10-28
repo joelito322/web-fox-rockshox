@@ -74,13 +74,13 @@
   position: sticky;
   top: 0;
   z-index: 2;
-  background: #eef1e9;
+  background: #f0ebea;
 }
 .admin-page .permission-table thead th:first-child {
   z-index: 3;
 }
 .admin-page .permission-table th:target {
-  outline: 2px solid #657d38;
+  outline: 2px solid #7b493a;
   outline-offset: -2px;
 }
 .admin-panel-tabs {
@@ -98,7 +98,7 @@
   font-weight: 650;
 }
 .admin-page .row-selected {
-  background: #eef4e6;
+  background: #f3eae7;
 }
 .admin-page .admin-table tbody tr[data-selectable] {
   cursor: pointer;

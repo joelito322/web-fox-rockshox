@@ -9,8 +9,8 @@
   margin: 0;
   border: 0;
   border-bottom: 1px solid var(--border);
-  background: #f5f6f1;
-  color: #535b4b;
+  background: #f5f2f2;
+  color: #59504d;
   font-size: .76rem;
   min-height: 46px;
 }
@@ -21,19 +21,19 @@
 .compatibility-intro { line-height: 1.6; }
 .compatibility-group { margin-top: 26px; }
 .compatibility-group > h3 { display: flex; justify-content: space-between; font-size: .95rem; }
-.compatibility-group > h3 > span { font-weight: 400; color: #6b7365; }
-.compatibility-card { border: 1px solid var(--border); border-left: 3px solid #abb6a1; border-radius: 5px; padding: 15px; margin-top: 12px; }
+.compatibility-group > h3 > span { font-weight: 400; color: #716967; }
+.compatibility-card { border: 1px solid var(--border); border-left: 3px solid #b3a7a4; border-radius: 5px; padding: 15px; margin-top: 12px; }
 .compatibility-card.conflict { border-left-color: #bd872e; background: #fffdf8; }
 .compatibility-card > p { margin: 0 0 12px; font-size: .88rem; line-height: 1.5; }
 .compatibility-card dl { margin: 12px 0; font-size: .8rem; }
 .compatibility-card dl > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 12px; padding: 6px 0; }
-.compatibility-card dt { color: #626c58; }
+.compatibility-card dt { color: #695e5a; }
 .compatibility-card dd { margin: 0; overflow-wrap: anywhere; }
 .compatibility-card > a { font-size: .76rem; text-decoration: underline; }
 .compatibility-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .compatibility-actions button { min-height: 40px; white-space: normal; }
 .assembly-warning { position: relative; margin-left: auto; flex: none; color: #93641e; }
-.assembly-warning.unknown { color: #65735d; }
+.assembly-warning.unknown { color: #706460; }
 .assembly-warning-label { position: absolute; inset: 0 auto auto 0; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); }
 @media (max-width: 720px) {
   .compatibility-summary { padding: 10px 5%; flex-wrap: wrap; font-size: .73rem; }

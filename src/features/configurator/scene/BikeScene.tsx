@@ -419,7 +419,7 @@ function BikeScene({
       dpr={[1, 1.5]}
       camera={{ position: [1.4, 0.8, 2.1], fov: 37 }}
     >
-      <color attach="background" args={["#e8e9e1"]} />
+      <color attach="background" args={["#ece6e1"]} />
       <ContextLoss onUnavailable={onUnavailable} />
       <StudioLighting />
       <StableShadows configuration={configuration} variants={variants} />

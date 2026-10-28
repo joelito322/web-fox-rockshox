@@ -23,15 +23,15 @@
     background-color var(--motion-fast) ease;
 }
 :is(.field input,.field select,.field textarea,.catalog-filters select):focus-visible {
-  border-color: #788c4d;
-  box-shadow: 0 0 0 3px #788c4d19;
+  border-color: #915948;
+  box-shadow: 0 0 0 3px #91594819;
 }
 .search-input,.password-field {
   transition: border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease;
 }
 :is(.search-input,.password-field):focus-within {
-  border-color: #788c4d;
-  box-shadow: 0 0 0 3px #788c4d22;
+  border-color: #915948;
+  box-shadow: 0 0 0 3px #91594822;
 }
 .workspace-tabs a::after {
   content: ''; position: absolute; height: 3px; left: 0; right: 0; bottom: 0;
@@ -43,12 +43,12 @@
   transition: background-color var(--motion-fast) ease, border-color var(--motion-fast) ease,
     box-shadow var(--motion-content) ease, transform var(--motion-content) var(--motion-ease);
 }
-.product-card:focus-visible .product-media { background: #e2e7d8; }
+.product-card:focus-visible .product-media { background: #e6dcda; }
 .product-card:focus-visible .card-arrow { transform: translate(2px,-2px); }
-.preset-card:focus-within { border-color: #a5b58b; }
+.preset-card:focus-within { border-color: #af9891; }
 .admin-table tbody tr { transition: background-color var(--motion-fast) ease; }
-.admin-table tbody tr:focus-within { background-color: #f0f3e8; }
-.permission-table input[type=checkbox] { accent-color: #657d38; }
+.admin-table tbody tr:focus-within { background-color: #f2ebe9; }
+.permission-table input[type=checkbox] { accent-color: #7b493a; }
 
 /* Keep the native modal present until its requested exit finishes. */
 .drawer[open] { animation: panel-enter var(--motion-panel) var(--motion-ease); }
@@ -75,12 +75,12 @@ details[open] > :not(summary) { animation: surface-fade var(--motion-content) ea
 @keyframes confirm-enter { from { opacity: .5; transform: translateY(8px) scale(.985); } to { opacity: 1; transform: none; } }
 @media (hover: hover) and (pointer: fine) {
   .product-card:hover .card-arrow { transform: translate(2px,-2px); }
-  .preset-card:hover { border-color: #bcc9aa; box-shadow: 0 6px 18px #2330210a; }
+  .preset-card:hover { border-color: #c6b3ad; box-shadow: 0 6px 18px #2c27250a; }
   .preset-card:hover .preset-photo { transform: scale(1.015); }
   :is(.category-list button,.slot-nav button,.piece-options button,.view-controls button):not(:disabled):hover {
-    background-color: #edf1e4; border-color: #b6c59f; color: var(--ink);
+    background-color: #f0e8e5; border-color: #c1aaa3; color: var(--ink);
   }
-  .admin-table tbody tr:hover { background-color: #f6f8f1; }
+  .admin-table tbody tr:hover { background-color: #f7f3f2; }
 }
 @media (max-width: 720px) {
   .drawer[open] { animation-name: panel-enter-mobile; }

@@ -1,7 +1,7 @@
 .auth-art {
   isolation:isolate;
   padding:0;
-  background:#131914;
+  background:var(--surface-dark);
   color:#fff;
 }
 .auth-art-photo,.auth-art-photo img {
@@ -51,7 +51,7 @@
   margin:0 0 20px;
 }
 .auth-art-title span { color:var(--accent); }
-.auth-art-tagline { margin:0; font-size:.76rem; color:#e0e5df; }
+.auth-art-tagline { margin:0; font-size:.76rem; color:#e7e0dd; }
 .auth-art-footer {
   position:absolute;
   bottom:28px;
@@ -64,7 +64,7 @@
   padding-top:17px;
   border-top:1px solid #ffffff38;
   font-size:.54rem;
-  color:#c5cec6;
+  color:#d2c5c1;
 }
 .auth-art-footer>span { letter-spacing:.13em; }
 .auth-art-footer a { text-decoration:underline; text-underline-offset:3px; }

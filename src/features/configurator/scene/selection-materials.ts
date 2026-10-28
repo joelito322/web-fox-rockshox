@@ -13,7 +13,7 @@ export function highlightMeshes(group: THREE.Group) {
     const copies = sources.map((source) => {
       const copy = source.clone();
       if (copy instanceof THREE.MeshStandardMaterial) {
-        copy.emissive.set("#9bb566");
+        copy.emissive.set("#ff896b");
         copy.emissiveIntensity = 0.23;
         highlighted.push(copy);
       }

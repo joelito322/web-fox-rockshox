@@ -7,7 +7,7 @@
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   color: var(--muted, #6b7280);
-  border-left: 3px solid var(--accent, #d4fe31);
+  border-left: 3px solid var(--accent, #ef633f);
   padding: 0.5rem 0.75rem;
   margin: 0;
 }
@@ -19,7 +19,7 @@
 }
 .sales-actions > button:not(.button):not(.text-button) {
   padding: 0.55rem 0.75rem;
-  border: 1px solid #d6d7d3;
+  border: 1px solid #dbd2cf;
   background: transparent;
   border-radius: 4px;
   cursor: pointer;
@@ -28,7 +28,7 @@
   display: grid;
   gap: 0.45rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #dedfd9;
+  border-bottom: 1px solid #e1d9d7;
   min-width: 0;
 }
 .sales-cart-line > strong {
@@ -48,7 +48,7 @@
   position: sticky;
   top: 6rem;
   padding: 1.5rem;
-  border: 1px solid #d7d9d2;
+  border: 1px solid #dcd2cf;
   display: grid;
   gap: 1rem;
 }
@@ -72,7 +72,7 @@
 .sales-purchase {
   display: grid;
   gap: 0.75rem;
-  border-block: 1px solid #dedfd9;
+  border-block: 1px solid #e1d9d7;
   padding: 1rem 0;
   margin-block: 1rem;
 }
@@ -84,8 +84,8 @@
   gap: 0.5rem;
   padding: 0.8rem 0;
   margin-top: auto;
-  border-top: 1px solid #e1e8da;
-  color: #162719;
+  border-top: 1px solid #e7dedb;
+  color: #221d1b;
 }
 .sales-price-value {
   display: flex;
@@ -104,15 +104,15 @@
 .sales-price-value small {
   font-size: 0.65rem;
   font-weight: 600;
-  color: #56634e;
+  color: #605451;
 }
 .sales-condition {
   display: inline-flex;
   align-items: center;
   width: fit-content;
-  border: 1px solid #cbd8b5;
-  background: #edf2df;
-  color: #3e5424;
+  border: 1px solid #d4bfb8;
+  background: var(--brand-soft);
+  color: #533025;
   padding: 0.3rem 0.5rem;
   border-radius: 3px;
   font-size: 0.68rem;
@@ -124,7 +124,7 @@
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.5rem;
-  color: #162719;
+  color: #221d1b;
   margin-block: 1rem;
 }
 .sales-detail-price strong {
@@ -136,24 +136,24 @@
 }
 .sales-detail-price small {
   font-size: 0.8rem;
-  color: #61705a;
+  color: #6d615d;
 }
 .sales-detail-price del {
-  color: #737d6d;
+  color: #7b726f;
   font-size: 0.95rem;
 }
 .sales-line-price {
   font-size: 1.1rem;
   font-weight: 650;
   font-variant-numeric: tabular-nums;
-  color: #23371b;
+  color: #2e2624;
 }
 .sales-total {
   display: block;
   padding-top: 0.75rem;
-  border-top: 2px solid #c3d69a;
+  border-top: 2px solid #d0aba0;
   font-size: 1.3rem;
-  color: #162719;
+  color: #221d1b;
 }
 .sales-product-image {
   width: 100%;
@@ -179,11 +179,11 @@
 .sales-stack th {
   padding: 0.8rem;
   text-align: left;
-  border-bottom: 1px solid #dedfd9;
+  border-bottom: 1px solid #e1d9d7;
 }
 .sales-stack del {
   font-size: 0.85em;
-  color: #72756b;
+  color: #756d6b;
 }
 .sales-stack input,
 .sales-stack select {
@@ -233,7 +233,7 @@
 }
 .sales-stack .pagination button {
   min-height: 44px;
-  border: 1px solid #e1e4da;
+  border: 1px solid var(--border);
   background: white;
   padding: 0.6rem 0.9rem;
   cursor: pointer;

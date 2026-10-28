@@ -173,7 +173,7 @@ export function renderPreview(
             }}
           >
             {!transparentBackground && (
-              <color attach="background" args={["#e8e9e1"]} />
+              <color attach="background" args={["#ece6e1"]} />
             )}
             <StudioLighting />
             <Capture
