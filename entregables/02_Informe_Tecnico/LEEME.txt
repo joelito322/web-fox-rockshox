@@ -8,7 +8,7 @@ CONTENIDO
   citas, bibliografía y anexos. No requiere otros archivos .tex ni BibTeX.
 - recursos/: capturas, resultados agregados y tipografías con su licencia.
 
-COMPILACIÓN AUTOCONTENIDA
+COMPILACIÓN
 Ejecutar dentro de esta carpeta:
     tectonic informe.tex
 Alternativa con una distribución TeX completa:
@@ -17,17 +17,22 @@ O ejecutar XeLaTeX varias veces para resolver índice y referencias.
 
 Se requieren fontspec, babel (español), geometry, setspace, graphicx,
 booktabs, longtable, tabularx, array, pdflscape, tikz, pgfgantt, caption,
-float, enumitem, fancyhdr, natbib, hyperref y xurl.
+float, enumitem, fancyhdr, titlesec, indentfirst, etoolbox, natbib,
+hyperref, xurl y ragged2e.
 Tectonic descarga los paquetes TeX que falten en su primer uso. No necesita
 variables de Supabase, credenciales ni acceso a las cuentas de la aplicación.
-Las tipografías Liberation se incluyen con su licencia para no depender de
-fuentes instaladas en el equipo. No alterar rutas relativas al trasladar.
+El PDF utiliza Times New Roman de 12 puntos, instalada en el equipo de
+compilación, con subconjuntos incrustados para su lectura. No se distribuyen
+los archivos de esa fuente. Si no está instalada al recompilar, se utiliza
+Liberation Serif incluida con su licencia; la paginación puede variar.
+Las fuentes Liberation Sans y Mono de diagramas/código también son locales.
+No alterar rutas relativas al trasladar.
 
 CRITERIOS DE REDACCIÓN
 - Formato académico basado en APA 7: autor-fecha, referencias, márgenes,
   tipografía serif de 12 puntos, doble espacio y presentación de figuras/tablas.
 - Se conserva la estructura técnica de la consigna, con índice y Gantt horizontal.
-- Cronograma de tres semanas reconstruido y estimado: no es registro horario.
+- Cronograma de cuatro semanas reconstruido y estimado: no es registro horario.
 - Cuentas de prueba efímeras; sin credenciales ni datos personales de sesiones.
 - Capturas reales del frontend local conectado a Supabase Cloud; la escena se muestra en vista frontal.
 - Se distinguen validaciones automáticas y confirmación manual de acceso Google.
@@ -39,15 +44,37 @@ SITIO PÚBLICO
 https://atlasmtb.netlify.app/
 
 ALCANCE DE LA REVISIÓN 28/10/2026
-Se actualizan la fuente LaTeX y el PDF, manteniendo formato, tipografías,
-portada académica del 21/10/2026 y, en presentación, doce láminas 16:9.
+Se actualizan la fuente LaTeX y el PDF, conservando contenido académico y
+portada del 21/10/2026. La revisión posterior del formato se detalla abajo.
 Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
 opcional con tarifa inicial S/150 editable y exoneración administrativa,
 notificaciones, pedidos, métodos de pago simulados y alternativas de
 compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
-Estado registrado: 24 tablas propias, 41 migraciones; 564 pruebas correctas,
+Estado registrado: 24 tablas propias, 42 migraciones; 564 pruebas correctas,
 2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
 Las capturas se renovaron con cuentas temporales y limpieza comprobada;
 no se modificaron precios, catálogo ni cuentas reales durante las capturas.
 Esta revisión no implica push ni despliegue. La publicación previa puede
 mostrar otra versión. Cobros reales, SMTP y móvil físico no certificados.
+
+Precedencias revisadas: diseño cerrado04/10, migraciones desde05/10,
+pruebas integrales25/10, correcciones26/10 y revalidación27/10.
+Tabla y Gantt comparten28 actividades;54 relaciones fin–inicio comprobadas.
+El docente figura como Mg. Fidel Huanco Ramos.
+
+REVISIÓN DE FORMATO APA 7 — 28/10/2026
+PDF de 56 páginas. Papel carta, márgenes de 2,54 cm, cuerpo de 12 puntos,
+doble espacio sin espacio adicional entre párrafos, alineación izquierda y
+sangría inicial de 1,27 cm. Resumen sin sangría; palabras clave con sangría.
+Encabezados sin numeración y jerarquía tipográfica de tres niveles.
+Índice general, índice de tablas e índice de figuras separados por página;
+se conservan por la estructura académica, no como exigencia general de APA.
+Números/títulos/notas de tablas y figuras a doble espacio. Solo celdas de
+tablas e interior de diagramas usan espaciado compacto permitido por APA.
+Referencias a doble espacio y sangría francesa de 1,27 cm; 14 referencias
+corresponden a 14 claves citadas. Cada apéndice comienza en página nueva,
+con rótulo/título centrados y tablas A1–A3, B1 y C1.
+Compilación sin referencias indefinidas, caracteres ausentes o desbordamientos
+Overfull. Se revisaron límites del texto y páginas renderizadas, incluido
+el Gantt horizontal. Criterios y fuentes oficiales: recursos/formato-apa7.txt.
+Esta revisión no sustituye la rúbrica específica de la institución.

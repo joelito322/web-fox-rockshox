@@ -2,7 +2,7 @@
 % Alternativa: latexmk -xelatex informe.tex (no requiere bibliografía externa).
 \documentclass[12pt,letterpaper]{article}
 \usepackage{fontspec}
-\setmainfont{LiberationSerif}[Path=recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{LiberationSerif}[Path=recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]}
 \setsansfont{LiberationSans}[Path=recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
 \setmonofont{LiberationMono}[Path=recursos/fuentes/,Extension=.ttf,UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic,Scale=0.85]
 \usepackage[spanish,es-tabla]{babel}
@@ -11,57 +11,73 @@
 \usepackage{tikz,pgfgantt}
 \usetikzlibrary{arrows.meta,positioning,fit,shapes.geometric,calc}
 \usepackage{caption,float,enumitem,fancyhdr}
+\usepackage{titlesec,indentfirst,etoolbox}
 \usepackage[authoryear,round]{natbib}
 \usepackage[hidelinks,unicode]{hyperref}
 \usepackage{xurl,ragged2e}
 \hypersetup{pdftitle={Desarrollo de una plataforma web para la venta asistida de componentes y configuración tridimensional de bicicletas de montaña},pdfauthor={Joel Ito Luque},pdfsubject={Informe técnico de Gestión de Proyectos},pdfkeywords={bicicletas de montaña, plataforma web, configuración tridimensional, gestión de proyectos}}
 \doublespacing
-\RaggedRight
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\urlstyle{same}
+\bibpunct{(}{)}{;}{a}{,}{,}
+\setcounter{secnumdepth}{0}
+\titleformat{\section}[block]{\normalfont\normalsize\bfseries\filcenter}{}{0pt}{}
+\titleformat{\subsection}[block]{\normalfont\normalsize\bfseries\raggedright}{}{0pt}{}
+\titleformat{\subsubsection}[block]{\normalfont\normalsize\bfseries\itshape\raggedright}{}{0pt}{}
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
 \setlength{\parindent}{1.27cm}
 \setlength{\parskip}{0pt}
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}\fancyhf{}\fancyhead[R]{\thepage}\renewcommand{\headrulewidth}{0pt}
-\captionsetup{labelfont=bf,textfont=it,labelsep=newline,justification=raggedright,singlelinecheck=false,skip=8pt}
-\setlist{itemsep=0pt,topsep=4pt}
+\DeclareCaptionFont{apadouble}{\normalsize\doublespacing}
+\captionsetup{font=apadouble,labelfont=bf,textfont=it,labelsep=newline,justification=raggedright,singlelinecheck=false,skip=12pt}
+\captionsetup[longtable]{font=apadouble}
+
+\setlist{itemsep=0pt,topsep=0pt,parsep=0pt,partopsep=0pt}
 \setcounter{tocdepth}{2}
-\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
-\newcommand{\nota}[1]{\par\vspace{3pt}{\singlespacing\small\noindent\textit{Nota.} #1\par}}
+% Keep double-spaced index entries without article.cls extra gaps between sections.
+\makeatletter
+\renewcommand*{\l@section}[2]{\begingroup\bfseries\@dottedtocline{1}{0pt}{0pt}{#1}{#2}\endgroup}
+\renewcommand*{\l@subsection}{\@dottedtocline{2}{1.27cm}{0pt}}
+\makeatother
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\nota}[1]{\par{\normalfont\normalsize\doublespacing\raggedright\setlength{\parindent}{0pt}\noindent\textit{Nota.} #1\par}}
 \newcommand{\ruta}[1]{{\urlstyle{tt}\nolinkurl{#1}}}
 \newcommand{\pagina}{\clearpage}
-\newenvironment{tabla}{\begingroup\singlespacing\small\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.25}}{\endgroup}
+% Only table cells use compact spacing; captions and notes explicitly restore double spacing.
+\newenvironment{tabla}{\par\begingroup\normalsize\singlespacing\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.25}}{\par\endgroup}
+\newcommand{\apendice}[2]{\clearpage\setcounter{table}{0}\renewcommand{\thetable}{#1\arabic{table}}\section*{Apéndice #1\\#2}\addcontentsline{toc}{section}{Apéndice #1. #2}}
+
 \begin{document}
 \begin{titlepage}
 \thispagestyle{fancy}
 \centering
-{\large\bfseries Universidad Nacional de Juliaca\par}
-\vspace{0.35cm}
-Facultad de Ciencias de la Ingeniería\par
-Ingeniería de Software y Sistemas\par
-\vspace{1.65cm}
-{\large\bfseries Desarrollo de una plataforma web para la venta asistida de componentes y configuración tridimensional de bicicletas de montaña\par}
-\vspace{0.6cm}
-\textbf{ATLAS MTB}\par
-Informe técnico\par
-\vspace{1cm}
+\vspace*{3\baselineskip}
+{\normalsize\bfseries Desarrollo de una plataforma web para la venta asistida de componentes y configuración tridimensional de bicicletas de montaña\par
+ATLAS MTB\par}
+\vspace{\baselineskip}
 Joel Ito Luque\par
-\vspace{0.6cm}
-Gestión de Proyectos\par
-Docente: Fidel Huanco Ramos\par
-Octavo semestre\par
-\vfill
-Juliaca, Perú\par
-21 de octubre de 2026
+Ingeniería de Software y Sistemas\par
+Facultad de Ciencias de la Ingeniería, Universidad Nacional de Juliaca\par
+Gestión de Proyectos (octavo semestre)\par
+Mg. Fidel Huanco Ramos\par
+21 de octubre de 2026\par
 \end{titlepage}
 \setcounter{page}{2}
 
 \section*{Resumen}\addcontentsline{toc}{section}{Resumen}
-ATLAS MTB desarrolla una tienda web de componentes para enduro y descenso que conecta consulta técnica, comparación, configuración tridimensional y venta asistida. El problema abordado es la discontinuidad entre elegir una pieza, relacionar sus medidas con el montaje y convertir la selección en una compra revisada. Se implementaron catálogo, montajes privados, avisos con alternativas comprobables, precios por oferta comercial, carrito persistente, cotizaciones, pedidos y seguimiento. El armado es opcional, con tarifa inicial automática editable y posibilidad de exoneración durante la revisión; el cliente recibe un aviso y acepta el total. Los métodos de pago permiten ensayar el recorrido sin efectuar cobros reales. La arquitectura combina módulos por funcionalidad con independencia de reglas de negocio, React y Three.js en el navegador y Supabase Cloud para identidad, datos y archivos. Esta revisión del 28 de octubre de 2026 documenta el código local y el backend remoto; no afirma que esos últimos cambios estén publicados en Netlify. El cronograma académico conserva una base reconstruida de tres semanas y distingue la ampliación posterior. La evidencia comprueba operaciones, persistencia y controles en escenarios definidos, sin certificar mecánica, rentabilidad, satisfacción de usuarios ni rendimiento de teléfonos físicos.
+\noindent ATLAS MTB desarrolla una tienda web de componentes para enduro y descenso que conecta consulta técnica, comparación, configuración tridimensional y venta asistida. El problema abordado es la discontinuidad entre elegir una pieza, relacionar sus medidas con el montaje y convertir la selección en una compra revisada. Se implementaron catálogo, montajes privados, avisos con alternativas comprobables, precios por oferta comercial, carrito persistente, cotizaciones, pedidos y seguimiento. El armado es opcional, con tarifa inicial automática editable y posibilidad de exoneración durante la revisión; el cliente recibe un aviso y acepta el total. Los métodos de pago permiten ensayar el recorrido sin efectuar cobros reales. La arquitectura combina módulos por funcionalidad con independencia de reglas de negocio, React y Three.js en el navegador y Supabase Cloud para identidad, datos y archivos. Esta revisión del 28 de octubre de 2026 documenta el código local y el backend remoto; no afirma que esos últimos cambios estén publicados en Netlify. El cronograma reconstruido integra el alcance completo en cuatro semanas, del 30 de septiembre al 27 de octubre. La evidencia comprueba operaciones, persistencia y controles en escenarios definidos, sin certificar mecánica, rentabilidad, satisfacción de usuarios ni rendimiento de teléfonos físicos.
 
-\noindent\textit{Palabras clave:} bicicletas de montaña, configuración tridimensional, venta asistida, componentes, plataforma web, gestión de proyectos.
+\indent\textit{Palabras clave:} bicicletas de montaña, configuración tridimensional, venta asistida, componentes, plataforma web, gestión de proyectos.
 \pagina
 \tableofcontents
 \pagina
 \listoftables
+\pagina
 \listoffigures
 \pagina
 
@@ -70,7 +86,7 @@ ATLAS MTB desarrolla una tienda web de componentes para enduro y descenso que co
 \subsection{Identificación y contexto}
 ATLAS MTB es una tienda web de componentes orientada a ciclistas de enduro y descenso, con selección técnica, comparación, visualización del montaje y armado opcional revisado. Su propuesta de valor es mantener continuidad desde la elección de piezas hasta una solicitud comercial y un pedido trazable. La versión de código revisada el 28 de octubre de 2026 se ejecuta localmente con Supabase Cloud; la dirección \url{https://atlasmtb.netlify.app/} corresponde al frontend publicado previamente y requiere un despliegue posterior para incorporar esta revisión. El producto se encuentra en validación: precios y stock iniciales son editables y los pagos son simulados, sin ingresos o ventas reales demostrados.
 
-El trabajo es individual. Joel Ito Luque asume la responsabilidad de análisis, diseño, integración, pruebas y documentación. Se parte de un prototipo previamente existente, por lo que la planificación de tres semanas corresponde a una reconstrucción estimada de la etapa de integración y cierre, no al desarrollo íntegro desde cero. Las fuentes técnicas, las migraciones y las evidencias del proyecto permiten distinguir los objetivos de las funciones efectivamente incorporadas.
+El trabajo es individual. Joel Ito Luque asume la responsabilidad de análisis, diseño, integración, pruebas y documentación. Se parte de un prototipo previamente existente, por lo que la planificación de cuatro semanas corresponde a una reconstrucción estimada de la etapa de integración y cierre, no al desarrollo íntegro desde cero. Las fuentes técnicas, las migraciones y las evidencias del proyecto permiten distinguir los objetivos de las funciones efectivamente incorporadas.
 
 \subsection{Planteamiento del problema}
 La planificación del armado o modificación de una bicicleta de montaña exige seleccionar componentes cuyas características deben evaluarse de manera relacionada. Una familia de productos puede presentar distintas medidas, generaciones y versiones. Por tanto, identificar el nombre de una pieza no basta para comprender qué alternativa se está seleccionando y qué aspectos deben revisarse respecto del resto del montaje. Las tablas de compatibilidad publicadas por los fabricantes organizan relaciones entre sistemas de transmisión, frenos y otros conjuntos, lo que respalda la existencia de restricciones técnicas que requieren consulta específica \citep{shimano,sram}.
@@ -123,7 +139,7 @@ Se excluyen cobros reales, integración contratada con pasarelas, cuentas bancar
 \begin{table}[H]
 \caption{Actores y necesidades atendidas}\label{tab:actores}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{3cm}XX}\toprule
-Actor & Necesidad & Respuesta del sistema\\\midrule
+\multicolumn{1}{>{\centering\arraybackslash}p{3.000cm}}{Actor} & \multicolumn{1}{>{\centering\arraybackslash}p{6.228cm}}{Necesidad} & \multicolumn{1}{>{\centering\arraybackslash}p{6.228cm}}{Respuesta del sistema}\\\midrule
 Visitante & Explorar información sin crear una cuenta & Catálogo, precios publicados, fichas, comparación y carrito del navegador.\\
 Usuario registrado & Construir y conservar una propuesta & Montajes propios, carrito remoto, cotizaciones y pedidos, según permiso.\\
 Administrador autorizado & Mantener contenidos y acceso & Catálogo, accesos y ventas mediante operaciones protegidas.\\
@@ -141,18 +157,18 @@ Responsable del proyecto & Publicar y mantener el producto & Fuentes versionadas
 \subsection{Enfoque de trabajo y responsabilidad}
 El desarrollo se organizó de manera incremental, con revisión de un prototipo, integración por funcionalidades y ciclos de comprobación y corrección. Esta descripción corresponde al trabajo realizado y no implica que se haya aplicado formalmente Scrum, un equipo de varios especialistas o una metodología certificada. El responsable individual asumió distintos roles a lo largo del proceso: analizar necesidades, diseñar datos, implementar interfaz y reglas, preparar recursos, comprobar resultados y publicar la aplicación.
 
-La planificación se presenta como una reconstrucción estimada de tres semanas, del 30 de septiembre al 20 de octubre de 2026, solicitada para organizar la explicación académica. No constituye una bitácora de horas ni prueba que cada actividad se ejecutara exactamente en esos días. La existencia de un prototipo previo y la asistencia de herramientas de desarrollo permiten concentrar las actividades de integración. La publicación y su verificación se describen por separado en los resultados, sin utilizar el Gantt para atribuir retrospectivamente fechas de despliegue no medidas.
+La planificación se presenta como una reconstrucción estimada del alcance completo, del 30 de septiembre al 27 de octubre de 2026. Organiza en una misma secuencia catálogo, configuración 3D, administración y venta asistida, con tareas solapadas y pruebas continuas. No constituye una bitácora de horas ni acredita que esta distribución existiera antes de ejecutar el proyecto. Las fechas de implementación comprobables se conservan en las migraciones y commits; el Gantt permite explicar las dependencias del conjunto.
 
 \subsection{Descomposición del trabajo y entregables}
 \begin{table}[H]
 \caption{Paquetes de trabajo y criterios de terminación}\label{tab:edt}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{1.25cm}L{3.1cm}XX}\toprule
-Código & Paquete & Entregable verificable & Criterio de cierre\\\midrule
+\multicolumn{1}{>{\centering\arraybackslash}p{1.250cm}}{Código} & \multicolumn{1}{>{\centering\arraybackslash}p{3.100cm}}{Paquete} & \multicolumn{1}{>{\centering\arraybackslash}p{5.377cm}}{Entregable verificable} & \multicolumn{1}{>{\centering\arraybackslash}p{5.377cm}}{Criterio de cierre}\\\midrule
 P1 & Análisis y diseño & Alcance, requisitos, arquitectura y esquema & Coherencia entre recorridos, entidades y operaciones.\\
 P2 & Plataforma y catálogo & Navegación, fichas y comparación & Buscar, abrir variantes y comparar sin perder contexto.\\
 P3 & Configuración visual & Visor, reglas, recursos y acabados & Aplicar piezas y reproducir un montaje de referencia.\\
 P4 & Acceso y persistencia & Sesiones, permisos y montajes & Guardar, recuperar y restringir acceso por propiedad.\\
-P5 & Administración & Operaciones de contenidos y roles & Acciones permitidas según autorización efectiva.\\
+P5 & Administración y ventas & Contenidos, roles, ofertas, carrito, cotizaciones y pedidos & Acciones autorizadas, totales y seguimiento coherentes.\\
 P6 & Validación y publicación & Pruebas, correcciones y frontend público & Evidencias de rutas, recursos y recorridos reales.\\
 P7 & Entrega académica & Informe, manual, presentación y software & Fuentes y PDF compilados; instrucciones y anexos.\\\bottomrule
 \end{tabularx}\end{tabla}
@@ -160,95 +176,114 @@ P7 & Entrega académica & Informe, manual, presentación y software & Fuentes y 
 \end{table}
 
 \subsection{Cronograma reconstruido y dependencias}
-La tabla~\ref{tab:cronograma} detalla actividades, duraciones y precedencias. Se utilizan días calendario; las duraciones indican intervalos de actividad, no jornadas completas de trabajo. Una dependencia de inicio no impide revisiones posteriores. El modelado, las pruebas y la documentación técnica de apoyo se solapan con el desarrollo, mientras la publicación depende de disponer de una versión compilable y de configurar sus destinos de acceso.
+La tabla~\ref{tab:cronograma} utiliza precedencias fin--inicio: cada tarea comienza el día siguiente o después de que terminen todas sus predecesoras. Primero se cierra el alcance, se revisa el inventario, se definen los requisitos y se aprueban arquitectura, datos, contratos y pantallas. El diseño termina el 4 de octubre; las migraciones y la preparación 3D empiezan el 5. No se inicia la base de datos con el plan abierto.
+
+Las tareas sin dependencia directa pueden compartir intervalo, sin suponer equipos diferentes ni dedicación completa a cada barra: el trabajo individual alterna bloques de integración sobre el prototipo existente. Las pruebas C1 acompañan únicamente los incrementos ya disponibles; no equivalen a validar por adelantado funciones sin implementar. Las pruebas integrales y comerciales se concentran el 25, las correcciones y preparación de entrega el 26 y la revalidación final el 27. Las duraciones son estimaciones en días calendario, no horas o jornadas medidas.
 
 \begin{tabla}
 \begin{longtable}{L{.65cm}L{5.2cm}L{1.45cm}L{1.45cm}L{.8cm}L{1.9cm}}
 \caption{Cronograma detallado de integración y cierre técnico}\label{tab:cronograma}\\
-\toprule ID & Actividad & Inicio & Fin & Días & Precedencia\\\midrule\endfirsthead
-\multicolumn{6}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule ID & Actividad & Inicio & Fin & Días & Precedencia\\\midrule\endhead
-A1 & Revisión del prototipo y alcance & 30/09 & 01/10 & 2 & Prototipo\\
-A2 & Inventario y fuentes de componentes & 30/09 & 03/10 & 4 & Prototipo\\
-A3 & Requisitos y recorridos & 01/10 & 02/10 & 2 & A1 (inicio)\\
-A4 & Arquitectura y modelo de datos & 02/10 & 04/10 & 3 & A3 (inicio)\\
-A5 & Entorno, dependencias y migraciones & 03/10 & 04/10 & 2 & A4 (inicio)\\
-A6 & Autenticación y permisos base & 04/10 & 06/10 & 3 & A5 (inicio)\\
-B1 & Catálogo, filtros y fichas & 05/10 & 08/10 & 4 & A2, A4\\
-B2 & Comparación de variantes & 07/10 & 09/10 & 3 & B1 (inicio)\\
-B3 & Preparación y revisión de recursos 3D & 03/10 & 12/10 & 10 & A2 (inicio)\\
-B4 & Ensamblaje y selección en visor & 08/10 & 13/10 & 6 & B1, B3 (inicio)\\
-B5 & Guardado y gestión de montajes & 10/10 & 14/10 & 5 & A6, B4 (inicio)\\
-B6 & Administración y publicación de datos & 09/10 & 14/10 & 6 & A6, B1\\
-B7 & Interacción, acabados y adaptación & 12/10 & 15/10 & 4 & B4 (inicio)\\
-C1 & Pruebas de reglas y contratos & 06/10 & 17/10 & 12 & A5; incremental\\
-C2 & Pruebas de permisos y persistencia & 11/10 & 17/10 & 7 & B5 (inicio)\\
-C3 & Recorridos de navegador y móvil & 14/10 & 18/10 & 5 & B4, B5 (inicio)\\
-C4 & Correcciones y carga de recursos & 16/10 & 19/10 & 4 & C1--C3 (inicio)\\
-C5 & Preparación de despliegue y retornos & 18/10 & 20/10 & 3 & C3, C4 (inicio)\\
-C6 & Consolidación de evidencias técnicas & 19/10 & 20/10 & 2 & C1--C4\\\bottomrule
+\toprule \multicolumn{1}{>{\centering\arraybackslash}p{0.650cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{5.200cm}}{Actividad} & \multicolumn{1}{>{\centering\arraybackslash}p{1.450cm}}{Inicio} & \multicolumn{1}{>{\centering\arraybackslash}p{1.450cm}}{Fin} & \multicolumn{1}{>{\centering\arraybackslash}p{0.800cm}}{Días} & \multicolumn{1}{>{\centering\arraybackslash}p{1.900cm}}{Depende de}\\\midrule\endfirsthead
+\multicolumn{6}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule \multicolumn{1}{>{\centering\arraybackslash}p{0.650cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{5.200cm}}{Actividad} & \multicolumn{1}{>{\centering\arraybackslash}p{1.450cm}}{Inicio} & \multicolumn{1}{>{\centering\arraybackslash}p{1.450cm}}{Fin} & \multicolumn{1}{>{\centering\arraybackslash}p{0.800cm}}{Días} & \multicolumn{1}{>{\centering\arraybackslash}p{1.900cm}}{Depende de}\\\midrule\endhead
+A1 & Alcance integral y revisión del prototipo & 30/09 & 30/09 & 1 & Inicio\\
+A2 & Inventario y fuentes de componentes & 01/10 & 01/10 & 1 & A1\\
+A3 & Requisitos técnicos y comerciales & 02/10 & 02/10 & 1 & A2\\
+A4 & Arquitectura, datos y contratos & 03/10 & 04/10 & 2 & A3\\
+A7 & Diseño de pantallas y recorridos & 03/10 & 04/10 & 2 & A3\\
+A5 & Entorno y migraciones base & 05/10 & 06/10 & 2 & A4, A7\\
+A6 & Autenticación y permisos & 07/10 & 08/10 & 2 & A5\\
+B1 & Catálogo, filtros y fichas & 07/10 & 09/10 & 3 & A5, A2\\
+B2 & Comparación de variantes & 10/10 & 10/10 & 1 & B1\\
+B3 & Modelos 3D y suspensión & 05/10 & 13/10 & 9 & A4, A7, A2\\
+B4 & Ensamblaje y selección 3D & 14/10 & 16/10 & 3 & B3, B1, A6\\
+B5 & Guardado y gestión de montajes & 17/10 & 18/10 & 2 & B4, A6\\
+B6 & Administración por módulos & 10/10 & 12/10 & 3 & A6, B1\\
+B7 & Identidad, interacción y responsive & 17/10 & 20/10 & 4 & B4, B6, A7\\
+B8 & Límites y alternativas compatibles & 17/10 & 19/10 & 3 & B4, B2, D1\\
+D1 & Ofertas, precios y promociones & 13/10 & 14/10 & 2 & B6, B1\\
+D2 & Carrito por cuenta & 15/10 & 16/10 & 2 & D1, A6\\
+D6 & Conversión del montaje al carrito & 19/10 & 19/10 & 1 & D2, B5\\
+D3 & Cotizaciones, armado y entrega & 20/10 & 21/10 & 2 & D6, B8\\
+D4 & Pedidos, reservas y seguimiento & 22/10 & 23/10 & 2 & D3, D2\\
+D5 & Pagos simulados y notificaciones & 24/10 & 24/10 & 1 & D4, D3\\
+C1 & Pruebas incrementales por módulo & 07/10 & 24/10 & 18 & A5\\
+C2 & Pruebas de acceso y propiedad & 09/10 & 10/10 & 2 & A6\\
+C7 & Pruebas de integridad comercial & 25/10 & 25/10 & 1 & D5, D4\\
+C3 & Recorridos integrales y móvil & 25/10 & 25/10 & 1 & D5, B7, B8, D6, C2\\
+C4 & Correcciones de integración & 26/10 & 26/10 & 1 & C7, C3\\
+C5 & Preparación de entrega y destinos & 26/10 & 26/10 & 1 & C7, C3\\
+C6 & Revalidación final y documentación & 27/10 & 27/10 & 1 & C4, C5, C1\\\bottomrule
 \end{longtable}\end{tabla}
-\nota{Fechas del año 2026. Responsable de todas las actividades: Joel Ito Luque. La notación ``inicio'' indica dependencia con solapamiento, no finalización previa completa. La reconstrucción es estimativa y no un calendario ejecutado certificado.}
+\nota{Fechas del año 2026. Responsable de todas las actividades: Joel Ito Luque. Las predecesoras deben estar terminadas antes de comenzar cada actividad. La reconstrucción es estimativa y no un calendario ejecutado certificado.}
 
-El diagrama de Gantt de la figura~\ref{fig:gantt} representa los mismos intervalos. Los hitos son H1: base funcional integrada; H2: funciones principales conectadas; y H3: versión preparada para publicación. La barra extendida de pruebas evita presentar la validación como una tarea que empieza únicamente al finalizar el código.
+El Gantt de la figura~\ref{fig:gantt} utiliza los mismos intervalos de la tabla. H1 fija el cierre del plan y diseño el 4 de octubre; H2, el montaje guardable el 18; y H3, la revalidación de cierre el 27. Las flechas representan las principales dependencias; la tabla conserva la lista completa. La preparación de destinos no equivale a desplegar: la publicación requiere la aprobación de la revisión final.
 
 \begin{landscape}
 \begin{figure}[p]
-\caption{Gantt de tres semanas con actividades, solapamientos e hitos}\label{fig:gantt}
+\caption{Gantt de cuatro semanas: alcance completo hasta el 27 de octubre}\label{fig:gantt}
 \centering
 
 % Inicio: gantt.tex
 \begin{ganttchart}[
- time slot format=isodate,x unit=.59cm,y unit title=.58cm,y unit chart=.48cm,
+ time slot format=isodate,x unit=.43cm,y unit title=.48cm,y unit chart=.32cm,
  hgrid,vgrid,bar height=.48,group height=.25,
- title label font=\scriptsize\bfseries,bar label font=\scriptsize,
- milestone label font=\scriptsize\bfseries,
- bar label node/.append style={text width=7.5cm,align=right},
- milestone label node/.append style={text width=7.5cm,align=right},
+ title label font=\sffamily\scriptsize\bfseries,bar label font=\sffamily\scriptsize,
+ milestone label font=\sffamily\scriptsize\bfseries,
+ bar label node/.append style={text width=7.1cm,align=right},
+ milestone label node/.append style={text width=7.1cm,align=right},
  bar/.append style={fill=black!35,draw=black!65},
  milestone/.append style={fill=black!85},link/.style={-Latex,black!45}
-]{2026-09-30}{2026-10-20}
-\gantttitle{Semana 1: 30/09--06/10}{7}\gantttitle{Semana 2: 07/10--13/10}{7}\gantttitle{Semana 3: 14/10--20/10}{7}\\
-\gantttitle{30}{1}\gantttitlelist{1,...,20}{1}\\
-\ganttbar[name=a1]{A1. Revisión del prototipo y alcance}{2026-09-30}{2026-10-01}\\
-\ganttbar[name=a2]{A2. Inventario y fuentes}{2026-09-30}{2026-10-03}\\
-\ganttbar[name=a3]{A3. Requisitos y recorridos}{2026-10-01}{2026-10-02}\\
-\ganttbar[name=a4]{A4. Arquitectura y datos}{2026-10-02}{2026-10-04}\\
-\ganttbar[name=a5]{A5. Entorno y migraciones}{2026-10-03}{2026-10-04}\\
-\ganttbar[name=a6]{A6. Autenticación y permisos}{2026-10-04}{2026-10-06}\\
-\ganttmilestone[name=h1]{H1. Base funcional}{2026-10-06}\\
-\ganttbar[name=b1]{B1. Catálogo, filtros y fichas}{2026-10-05}{2026-10-08}\\
-\ganttbar[name=b2]{B2. Comparación}{2026-10-07}{2026-10-09}\\
-\ganttbar[name=b3]{B3. Recursos tridimensionales}{2026-10-03}{2026-10-12}\\
-\ganttbar[name=b4]{B4. Ensamblaje y selección}{2026-10-08}{2026-10-13}\\
-\ganttbar[name=b5]{B5. Guardado y montajes}{2026-10-10}{2026-10-14}\\
-\ganttbar[name=b6]{B6. Administración}{2026-10-09}{2026-10-14}\\
-\ganttbar[name=b7]{B7. Interacción y adaptación}{2026-10-12}{2026-10-15}\\
-\ganttmilestone[name=h2]{H2. Funciones integradas}{2026-10-13}\\
-\ganttbar[name=c1]{C1. Pruebas de reglas}{2026-10-06}{2026-10-17}\\
-\ganttbar[name=c2]{C2. Permisos y persistencia}{2026-10-11}{2026-10-17}\\
-\ganttbar[name=c3]{C3. Navegador y móvil}{2026-10-14}{2026-10-18}\\
-\ganttbar[name=c4]{C4. Correcciones y carga}{2026-10-16}{2026-10-19}\\
-\ganttbar[name=c5]{C5. Preparación de publicación}{2026-10-18}{2026-10-20}\\
-\ganttbar[name=c6]{C6. Evidencias técnicas}{2026-10-19}{2026-10-20}\\
-\ganttmilestone[name=h3]{H3. Preparación de cierre}{2026-10-20}
-\ganttlink{a3}{a4}\ganttlink{a5}{a6}\ganttlink{a6}{h1}
-\ganttlink{b4}{h2}\ganttlink{c5}{h3}
+]{2026-09-30}{2026-10-27}
+\gantttitle{30/09--06/10}{7}\gantttitle{07/10--13/10}{7}\gantttitle{14/10--20/10}{7}\gantttitle{21/10--27/10}{7}\\
+\gantttitle{30}{1}\gantttitlelist{1,...,27}{1}\\
+\ganttbar[name=a1]{A1. Alcance integral y revisión del prototipo}{2026-09-30}{2026-09-30}\\
+\ganttbar[name=a2]{A2. Inventario y fuentes de componentes}{2026-10-01}{2026-10-01}\\
+\ganttbar[name=a3]{A3. Requisitos técnicos y comerciales}{2026-10-02}{2026-10-02}\\
+\ganttbar[name=a4]{A4. Arquitectura, datos y contratos}{2026-10-03}{2026-10-04}\\
+\ganttbar[name=a7]{A7. Diseño de pantallas y recorridos}{2026-10-03}{2026-10-04}\\
+\ganttmilestone[name=h1]{H1. Plan y diseño cerrados}{2026-10-04}\\
+\ganttbar[name=a5]{A5. Entorno y migraciones base}{2026-10-05}{2026-10-06}\\
+\ganttbar[name=a6]{A6. Autenticación y permisos}{2026-10-07}{2026-10-08}\\
+\ganttbar[name=b1]{B1. Catálogo, filtros y fichas}{2026-10-07}{2026-10-09}\\
+\ganttbar[name=b2]{B2. Comparación de variantes}{2026-10-10}{2026-10-10}\\
+\ganttbar[name=b3]{B3. Modelos 3D y suspensión}{2026-10-05}{2026-10-13}\\
+\ganttbar[name=b4]{B4. Ensamblaje y selección 3D}{2026-10-14}{2026-10-16}\\
+\ganttbar[name=b5]{B5. Guardado y gestión de montajes}{2026-10-17}{2026-10-18}\\
+\ganttmilestone[name=h2]{H2. Montaje guardable}{2026-10-18}\\
+\ganttbar[name=b6]{B6. Administración por módulos}{2026-10-10}{2026-10-12}\\
+\ganttbar[name=b7]{B7. Identidad, interacción y responsive}{2026-10-17}{2026-10-20}\\
+\ganttbar[name=b8]{B8. Límites y alternativas compatibles}{2026-10-17}{2026-10-19}\\
+\ganttbar[name=d1]{D1. Ofertas, precios y promociones}{2026-10-13}{2026-10-14}\\
+\ganttbar[name=d2]{D2. Carrito por cuenta}{2026-10-15}{2026-10-16}\\
+\ganttbar[name=d6]{D6. Conversión del montaje al carrito}{2026-10-19}{2026-10-19}\\
+\ganttbar[name=d3]{D3. Cotizaciones, armado y entrega}{2026-10-20}{2026-10-21}\\
+\ganttbar[name=d4]{D4. Pedidos, reservas y seguimiento}{2026-10-22}{2026-10-23}\\
+\ganttbar[name=d5]{D5. Pagos simulados y notificaciones}{2026-10-24}{2026-10-24}\\
+\ganttbar[name=c1]{C1. Pruebas incrementales por módulo}{2026-10-07}{2026-10-24}\\
+\ganttbar[name=c2]{C2. Pruebas de acceso y propiedad}{2026-10-09}{2026-10-10}\\
+\ganttbar[name=c7]{C7. Pruebas de integridad comercial}{2026-10-25}{2026-10-25}\\
+\ganttbar[name=c3]{C3. Recorridos integrales y móvil}{2026-10-25}{2026-10-25}\\
+\ganttbar[name=c4]{C4. Correcciones de integración}{2026-10-26}{2026-10-26}\\
+\ganttbar[name=c5]{C5. Preparación de entrega y destinos}{2026-10-26}{2026-10-26}\\
+\ganttbar[name=c6]{C6. Revalidación final y documentación}{2026-10-27}{2026-10-27}\\
+\ganttmilestone[name=h3]{H3. Cierre revalidado}{2026-10-27}
+\ganttlink{a1}{a2}\ganttlink{a2}{a3}\ganttlink{a3}{a4}\ganttlink{h1}{a5}\ganttlink{a5}{a6}\ganttlink{b3}{b4}\ganttlink{b4}{b5}\ganttlink{b6}{d1}\ganttlink{d1}{d2}\ganttlink{d2}{d6}\ganttlink{d6}{d3}\ganttlink{d3}{d4}\ganttlink{d4}{d5}\ganttlink{d5}{c7}\ganttlink{c7}{c4}\ganttlink{c4}{c6}
 \end{ganttchart}
 
 % Fin: gantt.tex
 
-\nota{Elaboración propia. Distribución estimada reconstruida desde el prototipo previo; cada columna representa un día calendario. H3 corresponde a preparación técnica, no a una fecha de publicación probada.}
+\nota{Elaboración propia. Distribución estimada reconstruida desde el prototipo previo; cada columna representa un día calendario. Todas las precedencias de la tabla son fin--inicio. H3 indica revalidación final; no acredita una fecha de despliegue.}
 \end{figure}
 \end{landscape}
 
-\subsection{Ampliación comercial posterior a la línea base}
-El cronograma de tres semanas anterior se conserva como línea base académica reconstruida, no como explicación retrospectiva de los cambios incorporados después del 21 de octubre. La ampliación del 27 y 28 de octubre añade tienda, contratos comerciales, precios por modelo, armado, canales simulados de pago, identidad Cumbre y alternativas de compatibilidad. Las migraciones 028--041 y los commits del repositorio permiten seguir esos cambios; sus fechas no equivalen a horas de trabajo medidas. La actualización de entregables del 28 de octubre se realiza después de la implementación y no atribuye a Netlify un despliegue no ejecutado.
+\subsection{Integración del alcance completo}
+La planificación reconstruida incluye las funciones técnicas y comerciales desde sus paquetes de requisitos y diseño: las ofertas preceden al carrito; el carrito y los montajes preceden a las solicitudes de armado; las cotizaciones alimentan los pedidos; y reservas, pagos simulados y avisos completan el recorrido. Los solapamientos se limitan a actividades con insumos ya cerrados; no eliminan los hitos de aprobación del diseño ni las dependencias entre módulos. El corte de planificación es el 27 de octubre; las revisiones efectivamente registradas el 28 se mantienen identificadas por su fecha en la evidencia y no se trasladan como hechos al día anterior.
 
 \subsection{Recursos utilizados}
 \begin{table}[H]
 \caption{Recursos y uso dentro del proyecto}\label{tab:recursos}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{2.8cm}XX}\toprule
-Tipo & Recurso & Uso y consideración\\\midrule
+\multicolumn{1}{>{\centering\arraybackslash}p{2.800cm}}{Tipo} & \multicolumn{1}{>{\centering\arraybackslash}p{6.328cm}}{Recurso} & \multicolumn{1}{>{\centering\arraybackslash}p{6.328cm}}{Uso y consideración}\\\midrule
 Humano & Responsable individual & Análisis, programación, validación y documentación.\\
 Equipo & Estación de desarrollo con Linux & Compilación y pruebas; no se atribuye un modelo de hardware no registrado.\\
 Desarrollo & Node.js, pnpm y editor & Entorno reproducible y gestión de dependencias.\\
@@ -267,8 +302,8 @@ Se emplea una evaluación cualitativa de probabilidad e impacto con niveles bajo
 \begin{tabla}
 \begin{longtable}{L{.7cm}L{3.1cm}L{1.2cm}L{1.4cm}L{5.8cm}}
 \caption{Registro cualitativo de riesgos y medidas de respuesta}\label{tab:riesgos}\\\toprule
-ID & Riesgo & Prob. & Impacto & Medida y seguimiento\\\midrule\endfirsthead
-\multicolumn{5}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule ID & Riesgo & Prob. & Impacto & Medida y seguimiento\\\midrule\endhead
+\multicolumn{1}{>{\centering\arraybackslash}p{0.700cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{3.100cm}}{Riesgo} & \multicolumn{1}{>{\centering\arraybackslash}p{1.200cm}}{Prob.} & \multicolumn{1}{>{\centering\arraybackslash}p{1.400cm}}{Impacto} & \multicolumn{1}{>{\centering\arraybackslash}p{5.800cm}}{Medida y seguimiento}\\\midrule\endfirsthead
+\multicolumn{5}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule \multicolumn{1}{>{\centering\arraybackslash}p{0.700cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{3.100cm}}{Riesgo} & \multicolumn{1}{>{\centering\arraybackslash}p{1.200cm}}{Prob.} & \multicolumn{1}{>{\centering\arraybackslash}p{1.400cm}}{Impacto} & \multicolumn{1}{>{\centering\arraybackslash}p{5.800cm}}{Medida y seguimiento}\\\midrule\endhead
 R1 & Información técnica incompleta & Media & Alto & Registrar fuente y generación; mostrar datos insuficientes y evitar completar medidas por suposición.\\
 R2 & Acceso a montajes ajenos & Baja & Alto & Políticas por propietario, pruebas con dos cuentas y operaciones administrativas protegidas.\\
 R3 & Cambios del catálogo alteran guardados & Media & Alto & Versionar recursos y conservar referencias históricas de variantes.\\
@@ -304,10 +339,10 @@ La \textit{validación funcional} comprueba una conducta esperada con entradas y
 \subsection{Requisitos funcionales}
 Los requisitos describen operaciones observables del producto. Su identificación permite enlazar el alcance con los módulos y con las pruebas, evitando evaluar únicamente la apariencia. La tabla~\ref{tab:rf} resume el contrato funcional; los límites de validación se presentan en la sección de resultados.
 \begin{tabla}
-\begin{longtable}{L{.9cm}L{4.2cm}L{8.5cm}}
+\begin{longtable}{L{1.05cm}L{4.2cm}L{8.5cm}}
 \caption{Requisitos funcionales y aceptación observable}\label{tab:rf}\\\toprule
-ID & Requisito & Criterio observable\\\midrule\endfirsthead
-\multicolumn{3}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule ID & Requisito & Criterio observable\\\midrule\endhead
+\multicolumn{1}{>{\centering\arraybackslash}p{1.050cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{4.200cm}}{Requisito} & \multicolumn{1}{>{\centering\arraybackslash}p{8.500cm}}{Criterio observable}\\\midrule\endfirsthead
+\multicolumn{3}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule \multicolumn{1}{>{\centering\arraybackslash}p{1.050cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{4.200cm}}{Requisito} & \multicolumn{1}{>{\centering\arraybackslash}p{8.500cm}}{Criterio observable}\\\midrule\endhead
 RF01 & Explorar el catálogo público & Mostrar modelos publicados por categoría, búsqueda y filtros sin exigir una cuenta.\\
 RF02 & Consultar variantes & Abrir una ficha y distinguir medidas, generación, acabados y fuentes de la versión elegida.\\
 RF03 & Comparar alternativas & Incorporar hasta tres variantes de la misma categoría y presentar sus características de forma alineada.\\
@@ -335,8 +370,8 @@ RF22 & Simular el pago & Elegir Yape, Plin, banco o tarjeta y registrar un resul
 \subsection{Requisitos no funcionales}
 \begin{table}[H]
 \caption{Criterios de calidad y forma de evaluación}\label{tab:rnf}
-\begin{tabla}\begin{tabularx}{\textwidth}{L{1.2cm}L{3cm}X}\toprule
-ID & Criterio & Evaluación y alcance\\\midrule
+\begin{tabla}\begin{tabularx}{\textwidth}{L{1.3cm}L{3cm}X}\toprule
+\multicolumn{1}{>{\centering\arraybackslash}p{1.300cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{3.000cm}}{Criterio} & \multicolumn{1}{>{\centering\arraybackslash}p{11.156cm}}{Evaluación y alcance}\\\midrule
 RNF01 & Seguridad de acceso & Restricción por propietario y permisos; pruebas de lectura ajena y denegación administrativa.\\
 RNF02 & Integridad & Guardado transaccional, referencias válidas y rechazo de revisiones obsoletas.\\
 RNF03 & Usabilidad y acceso & Etiquetas, foco, teclado, contraste y movimiento reducido; revisión funcional sin certificación integral de accesibilidad.\\
@@ -358,7 +393,7 @@ React permite descomponer una interfaz en componentes y explicitar su estado y f
 \caption{Arquitectura de ejecución y distribución de responsabilidades}\label{fig:arquitectura}
 \centering
 % Inicio: arquitectura.tex
-\begin{tikzpicture}[font={\small\setstretch{1}},box/.style={draw,rounded corners=2pt,align=center,text width=4cm,minimum height=1.1cm,fill=black!3},arr/.style={-Latex,thick}]
+\begin{tikzpicture}[font={\sffamily\small\setstretch{1}},box/.style={draw,rounded corners=2pt,align=center,text width=4cm,minimum height=1.1cm,fill=black!3},arr/.style={-Latex,thick}]
 \node[box] (user) at (0,0) {Persona usuaria\\Navegador web};
 \node[box] (ui) at (0,-2) {Interfaz React\\Catálogo, configuración\\y comercio};
 \node[box] (rules) at (-3,-4.2) {Reglas de montaje\\Validación y avisos};
@@ -389,7 +424,7 @@ El modelo conserva ocho tablas base de catálogo/montajes y cuatro de autorizaci
 \caption{Modelo lógico de catálogo, referencias y montajes}\label{fig:datos}
 \centering
 % Inicio: datos.tex
-\begin{tikzpicture}[font=\scriptsize,box/.style={draw,rounded corners=2pt,align=left,text width=3.4cm,minimum height=1.3cm,fill=black!2},arr/.style={-Latex},every edge quotes/.style={font=\tiny}]
+\begin{tikzpicture}[font={\sffamily\scriptsize},box/.style={draw,rounded corners=2pt,align=left,text width=3.4cm,minimum height=1.3cm,fill=black!2},arr/.style={-Latex},every edge quotes/.style={font=\tiny}]
 \node[box](brand)at(0,0){\textbf{brands}\\PK id\\Nombre y publicación};
 \node[box](component)at(4.8,0){\textbf{components}\\PK id; FK brand\_id\\Categoría y descripción};
 \node[box](variant)at(9.6,0){\textbf{component\_variants}\\PK id; FK component\_id\\FK visual\_asset\_id; medidas};
@@ -423,7 +458,7 @@ La composición guardada contiene posiciones, identificadores de variantes, acab
 \caption{Relaciones del esquema de autorización}\label{fig:iam}
 \centering
 % Inicio: iam.tex
-\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners=2pt,align=center,text width=3.6cm,minimum height=1.2cm,fill=black!2},arr/.style={-Latex}]
+\begin{tikzpicture}[font={\sffamily\small},box/.style={draw,rounded corners=2pt,align=center,text width=3.6cm,minimum height=1.2cm,fill=black!2},arr/.style={-Latex}]
 \node[box,dashed](auth)at(0,0){auth.users\\Identidad administrada};
 \node[box](assign)at(0,-2.2){user\_roles\\Usuario + rol asignado};
 \node[box](role)at(0,-4.4){roles\\Rol y estado};
@@ -443,11 +478,11 @@ La composición guardada contiene posiciones, identificadores de variantes, acab
 Las cuatro tablas de autorización son \ruta{roles}, \ruta{permissions}, \ruta{role_permissions} y \ruta{user_roles}, dentro del esquema \ruta{iam}. El registro recibe el rol base de usuario. Un permiso identifica una operación implementada; un rol agrupa permisos; y la asignación vincula la identidad con un rol. Los roles iniciales protegidos no se editan como roles ordinarios.
 
 \subsubsection{Relaciones comerciales y tarifa de servicio}
-La oferta \ruta{store_offers} conserva SKU, importe en céntimos, moneda PEN, condición y stock. \ruta{store_offer_variants} vincula variantes/acabados; las promociones se relacionan con ofertas. Carrito, cotización y pedido son registros distintos: la cotización revisa condiciones; el pedido fija la aceptación y contiene la reserva implícita. Los intentos de pago y eventos no duplican la lista de productos. Una fila de \ruta{sales_service_settings} conserva tarifa de armado y revisión; cada solicitud fija su importe base para que modificar la tarifa global no altere solicitudes anteriores.
+La oferta \ruta{store_offers} conserva SKU, importe en céntimos, moneda PEN, condición y stock. Los cinco auxiliares ATLAS autorizados también disponen de ofertas: seis SKU por las dos medidas de tija; sus precios y existencias de ejemplo se editan desde Administración. Su representación visual genérica no certifica fabricación o instalación. \ruta{store_offer_variants} vincula variantes/acabados; las promociones se relacionan con ofertas. Carrito, cotización y pedido son registros distintos: la cotización revisa condiciones; el pedido fija la aceptación y contiene la reserva implícita. Los intentos de pago y eventos no duplican la lista de productos. Una fila de \ruta{sales_service_settings} conserva tarifa de armado y revisión; cada solicitud fija su importe base para que modificar la tarifa global no altere solicitudes anteriores.
 
 \begin{figure}[H]\caption{Continuidad comercial desde la oferta hasta el pedido}\label{fig:comercio}
 \centering
-\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners=2pt,align=center,text width=3.6cm,minimum height=1.2cm,fill=black!3},arr/.style={-Latex,thick}]
+\begin{tikzpicture}[font={\sffamily\small},box/.style={draw,rounded corners=2pt,align=center,text width=3.6cm,minimum height=1.2cm,fill=black!3},arr/.style={-Latex,thick}]
 \node[box](o)at(0,0){Oferta / SKU\\Variante, acabado, condición\\Precio y stock};
 \node[box](c)at(5,0){Carrito por cuenta\\Líneas y cantidades};
 \node[box](q)at(5,-2.5){Cotización versionada\\Armado y envío revisados\\Aviso al cliente};
@@ -469,7 +504,7 @@ El acceso con Google delega la autenticación al proveedor y utiliza el soporte 
 \caption{Flujo de acceso y persistencia de un montaje}\label{fig:flujo}
 \centering
 % Inicio: flujo.tex
-\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners=2pt,align=center,text width=5.4cm,minimum height=.85cm,fill=black!2},arr/.style={-Latex},node distance=.42cm]
+\begin{tikzpicture}[font={\sffamily\small},box/.style={draw,rounded corners=2pt,align=center,text width=5.4cm,minimum height=.85cm,fill=black!2},arr/.style={-Latex},node distance=.42cm]
 \node[box](a){Acceso: credenciales o proveedor Google};
 \node[box,below=of a](b){Sesión verificada y permisos vigentes};
 \node[box,below=of b](c){Elegir base y configurar piezas/acabados};
@@ -505,7 +540,7 @@ La solución emplea TypeScript para los contratos y reglas, React para la interf
 \begin{table}[H]
 \caption{Módulos implementados y responsabilidad principal}\label{tab:modulos}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{3.7cm}X}\toprule
-Área & Responsabilidad\\\midrule
+\multicolumn{1}{>{\centering\arraybackslash}p{3.700cm}}{Área} & \multicolumn{1}{>{\centering\arraybackslash}p{12.107cm}}{Responsabilidad}\\\midrule
 \ruta{src/app} & Portada, cabecera, rutas, navegación y memoria del espacio de trabajo.\\
 \ruta{features/auth} & Formularios, sesión, retorno de acceso y comprobación de permisos.\\
 \ruta{features/catalog} & Listado, búsqueda, filtros, fichas y composición de referencias.\\
@@ -609,10 +644,10 @@ La revisión del 28 de octubre distingue la repetición actual de la suite gener
 La revisión histórica pública del 21 de octubre utilizó Netlify y dos cuentas temporales; la actualización actual reproduce los recorridos sobre el código local conectado a Supabase Cloud. Se conserva la distinción de entorno en las notas de evidencia. Las cuentas se crean y confirman por API únicamente para comprobar la aplicación, y se eliminan al finalizar. Esa confirmación no valida entrega real de correo ni repite el consentimiento de Google.
 
 \begin{tabla}
-\begin{longtable}{L{.9cm}L{4.6cm}L{5.8cm}L{2cm}}
+\begin{longtable}{L{.9cm}L{4.6cm}L{5.8cm}L{2.9cm}}
 \caption{Matriz de procedimientos y resultados verificados}\label{tab:pruebas}\\\toprule
-ID & Procedimiento & Resultado observado & Evidencia\\\midrule\endfirsthead
-\multicolumn{4}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule ID & Procedimiento & Resultado observado & Evidencia\\\midrule\endhead
+\multicolumn{1}{>{\centering\arraybackslash}p{0.900cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{4.600cm}}{Procedimiento} & \multicolumn{1}{>{\centering\arraybackslash}p{5.800cm}}{Resultado observado} & \multicolumn{1}{>{\centering\arraybackslash}p{2.900cm}}{Evidencia}\\\midrule\endfirsthead
+\multicolumn{4}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule \multicolumn{1}{>{\centering\arraybackslash}p{0.900cm}}{ID} & \multicolumn{1}{>{\centering\arraybackslash}p{4.600cm}}{Procedimiento} & \multicolumn{1}{>{\centering\arraybackslash}p{5.800cm}}{Resultado observado} & \multicolumn{1}{>{\centering\arraybackslash}p{2.900cm}}{Evidencia}\\\midrule\endhead
 T01 & Compilar el frontend & Compilación de TypeScript y salida de Vite correctas. & Registro de build.\\
 T02 & Ejecutar reglas y contratos & Suite general y pruebas dirigidas identificadas en el resumen; no sumar ejecuciones repetidas. & Registro de Vitest.\\
 T03 & Abrir rutas públicas & Portada, catálogo, bicicletas, acceso y callback sirven la aplicación con HTTPS. & HTTP y navegador.\\
@@ -640,17 +675,17 @@ La validación pública histórica del 21 de octubre registró trece comprobacio
 \subsection{Resultados de inventario e infraestructura}
 \begin{table}[H]
 \caption{Resumen del catálogo e infraestructura en la revisión}\label{tab:snapshot}
-\begin{tabla}\begin{tabularx}{\textwidth}{Xr}\toprule
-Indicador & Resultado\\\midrule
+\begin{tabla}\begin{tabularx}{\textwidth}{X>{\centering\arraybackslash}p{2cm}}\toprule
+\multicolumn{1}{>{\centering\arraybackslash}p{13.807cm}}{Indicador} & \multicolumn{1}{>{\centering\arraybackslash}p{2cm}}{Resultado}\\\midrule
 Modelos publicados & 70\\
 Elecciones actuales de variante & 146\\
 Variantes conservadas, incluido historial & 782\\
 Recursos visuales registrados, incluido historial & 780\\
 Composiciones prearmadas públicas & 4\\
-Ofertas comerciales y vínculos de variantes & 140 y 689\\
+Ofertas comerciales y vínculos de variantes & 146 y 695\\
 Categorías y posiciones de montaje & 18 y 23\\
 Tablas propias de negocio y autorización & 20 y 4\\
-Migraciones aplicadas & 41\\
+Migraciones aplicadas & 42\\
 Archivos GLB finales versionados & 318\\
 Archivos GLB actuales versionados & 89\\
 Archivos GLB históricos & 229\\\bottomrule
@@ -664,7 +699,7 @@ Los conteos separan registros del backend y archivos del inventario local: 780 r
 \begin{table}[H]
 \caption{Relación entre objetivos, implementación y evidencia}\label{tab:trazabilidad}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{1.5cm}XX}\toprule
-Objetivo & Resultado implementado & Evidencia y límite\\\midrule
+\multicolumn{1}{>{\centering\arraybackslash}p{1.500cm}}{Objetivo} & \multicolumn{1}{>{\centering\arraybackslash}p{6.978cm}}{Resultado implementado} & \multicolumn{1}{>{\centering\arraybackslash}p{6.978cm}}{Evidencia y límite}\\\midrule
 OE1 & Catálogo estructurado y comparación por categoría & Inventario, pruebas de reglas y recorrido público; sin estudio de comprensión con usuarios.\\
 OE2 & Configuración visual, avisos y soluciones & Montaje de 23 posiciones, alternativas y sustitución individual; aproximación exterior sin certificación mecánica.\\
 OE3 & Acceso y persistencia propia & Guardado/reapertura, aislamiento entre cuentas y conflicto de revisión. Correo real pendiente de evaluación específica.\\
@@ -740,6 +775,8 @@ La reconstrucción del cronograma ayuda a explicar dependencias y solapamientos,
 \section*{Referencias}\addcontentsline{toc}{section}{Referencias}
 \renewcommand{\bibsection}{}
 \begingroup
+\normalsize\doublespacing
+\renewcommand{\bibfont}{\normalsize\doublespacing}
 \setlength{\bibhang}{1.27cm}
 \setlength{\bibsep}{0pt}
 \begin{thebibliography}{99}
@@ -766,13 +803,13 @@ La reconstrucción del cronograma ayuda a explicar dependencias y solapamientos,
 \appendix
 
 % Inicio: anexos.tex
-\section{Diccionario resumido de datos}
+\apendice{A}{Diccionario resumido de datos}
 Las siguientes tablas identifican entidades y claves relevantes para reconstruir el diseño. El detalle ejecutable se conserva en las migraciones SQL del software. PK significa clave primaria y FK significa clave foránea; no se incluyen datos personales ni valores de conexión.
 \begin{tabla}
 \begin{longtable}{L{3.5cm}L{5.3cm}L{4.8cm}}
 \caption{Entidades de negocio, claves y campos representativos}\label{tab:diccionario}\\\toprule
-Entidad & Identidad y relaciones & Campos representativos\\\midrule\endfirsthead
-\multicolumn{3}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule Entidad & Identidad y relaciones & Campos representativos\\\midrule\endhead
+\multicolumn{1}{>{\centering\arraybackslash}p{3.500cm}}{Entidad} & \multicolumn{1}{>{\centering\arraybackslash}p{5.300cm}}{Identidad y relaciones} & \multicolumn{1}{>{\centering\arraybackslash}p{4.800cm}}{Campos representativos}\\\midrule\endfirsthead
+\multicolumn{3}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule \multicolumn{1}{>{\centering\arraybackslash}p{3.500cm}}{Entidad} & \multicolumn{1}{>{\centering\arraybackslash}p{5.300cm}}{Identidad y relaciones} & \multicolumn{1}{>{\centering\arraybackslash}p{4.800cm}}{Campos representativos}\\\midrule\endhead
 \ruta{brands} & PK id & name, slug, published.\\
 \ruta{components} & PK id; FK brand\_id & category, disciplines, description, sources.\\
 \ruta{visual_assets} & PK id & kind, storage\_path o generator\_key, manifest.\\
@@ -785,8 +822,8 @@ Entidad & Identidad y relaciones & Campos representativos\\\midrule\endfirsthead
 
 \begin{tabla}\begin{longtable}{L{4cm}L{4.7cm}L{4.9cm}}
 \caption{Entidades comerciales y relaciones principales}\label{tab:diccionariocomercial}\\\toprule
-Entidad & Identidad y relaciones & Propósito\\\midrule\endfirsthead
-\multicolumn{3}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule Entidad & Identidad y relaciones & Propósito\\\midrule\endhead
+\multicolumn{1}{>{\centering\arraybackslash}p{4.000cm}}{Entidad} & \multicolumn{1}{>{\centering\arraybackslash}p{4.700cm}}{Identidad y relaciones} & \multicolumn{1}{>{\centering\arraybackslash}p{4.900cm}}{Propósito}\\\midrule\endfirsthead
+\multicolumn{3}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule \multicolumn{1}{>{\centering\arraybackslash}p{4.000cm}}{Entidad} & \multicolumn{1}{>{\centering\arraybackslash}p{4.700cm}}{Identidad y relaciones} & \multicolumn{1}{>{\centering\arraybackslash}p{4.900cm}}{Propósito}\\\midrule\endhead
 \ruta{store_offers} & PK id; FK component\_id & SKU, precio, moneda, condición y stock.\\
 \ruta{store_offer_variants} & PK variante/acabado; FK oferta & Une elección visual y producto vendible.\\
 \ruta{promotions} & PK id & Descuento, vigencia, estado y revisión.\\
@@ -804,7 +841,7 @@ Entidad & Identidad y relaciones & Propósito\\\midrule\endfirsthead
 \begin{table}[H]
 \caption{Entidades del esquema de autorización}\label{tab:diccionarioiam}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{3.7cm}X}\toprule
-Entidad & Relación y propósito\\\midrule
+\multicolumn{1}{>{\centering\arraybackslash}p{3.700cm}}{Entidad} & \multicolumn{1}{>{\centering\arraybackslash}p{12.107cm}}{Relación y propósito}\\\midrule
 \ruta{iam.roles} & PK id; identifica rol, nombre, estado y protección de roles base.\\
 \ruta{iam.permissions} & PK code; identifica acciones implementadas y área.\\
 \ruta{iam.role_permissions} & PK compuesta role\_id y permission\_code; vincula rol con acciones.\\
@@ -813,11 +850,11 @@ Entidad & Relación y propósito\\\midrule
 \nota{Las contraseñas no se almacenan en tablas propias. Auth gestiona la identidad y el esquema iam aplica autorización de la aplicación.}
 \end{table}
 
-\section{Evidencias, reproducción y procedencia}
+\apendice{B}{Evidencias, reproducción y procedencia}
 \begin{table}[H]
 \caption{Archivos de evidencia incluidos con el informe}\label{tab:evidencias}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{5.2cm}X}\toprule
-Archivo o ubicación & Contenido y alcance\\\midrule
+\multicolumn{1}{>{\centering\arraybackslash}p{5.200cm}}{Archivo o ubicación} & \multicolumn{1}{>{\centering\arraybackslash}p{10.607cm}}{Contenido y alcance}\\\midrule
 \ruta{recursos/01-portada.png} & Captura de entrada pública con la fotografía ya incorporada a la aplicación.\\
 \ruta{recursos/02-categorias.png} & Selector de escritorio, sin destacar modelos comerciales.\\
 \ruta{recursos/03-montaje-3d.png} & Escena de una propuesta completa desde cuenta temporal.\\
@@ -841,17 +878,19 @@ Las capturas actualizadas son elaboración propia del frontend local conectado a
 
 Los diagramas de arquitectura, relaciones, flujo y Gantt se elaboraron para este informe con código TikZ/pgfgantt, entregado como fuente. No utilizan logotipos institucionales o de proveedores. En la captura del visor se elige una vista frontal para no destacar rotulación de productos; el texto describe las categorías de piezas de manera genérica. Los nombres de tecnologías y autores de las fuentes se identifican cuando son necesarios para que la explicación y las referencias sean verificables.
 
-\section{Correspondencia con la consigna académica}
+\apendice{C}{Correspondencia con la consigna académica}
+La tabla siguiente permite localizar cada contenido solicitado por su encabezado, sin depender de una numeración de secciones.
+
 \begin{table}[H]
 \caption{Cobertura del contenido solicitado para el informe}\label{tab:consigna}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{5.7cm}X}\toprule
-Contenido de la consigna & Ubicación en este informe\\\midrule
-Nombre, problemática, justificación y objetivos & Sección 1.\\
-Alcance, entregables, cronograma, recursos, responsables y riesgos & Secciones 1 y 2; tabla detallada y Gantt.\\
-Requisitos, arquitectura, base de datos y diagramas & Sección 3 y anexo A.\\
-Tecnologías, módulos y funcionalidades & Sección 4.\\
-Procedimientos, resultados y evidencias & Sección 5 y anexo B.\\
-Cumplimiento de objetivos, dificultades y mejoras & Secciones 5 y 6.\\
+\multicolumn{1}{>{\centering\arraybackslash}p{5.700cm}}{Contenido de la consigna} & \multicolumn{1}{>{\centering\arraybackslash}p{10.107cm}}{Ubicación en este informe}\\\midrule
+Nombre, problemática, justificación y objetivos & Descripción del proyecto.\\
+Alcance, entregables, cronograma, recursos, responsables y riesgos & Descripción del proyecto y Gestión del proyecto; tabla detallada y Gantt.\\
+Requisitos, arquitectura, base de datos y diagramas & Análisis y diseño y apéndice A.\\
+Tecnologías, módulos y funcionalidades & Desarrollo e implementación.\\
+Procedimientos, resultados y evidencias & Pruebas y resultados y apéndice B.\\
+Cumplimiento de objetivos, dificultades y mejoras & Pruebas y resultados y Conclusiones y oportunidades de mejora.\\
 Fuente LaTeX, recursos y PDF & Carpeta autocontenida 02\_Informe\_Tecnico.\\\bottomrule
 \end{tabularx}\end{tabla}
 \nota{La modalidad se interpreta como individual según la confirmación del autor. El manual de usuario, la presentación y el software son entregables independientes y no se sustituyen por este informe.}

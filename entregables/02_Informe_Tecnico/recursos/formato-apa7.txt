@@ -1,0 +1,64 @@
+REVISIÓN DE FORMATO DEL INFORME TÉCNICO
+Fecha: 28 de octubre de 2026
+
+ALCANCE
+Se revisaron informe.tex y su PDF, conservando contenido, fecha académica
+21/10/2026, docente Mg. Fidel Huanco Ramos y cronograma reconstruido hasta
+27/10. Esta revisión de formato no equivale a una certificación institucional
+ni modifica el estado de las pruebas funcionales del software.
+
+CRITERIOS APLICADOS
+- Carta, márgenes de una pulgada, numeración superior derecha desde portada.
+- Times New Roman de 12 puntos incrustada en el PDF; fuente instalada en el
+  equipo, sin distribuir sus archivos. Liberation Serif local como alternativa
+  de compilación cuando no exista Times New Roman, con posible repaginación.
+- Cuerpo a doble espacio, sin separación adicional entre párrafos,
+  alineación izquierda y sangría inicial de media pulgada.
+- Resumen sin sangría inicial; palabras clave con sangría y rótulo en cursiva.
+- Tres niveles de encabezados, sin numeración: centrado/negrita,
+  izquierda/negrita e izquierda/negrita/cursiva.
+- Portada académica con título, autor, afiliación, curso, docente y fecha.
+- Números de tablas/figuras en negrita y títulos en cursiva, a doble espacio;
+  notas a doble espacio, alineadas a la izquierda, con rótulo Nota. en cursiva.
+- Celdas de tablas con espacio compacto uniforme. Texto interno de diagramas
+  en sans serif de tamaño legible. Son excepciones permitidas al doble espacio
+  del cuerpo; no se usan para compactar párrafos explicativos.
+- Referencias ordenadas alfabéticamente, a doble espacio, sin separación
+  extra y con sangría francesa de media pulgada. Correspondencia de las
+  14 claves de referencia con sus citas en el texto.
+- Apéndices separados por página, rótulo/título centrados en negrita y tablas
+  identificadas por letra de apéndice y número.
+- Índices separados y Gantt horizontal conservados como estructura adicional
+  de la entrega. APA no exige en general esos tres índices; sus saltos de
+  página responden a la organización solicitada por el usuario.
+
+COMPROBACIONES
+Corrección posterior: el entorno tabla cierra expresamente el párrafo antes
+de cambiar a espacio sencillo y antes de restaurar el formato exterior.
+Así el espaciado de celdas no alcanza los párrafos introductorios sin línea
+vacía en LaTeX. Se verificaron Requisitos funcionales (p. 20) y la introducción
+del apéndice A (p. 52): ambos con doble espacio y sangría inicial de 1,27 cm.
+Compilación Tectonic, fuentes incrustadas, extracción del texto y coordenadas,
+sangrías y distancia entre líneas del PDF; revisión de páginas renderizadas,
+incluyendo portada, índices, cuerpo, tablas, diagramas, referencias y apéndices.
+Sin Overfull, caracteres ausentes o referencias indefinidas en la compilación.
+Resultados y capturas de inspección en models/local/validation/entregables/apa7
+(archivo local ignorado; no es requisito para compilar el informe).
+
+FUENTES OFICIALES CONSULTADAS
+APA Style. Line spacing.
+https://apastyle.apa.org/style-grammar-guidelines/paper-format/line-spacing
+APA Style. Paragraph alignment and indentation.
+https://apastyle.apa.org/style-grammar-guidelines/paper-format/paragraph-format
+APA Style. Headings.
+https://apastyle.apa.org/style-grammar-guidelines/paper-format/headings
+APA Style. Font.
+https://apastyle.apa.org/style-grammar-guidelines/paper-format/font
+APA Style. Title page setup.
+https://apastyle.apa.org/style-grammar-guidelines/paper-format/title-page
+APA Style. Order of pages.
+https://apastyle.apa.org/style-grammar-guidelines/paper-format/order-pages
+APA Style. Appendices.
+https://apastyle.apa.org/style-grammar-guidelines/paper-format/appendices
+APA Style. Table setup.
+https://apastyle.apa.org/style-grammar-guidelines/tables-figures/tables
