@@ -41,3 +41,25 @@ Tipografías: Liberation Serif, Sans y Mono, con la licencia incluida en fuentes
 Script adicional: scripts/capture-commercial-evidence.mjs. No crea pedido,
 no ejecuta pagos ni consume stock. Limpieza final comprobada.
 Resultados detallados locales: models/local/validation/entregables/.
+
+VISTAS AMPLIAS PARA ORIENTACIÓN DE CAMPOS
+22-vista-componentes.png: catálogo, categorías, filtros y tarjetas.
+23-vista-ficha.png: ficha lateral en el contexto del catálogo.
+24-vista-bicicletas.png: listado de referencias y pestaña Cuadros.
+25-vista-comparacion.png: dos variantes en columnas.
+26-vista-configurador.png: nombre, índice, visor y selector.
+27-vista-mis-bicicletas.png: montaje propio guardado y acciones.
+28-vista-revisar-pedido.png: contacto, entrega, armado y pago.
+29-vista-admin-catalogo.png: módulos y tabla de catálogo.
+30-vista-admin-ficha.png: panel lateral del componente.
+31-vista-admin-usuarios.png: tabla filtrada a la cuenta efímera utilizada.
+32-vista-admin-roles.png: roles y acceso a edición.
+33-vista-admin-permisos.png: matriz por rol y acción.
+34-vista-admin-ofertas.png: ofertas y tarifa de armado.
+Script: scripts/capture-manual-views.mjs; frontend local y backend Cloud.
+Cuenta temporal y registros propios eliminados al finalizar. Sin pedidos, pagos
+ni cambios en catálogo, ofertas o permisos de personas reales. Los fallos
+iniciales de localización del selector se corrigieron; ejecución final de
+trece capturas completa y limpieza comprobada. Evidencia JSON y capturas
+de diagnóstico bajo models/local/validation/entregables/ (ignorado).
+Las notas de procedencia se conservan aquí y no forman parte del PDF de uso.

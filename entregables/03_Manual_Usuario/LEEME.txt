@@ -1,6 +1,5 @@
-ENTREGABLE 3: MANUAL DE USUARIO — ATLAS MTB
-Autor: Joel Ito Luque
-Fecha de portada: 21 de octubre de 2026
+MANUAL DE USUARIO — ATLAS MTB
+Revisión funcional: 28 de octubre de 2026
 
 CONTENIDO
 - manual.tex: único archivo LaTeX con todos los apartados, tablas y referencia.
@@ -20,33 +19,45 @@ Liberation se incluyen para no depender de las tipografías del equipo. Tectonic
 puede descargar paquetes TeX la primera vez. Una distribución TeX completa debe
 incluir fontspec, babel en español, geometry, setspace, graphicx, booktabs,
 longtable, tabularx, array, ragged2e, caption, float, enumitem, fancyhdr,
-hyperref y xurl.
+hyperref, xurl y xcolor.
 
 No necesitas credenciales, variables de entorno ni acceso a Supabase para compilar.
 La publicación anterior está en https://atlasmtb.netlify.app/.
 Esta revisión se demuestra en http://localhost:5174/ con el frontend activo.
 
 CRITERIOS
-- Estructura académica y formato basado en APA 7, con instrucciones de uso prácticas.
-- Portada individual y sin logotipos institucionales.
+- Manual de producto con instrucciones de uso prácticas.
+- Portada centrada en ATLAS MTB y el manual, sin entidades, curso o datos universitarios.
 - Pasos de consulta, comparación, configuración, guardado y gestión de montajes.
 - Sección separada para administración según permisos.
-- Capturas reales recortadas a controles, sin datos de cuentas personales.
+- 34 imágenes: 13 vistas amplias y 21 detalles de los controles.
+- Tablas de campos, procedimientos por tarea y soluciones a problemas frecuentes.
+- El PDF no incluye notas de pruebas, cuentas temporales ni procedencia técnica.
 - Entrega de correos no certificada; Google confirmado previamente por el usuario.
 - La representación 3D y la suspensión son aproximaciones visuales.
 - La revisión móvil corresponde a emulación de navegador.
-- Informe técnico, presentación y paquete del software son entregables independientes.
 
 ALCANCE DE LA REVISIÓN 28/10/2026
-Se actualizan la fuente LaTeX y el PDF, manteniendo formato, tipografías,
-portada académica del 21/10/2026 y, en presentación, doce láminas 16:9.
+Se actualizan la fuente LaTeX y el PDF. Se conserva la organización de las
+instrucciones, tablas y capturas. La portada presenta únicamente el producto
+y el manual; las menciones universitarias se retiraron también del contenido
+y los metadatos. Esta corrección afecta solo al manual de usuario.
 Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
 opcional con tarifa inicial S/150 editable y exoneración administrativa,
 notificaciones, pedidos, métodos de pago simulados y alternativas de
 compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
-Estado registrado: 24 tablas propias, 41 migraciones; 564 pruebas correctas,
+Estado registrado: 24 tablas propias, 42 migraciones; 564 pruebas correctas,
 2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
 Las capturas se renovaron con cuentas temporales y limpieza comprobada;
 no se modificaron precios, catálogo ni cuentas reales durante las capturas.
 Esta revisión no implica push ni despliegue. La publicación previa puede
 mostrar otra versión. Cobros reales, SMTP y móvil físico no certificados.
+
+REVISIÓN DE ORIENTACIÓN AL USUARIO
+Se retiraron del PDF los comentarios de validación y la sección técnica de
+procedencia. Las notas de reproducción permanecen solo en los recursos.
+Se añadieron vistas de Componentes, ficha, Bicicletas, comparación, configurador,
+Mis bicicletas, Revisar pedido, catálogo administrativo, editor de componente,
+Usuarios, Roles, Permisos y Ofertas. Se eliminaron los ejercicios repetidos;
+las tareas permanecen en sus capítulos correspondientes. Solo el manual se
+recompila: los otros entregables no se modifican.
