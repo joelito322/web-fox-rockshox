@@ -15,6 +15,7 @@ const offer = z.object({
   sku: z.string(),
   label: z.string(),
   unit_of_sale: z.string(),
+  item_condition: z.enum(["new", "used"]),
   base_price_cents: z.number(),
   stock_total: z.number(),
   available: z.number(),
@@ -98,7 +99,7 @@ export default function CommercialAdmin({
   return (
     <div className="sales-stack">
       <div className="section-heading">
-        <p className="sales-demo">Precios y stock de demostración · PEN</p>
+        <p className="sales-note">Precios en soles · inventario ATLAS</p>
         <button className="button dark" onClick={() => setEdit("new")}>
           {promotions ? "Crear promoción" : "Crear oferta"}
         </button>
@@ -212,6 +213,7 @@ function OfferEditor({
     sku: initial?.sku ?? "",
     label: initial?.label ?? "",
     unit: initial?.unit_of_sale ?? "unit",
+    item_condition: initial?.item_condition ?? "new",
     price: String((initial?.base_price_cents ?? 0) / 100),
     stock: initial?.stock_total ?? 0,
     active: initial?.active ?? true,
@@ -261,6 +263,7 @@ function OfferEditor({
             sku: values.sku,
             label: values.label,
             unit_of_sale: values.unit,
+            item_condition: values.item_condition,
             base_price_cents: price,
             stock_total: Number(values.stock),
             active: values.active,
@@ -306,8 +309,17 @@ function OfferEditor({
                 ? [{ key: "sku", label: "SKU", kind: "text" as const }]
                 : []),
               { key: "label", label: "Nombre comercial", kind: "text" },
-              { key: "price", label: "Precio demo (S/)", kind: "text" },
-              { key: "stock", label: "Stock demo", kind: "number" },
+              {
+                key: "item_condition",
+                label: "Estado del producto",
+                kind: "text",
+                options: [
+                  { value: "new", label: "Nuevo" },
+                  { value: "used", label: "Segunda mano" },
+                ],
+              },
+              { key: "price", label: "Precio (S/)", kind: "text" },
+              { key: "stock", label: "Stock disponible", kind: "number" },
               { key: "active", label: "Oferta activa", kind: "boolean" },
             ]}
             value={values}

@@ -68,6 +68,7 @@ export function userError(error: unknown): string {
   const business: Record<string, string> = {
     sales_variant_unavailable:
       "Vincula una versión publicada y actual. Las versiones históricas ya asociadas se conservan.",
+    sales_invalid_condition: "Elige si el producto es nuevo o de segunda mano.",
     sales_invalid_stock:
       "El stock debe ser un entero entre cero y un millón de unidades.",
     sales_invalid_date: "Revisa la fecha y hora de la promoción.",

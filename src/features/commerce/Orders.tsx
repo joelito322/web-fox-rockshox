@@ -22,6 +22,7 @@ import {
 } from "./api";
 import {
   money,
+  conditionLabels,
   orderStatusLabel,
   dateTime,
   dateOnly,
@@ -92,7 +93,7 @@ function OrdersContent({ admin }: { admin: boolean }) {
   return (
     <div className={admin ? "sales-stack" : "content sales-stack"}>
       {!admin && <h1>Mis pedidos</h1>}
-      <p className="sales-demo">Demostración · sin cobros reales</p>
+      <p className="sales-note">Sin cobros reales</p>
       <nav className="segmented" aria-label="Compras">
         {canOrders && (
           <button
@@ -286,8 +287,8 @@ function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
   };
   return (
     <div className="sales-stack">
-      <p className="sales-demo">
-        Pedido de demostración · {order.id.slice(0, 8).toUpperCase()}
+      <p className="sales-note">
+        Pedido · {order.id.slice(0, 8).toUpperCase()}
       </p>
       <h2>{orderStatusLabel(order.status, order.delivery_method)}</h2>
       {order.status === "pending" && (
@@ -296,6 +297,11 @@ function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
       {order.items.map((i) => (
         <article className="sales-cart-line" key={i.id}>
           <strong>{i.label_snapshot}</strong>
+          {i.item_condition_snapshot && (
+            <span className="sales-condition">
+              {conditionLabels[i.item_condition_snapshot]}
+            </span>
+          )}
           <span>
             {i.quantity} ×{" "}
             {money(i.base_unit_price_cents - i.unit_discount_cents)} ·{" "}
@@ -307,7 +313,7 @@ function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
         Armado: {money(order.assembly_fee_cents)} · Entrega:{" "}
         {money(order.delivery_fee_cents)}
       </p>
-      <strong>Total: {money(order.total_cents)}</strong>
+      <strong className="sales-total">Total: {money(order.total_cents)}</strong>
       {error && (
         <p role="alert" className="notice">
           {error}
@@ -422,7 +428,7 @@ function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
         ))}
       </details>
       <details>
-        <summary>Intentos de pago demo</summary>
+        <summary>Simulaciones de pago</summary>
         {order.payments.map((p) => (
           <p key={p.id}>
             {statusLabels[p.status] ?? p.status} · {dateTime(p.created_at)}

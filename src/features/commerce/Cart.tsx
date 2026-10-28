@@ -6,7 +6,7 @@ import { Loading, Notice } from "../../components/ui/Feedback";
 import { useAuth } from "../auth/provider";
 import { userError } from "../../lib/supabase";
 import { useCommerce } from "./Provider";
-import { money } from "./model";
+import { money, conditionLabels } from "./model";
 export function CartButton() {
   const cart = useCommerce();
   const [open, setOpen] = useState(false);
@@ -15,10 +15,12 @@ export function CartButton() {
     <>
       <button
         className="text-button cart-trigger"
+        aria-label={`Carrito · ${cart.lines.reduce((n, l) => n + l.quantity, 0)}`}
         onClick={() => setOpen(true)}
       >
         <ShoppingCart size={18} />
-        <span>Carrito · {cart.lines.reduce((n, l) => n + l.quantity, 0)}</span>
+        <span className="cart-label">Carrito · </span>
+        <span>{cart.lines.reduce((n, l) => n + l.quantity, 0)}</span>
       </button>
       {open && (
         <Drawer
@@ -62,8 +64,8 @@ export function CartContents() {
   if (cart.loading) return <Loading />;
   return (
     <div className="sales-stack">
-      <p className="sales-demo">
-        Demostración · precios y existencias de ejemplo
+      <p className="sales-note">
+        Precios en soles · entrega y armado se cotizan por separado
       </p>
       {cart.guest.length > 0 && (
         <section className="notice">
@@ -170,6 +172,7 @@ function CartItemList({ onError }: { onError: (message: string) => void }) {
           const cached = data.data?.items.find(
             (i) => i.offer_id === line.offer_id,
           );
+          const condition = price?.item_condition ?? cached?.item_condition;
           return (
             <article className="sales-cart-line" key={line.offer_id}>
               {price?.image_key && modelImages[price.image_key] && (
@@ -183,8 +186,13 @@ function CartItemList({ onError }: { onError: (message: string) => void }) {
                 {price?.label ?? cached?.label ?? "Producto de tu selección"}
               </strong>
               <span>{price?.identity.finish ?? cached?.identity.finish}</span>
+              {condition && (
+                <span className="sales-condition">
+                  {conditionLabels[condition]}
+                </span>
+              )}
               {price ? (
-                <span>
+                <span className="sales-line-price">
                   {price.discount_cents > 0 && (
                     <del>{money(price.base_cents)}</del>
                   )}{" "}
@@ -233,7 +241,7 @@ function CartItemList({ onError }: { onError: (message: string) => void }) {
         })}
       </div>
       {priced.data && (
-        <strong>
+        <strong className="sales-total">
           {priced.data.length === cart.lines.length
             ? "Total de componentes"
             : "Subtotal disponible"}

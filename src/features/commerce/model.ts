@@ -8,11 +8,14 @@ export type CartLine = z.infer<typeof lineSchema>;
 export const identitySchema = z
   .object({ finish: z.string(), finish_id: z.string() })
   .catchall(z.unknown());
+export const conditionLabels = { new: "Nuevo", used: "Segunda mano" } as const;
+const itemCondition = z.enum(["new", "used"]);
 export const offerSchema = z.object({
   offer_id: z.guid(),
   component_id: z.guid(),
   sku: z.string(),
   label: z.string(),
+  item_condition: itemCondition.optional(),
   image_key: z.string().nullable().optional(),
   identity: identitySchema,
   unit: z.enum(["unit", "pair", "set"]),
@@ -38,6 +41,7 @@ export const cartSchema = z.object({
       offer_id: z.guid(),
       component_id: z.guid(),
       label: z.string(),
+      item_condition: itemCondition.optional(),
       identity: identitySchema,
       quantity: z.number().int(),
       active: z.boolean(),
@@ -89,6 +93,7 @@ export const orderSchema = orderHeader.extend({
       offer_id: z.guid(),
       quantity: z.number().int(),
       label_snapshot: z.string(),
+      item_condition_snapshot: itemCondition.nullable().optional(),
       finish_snapshot: z.string(),
       base_unit_price_cents: cents,
       unit_discount_cents: cents,

@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 import { useCommerce } from "./Provider";
 import { useOffers } from "./api";
-import { money, unitLabels, type Offer } from "./model";
+import { money, unitLabels, conditionLabels, type Offer } from "./model";
 import { userError } from "../../lib/supabase";
 const Prices = createContext<Offer[]>([]);
 export function ProductPrices({
@@ -35,11 +35,17 @@ export function CardPrice({ componentId }: { componentId: string }) {
     (o) => o.component_id === componentId,
   );
   if (!offers.length) return null;
+  const minimum = Math.min(...offers.map((o) => o.unit_cents));
+  const varied = offers.some((o) => o.unit_cents !== minimum);
+  const used = offers.every((o) => o.item_condition === "used");
   return (
-    <span className="sales-card-price">
-      Desde {money(Math.min(...offers.map((o) => o.unit_cents)))}{" "}
-      <small>Demo</small>
-    </span>
+    <div className="sales-card-price">
+      <span className="sales-price-value">
+        {varied && <small>Desde</small>}
+        <strong>{money(minimum)}</strong>
+      </span>
+      {used && <span className="sales-condition">Segunda mano</span>}
+    </div>
   );
 }
 export function ProductPurchase({ variantId }: { variantId: string }) {
@@ -77,7 +83,11 @@ function Purchase({ variantId }: { variantId: string }) {
     );
   return (
     <section className="sales-purchase">
-      <p className="sales-demo">Oferta de demostración</p>
+      {offer.item_condition && (
+        <span className="sales-condition">
+          {conditionLabels[offer.item_condition]}
+        </span>
+      )}
       <div className="sales-actions">
         {offers.map((o) => (
           <button
@@ -97,9 +107,10 @@ function Purchase({ variantId }: { variantId: string }) {
           </button>
         ))}
       </div>
-      <p>
+      <p className="sales-detail-price">
         {offer.discount_cents > 0 && <del>{money(offer.base_cents)}</del>}{" "}
-        <strong>{money(offer.unit_cents)}</strong> / {unitLabels[offer.unit]}
+        <strong>{money(offer.unit_cents)}</strong>
+        <small> / {unitLabels[offer.unit]}</small>
       </p>
       <p>{offer.available > 0 ? "Disponible" : "Agotado"}</p>
       <button

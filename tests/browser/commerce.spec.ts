@@ -47,9 +47,7 @@ test("catalogue → persistent cart → accepted order → demo payment → fulf
     .getByLabel("Correo o teléfono de contacto")
     .fill(" demo@example.invalid ");
   await page.getByRole("button", { name: "Ver resumen", exact: true }).click();
-  await page
-    .getByRole("button", { name: "Crear pedido de demostración" })
-    .click();
+  await page.getByRole("button", { name: "Crear pedido" }).click();
   await expect(page).toHaveURL(/mis-pedidos\?order=/);
   await expect(
     page.getByRole("heading", { name: "Pendiente de pago", exact: true }),
@@ -143,9 +141,7 @@ test("shipping quote persists and only the reviewed version can create an order"
   await page.getByRole("link", { name: "Revisar y aceptar" }).click();
   await page.getByRole("button", { name: "Ver resumen", exact: true }).click();
   await expect(page.locator(".sales-summary")).toContainText("S/");
-  await page
-    .getByRole("button", { name: "Crear pedido de demostración" })
-    .click();
+  await page.getByRole("button", { name: "Crear pedido" }).click();
   await expect(
     page.getByRole("heading", { name: "Pendiente de pago", exact: true }),
   ).toBeVisible();
@@ -200,8 +196,8 @@ test("administration creates an offer, revises stock and assigns a non-stacking 
   await panel
     .getByLabel("Nombre comercial", { exact: true })
     .fill(run + " oferta");
-  await panel.getByLabel("Precio demo (S/)", { exact: true }).fill("150.25");
-  await panel.getByLabel("Stock demo", { exact: true }).fill("5");
+  await panel.getByLabel("Precio (S/)", { exact: true }).fill("150.25");
+  await panel.getByLabel("Stock disponible", { exact: true }).fill("5");
   await panel
     .getByLabel("Buscar versión del catálogo")
     .fill(run + " scene tire");
@@ -217,10 +213,10 @@ test("administration creates an offer, revises stock and assigns a non-stacking 
     .getByRole("button", { name: run + " oferta", exact: true })
     .click();
   panel = page.getByRole("dialog");
-  await expect(
-    panel.getByLabel("Precio demo (S/)", { exact: true }),
-  ).toHaveValue("150.25");
-  await panel.getByLabel("Stock demo", { exact: true }).fill("7");
+  await expect(panel.getByLabel("Precio (S/)", { exact: true })).toHaveValue(
+    "150.25",
+  );
+  await panel.getByLabel("Stock disponible", { exact: true }).fill("7");
   await panel
     .getByRole("button", { name: "Guardar oferta", exact: true })
     .click();

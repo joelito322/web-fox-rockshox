@@ -12,6 +12,7 @@ import { CartContents } from "./Cart";
 import { createOrder, getQuote, salesRpc, summarize } from "./api";
 import {
   money,
+  conditionLabels,
   type Address,
   type Contact,
   type CartLine,
@@ -216,7 +217,7 @@ function CheckoutContent() {
     <div className="content sales-checkout">
       <header>
         <h1>{quoteId ? "Aceptar cotización" : "Revisar pedido"}</h1>
-        <p className="sales-demo">Demostración · no se realizarán cobros</p>
+        <p className="sales-note">Sin cobros reales</p>
       </header>
       {error && (
         <p role="alert" className="notice">
@@ -319,7 +320,17 @@ function CheckoutContent() {
               <h2>Resumen</h2>
               {summary.lines.map((l) => (
                 <p key={l.offer_id}>
-                  {l.quantity} × {l.label}
+                  <span>
+                    {l.quantity} × {l.label}
+                    {l.item_condition && (
+                      <>
+                        <br />
+                        <small className="sales-condition">
+                          {conditionLabels[l.item_condition]}
+                        </small>
+                      </>
+                    )}
+                  </span>
                   <strong>{money(l.subtotal_cents)}</strong>
                 </p>
               ))}
@@ -337,7 +348,7 @@ function CheckoutContent() {
                 disabled={busy}
                 onClick={() => void confirm()}
               >
-                {busy ? "Creando…" : "Crear pedido de demostración"}
+                {busy ? "Creando…" : "Crear pedido"}
               </button>
               <button disabled={busy} className="text-button" onClick={edit}>
                 Revisar resumen de nuevo
