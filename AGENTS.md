@@ -1,5 +1,11 @@
 # Repository Guidelines
 
+## Entregables con filtro de precio ·28/10/2026
+
+Comiteo posterior solicitado:7b03bd4 captura reproducible, f0bd4d3 informe,4d0a88d manual,28a13b2 presentación y d580d2b índice/README; documentación de contexto en sexto commit. Fuentes TEX/PDF y recursos usados juntos por entregable; resultados brutos y guion local siguen ignorados. Sintaxis del script y diff correctos; compilación/revisión documental previa conservada. Sin push; no autoriza commits futuros.
+
+Actualización posterior autorizada: TEX/PDF de informe58 páginas, manual68/37 imágenes, presentación12láminas16:9 e índice de acceso1p. RF23/T20, captura y contrato de precio por categoría; mínimo/máximo en catálogo/selector3D, promociones, variantes y paginación; no presupuesto total del montaje. Resultados vigentes571 correctas/dos omitidas/85 archivos,43 migraciones/24 tablas. Capturas22/23/26 renovadas y35/36/37 nuevas; `scripts/capture-price-deliverables.mjs`, cuenta/carrito temporales eliminados, sin montajes/pedidos ni cambios de oferta/stock. Fuente/procedencia con recursos; evidencia cruda ignorada bajo models/local/validation/entregables/price-filter. Informe conserva APA/doble espacio (Requisitos funcionales p.21; apéndice A p.54), fecha de portada21/10 y Mg. Fidel Huanco Ramos; manual sigue sin entidades universitarias ni notas de pruebas. Cronograma base hasta27/10 intacto, incremento del filtro identificado el28. Validación en14; sin commits/push/despliegue por actualizar documentos.
+
 ## Filtro individual de precio ·28/10/2026
 
 Comiteo posterior por petición explícita: e8eeb99 RPC/migración y SQL transaccional, 962b8b2 interfaz/datos/caché compartidos y 3407ca9 pruebas/control/recorrido de navegador; documentación en cuarto commit. Sintaxis del runner y diff comprobados; evidencia funcional previa preservada sin repetir operaciones Cloud. Sin push; esta petición no autoriza commits futuros.
