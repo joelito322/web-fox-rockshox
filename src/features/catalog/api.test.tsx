@@ -10,10 +10,12 @@ import {
   useComponent,
   useHistoricalVariant,
   catalogCardProjection,
+  useCatalog,
 } from "./api";
 
 const request = vi.hoisted(() => ({
   from: vi.fn(),
+  rpc: vi.fn(),
   ids: [] as string[],
   projection: "",
   calls: 0,
@@ -22,7 +24,7 @@ const request = vi.hoisted(() => ({
   data: [] as unknown,
 }));
 vi.mock("../../lib/supabase", () => ({
-  requireSupabase: () => ({ from: request.from }),
+  requireSupabase: () => ({ from: request.from, rpc: request.rpc }),
 }));
 
 const component = componentSchema.parse({
@@ -46,6 +48,8 @@ function client() {
   return new QueryClient({ defaultOptions: { queries: { retry: false } } });
 }
 beforeEach(() => {
+  request.from.mockClear();
+  request.rpc.mockReset();
   request.ids = [];
   request.calls = 0;
   request.batches = [];
@@ -84,6 +88,30 @@ beforeEach(() => {
   });
 });
 describe("catalogue request reuse", () => {
+  it("filters variants before pagination and shares price discovery across pages and card/full projections", async () => {
+    request.rpc.mockReturnValue({ abortSignal: () => Promise.resolve({ data: [{ variant_id: variants[0].id, unit_cents: 8000 }], error: null }) });
+    const cache = client();
+    const wrapper = ({ children }: { children: ReactNode }) => <QueryClientProvider client={cache}>{children}</QueryClientProvider>;
+    const filters = { price: { max: 8000 } };
+    const cards = renderHook(({ page }) => useCatalogCards("frame", "", page, filters), { initialProps: { page: 0 }, wrapper });
+    await waitFor(() => expect(cards.result.current.isSuccess).toBe(true));
+    expect(request.ids).toEqual([variants[0].id]);
+    cards.rerender({ page: 1 });
+    await waitFor(() => expect(request.calls).toBe(2));
+    const full = renderHook(() => useCatalog("frame", "", 0, filters), { wrapper });
+    await waitFor(() => expect(full.result.current.isSuccess).toBe(true));
+    expect(request.rpc).toHaveBeenCalledTimes(1);
+    expect(full.result.current.data?.prices).toEqual({ [variants[0].id]: 8000 });
+  });
+  it("returns a true empty result without querying a catalog page when no prices qualify", async () => {
+    request.rpc.mockReturnValue({ abortSignal: () => Promise.resolve({ data: [], error: null }) });
+    const cache = client();
+    const wrapper = ({ children }: { children: ReactNode }) => <QueryClientProvider client={cache}>{children}</QueryClientProvider>;
+    const result = renderHook(() => useCatalogCards("frame", "", 0, { price: { max: 1 } }), { wrapper });
+    await waitFor(() => expect(result.result.current.isSuccess).toBe(true));
+    expect(result.result.current.data).toEqual({ components: [], count: 0 });
+    expect(request.from).not.toHaveBeenCalled();
+  });
   it("reads only missing variants and deduplicates repeated positions", async () => {
     const cache = client();
     cache.setQueryData(["catalog", "variant", variants[0].id], variants[0]);
