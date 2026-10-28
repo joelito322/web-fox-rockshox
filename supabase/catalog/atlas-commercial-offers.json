@@ -1,0 +1,121 @@
+{
+  "reviewed_on": "2026-10-28",
+  "currency": "PEN",
+  "stock_note": "12 example units per offer; editable in administration, not physical stock verification.",
+  "offers": [
+    {
+      "offer_id": "9a4709bd-6973-5337-b8d7-8a90067a38a6",
+      "sku": "ATLAS-HB-318-780-BK",
+      "slug": "atlas-handlebar-v1",
+      "brand": "ATLAS",
+      "model": "Manillar ATLAS · 31,8 × 780 mm",
+      "category": "handlebar",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 8000,
+      "price_cents": 8000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "atlas-handlebar-local"
+      ],
+      "note": "Authorized ATLAS generic commercial item; editable initial estimate, 12 example units; geometry is approximate and does not certify mounting or manufacture.",
+      "variant_id": "9e54da8d-11d7-5647-92ed-c318b4cf46ec",
+      "finish_id": "black"
+    },
+    {
+      "offer_id": "bffbf367-d357-5020-9b68-7a9217f4d093",
+      "sku": "ATLAS-SADDLE-145-BK",
+      "slug": "atlas-saddle-v1",
+      "brand": "ATLAS",
+      "model": "Sillín ATLAS · 145 mm",
+      "category": "saddle",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 6500,
+      "price_cents": 6500,
+      "basis": "model_estimate",
+      "source_ids": [
+        "atlas-saddle-local"
+      ],
+      "note": "Authorized ATLAS generic commercial item; editable initial estimate, 12 example units; geometry is approximate and does not certify mounting or manufacture.",
+      "variant_id": "2e033d68-1b1f-55e7-9443-fe475351cab7",
+      "finish_id": "black"
+    },
+    {
+      "offer_id": "c1322d7f-2a59-5491-a6b8-af60e2bc8b07",
+      "sku": "ATLAS-POST-316-250-BK",
+      "slug": "atlas-seatpost-v1",
+      "brand": "ATLAS",
+      "model": "Tija fija ATLAS · 31,6 × 250 mm",
+      "category": "seatpost",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 6000,
+      "price_cents": 6000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "atlas-seatpost-local"
+      ],
+      "note": "Authorized ATLAS generic commercial item; editable initial estimate, 12 example units; geometry is approximate and does not certify mounting or manufacture.",
+      "variant_id": "39387cf5-69f7-59b3-8f1e-66977bd1bc66",
+      "finish_id": "black"
+    },
+    {
+      "offer_id": "82d37d6d-f0eb-52ee-b22d-da541bd19d66",
+      "sku": "ATLAS-POST-349-350-BK",
+      "slug": "atlas-seatpost-v1",
+      "brand": "ATLAS",
+      "model": "Tija fija ATLAS · 34,9 × 350 mm",
+      "category": "seatpost",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 7000,
+      "price_cents": 7000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "atlas-seatpost-local"
+      ],
+      "note": "Authorized ATLAS generic commercial item; editable initial estimate, 12 example units; geometry is approximate and does not certify mounting or manufacture.",
+      "variant_id": "5dfa1287-9144-5813-aaa4-7e1efb3e26f6",
+      "finish_id": "black"
+    },
+    {
+      "offer_id": "51bcb2d2-5f84-5dd7-a6f8-9ca4ce950dd0",
+      "sku": "ATLAS-STEM-318-40-BK",
+      "slug": "atlas-stem-v1",
+      "brand": "ATLAS",
+      "model": "Potencia ATLAS · convencional · 40 mm",
+      "category": "stem",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 9000,
+      "price_cents": 9000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "atlas-stem-local"
+      ],
+      "note": "Authorized ATLAS generic commercial item; editable initial estimate, 12 example units; geometry is approximate and does not certify mounting or manufacture.",
+      "variant_id": "a9ae59d0-bd4a-5fce-a148-edc1cf381958",
+      "finish_id": "black"
+    },
+    {
+      "offer_id": "2a6f5b0b-2edf-5786-b816-d8ab72bda71d",
+      "sku": "ATLAS-DIRECT-318-40-BK",
+      "slug": "atlas-potencia-directa",
+      "brand": "ATLAS",
+      "model": "Potencia ATLAS · directa · 40 mm",
+      "category": "stem",
+      "unit": "unit",
+      "condition": "new",
+      "expected_price_cents": 16000,
+      "price_cents": 16000,
+      "basis": "model_estimate",
+      "source_ids": [
+        "atlas-direct-comparison"
+      ],
+      "note": "Authorized ATLAS generic commercial item; editable initial estimate, 12 example units; geometry is approximate and does not certify mounting or manufacture.",
+      "variant_id": "231dc45b-8a01-565c-84f0-905be936afc6",
+      "finish_id": "black"
+    }
+  ]
+}

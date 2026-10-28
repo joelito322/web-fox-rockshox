@@ -208,3 +208,7 @@ Reconstrucción propia M/L desde foto oficial del cuadro desnudo y despieces V10
 ## Prearmadas y suspensión v2
 
 Fuente aditiva vigente `motion-v2-examples.json`: mismas cuatro composiciones/92 posiciones, solo cuatro cuadros actualizados a META v21/SUPREME v25 al detectar referencias retiradas que impedían abrirlas. Reposición tras publicar v30: `node scripts/sync-motion-presets.mjs --apply` (SQL en operations), preserva88 posiciones y privados con snapshot antes/después. No sustituir ni borrar fuentes históricas. Detalle en [motion-v2](../../models/motion-v2/README.md) y [12y](../../docs/planning/12y-evidencia-suspension-v2.md). No migraciones, assets o variantes nuevas.
+
+## Auxiliares ATLAS vendibles · revisión 28/10/2026
+
+Por decisión explícita del usuario, los cinco modelos auxiliares ATLAS actuales también se venden. Migración042: seis ofertas/variantes (dos medidas de tija), unidad, condición nueva, precio PEN y stock inicial de ejemplo de12 por SKU, ambos editables en Ventas→Ofertas. Fuente `atlas-commercial-offers.json` y revisión extendida en `retail-price-review.json`. La exclusión histórica de todos los genéricos ATLAS queda sustituida solo para los cinco slugs autorizados; otros auxiliares futuros no se habilitan automáticamente. No modificar modelos, medidas o GLB para añadir precios. Reponer migraciones hasta042 después del catálogo actual.
