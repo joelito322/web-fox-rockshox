@@ -1,5 +1,21 @@
 # Repository Guidelines
 
+## Commits por partes · cierre posterior28/10/2026
+
+Petición explícita atendida: ff3d9a7 auxiliares vendibles/migración042, e482666 captura de vistas, 02d7d75 manual de usuario, e9b45b0 informe APA/precedencias, 246aa1c cronograma de presentación y 1b8836c título del docente/índice académico. Fuentes TEX y PDF juntos por entregable; documentación de contexto en séptimo commit. Sintaxis de scripts/JSON y diff comprobados; evidencias funcionales previas preservadas, sin repetir operaciones Cloud para comitear. Sin push ni despliegue remoto. La autorización no cubre commits futuros.
+
+## Informe técnico · revisión APA 7 ·28/10/2026
+
+Corrección posterior de interlineado: el entorno `tabla` debe ejecutar `\par` antes de entrar y antes de salir del grupo de espaciado. Sin ello, un párrafo inmediatamente anterior sin línea vacía hereda espacio sencillo. Requisitos funcionales p.20 e introducción del apéndice A p.52 comprobados en PDF con doble espacio y sangría1,27cm; no limitar la auditoría a párrafos alejados de tablas.
+
+El usuario pidió corregir índices, interlineado y formato del entregable02. TEX/PDF actuales:56 páginas, Times New Roman12 incrustada, alternativa Liberation Serif local si falta Times al recompilar. Cuerpo/notas/referencias a doble espacio; sangrías1,27cm; encabezados sin numeración; índices y apéndices separados; tablas de apéndices A1–A3/B1/C1. Solo celdas/diagramas usan espaciado compacto permitido. Preservar portada21/10 y Mg. Fidel Huanco Ramos. Criterios/fuentes oficiales en entregables/02_Informe_Tecnico/recursos/formato-apa7.txt y evidencia local ignorada en models/local/validation/entregables/apa7. Esta revisión sustituye la tipografía anterior únicamente del informe; no modifica manual/presentación ni certifica una rúbrica institucional. Sin commits ni push salvo petición explícita nueva.
+
+## Auxiliares vendibles y cronograma ampliado ·28/10/2026
+
+El usuario autorizó vender los cinco genéricos ATLAS actuales con precio/stock editable. Migración042 aplicada: seis SKU (tija31,6×250 y34,9×350),146 ofertas/695 vínculos,24 tablas/42 migraciones. Fuente y evidencia en [13i](docs/planning/13i-auxiliares-atlas-vendibles.md). Solo cinco slugs autorizados en identidad/elecciones administrativas; no volver a excluirlos por ser ATLAS ni habilitar genéricos futuros sin decisión.140 ofertas anteriores, variantes y recursos preservados. Stock inicial12 de ejemplo, precios estimados editables; sin pagos reales ni cambios de GLB.
+
+El usuario pidió extender cronograma del informe y las diapositivas hasta27/10 e integrar todas las funcionalidades. Precedencias corregidas:28 actividades y54 relaciones fin–inicio; plan/diseño cerrado04/10, migraciones05/10, pruebas integrales25, correcciones26 y revalidación27. No adelantar tareas respecto a sus insumos; C1 corresponde solo a incrementos disponibles. Docente: Mg. Fidel Huanco Ramos en los entregables académicos, sin reintroducir universidad/docente en el manual. Se actualizan TEX/PDF, tabla detallada y Gantt30/09–27/10, cuatro semanas, como planificación reconstruida del alcance completo; no afirmar que ese calendario existió desde el inicio ni alterar fechas reales de commits/migraciones28/10. Manual: el usuario retiró portada universitaria y notas técnicas de validación; mantener orientación de uso con34 imágenes,13 vistas amplias y tablas de campos. Procedencia queda fuera del PDF. Sin commits ni push salvo petición nueva.
+
 ## Entregables académicos · revisión 28/10/2026
 
 Petición posterior de comitear por partes atendida: herramientas de captura, informe, manual, presentación, índice de aula y documentación de seguimiento en commits separados, con Conventional Commits en inglés. Fuentes LaTeX y PDF incluidos juntos por entregable. Sin push ni despliegue; la autorización no cubre commits futuros.
