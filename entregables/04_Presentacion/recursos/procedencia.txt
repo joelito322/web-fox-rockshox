@@ -38,8 +38,8 @@ Fuentes reales ya utilizadas en el informe. No se atribuyen encuestas o ahorros.
 
 GANTT Y RESULTADOS
 Gantt resumido del informe: estimación reconstruida 30/09–27/10/2026.
-La revisión actual repitió pnpm check: 564 correctas, 2 omitidas, 83 archivos;
-build correcto. Estado Cloud registrado: 24 tablas propias y 41 migraciones.
+La revisión del filtro ejecutó la suite general con Node24.22.0: 571 correctas, 2 omitidas, 85 archivos;
+build correcto. Estado Cloud registrado: 24 tablas propias y 43 migraciones.
 No se suman recorridos de navegador con pruebas unitarias como casos únicos.
 
 IDENTIDAD Y CAPTURAS COMERCIALES
@@ -49,3 +49,19 @@ src/assets/atlas-mtb.svg, símbolo y letras Cumbre aprobados por el usuario.
 Paleta cálida: coral, marfil y carbón; geometría de iconos preservada.
 La aplicación publicada previamente no se despliega con esta actualización.
 Los métodos de pago y resultados financieros son simulados.
+
+FILTRO DE PRECIO — AMPLIACIÓN 28/10/2026
+Capturas propias del frontend local con Supabase Cloud, obtenidas mediante
+scripts/capture-price-deliverables.mjs. Script de validación del comportamiento:
+scripts/validate-price-filter-browser.mjs. No se guardan montajes, crean pedidos,
+modifican precios, stock o catálogo durante la captura. Cuenta/carrito temporales
+eliminados. Capturas usadas en documentos versionadas; diagnósticos y resultados
+completos quedan en models/local/validation/entregables/price-filter/ (ignorado).
+35-filtro-precio.png: desplegable real en Horquillas, mínimo1000/máximo2500.
+36-precio-configurador.png: precio aplicado y alternativas de horquilla.
+37-precio-movil.png: mismo control en Pixel7 emulado, máximo2500.
+Se renuevan22-vista-componentes,23-vista-ficha y26-vista-configurador del manual.
+El informe usa copia35 como05-filtro-precio; la presentación como18-filtro-precio.
+No representan un cálculo del presupuesto total del montaje ni aceptación
+visual del usuario o funcionamiento de un teléfono físico. Solo el manual
+incluye instrucciones de uso; estas notas quedan fuera de su PDF.

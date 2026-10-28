@@ -44,8 +44,8 @@ Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
 opcional con tarifa inicial S/150 editable y exoneración administrativa,
 notificaciones, pedidos, métodos de pago simulados y alternativas de
 compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
-Estado registrado: 24 tablas propias, 42 migraciones; 564 pruebas correctas,
-2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
+Estado registrado: 24 tablas propias, 43 migraciones; 571 pruebas correctas,
+2 omitidas en 85 archivos y build correcto. Cada evidencia tiene su entorno.
 Las capturas se renovaron con cuentas temporales y limpieza comprobada;
 no se modificaron precios, catálogo ni cuentas reales durante las capturas.
 Esta revisión no implica push ni despliegue. La publicación previa puede
@@ -58,3 +58,10 @@ Precedencias revisadas: diseño cerrado04/10, migraciones desde05/10,
 pruebas integrales25/10, correcciones26/10 y revalidación27/10.
 Tabla y Gantt comparten28 actividades;54 relaciones fin–inicio comprobadas.
 El docente figura como Mg. Fidel Huanco Ramos.
+
+FILTRO INDIVIDUAL DE PRECIO — 28/10/2026
+Mínimo/máximo por pieza y categoría en catálogo y selector 3D. Precio vigente
+con promociones, variantes elegibles, limpieza al cambiar categoría y paginación
+coherente. No es presupuesto total de una bicicleta. Se actualizan fuente TEX
+y PDF, controles/capturas y resultados; el cronograma base hasta27/10 conserva
+sus fechas y distingue esta ampliación posterior del28. Sin push ni despliegue.

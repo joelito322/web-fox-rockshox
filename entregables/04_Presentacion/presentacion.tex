@@ -80,7 +80,7 @@
 \foreach \y/\n/\icon/\label in {6.4/01/scan-line/CONFIGURAR,4.85/02/circle-check/REVISAR,3.3/03/boxes/COMPRAR}{
 \tx{.8}{\y}{.6}{7}{Mint}{\n}\ico{\icon}{1.55}{\y+.08}{.65}{Mint}\hd{2.45}{\y+.08}{3.05}{18}{White}{\label}}
 \tx{6}{1.48}{9.2}{8.5}{Mint}{Montaje visual + alternativas + armado opcional}
-\source{Captura real en vista lateral. Representación aproximada; no certificación mecánica. Objetivos completos: informe, sección 1.}
+\source{Captura real en vista lateral. Representación aproximada; no certificación mecánica. Objetivos completos: apartado inicial del informe.}
 \finish\note{Relaciona las tres acciones: configurar una propuesta, resolver conflictos documentados y pasar las piezas vendibles a una compra asistida. El armado es opcional y requiere revisión previa. La escena es aproximada y no certifica compatibilidad física. Tiempo: 60 segundos.}
 \end{frame}
 
@@ -173,14 +173,14 @@
 \draw[-{Latex[length=2mm]},Accent](7.8,2.84)--(8.7,2.84);\draw[-{Latex[length=2mm]},Accent](11.2,2.84)--(12.1,2.84);
 \draw[-{Latex[length=1.7mm]},Accent,dashed](13.6,3.5)--(13.6,3.85)--(10.15,3.85)--(10.15,4.06);
 \source{Esquema conceptual. Auth gestiona identidad. Precio por oferta; cotización y pedido conservan importes aceptados. GLB versionados.}
-\finish\note{Las 24 tablas propias se distribuyen en ocho del alcance base, cuatro de autorización y doce comerciales. Supabase Auth administra la identidad aparte. Las ofertas SKU contienen precio, stock y condición; variantes y acabados se vinculan sin duplicar precios por revisión GLB. Carrito, cotización y pedido tienen contratos distintos y los pedidos preservan importes aceptados. Tiempo: 65 segundos.}
+\finish\note{La RPC de precio reutiliza la regla de descuento antes de paginar, sin crear tablas ni modificar piezas montadas. Las 24 tablas propias se distribuyen en ocho del alcance base, cuatro de autorización y doce comerciales. Supabase Auth administra la identidad aparte. Las ofertas SKU contienen precio, stock y condición; variantes y acabados se vinculan sin duplicar precios por revisión GLB. Carrito, cotización y pedido tienen contratos distintos y los pedidos preservan importes aceptados. Tiempo: 65 segundos.}
 \end{frame}
 
 % 9. Módulos · collage de controles reales
 \begin{frame}[plain]
 \canvas{light}\header{08 / IMPLEMENTACIÓN}{Tres espacios, un mismo recorrido}
 \fill[Soft,rounded corners=4pt](.7,1.65)rectangle(4.5,6.6);
-\begin{scope}\clip(.95,2.3)rectangle(4.25,6.3);\node[anchor=north,inner sep=0]at(2.6,6.3){\includegraphics[width=3.3cm]{recursos/05-categorias.png}};\end{scope}
+\begin{scope}\clip(.95,2.3)rectangle(4.25,6.3);\node[anchor=north,inner sep=0]at(2.6,6.3){\includegraphics[width=3.3cm]{recursos/18-filtro-precio.png}};\end{scope}
 \hd{1}{2.17}{3.2}{19}{Ink}{EXPLORA}
 \fill[White,rounded corners=4pt](4.95,2.2)rectangle(10.6,6.6);
 \node[anchor=north,inner sep=0]at(7.78,6.28){\includegraphics[width=4.8cm]{recursos/07-grupos-talla.png}};
@@ -190,8 +190,8 @@
 \ico{boxes}{12.5}{6.1}{1.2}{Mint}
 \begin{scope}\clip(11.35,2.55)rectangle(15,4.65);\node[anchor=north,inner sep=0]at(13.17,4.65){\includegraphics[width=3.65cm]{recursos/16-carrito.png}};\end{scope}
 \hd{11.4}{2.17}{3.6}{19}{White}{COMPRA}
-\source{Capturas locales reales: categorías, selección y carrito. Cuentas de práctica y datos temporales eliminados.}
-\finish\note{Las tres composiciones usan controles reales recortados: explorar categorías, personalizar piezas y comprar mediante el carrito. La confirmación de añadido aparece solo tras éxito. El carrito evita repetir importes y conserva datos por cuenta. Las capturas utilizan cuentas temporales eliminadas; no muestran información personal. Tiempo: 55 segundos.}
+\source{Capturas locales reales: precio por categoría, selección y carrito. Cuentas de práctica y datos temporales eliminados.}
+\finish\note{Las tres composiciones usan controles reales recortados: filtrar el precio de una pieza, personalizar el montaje y comprar mediante el carrito. Precio admite mínimo/máximo en soles dentro de una categoría; usa promociones vigentes y se limpia al cambiar categoría. No representa un presupuesto total de la bicicleta. La confirmación de añadido aparece solo tras éxito. El carrito evita repetir importes y conserva datos por cuenta. Las capturas utilizan cuentas temporales eliminadas; no muestran información personal. Tiempo: 55 segundos.}
 \end{frame}
 
 % 10. Demostración · montaje protagonista
@@ -203,16 +203,16 @@
 \fill[Paper](11.2,\y-.3)circle(.27);\node[font=\Body\bfseries\small,text=Accent]at(11.2,\y-.3){\n};\ico{\icon}{11.8}{\y}{.48}{Accent}\hd{12.5}{\y-.06}{2.8}{14}{Ink}{\label}}
 \tx{.85}{1.48}{14.2}{9.5}{Accent}{\href{http://localhost:5174/}{\bfseries DEMOSTRACIÓN LOCAL\quad localhost:5174\quad \ensuremath{\nearrow}}}
 \source{Montaje \ensuremath{\rightarrow} alternativa compatible documentada \ensuremath{\rightarrow} carrito \ensuremath{\rightarrow} cotización de armado. Conexión a Cloud; 3D aproximado.}
-\finish\note{Prepara sesión y una composición de práctica, sin proyectar credenciales. Muestra un conflicto conocido, abre Ver detalles y Ver alternativas; aplica una opción y guarda. Convierte las piezas vendibles al carrito, abre Revisar pedido y muestra los métodos de pago simulados y armado opcional. Para armado, solicita cotización antes de crear pedido. Usa capturas si falla Internet. Esta revisión se demuestra en localhost:5174 con Cloud; no atribuyas su código nuevo a la publicación anterior. Tiempo: 2 minutos.}
+\finish\note{Prepara sesión y una composición de práctica, sin proyectar credenciales. En Horquillas, aplica un máximo de S/2500 y muestra las variantes elegibles; elimina el rango o cambia de categoría. Muestra un conflicto conocido, abre Ver detalles y Ver alternativas; aplica una opción y guarda. Convierte las piezas vendibles al carrito, abre Revisar pedido y muestra los métodos de pago simulados y armado opcional. Para armado, solicita cotización antes de crear pedido. Usa capturas si falla Internet. Esta revisión se demuestra en localhost:5174 con Cloud; no atribuyas su código nuevo a la publicación anterior. Tiempo: 2 minutos.}
 \end{frame}
 
 % 11. Resultados · evidencia y límites
 \begin{frame}[plain]
 \canvas{dark}\header{10 / RESULTADOS}{Evidencia de funcionamiento}
-\hd{.8}{6.8}{5}{58}{Mint}{564}
+\hd{.8}{6.8}{5}{58}{Mint}{571}
 \tx{1}{4.68}{4.8}{11}{White}{pruebas correctas}
-\tx{1}{4.12}{4.8}{8.5}{Dim}{2 omitidas · 83 archivos}
-\hd{6.1}{6.8}{4}{58}{Mint}{42}
+\tx{1}{4.12}{4.8}{8.5}{Dim}{2 omitidas · 85 archivos}
+\hd{6.1}{6.8}{4}{58}{Mint}{43}
 \tx{6.25}{4.68}{4.6}{11}{White}{migraciones aplicadas}
 \ico{globe}{12.2}{6.6}{1.2}{Mint}\hd{11.4}{4.68}{4.1}{24}{White}{CLOUD}
 \tx{11.4}{3.8}{4.1}{9}{Dim}{24 tablas propias}
@@ -221,7 +221,7 @@
 \ico{\icon}{\x}{2.75}{.5}{Mint}\tx{\x+.72}{2.64}{3.9}{8.5}{White}{\label}}
 \source{Revisión 28/10/2026: suite general y build correctos; recorridos locales autenticados, con limpieza de cuentas temporales.}
 \tx{.85}{1.48}{14.3}{7.2}{Dim}{Pendientes: dispositivos físicos, estudio de usuarios, operación y cobros reales; no se certifican con esta entrega.}
-\finish\note{La repetición actual de pnpm check dio 564 pruebas correctas, dos omitidas en 83 archivos, y build correcto. Las 42 migraciones y 24 tablas son el estado Cloud registrado. Los recorridos autenticados actualizan capturas y limpian sus cuentas. No sumes ejecuciones diferentes como escenarios únicos. No se certifican pagos reales, SMTP, Android físico, FPS ni satisfacción de usuarios. Tiempo: 70 segundos.}
+\finish\note{La suite general bajo Node 24.22.0 dio 571 pruebas correctas, dos omitidas en 85 archivos; build correcto en ejecución separada. Las 43 migraciones y 24 tablas son el estado Cloud registrado. Los recorridos autenticados actualizan capturas y limpian sus cuentas. No sumes ejecuciones diferentes como escenarios únicos. No se certifican pagos reales, SMTP, Android físico, FPS ni satisfacción de usuarios. Tiempo: 70 segundos.}
 \end{frame}
 
 % 12. Cierre · contribuciones y mejora
