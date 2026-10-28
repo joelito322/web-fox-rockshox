@@ -1,5 +1,7 @@
 # 13 · ATLAS MTB como tienda y venta asistida
 
+Estado posterior a la autorización: la implementación técnica y sus comprobaciones se registran en [13e](13e-evidencia-de-implementacion-comercial.md). Las frases de esta revisión sobre «sin implementación» corresponden a la etapa documental anterior; no sustituyen el estado vigente.
+
 Fecha: 27/10/2026. **Estado: planificación comercial solicitada; sin implementación ni migraciones autorizadas por este documento.** La primera entrega de pagos llega a interfaz demostrativa, sin conexión bancaria ni cobros reales. La autorización anterior de implementación del configurador no activa por sí sola esta nueva ampliación.
 
 Contratos y revisión: [13a](13a-contratos-y-validacion-comercial.md). Arquitectura de ofertas/precios: [13b](13b-precios-y-ofertas-comerciales.md). Decisiones confirmadas durante revisión: componentes y armado opcional con cotización previa; retiro y envío con coste aceptado; carrito registrado persistente en cuenta y recuperable entre dispositivos.

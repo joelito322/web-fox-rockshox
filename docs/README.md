@@ -6,7 +6,7 @@ Este archivo define cómo crear, relacionar y mantener la documentación. El obj
 
 El usuario autorizó comenzar la implementación después de comitear por partes los cambios documentales pendientes. Esos commits se crearon; ahora se ejecutan las fases de [08](planning/08-fases-y-validacion.md), con alcance completo, pruebas y evidencia. La preparación de datos, recursos y propuestas pendientes forma parte del trabajo. No crear nuevos commits sin petición explícita del usuario.
 
-La ampliación comercial del27/10/2026 en [13](planning/13-tienda-y-venta-asistida.md) tiene autorización documental únicamente: no hereda la autorización de código del configurador ni activa pagos reales.
+La ampliación comercial del27/10/2026 fue autorizada expresamente después de sus commits documentales. Implementación y evidencia en [13e](planning/13e-evidencia-de-implementacion-comercial.md): backend persistente, UI y pagos demo; no cobros reales. Las referencias anteriores a autorización solo documental describen la etapa inicial.
 
 Los planes permanecen en `planning/` mientras exista implementación parcial. No marcar una entrega terminada por redactar su contrato ni trasladar el conjunto antes de cumplir su aceptación.
 

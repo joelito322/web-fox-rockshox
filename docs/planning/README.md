@@ -1,6 +1,6 @@
 # Atlas MTB: plan de construcción
 
-Estado: implementación autorizada por el usuario el 19 de octubre de 2026, después de los commits documentales solicitados. Comenzar por fase 0 de 08 y avanzar con comprobaciones. Los nuevos cambios de implementación permanecen sin commit hasta petición explícita.
+Estado: implementación autorizada por el usuario el 19 de octubre de 2026, después de los commits documentales solicitados. Comenzar por fase 0 de 08 y avanzar con comprobaciones. Los cambios se comitean únicamente por petición explícita; el registro de la ampliación comercial está en13e.
 
 Contexto operativo vigente: proyecto Supabase Cloud creado, credenciales disponibles en `.env` de la raíz y conexiones de lectura validadas. Frontend local y backend/base directamente en Cloud; no stack local de Supabase. El usuario declara que no hay producción ni usuarios reales. Estado y límites de las comprobaciones en [07](07-entornos-y-despliegue.md); fuentes futuras del backend y procedimiento en [supabase/README.md](../../supabase/README.md). La autorización posterior del usuario inicia ahora la implementación.
 
@@ -10,11 +10,12 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 
 | Documento | Pregunta que resuelve |
 | --- | --- |
-| [13 · Tienda y venta asistida](13-tienda-y-venta-asistida.md) | Nueva orientación comercial, ofertas/precios/promociones, pedidos y pagos solo de interfaz en primera fase; planificación sin ejecución autorizada |
+| [13 · Tienda y venta asistida](13-tienda-y-venta-asistida.md) | Nueva orientación comercial, ofertas/precios/promociones, pedidos y pagos solo de interfaz en primera fase; implementación autorizada y evidencia en13e |
 | [13a · Contratos comerciales](13a-contratos-y-validacion-comercial.md) | Revisión de huecos: precio fijado al crear pedido, stock sin doble consumo, pagos de demo y carrito persistente por cuenta |
 | [13b · Precios y ofertas](13b-precios-y-ofertas-comerciales.md) | Precio/stock por SKU estable, relación con revisiones3D, promociones y snapshot de pedidos; sin motor de precios extra |
-| [13c · Esquema comercial](13c-esquema-comercial-y-operaciones.md) | Once tablas propuestas, campos/relaciones, cambios IAM, reservas sin duplicación, RPC, índices y aceptación por fases |
+| [13c · Esquema comercial](13c-esquema-comercial-y-operaciones.md) | Once tablas comerciales, campos/relaciones, cambios IAM, reservas sin duplicación, RPC, índices y aceptación por fases |
 | [13d · Revisión cruzada comercial](13d-revision-cruzada-del-plan-comercial.md) | Tres agentes y segunda revisión; brechas corregidas, pruebas obligatorias y límites del dictamen documental |
+| [13e · Implementación comercial](13e-evidencia-de-implementacion-comercial.md) | Migraciones028–037, precios/stock demo, carrito, cotizaciones/pedidos y pruebas Cloud/navegador; aceptación visual pendiente |
 | [01 · Producto y alcance](01-producto-y-alcance.md) | Qué construimos, para quién y con qué nivel de fidelidad |
 | [02 · Arquitectura y frontend](02-arquitectura-y-frontend.md) | Cómo se relacionan React, el visor, Supabase y Netlify |
 | [03 · Datos y operaciones](03-datos-y-operaciones.md) | Ingesta, composiciones, guardado, archivo, consultas e índices |

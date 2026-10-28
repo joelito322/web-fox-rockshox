@@ -1,5 +1,7 @@
 # 13a · Contratos y revisión del plan comercial
 
+Estado posterior a la autorización: la implementación técnica y sus comprobaciones se registran en [13e](13e-evidencia-de-implementacion-comercial.md). Las frases de esta revisión sobre «sin implementación» corresponden a la etapa documental anterior; no sustituyen el estado vigente.
+
 Fecha: 27/10/2026. Revisión documental de [13](13-tienda-y-venta-asistida.md), sin implementación, ejecución Cloud ni commits. No es una auditoría de un comercio ya construido. Las correcciones siguientes cierran ambigüedades técnicas; el usuario confirmó armado opcional con revisión/cotización, retiro y envío con coste cotizado, y carrito persistente por cuenta entre dispositivos.
 
 ## 1. Alcance funcional frente a pago demostrativo

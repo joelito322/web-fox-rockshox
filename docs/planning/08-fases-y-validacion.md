@@ -604,3 +604,8 @@ Esquema comercial y ejecución detallados en [13c](13c-esquema-comercial-y-opera
 
 
 La [revisión cruzada comercial13d](13d-revision-cruzada-del-plan-comercial.md) registra hallazgos y una matriz obligatoria de aceptación para las fases comerciales. Sus correcciones documentales no sustituyen ejecutar pruebas de concurrencia/RLS, verificar UI y medir consultas una vez construido el alcance.
+
+
+## Ejecución comercial autorizada ·27/10/2026
+
+Planes comiteados en b5ef57f/265da1b/27dd253; luego implementación autorizada y ejecutada. Contratos operativos, once tablas/RPC/RLS, ofertas/stock demo, promociones, carrito remoto/conversión3D, cotización de armado/envío, pedido/reserva, pago demo y seguimiento tienen código persistente y comprobaciones. Evidencia, comandos, conteos y límites en [13e](13e-evidencia-de-implementacion-comercial.md). Backend Cloud028–037 aplicado; frontend local5174. La aceptación visual del usuario queda pendiente; no trasladar el conjunto a finished ni anunciar cobros reales por estos resultados. El usuario solicitó posteriormente comitear la implementación por partes: backend, UI/Auth compartidos, tienda/gestión, pruebas y documentación; referencias en13e. No hubo push. Los siguientes commits requieren nueva petición explícita.

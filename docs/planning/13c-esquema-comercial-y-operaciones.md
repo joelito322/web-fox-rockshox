@@ -1,5 +1,7 @@
 # 13c · Esquema comercial y operaciones
 
+Estado posterior a la autorización: la implementación técnica y sus comprobaciones se registran en [13e](13e-evidencia-de-implementacion-comercial.md). Las frases de esta revisión sobre «sin implementación» corresponden a la etapa documental anterior; no sustituyen el estado vigente.
+
 Fecha: 27/10/2026. Ampliación documental solicitada por el usuario. Complementa [13](13-tienda-y-venta-asistida.md), [contratos](13a-contratos-y-validacion-comercial.md) y [precios](13b-precios-y-ofertas-comerciales.md). Nombres y campos propuestos para futuras migraciones; no describe tablas creadas ni autoriza implementación.
 
 ## Separación y tamaño del esquema

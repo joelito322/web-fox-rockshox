@@ -1,5 +1,7 @@
 # 13d · Revisión cruzada del plan comercial
 
+Estado posterior a la autorización: la implementación técnica y sus comprobaciones se registran en [13e](13e-evidencia-de-implementacion-comercial.md). Las frases de esta revisión sobre «sin implementación» corresponden a la etapa documental anterior; no sustituyen el estado vigente.
+
 Fecha: 27/10/2026. Auditoría documental solicitada por el usuario con tres agentes independientes y segunda lectura de las correcciones. Alcance: [13](13-tienda-y-venta-asistida.md), [13a](13a-contratos-y-validacion-comercial.md), [13b](13b-precios-y-ofertas-comerciales.md), [13c](13c-esquema-comercial-y-operaciones.md), contratos base e inspección del SQL actual. No se ejecutaron migraciones, operaciones Cloud, pagos ni pruebas de un comercio implementado.
 
 ## Revisores y resultado

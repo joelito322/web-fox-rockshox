@@ -1,5 +1,7 @@
 # 13b · Arquitectura simple de precios, ofertas y promociones
 
+Estado posterior a la autorización: la implementación técnica y sus comprobaciones se registran en [13e](13e-evidencia-de-implementacion-comercial.md). Las frases de esta revisión sobre «sin implementación» corresponden a la etapa documental anterior; no sustituyen el estado vigente.
+
 Fecha: 27/10/2026. Diseño documental para [13](13-tienda-y-venta-asistida.md) y sus [contratos](13a-contratos-y-validacion-comercial.md); sin SQL/migraciones ni implementación autorizados todavía. Inspección del esquema existente: components agrupa modelos; component_variants incluye características, acabados y una representación3D concreta; price_reference es solo referencia de mercado. El catálogo conserva numerosas revisiones visuales/históricas.
 
 ## Decisión acordada
