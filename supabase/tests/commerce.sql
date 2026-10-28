@@ -17,7 +17,9 @@ create function pg_temp.observe_sales_links() returns trigger language plpgsql a
 end$$;
 create trigger test_observe_sales_links after insert or delete or update on public.store_offer_variants for each row execute function pg_temp.observe_sales_links();
 set local role authenticated;
-do $$declare id uuid=gen_random_uuid(); data jsonb; cart jsonb; summary jsonb; lines jsonb; order_id uuid; key uuid=gen_random_uuid(); pay_key uuid=gen_random_uuid(); result jsonb; quote_id uuid=gen_random_uuid(); promo uuid=gen_random_uuid(); contact jsonb='{"name":"Prueba ATLAS","contact":"demo@example.invalid"}';begin
+do $$declare id uuid=gen_random_uuid(); data jsonb; cart jsonb; summary jsonb; lines jsonb; order_id uuid; key uuid=gen_random_uuid(); pay_key uuid=gen_random_uuid(); channel text; result jsonb; quote_id uuid=gen_random_uuid(); promo uuid=gen_random_uuid(); contact jsonb='{"name":"Prueba ATLAS","contact":"demo@example.invalid"}';begin
+ perform public.sales_save_assembly_tariff((public.sales_policy()->>'service_revision')::integer,15000);
+ begin perform public.sales_save_assembly_tariff(0,20000);raise exception 'stale_tariff_write_accepted';exception when sqlstate 'PT409' then null;end;
  data=jsonb_build_object('id',id,'sku','TEST-'||id,'label','Oferta demo transaccional','unit_of_sale',current_setting('atlas.sales.unit'),'base_price_cents',10000,'stock_total',3,'active',true,'item_condition','used','choices',current_setting('atlas.sales.choice')::jsonb);
  perform public.sales_save_offer(data,0);
  perform set_config('atlas.sales.link_writes','0',true);perform public.sales_save_offer(data,1);
@@ -38,12 +40,24 @@ do $$declare id uuid=gen_random_uuid(); data jsonb; cart jsonb; summary jsonb; l
  if (summary->>'total_cents')::bigint<>18000 then raise exception 'incorrect_discount';end if;
  begin perform public.sales_create_order(key,summary->>'hash',lines,contact,'pickup','{}',(cart->>'revision')::integer-1,null);raise exception 'stale_cart_checkout_accepted';exception when sqlstate 'PT409' then null;end;
  begin perform public.sales_create_order(key,'tampered',lines,contact,'pickup','{}',(cart->>'revision')::integer,null);raise exception 'tampered_total_accepted';exception when sqlstate 'PT409' then null;end;
- order_id=public.sales_create_order(key,summary->>'hash',lines,contact,'pickup','{}',(cart->>'revision')::integer,null);
+ order_id=public.sales_create_order_with_payment(key,summary->>'hash',lines,contact,'pickup','{}',(cart->>'revision')::integer,null,'bbva_demo');
  if public.sales_create_order(key,summary->>'hash',lines,contact,'pickup','{}',(cart->>'revision')::integer,null)<>order_id then raise exception 'retry_created_another_order';end if;
+ begin perform public.sales_create_order_with_payment(key,summary->>'hash',lines,contact,'pickup','{}',(cart->>'revision')::integer,null,'bcp_demo');raise exception 'checkout_channel_replay_accepted';exception when sqlstate 'PT409' then null;end;
  result=public.sales_order(order_id);
+ if result->>'preferred_payment_method' is distinct from 'bbva_demo' then raise exception 'checkout_channel_not_saved';end if;
  if result->'items'->0->>'item_condition_snapshot' is distinct from 'used' then raise exception 'condition_missing_from_order_snapshot';end if;
  if (result->>'total_cents')::bigint<>18000 or jsonb_array_length(public.sales_cart()->'items')<>0 then raise exception 'checkout_not_atomic';end if;
  begin perform public.sales_save_offer(data||'{"stock_total":1}',2);raise exception 'reserved_stock_reduced';exception when sqlstate 'PT409' then null;end;
+ -- Every newly exposed channel persists its identity; rejected simulations never consume stock.
+ foreach channel in array array['plin_demo','bcp_demo','interbank_demo','bbva_demo','scotiabank_demo'] loop
+  pay_key=gen_random_uuid();
+  result=public.sales_pay_demo(order_id,pay_key,channel,'rejected');
+  if result->>'status'<>'pending' or not exists(select 1 from jsonb_array_elements(result->'payments') p where p->>'method'=channel and p->>'status'='rejected') then raise exception 'payment_channel_not_preserved';end if;
+  perform public.sales_pay_demo(order_id,pay_key,channel,'rejected');
+  begin perform public.sales_pay_demo(order_id,pay_key,'card_demo','rejected');raise exception 'payment_channel_replay_accepted';exception when sqlstate 'PT409' then null;end;
+ end loop;
+ begin perform public.sales_pay_demo(order_id,gen_random_uuid(),'unknown_bank','approved');raise exception 'unknown_payment_channel_accepted';exception when invalid_parameter_value then null;end;
+ pay_key=gen_random_uuid();
  result=public.sales_pay_demo(order_id,pay_key,'yape_demo','approved');
  if result->>'status'<>'confirmed' then raise exception 'payment_not_confirmed';end if;
  perform public.sales_pay_demo(order_id,pay_key,'yape_demo','approved');
@@ -61,12 +75,19 @@ do $$declare id uuid=gen_random_uuid(); data jsonb; cart jsonb; summary jsonb; l
  lines=jsonb_build_array(jsonb_build_object('offer_id',id,'quantity',1));
  quote_id=public.sales_request_quote(gen_random_uuid(),lines,contact,'pickup','{}',true,current_setting('atlas.sales.selection')::jsonb);
  result=public.sales_quote(quote_id);
+ if (result->>'assembly_fee_cents')::bigint<>15000 or (result->>'assembly_base_fee_cents')::bigint<>15000 then raise exception 'assembly_tariff_not_automatic';end if;
+ perform public.sales_save_assembly_tariff((public.sales_policy()->>'service_revision')::integer,18000);
+ if (public.sales_quote(quote_id)->>'assembly_fee_cents')::bigint<>15000 then raise exception 'existing_assembly_tariff_changed';end if;
  if result->'selection_snapshot'->0->'technical'->>'name'='client forged value' or result->'selection_snapshot'->0->'technical'->'specs' is null then raise exception 'technical_snapshot_not_authoritative';end if;
- result=public.sales_review_quote(quote_id,(result->>'revision')::integer,'quoted',500,0,'Montaje parcial de demostración');
+ result=public.sales_review_quote(quote_id,(result->>'revision')::integer,'quoted',0,0,'Armado sin coste');
+ if not exists(select 1 from jsonb_array_elements(public.sales_quote_notices()->'items') n where n->>'id'=quote_id::text and (n->>'assembly_fee_cents')::bigint=0) then raise exception 'waived_assembly_notice_missing';end if;
+ perform set_config('atlas.sales.notice',quote_id::text,true);
+ perform public.sales_quote_notices(quote_id,(result->>'revision')::integer);
+ if exists(select 1 from jsonb_array_elements(public.sales_quote_notices()->'items') n where n->>'id'=quote_id::text) then raise exception 'notice_ack_not_persistent';end if;
  -- Once quoted, a later catalogue price/promotion change cannot silently change it.
  perform public.sales_save_promotion(jsonb_build_object('id',promo,'name','Demo 10%','discount_type','percentage','percentage_bps',1000,'starts_at',clock_timestamp()-interval '1 hour','ends_at',clock_timestamp()+interval '1 day','active',false,'offer_ids',jsonb_build_array(id)),1);
  summary=public.sales_summary(lines,contact,'pickup','{}',quote_id);
- if (summary->>'total_cents')::bigint<>9500 then raise exception 'quoted_promotion_was_repriced';end if;
+ if (summary->>'total_cents')::bigint<>9000 then raise exception 'quoted_promotion_was_repriced';end if;
  result=public.sales_quote(quote_id);
  perform public.sales_request_quote(gen_random_uuid(),lines,contact,'pickup','{}',true,current_setting('atlas.sales.selection')::jsonb,null,quote_id,(result->>'revision')::integer);
  begin perform public.sales_summary(lines,contact,'pickup','{}',quote_id);raise exception 'superseded_quote_accepted';exception when sqlstate 'PT409' then null;end;
@@ -79,6 +100,10 @@ do $$begin perform set_config('request.jwt.claims',jsonb_build_object('sub',curr
 set local role authenticated;
 do $$begin
  begin perform public.sales_order(current_setting('atlas.sales.order')::uuid);raise exception 'cross_account_order_read';exception when insufficient_privilege then null;end;
+ if (public.sales_quote_notices()->>'count')::integer<>0 then raise exception 'cross_account_notices_leaked';end if;
+ perform public.sales_quote_notices(current_setting('atlas.sales.notice')::uuid,2);
+ begin perform public.sales_save_assembly_tariff((public.sales_policy()->>'service_revision')::integer,0);raise exception 'user_can_manage_tariff';exception when insufficient_privilege then null;end;
+ begin perform 1 from public.sales_service_settings;raise exception 'service_settings_read_leaked';exception when insufficient_privilege then null;end;
  begin perform public.sales_admin_offers('',0);raise exception 'user_can_manage_offers';exception when insufficient_privilege then null;end;
  begin perform 1 from public.store_offers;raise exception 'direct_table_read_leaked';exception when insufficient_privilege then null;end;
  perform set_config('request.headers',jsonb_build_object('x-atlas-account',current_setting('atlas.sales.actor'))::text,true);

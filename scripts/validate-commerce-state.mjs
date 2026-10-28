@@ -15,7 +15,7 @@ const sql = `select json_build_object(
  'links',(select count(*) from public.store_offer_variants),
  'demo_stock_rows',(select count(*) from public.store_offers where stock_total=12),
  'commercial_permissions',(select count(*) from iam.permissions where area='Ventas'),
- 'unprotected_commercial_tables',(select count(*) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('store_offers','store_offer_variants','promotions','promotion_offers','carts','cart_items','sales_quotes','orders','order_items','payment_attempts','order_events') and not c.relrowsecurity),
+ 'unprotected_commercial_tables',(select count(*) from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='public' and c.relname in ('store_offers','store_offer_variants','promotions','promotion_offers','carts','cart_items','sales_quotes','orders','order_items','payment_attempts','order_events','sales_service_settings') and not c.relrowsecurity),
  'fixture_accounts',(select count(*) from auth.users where email like 'validation-%@example.invalid' or email like 'atlas-commerce-%@example.invalid'),
  'fixture_offers',(select count(*) from public.store_offers where sku like 'BROWSER-validation-%' or sku like 'RACE-%'),
  'fixture_models',(select count(*) from public.components c join public.brands b on b.id=c.brand_id where b.slug like 'validation-%' or c.slug like 'validation-%'),
@@ -38,7 +38,7 @@ writeFileSync(
 );
 console.log(JSON.stringify(state));
 if (
-  state.tables !== 23 ||
+  state.tables !== 24 ||
   state.commercial_permissions !== 4 ||
   state.unprotected_commercial_tables !== 0 ||
   state.fixture_accounts !== 0 ||
