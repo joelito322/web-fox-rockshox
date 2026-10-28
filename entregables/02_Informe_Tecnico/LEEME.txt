@@ -29,7 +29,7 @@ CRITERIOS DE REDACCIÓN
 - Se conserva la estructura técnica de la consigna, con índice y Gantt horizontal.
 - Cronograma de tres semanas reconstruido y estimado: no es registro horario.
 - Cuentas de prueba efímeras; sin credenciales ni datos personales de sesiones.
-- Capturas reales del frontend público; la escena se muestra en vista frontal.
+- Capturas reales del frontend local conectado a Supabase Cloud; la escena se muestra en vista frontal.
 - Se distinguen validaciones automáticas y confirmación manual de acceso Google.
 - No se inventan estudios de usuarios ni se certifica compatibilidad mecánica,
   rendimiento de teléfono físico o entrega de correo no evaluada.
@@ -37,3 +37,17 @@ CRITERIOS DE REDACCIÓN
 
 SITIO PÚBLICO
 https://atlasmtb.netlify.app/
+
+ALCANCE DE LA REVISIÓN 28/10/2026
+Se actualizan la fuente LaTeX y el PDF, manteniendo formato, tipografías,
+portada académica del 21/10/2026 y, en presentación, doce láminas 16:9.
+Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
+opcional con tarifa inicial S/150 editable y exoneración administrativa,
+notificaciones, pedidos, métodos de pago simulados y alternativas de
+compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
+Estado registrado: 24 tablas propias, 41 migraciones; 564 pruebas correctas,
+2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
+Las capturas se renovaron con cuentas temporales y limpieza comprobada;
+no se modificaron precios, catálogo ni cuentas reales durante las capturas.
+Esta revisión no implica push ni despliegue. La publicación previa puede
+mostrar otra versión. Cobros reales, SMTP y móvil físico no certificados.

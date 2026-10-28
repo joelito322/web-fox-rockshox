@@ -14,7 +14,7 @@
 \usepackage[authoryear,round]{natbib}
 \usepackage[hidelinks,unicode]{hyperref}
 \usepackage{xurl,ragged2e}
-\hypersetup{pdftitle={Desarrollo de una plataforma web para la selección, comparación y configuración tridimensional de bicicletas de montaña},pdfauthor={Joel Ito Luque},pdfsubject={Informe técnico de Gestión de Proyectos},pdfkeywords={bicicletas de montaña, plataforma web, configuración tridimensional, gestión de proyectos}}
+\hypersetup{pdftitle={Desarrollo de una plataforma web para la venta asistida de componentes y configuración tridimensional de bicicletas de montaña},pdfauthor={Joel Ito Luque},pdfsubject={Informe técnico de Gestión de Proyectos},pdfkeywords={bicicletas de montaña, plataforma web, configuración tridimensional, gestión de proyectos}}
 \doublespacing
 \RaggedRight
 \setlength{\parindent}{1.27cm}
@@ -38,7 +38,7 @@
 Facultad de Ciencias de la Ingeniería\par
 Ingeniería de Software y Sistemas\par
 \vspace{1.65cm}
-{\large\bfseries Desarrollo de una plataforma web para la selección, comparación y configuración tridimensional de bicicletas de montaña\par}
+{\large\bfseries Desarrollo de una plataforma web para la venta asistida de componentes y configuración tridimensional de bicicletas de montaña\par}
 \vspace{0.6cm}
 \textbf{ATLAS MTB}\par
 Informe técnico\par
@@ -55,9 +55,9 @@ Juliaca, Perú\par
 \setcounter{page}{2}
 
 \section*{Resumen}\addcontentsline{toc}{section}{Resumen}
-El proyecto desarrolla una plataforma web para apoyar la planificación del armado y modificación de bicicletas de montaña mediante la consulta de componentes, comparación de variantes y visualización tridimensional aproximada. La problemática se centra en la evaluación de piezas como conjunto: las decisiones requieren relacionar medidas, versiones y características, mientras las fichas individuales no muestran por sí solas la configuración resultante. Se implementó una aplicación organizada por funcionalidades, con reglas de montaje separadas de la interfaz, catálogo centralizado, autenticación, administración de permisos y persistencia de montajes personales. La solución utiliza React y TypeScript en el cliente, un visor basado en Three.js y servicios gestionados de Supabase para datos, acceso y archivos. El frontend se encuentra publicado en Netlify. La gestión se presenta mediante un cronograma reconstruido de tres semanas, a partir de un prototipo previo, con entregables, dependencias, recursos y riesgos explícitos. La validación combina pruebas de reglas, comprobaciones de acceso y recorridos de navegador. Los resultados permiten demostrar las operaciones implementadas y el aislamiento de montajes en los escenarios evaluados; no constituyen una certificación mecánica, un estudio de satisfacción ni una medición de mejora en decisiones de compra. Se identifican oportunidades de mejora en rendimiento sobre dispositivos físicos, mantenimiento del catálogo y validación con usuarios.
+ATLAS MTB desarrolla una tienda web de componentes para enduro y descenso que conecta consulta técnica, comparación, configuración tridimensional y venta asistida. El problema abordado es la discontinuidad entre elegir una pieza, relacionar sus medidas con el montaje y convertir la selección en una compra revisada. Se implementaron catálogo, montajes privados, avisos con alternativas comprobables, precios por oferta comercial, carrito persistente, cotizaciones, pedidos y seguimiento. El armado es opcional, con tarifa inicial automática editable y posibilidad de exoneración durante la revisión; el cliente recibe un aviso y acepta el total. Los métodos de pago permiten ensayar el recorrido sin efectuar cobros reales. La arquitectura combina módulos por funcionalidad con independencia de reglas de negocio, React y Three.js en el navegador y Supabase Cloud para identidad, datos y archivos. Esta revisión del 28 de octubre de 2026 documenta el código local y el backend remoto; no afirma que esos últimos cambios estén publicados en Netlify. El cronograma académico conserva una base reconstruida de tres semanas y distingue la ampliación posterior. La evidencia comprueba operaciones, persistencia y controles en escenarios definidos, sin certificar mecánica, rentabilidad, satisfacción de usuarios ni rendimiento de teléfonos físicos.
 
-\noindent\textit{Palabras clave:} bicicletas de montaña, configuración tridimensional, plataforma web, gestión de proyectos, montaje virtual.
+\noindent\textit{Palabras clave:} bicicletas de montaña, configuración tridimensional, venta asistida, componentes, plataforma web, gestión de proyectos.
 \pagina
 \tableofcontents
 \pagina
@@ -68,21 +68,21 @@ El proyecto desarrolla una plataforma web para apoyar la planificación del arma
 % Inicio: 01-proyecto.tex
 \section{Descripción del proyecto}
 \subsection{Identificación y contexto}
-ATLAS MTB es una plataforma web de apoyo a la selección y configuración visual de bicicletas de montaña, con énfasis en enduro y descenso. Su finalidad es ofrecer continuidad entre la consulta de una pieza, la comparación de alternativas y la elaboración de un montaje personal. La aplicación está disponible en \url{https://atlasmtb.netlify.app/}. El presente informe documenta el producto implementado, las decisiones de desarrollo y las comprobaciones realizadas; no propone una tienda ni un servicio de certificación de instalaciones mecánicas.
+ATLAS MTB es una tienda web de componentes orientada a ciclistas de enduro y descenso, con selección técnica, comparación, visualización del montaje y armado opcional revisado. Su propuesta de valor es mantener continuidad desde la elección de piezas hasta una solicitud comercial y un pedido trazable. La versión de código revisada el 28 de octubre de 2026 se ejecuta localmente con Supabase Cloud; la dirección \url{https://atlasmtb.netlify.app/} corresponde al frontend publicado previamente y requiere un despliegue posterior para incorporar esta revisión. El producto se encuentra en validación: precios y stock iniciales son editables y los pagos son simulados, sin ingresos o ventas reales demostrados.
 
 El trabajo es individual. Joel Ito Luque asume la responsabilidad de análisis, diseño, integración, pruebas y documentación. Se parte de un prototipo previamente existente, por lo que la planificación de tres semanas corresponde a una reconstrucción estimada de la etapa de integración y cierre, no al desarrollo íntegro desde cero. Las fuentes técnicas, las migraciones y las evidencias del proyecto permiten distinguir los objetivos de las funciones efectivamente incorporadas.
 
 \subsection{Planteamiento del problema}
 La planificación del armado o modificación de una bicicleta de montaña exige seleccionar componentes cuyas características deben evaluarse de manera relacionada. Una familia de productos puede presentar distintas medidas, generaciones y versiones. Por tanto, identificar el nombre de una pieza no basta para comprender qué alternativa se está seleccionando y qué aspectos deben revisarse respecto del resto del montaje. Las tablas de compatibilidad publicadas por los fabricantes organizan relaciones entre sistemas de transmisión, frenos y otros conjuntos, lo que respalda la existencia de restricciones técnicas que requieren consulta específica \citep{shimano,sram}.
 
-Una persona que desea construir o modificar su bicicleta debe reunir datos, distinguir variantes y conservar una propuesta del conjunto. Cuando esas tareas se resuelven mediante consultas separadas y anotaciones independientes, mantener la relación entre la alternativa comparada y la pieza finalmente elegida requiere trabajo adicional. El problema de interés para este proyecto es esa falta de continuidad en el proceso de planificación, y no una supuesta inexistencia de catálogos o configuradores en el mercado.
+Una persona que desea construir o modificar su bicicleta necesita reunir datos, distinguir variantes, comparar importes y conservar una propuesta antes de comprar. Las diferencias de medidas, anclajes y generaciones pueden volver inadecuada una elección aunque el nombre comercial parezca correcto. El proyecto aborda la falta de continuidad entre esas decisiones y la solicitud comercial: no basta con acumular piezas si después hay que reconstruir la lista, revisar discrepancias y pedir por separado un coste de armado.
 
 Las fotografías de piezas individuales ayudan a reconocerlas, pero no ofrecen por sí solas una representación del montaje seleccionado. Al cambiar un cuadro, una suspensión o un acabado, la persona necesita imaginar su integración visual y recordar las opciones que evaluó. Una representación tridimensional aproximada puede complementar la información técnica y hacer visible una propuesta, siempre que se comunique su alcance y se evite confundir la apariencia con una comprobación de instalación física.
 
-La situación puede ilustrarse con la sustitución de una horquilla: la persona identifica varias alternativas, consulta sus versiones y medidas, las compara, incorpora una a su propuesta y desea retomarla después. El interés del sistema consiste en mantener ese recorrido dentro de un mismo entorno. No se atribuyen a este ejemplo pérdidas económicas observadas, porcentajes de error ni resultados de encuestas que no se hayan realizado.
+La situación puede ilustrarse con una rueda: un aro de 27,5 pulgadas y un neumático de 29 pulgadas no comparten el diámetro de montaje declarado. El sistema conserva la libertad de exploración, muestra el conflicto y ofrece variantes que lo resuelven según los datos disponibles; una sustitución puede mostrar su diferencia de precio. La cotización del taller mantiene separada la revisión humana. Existen configuradores comerciales y asesoría de montaje, como Fanatik y Jenson USA \citep{fanatik,jenson}; por ello no se afirma exclusividad universal. La orientación de ATLAS combina enduro y descenso, precios en soles, condición de segunda mano cuando corresponde y continuidad visual-comercial. No se inventan pérdidas observadas, encuestas ni porcentajes de ahorro.
 
 \subsection{Formulación del problema}
-\textbf{Problema general.} ¿Cómo facilitar la planificación del armado y modificación de bicicletas de montaña mediante la selección, comparación y visualización integrada de sus componentes en una plataforma web?
+\textbf{Problema general.} ¿Cómo integrar la selección técnica y visual de componentes de bicicletas de montaña con una compra asistida, revisada y trazable en una plataforma web?
 
 \textbf{Problemas específicos.}
 \begin{enumerate}
@@ -90,11 +90,12 @@ La situación puede ilustrarse con la sustitución de una horquilla: la persona 
 \item ¿Cómo representar un montaje seleccionado y sus acabados sin confundir la visualización con una certificación mecánica?
 \item ¿Cómo conservar y recuperar las elecciones de cada usuario manteniendo el acceso privado a sus montajes?
 \item ¿Cómo administrar el catálogo y los permisos de acceso sin exponer operaciones privilegiadas en el navegador?
+\item ¿Cómo conservar precios, carrito, cotización, armado y pedido con totales autorizados y sin duplicar reservas o pagos?
 \item ¿Qué procedimientos permiten verificar los recorridos implementados y delimitar sus resultados?
 \end{enumerate}
 
 \subsection{Justificación}
-\textbf{Justificación práctica.} La plataforma reúne operaciones que forman parte de una misma decisión: explorar, comparar, configurar y guardar. Su aporte se evalúa a través de la posibilidad de completar ese recorrido y recuperar la configuración elegida, sin afirmar que sustituye la asesoría de un taller o la consulta final del fabricante.
+\textbf{Justificación práctica.} La plataforma reúne explorar, comparar, configurar, revisar y solicitar una compra. El valor comercial esperado es reducir fricción al explicar discrepancias y mantener una selección coherente con la cotización. Su modelo de negocio contempla ingresos por componentes y por armado opcional; una exoneración de ese servicio es una decisión del administrador antes de aceptar la compra. No se presentan ingresos, margen, ahorro o demanda como resultados medidos: los cobros de esta entrega siguen siendo simulados.
 
 \textbf{Justificación técnica.} El proyecto integra información estructurada, recursos tridimensionales y reglas de acceso. Separar las reglas de montaje de la presentación facilita probar decisiones sin depender del visor y permite reutilizar sus resultados en mensajes, guardado y comparación. La persistencia de identidades de variantes evita que una corrección del catálogo cambie silenciosamente un montaje anterior.
 
@@ -102,7 +103,7 @@ La situación puede ilustrarse con la sustitución de una horquilla: la persona 
 
 \subsection{Objetivos}
 \subsubsection{Objetivo general}
-Desarrollar e implementar una plataforma web que facilite la planificación del armado y modificación de bicicletas de montaña mediante la selección, comparación, visualización tridimensional aproximada y conservación de montajes personales.
+Desarrollar e implementar una plataforma web de venta asistida de componentes para bicicletas de montaña que integre consulta técnica, configuración tridimensional aproximada, montajes privados y gestión revisada de la compra.
 
 \subsubsection{Objetivos específicos}
 \begin{enumerate}[label=OE\arabic*.]
@@ -110,21 +111,22 @@ Desarrollar e implementar una plataforma web que facilite la planificación del 
 \item Implementar un configurador visual que permita incorporar piezas, modificar acabados y revisar avisos relacionados con las selecciones.
 \item Incorporar autenticación y persistencia para guardar, recuperar y gestionar montajes propios con control de acceso por usuario.
 \item Implementar operaciones administrativas de catálogo y autorización de acuerdo con permisos explícitos.
-\item Validar reglas y recorridos representativos, publicar el frontend y documentar resultados, dificultades y límites.
+\item Validar reglas y recorridos representativos, mantener el frontend publicable y documentar resultados, dificultades y límites.
+\item Implementar ofertas, promociones, carrito, cotizaciones, armado opcional, pedidos y pagos simulados, con precios autorizados y seguimiento por cuenta.
 \end{enumerate}
 
 \subsection{Alcance funcional y exclusiones}
-El alcance comprende catálogo público, búsqueda y filtros, fichas con variantes, comparación de hasta tres opciones de una misma categoría, inicio de montaje desde un cuadro o una composición de referencia, configuración visual, acabados habilitados, avisos, deshacer, selección por grupos, aplicación de pares cuando existen contrapartes, inspección visual de suspensión y gestión de montajes privados. También comprende administración de usuarios, roles, permisos y publicación de contenidos según autorización.
+El alcance comprende catálogo público, búsqueda, fichas, comparación de hasta tres variantes de una categoría, configuración de 23 posiciones, acabados habilitados, avisos y alternativas que resuelven conflictos documentados, deshacer, pares, inspección visual de suspensión y montajes privados. Incluye tienda propia con ofertas por variante/acabado, precios en soles, condición nueva/usada, stock de validación, promociones porcentuales o fijas no acumulables, carrito por cuenta, cotizaciones versionadas, retiro o envío cotizado, armado opcional, pedidos, simulación de pago y seguimiento. La administración organiza catálogo, prearmadas, accesos y ventas según permisos.
 
-El alcance excluye compras, pagos, inventario de tiendas, cotizaciones comerciales, colaboración entre cuentas y fabricación de piezas. Las referencias de precio, cuando existen, son informativas. La representación visual no es CAD de fabricación, cálculo estructural, motor físico ni verificación exhaustiva de contactos. Los conflictos identificados se comunican mediante avisos y no impiden necesariamente una combinación visual.
+Se excluyen cobros reales, integración contratada con pasarelas, cuentas bancarias receptoras reales, marketplace de terceros, fabricación, colaboración entre cuentas y certificación mecánica. El armado muestra inicialmente S/\,150 al solicitarlo; la tarifa es editable y el administrador puede dejarlo sin coste al revisar la cotización, antes de que el cliente acepte y cree el pedido. El precio comercial reside en la oferta y es distinto de cualquier referencia informativa de catálogo. Las geometrías no son CAD de fabricación ni verificaciones exhaustivas de contactos o resistencia.
 
 \begin{table}[H]
 \caption{Actores y necesidades atendidas}\label{tab:actores}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{3cm}XX}\toprule
 Actor & Necesidad & Respuesta del sistema\\\midrule
-Visitante & Explorar información sin crear una cuenta & Catálogo, fichas, comparación y referencias públicas.\\
-Usuario registrado & Construir y conservar una propuesta & Configurador y gestión de montajes propios, según permiso.\\
-Administrador autorizado & Mantener contenidos y acceso & Operaciones administrativas protegidas por permisos.\\
+Visitante & Explorar información sin crear una cuenta & Catálogo, precios publicados, fichas, comparación y carrito del navegador.\\
+Usuario registrado & Construir y conservar una propuesta & Montajes propios, carrito remoto, cotizaciones y pedidos, según permiso.\\
+Administrador autorizado & Mantener contenidos y acceso & Catálogo, accesos y ventas mediante operaciones protegidas.\\
 Responsable del proyecto & Publicar y mantener el producto & Fuentes versionadas, pruebas y despliegues separados.\\\bottomrule
 \end{tabularx}\end{tabla}
 \nota{El rol y la propiedad se comprueban en el backend; mostrar una opción en la interfaz no concede autorización. Elaboración propia.}
@@ -239,6 +241,9 @@ El diagrama de Gantt de la figura~\ref{fig:gantt} representa los mismos interval
 \end{figure}
 \end{landscape}
 
+\subsection{Ampliación comercial posterior a la línea base}
+El cronograma de tres semanas anterior se conserva como línea base académica reconstruida, no como explicación retrospectiva de los cambios incorporados después del 21 de octubre. La ampliación del 27 y 28 de octubre añade tienda, contratos comerciales, precios por modelo, armado, canales simulados de pago, identidad Cumbre y alternativas de compatibilidad. Las migraciones 028--041 y los commits del repositorio permiten seguir esos cambios; sus fechas no equivalen a horas de trabajo medidas. La actualización de entregables del 28 de octubre se realiza después de la implementación y no atribuye a Netlify un despliegue no ejecutado.
+
 \subsection{Recursos utilizados}
 \begin{table}[H]
 \caption{Recursos y uso dentro del proyecto}\label{tab:recursos}
@@ -271,7 +276,9 @@ R4 & Carga 3D lenta o fallo de WebGL & Alta & Medio & Carga diferida, reutilizac
 R5 & Consumo de cuotas gratuitas & Media & Medio & Medir archivos y transferencia; reducir duplicaciones y revisar uso antes de aumentar tráfico.\\
 R6 & Retornos OAuth o dominio mal configurados & Media & Alto & Registrar dominios exactos y probar regreso desde la web pública.\\
 R7 & Pérdida de cambios o guardado concurrente & Media & Alto & Borradores por cuenta, aviso antes de salir y revisión optimista en guardado.\\
-R8 & Sobrecarga del responsable individual & Media & Alto & Limitar alcance, reutilizar el prototipo y priorizar recorridos completos antes de pulido.\\\bottomrule
+R8 & Sobrecarga del responsable individual & Media & Alto & Limitar alcance, reutilizar componentes y priorizar recorridos completos.\\
+R9 & Importe o stock inconsistente & Media & Alto & Totales de servidor, reservas, revisión e idempotencia; pagos simulados separados de abonos reales.\\
+R10 & Confundir condición o precio inicial & Media & Alto & Condición declarada y precios editables por modelo; no presentar estimaciones como cotizaciones verificadas.\\\bottomrule
 \end{longtable}\end{tabla}
 
 \subsection{Control de cambios y aceptación}
@@ -316,7 +323,13 @@ RF12 & Administrar catálogo y referencias & Editar borradores y publicar conten
 RF13 & Inspeccionar la escena & Rotar, acercar y seleccionar piezas; disponer de lista textual si falla el visor.\\
 RF14 & Inspeccionar suspensión & Aplicar postura temporal según perfil y restablecer; no guardar la compresión como estado del montaje.\\
 RF15 & Aplicar pares equivalentes & Resolver posiciones delantera/trasera de forma atómica cuando existe contraparte y permitir deshacer.\\
-RF16 & Mostrar miniaturas & Representar el estado guardado mediante una imagen estática vinculada a su revisión.\\\bottomrule
+RF16 & Mostrar miniaturas & Representar el estado guardado mediante una imagen estática vinculada a su revisión.\\
+RF17 & Resolver avisos con alternativas & Ofrecer variantes publicadas con datos suficientes, sin nuevos conflictos; sustituir una posición y permitir deshacer.\\
+RF18 & Administrar ofertas y promociones & Precio/stock por SKU, condición y campañas porcentuales o fijas sin acumular ni pedidos gratuitos.\\
+RF19 & Conservar el carrito & Recuperar líneas por cuenta entre dispositivos; cierre de sesión limpia caché, no elimina carrito remoto.\\
+RF20 & Cotizar armado y entrega & Aplicar tarifa inicial, revisión humana, exoneración opcional y aviso al cliente antes de aceptar.\\
+RF21 & Crear y seguir pedidos & Fijar totales, reservar disponibilidad, rechazar revisiones obsoletas y registrar transiciones autorizadas.\\
+RF22 & Simular el pago & Elegir Yape, Plin, banco o tarjeta y registrar un resultado simulado sin recopilar credenciales bancarias.\\\bottomrule
 \end{longtable}\end{tabla}
 
 \subsection{Requisitos no funcionales}
@@ -337,7 +350,7 @@ RNF08 & Trazabilidad & Fuentes del catálogo, migraciones y versiones de recurso
 \end{table}
 
 \subsection{Arquitectura del sistema}
-La aplicación adopta una organización modular por funcionalidades. La interfaz coordina recorridos; las reglas del montaje operan sobre datos tipados; la escena traduce esos datos a objetos visuales; y los adaptadores se comunican con los servicios remotos. Esta separación se aprecia en la figura~\ref{fig:arquitectura} y no requiere crear un microservicio por cada módulo.
+La aplicación adopta una arquitectura modular por funcionalidades con principios selectivos de Clean Architecture: las reglas del dominio son independientes de la interfaz, del motor 3D y del proveedor de datos. La interfaz coordina recorridos; las reglas del montaje operan sobre datos tipados; la escena traduce esos datos a objetos visuales; y los adaptadores se comunican con los servicios remotos. Esta separación se aprecia en la figura~\ref{fig:arquitectura} y no requiere crear un microservicio por cada módulo.
 
 React permite descomponer una interfaz en componentes y explicitar su estado y flujo de datos \citep{react}. En el proyecto, esta organización se combina con reglas de dominio independientes de React, Three.js y Supabase. Por ejemplo, comparar dimensiones o decidir si falta una contraparte no requiere abrir el visor. La caché de consultas se mantiene separada del borrador editable para evitar que una respuesta remota reemplace cambios locales no guardados.
 
@@ -347,12 +360,12 @@ React permite descomponer una interfaz en componentes y explicitar su estado y f
 % Inicio: arquitectura.tex
 \begin{tikzpicture}[font={\small\setstretch{1}},box/.style={draw,rounded corners=2pt,align=center,text width=4cm,minimum height=1.1cm,fill=black!3},arr/.style={-Latex,thick}]
 \node[box] (user) at (0,0) {Persona usuaria\\Navegador web};
-\node[box] (ui) at (0,-2) {Interfaz React\\Catálogo, configuración\\y gestión};
+\node[box] (ui) at (0,-2) {Interfaz React\\Catálogo, configuración\\y comercio};
 \node[box] (rules) at (-3,-4.2) {Reglas de montaje\\Validación y avisos};
 \node[box] (scene) at (3,-4.2) {Escena Three.js\\Archivos y\\generación local};
 \node[box] (netlify) at (5.4,0) {Netlify\\Frontend y fotografías};
 \node[box] (api) at (0,-6.3) {Supabase Cloud\\Auth, API y funciones};
-\node[box] (db) at (-3,-8.3) {PostgreSQL\\Catálogo, permisos\\y montajes};
+\node[box] (db) at (-3,-8.3) {PostgreSQL\\Catálogo, permisos,\\montajes y ventas};
 \node[box] (storage) at (3,-8.3) {Storage\\Modelos GLB\\y miniaturas};
 \draw[arr] (netlify)--node[above]{HTTPS}(user);
 \draw[arr] (user)--(ui);
@@ -370,7 +383,7 @@ React permite descomponer una interfaz en componentes y explicitar su estado y f
 El frontend publicado en Netlify se comunica con Supabase Cloud. PostgreSQL conserva entidades y relaciones; Auth gestiona identidades y sesiones; Storage mantiene archivos de modelos importados y miniaturas; las funciones de servidor atienden operaciones de cuentas que necesitan privilegios. Las fotografías incluidas en la aplicación se publican con el frontend. No existe una segunda base local requerida para ejecutar la aplicación.
 
 \subsection{Diseño de datos}
-El modelo tiene ocho tablas de negocio y cuatro de autorización propias de la aplicación, además de la identidad administrada por Auth. Se separan modelo, variante y recurso visual: un modelo agrupa opciones comerciales; una variante representa una elección concreta; y el recurso contiene la descripción o archivo con que se muestra. Por ello, el número de modelos no coincide con el de elecciones ni con el de archivos históricos.
+El modelo conserva ocho tablas base de catálogo/montajes y cuatro de autorización IAM, y añade doce comerciales: veinticuatro tablas propias en total, aparte de los esquemas gestionados por Supabase Auth y Storage. Se separan modelo, variante, recurso visual y oferta vendible. La misma identidad comercial puede enlazar revisiones visuales sin duplicar el precio por cada archivo GLB. Los pedidos aceptados conservan instantáneas de precio, acabado y condición; no se reinterpretan por cambios posteriores del catálogo.
 
 \begin{figure}[H]
 \caption{Modelo lógico de catálogo, referencias y montajes}\label{fig:datos}
@@ -399,7 +412,7 @@ El modelo tiene ocho tablas de negocio y cuatro de autorización propias de la a
 
 % Fin: datos.tex
 
-\nota{Cada flecha indica la relación conceptual rotulada; las claves foráneas se detallan en el anexo. \ruta{auth.users} es una tabla administrada por el servicio, no una decimotercera tabla propia. Elaboración propia.}
+\nota{Cada flecha indica la relación conceptual rotulada; las claves foráneas se detallan en el anexo. \ruta{auth.users} es una tabla administrada por el servicio, no se cuenta entre las veinticuatro tablas propias. Elaboración propia.}
 \end{figure}
 
 Las tablas \ruta{brands}, \ruta{components}, \ruta{component_variants} y \ruta{visual_assets} describen fabricantes, modelos, elecciones y representaciones. \ruta{bike_presets} y \ruta{bike_preset_items} almacenan composiciones de referencia. \ruta{builds} y \ruta{build_items} conservan las propuestas de cada usuario. Las características específicas se almacenan en estructuras JSONB con contrato por categoría; las relaciones de identidad y propiedad permanecen como columnas y claves foráneas.
@@ -429,10 +442,28 @@ La composición guardada contiene posiciones, identificadores de variantes, acab
 
 Las cuatro tablas de autorización son \ruta{roles}, \ruta{permissions}, \ruta{role_permissions} y \ruta{user_roles}, dentro del esquema \ruta{iam}. El registro recibe el rol base de usuario. Un permiso identifica una operación implementada; un rol agrupa permisos; y la asignación vincula la identidad con un rol. Los roles iniciales protegidos no se editan como roles ordinarios.
 
+\subsubsection{Relaciones comerciales y tarifa de servicio}
+La oferta \ruta{store_offers} conserva SKU, importe en céntimos, moneda PEN, condición y stock. \ruta{store_offer_variants} vincula variantes/acabados; las promociones se relacionan con ofertas. Carrito, cotización y pedido son registros distintos: la cotización revisa condiciones; el pedido fija la aceptación y contiene la reserva implícita. Los intentos de pago y eventos no duplican la lista de productos. Una fila de \ruta{sales_service_settings} conserva tarifa de armado y revisión; cada solicitud fija su importe base para que modificar la tarifa global no altere solicitudes anteriores.
+
+\begin{figure}[H]\caption{Continuidad comercial desde la oferta hasta el pedido}\label{fig:comercio}
+\centering
+\begin{tikzpicture}[font=\small,box/.style={draw,rounded corners=2pt,align=center,text width=3.6cm,minimum height=1.2cm,fill=black!3},arr/.style={-Latex,thick}]
+\node[box](o)at(0,0){Oferta / SKU\\Variante, acabado, condición\\Precio y stock};
+\node[box](c)at(5,0){Carrito por cuenta\\Líneas y cantidades};
+\node[box](q)at(5,-2.5){Cotización versionada\\Armado y envío revisados\\Aviso al cliente};
+\node[box](p)at(0,-2.5){Pedido e instantáneas\\Total aceptado y reserva};
+\node[box](e)at(0,-5){Pago simulado / eventos\\Resultado y seguimiento};
+\node[box](s)at(5,-5){Tarifa de armado\\Base fijada por solicitud\\Exoneración antes de aceptar};
+\draw[arr](o)--(c);\draw[arr](c)--(q);\draw[arr](q)--(p);\draw[arr](p)--(e);\draw[arr](s)--(q);
+\draw[arr,dashed](c.west)--++(-.6,0)--++(0,-1.2)--node[above,font=\scriptsize]{retiro sin armado}(p.north);
+\end{tikzpicture}
+\nota{Elaboración propia. No se efectúan cobros reales; reserva, aceptación y stock sí se gestionan en el backend de validación.}
+\end{figure}
+
 \subsection{Autenticación, propiedad y límites de confianza}
 La autenticación responde quién accede, mientras la autorización determina qué puede hacer. La política por filas de PostgreSQL permite restringir registros según condiciones del usuario y se combina con privilegios de acceso \citep{postgres,rls}. En este sistema, la propiedad de un montaje se comprueba en la base y las operaciones administrativas validan permisos vigentes en el backend.
 
-El acceso con Google delega la autenticación al proveedor y utiliza el soporte de Supabase. El flujo de retorno necesita direcciones autorizadas y un canje de código; no requiere almacenar la contraseña de Google en la aplicación \citep{oauth}. La figura~\ref{fig:flujo} muestra su relación con la apertura y guardado de una propuesta. La interfaz puede ocultar acciones, pero la seguridad no depende de esa ocultación.
+El acceso con Google delega la autenticación al proveedor y utiliza el soporte de Supabase. El flujo de retorno necesita direcciones autorizadas y un canje de código protegido mediante PKCE; Supabase emite su propia sesión con tokens de acceso y renovación. No requiere almacenar la contraseña de Google en la aplicación \citep{oauth}. La figura~\ref{fig:flujo} muestra su relación con la apertura y guardado de una propuesta. La interfaz puede ocultar acciones, pero la seguridad no depende de esa ocultación.
 
 \begin{figure}[H]
 \caption{Flujo de acceso y persistencia de un montaje}\label{fig:flujo}
@@ -483,7 +514,8 @@ La solución emplea TypeScript para los contratos y reglas, React para la interf
 \ruta{features/configurator/scene} & Carga de recursos, representación, selección y movimiento visual.\\
 \ruta{features/garage} & Listado, guardado, recuperación y gestión de montajes propios.\\
 \ruta{features/bike-preview} & Captura y lectura de miniaturas del estado guardado.\\
-\ruta{features/admin} & Administración de cuentas, roles, catálogo y referencias.\\
+\ruta{features/admin} & Administración modular de accesos, catálogo y referencias.\\
+\ruta{features/commerce} & Ofertas, promociones, carrito, cotizaciones, pedidos, avisos y pagos simulados.\\
 \ruta{supabase} & Migraciones, operaciones, función de cuentas y pruebas del backend.\\\bottomrule
 \end{tabularx}\end{tabla}
 \nota{Rutas relativas al código fuente. Las carpetas features se encuentran dentro de src. Elaboración propia.}
@@ -495,9 +527,9 @@ El catálogo agrupa información por categoría, modelo y variante. Las tarjetas
 La revisión registra 70 modelos publicados y 146 elecciones actuales. La diferencia corresponde a alternativas útiles, por ejemplo tallas o medidas, y no a una combinación automática de todos los colores y años. La interfaz distingue dieciocho categorías organizadas en siete grupos. La comparación se limita a variantes de una misma categoría para alinear atributos pertinentes; no asigna una puntuación universal de calidad ni declara una alternativa mejor por un único número.
 
 \begin{figure}[H]
-\caption{Selector de categorías en el catálogo publicado}\label{fig:categorias}
+\caption{Selector de categorías en el catálogo actual}\label{fig:categorias}
 \centering\includegraphics[width=.36\textwidth,height=.66\textheight,keepaspectratio]{recursos/02-categorias.png}
-\nota{Captura propia de la aplicación pública. Se muestra el selector para evidenciar agrupación, tamaño de las opciones e iconos, sin destacar nombres comerciales de productos.}
+\nota{Captura propia de la versión actual local. Se muestra el selector para evidenciar agrupación, tamaño de las opciones e iconos, sin destacar nombres comerciales de productos.}
 \end{figure}
 
 \subsection{Configuración tridimensional}
@@ -513,6 +545,31 @@ El montaje contempla 23 posiciones. Los pares delantero/trasero pueden aplicarse
 \nota{Captura propia de una sesión temporal de validación. La vista frontal evita destacar rotulación comercial. Se muestra una representación aproximada, no un modelo de fabricación ni una validación mecánica.}
 \end{figure}
 
+\subsection{Venta asistida, carrito y revisión del armado}
+El catálogo muestra precios de venta por oferta y su condición. Cuadros, horquillas y amortiguadores se orientan a segunda mano; el resto conserva la condición declarada. Los importes iniciales se revisaron por modelo y unidad comercial, pero combinan referencias observadas y estimaciones: no todos son cotizaciones verificadas del mercado peruano. No se representa una diferencia ficticia de precio por color, talla o carrera cuando comercialmente no existe.
+
+Añadir una pieza actualiza el carrito tras un guardado correcto y confirma con check y animación breve; los fallos no muestran éxito. El panel conserva un importe por línea, precio unitario solo al llevar varias unidades y un total. El carrito de cuenta se recupera desde otro dispositivo; el de visitante permanece en su navegador hasta la decisión explícita de combinarlo con el remoto.
+
+En \textbf{Revisar pedido} se eligen retiro o envío y el armado opcional. El armado aplica S/\,150 iniciales, editables en Administración; requiere un montaje guardado que coincida con las piezas vendibles solicitadas. La revisión humana conserva o exonera el servicio, cotiza entrega cuando corresponde y publica el resultado. La campana muestra un aviso persistente que el cliente puede consultar y marcar como leído. Los importes del pedido se fijan tras aceptar; el servicio no se exonera automáticamente por cantidad de componentes.
+
+Los métodos de pago se presentan con logotipos locales de Yape, Plin y bancos BCP, Interbank, BBVA y Scotiabank, además de una opción de tarjeta. Elegir un banco conserva una preferencia, no prueba un abono. Esta entrega simula aprobación, rechazo o cancelación y no pide números de tarjeta, credenciales o cuentas bancarias personales.
+
+\subsection{Alternativas que resuelven incompatibilidades}
+Desde un conflicto conocido se abre \textbf{Ver alternativas} dentro del mismo panel. Una regla pura comprueba la sustitución con medidas presentes, desaparición del aviso, ausencia de nuevos conflictos y de nuevos datos desconocidos; un dato ausente no se considera solución. Los pendientes previos permanecen visibles. La lista muestra foto, variante/acabado, condición y precio; compara importes solo cuando existe una oferta del acabado exacto y la unidad/moneda coinciden. Un fallo de precio no impide probar la alternativa visualmente.
+
+Cada sustitución afecta una posición, incluso con la selección conjunta de ruedas activada. El cuadro conserva su confirmación habitual. El montaje y sus variantes se revalidan antes y después de cargar el recurso; deshacer y guardado mantienen el recorrido anterior. Se consultan hasta 24 modelos por página y seis opciones visibles; un solo lote de ofertas cubre las opciones y la pieza actual. Abrir la lista no descarga GLB.
+
+\begin{figure}[H]
+\caption{Alternativas disponibles para resolver un conflicto documentado}\label{fig:alternativas-comercio}
+\centering\includegraphics[width=.88\textwidth,height=.49\textheight,keepaspectratio]{recursos/05-alternativas.png}
+\nota{Captura local del 28 de octubre. Se muestran opciones calculadas con datos presentes, sin certificar ajuste físico. La cuenta de práctica se eliminó al terminar.}
+\end{figure}
+\begin{figure}[H]
+\caption{Métodos de pago en el recorrido comercial}\label{fig:metodos-pago}
+\centering\includegraphics[width=\textwidth,height=.52\textheight,keepaspectratio]{recursos/06-metodos-pago.png}
+\nota{Captura local del 28 de octubre. Los métodos representan una simulación: no se configuraron cuentas receptoras ni se realizaron cobros reales.}
+\end{figure}
+
 \subsection{Acceso y gestión de la cuenta}
 La aplicación dispone de formularios de credenciales y de acceso con Google. El cliente procesa el retorno autorizado, verifica el código una vez y consulta permisos antes de continuar la intención interna. La cuenta del proveedor no determina un rol administrativo. El menú de cuenta informa identidad y rol, ofrece destinos autorizados y reutiliza el cierre de sesión con aviso de cambios pendientes.
 
@@ -521,7 +578,7 @@ La publicación se realizó en \url{https://atlasmtb.netlify.app/}. Se verificó
 \subsection{Persistencia, versiones y miniaturas}
 Guardar envía una configuración validada a una operación transaccional. La cuenta autenticada determina el propietario; la revisión esperada detecta que otra sesión haya actualizado el montaje. Si la revisión es obsoleta, el backend rechaza la escritura y evita reemplazar silenciosamente la versión vigente. La validación pública del informe comprobó ese rechazo con una cuenta temporal.
 
-El catálogo conserva recursos históricos. La auditoría de Storage revisó 316 archivos 3D y encontró 87 usados por las elecciones actuales y 229 históricos. Las huellas y tamaños registrados coincidieron con las copias locales contrastadas; no se detectaron copias idénticas repetidas en esa revisión. Las rutas históricas no se eliminan solo por tener nombres similares, porque los montajes guardados pueden depender de ellas.
+El catálogo conserva recursos históricos. El inventario versionado de producto identifica 318 archivos GLB finales: 89 actuales y 229 históricos. Las huellas y tamaños registrados coincidieron con las copias locales contrastadas; no se detectaron copias idénticas repetidas en esa revisión. Las rutas históricas no se eliminan solo por tener nombres similares, porque los montajes guardados pueden depender de ellas.
 
 Las miniaturas se almacenan separadas del modelo de datos del montaje. Cada imagen corresponde a una revisión visual y se consulta con autorización cuando pertenece a una cuenta. Los recursos GLB públicos facilitan la representación del catálogo; los montajes propios y sus miniaturas no se convierten por ello en información pública.
 
@@ -546,10 +603,10 @@ La evaluación se organiza en cuatro niveles: reglas y contratos automatizados; 
 
 Vitest permite ejecutar pruebas de código y Playwright automatiza interacciones de navegador \citep{vitest,playwright}. En este proyecto, las pruebas comprueban resultados observables, estados y restricciones. Las capturas del informe documentan la interfaz y no sustituyen las aserciones de guardado, propiedad o revisión.
 
-Para la revisión del informe se ejecutó la suite actual. Una primera pasada produjo un timeout de cinco segundos en una prueba de alineación de componentes bajo concurrencia. Se repitió la suite con dos trabajadores y un límite de quince segundos por prueba, sin cambiar las aserciones ni el código de producto: se obtuvieron 487 pruebas correctas y dos omitidas, distribuidas en 71 archivos correctos y un archivo omitido. El cambio de límite del runner no se interpreta como cumplimiento de una meta de rendimiento del usuario.
+La revisión del 28 de octubre distingue la repetición actual de la suite general (564 pruebas correctas y dos omitidas, 83 archivos), las 60 pruebas dirigidas comerciales/de compatibilidad previas al comiteo y los recorridos autenticados. Los conteos corresponden a ejecuciones concretas y no deben sumarse como escenarios distintos. La recompilación y repetición final para esta actualización se registran en \ruta{recursos/pruebas-resumen.txt}. Las capturas de la revisión actual se obtienen del frontend local conectado al backend Cloud, sin presentar como publicado un código no desplegado.
 
-\subsection{Validación pública con cuentas temporales}
-La comprobación pública utilizó el frontend real de Netlify y dos cuentas temporales creadas y confirmadas por API exclusivamente para la prueba. No se utilizaron datos personales ni contraseñas del autor. La primera cuenta abrió una composición, guardó sus 23 posiciones y volvió a abrirla; la segunda intentó consultar ese montaje. Al finalizar se eliminaron las cuentas y sus recursos temporales. La confirmación por API evita enviar correo y por ello no valida el registro normal por correo electrónico.
+\subsection{Validación funcional con cuentas temporales}
+La revisión histórica pública del 21 de octubre utilizó Netlify y dos cuentas temporales; la actualización actual reproduce los recorridos sobre el código local conectado a Supabase Cloud. Se conserva la distinción de entorno en las notas de evidencia. Las cuentas se crean y confirman por API únicamente para comprobar la aplicación, y se eliminan al finalizar. Esa confirmación no valida entrega real de correo ni repite el consentimiento de Google.
 
 \begin{tabla}
 \begin{longtable}{L{.9cm}L{4.6cm}L{5.8cm}L{2cm}}
@@ -557,24 +614,28 @@ La comprobación pública utilizó el frontend real de Netlify y dos cuentas tem
 ID & Procedimiento & Resultado observado & Evidencia\\\midrule\endfirsthead
 \multicolumn{4}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule ID & Procedimiento & Resultado observado & Evidencia\\\midrule\endhead
 T01 & Compilar el frontend & Compilación de TypeScript y salida de Vite correctas. & Registro de build.\\
-T02 & Ejecutar reglas y contratos & 487 pruebas correctas, dos omitidas; repetición con dos trabajadores y 15 s de límite. & Registro de Vitest.\\
+T02 & Ejecutar reglas y contratos & Suite general y pruebas dirigidas identificadas en el resumen; no sumar ejecuciones repetidas. & Registro de Vitest.\\
 T03 & Abrir rutas públicas & Portada, catálogo, bicicletas, acceso y callback sirven la aplicación con HTTPS. & HTTP y navegador.\\
-T04 & Consultar catálogo y buscar un texto ausente & Se muestran piezas y un estado controlado sin resultados cuando corresponde. & Validación pública.\\
-T05 & Autenticar una cuenta temporal & Acceso desde el formulario y apertura del espacio privado. & Navegador real.\\
+T04 & Consultar catálogo y buscar un texto ausente & Se muestran piezas y un estado controlado sin resultados cuando corresponde. & Navegador local/Cloud.\\
+T05 & Autenticar una cuenta temporal & Acceso desde el formulario y apertura del espacio privado. & Navegador automatizado.\\
 T06 & Aplicar una composición & La propuesta contiene las 23 posiciones esperadas. & Escena y datos.\\
 T07 & Guardar y leer el montaje & Persisten las 23 posiciones y aparece confirmación de guardado. & API de la cuenta.\\
 T08 & Consultar con otra cuenta & La consulta del montaje ajeno devuelve cero registros. & Dos identidades.\\
 T09 & Guardar con revisión obsoleta & Se rechaza la escritura con código de conflicto PT409. & Operación remota.\\
-T10 & Reabrir el montaje guardado & Se abre el detalle de la bicicleta persistida. & Navegador real.\\
-T11 & Cerrar sesión & La interfaz vuelve a ofrecer acceso público. & Navegador real.\\
+T10 & Reabrir el montaje guardado & Se abre el detalle de la bicicleta persistida. & Navegador automatizado.\\
+T11 & Cerrar sesión & La interfaz vuelve a ofrecer acceso público. & Navegador automatizado.\\
 T12 & Revisar móvil emulado & Selector utilizable y ausencia de desbordamiento horizontal a 393 px. & Navegador emulado.\\
 T13 & Acceder con Google & Configuración pública leída y recorrido real confirmado por el autor. & Lectura y confirmación manual.\\
 T14 & Probar comunicación administrativa & Orígenes público/local admitidos; origen ajeno 403 y visitante 401. & Peticiones al backend.\\
-T15 & Abrir y cerrar fichas desde un listado desplazado & Se conserva desplazamiento y foco; salida lateral/móvil y cierre inmediato con movimiento reducido. & Suite de navegador previa.\\\bottomrule
+T15 & Abrir y cerrar fichas & Se conserva contexto y foco; movimiento reducido disponible. & Suite y capturas.\\
+T16 & Resolver un conflicto de rueda & Una alternativa corrige el aviso sin cambiar la rueda opuesta; deshacer y reapertura conservados. & Reglas y navegador.\\
+T17 & Cotizar armado & Tarifa inicial, exoneración y aviso persistente; cliente revisa total antes del pedido. & SQL y navegador.\\
+T18 & Seleccionar canal y simular pago & Banco elegido e intento quedan registrados; sin transferencia real. & Comercio desktop/móvil.\\
+T19 & Reintentar operaciones & Contratos rechazan conflictos y evitan duplicar consumo/reservas. & SQL y pruebas comerciales.\\\bottomrule
 \end{longtable}\end{tabla}
 \nota{T15 corresponde a los recorridos de regresión registrados en el proyecto; no se confunde con una medición de teléfono físico. El anexo detalla los archivos de evidencia y las omisiones.}
 
-La validación pública específica registró trece comprobaciones correctas: portada, catálogo, estado sin resultados, entrada, configuración de 23 posiciones, guardado, persistencia, aislamiento, revisión obsoleta, reapertura, cierre, ausencia de errores JavaScript y adaptación móvil emulada. El resumen se conserva como un archivo JSON sin credenciales. Esta comprobación amplía la evidencia del despliegue con operaciones reales y no solo con capturas.
+La validación pública histórica del 21 de octubre registró trece comprobaciones correctas: portada, catálogo, estado sin resultados, entrada, configuración de 23 posiciones, guardado, persistencia, aislamiento, revisión obsoleta, reapertura, cierre, ausencia de errores JavaScript y adaptación móvil emulada. El resumen se conserva como un archivo JSON sin credenciales. Esta comprobación amplía la evidencia del despliegue con operaciones reales y no solo con capturas.
 
 \subsection{Resultados de inventario e infraestructura}
 \begin{table}[H]
@@ -586,17 +647,18 @@ Elecciones actuales de variante & 146\\
 Variantes conservadas, incluido historial & 782\\
 Recursos visuales registrados, incluido historial & 780\\
 Composiciones prearmadas públicas & 4\\
+Ofertas comerciales y vínculos de variantes & 140 y 689\\
 Categorías y posiciones de montaje & 18 y 23\\
-Tablas propias de negocio y autorización & 8 y 4\\
-Migraciones aplicadas & 22\\
-Archivos GLB almacenados & 316\\
-Archivos GLB usados por elecciones actuales & 87\\
+Tablas propias de negocio y autorización & 20 y 4\\
+Migraciones aplicadas & 41\\
+Archivos GLB finales versionados & 318\\
+Archivos GLB actuales versionados & 89\\
 Archivos GLB históricos & 229\\\bottomrule
 \end{tabularx}\end{tabla}
 \nota{Consultas de lectura del backend y auditoría de archivos. Los recursos visuales incluyen representaciones generadas por código; por ello 780 registros no equivalen a 780 archivos GLB. Las elecciones tampoco equivalen al número de modelos. Elaboración propia.}
 \end{table}
 
-La consulta de Storage registró aproximadamente 400 MB de modelos, además de un volumen menor de miniaturas. El frontend compilado observado durante la preparación del despliegue era de aproximadamente 8,8 MB. Esas cifras describen contenido almacenado o publicado y no transferencia mensual. La cantidad de descargas depende del uso, la caché y las piezas consultadas, por lo que no se deduce capacidad de usuarios solo a partir del tamaño de los archivos.
+Los conteos separan registros del backend y archivos del inventario local: 780 recursos visuales incluyen representaciones generadas por código, mientras 318 son archivos GLB finales versionados. Los resultados no equivalen a transferencia mensual ni a capacidad de usuarios. El stock inicial y los pagos pertenecen al entorno de validación; no demuestran existencias físicas ni facturación real.
 
 \subsection{Trazabilidad de objetivos}
 \begin{table}[H]
@@ -604,10 +666,11 @@ La consulta de Storage registró aproximadamente 400 MB de modelos, además de u
 \begin{tabla}\begin{tabularx}{\textwidth}{L{1.5cm}XX}\toprule
 Objetivo & Resultado implementado & Evidencia y límite\\\midrule
 OE1 & Catálogo estructurado y comparación por categoría & Inventario, pruebas de reglas y recorrido público; sin estudio de comprensión con usuarios.\\
-OE2 & Configuración visual y avisos & Montaje de 23 posiciones y escena; aproximación exterior sin certificación mecánica.\\
+OE2 & Configuración visual, avisos y soluciones & Montaje de 23 posiciones, alternativas y sustitución individual; aproximación exterior sin certificación mecánica.\\
 OE3 & Acceso y persistencia propia & Guardado/reapertura, aislamiento entre cuentas y conflicto de revisión. Correo real pendiente de evaluación específica.\\
 OE4 & Administración por permisos & Fuentes, pruebas previas del backend y comprobación pública de rechazo sin sesión; no se reproducen todos los escenarios administrativos en la captura académica.\\
-OE5 & Validación y publicación & Suite, recorridos, dominio HTTPS y acceso Google confirmado; móvil físico y resultados de adopción no evaluados.\\\bottomrule
+OE5 & Validación y publicación & Suite y recorridos actuales locales/Cloud; publicación previa y acceso Google confirmado, sin certificar último despliegue.\\
+OE6 & Venta asistida & Carrito, cotización, armado, pedidos y pagos simulados; cobro real y rentabilidad no evaluados.\\\bottomrule
 \end{tabularx}\end{tabla}
 \nota{Cumplimiento referido a funciones y escenarios comprobados, no a una mejora cuantificada en decisiones de compra. Elaboración propia.}
 \end{table}
@@ -616,9 +679,9 @@ OE5 & Validación y publicación & Suite, recorridos, dominio HTTPS y acceso Goo
 La figura~\ref{fig:portada} presenta la entrada pública, y la figura~\ref{fig:movil} muestra la organización del selector en un ancho móvil. Las imágenes se incorporan en el documento y también se entregan como recursos para recompilarlo. No se incluyen capturas de sesiones personales del autor ni paneles con credenciales del backend.
 
 \begin{figure}[H]
-\caption{Portada de la aplicación publicada}\label{fig:portada}
+\caption{Portada de la versión actual de ATLAS MTB}\label{fig:portada}
 \centering\includegraphics[width=\textwidth,height=.6\textheight,keepaspectratio]{recursos/01-portada.png}
-\nota{Captura propia del frontend público. La fotografía de ambientación pertenece a la selección local del proyecto; su procedencia se conserva en el anexo.}
+\nota{Captura propia de la versión actual en entorno local. La fotografía de ambientación pertenece a la selección local del proyecto; su procedencia se conserva en el anexo.}
 \end{figure}
 
 \begin{figure}[H]
@@ -647,9 +710,10 @@ La figura~\ref{fig:portada} presenta la entrada pública, y la figura~\ref{fig:m
 \begin{enumerate}
 \item Se desarrolló una plataforma que integra consulta, comparación y configuración visual de componentes en un mismo recorrido. El catálogo distingue modelos, variantes y recursos, con 70 modelos y 146 elecciones actuales en la revisión. Esto responde al objetivo de organizar información para evaluar alternativas; no demuestra por sí solo que una población de usuarios comprenda mejor sus decisiones.
 \item El configurador permite construir una propuesta de 23 posiciones, sustituir piezas y conservar acabados habilitados. La escena ofrece una representación exterior aproximada y los avisos comunican conflictos conocidos o información insuficiente. El resultado apoya la planificación visual, sin certificar instalación mecánica, resistencia ni recorrido completo de suspensión.
-\item La persistencia se comprobó sobre el frontend publicado con cuentas temporales: se guardó y reabrió un montaje completo, otra identidad no pudo leerlo y se rechazó una escritura con revisión obsoleta. Estas evidencias respaldan los escenarios de propiedad e integridad probados, sin sustituir una auditoría completa de seguridad.
+\item La persistencia se comprobó con cuentas temporales sobre los entornos documentados: se guardó y reabrió un montaje completo, otra identidad no pudo leerlo y se rechazó una escritura con revisión obsoleta. Estas evidencias respaldan los escenarios de propiedad e integridad probados, sin sustituir una auditoría completa de seguridad.
 \item La administración se implementó mediante permisos explícitos, operaciones de backend y separación de secretos. La publicación requirió ajustar orígenes y direcciones de retorno; las comprobaciones distinguen admisión de comunicación, identidad y autorización. La existencia de una interfaz administrativa no se utilizó como única prueba de protección.
-\item El frontend se encuentra disponible con HTTPS en Netlify y mantiene Supabase Cloud como backend. La suite revisada obtuvo 487 pruebas correctas y dos omitidas bajo un runner de concurrencia limitada. El acceso Google fue confirmado por el autor y la revisión pública añadió trece comprobaciones de funcionamiento. Los resultados se presentan con su entorno, alcance y límites.
+\item La revisión actual integra venta asistida, carrito, cotización de armado, pedidos y pagos simulados. La validación cubre reglas, persistencia, aislamiento e interacción; los conteos de prueba y entornos se registran en los resultados. Existe una publicación previa en Netlify, pero actualizar los documentos no despliega el código nuevo ni habilita cobros reales.
+
 \end{enumerate}
 
 \subsection{Aprendizajes de gestión y desarrollo}
@@ -664,6 +728,7 @@ La reconstrucción del cronograma ayuda a explicar dependencias y solapamientos,
 \item \textbf{Mantenimiento del catálogo.} Establecer una revisión periódica de fuentes, medidas y disponibilidad de variantes, conservando referencias históricas y controles de publicación.
 \item \textbf{Flujos de correo.} Configurar y verificar entrega real de confirmación, invitación y recuperación antes de afirmar su aceptación integral. El acceso con un proveedor externo no elimina esa comprobación si se mantiene el registro por correo.
 \item \textbf{Accesibilidad y estabilidad.} Ampliar la evaluación con tecnologías de asistencia, errores de red y tareas prolongadas, además de las revisiones actuales de foco, teclado y movimiento reducido.
+\item \textbf{Operación comercial real.} Verificar existencias físicas, política de atención y costes antes de habilitar cobros; contratar/configurar un canal de pago y validar sus confirmaciones si se decide salir de la simulación. No se afirma rentabilidad o demanda sin evidencia.
 \item \textbf{Seguimiento operativo.} Revisar cuotas de almacenamiento y transferencia según tráfico observado, y comprobar despliegues posteriores mediante una selección estable de pruebas. No se propone infraestructura adicional sin evidencia de necesidad.
 \end{enumerate}
 
@@ -678,7 +743,9 @@ La reconstrucción del cronograma ayuda a explicar dependencias y solapamientos,
 \setlength{\bibhang}{1.27cm}
 \setlength{\bibsep}{0pt}
 \begin{thebibliography}{99}
-\bibitem[Desmeules(2021)]{foto} Desmeules, N.. (2021, 27 de julio). \textit{Man in black jacket and black helmet riding on motocross dirt bike on mountain during daytime} [Fotografía]. Unsplash. \url{https://unsplash.com/photos/man-in-black-jacket-and-black-helmet-riding-on-motocross-dirt-bike-on-mountain-during-daytime-XpB8y73sEEw}
+\bibitem[Desmeules(2021)]{foto} Desmeules, N. (2021, 27 de julio). \textit{Man in black jacket and black helmet riding on motocross dirt bike on mountain during daytime} [Fotografía]. Unsplash. \url{https://unsplash.com/photos/man-in-black-jacket-and-black-helmet-riding-on-motocross-dirt-bike-on-mountain-during-daytime-XpB8y73sEEw}
+\bibitem[Fanatik(s. f.)]{fanatik} Fanatik. (s. f.). \textit{Custom bike builder}. \url{https://www.fanatikbike.com/products/bike-builder}
+\bibitem[Jenson USA(s. f.)]{jenson} Jenson USA. (s. f.). \textit{Custom bike builder}. \url{https://www.jensonusa.com/landing-pages/bike-builder}
 \bibitem[Khronos 3D Formats Working Group(2021)]{gltf} Khronos 3D Formats Working Group. (2021). \textit{glTF 2.0 specification} (versión 2.0.1). \url{https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html}
 \bibitem[Netlify(s. f.)]{netlify} Netlify. (s. f.). \textit{Vite on Netlify}.  \url{https://docs.netlify.com/build/frameworks/framework-setup-guides/vite/}
 \bibitem[Playwright(s. f.)]{playwright} Playwright. (s. f.). \textit{Installation}.  \url{https://playwright.dev/docs/intro}
@@ -716,6 +783,24 @@ Entidad & Identidad y relaciones & Campos representativos\\\midrule\endfirsthead
 \ruta{build_items} & PK id; FK build\_id y variant\_id & slot, finish\_id, custom\_color.\\\bottomrule
 \end{longtable}\end{tabla}
 
+\begin{tabla}\begin{longtable}{L{4cm}L{4.7cm}L{4.9cm}}
+\caption{Entidades comerciales y relaciones principales}\label{tab:diccionariocomercial}\\\toprule
+Entidad & Identidad y relaciones & Propósito\\\midrule\endfirsthead
+\multicolumn{3}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule Entidad & Identidad y relaciones & Propósito\\\midrule\endhead
+\ruta{store_offers} & PK id; FK component\_id & SKU, precio, moneda, condición y stock.\\
+\ruta{store_offer_variants} & PK variante/acabado; FK oferta & Une elección visual y producto vendible.\\
+\ruta{promotions} & PK id & Descuento, vigencia, estado y revisión.\\
+\ruta{promotion_offers} & PK promoción/oferta & Productos incluidos en campaña.\\
+\ruta{carts} & PK id; usuario único de Auth & Carrito remoto y revisión.\\
+\ruta{cart_items} & PK carrito/oferta & Cantidades, sin precio aceptado fijo.\\
+\ruta{sales_quotes} & PK id; usuario, serie y montaje origen & Versiones, revisión técnica, importes y aviso leído.\\
+\ruta{orders} & PK id; usuario y cotización opcional & Total aceptado, reserva, preferencia de pago y estado.\\
+\ruta{order_items} & PK id; pedido y oferta & Cantidad e instantáneas comerciales aceptadas.\\
+\ruta{payment_attempts} & PK id; FK pedido & Canal, resultado simulado y clave de reintento.\\
+\ruta{order_events} & PK id; pedido y actor & Seguimiento de transiciones autorizadas.\\
+\ruta{sales_service_settings} & PK singleton; editor de Auth & Tarifa global de armado y revisión.\\\bottomrule
+\end{longtable}\end{tabla}
+
 \begin{table}[H]
 \caption{Entidades del esquema de autorización}\label{tab:diccionarioiam}
 \begin{tabla}\begin{tabularx}{\textwidth}{L{3.7cm}X}\toprule
@@ -737,8 +822,8 @@ Archivo o ubicación & Contenido y alcance\\\midrule
 \ruta{recursos/02-categorias.png} & Selector de escritorio, sin destacar modelos comerciales.\\
 \ruta{recursos/03-montaje-3d.png} & Escena de una propuesta completa desde cuenta temporal.\\
 \ruta{recursos/04-categorias-movil.png} & Selector en viewport móvil emulado.\\
-\ruta{recursos/catalogo-resumen.json} & Conteos agregados de lectura: sin cuentas, credenciales o montajes personales.\\
-\ruta{recursos/validacion-publica.json} & Trece comprobaciones públicas y confirmación de limpieza de temporales.\\
+\ruta{recursos/catalogo-resumen.json} & Instantánea histórica del 21 de octubre; el estado actual está en la tabla de inventario.\\
+\ruta{recursos/validacion-publica.json} & Trece comprobaciones públicas históricas; no identifica el último despliegue.\\
 \ruta{recursos/pruebas-resumen.txt} & Resultado de suite, timeout inicial y condiciones de repetición.\\
 \ruta{recursos/compilacion-resumen.txt} & Resultado de compilación del software en la revisión.\\
 \ruta{scripts/capture-report-evidence.mjs} & En el software: procedimiento de captura con cuentas temporales y limpieza.\\\bottomrule
@@ -752,7 +837,7 @@ Para repetir la comprobación desde el software se instala el entorno declarado 
 Las cuentas de prueba se confirman por API administrativa para evitar depender de entrega de correo. El procedimiento no revela sus claves, no modifica el catálogo y comprueba que la lectura de un montaje por otra cuenta no devuelva registros. El archivo de validación identifica los resultados sin incluir la sesión ni datos de conexión. Las pruebas de escritorio y móvil corresponden a navegador Chromium, con vista móvil emulada.
 
 \subsection{Procedencia de imágenes}
-Las capturas son elaboración propia a partir del frontend publicado. La fotografía visible en la portada procede de la selección local de ambientación del proyecto. La primera imagen de esa selección es de Nathanaël Desmeules y muestra un salto en Leysin; su página original y licencia se conservan en el archivo de procedencia del software \ruta{src/assets/images/landing/README.md}. La captura reproduce esa interfaz y no atribuye al autor del informe la fotografía original. Se incluye su referencia \citep{foto}.
+Las capturas actualizadas son elaboración propia del frontend local conectado a Supabase Cloud. La fotografía visible en la portada procede de la selección local de ambientación del proyecto. La primera imagen de esa selección es de Nathanaël Desmeules y muestra un salto en Leysin; su página original y licencia se conservan en el archivo de procedencia del software \ruta{src/assets/images/landing/README.md}. La captura reproduce esa interfaz y no atribuye al autor del informe la fotografía original. Se incluye su referencia \citep{foto}.
 
 Los diagramas de arquitectura, relaciones, flujo y Gantt se elaboraron para este informe con código TikZ/pgfgantt, entregado como fuente. No utilizan logotipos institucionales o de proveedores. En la captura del visor se elige una vista frontal para no destacar rotulación de productos; el texto describe las categorías de piezas de manera genérica. Los nombres de tecnologías y autores de las fuentes se identifican cuando son necesarios para que la explicación y las referencias sean verificables.
 

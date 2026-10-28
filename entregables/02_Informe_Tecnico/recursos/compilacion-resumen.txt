@@ -1,5 +1,7 @@
-Comando: pnpm run build
-Entorno: Node.js 24.22.0, pnpm 12.6.0
-Resultado: TypeScript y Vite correctos.
-Vite: build finalizado en 4,09 s.
-Persisten avisos de tamaño de chunks y anotaciones de dependencias; no se consideran fallos funcionales ni prueba de rendimiento de red.
+COMPILACIÓN — REVISIÓN FUNCIONAL 28/10/2026
+Comando: pnpm check, que ejecuta pnpm run build y pnpm run test.
+Entorno: Node.js 24.22.0, pnpm 12.6.0.
+Resultado: TypeScript y Vite correctos. Build Vite: 5,06 s.
+Persisten avisos de chunks mayores de 500 kB; no equivalen a una medición
+ni aceptación del rendimiento de red o dispositivo físico.
+La actualización documental no realiza push ni despliegue a Netlify.

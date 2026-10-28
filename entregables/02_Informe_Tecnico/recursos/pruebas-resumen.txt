@@ -1,14 +1,22 @@
-Validación del software para el informe
+VALIDACIÓN — REVISIÓN FUNCIONAL 28/10/2026
+Comando: pnpm check (build y vitest run).
+Entorno: Node.js 24.22.0, pnpm 12.6.0; frontend local y Supabase Cloud.
+Pruebas: 564 correctas y 2 omitidas (566 total).
+Archivos: 82 correctos y uno omitido (83 total).
+Duración de Vitest: 71,39 s.
+Fuente de ejecución local: /tmp/atlas-deliverables-check.log (no se versiona).
 
-Primera pasada: 486 correctas, una fallida por timeout de 5000 ms y dos omitidas.
-Caso: src/features/configurator/scene/cockpit-alignment.test.ts.
-No se modificó el producto ni sus aserciones para repetir.
+Recorridos adicionales para capturas, todos con limpieza final correcta:
+- Informe: 13 comprobaciones; consulta, montaje, guardado/reapertura,
+  aislamiento entre dos cuentas y rechazo de revisión obsoleta.
+- Manual: 13 comprobaciones; controles, comparación, montaje y gestión.
+- Comercio: 7 capturas actuales; alternativa de rueda, añadido, carrito,
+  métodos de pago, resumen, revisión de cotización y aviso al cliente.
+- Presentación: 2 vistas del visor, sin guardar ni modificar catálogo.
+Los conteos de ejecuciones distintas no se suman como casos únicos.
+Las cuentas y solicitudes de práctica se eliminaron al terminar.
 
-Repetición: pnpm exec vitest run --maxWorkers=2 --testTimeout=15000
-Archivos: 71 correctos y uno omitido (72 total).
-Pruebas: 487 correctas y dos omitidas (489 total).
-Duración registrada: 64,31 s.
-El timeout de pruebas no es un objetivo de rendimiento de la aplicación.
-
-Prueba pública adicional: 13 comprobaciones correctas; cuentas temporales y recursos eliminados.
-No valida entrega real de correos ni rendimiento de teléfono físico.
+Los resultados JSON completos y logs quedan fuera de Git, bajo
+models/local/validation/entregables/. validacion-publica.json y
+catalogo-resumen.json conservan instantáneas HISTÓRICAS del 21/10/2026.
+No validan SMTP, Android físico, FPS, cobros reales ni adopción comercial.
