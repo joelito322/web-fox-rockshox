@@ -9,7 +9,15 @@ import { Fields } from "../admin/Fields";
 import { userError } from "../../lib/supabase";
 import { useCommerce } from "./Provider";
 import { CartContents } from "./Cart";
-import { createOrder, getQuote, salesRpc, summarize } from "./api";
+import {
+  createOrder,
+  getQuote,
+  salesRpc,
+  summarize,
+  useServicePolicy,
+} from "./api";
+import { useCartPrices } from "./cart-prices";
+import { PaymentMethods } from "./PaymentMethods";
 import {
   money,
   conditionLabels,
@@ -57,6 +65,8 @@ function CheckoutContent() {
   const [address, setAddress] = useState<Address>({});
   const [delivery, setDelivery] = useState("pickup");
   const [assembly, setAssembly] = useState(false);
+  const [paymentMethod, setPaymentMethod] = useState("yape_demo");
+  const policy = useServicePolicy();
   const [buildId, setBuildId] = useState("");
   const builds = useBuilds();
   const [useCurrentCart, setUseCurrentCart] = useState(false);
@@ -97,6 +107,40 @@ function CheckoutContent() {
           quantity,
         }))
       : cart.lines;
+  const prices = useCartPrices(quote.data && !useCurrentCart ? [] : lines);
+  const quotedSubtotal = quote.data?.merchandise_snapshot.reduce(
+    (sum, line) => sum + line.subtotal_cents,
+    0,
+  );
+  const cartSubtotal =
+    prices.data &&
+    lines.every((line) =>
+      prices.data!.some((offer) => offer.offer_id === line.offer_id),
+    )
+      ? lines.reduce(
+          (sum, line) =>
+            sum +
+            prices.data!.find((offer) => offer.offer_id === line.offer_id)!
+              .unit_cents *
+              line.quantity,
+          0,
+        )
+      : undefined;
+  const subtotal =
+    quote.data && !useCurrentCart ? quotedSubtotal : cartSubtotal;
+  const assemblyFee = assembly
+    ? quoteId
+      ? quote.data?.assembly_fee_cents
+      : policy.data?.assembly_fee_cents
+    : 0;
+  const previewTotal =
+    subtotal !== undefined && assemblyFee != null
+      ? subtotal +
+        assemblyFee +
+        (quote.data && !useCurrentCart
+          ? (quote.data.delivery_fee_cents ?? 0)
+          : 0)
+      : undefined;
   async function prepare() {
     const gen = generation.current;
     setBusy(true);
@@ -175,12 +219,16 @@ function CheckoutContent() {
         saved.revision,
         quoteId,
         auth.user?.id,
+        paymentMethod,
       );
       if (gen === generation.current) {
         await client.invalidateQueries({
           queryKey: ["sales", "cart", auth.user?.id],
         });
         await client.invalidateQueries({ queryKey: ["sales", "quotes"] });
+        await client.invalidateQueries({
+          queryKey: ["sales", "quote-notices"],
+        });
         if (gen === generation.current) navigate("/mis-pedidos?order=" + id);
       }
     } catch (e) {
@@ -289,6 +337,9 @@ function CheckoutContent() {
                     }}
                   />
                   Solicitar armado con revisión técnica
+                  {policy.data
+                    ? ` · ${money(policy.data.assembly_fee_cents)}`
+                    : ""}
                 </label>
                 {assembly && (
                   <label className="field">
@@ -311,6 +362,20 @@ function CheckoutContent() {
                   </label>
                 )}
               </>
+            )}
+          </fieldset>
+          <fieldset disabled={busy}>
+            <legend>Método de pago</legend>
+            <PaymentMethods
+              method={paymentMethod}
+              onChange={setPaymentMethod}
+              total={summary?.total_cents ?? previewTotal}
+            />
+            {needsQuote && (
+              <p className="sales-note">
+                El total definitivo se confirma tras revisar el armado y la
+                entrega.
+              </p>
             )}
           </fieldset>
         </section>
@@ -356,17 +421,40 @@ function CheckoutContent() {
             </>
           ) : (
             <>
+              {assembly && (
+                <p>
+                  Armado{" "}
+                  <strong>
+                    {assemblyFee != null
+                      ? money(assemblyFee)
+                      : "Consultando tarifa…"}
+                  </strong>
+                </p>
+              )}
+              {previewTotal !== undefined && (
+                <p className="sales-total">
+                  {needsQuote ? "Estimado" : "Subtotal"}: {money(previewTotal)}
+                </p>
+              )}
+              {assembly && policy.error && (
+                <p role="alert">No se pudo consultar la tarifa de armado.</p>
+              )}
               <h2>
                 {needsQuote ? "Solicitar cotización" : "Antes de confirmar"}
               </h2>
               <p>
                 {needsQuote
                   ? "Armado y envío se cotizan antes de aceptar el pedido."
-                  : "El precio y la disponibilidad se comprobarán en servidor."}
+                  : "Precio y disponibilidad sujetos a confirmación."}
               </p>
               <button
                 className="button dark"
-                disabled={busy || !lines.length || !!quote.error}
+                disabled={
+                  busy ||
+                  !lines.length ||
+                  !!quote.error ||
+                  (assembly && !quoteId && !policy.data)
+                }
                 onClick={() => void prepare()}
               >
                 {busy

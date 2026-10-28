@@ -82,6 +82,7 @@ export const orderHeader = z.object({
   created_at: z.string(),
 });
 export const orderSchema = orderHeader.extend({
+  preferred_payment_method: z.string().nullable().optional(),
   reservation_expires_at: z.string(),
   assembly_fee_cents: cents,
   delivery_fee_cents: cents,
@@ -134,6 +135,7 @@ export const quoteSchema = quoteHeader.extend({
   delivery_snapshot: z.record(z.string(), z.unknown()),
   merchandise_snapshot: z.array(offerSchema.omit({ available: true })),
   selection_snapshot: z.array(z.unknown()),
+  assembly_base_fee_cents: cents.nullable().optional(),
   review_notes: z.string().nullable(),
   assembly_fee_cents: cents.nullable(),
   delivery_fee_cents: cents.nullable(),

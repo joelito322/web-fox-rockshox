@@ -30,6 +30,7 @@ test("catalogue → persistent cart → accepted order → demo payment → fulf
   ).toBeVisible();
   await panel.getByRole("button", { name: "Añadir al carrito" }).click();
   await expect(panel.getByRole("status")).toContainText("Añadido");
+
   await panel
     .getByRole("button", { name: "Cerrar detalle", exact: true })
     .click();
@@ -46,16 +47,89 @@ test("catalogue → persistent cart → accepted order → demo payment → fulf
   await page
     .getByLabel("Correo o teléfono de contacto")
     .fill(" demo@example.invalid ");
+  await expect(
+    page.getByRole("group", { name: "Método de pago", exact: true }),
+  ).toBeVisible();
+  await page
+    .getByRole("button", { name: "Transferencia", exact: true })
+    .click();
+  await page.getByRole("button", { name: "Interbank", exact: true }).click();
+  await expect
+    .poll(() =>
+      page
+        .locator(".sales-payment img")
+        .evaluateAll((images) =>
+          images.every(
+            (image) =>
+              (image as HTMLImageElement).complete &&
+              (image as HTMLImageElement).naturalWidth > 0,
+          ),
+        ),
+    )
+    .toBe(true);
+
+  const viewport = page.viewportSize()!;
+  await page.setViewportSize({ width: 320, height: 850 });
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth + 1,
+    ),
+  ).toBe(true);
+  await page.setViewportSize(viewport);
+
   await page.getByRole("button", { name: "Ver resumen", exact: true }).click();
+  await expect(
+    page.getByRole("button", { name: "Crear pedido", exact: true }),
+  ).toBeVisible();
+  await page.evaluate(() => {
+    if (document.activeElement instanceof HTMLElement)
+      document.activeElement.blur();
+    window.scrollTo(0, 0);
+  });
+  mkdirSync("models/local/validation/commerce", { recursive: true });
+  await page.screenshot({
+    path: `models/local/validation/commerce/${test.info().project.name}-checkout-methods.png`,
+    fullPage: true,
+  });
   await page.getByRole("button", { name: "Crear pedido" }).click();
   await expect(page).toHaveURL(/mis-pedidos\?order=/);
   await expect(
     page.getByRole("heading", { name: "Pendiente de pago", exact: true }),
   ).toBeVisible();
+  await expect(
+    page.getByRole("button", { name: "Interbank", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await page.getByRole("button", { name: "Plin", exact: true }).click();
+  await expect(
+    page.getByRole("region", { name: "Detalle del método seleccionado" }),
+  ).toContainText("Plin");
+  await page
+    .getByRole("button", { name: "Transferencia", exact: true })
+    .click();
+  for (const bank of ["BCP", "Interbank", "BBVA", "Scotiabank"]) {
+    await page.getByRole("button", { name: bank, exact: true }).click();
+    await expect(
+      page.getByRole("region", { name: "Detalle del método seleccionado" }),
+    ).toContainText(`Transferencia a ${bank}`);
+  }
+  await expect(
+    page.getByRole("region", { name: "Detalle del método seleccionado" }),
+  ).toContainText("CCI");
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth + 1,
+    ),
+  ).toBe(true);
+  mkdirSync("models/local/validation/commerce", { recursive: true });
+  await page.screenshot({
+    path: `models/local/validation/commerce/${test.info().project.name}-payment-methods.png`,
+  });
   await page.getByRole("button", { name: "Simular aprobación" }).click();
   await expect(
     page.getByRole("heading", { name: "Confirmado", exact: true }),
   ).toBeVisible();
+  await page.getByText("Simulaciones de pago", { exact: true }).click();
+  await expect(page.getByText(/Transferencia · Scotiabank ·/)).toBeVisible();
   const order = new URL(page.url()).searchParams.get("order")!;
   await page.reload();
   await expect(
@@ -318,7 +392,15 @@ test("a real 3D selection converts explicitly to cart and carries a server-built
   panel = page.getByRole("dialog", { name: "Cotización" });
   await panel.getByText("Composición que se revisa", { exact: true }).click();
   await expect(panel).toContainText("Nomad");
-  await panel.getByLabel("Armado (S/)", { exact: true }).fill("300");
+  await expect(panel.getByLabel("Armado (S/)", { exact: true })).toHaveValue(
+    "150",
+  );
+  await panel
+    .getByRole("checkbox", { name: "Armado sin coste", exact: true })
+    .check();
+  await expect(panel.getByLabel("Armado (S/)", { exact: true })).toHaveValue(
+    "0",
+  );
   await panel
     .getByLabel("Revisión técnica y condiciones")
     .fill(
@@ -329,5 +411,47 @@ test("a real 3D selection converts explicitly to cart and carries a server-built
     .click();
   await expect(
     panel.getByRole("heading", { name: /Pendiente de aceptación/ }),
+  ).toBeVisible();
+  await panel
+    .getByRole("button", { name: "Cerrar detalle", exact: true })
+    .click();
+  await page.getByRole("button", { name: /Notificaciones ·/ }).click();
+  const notices = page.getByRole("dialog", {
+    name: "Notificaciones",
+    exact: true,
+  });
+  await expect(notices).toContainText("Tu armado va sin coste");
+  const update = notices
+    .locator("article")
+    .filter({ hasText: "Tu armado va sin coste" });
+  const target = await update
+    .getByRole("link", { name: "Revisar actualización", exact: true })
+    .getAttribute("href");
+  await update
+    .getByRole("button", { name: "Marcar como leída", exact: true })
+    .click();
+  await expect(
+    notices.getByText("Tu armado va sin coste", { exact: true }),
+  ).toHaveCount(0);
+  await notices
+    .getByRole("button", { name: "Cerrar detalle", exact: true })
+    .click();
+  await page.reload();
+  await page.getByRole("button", { name: /Notificaciones ·/ }).click();
+  await expect(
+    page.getByRole("dialog", { name: "Notificaciones", exact: true }),
+  ).not.toContainText("Tu armado va sin coste");
+  await page.goto(target!);
+  await page
+    .getByRole("link", { name: "Revisar y aceptar", exact: true })
+    .click();
+  await expect(
+    page.getByRole("group", { name: "Método de pago", exact: true }),
+  ).toBeVisible();
+  await page.getByRole("button", { name: "Ver resumen", exact: true }).click();
+  await expect(page.locator(".sales-summary")).toContainText("Armado");
+  await page.getByRole("button", { name: "Crear pedido", exact: true }).click();
+  await expect(
+    page.getByRole("heading", { name: "Pendiente de pago", exact: true }),
   ).toBeVisible();
 });

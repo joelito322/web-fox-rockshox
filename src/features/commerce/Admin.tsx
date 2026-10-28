@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { AssemblyTariff } from "./AssemblyTariff";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { z } from "zod";
 import { Drawer } from "../../components/ui/Drawer";
@@ -104,6 +105,7 @@ export default function CommercialAdmin({
           {promotions ? "Crear promoción" : "Crear oferta"}
         </button>
       </div>
+      {!promotions && <AssemblyTariff key={auth.user?.id} />}
       {!promotions && (
         <label className="field">
           Buscar

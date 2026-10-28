@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { PaymentMethods } from "./PaymentMethods";
+import { paymentMethodLabel } from "./payment-methods";
 import { Link, useSearchParams } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useAuth } from "../auth/provider";
@@ -216,7 +218,7 @@ function OrderDetails({ id, admin }: { id: string; admin: boolean }) {
       No se pudo recuperar el pedido.
     </Notice>
   ) : (
-    <OrderActions order={query.data} admin={admin} />
+    <OrderActions key={query.data.id} order={query.data} admin={admin} />
   );
 }
 function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
@@ -224,7 +226,9 @@ function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
   const client = useQueryClient();
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState("");
-  const [method, setMethod] = useState("yape_demo");
+  const [method, setMethod] = useState(
+    order.preferred_payment_method ?? "yape_demo",
+  );
   const [reason, setReason] = useState("");
   const payment = useRef<{
     key: string;
@@ -322,23 +326,11 @@ function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
       {!admin && order.status === "pending" && (
         <fieldset disabled={busy}>
           <legend>Simular pago · sin cobros</legend>
-          <div className="sales-actions">
-            {[
-              ["yape_demo", "Yape"],
-              ["transfer_demo", "Transferencia"],
-              ["card_demo", "Tarjeta"],
-            ].map(([value, label]) => (
-              <button
-                key={value}
-                aria-pressed={method === value}
-                className={method === value ? "button dark" : "button outline"}
-                onClick={() => setMethod(value)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-          <p>No ingreses datos bancarios. El resultado es una simulación.</p>
+          <PaymentMethods
+            method={method}
+            onChange={setMethod}
+            total={order.total_cents}
+          />
         </fieldset>
       )}
       {(order.status === "pending" ||
@@ -431,6 +423,7 @@ function OrderActions({ order, admin }: { order: Order; admin: boolean }) {
         <summary>Simulaciones de pago</summary>
         {order.payments.map((p) => (
           <p key={p.id}>
+            {paymentMethodLabel(p.method)} ·{" "}
             {statusLabels[p.status] ?? p.status} · {dateTime(p.created_at)}
           </p>
         ))}
@@ -451,7 +444,7 @@ function QuoteDetails({ id, admin }: { id: string; admin: boolean }) {
       No se pudo recuperar la cotización.
     </Notice>
   ) : (
-    <QuoteActions quote={query.data} admin={admin} />
+    <QuoteActions key={query.data.id} quote={query.data} admin={admin} />
   );
 }
 const technicalSelection = z.object({
@@ -504,8 +497,8 @@ function QuoteActions({ quote, admin }: { quote: Quote; admin: boolean }) {
     };
   }, []);
   const [values, setValues] = useState<Record<string, unknown>>({
-    assembly: "0",
-    delivery: "0",
+    assembly: String((quote.assembly_fee_cents ?? 0) / 100),
+    delivery: String((quote.delivery_fee_cents ?? 0) / 100),
     notes: "",
   });
   const [busy, setBusy] = useState(false);
@@ -531,6 +524,7 @@ function QuoteActions({ quote, admin }: { quote: Quote; admin: boolean }) {
       if (!alive.current) return;
       client.setQueryData(["sales", "quote", auth.user?.id, quote.id], next);
       await client.invalidateQueries({ queryKey: ["sales", "quotes"] });
+      await client.invalidateQueries({ queryKey: ["sales", "quote-notices"] });
     } catch (e) {
       setError(userError(e));
     } finally {
@@ -566,9 +560,11 @@ function QuoteActions({ quote, admin }: { quote: Quote; admin: boolean }) {
       )}
       <p>
         Armado:{" "}
-        {quote.assembly_fee_cents === null
-          ? "Por cotizar"
-          : money(quote.assembly_fee_cents)}
+        {quote.assembly_requested && quote.assembly_fee_cents === 0
+          ? "Sin coste"
+          : quote.assembly_fee_cents === null
+            ? "Por cotizar"
+            : money(quote.assembly_fee_cents)}
       </p>
       <p>
         Entrega:{" "}
@@ -583,6 +579,27 @@ function QuoteActions({ quote, admin }: { quote: Quote; admin: boolean }) {
       {error && <p role="alert">{error}</p>}
       {admin && quote.status === "requested" && (
         <fieldset disabled={busy}>
+          {quote.assembly_requested && (
+            <label className="check-label">
+              <input
+                type="checkbox"
+                checked={String(values.assembly) === "0"}
+                onChange={(event) =>
+                  setValues((current) => ({
+                    ...current,
+                    assembly: event.target.checked
+                      ? "0"
+                      : String(
+                          (quote.assembly_base_fee_cents ??
+                            quote.assembly_fee_cents ??
+                            0) / 100,
+                        ),
+                  }))
+                }
+              />
+              Armado sin coste
+            </label>
+          )}
           <Fields
             fields={[
               { key: "assembly", label: "Armado (S/)", kind: "text" },
@@ -597,7 +614,8 @@ function QuoteActions({ quote, admin }: { quote: Quote; admin: boolean }) {
             onChange={setValues}
           />
           <p>
-            Publicar confirma la revisión de la composición y sus condiciones.
+            Publicar confirma la revisión técnica y envía un aviso a la cuenta
+            del cliente con los costes actualizados.
           </p>
         </fieldset>
       )}

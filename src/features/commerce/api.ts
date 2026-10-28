@@ -44,6 +44,18 @@ export function useOffers(componentIds: string[], variantIds?: string[]) {
       ),
   });
 }
+export const servicePolicySchema = z.object({
+  assembly_fee_cents: z.number().int().nonnegative(),
+  service_revision: z.number().int().positive(),
+});
+export function useServicePolicy() {
+  return useQuery({
+    queryKey: ["sales", "service-policy"],
+    queryFn: ({ signal }) =>
+      salesRpc("sales_policy", {}, servicePolicySchema, signal),
+    staleTime: 60_000,
+  });
+}
 export const getCart = (signal?: AbortSignal, account?: string) =>
   salesRpc("sales_cart", {}, cartSchema, signal, account);
 export const saveCart = (
@@ -89,11 +101,13 @@ export const createOrder = (
   revision?: number,
   quoteId?: string,
   account?: string,
+  method = "yape_demo",
 ) =>
   salesRpc(
-    "sales_create_order",
+    "sales_create_order_with_payment",
     {
       p_key: key,
+      p_method: method,
       p_hash: hash,
       p_lines: lines,
       p_contact: contact,

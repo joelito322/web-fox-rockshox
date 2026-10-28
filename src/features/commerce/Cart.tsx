@@ -65,7 +65,7 @@ export function CartContents() {
   return (
     <div className="sales-stack">
       <p className="sales-note">
-        Precios en soles · entrega y armado se cotizan por separado
+        Precios en soles · armado opcional y envío por cotizar
       </p>
       {cart.guest.length > 0 && (
         <section className="notice">
@@ -123,9 +123,8 @@ export function CartContents() {
   );
 }
 import { useQuery } from "@tanstack/react-query";
-import { getCart, salesRpc } from "./api";
-import { z } from "zod";
-import { offerSchema } from "./model";
+import { getCart } from "./api";
+import { useCartPrices } from "./cart-prices";
 import { modelImages } from "../../data/images";
 function CartItemList({ onError }: { onError: (message: string) => void }) {
   const cart = useCommerce()!;
@@ -136,20 +135,7 @@ function CartItemList({ onError }: { onError: (message: string) => void }) {
     queryFn: ({ signal }) => getCart(signal, auth.user?.id),
     staleTime: 15_000,
   });
-  // One bounded RPC for all cart prices, including anonymous selections.
-  const offerIds = cart.lines.map((l) => l.offer_id).sort();
-  const priced = useQuery({
-    queryKey: ["sales", "cart-prices", offerIds],
-    enabled: !!cart.lines.length,
-    queryFn: ({ signal }) =>
-      salesRpc(
-        "sales_cart_prices",
-        { p_lines: offerIds.map((offer_id) => ({ offer_id, quantity: 1 })) },
-        z.array(offerSchema),
-        signal,
-      ),
-    staleTime: 15_000,
-  });
+  const priced = useCartPrices(cart.lines);
   async function quantity(id: string, next: number) {
     try {
       await cart.write(

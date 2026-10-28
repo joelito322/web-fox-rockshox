@@ -1,0 +1,42 @@
+{
+  "retrieved_at": "2026-10-28",
+  "usage": "Local identification assets for simulated payment selection",
+  "assets": [
+    {
+      "file": "yape.png",
+      "source_url": "https://www.yape.com.pe/images/components/component-25/logo.png",
+      "sha256": "aaef5ab2bcd906f7bebcbe06500357ec3dc814f70476f811f9bafcc01d4f7783",
+      "bytes": 874
+    },
+    {
+      "file": "plin.png",
+      "source_url": "https://plin.pe/wp-content/themes/plin/imgs/logo.png",
+      "sha256": "1243f20c1e5a1ce823aa0df4eb4008b82ede76bf65323dc27bc1d40187b9a1c3",
+      "bytes": 4944
+    },
+    {
+      "file": "bcp.svg",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Logo-bcp-vector.svg",
+      "sha256": "132e564914fb5741e8266d50eb4d0f145aac6d52c367deff5826304dad16417a",
+      "bytes": 2866
+    },
+    {
+      "file": "interbank.png",
+      "source_url": "https://plin.pe/wp-content/themes/plin/imgs/logos-bancos-afiliados-negro_interbank.png",
+      "sha256": "fc5a0238b4f5cb898fa3efd16e1c4342e4ef13615d288813867a17f1eb280dd5",
+      "bytes": 4400
+    },
+    {
+      "file": "bbva.png",
+      "source_url": "https://plin.pe/wp-content/themes/plin/imgs/logos-bancos-afiliados-negro_bbva.png",
+      "sha256": "26d09e40da288328a21dec1587b1e652b0ffede41648f6f95c2b55313964a3c3",
+      "bytes": 4627
+    },
+    {
+      "file": "scotiabank.svg",
+      "source_url": "https://cdn.aglty.io/scotiabank-peru/Global-Rebrand/logo.svg",
+      "sha256": "87377846365e879595a7912be60a6998e56d8eb64e6f2c978a4a6e34e7532d6a",
+      "bytes": 9548
+    }
+  ]
+}
