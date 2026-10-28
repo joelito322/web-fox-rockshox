@@ -10,6 +10,7 @@ Esta carpeta define en conjunto el producto, su arquitectura y el orden de imple
 
 | Documento | Pregunta que resuelve |
 | --- | --- |
+| [13j · Precio por categoría](13j-filtro-de-precio-por-categoria.md) | Filtro individual de precio vigente en catálogo y selector3D, variantes elegibles y paginación coherente |
 | [13i · Auxiliares ATLAS vendibles](13i-auxiliares-atlas-vendibles.md) | Cinco modelos, seis ofertas, precios/stock editables y preservación de datos anteriores |
 | [14 · Actualización académica](../validation/14-actualizacion-entregables-academicos.md) | Informe, manual, presentación e índice: fuentes LaTeX, PDF, capturas y alcance comercial actualizados conservando el formato |
 | [06i · Alternativas de compatibilidad](06i-alternativas-para-incompatibilidades.md) | Soluciones comprobables desde avisos, sustitución individual y diferencia de precio; implementación y evidencia de validación |

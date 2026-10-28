@@ -1,5 +1,11 @@
 # Repository Guidelines
 
+## Filtro individual de precio ·28/10/2026
+
+Comiteo posterior por petición explícita: e8eeb99 RPC/migración y SQL transaccional, 962b8b2 interfaz/datos/caché compartidos y 3407ca9 pruebas/control/recorrido de navegador; documentación en cuarto commit. Sintaxis del runner y diff comprobados; evidencia funcional previa preservada sin repetir operaciones Cloud. Sin push; esta petición no autoriza commits futuros.
+
+Implementación autorizada en [13j](docs/planning/13j-filtro-de-precio-por-categoria.md): mínimo/máximo en soles por pieza/categoría, no presupuesto total. Control compartido en Componentes, biblioteca de cuadros y selector3D; borrar rango al cambiar categoría. Migración043 aplicada: RPC pública `catalog_price_matches`, precio vigente con `_sales_discount`, variantes actuales y ofertas activas antes de paginar; sin tablas/índices nuevos ni cambios de GLB/stock/pedidos. Caché de coincidencias30s compartida por categoría/rango; sin RPC adicional cuando no hay rango y sin consultas por tarjeta/opción. Ficha/precios respetan variantes y rango; unidades de venta explícitas, ausencias no valen cero. Publicar catálogo o editar ofertas/promociones invalida coincidencias. Son43 migraciones/24 tablas. Pruebas:18 dirigidas, suite general571 correctas/dos omitidas bajo Node24.22.0; SQL con rollback y navegador desktop/Pixel7 emulado correctos, limpieza de cuenta/carrito comprobada. Resultados/capturas en models/local/validation/price-filter ignorado. No commits, push ni despliegue frontend sin petición nueva.
+
 ## Commits por partes · cierre posterior28/10/2026
 
 Petición explícita atendida: ff3d9a7 auxiliares vendibles/migración042, e482666 captura de vistas, 02d7d75 manual de usuario, e9b45b0 informe APA/precedencias, 246aa1c cronograma de presentación y 1b8836c título del docente/índice académico. Fuentes TEX y PDF juntos por entregable; documentación de contexto en séptimo commit. Sintaxis de scripts/JSON y diff comprobados; evidencias funcionales previas preservadas, sin repetir operaciones Cloud para comitear. Sin push ni despliegue remoto. La autorización no cubre commits futuros.
