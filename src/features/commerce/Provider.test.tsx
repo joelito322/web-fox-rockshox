@@ -200,3 +200,53 @@ it("never replaces an existing remote cart when Add is pressed before its initia
   );
   expect(mocked.save).not.toHaveBeenCalled();
 });
+
+it("announces additions only after a successful account write, never for a failed save", async () => {
+  mocked.auth = {
+    user: { id: "buyer" },
+    permissions: [],
+    roleId: "user",
+    loading: false,
+  };
+  mocked.get.mockResolvedValue(cart(0));
+  mocked.save.mockRejectedValueOnce(new Error("save failed"));
+  function View() {
+    const value = useCommerce()!;
+    return (
+      <>
+        <output aria-label="addition revision">{value.additionRevision}</output>
+        <button
+          disabled={value.loading || value.busy}
+          onClick={() =>
+            void value
+              .add([{ offer_id: offer, quantity: 1 }])
+              .catch(() => undefined)
+          }
+        >
+          Add to cart
+        </button>
+      </>
+    );
+  }
+  const client = new QueryClient({
+    defaultOptions: { queries: { retry: false } },
+  });
+  render(
+    <QueryClientProvider client={client}>
+      <CommerceProvider>
+        <View />
+      </CommerceProvider>
+    </QueryClientProvider>,
+  );
+  const button = screen.getByRole("button", { name: "Add to cart" });
+  await waitFor(() => expect(button).not.toBeDisabled());
+  fireEvent.click(button);
+  await waitFor(() => expect(mocked.save).toHaveBeenCalledTimes(1));
+  await waitFor(() => expect(button).not.toBeDisabled());
+  expect(screen.getByLabelText("addition revision")).toHaveTextContent("0");
+  mocked.save.mockResolvedValueOnce(cart(1, 2));
+  fireEvent.click(button);
+  await waitFor(() =>
+    expect(screen.getByLabelText("addition revision")).toHaveTextContent("1"),
+  );
+});

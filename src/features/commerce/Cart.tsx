@@ -6,7 +6,7 @@ import { Loading, Notice } from "../../components/ui/Feedback";
 import { useAuth } from "../auth/provider";
 import { userError } from "../../lib/supabase";
 import { useCommerce } from "./Provider";
-import { money, conditionLabels } from "./model";
+import { money, conditionLabels, unitLabels } from "./model";
 export function CartButton() {
   const cart = useCommerce();
   const [open, setOpen] = useState(false);
@@ -18,9 +18,19 @@ export function CartButton() {
         aria-label={`Carrito · ${cart.lines.reduce((n, l) => n + l.quantity, 0)}`}
         onClick={() => setOpen(true)}
       >
-        <ShoppingCart size={18} />
+        <span
+          key={`icon:${cart.additionRevision ?? 0}`}
+          className={`cart-trigger-icon${cart.additionRevision ? " cart-trigger-added" : ""}`}
+        >
+          <ShoppingCart size={18} aria-hidden="true" />
+        </span>
         <span className="cart-label">Carrito · </span>
-        <span>{cart.lines.reduce((n, l) => n + l.quantity, 0)}</span>
+        <span
+          key={`count:${cart.additionRevision ?? 0}`}
+          className={`cart-count${cart.additionRevision ? " cart-count-added" : ""}`}
+        >
+          {cart.lines.reduce((n, l) => n + l.quantity, 0)}
+        </span>
       </button>
       {open && (
         <Drawer
@@ -159,34 +169,56 @@ function CartItemList({ onError }: { onError: (message: string) => void }) {
             (i) => i.offer_id === line.offer_id,
           );
           const condition = price?.item_condition ?? cached?.item_condition;
+          const label =
+            price?.label ?? cached?.label ?? "Producto de tu selección";
+          const finish = price?.identity.finish ?? cached?.identity.finish;
           return (
-            <article className="sales-cart-line" key={line.offer_id}>
-              {price?.image_key && modelImages[price.image_key] && (
-                <img
-                  className="sales-product-image"
-                  src={modelImages[price.image_key]}
-                  alt=""
-                />
-              )}
-              <strong>
-                {price?.label ?? cached?.label ?? "Producto de tu selección"}
-              </strong>
-              <span>{price?.identity.finish ?? cached?.identity.finish}</span>
-              {condition && (
-                <span className="sales-condition">
-                  {conditionLabels[condition]}
-                </span>
-              )}
+            <article
+              className="sales-cart-line sales-cart-item"
+              key={line.offer_id}
+            >
+              <span className="sales-cart-thumb">
+                {price?.image_key && modelImages[price.image_key] ? (
+                  <img
+                    className="sales-product-image"
+                    src={modelImages[price.image_key]}
+                    alt=""
+                  />
+                ) : (
+                  <ShoppingCart size={24} aria-hidden="true" />
+                )}
+              </span>
+              <div className="sales-cart-item-info">
+                <strong>{label}</strong>
+                {finish &&
+                  !label.toLowerCase().includes(finish.toLowerCase()) && (
+                    <small>{finish}</small>
+                  )}
+                {condition && (
+                  <span className="sales-condition">
+                    {conditionLabels[condition]}
+                  </span>
+                )}
+              </div>
               {price ? (
-                <span className="sales-line-price">
+                <div className="sales-cart-pricing">
+                  <strong className="sales-line-price">
+                    {money(price.unit_cents * line.quantity)}
+                  </strong>
+                  {line.quantity > 1 && (
+                    <small>
+                      {money(price.unit_cents)} /{" "}
+                      {unitLabels[price.unit] ?? "unidad"}
+                    </small>
+                  )}
                   {price.discount_cents > 0 && (
-                    <del>{money(price.base_cents)}</del>
-                  )}{" "}
-                  {money(price.unit_cents)} ·{" "}
-                  {money(price.unit_cents * line.quantity)}
-                </span>
+                    <span className="sales-cart-offer">Promoción aplicada</span>
+                  )}
+                </div>
               ) : (
-                <span>Precio por actualizar</span>
+                <span className="sales-cart-pricing">
+                  Precio por actualizar
+                </span>
               )}
               {((price?.available ?? cached?.available ?? 0) < line.quantity ||
                 cached?.active === false) && (
@@ -194,7 +226,7 @@ function CartItemList({ onError }: { onError: (message: string) => void }) {
                   Revisa la disponibilidad antes de continuar.
                 </p>
               )}
-              <div className="sales-actions">
+              <div className="sales-actions sales-cart-quantity">
                 <button
                   disabled={cart.busy || line.quantity <= 1}
                   aria-label="Restar unidad"

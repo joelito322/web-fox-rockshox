@@ -1,4 +1,12 @@
-import { createContext, useContext, useState, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useRef,
+  type ReactNode,
+} from "react";
+import { ShoppingCart, Check, LoaderCircle } from "lucide-react";
 import { useCommerce } from "./Provider";
 import { useOffers } from "./api";
 import { money, unitLabels, conditionLabels, type Offer } from "./model";
@@ -50,21 +58,44 @@ export function CardPrice({ componentId }: { componentId: string }) {
 }
 export function ProductPurchase({ variantId }: { variantId: string }) {
   const cart = useCommerce();
-  return cart ? <Purchase key={cart.scope} variantId={variantId} /> : null;
+  return cart ? (
+    <Purchase key={`${cart.scope}:${variantId}`} variantId={variantId} />
+  ) : null;
 }
 function Purchase({ variantId }: { variantId: string }) {
   const cart = useCommerce()!;
   const query = useOffers([], [variantId]);
   const [selected, setSelected] = useState("");
   const [notice, setNotice] = useState("");
+  const [phase, setPhase] = useState<"idle" | "pending" | "success">("idle");
+  const [confirmation, setConfirmation] = useState(0);
+  const alive = useRef(true);
+  const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  useEffect(() => {
+    alive.current = true;
+    return () => {
+      alive.current = false;
+      clearTimeout(timer.current);
+    };
+  }, []);
   const offers = query.data ?? [];
   const offer = offers.find((o) => o.offer_id === selected) ?? offers[0];
   async function add() {
-    if (!offer) return;
+    if (!offer || phase === "pending") return;
+    clearTimeout(timer.current);
+    setNotice("");
+    setPhase("pending");
     try {
       await cart.add([{ offer_id: offer.offer_id, quantity: 1 }]);
-      setNotice("Añadido al carrito.");
+      if (!alive.current) return;
+      setPhase("success");
+      setConfirmation((value) => value + 1);
+      timer.current = setTimeout(() => {
+        if (alive.current) setPhase("idle");
+      }, 2600);
     } catch (error) {
+      if (!alive.current) return;
+      setPhase("idle");
       setNotice(userError(error));
     }
   }
@@ -81,6 +112,12 @@ function Purchase({ variantId }: { variantId: string }) {
         Disponible como referencia visual. Sin oferta de venta.
       </p>
     );
+  const actionLabel =
+    phase === "pending"
+      ? "Añadiendo…"
+      : phase === "success"
+        ? "Añadido al carrito"
+        : "Añadir al carrito";
   return (
     <section className="sales-purchase">
       {offer.item_condition && (
@@ -92,6 +129,7 @@ function Purchase({ variantId }: { variantId: string }) {
         {offers.map((o) => (
           <button
             key={o.offer_id}
+            disabled={phase === "pending"}
             className={
               o.offer_id === offer.offer_id
                 ? "button dark small"
@@ -101,6 +139,8 @@ function Purchase({ variantId }: { variantId: string }) {
             onClick={() => {
               setSelected(o.offer_id);
               setNotice("");
+              clearTimeout(timer.current);
+              setPhase("idle");
             }}
           >
             {o.identity.finish}
@@ -114,13 +154,41 @@ function Purchase({ variantId }: { variantId: string }) {
       </p>
       <p>{offer.available > 0 ? "Disponible" : "Agotado"}</p>
       <button
-        className="button dark"
-        disabled={cart.loading || cart.busy || offer.available < 1}
+        aria-label={actionLabel}
+        className={`button dark sales-add-button${phase === "success" ? " is-added" : ""}`}
+        disabled={
+          cart.loading ||
+          cart.busy ||
+          phase === "pending" ||
+          offer.available < 1
+        }
         onClick={() => void add()}
       >
-        Añadir al carrito
+        <span className="sales-add-button-content">
+          <span key={`${phase}:${confirmation}`} className="sales-add-icon">
+            {phase === "pending" ? (
+              <LoaderCircle
+                className="sales-add-spinner"
+                size={18}
+                aria-hidden="true"
+              />
+            ) : phase === "success" ? (
+              <Check
+                className="sales-add-check"
+                size={19}
+                strokeWidth={3}
+                aria-hidden="true"
+              />
+            ) : (
+              <ShoppingCart size={18} aria-hidden="true" />
+            )}
+          </span>
+          <span role="status" aria-live="polite" aria-atomic="true">
+            {actionLabel}
+          </span>
+        </span>
       </button>
-      {notice && <p role="status">{notice}</p>}
+      {notice && <p role="alert">{notice}</p>}
     </section>
   );
 }

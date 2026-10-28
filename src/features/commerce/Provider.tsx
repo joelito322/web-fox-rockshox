@@ -27,6 +27,7 @@ function readGuest(): CartLine[] {
 }
 type Commerce = {
   scope: string;
+  additionRevision: number;
   lines: CartLine[];
   guest: CartLine[];
   revision?: number;
@@ -45,6 +46,10 @@ export function CommerceProvider({ children }: { children: ReactNode }) {
   const client = useQueryClient();
   const [guest, setGuest] = useState(readGuest);
   const [pending, setPending] = useState(false);
+  const [addition, setAddition] = useState<{
+    scope: string;
+    revision: number;
+  } | null>(null);
   const scopeKey = `${auth.user?.id}:${auth.roleId}:${[...auth.permissions].sort().join(":")}`;
   const scope = useRef({ id: scopeKey, generation: 0 });
   if (scope.current.id !== scopeKey)
@@ -96,6 +101,12 @@ export function CommerceProvider({ children }: { children: ReactNode }) {
   async function add(next: CartLine[], replace = false) {
     if (account && !query.data) throw new Error("sales_operation_pending");
     await write(replace ? next : aggregateLines([...lines, ...next]));
+    if (scope.current.generation === active && next.length > 0) {
+      setAddition((previous) => ({
+        scope: scopeKey,
+        revision: previous?.scope === scopeKey ? previous.revision + 1 : 1,
+      }));
+    }
   }
   async function merge(mode: "merge" | "guest" | "account") {
     if (mode === "merge") await add(guest);
@@ -117,6 +128,7 @@ export function CommerceProvider({ children }: { children: ReactNode }) {
     <Context.Provider
       value={{
         scope: scopeKey,
+        additionRevision: addition?.scope === scopeKey ? addition.revision : 0,
         lines,
         guest: account ? guest : [],
         revision: query.data?.revision,

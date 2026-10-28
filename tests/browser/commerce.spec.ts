@@ -30,8 +30,33 @@ test("catalogue → persistent cart → accepted order → demo payment → fulf
   ).toBeVisible();
   await panel.getByRole("button", { name: "Añadir al carrito" }).click();
   await expect(panel.getByRole("status")).toContainText("Añadido");
+  await expect(panel.locator(".sales-add-button")).toHaveClass(/is-added/);
+  await expect(page.locator(".cart-trigger-added")).toHaveCount(1);
 
   await panel
+    .getByRole("button", { name: "Cerrar detalle", exact: true })
+    .click();
+  await page.getByRole("button", { name: "Carrito · 1", exact: true }).click();
+  const cartPanel = page.getByRole("dialog", {
+    name: "Tu carrito",
+    exact: true,
+  });
+  await expect(cartPanel.locator(".sales-cart-pricing strong")).toHaveCount(1);
+  await expect(cartPanel.locator(".sales-cart-pricing small")).toHaveCount(0);
+  await expect(cartPanel.locator(".sales-total")).toHaveCount(1);
+  await cartPanel
+    .getByRole("button", { name: "Sumar unidad", exact: true })
+    .click();
+  await expect(cartPanel.locator(".sales-cart-pricing small")).toBeVisible();
+  await cartPanel
+    .getByRole("button", { name: "Restar unidad", exact: true })
+    .click();
+  await expect(cartPanel.locator(".sales-cart-pricing small")).toHaveCount(0);
+  mkdirSync("models/local/validation/commerce", { recursive: true });
+  await page.screenshot({
+    path: `models/local/validation/commerce/${test.info().project.name}-cart-clean.png`,
+  });
+  await cartPanel
     .getByRole("button", { name: "Cerrar detalle", exact: true })
     .click();
   await page.goto("/comprar");
