@@ -172,6 +172,7 @@ Campo o control & Para qué sirve\\\midrule
 Categorías & Elige el tipo de pieza. Se mantiene activo hasta que selecciones otra categoría.\\
 Buscar componentes & Filtra por parte del nombre; puedes combinarlo con los demás filtros.\\
 Marca y Disciplina & Acotan las opciones disponibles; limpia un filtro si deja fuera la pieza que buscas.\\
+Precio & Permite indicar un mínimo, un máximo o ambos para las piezas de la categoría seleccionada.\\
 Tarjeta de producto & Muestra la referencia y el precio disponible; púlsala para abrir la ficha.\\
 Comparar & Abre las variantes que hayas añadido a la comparación.\\\bottomrule
 \end{tabularx}\end{tabla}\end{table}
@@ -196,6 +197,29 @@ En móvil, pulsa primero \control{Categorías} para desplegar el selector. La li
 \end{enumerate}
 \resultado{La lista muestra los modelos que cumplen los filtros. Una combinación sin resultados no significa que el catálogo haya desaparecido.}
 \captura{fig:busqueda}{Campo de búsqueda de componentes}{04-busqueda.png}{1}{.15}
+
+\subsection{Filtrar por precio}\label{sec:precio}
+\begin{enumerate}
+\item Selecciona la categoría que quieres consultar, por ejemplo \control{Horquillas}.
+\item Abre \control{Precio}. Escribe un importe en \control{Desde S/}, \control{Hasta S/} o en ambos campos. Puedes usar hasta dos decimales con punto o coma; por ejemplo, \texttt{2500} o \texttt{2500,50}.
+\item Para ver piezas entre S/\,1.000 y S/\,2.500, escribe \texttt{1000} como mínimo y \texttt{2500} como máximo. Deja vacío un campo si no quieres fijar ese extremo.
+\item Pulsa \control{Aplicar}. Las tarjetas muestran los modelos que tienen alguna variante dentro del rango, con el precio de venta vigente y las promociones aplicables.
+\item Abre una tarjeta para consultar las versiones y ofertas elegibles. Comprueba la unidad de venta: una unidad, un par o un juego pueden incluir piezas diferentes.
+\end{enumerate}
+\captura{fig:precio-catalogo}{Importes mínimo y máximo del filtro Precio}{35-filtro-precio.png}{.76}{.38}
+
+\begin{table}[H]\caption{Campos y acciones del filtro de precio}\begin{tabla}\begin{tabularx}{\textwidth}{L{3.6cm}X}\toprule
+Campo o control & Cómo usarlo\\\midrule
+Desde S/ y Hasta S/ & Admiten un límite o ambos. Los importes de los extremos también se incluyen. No uses valores negativos ni un mínimo mayor que el máximo.\\
+Aplicar & Actualiza la selección y vuelve a la primera página. Escribir sin aplicar no cambia los resultados.\\
+Símbolo de cierre del rango & Quita solo el precio, conservando los demás filtros.\\
+Limpiar & Dentro del desplegable, elimina los dos importes. Limpiar filtros en el catálogo restablece también los demás criterios.\\\bottomrule
+\end{tabularx}\end{tabla}\end{table}
+
+El rango corresponde al precio de cada artículo, no al coste total de una bicicleta. Cambiar de categoría elimina el rango anterior; así, un precio pensado para un cuadro no oculta neumáticos de menor importe. Si no hay resultados, amplía el rango o quítalo. Un artículo sin precio no se trata como gratuito; uno agotado puede seguir apareciendo por su precio, por lo que debes revisar su disponibilidad en la ficha.
+
+En móvil encontrarás el mismo control junto a los filtros del catálogo. Puedes cerrar el desplegable pulsando fuera; con teclado, utiliza \control{Esc}.
+\captura{fig:precio-movil}{Filtro Precio en una pantalla estrecha}{37-precio-movil.png}{.67}{.38}
 
 \subsection{Interpretar una ficha}
 \captura{fig:ficha-completa}{Ficha lateral abierta sobre el catálogo}{23-vista-ficha.png}{1}{.44}
@@ -290,6 +314,7 @@ Estado y Guardar & Mostrar si hay cambios pendientes y enviarlos a tu cuenta.\\
 Piezas del montaje & Localizar una de las 23 posiciones y comprobar cuáles tienen pieza.\\
 Visor central & Explorar la representación y elegir una pieza visible.\\
 Grupos y alternativas & Elegir función, posición, medida, talla y variante.\\
+Precio & Acotar las alternativas de la categoría por importe individual, sin modificar el montaje actual.\\
 Acabados y Color & Ajustar la apariencia permitida por la pieza seleccionada.\\
 Estado de compatibilidad & Revisar incompatibilidades o datos insuficientes detectados.\\\bottomrule
 \end{tabularx}\end{tabla}\end{table}
@@ -321,6 +346,17 @@ El contador indica posiciones ocupadas, hasta 23. Completar las 23 no certifica 
 En \control{Medida de ruedas}, las opciones son \control{Todas}, \control{29\textquotedbl}, \control{27,5\textquotedbl} y \control{Mixto}. Esta última representa 29 pulgadas delante y 27,5 detrás. Para el cuadro están disponibles \control{Todas}, \control{M} y \control{L} en \control{Talla}.
 
 Estos controles filtran las alternativas; no cambian por sí solos las piezas ya montadas. Para sustituir una pieza debes seleccionar una variante de la lista. Si no aparece ninguna, prueba otra medida o vuelve a \control{Todas}.
+
+\subsection{Acotar el precio de una alternativa}
+\begin{enumerate}
+\item Elige una posición, por ejemplo \control{Horquilla}, desde el índice o los grupos del montaje.
+\item Bajo \control{Buscar alternativa}, abre \control{Precio} e introduce el mínimo, el máximo o ambos, como se explica en la sección~\ref{sec:precio}.
+\item Pulsa \control{Aplicar}. Revisa las variantes que quedan y el importe indicado junto a cada alternativa.
+\item Pulsa una variante si quieres incorporarla. Aplicar el filtro por sí solo no sustituye una pieza, no cambia el acabado y no añade artículos al carrito.
+\item Para ver de nuevo todas las opciones, quita el rango. Al cambiar a otra categoría, el precio se limpia automáticamente.
+\end{enumerate}
+\captura{fig:precio-configurador}{Alternativas de horquilla acotadas por precio}{36-precio-configurador.png}{.76}{.43}
+\consejo{Este control filtra el precio individual de las alternativas. No muestra cuánto presupuesto queda para completar el montaje ni confirma compatibilidad mecánica.}
 
 \subsection{Aplicar piezas a ambos lados}\label{sec:pares}
 \begin{enumerate}
@@ -657,7 +693,7 @@ El aviso se muestra dentro de ATLAS; no se presenta como un correo o notificaci�
 Situación & Acción\\\midrule\endfirsthead
 \multicolumn{2}{l}{\textit{Tabla \thetable\ (continuación)}}\\\toprule
 Situación & Acción\\\midrule\endhead
-No hay resultados en el catálogo & Borra parte de la búsqueda, vuelve a Todas o limpia filtros. Comprueba también la categoría seleccionada.\\
+No hay resultados en el catálogo & Borra parte de la búsqueda, amplía o quita el rango de Precio, vuelve a Todas o limpia filtros. Comprueba también la categoría seleccionada.\\
 No puedo añadir otra comparación & El límite es tres variantes de una misma categoría. Quita una columna o cambia la selección anterior.\\
 El acceso con Google no termina & Comprueba si cancelaste la selección o autorización; vuelve a Entrar y repite. Si ocurre siempre, informa del paso en que se detiene sin compartir contraseñas.\\
 El correo de confirmación no llega & Revisa la dirección, bandeja no deseada y Reenviar correo. Si sigue sin llegar, consulta al administrador antes de solicitar otra cuenta.\\

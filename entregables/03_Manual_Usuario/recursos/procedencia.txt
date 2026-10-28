@@ -63,3 +63,19 @@ iniciales de localización del selector se corrigieron; ejecución final de
 trece capturas completa y limpieza comprobada. Evidencia JSON y capturas
 de diagnóstico bajo models/local/validation/entregables/ (ignorado).
 Las notas de procedencia se conservan aquí y no forman parte del PDF de uso.
+
+FILTRO DE PRECIO — AMPLIACIÓN 28/10/2026
+Capturas propias del frontend local con Supabase Cloud, obtenidas mediante
+scripts/capture-price-deliverables.mjs. Script de validación del comportamiento:
+scripts/validate-price-filter-browser.mjs. No se guardan montajes, crean pedidos,
+modifican precios, stock o catálogo durante la captura. Cuenta/carrito temporales
+eliminados. Capturas usadas en documentos versionadas; diagnósticos y resultados
+completos quedan en models/local/validation/entregables/price-filter/ (ignorado).
+35-filtro-precio.png: desplegable real en Horquillas, mínimo1000/máximo2500.
+36-precio-configurador.png: precio aplicado y alternativas de horquilla.
+37-precio-movil.png: mismo control en Pixel7 emulado, máximo2500.
+Se renuevan22-vista-componentes,23-vista-ficha y26-vista-configurador del manual.
+El informe usa copia35 como05-filtro-precio; la presentación como18-filtro-precio.
+No representan un cálculo del presupuesto total del montaje ni aceptación
+visual del usuario o funcionamiento de un teléfono físico. Solo el manual
+incluye instrucciones de uso; estas notas quedan fuera de su PDF.

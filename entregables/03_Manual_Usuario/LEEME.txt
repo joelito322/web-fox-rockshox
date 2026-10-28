@@ -30,7 +30,7 @@ CRITERIOS
 - Portada centrada en ATLAS MTB y el manual, sin entidades, curso o datos universitarios.
 - Pasos de consulta, comparación, configuración, guardado y gestión de montajes.
 - Sección separada para administración según permisos.
-- 34 imágenes: 13 vistas amplias y 21 detalles de los controles.
+- 37 imágenes: 13 vistas amplias y 24 detalles de los controles.
 - Tablas de campos, procedimientos por tarea y soluciones a problemas frecuentes.
 - El PDF no incluye notas de pruebas, cuentas temporales ni procedencia técnica.
 - Entrega de correos no certificada; Google confirmado previamente por el usuario.
@@ -46,8 +46,8 @@ Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
 opcional con tarifa inicial S/150 editable y exoneración administrativa,
 notificaciones, pedidos, métodos de pago simulados y alternativas de
 compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
-Estado registrado: 24 tablas propias, 42 migraciones; 564 pruebas correctas,
-2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
+Estado registrado: 24 tablas propias, 43 migraciones; 571 pruebas correctas,
+2 omitidas en 85 archivos y build correcto. Cada evidencia tiene su entorno.
 Las capturas se renovaron con cuentas temporales y limpieza comprobada;
 no se modificaron precios, catálogo ni cuentas reales durante las capturas.
 Esta revisión no implica push ni despliegue. La publicación previa puede
@@ -59,5 +59,12 @@ procedencia. Las notas de reproducción permanecen solo en los recursos.
 Se añadieron vistas de Componentes, ficha, Bicicletas, comparación, configurador,
 Mis bicicletas, Revisar pedido, catálogo administrativo, editor de componente,
 Usuarios, Roles, Permisos y Ofertas. Se eliminaron los ejercicios repetidos;
-las tareas permanecen en sus capítulos correspondientes. Solo el manual se
-recompila: los otros entregables no se modifican.
+las tareas permanecen en sus capítulos correspondientes. Esa revisión anterior afectó solo al manual. La actualización posterior del
+filtro de precio también modifica informe y presentación.
+
+FILTRO INDIVIDUAL DE PRECIO — 28/10/2026
+Mínimo/máximo por pieza y categoría en catálogo y selector 3D. Precio vigente
+con promociones, variantes elegibles, limpieza al cambiar categoría y paginación
+coherente. No es presupuesto total de una bicicleta. Se actualizan fuente TEX
+y PDF, controles/capturas y resultados; el cronograma base hasta27/10 conserva
+sus fechas y distingue esta ampliación posterior del28. Sin push ni despliegue.
