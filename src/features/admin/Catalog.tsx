@@ -472,6 +472,7 @@ export default function Catalog({
       if (failure) throw failure;
       setBaseline(JSON.stringify({ ...value, published: payload.published }));
       setExpected(editable({ ...value, published: !!payload.published }));
+      await cache.invalidateQueries({ queryKey: ["sales", "offers", "price-matches"], refetchType: "none" });
       await Promise.all([
         cache.invalidateQueries({ queryKey: ["admin-catalog", auth.user!.id] }),
         cache.invalidateQueries({ queryKey: ["admin-detail", auth.user!.id] }),

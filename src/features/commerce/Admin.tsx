@@ -96,6 +96,7 @@ export default function CommercialAdmin({
         "promotion-choices",
       ].map((key) => client.invalidateQueries({ queryKey: ["sales", key] })),
     );
+    await client.invalidateQueries({ predicate: (query) => query.meta?.priceFilter === true });
   }
   return (
     <div className="sales-stack">

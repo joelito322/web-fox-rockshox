@@ -1,4 +1,7 @@
 import { MontagePurchase } from "../commerce/Conversion";
+import { money } from "../commerce/model";
+import { PriceFilter } from "../catalog/PriceFilter";
+import { hasPriceRange, type PriceRange } from "../catalog/priceRange";
 import { evaluateAlternative } from "./model/alternatives";
 import { Compatibility } from "./Compatibility";
 import "./assembly.css";
@@ -171,6 +174,9 @@ function Configurator({ buildId }: { buildId?: string }) {
         currentLocation.search !== nextLocation.search),
   );
   const [pieceFilter, setPieceFilter] = useState({ slot, search: "", page: 0 });
+  const category = slotCategories[slot];
+  const [piecePrice, setPiecePrice] = useState<{ category: typeof category; range: PriceRange }>({ category, range: {} });
+  const price = piecePrice.category === category ? piecePrice.range : {};
   // A slot change uses its clean filters immediately, before effects run.
   const pieceSearch = pieceFilter.slot === slot ? pieceFilter.search : "";
   const piecePage = pieceFilter.slot === slot ? pieceFilter.page : 0;
@@ -203,6 +209,9 @@ function Configurator({ buildId }: { buildId?: string }) {
     setSettledSearch({ slot, search: "", page: 0 });
     setSelectionNote("");
   }, [slot]);
+  useEffect(() => {
+    setPiecePrice({ category, range: {} });
+  }, [category]);
   const selectionSpecs = {
     ...wheelFilters(wheelSetup, slot),
     ...(slot === "frame" && frameSize !== "all"
@@ -213,7 +222,8 @@ function Configurator({ buildId }: { buildId?: string }) {
     slotCategories[slot],
     settledSearch.slot === slot ? settledSearch.search : "",
     settledSearch.slot === slot ? settledSearch.page : 0,
-    Object.keys(selectionSpecs).length ? { specs: selectionSpecs } : {},
+    { ...(Object.keys(selectionSpecs).length ? { specs: selectionSpecs } : {}),
+      ...(hasPriceRange(price) ? { price } : {}) },
   );
   const item = configuration.items.find((i) => i.slot === slot);
   const selected = item ? variants[item.variantId] : undefined;
@@ -986,6 +996,10 @@ function Configurator({ buildId }: { buildId?: string }) {
               }}
             />
           </label>
+          <PriceFilter key={category} value={price} onChange={(range) => {
+            setPiecePrice({ category, range });
+            setPiecePage(0);
+          }} />
           {catalog.isPending ? (
             <Loading />
           ) : catalog.error ? (
@@ -1021,6 +1035,7 @@ function Configurator({ buildId }: { buildId?: string }) {
                       <small>{c.brands.name}</small>
                       <strong>{c.name}</strong>
                       <span>{v.label}</span>
+                      {catalog.data.prices[v.id] !== undefined && <span className="piece-option-price">{money(catalog.data.prices[v.id])}</span>}
                     </span>
                     {item?.variantId === v.id ? (
                       <Check size={17} />

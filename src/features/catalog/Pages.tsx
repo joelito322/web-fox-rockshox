@@ -29,6 +29,7 @@ import {
   useHistoricalVariant,
   useFacets,
   filterKeys,
+  useCatalogPriceChoices,
 } from "./api";
 import type { CatalogCard } from "./api";
 import { componentImage } from "../../data/images";
@@ -38,6 +39,8 @@ import { VariantInformation } from "./VariantInformation";
 import { useComparison } from "../compare";
 import { CatalogHeading } from "./CatalogHeading";
 import { CategorySelector } from "./CategorySelector";
+import { PriceFilter } from "./PriceFilter";
+import { hasPriceRange, priceRangeFromParams, type PriceRange } from "./priceRange";
 
 import {
   ProductPurchase,
@@ -112,7 +115,7 @@ function ProductCard({
             ) : null;
           })}
         </div>
-        <CardPrice componentId={component.id} />
+        <CardPrice componentId={component.id} variantIds={component.component_variants.map((variant) => variant.id)} />
         <div className="product-footer">
           <span>
             {component.component_variants.length}{" "}
@@ -145,6 +148,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
   const [filtersOpen, setFiltersOpen] = useState(false);
   const categoryToggle = useRef<HTMLButtonElement>(null);
   const facets = useFacets(category);
+  const price = priceRangeFromParams(params);
   const selectedSpecs = Object.fromEntries(
     filterKeys
       .filter((key) => params.has(key))
@@ -154,7 +158,18 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
     brand: params.get("brand") ?? undefined,
     discipline: params.get("discipline") ?? undefined,
     specs: selectedSpecs,
+    ...(hasPriceRange(price) ? { price } : {}),
   });
+  function updatePrice(range: PriceRange) {
+    setParams((p) => {
+      for (const [key, value] of [["price_min", range.min], ["price_max", range.max]] as const) {
+        if (value === undefined) p.delete(key);
+        else p.set(key, String(value / 100));
+      }
+      p.delete("page");
+      return p;
+    });
+  }
   function updateFilter(key: string, value: string) {
     setParams((p) => {
       if (value) p.set(key, value);
@@ -201,20 +216,24 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       else p.delete("category");
       p.delete("page");
       filterKeys.forEach((key) => p.delete(key));
+      p.delete("price_min");
+      p.delete("price_max");
       return p;
     });
     setFiltersOpen(false);
     if (filtersOpen) categoryToggle.current?.focus();
   }
   function open(component: CatalogCard) {
+    const variant = hasPriceRange(price) ? component.component_variants[0]?.id : undefined;
     if (frames)
       setParams((p) => {
         p.set("detail", component.slug);
-        p.delete("variant");
+        if (variant) p.set("variant", variant);
+        else p.delete("variant");
         return p;
       });
     else
-      navigate(`/componentes/${component.slug}${location.search}`, {
+      navigate(`/componentes/${component.slug}?${new URLSearchParams({ ...Object.fromEntries(params), ...(variant ? { variant } : {}) })}`, {
         replace: !!slug,
       });
   }
@@ -283,6 +302,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
               ))}
             </select>
           </label>
+          <PriceFilter key={category ?? "all"} value={price} onChange={updatePrice} />
           {category &&
             filterKeys
               .filter((key) => (facets.data.specs[key]?.length ?? 0) > 0)
@@ -305,7 +325,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
                   </select>
                 </label>
               ))}
-          {(search ||
+          {(hasPriceRange(price) || search ||
             params.get("brand") ||
             params.get("discipline") ||
             Object.keys(selectedSpecs).length > 0) && (
@@ -346,6 +366,7 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
           ) : (
             <ProductPrices
               componentIds={query.data.components.map((c) => c.id)}
+              priceRange={price}
             >
               <div className="product-grid">
                 {query.data.components.map((c) => (
@@ -398,23 +419,26 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
               La pieza no está disponible.
             </Notice>
           ) : (
-            <ComponentDetails component={detail.data} />
+            <ComponentDetails component={detail.data} priceRange={price} />
           )}
         </Drawer>
       )}
     </div>
   );
 }
-export function ComponentDetails({ component }: { component: ComponentModel }) {
+export function ComponentDetails({ component, priceRange }: { component: ComponentModel; priceRange?: PriceRange }) {
   const [params, setParams] = useSearchParams();
   const compare = useComparison();
   const [notice, setNotice] = useState("");
+  const priced = useCatalogPriceChoices(component.category, priceRange);
+  const eligibleVariantIds = hasPriceRange(priceRange) ? priced.data ?? [] : undefined;
   const historical = useHistoricalVariant(component, params.get("variant"));
-  const requested =
+  const requestedVersion =
     component.component_variants.find((v) => v.id === params.get("variant")) ??
     historical.data;
-  const available = component.component_variants.filter((v) => v.selectable);
-  const variant = requested ?? available[0] ?? component.component_variants[0];
+  const requested = requestedVersion && (!eligibleVariantIds || eligibleVariantIds.includes(requestedVersion.id)) ? requestedVersion : undefined;
+  const available = component.component_variants.filter((v) => v.selectable && (!eligibleVariantIds || eligibleVariantIds.includes(v.id)));
+  const variant = requested ?? available[0] ?? (hasPriceRange(priceRange) ? undefined : component.component_variants[0]);
   const choices =
     requested && !requested.selectable
       ? [requested, ...available]
@@ -424,6 +448,9 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
           ? [variant]
           : [];
   const photo = componentImage(component, variant);
+  if (hasPriceRange(priceRange) && priced.isPending) return <Loading />;
+  if (hasPriceRange(priceRange) && priced.error)
+    return <Notice onRetry={() => void priced.refetch()}>No se pudieron comprobar los precios de esta pieza.</Notice>;
   if (historical.isFetching && !requested) return <Loading />;
   if (historical.error && !requested)
     return (
@@ -497,7 +524,7 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
       </div>
       {notice && <p role="status">{notice}</p>}
       {variant.selectable ? (
-        <ProductPurchase variantId={variant.id} />
+        <ProductPurchase variantId={variant.id} priceRange={priceRange} />
       ) : (
         <p className="muted">
           Escoge una versión actual para consultar la oferta.

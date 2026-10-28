@@ -11,17 +11,20 @@ import { useCommerce } from "./Provider";
 import { useOffers } from "./api";
 import { money, unitLabels, conditionLabels, type Offer } from "./model";
 import { userError } from "../../lib/supabase";
+import { hasPriceRange, withinPriceRange, type PriceRange } from "../catalog/priceRange";
 const Prices = createContext<Offer[]>([]);
 export function ProductPrices({
   componentIds,
   children,
+  priceRange,
 }: {
   componentIds: string[];
   children: ReactNode;
+  priceRange?: PriceRange;
 }) {
   const commerce = useCommerce();
   return commerce ? (
-    <PriceBatch componentIds={componentIds}>{children}</PriceBatch>
+    <PriceBatch componentIds={componentIds} priceRange={priceRange}>{children}</PriceBatch>
   ) : (
     children
   );
@@ -29,40 +32,44 @@ export function ProductPrices({
 function PriceBatch({
   componentIds,
   children,
+  priceRange,
 }: {
   componentIds: string[];
   children: ReactNode;
+  priceRange?: PriceRange;
 }) {
   const offers = useOffers(componentIds);
   return (
-    <Prices.Provider value={offers.data ?? []}>{children}</Prices.Provider>
+    <Prices.Provider value={(offers.data ?? []).filter((offer) => withinPriceRange(offer.unit_cents, priceRange))}>{children}</Prices.Provider>
   );
 }
-export function CardPrice({ componentId }: { componentId: string }) {
+export function CardPrice({ componentId, variantIds }: { componentId: string; variantIds?: string[] }) {
   const offers = useContext(Prices).filter(
-    (o) => o.component_id === componentId,
+    (o) => o.component_id === componentId && (!variantIds || o.choices?.some((choice) => variantIds.includes(choice.variant_id))),
   );
   if (!offers.length) return null;
   const minimum = Math.min(...offers.map((o) => o.unit_cents));
   const varied = offers.some((o) => o.unit_cents !== minimum);
   const used = offers.every((o) => o.item_condition === "used");
+  const units = [...new Set(offers.filter((o) => o.unit_cents === minimum).map((o) => o.unit))];
   return (
     <div className="sales-card-price">
       <span className="sales-price-value">
         {varied && <small>Desde</small>}
         <strong>{money(minimum)}</strong>
+        <small> / {units.length === 1 ? unitLabels[units[0]] : "presentación"}</small>
       </span>
       {used && <span className="sales-condition">Segunda mano</span>}
     </div>
   );
 }
-export function ProductPurchase({ variantId }: { variantId: string }) {
+export function ProductPurchase({ variantId, priceRange }: { variantId: string; priceRange?: PriceRange }) {
   const cart = useCommerce();
   return cart ? (
-    <Purchase key={`${cart.scope}:${variantId}`} variantId={variantId} />
+    <Purchase key={`${cart.scope}:${variantId}`} variantId={variantId} priceRange={priceRange} />
   ) : null;
 }
-function Purchase({ variantId }: { variantId: string }) {
+function Purchase({ variantId, priceRange }: { variantId: string; priceRange?: PriceRange }) {
   const cart = useCommerce()!;
   const query = useOffers([], [variantId]);
   const [selected, setSelected] = useState("");
@@ -78,7 +85,7 @@ function Purchase({ variantId }: { variantId: string }) {
       clearTimeout(timer.current);
     };
   }, []);
-  const offers = query.data ?? [];
+  const offers = (query.data ?? []).filter((offer) => withinPriceRange(offer.unit_cents, priceRange));
   const offer = offers.find((o) => o.offer_id === selected) ?? offers[0];
   async function add() {
     if (!offer || phase === "pending") return;
@@ -109,7 +116,7 @@ function Purchase({ variantId }: { variantId: string }) {
   if (!offer)
     return (
       <p className="muted">
-        Disponible como referencia visual. Sin oferta de venta.
+        {hasPriceRange(priceRange) ? "No hay una oferta dentro de este rango." : "Disponible como referencia visual. Sin oferta de venta."}
       </p>
     );
   const actionLabel =

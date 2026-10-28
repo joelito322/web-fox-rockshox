@@ -5,6 +5,7 @@ import {
 } from "@tanstack/react-query";
 import { z } from "zod";
 import { requireSupabase } from "../../lib/supabase";
+import { hasPriceRange, validPriceRange, type PriceRange } from "./priceRange";
 import {
   componentSchema,
   variantSchema,
@@ -64,7 +65,37 @@ export type CatalogFilters = {
   brand?: string;
   discipline?: string;
   specs?: Record<string, string>;
+  price?: PriceRange;
 };
+async function priceMatches(client: QueryClient, category: Category | undefined, price: PriceRange | undefined, signal: AbortSignal) {
+  if (!hasPriceRange(price)) return undefined;
+  if (!validPriceRange(price)) throw new Error("catalog_invalid_price_range");
+  const matches = await client.fetchQuery({
+    queryKey: ["sales", "offers", "price-matches", category ?? "all", price],
+    staleTime: 30_000,
+    queryFn: async ({ signal: querySignal }) => {
+      const { data, error } = await requireSupabase().rpc("catalog_price_matches", {
+        p_category: category ?? null,
+        p_min_cents: price.min ?? null,
+        p_max_cents: price.max ?? null,
+      }).abortSignal(querySignal);
+      if (error) throw error;
+      return z.array(z.object({ variant_id: z.uuid(), unit_cents: z.number().int().positive() })).parse(data);
+    },
+  });
+  signal.throwIfAborted();
+  return matches;
+}
+export function useCatalogPriceChoices(category: Category, price?: PriceRange) {
+  const client = useQueryClient();
+  return useQuery({
+    queryKey: ["catalog", "price-choices", category, price],
+    enabled: hasPriceRange(price),
+    staleTime: 30_000,
+    meta: { priceFilter: hasPriceRange(price) },
+    queryFn: async ({ signal }) => (await priceMatches(client, category, price, signal))?.map((match) => match.variant_id),
+  });
+}
 export function useFacets(category?: Category) {
   return useQuery({
     queryKey: ["catalog-facets", category ?? "all"],
@@ -96,6 +127,7 @@ function catalogQuery(
   filters: CatalogFilters,
   projection: string,
   signal: AbortSignal,
+  variantIds?: string[],
 ) {
   let query = requireSupabase()
     .from("components")
@@ -108,6 +140,7 @@ function catalogQuery(
     .range(page * 24, page * 24 + 23)
     .abortSignal(signal);
   if (category) query = query.eq("category", category);
+  if (variantIds) query = query.in("component_variants.id", variantIds);
   if (filters.brand && z.uuid().safeParse(filters.brand).success)
     query = query.eq("brand_id", filters.brand);
   if (filters.discipline && ["enduro", "downhill"].includes(filters.discipline))
@@ -132,6 +165,7 @@ export function useCatalogCards(
   page = 0,
   filters: CatalogFilters = {},
 ) {
+  const client = useQueryClient();
   return useQuery({
     queryKey: [
       "catalog",
@@ -141,8 +175,12 @@ export function useCatalogCards(
       page,
       filters,
     ],
-    staleTime: catalogStaleTime,
+    staleTime: hasPriceRange(filters.price) ? 30_000 : catalogStaleTime,
+    meta: { priceFilter: hasPriceRange(filters.price) },
     queryFn: async ({ signal }) => {
+      const matches = await priceMatches(client, category, filters.price, signal);
+      const ids = matches?.map((match) => match.variant_id);
+      if (ids && !ids.length) return { components: [], count: 0 };
       const { data, error, count } = await catalogQuery(
         category,
         search,
@@ -150,6 +188,7 @@ export function useCatalogCards(
         filters,
         catalogCardProjection,
         signal,
+        ids,
       );
       if (error) throw error;
       return {
@@ -179,8 +218,13 @@ export function useCatalog(
   const client = useQueryClient();
   return useQuery({
     queryKey: ["catalog", category ?? "all", search.trim(), page, filters],
-    staleTime: catalogStaleTime,
+    staleTime: hasPriceRange(filters.price) ? 30_000 : catalogStaleTime,
+    meta: { priceFilter: hasPriceRange(filters.price) },
     queryFn: async ({ signal }) => {
+      const matches = await priceMatches(client, category, filters.price, signal);
+      const ids = matches?.map((match) => match.variant_id);
+      const prices: Record<string, number> = Object.fromEntries((matches ?? []).map((match) => [match.variant_id, match.unit_cents]));
+      if (ids && !ids.length) return { components: [], count: 0, prices };
       const { data, error, count } = await catalogQuery(
         category,
         search,
@@ -188,11 +232,12 @@ export function useCatalog(
         filters,
         catalogProjection,
         signal,
+        ids,
       );
       if (error) throw error;
       const components = z.array(componentSchema).parse(data);
       cacheComponentVariants(client, components);
-      return { components, count: count ?? 0 };
+      return { components, count: count ?? 0, prices };
     },
   });
 }
