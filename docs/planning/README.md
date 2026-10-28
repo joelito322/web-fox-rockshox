@@ -152,6 +152,12 @@ Política de archivos finales y archivo local aprobada: [models/README.md](../..
 
 - [06g · Avisos globales de compatibilidad](06g-avisos-globales-de-compatibilidad.md): barra global, panel reutilizado, posiciones afectadas y límites documentados sin bloquear el armado.
 
-## Ampliación comercial en planificación · 27/10/2026
+## Ampliación comercial · planificación e implementación
 
-[13](13-tienda-y-venta-asistida.md) registra la evolución a tienda propia de componentes con guía técnica y3D, precios de venta, promociones, carrito de compras y pedidos. El usuario solicitó documentarla: todavía no se implementa ni activa cobro real. Pagos iniciales a nivel interfaz demostrativa; Yape manual y pasarela automática son alternativas posteriores diferenciadas. Las exclusiones anteriores de comercio describen el alcance base, no niegan esta nueva planificación.
+[13](13-tienda-y-venta-asistida.md) registra la evolución a tienda propia de componentes con guía técnica y3D, precios, promociones, carrito y pedidos. La implementación posterior autorizada y sus comprobaciones están en [13e](13e-evidencia-de-implementacion-comercial.md); ajustes de precios/segunda mano en13f/13g. Persistencia comercial real y resultados financieros simulados; no se habilitaron cobros reales. Yape manual y pasarela automática siguen como alternativas posteriores. Las exclusiones antiguas de comercio describen el alcance base.
+
+- [13f · Precios visibles y componentes de segunda mano](13f-precios-y-componentes-de-segunda-mano.md).
+
+- [13g · Precios por modelo y variante](13g-precios-por-modelo-y-variante.md).
+
+- [06h · Identidad Cumbre y paleta naranja rojiza](06h-identidad-cumbre-y-paleta.md).

@@ -212,3 +212,9 @@ Rejillas de componentes/cuadros calculadas por ancho mínimo legible y ancho rea
 ### Selección visual del configurador
 
 Ampliación solicitada en [06e](06e-armado-guiado.md): clic vacío limpia únicamente el resaltado 3D, conservando el panel. La pieza seleccionada usa un pulso lento de emisión; solo esta selección activa y la inspección de suspensión autorizada en 05c pueden mantener animación durante el trabajo. Parar el pulso al deseleccionar u ocultar pestaña; con movimiento reducido, resaltado fijo. No modificar pintura, geometría, miniaturas ni datos por el pulso.
+
+### Identidad Cumbre aprobada · 28/10/2026
+
+El usuario eligió Cumbre (propuesta18 oscura). Composición vertical como maestro; cabecera con mismo símbolo/letras en horizontal y favicon con símbolo. Desenfoque breve al hover/foco, fin nítido y movimiento reducido respetado. Las alternativas anteriores no son dirección vigente; carpeta temporal eliminada por petición explícita.
+
+Se autorizó trasladar la paleta verde de interfaz a naranja rojizo y variantes, conservando función y jerarquía. Dirección, tokens, recursos y evidencia en [06h](06h-identidad-cumbre-y-paleta.md). Referencias anteriores a lima/verdes son históricas: no reintroducirlas como paleta de la web. Los colores de piezas/fotos permanecen independientes del tema.
