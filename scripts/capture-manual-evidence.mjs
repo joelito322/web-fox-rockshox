@@ -4,10 +4,10 @@ import { createClient } from '@supabase/supabase-js';
 import { randomBytes, randomUUID } from 'node:crypto';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { readProjectEnvironment } from './lib/environment.mjs';
-const env=readProjectEnvironment(), origin='https://atlasmtb.netlify.app';
+const env=readProjectEnvironment(), origin=process.env.ATLAS_EVIDENCE_ORIGIN??'http://127.0.0.1:5174';
 const out='entregables/03_Manual_Usuario/recursos';mkdirSync(out,{recursive:true});
 const admin=createClient(env.SUPABASE_URL,env.SUPABASE_SECRET_KEY,{auth:{persistSession:false,autoRefreshToken:false}});
-const result={context:'Web pública; cuenta temporal confirmada por API para capturar recorridos; no prueba entrega de correo ni consentimiento Google',checks:[],cleanup:false};
+const result={context:'Versión actual local + Supabase Cloud; cuenta temporal confirmada por API para capturar recorridos; no prueba entrega de correo ni consentimiento Google',checks:[],cleanup:false};
 let browser,account;
 const check=name=>{result.checks.push(name);console.log(name);};
 try{
@@ -61,5 +61,5 @@ try{
 finally{
  if(browser)await browser.close();let clean=true;
  if(account){const folders=await admin.storage.from('bike-previews').list(`builds/${account.id}`,{limit:1000});for(const folder of folders.data??[]){const prefix=`builds/${account.id}/${folder.name}`;const listed=await admin.storage.from('bike-previews').list(prefix,{limit:1000});if(listed.data?.length){const removed=await admin.storage.from('bike-previews').remove(listed.data.map(x=>`${prefix}/${x.name}`));if(removed.error)clean=false;}}const builds=await admin.from('builds').select('id').eq('user_id',account.id);for(const b of builds.data??[]){const prefix=`builds/${account.id}/${b.id}`;const listed=await admin.storage.from('bike-previews').list(prefix,{limit:1000});if(listed.data?.length){const removed=await admin.storage.from('bike-previews').remove(listed.data.map(x=>`${prefix}/${x.name}`));if(removed.error)clean=false;}}const deleted=await admin.auth.admin.deleteUser(account.id);if(deleted.error)clean=false;}
- result.cleanup=clean;writeFileSync(out+'/validacion-recorridos.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({checks:result.checks.length,cleanup:clean,failed:Boolean(result.failure)}));if(!clean)process.exitCode=1;
+ result.cleanup=clean;writeFileSync('models/local/validation/entregables/manual-run.json',JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify({checks:result.checks.length,cleanup:clean,failed:Boolean(result.failure)}));if(!clean)process.exitCode=1;
 }

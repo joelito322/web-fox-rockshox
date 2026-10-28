@@ -4,12 +4,12 @@ import { createClient } from '@supabase/supabase-js';
 import { randomBytes, randomUUID } from 'node:crypto';
 import { writeFileSync, mkdirSync } from 'node:fs';
 import { readProjectEnvironment } from './lib/environment.mjs';
-const e=readProjectEnvironment(), origin='https://atlasmtb.netlify.app';
+const e=readProjectEnvironment(), origin=process.env.ATLAS_EVIDENCE_ORIGIN??'http://127.0.0.1:5174';
 const out='entregables/02_Informe_Tecnico/recursos';mkdirSync(out,{recursive:true});
 const opts={auth:{persistSession:false,autoRefreshToken:false}};
 const admin=createClient(e.SUPABASE_URL,e.SUPABASE_SECRET_KEY,opts);
 const accounts=[], buildIds=[];let browser;
-const result={context:'Frontend público real; cuentas temporales creadas y confirmadas por API para la prueba, sin entrega de correo',checks:{},cleanup:false};
+const result={context:'Versión actual local + Supabase Cloud; cuentas temporales creadas y confirmadas por API para la prueba, sin entrega de correo',checks:{},cleanup:false};
 const must=(value,name)=>{if(!value)throw Error(name);result.checks[name]=true;};
 try {
  browser=await chromium.launch();const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
@@ -54,6 +54,6 @@ finally {
  for(const b of builds.data??[]){const folder=`builds/${a.id}/${b.id}`;const list=await admin.storage.from('bike-previews').list(folder,{limit:1000});if(list.data?.length){const removed=await admin.storage.from('bike-previews').remove(list.data.map(o=>`${folder}/${o.name}`));if(removed.error)cleaned=false;}}
  const deleted=await admin.auth.admin.deleteUser(a.id);if(deleted.error)cleaned=false;
  }
- result.cleanup=cleaned;writeFileSync(out+'/validacion-publica.json',JSON.stringify(result,null,2)+'\n');
+ result.cleanup=cleaned;writeFileSync('models/local/validation/entregables/report-run.json',JSON.stringify(result,null,2)+'\n');
  console.log(JSON.stringify({checks:Object.keys(result.checks).length,cleanup:cleaned,failed:Boolean(result.failure)}));if(!cleaned)process.exitCode=1;
 }
