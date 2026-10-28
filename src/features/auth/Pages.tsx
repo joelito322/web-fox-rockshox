@@ -79,11 +79,12 @@ export default function AuthPage({
       sessionStorage.removeItem("atlas:intent");
       navigate(
         intent &&
-          auth.permissions.includes(
-            intent.startsWith("/configurador")
-              ? "configurator.use"
-              : "builds.read_own",
-          )
+          (/^\/(comprar|mis-pedidos)(?:\?|$)/.test(intent) ||
+            auth.permissions.includes(
+              intent.startsWith("/configurador")
+                ? "configurator.use"
+                : "builds.read_own",
+            ))
           ? intent
           : defaultDestination(auth.permissions),
         { replace: true },
@@ -185,15 +186,21 @@ export default function AuthPage({
         <section className="auth-art-copy">
           <p className="auth-art-kicker">TU BICI. TUS REGLAS.</p>
           <h2 className="auth-art-title">
-            Tu próxima<br />
-            línea empieza<br />
+            Tu próxima
+            <br />
+            línea empieza
+            <br />
             <span>aquí.</span>
           </h2>
           <p className="auth-art-tagline">Cada pieza define tu camino.</p>
         </section>
         <footer className="auth-art-footer">
           <span>SUN PEAKS, CANADÁ</span>
-          <a href="https://unsplash.com/photos/534Moyd3Lf4" target="_blank" rel="noreferrer">
+          <a
+            href="https://unsplash.com/photos/534Moyd3Lf4"
+            target="_blank"
+            rel="noreferrer"
+          >
             Foto: Julien Kettmann
           </a>
         </footer>
@@ -246,8 +253,16 @@ export default function AuthPage({
                   disabled={busy || googleBusy}
                   onClick={() => void googleSignIn()}
                 >
-                  <img src={googleLogo} alt="" aria-hidden="true" width={20} height={20} />
-                  {googleBusy ? "Conectando con Google…" : "Continuar con Google"}
+                  <img
+                    src={googleLogo}
+                    alt=""
+                    aria-hidden="true"
+                    width={20}
+                    height={20}
+                  />
+                  {googleBusy
+                    ? "Conectando con Google…"
+                    : "Continuar con Google"}
                 </button>
                 <p className="auth-divider">o con tu correo</p>
               </>
@@ -293,7 +308,10 @@ export default function AuthPage({
               )}
               {error && <Notice>{error}</Notice>}
               {auth.error && <Notice>{auth.error}</Notice>}
-              <button className="button dark full" disabled={busy || googleBusy}>
+              <button
+                className="button dark full"
+                disabled={busy || googleBusy}
+              >
                 {busy
                   ? "Procesando…"
                   : {
@@ -329,9 +347,14 @@ export function AuthCallback() {
     void verifyAuthCallback()
       .then((type) => {
         if (active)
-          navigate(type === "email" || type === "google" ? "/entrar" : "/nueva-contrasena", {
-            replace: true,
-          });
+          navigate(
+            type === "email" || type === "google"
+              ? "/entrar"
+              : "/nueva-contrasena",
+            {
+              replace: true,
+            },
+          );
       })
       .catch((error) => {
         if (active) setError(userError(error));

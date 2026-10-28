@@ -61,7 +61,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const { data, error } = await supabase.rpc("get_my_access");
     if (request !== serial.current) return;
     const permissions: string[] = error ? [] : (data?.permissions ?? []);
-    const revoked = granted.current.some((permission) => !permissions.includes(permission));
+    const revoked = granted.current.some(
+      (permission) => !permissions.includes(permission),
+    );
     granted.current = permissions;
     setState({
       user,
@@ -147,7 +149,7 @@ export function readIntent(): string | null {
   const intent = sessionStorage.getItem("atlas:intent");
   if (
     !intent ||
-    !/^\/(configurador(?:\/[0-9a-f-]{36})?|mis-bicicletas)(?:\?[a-zA-Z0-9=&%_-]+)?$/.test(
+    !/^\/(configurador(?:\/[0-9a-f-]{36})?|mis-bicicletas|comprar|mis-pedidos)(?:\?[a-zA-Z0-9=&%_-]+)?$/.test(
       intent,
     )
   )

@@ -1,4 +1,7 @@
 import {
+  Children,
+  createContext,
+  useContext,
   useCallback,
   useLayoutEffect,
   useId,
@@ -6,7 +9,36 @@ import {
   useState,
   type ReactNode,
 } from "react";
+import { createPortal } from "react-dom";
 import { X } from "lucide-react";
+const DrawerActionContext = createContext<{
+  target: HTMLElement | null;
+  setBusy: (busy: boolean) => void;
+} | null>(null);
+/** Nested details reuse the drawer's fixed action area without a second panel. */
+export function DrawerActions({
+  children,
+  busy = false,
+}: {
+  children: ReactNode;
+  busy?: boolean;
+}) {
+  const context = useContext(DrawerActionContext);
+  const setBusy = context?.setBusy;
+  useLayoutEffect(() => {
+    setBusy?.(busy);
+    return () => setBusy?.(false);
+  }, [setBusy, busy]);
+  if (!Children.toArray(children).length) return null;
+  return context?.target
+    ? createPortal(
+        <fieldset className="drawer-actions" disabled={busy}>
+          {children}
+        </fieldset>,
+        context.target,
+      )
+    : null;
+}
 export function Drawer({
   title,
   children,
@@ -20,6 +52,9 @@ export function Drawer({
   footer?: ReactNode;
   busy?: boolean;
 }) {
+  const [actionTarget, setActionTarget] = useState<HTMLElement | null>(null);
+  const [actionBusy, setActionBusy] = useState(false);
+  busy = busy || actionBusy;
   const headingId = useId();
   const dialog = useRef<HTMLDialogElement>(null);
   const busyRef = useRef(busy);
@@ -121,8 +156,14 @@ export function Drawer({
           <X />
         </button>
       </header>
-      <div className="drawer-body">{children}</div>
-      {footer && <footer className="drawer-footer">{footer}</footer>}
+      <DrawerActionContext.Provider
+        value={{ target: actionTarget, setBusy: setActionBusy }}
+      >
+        <div className="drawer-body">{children}</div>
+      </DrawerActionContext.Provider>
+      <footer ref={setActionTarget} className="drawer-footer">
+        {footer}
+      </footer>
     </dialog>
   );
 }
