@@ -1,3 +1,4 @@
+import { MontagePurchase } from "../commerce/Conversion";
 import { Compatibility } from "./Compatibility";
 import "./assembly.css";
 import { AssemblyIndex, AssemblyNavigation } from "./AssemblyNavigation";
@@ -147,7 +148,10 @@ function Configurator({ buildId }: { buildId?: string }) {
   const signature = useMemo(() => canonical(configuration), [configuration]);
   const dirty = ready && signature !== confirmed;
   const mountWarnings = useMemo(
-    () => warnings(configuration, variants).filter((w) => w.code !== "visual_reference"),
+    () =>
+      warnings(configuration, variants).filter(
+        (w) => w.code !== "visual_reference",
+      ),
     [configuration.items, variants],
   );
   const leaving = useRef(false);
@@ -734,6 +738,7 @@ function Configurator({ buildId }: { buildId?: string }) {
         <span className="save-status" role="status">
           {status || (dirty ? "Cambios sin guardar" : "Sin cambios")}
         </span>
+        <MontagePurchase configuration={configuration} variants={variants} />
         {auth.permissions.includes("builds.write_own") && (
           <button
             className="button dark small"
@@ -745,7 +750,11 @@ function Configurator({ buildId }: { buildId?: string }) {
           </button>
         )}
       </div>
-      <Compatibility warnings={mountWarnings} hasParts={configuration.items.length > 0} onSelect={selectSlot} />
+      <Compatibility
+        warnings={mountWarnings}
+        hasParts={configuration.items.length > 0}
+        onSelect={selectSlot}
+      />
       <div className="editor-layout">
         <AssemblyIndex
           configuration={configuration}

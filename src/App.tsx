@@ -14,6 +14,9 @@ const AuthCallback = lazy(() =>
     default: module.AuthCallback,
   })),
 );
+import { CommerceProvider } from "./features/commerce/Provider";
+const Checkout = lazy(() => import("./features/commerce/Checkout"));
+const Orders = lazy(() => import("./features/commerce/Orders"));
 import { Layout } from "./app/Layout";
 import Home from "./app/Home";
 import { Loading } from "./components/ui/Feedback";
@@ -57,6 +60,8 @@ const router = createBrowserRouter([
       { path: "/catalogo", element: <Navigate replace to="/componentes" /> },
       { path: "/bicicletas", element: <BicyclesPage /> },
       { path: "/comparar", element: <ComparePage /> },
+      { path: "/comprar", element: <Checkout /> },
+      { path: "/mis-pedidos", element: <Orders /> },
       { path: "/entrar", element: <AuthPage mode="login" /> },
       { path: "/registro", element: <AuthPage mode="register" /> },
       { path: "/recuperar", element: <AuthPage mode="recover" /> },
@@ -107,7 +112,9 @@ export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <RouterProvider router={router} />
+        <CommerceProvider>
+          <RouterProvider router={router} />
+        </CommerceProvider>
       </AuthProvider>
     </QueryClientProvider>
   );

@@ -24,7 +24,11 @@ import {
   type Category,
 } from "./model";
 import {
-  useCatalogCards, useComponent, useHistoricalVariant, useFacets, filterKeys,
+  useCatalogCards,
+  useComponent,
+  useHistoricalVariant,
+  useFacets,
+  filterKeys,
 } from "./api";
 import type { CatalogCard } from "./api";
 import { componentImage } from "../../data/images";
@@ -35,6 +39,11 @@ import { useComparison } from "../compare";
 import { CatalogHeading } from "./CatalogHeading";
 import { CategorySelector } from "./CategorySelector";
 
+import {
+  ProductPurchase,
+  ProductPrices,
+  CardPrice,
+} from "../commerce/ProductPurchase";
 function ProductCard({
   component,
   onOpen,
@@ -103,6 +112,7 @@ function ProductCard({
             ) : null;
           })}
         </div>
+        <CardPrice componentId={component.id} />
         <div className="product-footer">
           <span>
             {component.component_variants.length}{" "}
@@ -316,7 +326,11 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
       )}
       <div className="catalog-layout">
         {!frames && (
-          <CategorySelector selected={category} open={filtersOpen} onSelect={chooseCategory} />
+          <CategorySelector
+            selected={category}
+            open={filtersOpen}
+            onSelect={chooseCategory}
+          />
         )}
         <section className="catalog-results" aria-label="Resultados">
           {query.isPending ? (
@@ -330,11 +344,19 @@ export default function CatalogPage({ frames = false }: { frames?: boolean }) {
               Prueba otra categoría o un nombre diferente.
             </Empty>
           ) : (
-            <div className="product-grid">
-              {query.data.components.map((c) => (
-                <ProductCard key={c.id} component={c} onOpen={() => open(c)} />
-              ))}
-            </div>
+            <ProductPrices
+              componentIds={query.data.components.map((c) => c.id)}
+            >
+              <div className="product-grid">
+                {query.data.components.map((c) => (
+                  <ProductCard
+                    key={c.id}
+                    component={c}
+                    onOpen={() => open(c)}
+                  />
+                ))}
+              </div>
+            </ProductPrices>
           )}
           {!!query.data && query.data.count > 24 && (
             <div className="pagination">
@@ -388,9 +410,9 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
   const compare = useComparison();
   const [notice, setNotice] = useState("");
   const historical = useHistoricalVariant(component, params.get("variant"));
-  const requested = component.component_variants.find(
-    (v) => v.id === params.get("variant"),
-  ) ?? historical.data;
+  const requested =
+    component.component_variants.find((v) => v.id === params.get("variant")) ??
+    historical.data;
   const available = component.component_variants.filter((v) => v.selectable);
   const variant = requested ?? available[0] ?? component.component_variants[0];
   const choices =
@@ -474,6 +496,13 @@ export function ComponentDetails({ component }: { component: ComponentModel }) {
         </button>
       </div>
       {notice && <p role="status">{notice}</p>}
+      {variant.selectable ? (
+        <ProductPurchase variantId={variant.id} />
+      ) : (
+        <p className="muted">
+          Escoge una versión actual para consultar la oferta.
+        </p>
+      )}
       <VariantInformation component={component} variant={variant} />
     </>
   );

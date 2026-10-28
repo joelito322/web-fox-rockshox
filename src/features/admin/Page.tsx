@@ -4,12 +4,32 @@ import { useAuth } from "../auth/provider";
 import { RequirePermission } from "../auth/RequirePermission";
 import { Loading } from "../../components/ui/Feedback";
 import { useAdminState, useAdminScroll } from "./workspace";
+import CommercialAdmin from "../commerce/Admin";
+import Orders from "../commerce/Orders";
 import Presets from "./Presets";
 import Users from "./Users";
 import Roles from "./Roles";
 import Catalog from "./Catalog";
 import "./admin.css";
 const sections = [
+  {
+    key: "ofertas",
+    label: "Ofertas",
+    group: "Ventas",
+    permission: "sales.offers.manage",
+  },
+  {
+    key: "promociones",
+    label: "Promociones",
+    group: "Ventas",
+    permission: "sales.promotions.manage",
+  },
+  {
+    key: "pedidos",
+    label: "Pedidos",
+    group: "Ventas",
+    permission: "sales.orders.manage",
+  },
   {
     key: "catalogo",
     label: "Componentes",
@@ -56,13 +76,19 @@ const sections = [
 export default function AdminPage() {
   const auth = useAuth();
   if (auth.loading) return <Loading />;
-  return <AdminContent key={`${auth.user?.id}:${[...auth.permissions].sort().join(":")}`} />;
+  return (
+    <AdminContent
+      key={`${auth.user?.id}:${[...auth.permissions].sort().join(":")}`}
+    />
+  );
 }
 function AdminContent() {
   const auth = useAuth();
   const { tab } = useParams();
-  const available = sections.filter((s) =>
-    auth.permissions.includes(s.permission),
+  const available = sections.filter(
+    (s) =>
+      auth.permissions.includes(s.permission) ||
+      (s.key === "pedidos" && auth.permissions.includes("sales.quotes.manage")),
   );
   const [last, setLast] = useAdminState("navigation", "section", "catalogo");
   const [visits, setVisits] = useAdminState<Record<string, string>>(
@@ -73,7 +99,15 @@ function AdminContent() {
   const section = sections.find((s) => s.key === tab);
   useAdminScroll(section?.key ?? "entry");
   useEffect(() => {
-    if (!section || !auth.permissions.includes(section.permission)) return;
+    if (
+      !section ||
+      !(
+        auth.permissions.includes(section.permission) ||
+        (section.key === "pedidos" &&
+          auth.permissions.includes("sales.quotes.manage"))
+      )
+    )
+      return;
     setLast(section.key);
     setVisits((previous) =>
       previous[section.group] === section.key
@@ -89,7 +123,14 @@ function AdminContent() {
       />
     );
   return (
-    <RequirePermission permission={section.permission}>
+    <RequirePermission
+      permission={
+        section.key === "pedidos" &&
+        !auth.permissions.includes("sales.orders.manage")
+          ? "sales.quotes.manage"
+          : section.permission
+      }
+    >
       <div className="content admin-page">
         <div className="section-heading">
           <div>
@@ -132,7 +173,14 @@ function AdminContent() {
               </NavLink>
             ))}
         </nav>
-        {section.key === "usuarios" ? (
+        {section.key === "ofertas" || section.key === "promociones" ? (
+          <CommercialAdmin
+            key={section.key}
+            promotions={section.key === "promociones"}
+          />
+        ) : section.key === "pedidos" ? (
+          <Orders admin />
+        ) : section.key === "usuarios" ? (
           <Users />
         ) : section.key === "roles" || section.key === "permisos" ? (
           <Roles

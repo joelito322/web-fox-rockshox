@@ -1,0 +1,188 @@
+.sales-stack {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+.sales-demo {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--muted, #6b7280);
+  border-left: 3px solid var(--accent, #d4fe31);
+  padding: 0.5rem 0.75rem;
+  margin: 0;
+}
+.sales-actions {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sales-actions > button:not(.button):not(.text-button) {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #d6d7d3;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.sales-cart-line {
+  display: grid;
+  gap: 0.45rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #dedfd9;
+  min-width: 0;
+}
+.sales-cart-line > strong {
+  overflow-wrap: anywhere;
+}
+.sales-checkout {
+  padding-block: 2rem;
+}
+.sales-checkout-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(18rem, 1fr);
+  gap: clamp(1rem, 4vw, 4rem);
+  align-items: start;
+  margin-top: 1.5rem;
+}
+.sales-summary {
+  position: sticky;
+  top: 6rem;
+  padding: 1.5rem;
+  border: 1px solid #d7d9d2;
+  display: grid;
+  gap: 1rem;
+}
+.sales-summary > p {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+}
+.sales-summary button {
+  width: 100%;
+}
+.sales-checkout fieldset,
+.sales-stack fieldset {
+  border: 0;
+  padding: 0;
+  min-width: 0;
+  display: grid;
+  gap: 1rem;
+}
+.sales-purchase {
+  border-block: 1px solid #dedfd9;
+  padding: 1rem 0;
+  margin-block: 1rem;
+}
+.sales-card-price {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.sales-card-price small {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.sales-product-image {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+.cart-trigger {
+  white-space: nowrap;
+}
+.check-label {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.sales-stack .table-scroll {
+  overflow: auto;
+}
+.sales-stack table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.sales-stack td,
+.sales-stack th {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #dedfd9;
+}
+.sales-stack del {
+  font-size: 0.85em;
+  color: #72756b;
+}
+.sales-stack input,
+.sales-stack select {
+  max-width: 100%;
+}
+@media (max-width: 767px) {
+  .sales-checkout-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .sales-summary {
+    position: static;
+    padding: 1rem;
+  }
+  .cart-trigger span {
+    font-size: 0.8rem;
+  }
+  .sales-checkout {
+    padding-block: 1rem;
+  }
+  .sales-stack td,
+  .sales-stack th {
+    padding: 0.7rem 0.45rem;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sales-cart-line,
+  .sales-purchase {
+    animation: fade-in 0.2s ease both;
+  }
+  .sales-actions button {
+    transition:
+      background 0.15s ease,
+      transform 0.15s ease;
+  }
+  .sales-actions button:active {
+    transform: scale(0.97);
+  }
+}
+
+/* Empty shared action targets occupy no space in existing drawers. */
+.drawer-footer:empty {
+  display: none;
+}
+.drawer-footer .sales-stack,
+.drawer-footer .sales-actions {
+  width: 100%;
+}
+.sales-stack .pagination button {
+  min-height: 44px;
+  border: 1px solid var(--border);
+  background: white;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+}
+@media (max-width: 420px) {
+  .site-header .header-nav {
+    gap: 10px;
+  }
+  .cart-trigger {
+    gap: 4px;
+  }
+  .cart-trigger span {
+    font-size: 0.7rem;
+  }
+}
+
+.drawer-actions {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+}

@@ -16,6 +16,7 @@ import { requireSupabase, userError } from "../lib/supabase";
 import { BrandLogo } from "../components/BrandLogo";
 import { MotionRegion } from "../components/ui/MotionRegion";
 import { AccountMenu } from "./AccountMenu";
+import { CartButton } from "../features/commerce/Cart";
 export function Brand() {
   return (
     <Link className="brand" to="/" aria-label="ATLAS MTB, inicio">
@@ -62,6 +63,7 @@ export function Layout() {
         <Brand />
         <nav className="header-nav" aria-label="Navegación principal">
           <Link to="/componentes">Catálogo</Link>
+          <CartButton />
           {auth.user ? (
             <AccountMenu onLogout={logout} />
           ) : (
