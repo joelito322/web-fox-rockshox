@@ -44,9 +44,17 @@ Incluye tienda, ofertas en PEN, condición, carrito, cotizaciones, armado
 opcional con tarifa inicial S/150 editable y exoneración administrativa,
 notificaciones, pedidos, métodos de pago simulados y alternativas de
 compatibilidad. Los precios iniciales no son todos cotizaciones verificadas.
-Estado registrado: 24 tablas propias, 41 migraciones; 564 pruebas correctas,
+Estado registrado: 24 tablas propias, 42 migraciones; 564 pruebas correctas,
 2 omitidas en 83 archivos y build correcto. Cada evidencia tiene su entorno.
 Las capturas se renovaron con cuentas temporales y limpieza comprobada;
 no se modificaron precios, catálogo ni cuentas reales durante las capturas.
 Esta revisión no implica push ni despliegue. La publicación previa puede
 mostrar otra versión. Cobros reales, SMTP y móvil físico no certificados.
+
+Cronograma ampliado a cuatro semanas (30/09–27/10), integrando el alcance
+técnico y comercial. Distribución reconstruida, no bitácora real de ejecución.
+
+Precedencias revisadas: diseño cerrado04/10, migraciones desde05/10,
+pruebas integrales25/10, correcciones26/10 y revalidación27/10.
+Tabla y Gantt comparten28 actividades;54 relaciones fin–inicio comprobadas.
+El docente figura como Mg. Fidel Huanco Ramos.

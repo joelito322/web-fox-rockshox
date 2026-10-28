@@ -44,7 +44,7 @@
 \hd{.7}{6.03}{6.4}{12.2}{White}{Desarrollo de una plataforma web\\para la venta asistida de componentes\\y configuración tridimensional\\de bicicletas de montaña}
 \tx{.7}{3.55}{6.2}{11}{Mint}{\bfseries Joel Ito Luque}
 \tx{.7}{2.92}{6.45}{7.4}{White}{Universidad Nacional de Juliaca\\Facultad de Ciencias de la Ingeniería\\Ingeniería de Software y Sistemas}
-\tx{.7}{1.76}{6.5}{6.8}{White}{Docente: Fidel Huanco Ramos · Octavo semestre\\Juliaca, Perú · 21 de octubre de 2026}
+\tx{.7}{1.76}{6.5}{6.8}{White}{Docente: Mg. Fidel Huanco Ramos · Octavo semestre\\Juliaca, Perú · 21 de octubre de 2026}
 \fill[Night,opacity=.55](8.95,.72)rectangle(15.35,1.05);\tx{9.1}{.96}{6.2}{5.5}{White}{Foto: \href{https://unsplash.com/photos/534Moyd3Lf4}{Julien Kettmann / Unsplash} · Sun Peaks, Canadá}
 \finish
 \note{Presenta ATLAS MTB como tienda propia de componentes enduro y descenso con guía técnica y configuración 3D. La fotografía de Julien Kettmann es ambientación, no una captura del software. Conserva la fecha académica de portada y aclara la revisión funcional del 28 de octubre. Tiempo: 35 segundos.}
@@ -101,22 +101,22 @@
 \finish\note{Explica seis capacidades visibles. El catálogo conserva comparación y fichas; el montaje se guarda por cuenta. Carrito, cotización y pedido son entidades distintas. La administración integra catálogo, prearmadas, accesos y ventas por permisos. Los pagos son simulados. Los cuatro iconos inferiores representan entregables académicos. Tiempo: 55 segundos.}
 \end{frame}
 
-% 5. Cronograma · Gantt
+% 5. Cronograma · alcance integrado
 \begin{frame}[plain]
-\canvas{light}\header{04 / GESTIÓN DEL TIEMPO}{Línea base y ampliación comercial}
-\foreach \x/\n/\date in {5.35/01/30 sep–6 oct,8.65/02/7–13 oct,11.95/03/14–20 oct}{
-\hd{\x}{6.78}{1.2}{25}{Accent}{\n}\tx{\x+1.05}{6.38}{2.15}{8}{Muted}{\date}}
-\foreach \label/\start/\stop/\row in {Análisis y diseño/1/5/0,Datos y acceso/4/7/1,Catálogo y comparación/6/10/2,3D y montaje/4/14/3,Gestión y administración/10/15/4,Interacción y acabados/13/16/5,Pruebas y correcciones/7/20/6,Preparar publicación/19/21/7}{
-\pgfmathsetmacro{\yy}{5.38-.46*\row}
-\tx{.85}{\yy+.12}{4.25}{9.2}{Ink}{\label}
-\draw[Line,line width=.3pt](5.35,\yy-.15)--(15.2,\yy-.15);
-\pgfmathsetmacro{\xa}{5.35+(\start-1)*.469}\pgfmathsetmacro{\xb}{5.35+\stop*.469}
-\fill[Accent,rounded corners=1.1pt](\xa,\yy+.09)rectangle(\xb,\yy-.09);}
-\foreach \x in {8.633,11.916}{\draw[Line,dashed](\x,5.75)--(\x,1.96);}
+\canvas{light}\header{04 / GESTIÓN DEL TIEMPO}{Cuatro semanas, un alcance integrado}
+\foreach \x/\n/\date in {5.35/01/30 sep–6 oct,7.81/02/7–13 oct,10.27/03/14–20 oct,12.73/04/21–27 oct}{
+\hd{\x}{6.78}{.8}{23}{Accent}{\n}\tx{\x+.8}{6.32}{1.7}{7}{Muted}{\date}}
+\foreach \label/\start/\stop/\row in {Plan y diseño cerrados/1/5/0,Base de datos y migraciones/6/7/1,Acceso y catálogo/8/11/2,Recursos 3D/6/14/3,Administración/11/13/4,Ofertas y carrito/14/17/5,Montaje y guardado/15/19/6,UI y compatibilidad/18/21/7,Conversión y cotizaciones/20/22/8,Pedidos y pagos simulados/23/25/9,Pruebas integrales y cierre/26/28/10}{
+\pgfmathsetmacro{\yy}{5.55-.32*\row}
+\tx{.85}{\yy+.1}{4.25}{8}{Ink}{\label}
+\draw[Line,line width=.3pt](5.35,\yy-.11)--(15.2,\yy-.11);
+\pgfmathsetmacro{\xa}{5.35+(\start-1)*.3518}\pgfmathsetmacro{\xb}{5.35+\stop*.3518}
+\fill[Accent,rounded corners=1.1pt](\xa,\yy+.07)rectangle(\xb,\yy-.07);}
+\foreach \x in {7.813,10.275,12.738}{\draw[Line,dashed](\x,5.75)--(\x,1.96);}
 \ico{user-round}{.85}{1.66}{.36}{Accent}\tx{1.4}{1.61}{8.8}{9}{Ink}{Joel Ito Luque · responsabilidad individual}
-\ico{clock-3}{10.45}{1.66}{.36}{Accent}\tx{11}{1.61}{4.2}{9}{Muted}{Actividades solapadas}
-\source{Línea base estimada 30/09–20/10; no registro horario. Ampliación comercial: 27–28/10/2026, posterior a esa línea base.}
-\finish\note{El Gantt conserva la estimación reconstruida de tres semanas de la línea base sobre un prototipo previo; no equivale a un registro horario. La ampliación comercial del 27 y 28 de octubre se identifica aparte, sin falsear su ejecución dentro del cronograma anterior. Tiempo: 60 segundos.}
+\ico{clock-3}{10.45}{1.66}{.36}{Accent}\tx{11}{1.61}{4.2}{9}{Muted}{Dependencias fin–inicio}
+\source{Diseño cerrado 04/10 \ensuremath{\rightarrow} migraciones 05/10. Pruebas por módulo durante el desarrollo; integrales 25/10, correcciones 26/10 y revalidación 27/10.}
+\finish\note{El diseño y el plan se cierran el 4 de octubre. La base de datos comienza el 5; autenticación y catálogo requieren las migraciones terminadas. El visor necesita catálogo y recursos 3D; guardar necesita visor y acceso. La administración precede a ofertas, las ofertas al carrito, el montaje guardado a su conversión y las cotizaciones a pedidos y pagos. Las pruebas integrales se realizan el 25, las correcciones el 26 y la revalidación el 27. El solapamiento se limita a trabajos independientes con insumos listos, sobre un prototipo existente y con responsabilidad individual. Son fechas reconstruidas, no una bitácora certificada. Tiempo: 60 segundos.}
 \end{frame}
 
 % 6. Recursos y riesgos · iconos semánticos
@@ -212,7 +212,7 @@
 \hd{.8}{6.8}{5}{58}{Mint}{564}
 \tx{1}{4.68}{4.8}{11}{White}{pruebas correctas}
 \tx{1}{4.12}{4.8}{8.5}{Dim}{2 omitidas · 83 archivos}
-\hd{6.1}{6.8}{4}{58}{Mint}{41}
+\hd{6.1}{6.8}{4}{58}{Mint}{42}
 \tx{6.25}{4.68}{4.6}{11}{White}{migraciones aplicadas}
 \ico{globe}{12.2}{6.6}{1.2}{Mint}\hd{11.4}{4.68}{4.1}{24}{White}{CLOUD}
 \tx{11.4}{3.8}{4.1}{9}{Dim}{24 tablas propias}
@@ -221,7 +221,7 @@
 \ico{\icon}{\x}{2.75}{.5}{Mint}\tx{\x+.72}{2.64}{3.9}{8.5}{White}{\label}}
 \source{Revisión 28/10/2026: suite general y build correctos; recorridos locales autenticados, con limpieza de cuentas temporales.}
 \tx{.85}{1.48}{14.3}{7.2}{Dim}{Pendientes: dispositivos físicos, estudio de usuarios, operación y cobros reales; no se certifican con esta entrega.}
-\finish\note{La repetición actual de pnpm check dio 564 pruebas correctas, dos omitidas en 83 archivos, y build correcto. Las 41 migraciones y 24 tablas son el estado Cloud registrado. Los recorridos autenticados actualizan capturas y limpian sus cuentas. No sumes ejecuciones diferentes como escenarios únicos. No se certifican pagos reales, SMTP, Android físico, FPS ni satisfacción de usuarios. Tiempo: 70 segundos.}
+\finish\note{La repetición actual de pnpm check dio 564 pruebas correctas, dos omitidas en 83 archivos, y build correcto. Las 42 migraciones y 24 tablas son el estado Cloud registrado. Los recorridos autenticados actualizan capturas y limpian sus cuentas. No sumes ejecuciones diferentes como escenarios únicos. No se certifican pagos reales, SMTP, Android físico, FPS ni satisfacción de usuarios. Tiempo: 70 segundos.}
 \end{frame}
 
 % 12. Cierre · contribuciones y mejora

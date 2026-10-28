@@ -37,7 +37,7 @@ https://www.sram.com/en/service/manuals--documents/compatability-map
 Fuentes reales ya utilizadas en el informe. No se atribuyen encuestas o ahorros.
 
 GANTT Y RESULTADOS
-Gantt resumido del informe: estimación reconstruida 30/09–20/10/2026.
+Gantt resumido del informe: estimación reconstruida 30/09–27/10/2026.
 La revisión actual repitió pnpm check: 564 correctas, 2 omitidas, 83 archivos;
 build correcto. Estado Cloud registrado: 24 tablas propias y 41 migraciones.
 No se suman recorridos de navegador con pruebas unitarias como casos únicos.
